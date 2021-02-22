@@ -132,7 +132,7 @@ html, body {
     left: 0px;
     visibility: hidden;
     opacity: 0;
-    width: 100%;
+    width: 101%;
     height: 300px;
     background: rgba(2,184,252,0.9);
     z-index: 3;
