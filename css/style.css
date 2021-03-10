@@ -157,7 +157,7 @@ html, body {
     right : 5px;
     background: #0FC153;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     z-index: 4;
 }
 .tabContent .product__stocking.sold {
@@ -169,22 +169,24 @@ html, body {
 .tabContent .stocking__text {
     color : #FFF;
     font-family: Gilroy-Bold;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 .tabContent .product__store {
-    width: auto;
+    height: 20px;
     position: absolute;
     top : 32.5px;
     right: 5px;
-    background: #AD342A;
-    padding: 5px 10px;
-    border-radius: 10px;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    background: #02B8FC;
+    padding: 5px;
+    border-radius: 10px;
 }
 .tabContent .store__text {
     color : #FFF;
     font-family: Gilroy-Bold;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
 }
 .tabContent .listProduct__product:hover {
     border: 2px solid #02B8FC;
