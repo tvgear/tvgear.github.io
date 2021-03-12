@@ -107,7 +107,6 @@ html, body {
     padding: 0px 0px 50px 0px;
     position: relative;
     cursor: pointer;
-    border: 2px solid #FFF;
     transition: 0.4s all;
     overflow: hidden;
 }
@@ -128,13 +127,13 @@ html, body {
 }
 .tabContent .product__info {
     position: absolute;
-    top : -30px;
+    top : -20px;
     left: 0px;
     visibility: hidden;
     opacity: 0;
-    width: 101%;
+    width: 100%;
     height: 300px;
-    background: rgba(2,184,252,0.9);
+    background: rgba(2,184,252,0.8);
     z-index: 3;
     transition: 0.4s all;
     display: flex;
@@ -188,12 +187,8 @@ html, body {
     font-family: Gilroy-Bold;
     font-size: 0.5rem;
 }
-.tabContent .listProduct__product:hover {
-    border: 2px solid #02B8FC;
-    transition: 0.4s all
-}
 .tabContent .listProduct__product:hover .product__img {
-    transform: scale(1.1) translateY(-5px);
+    filter: blur(5px);
     transition: 0.4s all;
 }
 .tabContent .listProduct__product:hover .product__info {
