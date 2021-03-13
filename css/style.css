@@ -165,6 +165,10 @@ html, body {
 .tabContent .product__stocking.secondhand {
     background: #FE7500;
 }
+.tabContent .product__stocking.secondhandNew {
+    background: -webkit-linear-gradient(to right, #FE7500, #0FC153); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FE7500, #0FC153); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .tabContent .stocking__text {
     color : #FFF;
     font-family: Gilroy-Bold;
