@@ -34,3 +34,14 @@ function showElm(elm) {
 function hiddenElm(elm) {
     $(elm).css({ visibility: 'hidden', opacity: 0 });
 }
+function validatePass() {
+    var textLink = '68B6UePsa5/order.html';
+    var el = document.getElementById('linkDirect');
+    if(document.getElementById('passwordDirect').value == 'thunga0506'){
+        el.href += textLink;
+        return true;
+    } else {
+        alert('Mật Khẩu Không Đúng');
+        return false;
+    }
+}
