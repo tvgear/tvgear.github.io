@@ -436,14 +436,14 @@ html, body {
 }
 .pageLogin .logo__t {
     font-family: 'Gilroy-Bold';
-	animation: buildLogo 4s alternate;
+	animation: buildLogoLogin 4s alternate;
 	stroke-width: 10;
     stroke: #02B8FC;
     font-size: 22rem;
     fill: #02B8FC;
     transition: all 0.6s;
 }
-@keyframes buildLogo {
+@keyframes buildLogoLogin {
 	0% {
         fill: transparent;
         stroke: #02B8FC;
