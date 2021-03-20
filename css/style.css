@@ -380,5 +380,103 @@ html, body {
 }
 .formOrder__form {
     width: 750px;
-    height: 1700px;
+    height: 2000px;
+}
+/* PAGE ORDER */
+.pageOrder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.pageOrder iframe {
+    width: 650px;
+    height: calc(100vh - 5px);
+    padding: 40px 10px 0px 10px;
+}
+.pageOrder .linkEditOrder {
+    position: fixed;
+    top : 12.5px;
+    left : 0;
+    right : 0;
+    margin: auto;
+    text-align: center;
+}
+/* PAGE LOGIN */
+.pageLogin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pageLogin #linkDirect {
+    background: #02B8FC;
+    color : #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 15px 0px 0px 0px;
+}
+.pageLogin #passwordDirect {
+    height: 45px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+}
+.pageLogin .percent__text {
+    color : #FFF;
+    font-size: 2rem;
+}
+.pageLogin .logo {
+    width: 55px;
+    height: 100px;
+    position: relative;
+}
+.pageLogin .logo__t {
+    font-family: 'Gilroy-Bold';
+	animation: buildLogo 4s alternate;
+	stroke-width: 10;
+    stroke: #02B8FC;
+    font-size: 22rem;
+    fill: #02B8FC;
+    transition: all 0.6s;
+}
+@keyframes buildLogo {
+	0% {
+        fill: transparent;
+        stroke: #02B8FC;
+        stroke-dashoffset: 50%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 10;
+        font-size: 22rem;
+        transition: all 0.6s;
+	}
+    50% {
+        fill: transparent;
+        stroke:#02B8FC;
+        stroke-width: 10;
+        font-size: 22rem;
+        transition: all 0.6s;
+    }
+	100% {
+        fill: #02B8FC;
+        stroke: #02B8FC; 
+        stroke-dashoffset: -50%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 10;
+        font-size: 22rem;
+        transition: all 0.6s;
+	}
+}
+.pageLogin .logo__v {
+    font-family: 'Gilroy-Bold';
+	stroke-width: 10;
+    stroke: #02B8FC;
+    font-size: 10rem;
+    fill: #02B8FC;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
 }
