@@ -1,96 +1,482 @@
-/* LARGE SCREEN */
-@media screen and (min-width: 1824px) {
-    .tabContent .listProduct__product {
-        width: calc(100% / 5 - 20px);
-    }
+/* ---------------------- FONT WEB ---------------------- */
+@font-face {
+    font-family: Gilroy-Light;
+    src: url("../font//Gilroy/Gilroy-Light.woff2");
 }
-@media screen and (max-width: 1200px) {
-    ::-webkit-scrollbar {
-        width: 5px;
-    }
-    .tabNav {
-        position: fixed;
-        bottom: -1px;
-        width: 100%;
-        height: 70px;
-        z-index: 10;
-        background : rgba(2,184,252,0.9);
-    }
-    .tabNav .tabNav__page {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 0px 15px;
-    }
-    .tabContent {
-        width: 100%;
-        padding: 50px 0px 100px 0px;
-    }
-    .tabContent .listProduct__product {
-        width: calc(100% / 3 - 20px);
-    }
-    .tabContent .titleProduct__text {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .tabContent .product__name {
-        font-size: 1.75rem;
-    }
-    .backgroundLoad.hdLoad {
-        width: 50px;
-        height: 50px;
-        top: 5px;
-        left: 5px;
-    }
-    .tabContent .item__listContact {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .pageOrder iframe {
-        width: 100vw;
-    }
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("../font/Gilroy/Gilroy-Bold.otf");
 }
-@media screen and (max-width: 992px) {
-    .tabContent .listProduct__product {
-        width: calc(100% / 2 - 20px);
-    }
-    .tabContent .titleProduct__text {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .tabContent .product__name {
-        font-size: 1.25rem;
-    }
-    .formOrder__form {
-        width: 450px;
-    }
+/* ---------------------- HTML, BODY ---------------------- */
+html, body {
+    overflow: hidden;
+    font-family: Gilroy-Light;
 }
-/* SMALL DEVICE ROTATE */
-@media screen and (orientation:landscape) and (max-width: 992px) {
-
+/* ---------------------- CUSTOM CSS ---------------------- */
+::-webkit-scrollbar {
+    width: 10px;
 }
-/* SMALL DEVICE */
-@media screen and (max-width: 479px) {
-    .tabContent .listProduct__product {
-        width: 100%;
-    }
-    .tabContent .item__listContact {
-        padding: 10px 5px;
-    }
-    .listContact__formOrder {
-        width: calc(100% - 10px);
-    }
-    .formOrder__form {
-        width: 100%;
-    }
-    .tabContent .item__text {
-        font-size: 0.9rem;
-    }
+::-webkit-scrollbar-track {
+    background: transparent;
 }
-/* VERY SMALL */
-@media screen and (max-width: 374px) {
-   
+::-webkit-scrollbar-thumb {
+    background: #02B8FC;
+}
+/* ---------------------- TAB NAV ---------------------- */
+.fullWeb {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto; 
+}
+.tabNav {
+    width: 70px;
+    height: 100vh;
+    background: #02B8FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabNav .page__item {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+.tabNav .item__img {
+    width: 28px;
+    height: 28px;
+    stroke: #FFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transition: 0.4s all;
+}
+.tabNav .item__img.icKey {
+    transform: scale(1.05);
+}
+.tabNav .page__item.active {
+    background: #FFF;
+}
+.tabNav .page__item.active .item__img {
+    stroke: #02B8FC;
+}
+/* ---------------------- TAB CONTENT ---------------------- */
+.tabContent {
+    width: calc(100% - 70px);
+    height: 100vh;
+    overflow-y: auto;
+}
+.tabContent .item__titleProduct {
+    padding: 25px 5px 30px 5px;
+    border-top: 3px dotted #02B8FC;
+}
+.tabContent .item__titleProduct:first-child {
+    padding: 15px 5px 30px 5px;
+    border-top: 3px dotted transparent;
+}
+.tabContent .titleProduct__text {
+    font-size: 2.5rem;
+    font-family: Gilroy-Bold;
+    color : #02B8FC;
+    padding: 0px 15px;
+}
+.tabContent .item__listProduct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    z-index: 0;
+    position: relative;
+}
+.tabContent .listProduct__product {
+    width: calc(100% / 4 - 20px);
+    height: 360px;
+    margin : 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+}
+.tabContent .item__listProduct.keyboard .listProduct__product {
+    height: 250px;
+}
+.tabContent .product__img {
+    height: 250px;
+    transition: 0.4s all;
+}
+.tabContent .product__name {
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 12px;
+    color : #02B8FC;
+    font-family: Gilroy-Bold;
+    transition: 0.4s all;
+}
+.tabContent .product__info {
+    position: absolute;
+    top : -20px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 310px;
+    background: rgba(2,184,252,0.8);
+    z-index: 3;
+    transition: 0.4s all;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
+    color : #FFF;
+    font-family: Gilroy-Bold;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+.tabContent .item__listProduct.keyboard .product__info {
+    height: 200px;
+}
+.tabContent .product__stocking {
+    width: auto;
+    position: absolute;
+    top : 5px;
+    right : 5px;
+    background: #0FC153;
+    padding: 5px 10px;
+    border-radius: 15px;
+    z-index: 4;
+}
+.tabContent .product__stocking.sold {
+    background: #888;
+}
+.tabContent .product__stocking.secondhand {
+    background: #FE7500;
+}
+.tabContent .product__stocking.secondhandNew {
+    background: -webkit-linear-gradient(to right, #FE7500, #0FC153); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FE7500, #0FC153); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.tabContent .stocking__text {
+    color : #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 0.8rem;
+}
+.tabContent .product__store {
+    height: 20px;
+    position: absolute;
+    top : 32.5px;
+    right: 5px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    background: #02B8FC;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 2;
+}
+.tabContent .store__text {
+    color : #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 0.5rem;
+}
+.tabContent .product__gift {
+    width: 180px;
+    position: absolute;
+    bottom : 60px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c8325c;
+    padding: 5px 10px;
+    border-radius: 15px;
+    z-index: 4;
+}
+.tabContent .gift__img {
+    width: 17px;
+    height: 17px;
+    animation: scaleGift 1.5s infinite;
+}
+@keyframes scaleGift {
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1.0);}
+}
+.tabContent .gift__text {
+    font-family: Gilroy-Bold;
+    font-size: 0.7rem;
+    margin: 0px 0px 0px 10px;
+    color : #FFF;
+}
+.tabContent .product__bluetooth {
+    position: absolute;
+    top : 7px;
+    left : 7px;
+    z-index: 4;
+}
+.tabContent .bluetooth__img {
+    height: 15px;
+}
+.tabContent .listProduct__product:hover .product__img {
+    filter: blur(5px);
+    transition: 0.4s all;
+}
+.tabContent .listProduct__product:hover .product__info {
+    visibility: visible;
+    opacity: 1;
+    top : 0px;
+    transition: 0.4s all;
+}
+.tabContent .item__listContact {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tabContent .listContact__infoContact {
+    padding: 0px 50px 25px 0px;
+}
+.tabContent .info__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+.tabContent .item__text {
+    font-size: 1.25rem;
+    font-family: Gilroy-Bold;
+    color : #111;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 20px;
+    text-decoration: underline;
+}
+.tabContent .item__text.noUL {
+    text-decoration: none;
+}
+.tabContent .item__listPolicy {
+    padding: 0px 20px 30px 20px;
+}
+.tabContent .policy__item {
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+}
+.tabContent .item__ques {
+    min-height: 50px;
+    background: #F4F4F4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+.tabContent .ques__text {
+    color : #02B8FC;
+    font-family: Gilroy-Bold;
+    text-transform: uppercase;
+}
+.tabContent .item__ask {
+    display: none;
+    padding: 20px 5px 0px 5px;
+}
+.tabContent .ask__text {
+    line-height: 25px;
+}
+/* ---------------------- BACKGROUND LOAD ---------------------- */
+.backgroundLoad {
+    background : #02B8FC;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s;
+    z-index: 999;
+}
+.backgroundLoad.hdLoad {
+    width: 40px;
+    height: 40px;
+    top : 15px;
+    left: 15px;
+    transition: all 0.6s;
+}
+.backgroundLoad .percent__text {
+    color : #FFF;
+    font-size: 2rem;
+}
+.backgroundLoad .logo {
+    width: 55px;
+    height: 100px;
+    position: relative;
+}
+.backgroundLoad .logo__t {
+    font-family: 'Gilroy-Bold';
+	animation: buildLogo 4s alternate;
+	stroke-width: 10;
+    stroke: #FFF;
+    font-size: 22rem;
+    fill: #FFF;
+    transition: all 0.6s;
+}
+@keyframes buildLogo {
+	0% {
+        fill: transparent;
+        stroke: #FFF;
+        stroke-dashoffset: 50%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 10;
+        font-size: 30rem;
+        transition: all 0.6s;
+	}
+    50% {
+        fill: transparent;
+        stroke:#FFF;
+        stroke-width: 10;
+        font-size: 30rem;
+        transition: all 0.6s;
+    }
+	100% {
+        fill: #FFF;
+        stroke: #FFF; 
+        stroke-dashoffset: -50%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 10;
+        font-size: 30rem;
+        transition: all 0.6s;
+	}
+}
+.backgroundLoad .logo__v {
+    font-family: 'Gilroy-Bold';
+	stroke-width: 10;
+    stroke: #FFF;
+    font-size: 10rem;
+    fill: #FFF;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+/* CUSTOM FORM GOOGLE */
+.listContact__formOrder {
+    position: relative;
+}
+.formOrder__form {
+    width: 750px;
+    height: 2000px;
+}
+/* PAGE ORDER */
+.pageOrder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.pageOrder iframe {
+    width: 650px;
+    height: calc(100vh - 5px);
+    padding: 40px 10px 0px 10px;
+}
+.pageOrder .linkEditOrder {
+    position: fixed;
+    top : 12.5px;
+    left : 0;
+    right : 0;
+    margin: auto;
+    text-align: center;
+}
+/* PAGE LOGIN */
+.pageLogin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pageLogin #linkDirect {
+    background: #02B8FC;
+    color : #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 15px 0px 0px 0px;
+}
+.pageLogin #passwordDirect {
+    height: 45px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+}
+.pageLogin .percent__text {
+    color : #FFF;
+    font-size: 2rem;
+}
+.pageLogin .logo {
+    width: 55px;
+    height: 100px;
+    position: relative;
+}
+.pageLogin .logo__t {
+    font-family: 'Gilroy-Bold';
+	animation: buildLogo 4s alternate;
+	stroke-width: 10;
+    stroke: #02B8FC;
+    font-size: 22rem;
+    fill: #02B8FC;
+    transition: all 0.6s;
+}
+@keyframes buildLogo {
+	0% {
+        fill: transparent;
+        stroke: #02B8FC;
+        stroke-dashoffset: 50%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 10;
+        font-size: 22rem;
+        transition: all 0.6s;
+	}
+    50% {
+        fill: transparent;
+        stroke:#02B8FC;
+        stroke-width: 10;
+        font-size: 22rem;
+        transition: all 0.6s;
+    }
+	100% {
+        fill: #02B8FC;
+        stroke: #02B8FC; 
+        stroke-dashoffset: -50%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 10;
+        font-size: 22rem;
+        transition: all 0.6s;
+	}
+}
+.pageLogin .logo__v {
+    font-family: 'Gilroy-Bold';
+	stroke-width: 10;
+    stroke: #02B8FC;
+    font-size: 10rem;
+    fill: #02B8FC;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
 }
