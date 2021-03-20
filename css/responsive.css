@@ -49,6 +49,9 @@
         justify-content: center;
         align-items: center;
     }
+    .pageOrder iframe {
+        width: 100vw;
+    }
 }
 @media screen and (max-width: 992px) {
     .tabContent .listProduct__product {
@@ -78,7 +81,7 @@
         padding: 10px 5px;
     }
     .listContact__formOrder {
-        width: calc(100% - 10px);
+        width: calc(100% - 15px);
     }
     .formOrder__form {
         width: 100%;
