@@ -245,9 +245,12 @@ html, body {
 }
 .tabContent .item__listContact {
     padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .tabContent .listContact__infoContact {
-    padding: 0px 0px 25px 0px;
+    padding: 0px 50px 25px 0px;
 }
 .tabContent .info__item {
     display: flex;
@@ -370,4 +373,12 @@ html, body {
     visibility: hidden;
     opacity: 0;
     transition: all 0.4s;
+}
+/* CUSTOM FORM GOOGLE */
+.listContact__formOrder {
+    position: relative;
+}
+.formOrder__form {
+    width: 750px;
+    height: 1700px;
 }
