@@ -246,11 +246,10 @@ html, body {
 .tabContent .item__listContact {
     padding: 10px 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 .tabContent .listContact__infoContact {
-    padding: 0px 50px 25px 0px;
+    padding: 0px 50px 0px 0px;
 }
 .tabContent .info__item {
     display: flex;
@@ -377,10 +376,19 @@ html, body {
 /* CUSTOM FORM GOOGLE */
 .listContact__formOrder {
     position: relative;
+    width: 300px;
+    height: 50px;
+    background: #02B8FC;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 25px 0px;
 }
 .formOrder__form {
-    width: 750px;
-    height: 2000px;
+    text-align: center;
+    color : #FFF;
 }
 /* PAGE ORDER */
 .pageOrder {
@@ -415,15 +423,16 @@ html, body {
     background: #02B8FC;
     color : #FFF;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     margin: 15px 0px 0px 0px;
 }
 .pageLogin #passwordDirect {
     height: 45px;
-    font-size: 1.1rem;
     text-align: center;
     border-radius: 8px;
+    padding: 0px 15px;
     outline: none;
+    border: 2px solid #02B8FC;
 }
 .pageLogin .percent__text {
     color : #FFF;
