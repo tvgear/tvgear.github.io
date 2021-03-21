@@ -385,30 +385,41 @@ html, body {
     justify-content: center;
     padding: 5px;
     margin: 25px 0px;
+    color : #FFF;
+}
+.listContact__formOrder .formOrder__form:hover,
+.listContact__formOrder .formOrder__form:focus,
+.listContact__formOrder .formOrder__form:active {
+    color : #FFF;
 }
 .formOrder__form {
     text-align: center;
     color : #FFF;
+    text-transform: uppercase;
+    font-family: 'Gilroy-Bold';
+    font-size: 1.2rem;
 }
 /* PAGE ORDER */
 .pageOrder {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 .pageOrder iframe {
     width: 650px;
-    height: calc(100vh - 5px);
-    padding: 40px 10px 0px 10px;
+    height: calc(100vh - 90px);
 }
 .pageOrder .linkEditOrder {
-    position: fixed;
-    top : 12.5px;
-    left : 0;
-    right : 0;
-    margin: auto;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
+    background: #02B8FC;
+    margin: 20px 0px;
+    border-radius: 25px;
+    color : #FFF;
 }
 /* PAGE LOGIN */
 .pageLogin {
