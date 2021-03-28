@@ -61,11 +61,27 @@ html, body {
 .tabNav .item__img.icKey {
     transform: scale(1.05);
 }
+.tabNav .page__item {
+    position: relative;
+}
 .tabNav .page__item.active {
     background: #FFF;
 }
 .tabNav .page__item.active .item__img {
     stroke: #02B8FC;
+}
+.tabNav .page__item .item__orderNoti {
+    position: absolute;
+    width: 12.5px;
+    height: 12.5px;
+    right: 5px;
+    top: 8px;
+    background: #F23E5C;
+    border-radius: 25px;
+    border: 3px solid rgba(2,184,252,0.9);
+}
+.tabNav .page__item.active .item__orderNoti {
+    border: 3px solid#FFF;
 }
 /* ---------------------- TAB CONTENT ---------------------- */
 .tabContent {
