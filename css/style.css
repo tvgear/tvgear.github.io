@@ -66,22 +66,110 @@ html, body {
 }
 .tabNav .page__item.active {
     background: #FFF;
+    overflow: hidden;
 }
 .tabNav .page__item.active .item__img {
-    stroke: #02B8FC;
+    stroke: rgba(2,184,252,0.8);
 }
-.tabNav .page__item .item__orderNoti {
-    position: absolute;
-    width: 12.5px;
-    height: 12.5px;
-    right: 5px;
-    top: 8px;
-    background: #F23E5C;
-    border-radius: 25px;
-    border: 3px solid rgba(2,184,252,0.9);
+.tabNav .page__item:nth-child(1).active .item__img {
+    animation: aniMouse 1.5s infinite;
 }
-.tabNav .page__item.active .item__orderNoti {
-    border: 3px solid#FFF;
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(2),
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(4),
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(6),
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(8) {
+    animation: aniKeyboard 2s infinite 2s;
+}
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(1),
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(3),
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(5),
+.tabNav .page__item:nth-child(2).active .item__img line:nth-child(7) {
+    animation: aniKeyboard 2s infinite;
+}
+.tabNav .page__item:nth-child(3).active .item__img {
+    animation: aniHeadPhone 1.5s infinite;
+}
+.tabNav .page__item:nth-child(4).active .item__img {
+    animation: aniAccessories 1s infinite;
+}
+.tabNav .page__item:nth-child(5).active .item__img {
+    animation: aniCart 2s infinite;
+}
+@keyframes aniMouse {
+    0% {
+        transform: translate(0px , -3px);
+    }
+    25% {
+        transform: translate(-3px , 0px);
+    }
+    50% {
+        transform: translate(0px , 3px);
+    }
+    75% {
+        transform: translate(3px , 0px);
+    }
+    100% {
+        transform: translate(0px , -3px);
+    }
+}
+@keyframes aniKeyboard {
+    0% {
+        opacity: 0.4;
+    }
+    25% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+@keyframes aniHeadPhone {
+    0% {
+        transform: rotate(-8deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-8deg);
+    }
+}
+@keyframes aniAccessories {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes aniCart {
+    0% {
+        transform: translateX(-35px);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(-2.5px);
+    }
+    75% {
+        transform: translateX(35px);
+    }
+    100% {
+        transform: translateX(-35px);
+    }
 }
 /* ---------------------- TAB CONTENT ---------------------- */
 .tabContent {
@@ -345,7 +433,7 @@ html, body {
 }
 .backgroundLoad .logo__t {
     font-family: 'Gilroy-Bold';
-	animation: buildLogo 4s alternate;
+	animation: buildLogo 2s 2;
 	stroke-width: 10;
     stroke: #FFF;
     font-size: 22rem;
@@ -359,14 +447,14 @@ html, body {
         stroke-dashoffset: 50%;
         stroke-dasharray: 0 50%;
         stroke-width: 10;
-        font-size: 30rem;
+        font-size: 22rem;
         transition: all 0.6s;
 	}
     50% {
         fill: transparent;
         stroke:#FFF;
         stroke-width: 10;
-        font-size: 30rem;
+        font-size: 22rem;
         transition: all 0.6s;
     }
 	100% {
@@ -375,7 +463,7 @@ html, body {
         stroke-dashoffset: -50%;
         stroke-dasharray: 50% 0;
         stroke-width: 10;
-        font-size: 30rem;
+        font-size: 22rem;
         transition: all 0.6s;
 	}
 }
