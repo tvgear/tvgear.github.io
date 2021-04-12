@@ -78,22 +78,22 @@ html, body {
 .tabNav .page__item:nth-child(2).active .item__img line:nth-child(4),
 .tabNav .page__item:nth-child(2).active .item__img line:nth-child(6),
 .tabNav .page__item:nth-child(2).active .item__img line:nth-child(8) {
-    animation: aniKeyboard 5s infinite 2s;
+    animation: aniKeyboard 3s infinite 2s;
 }
 .tabNav .page__item:nth-child(2).active .item__img line:nth-child(1),
 .tabNav .page__item:nth-child(2).active .item__img line:nth-child(3),
 .tabNav .page__item:nth-child(2).active .item__img line:nth-child(5),
 .tabNav .page__item:nth-child(2).active .item__img line:nth-child(7) {
-    animation: aniKeyboard 5s infinite;
+    animation: aniKeyboard 3s infinite;
 }
 .tabNav .page__item:nth-child(3).active .item__img {
-    animation: aniHeadPhone 1.25s infinite;
+    animation: aniHeadPhone 1.5s infinite;
 }
 .tabNav .page__item:nth-child(4).active .item__img {
-    animation: aniAccessories 1s infinite;
+    animation: aniAccessories 2s infinite linear;
 }
 .tabNav .page__item:nth-child(5).active .item__img {
-    animation: aniCart 1.75s infinite;
+    animation: aniCart 2s infinite;
 }
 @keyframes aniMouse {
     0% {
@@ -114,19 +114,19 @@ html, body {
 }
 @keyframes aniKeyboard {
     0% {
-        opacity: 0.2;
+        opacity: 0.7;
     }
     25% {
-        opacity: 0.6;
-    }
-    50% {
         opacity: 1;
     }
+    50% {
+        opacity: 0.7;
+    }
     75% {
-        opacity: 0.6;
+        opacity: 1;
     }
     100% {
-        opacity: 0.2;
+        opacity: 0.7;
     }
 }
 @keyframes aniHeadPhone {
@@ -147,11 +147,11 @@ html, body {
     }
 }
 @keyframes aniAccessories {
-    0% {
+    from {
         transform: rotate(0deg);
     }
-    100% {
-        transform: rotate(360deg);
+    to {
+        transform: rotate(359deg);
     }
 }
 @keyframes aniCart {
@@ -276,8 +276,8 @@ html, body {
     background: #FE7500;
 }
 .tabContent .product__stocking.secondhandNew {
-    background: -webkit-linear-gradient(to right, #FE7500, #0FC153); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FE7500, #0FC153); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #FE7500, #0FC153);
+    background: linear-gradient(to right, #FE7500, #0FC153); 
 }
 .tabContent .stocking__text {
     color : #FFF;
