@@ -34,6 +34,7 @@
     .tabContent .titleProduct__text {
         font-size: 2rem;
         text-align: center;
+        line-height: 30px;
     }
     .tabContent .product__name {
         font-size: 1.75rem;
@@ -74,11 +75,29 @@
 }
 /* SMALL DEVICE */
 @media screen and (max-width: 479px) {
-    .tabContent .listProduct__product {
-        width: 100%;
-    }
     .tabContent .item__listContact {
         padding: 10px 5px;
+    }
+    .tabContent .item__listProduct {
+        padding: 0px;
+        margin: 20px 0px;
+    }
+    .tabContent .listProduct__product {
+        width: calc(100% / 2 - 5px);
+        height: 290px;
+        margin: 2.5px;
+    }
+    .tabContent .product__img {
+        height: 160px;
+    }
+    .tabContent .product__name {
+        font-size: 0.9rem;
+    }
+    .tabContent .product__info {
+        height: 250px;
+    }
+    .tabContent .product__info .info__text {
+        font-size: 0.7rem;
     }
     .listContact__formOrder {
         width: calc(100% - 15px);
@@ -92,5 +111,9 @@
 }
 /* VERY SMALL */
 @media screen and (max-width: 374px) {
-   
+    .tabContent .listProduct__product {
+        width: 100%;
+        height: 290px;
+        margin: 2.5px;
+    }
 }
