@@ -84,20 +84,21 @@
     }
     .tabContent .listProduct__product {
         width: calc(100% / 2 - 5px);
-        height: 290px;
+        height: 250px;
         margin: 2.5px;
     }
     .tabContent .product__img {
-        height: 160px;
+        height: 125px;
     }
     .tabContent .product__name {
         font-size: 0.9rem;
     }
     .tabContent .product__info {
-        height: 250px;
+        height: 215px;
     }
     .tabContent .product__info .info__text {
         font-size: 0.7rem;
+        line-height: 20px;
     }
     .listContact__formOrder {
         width: calc(100% - 15px);
@@ -107,6 +108,9 @@
     }
     .tabContent .item__text {
         font-size: 0.9rem;
+    }
+    .tabContent .stocking__text {
+        font-size: 0.7rem;
     }
 }
 /* VERY SMALL */
