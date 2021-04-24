@@ -111,6 +111,7 @@
     }
     .tabContent .stocking__text {
         font-size: 0.7rem;
+        line-height: 20px;
     }
 }
 /* VERY SMALL */
