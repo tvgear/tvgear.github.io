@@ -237,7 +237,7 @@ html, body {
 }
 .tabContent .product__info {
     position: absolute;
-    top : -20px;
+    top : -5px;
     left: 0px;
     visibility: hidden;
     opacity: 0;
