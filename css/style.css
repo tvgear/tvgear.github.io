@@ -36,6 +36,7 @@ html, body {
             align-items: center;
     height: var(--heightScreen);
     overflow-y : auto;
+    z-index: 1;
 }
 .tabNav {
     width: 70px;
@@ -652,6 +653,8 @@ html, body {
     -o-transition: all 0.6s;
     transition: all 0.6s;
     z-index: 999;
+    top : 0;
+    left: 0;
 }
 .backgroundLoad.hdLoad {
     width: 40px;
