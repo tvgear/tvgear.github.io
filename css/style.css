@@ -967,6 +967,7 @@ html, body {
     position: absolute;
     right: 25px;
     bottom: 40px;
+    z-index: 99;
 }
 .orderCart .orderCart__img {
     width: 24px;
