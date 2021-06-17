@@ -53,6 +53,10 @@
     .pageOrder iframe {
         width: 100vw;
     }
+    .orderCart {
+        bottom: 110px;
+        right: 17.5px;
+    }
 }
 @media screen and (max-width: 992px) {
     .tabContent .listProduct__product {
