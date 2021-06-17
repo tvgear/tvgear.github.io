@@ -662,6 +662,12 @@ html, body {
     -o-transition: all 0.6s;
     transition: all 0.6s;
 }
+.backgroundLoad .backgroundLoad__percent {
+    margin: 0px 0px 0px 20px;
+}
+.backgroundLoad.hdLoad .backgroundLoad__percent {
+    margin: 0px;
+}
 .backgroundLoad .percent__text {
     color : #FFF;
     font-size: 2rem;
@@ -961,10 +967,10 @@ html, body {
 }
 /* CART ORDER */
 .orderCart {
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 40px;
-    z-index: 99;
+    z-index: 9;
 }
 .orderCart .orderCart__img {
     width: 24px;
