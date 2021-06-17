@@ -13,6 +13,7 @@
         bottom: -1px;
         width: 100%;
         top : unset;
+        left: unset;
         height: 70px;
         z-index: 10;
         background : rgba(2,184,252,0.9);
@@ -36,7 +37,6 @@
     }
     .tabContent {
         width: 100%;
-        height: calc(100vh - 70px);
         padding: 0px;
     }
     .tabContent__page {
