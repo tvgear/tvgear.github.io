@@ -23,9 +23,6 @@ html, body {
     background: #02B8FC;
 }
 /* ---------------------- TAB NAV ---------------------- */
-:root {
-    --heightScreen: calc(100vh - calc(100vh - 100%));
-}
 .fullWeb {
     position: relative;
     display: -webkit-box;
@@ -34,7 +31,7 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: var(--heightScreen);
+    height: 100vh;
     overflow-y : auto;
     z-index: 1;
 }
