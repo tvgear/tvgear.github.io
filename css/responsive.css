@@ -37,6 +37,7 @@
     .tabContent {
         width: 100%;
         height: calc(100vh - 70px);
+        padding: 0px;
     }
     .tabContent__page {
         padding: 50px 0px 80px 0px;
