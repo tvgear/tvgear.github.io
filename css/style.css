@@ -384,9 +384,6 @@ html, body {
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
             box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.08);
 }
-.tabContent .item__listProduct.keyboard .listProduct__product {
-    height: 250px;
-}
 .tabContent .product__img {
     height: 250px;
     -webkit-transition: 0.4s all;
@@ -434,9 +431,6 @@ html, body {
     font-family: Gilroy-Bold;
     line-height: 25px;
     font-size: 0.9rem;
-}
-.tabContent .item__listProduct.keyboard .product__info {
-    height: 200px;
 }
 .tabContent .product__stocking {
     width: auto;
@@ -532,9 +526,9 @@ html, body {
 }
 .tabContent .product__bluetooth {
     position: absolute;
-    bottom : 12.5px;
-    right : 7px;
-    z-index: 3;
+    top : 30px;
+    right : 10px;
+    z-index: 2;
 }
 .tabContent .bluetooth__img {
     height: 15px;
