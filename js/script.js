@@ -6,6 +6,10 @@ $(document).ready(function () {
     setTimeout(function () {
         showElm('.logo__v');
     }, 4500);
+    // ZINDEX CART
+    setTimeout(function () {
+        addStyleCSS('.orderCart', 'topshow');
+    }, 4000);
     // BACK TOP TAB
     var backTop = $('.itemTab');
     $(window).scroll(function () {
