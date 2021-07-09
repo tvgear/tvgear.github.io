@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    // SLIDE QUES - ASK
+    $('.item__ques').click(function () {
+        $(this).toggleClass('active');
+        $(this).next('.item__ask').slideToggle(300);
+    });
     //LOAD WEB
     setTimeout(function () {
         addStyleCSS('.backgroundLoad', 'hdLoad');
@@ -21,12 +26,7 @@ $(document).ready(function () {
     });
     backTop.on('click', function (e) {
         e.preventDefault();
-        $('.tabContent').animate({ scrollTop: 0 }, '250');
-    });
-    // SLIDE QUES - ASK
-    $('.item__ques').click(function () {
-        $(this).toggleClass('active');
-        $(this).next('.item__ask').slideToggle(300);
+        $('.fullWeb').animate({ scrollTop: 0 }, '3500');
     });
 })
 function addStyleCSS(elm, classAdd) {
