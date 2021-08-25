@@ -1056,7 +1056,7 @@ html, body {
     right: 0;
     margin: auto;
     background: #c8325c;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 3px 10px;
     min-height: 25px;
     max-height: 80px;
@@ -1070,4 +1070,5 @@ html, body {
     color: #FFF;
     line-height: 15px;
     margin-top: 1px;
+    text-align: center;
 }
