@@ -1,3 +1,5 @@
+
+
 /* ---------------------- FONT WEB ---------------------- */
 @font-face {
     font-family: Gilroy-Light;
@@ -18,12 +20,14 @@ html, body {
     width: 14px;
 }
 ::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 8px 8px #B6B6B6;
+    -webkit-box-shadow: inset 0 0 8px 8px #B6B6B6;
+            box-shadow: inset 0 0 8px 8px #B6B6B6;
     border: solid 4px rgba(0,0,0,0);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 8px 8px rgba(0,0,0,0);
+    -webkit-box-shadow: inset 0 0 8px 8px rgba(0,0,0,0);
+            box-shadow: inset 0 0 8px 8px rgba(0,0,0,0);
     border: solid 4px rgba(0,0,0,0);
 }
 ::-webkit-scrollbar-button {
@@ -396,7 +400,9 @@ html, body {
     -webkit-transition: 0.4s all;
     -o-transition: 0.4s all;
     transition: 0.4s all;
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
 }
 .tabContent .product__name {
     font-size: 1.2rem;
@@ -462,8 +468,8 @@ html, body {
     background: #FE7500;
 }
 .tabContent .product__stocking.secondhandNew {
-    background: -webkit-gradient(linear, left top, right top, from(#FE7500), to(#0FC153));
     background: -o-linear-gradient(left, #FE7500, #0FC153);
+    background: -webkit-gradient(linear, left top, right top, from(#FE7500), to(#0FC153));
     background: linear-gradient(to right, #FE7500, #0FC153); 
 }
 .tabContent .stocking__text {
@@ -816,27 +822,16 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+            align-items: flex-start;
+    -webkit-box-pack: flex-start;
+        -ms-flex-pack: flex-start;
+            justify-content: flex-start;
     position: relative;
 }
-.pageOrder iframe {
-    width: 650px;
-    height: calc(100vh - 90px);
-}
-.pageOrder .linkEditOrder {
-    width: 125px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: #02B8FC;
-    margin: 20px 0px;
-    border-radius: 25px;
-    color : #FFF;
+.pageOrder p {
+    line-height: 30px;
 }
 /* PAGE LOGIN */
 .pageLogin {
@@ -1070,9 +1065,16 @@ html, body {
     padding: 3px 10px;
     min-height: 25px;
     max-height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 9999;
 }
 .locationCovid__text {
@@ -1081,4 +1083,188 @@ html, body {
     line-height: 15px;
     margin-top: 1px;
     text-align: center;
+}
+/* BACKGROUND ADS */
+.backgroundAds {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top : 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    background: rgba(255,255,255,0.55);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.backgroundAds.showAds {
+    opacity: 1;
+    z-index: 1000;
+    -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+            transform: scale(1.0);
+    -webkit-transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.backgroundAds .blockWrapAds {
+    background-image: url(../images/icons/ads.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: calc(100% - 50px);
+    max-height: 525px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+.backgroundAds .blockContentAds {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.blockContentAds .titleSale {
+    color: #FFF;
+    font-size: 1.25rem;
+    margin: 35px 0px 0px 0px;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.blockContentAds .titleBrand {
+    margin: 15px 0px 0px 0px;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 1.5rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.blockContentAds .titlePercent {
+    margin: 17.5px 0px 0px 0px;
+    color: #FDC436;
+    font-size: 1rem;
+    font-family: Gilroy-Bold;
+    text-transform: uppercase;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.blockContentAds .imgAds {
+    position: absolute;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.blockContentAds .imgAds:nth-child(1) {
+    width: 150px;
+    bottom: 20px;
+    left: 20px;
+}
+.blockContentAds .imgAds:nth-child(2) {
+    width: 180px;
+    bottom: 20px;
+    right: -10px;
+}
+.blockContentAds .imgAds:nth-child(3) {
+    width: 230px;
+    bottom: 150px;
+    right : -5px;
+}
+.blockContentAds .imgAds:nth-child(4) {
+    width: 170px;
+    bottom: 190px;
+    left: -10px;
+}
+.blockContentAds .buttonCloseAds {
+    position: absolute;
+    right : -10px;
+    top : -10px;
+    background : #FFF;
+    width: 60px;
+    height: 25px;
+    border-radius: 12.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+}
+.blockContentAds .textClose {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: Gilroy-Bold;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.tabFixed {
+    width: 100%;
+    height: 40px;
+    background: #1772D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.textTab {
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 40px;
+    user-select: none;
 }
