@@ -15,6 +15,18 @@ $(document).ready(function () {
     setTimeout(function () {
         addStyleCSS('.orderCart', 'topshow');
     }, 4000);
+     //LOAD ADS
+     setTimeout(function () {
+        addStyleCSS('.backgroundAds', 'showAds');
+    }, 5000);
+    // CLOSE ADS
+    $('.buttonCloseAds').click(function () {
+        $('.backgroundAds').removeClass('showAds');
+    });
+    // SHOW ADS
+    $('.tabFixed').click(function () {
+        $('.backgroundAds').addClass('showAds');
+    });
     // BACK TOP TAB
     var backTop = $('.itemTab');
     $(window).scroll(function () {
