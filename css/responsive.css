@@ -1,192 +1,65 @@
-
-
-/* LARGE SCREEN */
 @media screen and (min-width: 1824px) {
-    .tabContent .listProduct__product {
-        width: calc(100% / 5 - 20px);
-    }
+  
 }
 @media screen and (max-width: 1200px) {
-    ::-webkit-scrollbar {
-        width: 5px;
+    .blockContainer {
+        max-width: unset;
+        min-width: unset;
+        margin: 0px;
     }
-    .tabNav {
-        position: fixed;
-        bottom: -1px;
-        width: 100%;
-        top : unset;
-        left: unset;
-        height: 70px;
-        z-index: 10;
-        background : rgba(2,184,252,0.9);
-    }
-    .tabNav .tabNav__page {
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        padding: 0px 15px;
-    }
-    .tabContent {
-        width: 100%;
-        padding: 0px;
-    }
-    .tabContent__page {
-        padding: 50px 0px 150px 0px;
-    }
-    .tabContent .listProduct__product {
-        width: calc(100% / 3 - 20px);
-    }
-    .tabContent .titleProduct__text {
-        font-size: 2rem;
-        text-align: center;
-        line-height: 30px;
-    }
-    .tabContent .product__name {
-        font-size: 1.75rem;
-    }
-    .backgroundLoad.hdLoad {
-        width: 50px;
-        height: 50px;
-        top: 45px;
-        left: 5px;
-    }
-    .tabContent .item__listContact {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    .pageOrder iframe {
-        width: 100vw;
-    }
-    .orderCart {
-        bottom: 110px;
-        right: 17.5px;
-    }
-    ::-webkit-scrollbar {
-        width: 0px;
-    }
+   .tabNav {
+       width: 100%;
+       bottom: 0px;
+       left: 0px;
+       height: 60px;
+       background: rgba(255,255,255,0.7);
+       backdrop-filter: blur(10px);
+       top : unset;
+   }
+   .tabNav .tabNav__page {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       width: calc(100% - 30px);
+   }
+   .tabContent__page {
+       padding: 0px 15px 150px 15px;
+   }
+   .page__item .listProduct__product {
+       width: calc(100% / 2 - 20px);
+   }
+}
+@media screen and (orientation:landscape) and (width: 1024px) {
+   
 }
 @media screen and (max-width: 992px) {
-    .tabContent .listProduct__product {
-        width: calc(100% / 2 - 20px);
-    }
-    .tabContent .titleProduct__text {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .tabContent .product__name {
-        font-size: 1.25rem;
-    }
-    .formOrder__form {
-        width: 450px;
-    }
+    
 }
-/* SMALL DEVICE ROTATE */
 @media screen and (orientation:landscape) and (max-width: 992px) {
 
 }
-/* SMALL DEVICE */
-@media screen and (max-width: 479px) {
-    .tabContent .item__listContact {
-        padding: 10px 5px;
-    }
-    .tabContent .item__listProduct {
+@media screen and (max-width: 768px) {
+    .page__item .item__listProduct {
+        justify-content: center;
         padding: 0px;
-        margin: 20px 0px;
     }
-    .tabContent .listProduct__product {
-        width: calc(100% / 2 - 5px);
-        height: 250px;
-        margin: 2.5px;
-    }
-    .tabContent .product__img {
-        height: 125px;
-    }
-    .tabContent .product__name {
-        font-size: 0.9rem;
-    }
-    .tabContent .product__info {
-        height: 215px;
-    }
-    .tabContent .product__info .info__text {
-        font-size: 0.7rem;
-        line-height: 20px;
-    }
-    .listContact__formOrder {
-        width: calc(100% - 15px);
-    }
-    .formOrder__form {
+    .page__item .listProduct__product {
         width: 100%;
+        margin: 0px 0px 25px 0px;
     }
-    .tabContent .item__text {
-        font-size: 0.9rem;
+    .page__item {
+        margin: 0px;
     }
-    .tabContent .stocking__text {
-        font-size: 0.7rem;
-        line-height: 22px;
-    }
-    .backgroundAds .blockWrapAds {
-        width: 325px;
-    }
-    .blockContentAds .imgAds {
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
-    .blockContentAds .titleSale {
-        font-size: 1rem;
-    }
-    .blockContentAds .titleBrand {
-        font-size: 1.25rem;
-    }
-    .blockContentAds .titlePercent {
-        font-size: 0.85rem;
-    }
-    .blockContentAds .imgAds:nth-child(1) {
-        left: -15px;
-    }
-    .blockContentAds .imgAds:nth-child(4) {
-        bottom: 170px;
-        left: -50px;
-    }
-    .blockContentAds .imgAds:nth-child(2),
-    .blockContentAds .imgAds:nth-child(3) {
-        right: -35px;
-    }
-    .blockContentAds .buttonCloseAds {
-        -webkit-transform: scale(0.8);
-            -ms-transform: scale(0.8);
-                transform: scale(0.8);
-        right: -15px;
-    }
-    
 }
-/* VERY SMALL */
+@media screen and (max-width: 640px) {
+   
+}
+@media screen and (orientation:landscape) and (max-width: 568px) {
+    
+}   
+@media screen and (max-width: 479px) {
+   
+}   
 @media screen and (max-width: 374px) {
-    .tabContent .listProduct__product {
-        width: 100%;
-        height: 290px;
-        margin: 2.5px;
-    }
-    .backgroundAds .blockWrapAds {
-        width: 300px;
-    }
+   
 }
