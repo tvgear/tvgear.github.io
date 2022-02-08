@@ -6,9 +6,11 @@ $(document).ready(function () {
         lerp : 0.078,
         tablet : {
             smooth : true,
+            lerp : 0.9,
         },
         smartphone: {
             smooth: true,
+            lerp : 0.9,
         }
     });
     // WRAP HEADER
