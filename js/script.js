@@ -3,14 +3,12 @@ $(document).ready(function () {
     const scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        lerp : 0.078,
+        lerp : 0.08,
         tablet : {
             smooth : true,
-            lerp : 0.9,
         },
         smartphone: {
             smooth: true,
-            lerp : 0.9,
         }
     });
     // WRAP HEADER
