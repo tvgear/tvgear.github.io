@@ -36,8 +36,7 @@ html, body {
     font-size: 14px;
     color: #FFF;
     scroll-behavior: smooth;
-    overflow: overlay;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .blockContainer {
     max-width: 1200px;
@@ -410,6 +409,7 @@ html.has-scroll-dragging {
 .tabContent__page {
     width: 100%;
     padding: 0px 30px 100px 30px;
+    overflow: hidden;
 }
 /* PAGE */
 .page__item {
@@ -462,7 +462,7 @@ html.has-scroll-dragging {
             justify-content: flex-start;
     padding: 0px 15px;
     position: relative;
-    height: 500px;
+    height: 475px;
     margin: 0px 20px 20px 0px;
     -webkit-transition: 0.4s all;
     -o-transition: 0.4s all;
