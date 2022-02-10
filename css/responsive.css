@@ -1,7 +1,6 @@
 
 
 @media screen and (min-width: 1824px) {
-  
 }
 @media screen and (max-width: 1200px) {
     .blockContainer {
@@ -14,9 +13,9 @@
        bottom: 0px;
        left: 0px;
        height: 60px;
-       background: rgba(255,255,255,0.5);
-       -webkit-backdrop-filter: blur(12px);
-               backdrop-filter: blur(12px);
+       background: rgba(255,255,255,0.6);
+       -webkit-backdrop-filter: blur(15px);
+               backdrop-filter: blur(15px);
        top : unset;
    }
    .tabNav .tabNav__page {
