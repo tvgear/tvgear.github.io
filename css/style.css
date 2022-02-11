@@ -462,7 +462,7 @@ html.has-scroll-dragging {
             justify-content: flex-start;
     padding: 0px 15px;
     position: relative;
-    height: 475px;
+    height: 500px;
     margin: 0px 20px 20px 0px;
     -webkit-transition: 0.4s all;
     -o-transition: 0.4s all;
