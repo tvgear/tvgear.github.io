@@ -525,6 +525,9 @@ html.has-scroll-dragging {
 .page__item .stocking__text.new {
     background: #0FC153;
 }
+.page__item .stocking__text.upgrade {
+    background: #D81C3C;
+}
 .page__item .info__text {
     color: #444;
     font-size: 14px;
