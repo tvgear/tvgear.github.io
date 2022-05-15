@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // CUSTOM SCROLL
-    const scroll = new LocomotiveScroll({
+    const lscroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         lerp : 0.08,
@@ -23,8 +23,22 @@ $(document).ready(function () {
     var btnMenu = false;
     $('.itemTab').click(function() {
         const sectionID = $(this).data('scroll-section-id');
-        scroll.scrollTo(sectionID);
+        lscroll.scrollTo(sectionID);
         btnMenu = false;
+    });
+    // SCROLL REFRESH
+    function lscrollrefresh(func) {
+        $(window).trigger('resize');
+        func.update();
+    }
+    setTimeout(lscrollrefresh, 200, lscroll);
+    // SHOW DETAIL
+    $(".listProduct__product .buttonShowDetail").click(function() {
+        $(".listProduct__product").removeClass("showDetail");
+        $(this).parent().addClass("showDetail");    
+    });
+    $(".listProduct__product .buttonHideDetail").click(function() {
+        $(this).parent().removeClass("showDetail");
     });
 });
 function addStyleCSS(elm, classAdd) {
