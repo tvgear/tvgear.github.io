@@ -80,13 +80,16 @@
     }
 }
 @media screen and (max-width: 640px) {
-   
+    
 }
 @media screen and (orientation:landscape) and (max-width: 568px) {
     
 }   
 @media screen and (max-width: 479px) {
-   
+    .tabNav .item__img {
+        width: 20px;
+        height: 20px;
+    }
 }   
 @media screen and (max-width: 374px) {
    
