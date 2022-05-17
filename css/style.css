@@ -484,7 +484,8 @@
         -moz-user-select: none;
             -ms-user-select: none;
                 user-select: none;
-        margin: 15px 0px;
+        margin: 20px 0px;
+        max-width: 90%;
     }
     .page__item .product__detail {
         position: absolute;
