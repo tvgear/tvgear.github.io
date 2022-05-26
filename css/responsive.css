@@ -78,6 +78,16 @@
     .page__item .titleProduct__text {
         font-size: 18px;
     }
+    .headerWeb.hdFixed {
+        height: 120px !important;
+        top : -10px;
+    }
+    .tabContent__page .page__item {
+        padding: 75px 0px 0px 0px;
+    }
+    .tabContent__page .page__item:first-child .item__titleProduct {
+        padding: 50px 0px 0px 0px;
+    }
 }
 @media screen and (max-width: 640px) {
     
