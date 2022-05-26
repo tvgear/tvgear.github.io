@@ -5,10 +5,16 @@ $(document).ready(function () {
         smooth: true,
         lerp : 0.08,
         tablet : {
-            smooth : true,
+            breakpoint: 0,
+            intertia : 0.8,
+            getDirection : true,
+            smooth : false,
         },
         smartphone: {
-            smooth: true,
+            breakpoint: 0,
+            intertia : 0.8,
+            getDirection : true,
+            smooth : false,
         }
     });
     // WRAP HEADER
