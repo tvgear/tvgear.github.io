@@ -8,13 +8,13 @@ $(document).ready(function () {
             breakpoint: 0,
             intertia : 0.8,
             getDirection : true,
-            smooth : false,
+            smooth : true,
         },
         smartphone: {
             breakpoint: 0,
             intertia : 0.8,
             getDirection : true,
-            smooth : false,
+            smooth : true,
         }
     });
     // WRAP HEADER
