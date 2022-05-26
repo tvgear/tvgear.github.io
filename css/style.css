@@ -424,6 +424,9 @@
         margin: 0px 0px 0px 30px;
     }
     /* PRODUCT */
+    .page__item:first-child .item__titleProduct {
+        padding: 200px 0px 0px 0px;
+    }
     .page__item .item__titleProduct {
         padding: 100px 0px 0px 0px;
     }
@@ -598,7 +601,7 @@
                 justify-content: flex-end;
     }
     .page__item .price__text {
-        color: rgba(101,188,81);
+        color: #ee4d2d;
         font-size: 17px;
         font-family: FONT_BLACK;
         display: -webkit-box;
@@ -615,7 +618,7 @@
             -ms-flex-pack: justify;
                 justify-content: space-between;
         width: 100%;
-        border-bottom: 1px dotted rgba(0,0,0,0.2);
+        border-bottom: 1px dotted rgba(0,0,0,0.15);
         padding: 10px 0px;
     }
     .page__item .price__text:last-child {
