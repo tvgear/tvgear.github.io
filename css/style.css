@@ -472,7 +472,7 @@
                 justify-content: flex-start;
         padding: 0px 15px;
         position: relative;
-        height: 400px;
+        height: 405px;
         margin: 0px 20px 20px 0px;
         -webkit-transition: 0.4s all;
         -o-transition: 0.4s all;
@@ -752,4 +752,5 @@
     }
     .fullInvoice .imgInvoice {
         width: 90%;
+        max-width: 1024px;
     }
