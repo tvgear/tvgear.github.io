@@ -46,6 +46,11 @@ $(document).ready(function () {
     $(".listProduct__product .buttonHideDetail").click(function() {
         $(this).parent().removeClass("showDetail");
     });
+     // SHOW DETAIL
+     $(".listProduct__product .blockSelect").children().click(function() {
+        $(this).parent().find(".select").removeClass("select");
+        $(this).addClass("select");
+    });
 });
 function addStyleCSS(elm, classAdd) {
     $(elm).addClass(classAdd);
