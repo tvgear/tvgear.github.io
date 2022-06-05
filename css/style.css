@@ -472,7 +472,7 @@
                 justify-content: flex-start;
         padding: 0px 15px;
         position: relative;
-        height: 405px;
+        height: 410px;
         margin: 0px 20px 20px 0px;
         -webkit-transition: 0.4s all;
         -o-transition: 0.4s all;
@@ -516,6 +516,7 @@
         -o-transition: 0.4s all;
         transition: 0.4s all;
         padding: 0px;
+        z-index: -1;
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;
@@ -528,6 +529,7 @@
         -o-transition: 0.4s all;
         transition: 0.4s all;
         padding: 50px 15px 40px 15px;
+        z-index: 1;
     }
     .page__item .detail__item {
         display: -webkit-box;
@@ -558,7 +560,7 @@
     }
     .page__item .product__info {
         width: 100%;
-        padding: 15px 5px;
+        padding: 5px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -580,54 +582,7 @@
         background: -webkit-linear-gradient(rgb(53,114,231),rgb(94,175,226));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin : 10px 0px 35px 0px;
-    }
-    .page__item .info__price {
-        width: 100%;
-        border-radius: 8px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        height: 110px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-    }
-    .page__item .price__text {
-        color: #ee4d2d;
-        font-size: 17px;
-        font-family: FONT_BLACK;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: row-reverse;
-                flex-direction: row-reverse;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        width: 100%;
-        border-bottom: 1px dotted rgba(0,0,0,0.15);
-        padding: 10px 0px;
-    }
-    .page__item .price__text:last-child {
-        border-bottom: 1px dotted transparent;
-    }
-    .page__item .text__status {
-        color: #444;
-        font-size: 13px;
-        font-family: FONT_BOLD;
+        margin : 10px 0px 25px 0px;
     }
     .page__item .buttonShowDetail {
         position: absolute;
@@ -753,4 +708,55 @@
     .fullInvoice .imgInvoice {
         width: 90%;
         max-width: 1024px;
+    }
+    /* SELECT OPTION PRICE */
+    .page__item .blockSelect {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .page__item .selectItem {
+        color: #AAA;
+        cursor: pointer;
+        margin: 0px 5px 10px 5px;
+        border: 2px solid #AAA;
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 12px;
+        user-select: none;
+        transition: 0.3s all;
+    }
+    .page__item .selectItem.select {
+        color: #000;
+        border: 2px solid #000;
+        border-bottom : 4.5px solid #555;
+        transition: 0.3s all;
+    }
+    .page__item .selectItem.select .priceItem {
+        opacity: 1;
+        transition: 0.3s all;
+    }
+    .page__item .priceItem {
+        opacity: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 25px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ee4d2d;
+        font-size: 18px;
+        font-family: FONT_BLACK;
+        transition: 0.3s all;
+    }
+    .page__item .priceItem sup {
+        font-size: 12px;
+    }
+    .page__item .optionItem {
+        font-family: FONT_BOLD;
+        position: relative;
     }
