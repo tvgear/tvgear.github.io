@@ -739,6 +739,7 @@
             -ms-flex-pack: center;
                 justify-content: center;
         margin: -20px 0px 0px 0px;
+        padding: 0px 25px;
     }
     .blockInfoShop .nameShop {
         font-family: FONT_EXTRABOLD;
@@ -748,10 +749,14 @@
     .blockInfoShop .phoneShop {
         font-family: FONT_BOLD;
         margin: 5px 0px 0px 0px;
+        font-size: 12px;
     }
     .blockInfoShop .locationShop {
         font-family: FONT_BOLD;
         margin: 10px 0px 0px 0px;
+        text-align: center;
+        line-height: 16px;
+        font-size: 12px;
     }
     .blockInfoInvoice {
         color: #000;
