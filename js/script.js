@@ -3,19 +3,22 @@ $(document).ready(function () {
     const lscroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        lerp : 0.08,
-        tablet : {
-            breakpoint: 0,
-            intertia : 0.8,
-            getDirection : true,
-            smooth : true,
-        },
-        smartphone: {
-            breakpoint: 0,
-            intertia : 0.8,
-            getDirection : true,
-            smooth : true,
-        }
+        smoothMobile: true,
+        getSpeed: true,
+        getDirection: true
+        // lerp : 0.08,
+        // tablet : {
+        //     breakpoint: 0,
+        //     intertia : 0.8,
+        //     getDirection : true,
+        //     smooth : true,
+        // },
+        // smartphone: {
+        //     breakpoint: 0,
+        //     intertia : 0.8,
+        //     getDirection : true,
+        //     smooth : true,
+        // }
     });
     // WRAP HEADER
     setTimeout(function () {
