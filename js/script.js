@@ -2,10 +2,7 @@ $(document).ready(function () {
     // CUSTOM SCROLL
     const lscroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        smoothMobile: true,
-        getSpeed: true,
-        getDirection: true
+        // smooth: true,
         // lerp : 0.08,
         // tablet : {
         //     breakpoint: 0,
@@ -19,7 +16,31 @@ $(document).ready(function () {
         //     getDirection : true,
         //     smooth : true,
         // }
+        smooth: true,
+    lerp: 0.03, // Linear Interpolation, 0 > 1 // Try 0.01
+    multiplier: 1.4, // Effect Multiplier
+    reloadOnContextChange: true,
+    touchMultiplier: 2,
+    smoothMobile: 0,
+    smartphone: {
+        smooth: !0,
+        breakpoint: 767
+    },
+    tablet: {
+        smooth: !1,
+        breakpoint: 1024
+    },
     });
+    // SETUP LOAD LOCOMOTIVE
+    setTimeout(() => {  
+        locoScroll.destroy();
+    }, 0);
+    setTimeout(() => {  
+        locoScroll.init();
+    }, 50);
+    setTimeout(() => {  
+        locoScroll.update();
+    }, 1000);
     // WRAP HEADER
     setTimeout(function () {
         addStyleCSS('.headerWeb', 'hdFixed');
@@ -49,7 +70,7 @@ $(document).ready(function () {
     $(".listProduct__product .buttonHideDetail").click(function() {
         $(this).parent().removeClass("showDetail");
     });
-     // SHOW DETAIL
+     // SELECT OPTION
      $(".listProduct__product .blockSelect").children().click(function() {
         $(this).parent().find(".select").removeClass("select");
         $(this).addClass("select");
