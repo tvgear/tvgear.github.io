@@ -2,34 +2,20 @@ $(document).ready(function () {
     // CUSTOM SCROLL
     const lscroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
-        // smooth: true,
-        // lerp : 0.08,
-        // tablet : {
-        //     breakpoint: 0,
-        //     intertia : 0.8,
-        //     getDirection : true,
-        //     smooth : true,
-        // },
-        // smartphone: {
-        //     breakpoint: 0,
-        //     intertia : 0.8,
-        //     getDirection : true,
-        //     smooth : true,
-        // }
         smooth: true,
-    lerp: 0.03, // Linear Interpolation, 0 > 1 // Try 0.01
-    multiplier: 1.4, // Effect Multiplier
-    reloadOnContextChange: true,
-    touchMultiplier: 2,
-    smoothMobile: 0,
-    smartphone: {
-        smooth: !0,
-        breakpoint: 767
-    },
-    tablet: {
-        smooth: !1,
-        breakpoint: 1024
-    },
+        lerp: 0.07, 
+        multiplier: 1.5, 
+        reloadOnContextChange: true,
+        touchMultiplier: 2,
+        smoothMobile: 0,
+        smartphone: {
+            smooth: !0,
+            breakpoint: 767
+        },
+        tablet: {
+            smooth: !1,
+            breakpoint: 1024
+        },
     });
     // SETUP LOAD LOCOMOTIVE
     setTimeout(() => {  
