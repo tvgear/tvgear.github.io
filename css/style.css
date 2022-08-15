@@ -748,7 +748,7 @@
     }
     .blockInfoShop .phoneShop {
         font-family: FONT_BOLD;
-        margin: 5px 0px 0px 0px;
+        margin: 5px 0px 10px 0px;
         font-size: 12px;
     }
     .blockInfoShop .locationShop {
@@ -920,9 +920,9 @@
         cursor: pointer;
         margin: 0px 5px 10px 5px;
         border: 2px solid #AAA;
-        padding: 7px;
+        padding: 7px 5px;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 11px;
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;
