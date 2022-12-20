@@ -735,3 +735,220 @@ html, body {
     border: none;
     color: #FFF;
 }
+
+
+/* INVOICE */
+.fullInvoice {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .blockInfoShop {
+        background: #000;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 0px 0px 30px 0px;
+    }
+    .blockInfoShop .blockLogo {
+        -webkit-animation: none;
+                animation: none;
+        -webkit-transform: scale(0.3);
+            -ms-transform: scale(0.3);
+                transform: scale(0.3);
+        margin: -15px 0px 0px 0px;
+    }
+    .blockInfoShop .blockInfo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: -20px 0px 0px 0px;
+        padding: 0px 25px;
+    }
+    .blockInfoShop .nameShop {
+        font-family: FONT_EXTRABOLD;
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;
+    }
+    .blockInfoShop .phoneShop {
+        font-family: FONT_BOLD;
+        margin: 5px 0px 10px 0px;
+        font-size: 12px;
+    }
+    .blockInfoShop .locationShop {
+        font-family: FONT_BOLD;
+        margin: 10px 0px 0px 0px;
+        text-align: center;
+        line-height: 16px;
+        font-size: 12px;
+    }
+    .blockInfoInvoice {
+        color: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        padding: 25px 20px;
+        background: #FFF;
+    }
+    .blockInfoInvoice .blockTitle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+    }
+    .blockInfoInvoice .textTitle {
+        background: -webkit-linear-gradient(rgb(53,114,231),rgb(94,175,226));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 22px;
+        font-family: FONT_EXTRABOLD;
+        text-transform: uppercase;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .blockInfoInvoice .textTime {
+        margin: 15px 0px 10px 0px;
+        font-family: FONT_BOLD;
+    }
+    .blockInfoInvoice .blockCode {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+    }
+    .blockInfoInvoice .textCodeInvoice {
+        margin: 5px 0px 10px 0px;
+        font-family: FONT_BOLD;
+        color: #ee4d2d;
+    }
+    .blockInfoInvoice .infoCustomer {
+        margin: 30px 0px 0px 0px;
+    }
+    .blockInfoInvoice .infoItem {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        margin: 0px 0px 10px 0px;
+    }
+    .blockInfoInvoice .itemContent {
+        line-height: 18px;
+        font-family: FONT_BOLD;
+    }
+    .blockInfoInvoice .infoProduct {
+        margin: 25px 0px 0px 0px;
+    }
+    .blockInfoInvoice .infoProduct .table {
+        color: #000 !important;
+    }
+    .blockInfoInvoice .table thead {
+        background: #000;
+        color: #FFF;
+    }
+    .blockInfoInvoice .infoPayment {
+        margin: 15px 0px 0px 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .blockInfoInvoice .itemLabel {
+        width: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .blockInfoInvoice .infoPayment .infoItem:last-child .itemContent {
+        color: #ee4d2d;
+        line-height: 18px;
+        font-family: FONT_BOLD;
+        text-transform: uppercase;
+    }
+    .blockInfoInvoice .infoPayment .infoItem:nth-child(4) .itemContent {
+        color: #ee4d2d;
+        line-height: 18px;
+        font-family: FONT_BOLD;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
