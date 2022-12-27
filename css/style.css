@@ -576,17 +576,11 @@ html, body {
     -o-transition: 0.4s all;
     transition: 0.4s all;
 }
-.blockListCate .wrapInfo__copy:hover {
-    background: rgba(227,227,227,1);
-    -webkit-transition: 0.4s all;
-    -o-transition: 0.4s all;
-    transition: 0.4s all;
-}
 .blockListCate .wrapInfo__copy:active {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-    background: rgba(200,200,200,1);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    background: rgba(185,185,185,1);
     -webkit-transition: 0.01s all;
     -o-transition: 0.01s all;
     transition: 0.01s all;
@@ -739,20 +733,20 @@ html, body {
 
 /* INVOICE */
 .fullInvoice {
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     }
     .blockInfoShop {
         background: #000;
@@ -772,18 +766,11 @@ html, body {
                 justify-content: center;
         padding: 0px 0px 15px 0px;
     }
-    .blockInfoShop .blockLogo {
-        -webkit-animation: none;
-                animation: none;
-        -webkit-transform: scale(0.3);
-            -ms-transform: scale(0.3);
-                transform: scale(0.3);
-        margin: -15px 0px 0px 0px;
-    }
     .blockInfoShop .logo__img {
-        width: 100px;
-        height: 100px;
-}
+        width: 60px;
+        height: auto;
+        margin: 15px 0px;
+    }
     .blockInfoShop .blockInfo {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -798,14 +785,12 @@ html, body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin: -20px 0px 0px 0px;
         padding: 0px 25px;
     }
     .blockInfoShop .nameShop {
         font-family: FONT_BOLD;
-        font-size: 16px;
+        font-size: 14px;
         color : #FFF;
-        margin: 0px 0px 5px 0px;
     }
     .blockInfoInvoice {
         color: #000;
@@ -837,14 +822,11 @@ html, body {
         width: 100%;
     }
     .blockInfoInvoice .textTitle {
-        background: -webkit-linear-gradient(rgb(53,114,231),rgb(94,175,226));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 22px;
+        color : #D82434;
+        font-size: 18px;
         font-family: FONT_BOLD;
         text-transform: uppercase;
-        line-height: 30px;
-        letter-spacing: 1px;
+        line-height: calc(18px * 1.3);
     }
     .blockInfoInvoice .textTime {
         margin: 15px 0px 10px 0px;
@@ -867,12 +849,12 @@ html, body {
         width: 100%;
     }
     .blockInfoInvoice .textCodeInvoice {
-        margin: 5px 0px 10px 0px;
+        margin: 0px 0px 10px 0px;
         font-family: FONT_BOLD;
-        color: #ee4d2d;
+        color: rgba(57,127,76,1);
     }
     .blockInfoInvoice .infoCustomer {
-        margin: 30px 0px 0px 0px;
+        margin: 30px 0px;
     }
     .blockInfoInvoice .infoItem {
         display: -webkit-box;
@@ -921,7 +903,7 @@ html, body {
                 justify-content: center;
     }
     .blockInfoInvoice .itemLabel {
-        width: 120px;
+        width: 150px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -932,16 +914,9 @@ html, body {
             -ms-flex-pack: start;
                 justify-content: flex-start;
     }
-    .blockInfoInvoice .infoPayment .infoItem:last-child .itemContent {
+    .blockInfoInvoice .infoPayment .infoItem:first-child .itemContent {
         color: #ee4d2d;
         line-height: 18px;
         font-family: FONT_BOLD;
         text-transform: uppercase;
-    }
-    .blockInfoInvoice .infoPayment .infoItem:nth-child(4) .itemContent {
-        color: #ee4d2d;
-        line-height: 18px;
-        font-family: FONT_BOLD;
-        text-transform: uppercase;
-        text-decoration: underline;
     }
