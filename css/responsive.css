@@ -52,6 +52,20 @@
     .blockListCate .wrapInfo__detail .wrapInfo__detail--time {
         display : none
     }
+    .blockListCate .wrapInfo__copy {
+        -webkit-transition: 0.4s all;
+        -o-transition: 0.4s all;
+        transition: 0.4s all;
+    }
+    .blockListCate .wrapInfo__copy:hover {
+        -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+                transform: scale(0.8);
+        background: rgba(185,185,185,1);
+        -webkit-transition: 0.4s all;
+        -o-transition: 0.4s all;
+        transition: 0.4s all;
+    }
 }
 @media screen and (max-width: 991px) {
     .blockMenuFixed.active {
