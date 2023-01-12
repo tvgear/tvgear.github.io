@@ -922,14 +922,13 @@ html, body {
         text-transform: uppercase;
     }
 
-
 /* BLOCK NOTI */
 .blockNoti {
     width: 100%;
     margin: 30px 0px;
     padding: 20px 30px;
     border-radius: 10px;
-    background: rgb(3, 87, 3);
+    background: rgb(4, 105, 4);
 }
 .blockNoti .blockNoti__content--title {
     font-family: FONT_BOLD;
@@ -944,4 +943,11 @@ html, body {
     font-size: 14px;
     line-height: calc(14px * 1.6);
     font-family: FONT_BOLD;
+}
+
+/* NEXT PRODUCT */
+.blockItem .wrapInfo__nextProduct {
+    color: #D82434;
+    text-decoration: underline;
+    text-transform: capitalize;
 }
