@@ -971,6 +971,6 @@ html, body {
 /* NEXT PRODUCT */
 .blockItem .wrapInfo__nextProduct {
     color: #D82434;
-    text-decoration: underline;
+    font-family: FONT_BOLD;
     text-transform: capitalize;
 }
