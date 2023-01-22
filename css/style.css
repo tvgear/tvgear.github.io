@@ -64,18 +64,18 @@ html, body {
             justify-content : center;
     overflow: hidden;
     z-index : 999;
-    -webkit-transition: 0.4s cubic-bezier(0.92,0.27,0.62,1.23);
-    -o-transition: 0.4s cubic-bezier(0.92,0.27,0.62,1.23);
-    transition: 0.4s cubic-bezier(0.92,0.27,0.62,1.23);
+    -webkit-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    -o-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
 .blockMenuFixed.active {
     width : 450px;
     background : #FFF;
     height : 480px;
     padding: 7.5px 15px;
-    -webkit-transition: 0.4s cubic-bezier(0.92,0.27,0.62,1.23);
-    -o-transition: 0.4s cubic-bezier(0.92,0.27,0.62,1.23);
-    transition: 0.4s cubic-bezier(0.92,0.27,0.62,1.23);
+    -webkit-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    -o-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
 .blockMenuFixed .blockMenuFixed__wrap {
     width : 100%;
@@ -234,17 +234,17 @@ html, body {
     -webkit-transform-origin: bottom center;
         -ms-transform-origin: bottom center;
             transform-origin: bottom center;
-    -webkit-transition: 0.4s all;
-    -o-transition: 0.4s all;
-    transition: 0.4s all;
+    -webkit-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    -o-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
 .blockMenuFixed.active .blockMenuFixed__wrap--content {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: 0.4s all;
-    -o-transition: 0.4s all;
-    transition: 0.4s all;
+    -webkit-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    -o-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
 .blockMenuFixed__wrap--contact {
     width: 100%;
