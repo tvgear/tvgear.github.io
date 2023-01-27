@@ -311,7 +311,7 @@ html, body {
 }
 .blockMenuFixed .categories__item {
     width: calc(100% / 2 - 5px);
-    height: 50px;
+    height: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
