@@ -115,11 +115,15 @@
         text-align : center;
         line-height : calc(14px * 1.3);
     }
+    .fullListCode__filter,
+    .fullListCode__update {
+        width: calc(100% - 30px);
+    }
    
 }
 @media screen and (max-width: 479px) {
     .blockMenuFixed.active {
-        height : 480px;
+        height : 500px;
         top : unset;
         bottom : 0px;
         overflow : hidden;
