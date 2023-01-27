@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
     // SCROLL TO ID
     let anchorlinks = document.querySelectorAll('a[href^="#"]')
-    for (let item of anchorlinks) { // relitere 
+    for (let item of anchorlinks) {
       item.addEventListener('click', (e) => {
         menuFixed = !menuFixed;
         $('.blockMenuFixed').removeClass('active');
@@ -36,6 +36,20 @@ $(document).ready(function () {
       }
     });
     copyBanking();
+
+    // SEARCH CODE
+    window.addEventListener("load", () => {
+      var filter = document.getElementById("filterItem"), 
+          list = document.querySelectorAll("#listItem li");
+      filter.onkeyup = () => {
+        let search = filter.value.toLowerCase();
+        for (let i of list) {
+          let item = i.innerHTML.toLowerCase();
+          if (item.indexOf(search) == -1) { i.classList.add("hide"); }
+          else { i.classList.remove("hide"); }
+        }
+      };
+    });
 });
 // SEARCH INVOICE
 function checkInvoice() {
