@@ -987,7 +987,7 @@ html, body {
 }
 
 .fullListCode__filter {
-    max-width: 600px;
+    max-width: 650px;
     position: fixed;
     top : 10px;
     left: 0;
@@ -1005,7 +1005,7 @@ html, body {
 }
 
 .fullListCode__update {
-    max-width: 600px;
+    max-width: 650px;
     position: fixed;
     top : 50px;
     left: 0;
@@ -1015,6 +1015,7 @@ html, body {
     line-height: calc(12px * 1.5);
     text-align: center;
     background: #ee4d2d;
+    border-top: none;
     border: 2px solid #000;
     padding: 5px 0px;
     color: #FFF;
@@ -1080,6 +1081,11 @@ html, body {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    transition: 0.4s all;
+}
+.fullListCode__listItem--item .item__code:hover {
+    background: rgb(4, 101, 4);
+    transition: 0.4s all;
 }
 .fullListCode__listItem--item:first-child {
     border-top: 2px solid transparent;
