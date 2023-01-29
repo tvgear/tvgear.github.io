@@ -1015,13 +1015,13 @@ html, body {
     left: 0;
     right: 0;
     margin: auto;
-    font-size: 11px;
-    line-height: calc(11px * 1.5);
+    font-size: 10px;
+    line-height: calc(10px * 1.3);
     text-align: center;
     background: #ee4d2d;
-    border-radius: 20px;
+    border-radius: 10px;
     border-top: none;
-    padding: 2.5px 0px;
+    padding: 2.5px 10px;
     color: #FFF;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -1033,7 +1033,7 @@ html, body {
     position: relative;
     z-index: 2;
     max-width: 650px;
-    margin: 110px auto 15px auto;
+    margin: 100px auto 15px auto;
     padding: 10px 15px;
     background: #FFF;
     overflow-y: auto;
@@ -1072,6 +1072,7 @@ html, body {
 }
 .fullListCode__listItem--item .item__name {
     font-family: FONT_BOLD;
+    line-height: calc(14px * 1.3);
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
