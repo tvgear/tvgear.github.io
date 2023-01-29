@@ -50,6 +50,9 @@ $(document).ready(function () {
         }
       };
     });
+    // COUNT ORDER
+    const countOrder = $('#listItem li').length;
+    document.getElementById("numberOrder").innerHTML = countOrder;
 });
 // SEARCH INVOICE
 function checkInvoice() {
@@ -67,3 +70,4 @@ function copyBanking() {
     window.getSelection().removeAllRanges();
   });
 }
+// COUNT ORDER
