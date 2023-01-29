@@ -73,7 +73,7 @@ html, body {
 .blockMenuFixed.active {
     width : 450px;
     background : #FFF;
-    height : 435px;
+    height : 460px;
     padding: 7.5px 15px;
     -webkit-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
     -o-transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
@@ -616,7 +616,7 @@ html, body {
 .blockListCate .listShop__item {
     background: #FFF;
     width: calc(100% / 2 - 7.5px);
-    min-height: 125px;
+    min-height: 100px;
     border-radius: 8px;
     margin: 0px 0px 15px 0px;
     display: -webkit-box;
