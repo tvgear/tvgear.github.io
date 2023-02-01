@@ -1,5 +1,6 @@
 
 
+
 /* ---------------------- FONT ---------------------- */
 @font-face {
     font-family: FONT_MEDIUM;
@@ -1082,9 +1083,15 @@ html, body {
     background: rgb(4, 121, 4);
     height: 30px;
     min-width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 15px;
     color: #FFF;
     text-transform: uppercase;
@@ -1093,10 +1100,14 @@ html, body {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .fullListCode__listItem--item .item__code:hover {
     background: rgb(4, 101, 4);
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .fullListCode__listItem--item:first-child {
