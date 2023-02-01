@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 1199px) {
     .blockContainer {
         max-width: unset;
@@ -59,7 +61,8 @@
         background: rgb(68, 158, 68);
     }
     .blockListCate .wrapInfo__copy:hover .wrapInfo__copy--img {
-        filter: invert(1);
+        -webkit-filter: invert(1);
+                filter: invert(1);
     }
 }
 @media screen and (max-width: 991px) {
