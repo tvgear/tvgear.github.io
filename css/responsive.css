@@ -87,9 +87,7 @@
 }
 @media screen and (max-width: 767px) {
     .blockMenuFixed.active {
-        max-height : 460px;
-        top : 0px;
-        bottom : unset;
+        bottom : 0px;
         overflow-y : auto;
     }
     .blockMenuFixed .categories__item {
