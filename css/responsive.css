@@ -64,6 +64,10 @@
         -webkit-filter: invert(1);
                 filter: invert(1);
     }
+    .blockItem .wrapInfo__nextProduct {
+        text-align: center;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 991px) {
     .blockMenuFixed.active {
