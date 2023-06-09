@@ -5,820 +5,1170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TVGEAR ™ - Gaming Gear New & 2ND</title>
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" />
     <link type="text/css" rel="stylesheet" href="css/reset.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link type="text/css" rel="stylesheet" href="css/responsive.css" />
-    <link rel="shortcut icon" href="../images/icons/favicon.ico" />
 </head>
 
 <body>
-
     <div class="fullWeb">
-        Website đang nâng cấp. Xem list hàng mới nhất tại bài ghim ở <a href="https://www.facebook.com/thuanvo1997/" target="_blank" style="color: darkred;"
-        >đây</a>
-        <!-- <div class="blockMenuFixed">
-            <div class="blockMenuFixed__wrap">
-                <div class="blockMenuFixed__wrap--tool">
-                    <a href="https://www.facebook.com/thuanvo1997/" target="_blank" class="blockMenuFixed__wrap--logo">
-                        <img class="logo__img" src="images/logo/lg-black.jpg" alt="logo">
-                    </a>
-                    <div class="blockMenuFixed__wrap--btnMenu">
-                        <div class="btnMenu__line"></div>
-                        <div class="btnMenu__line"></div>
-                        <div class="btnMenu__line"></div>
+        <div class="blockHeader">
+            <div class="blockHeader__wrap blockContainer">
+                <div class="blockLogo">
+                    <div class="blockLogo__wrap">
+                        <img class="blockLogo__wrap--img" src="images/logo/logo.jpg" alt="logoTVGEAR" />
                     </div>
                 </div>
-                <div class="blockMenuFixed__wrap--content">
-                    <div class="blockMenuFixed__wrap--categories">
-                        <a href="#mouseGaming" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icMouseGaming.png">
-                            <p class="categories__item--text">Chuột Gaming</p>
-                        </a>
-                        <a href="#mouseOffice" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icMouseOffice.png">
-                            <p class="categories__item--text">Chuột Văn Phòng</p>
-                        </a>
-                        <a href="#keyboard" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icKeyboard.png">
-                            <p class="categories__item--text">Bàn Phím</p>
-                        </a>
-                        <a href="#headphone" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icHeadphone.png">
-                            <p class="categories__item--text">Tai Nghe</p>
-                        </a>
-                        <a href="#webcam" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icWebcam.png">
-                            <p class="categories__item--text">Webcam</p>
-                        </a>
-                        <a href="#pad" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icMousePad.png">
-                            <p class="categories__item--text">Pad</p>
-                        </a>
-                        <a href="#accessory" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icAccessory.png">
-                            <p class="categories__item--text">Phụ Kiện</p>
-                        </a>
-                        <a href="#services" class="categories__item">
-                            <img class="categories__item--img" src="images/icon/icServices.png">
-                            <p class="categories__item--text">Dịch Vụ</p>
-                        </a>
-                    </div>
-                    <div class="blockMenuFixed__wrap--contact">
-                        <a href="https://www.facebook.com/thuanvo1997/" target="_blank" class="contact__direct">
-                            <img class="contact__direct--img" src="images/icon/icFacebook.png" />
-                        </a>
-                        <a href="https://www.m.me/thuanvo1997/" target="_blank" class="contact__direct">
-                            <img class="contact__direct--img" src="images/icon/icMess.png" />
-                        </a>
-                        <a href="https://zalo.me/0398637036" target="_blank" class="contact__direct">
-                            <img class="contact__direct--img" src="images/icon/icZalo.png" />
-                        </a>
-                    </div>
-                    <div class="blockMenuFixed__wrap--direct">
-                        <a href="#payment" class="direct__link">
-                            <p class="direct__link--text">Thông tin thanh toán</p>
-                        </a>
-                        <a href="#shop" class="direct__link">
-                            <p class="direct__link--text">Địa chỉ cửa hàng</p>
-                        </a>
+                <div class="blockMenu">
+                    <div class="blockMenu__listCate">
+                        <div class="blockMenu__listCate--item">
+                            <div class="item__nameCate active">
+                                <p class="item__nameCate--text">Chuột</p>
+                            </div>
+                            <div class="item__listChild">
+                                <button class="item__listChild--item active" onclick="selectTab(event, 'mouseLogitech')">
+                                    <div class="item__imgChild icLogi">
+                                        <img class="item__imgChild--img" src="images/icon/icLogitech.png" />
+                                    </div>
+                                    <p class="item__nameChild">Logitech</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'mouseRazer')">
+                                    <div class="item__imgChild icRazer">
+                                        <img class="item__imgChild--img" src="images/icon/icRazer.webp" />
+                                    </div>
+                                    <p class="item__nameChild">Razer</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blockMenu__listCate--item">
+                            <div class="item__nameCate">
+                                <p class="item__nameCate--text">Phím</p>
+                            </div>
+                            <div class="item__listChild">
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyboardLogitech')">
+                                    <div class="item__imgChild icLogi">
+                                        <img class="item__imgChild--img" src="images/icon/icLogitech.png" />
+                                    </div>
+                                    <p class="item__nameChild">Logitech</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyboardRazer')">
+                                    <div class="item__imgChild icRazer">
+                                        <img class="item__imgChild--img" src="images/icon/icRazer.webp" />
+                                    </div>
+                                    <p class="item__nameChild">Razer</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blockMenu__listCate--item">
+                            <div class="item__nameCate">
+                                <p class="item__nameCate--text">Tai Nghe</p>
+                            </div>
+                            <div class="item__listChild">
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyLogitech')">
+                                    <div class="item__imgChild icLogi">
+                                        <img class="item__imgChild--img" src="images/icon/icLogitech.png" />
+                                    </div>
+                                    <p class="item__nameChild">Logitech</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild">
+                                        <img class="item__imgChild--img" src="images/icon/icHyperX.jpg" />
+                                    </div>
+                                    <p class="item__nameChild">HyperX</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild">
+                                        <img class="item__imgChild--img" src="images/icon/icSteelSeries.png" />
+                                    </div>
+                                    <p class="item__nameChild">SteelSeries</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild icRazer">
+                                        <img class="item__imgChild--img" src="images/icon/icRazer.webp" />
+                                    </div>
+                                    <p class="item__nameChild">Razer</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blockMenu__listCate--item">
+                            <div class="item__nameCate">
+                                <p class="item__nameCate--text">Webcam</p>
+                            </div>
+                            <div class="item__listChild">
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyLogitech')">
+                                    <div class="item__imgChild icLogi">
+                                        <img class="item__imgChild--img" src="images/icon/icLogitech.png" />
+                                    </div>
+                                    <p class="item__nameChild">Logitech</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blockMenu__listCate--item">
+                            <div class="item__nameCate">
+                                <p class="item__nameCate--text">Pad</p>
+                            </div>
+                            <div class="item__listChild">
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyLogitech')">
+                                    <div class="item__imgChild icLogi">
+                                        <img class="item__imgChild--img" src="images/icon/icLogitech.png" />
+                                    </div>
+                                    <p class="item__nameChild">Logitech</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild">
+                                        <img class="item__imgChild--img" src="images/icon/icSteelSeries.png" />
+                                    </div>
+                                    <p class="item__nameChild">SteelSeries</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild icZowie">
+                                        <img class="item__imgChild--img" src="images/icon/icZowie.webp" />
+                                    </div>
+                                    <p class="item__nameChild">Zowie</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blockMenu__listCate--item">
+                            <div class="item__nameCate">
+                                <p class="item__nameCate--text">Phụ Kiện</p>
+                            </div>
+                            <div class="item__listChild">
+                                <button class="item__listChild--item" onclick="selectTab(event, 'receiver')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icReceiver.png" />
+                                    </div>
+                                    <p class="item__nameChild">Đầu Thu</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icSoundCard.png" />
+                                    </div>
+                                    <p class="item__nameChild">Sound Card</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icMicro.png" />
+                                    </div>
+                                    <p class="item__nameChild">Micro</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyRazer')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icSpeaker.png" />
+                                    </div>
+                                    <p class="item__nameChild">Loa</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blockMenu__listCate--item">
+                            <div class="item__nameCate">
+                                <p class="item__nameCate--text">Dịch Vụ</p>
+                            </div>
+                            <div class="item__listChild services">
+                                <button class="item__listChild--item" onclick="selectTab(event, 'fixedGear')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icFix.png" />
+                                    </div>
+                                    <p class="item__nameChild">Sửa Chữa</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyLogitech')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icWarranty.png" />
+                                    </div>
+                                    <p class="item__nameChild">Bảo Hành</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyLogitech')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icContact.png" />
+                                    </div>
+                                    <p class="item__nameChild">Liên Hệ</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyLogitech')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icBank.png" />
+                                    </div>
+                                    <p class="item__nameChild">Chuyển Khoản</p>
+                                </button>
+                                <button class="item__listChild--item" onclick="selectTab(event, 'keyLogitech')">
+                                    <div class="item__imgChild icTrans">
+                                        <img class="item__imgChild--img" src="images/icon/icAddress.png" />
+                                    </div>
+                                    <p class="item__nameChild">Địa Chỉ</p>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="blockListCate blockContainer">
-            <section class="blockNoti">
-                <div class="blockNoti__content">
-                    <p class="blockNoti__content--title">Thông Báo</p>
-                    <p class="blockNoti__content--text">Đối với một số sản phẩm tai nghe thuộc hãng HyperX và SteelSeries quý khách vui lòng tham khảo giá trên bài ghim ở trang cá nhân của shop</p>
-                </div>
-            </section>
-            <section id="mouseGaming" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Chuột Gaming</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g102-gen2.png" />
+        <div class="blockContent">
+            <div class="blockContent__wrapContent blockContainer">
+                <div class="blockContent__wrapContent--listPage">
+                    <!-- MOUSE LOGITECH -->
+                    <div id="mouseLogitech" class="listPage__item active">
+                       <div class="listPage__item--title gaming">
+                            <p class="title__text">Chuột Logitech - Gaming</p>
+                       </div>
+                       <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g102.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">G102</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 3T</p>
+                                            <p class="listPrice__item--price">250.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
                             </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G102 Gen 2</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">270.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New, BH 6T - <span class="price__label">380.000đ</span></p>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g102-gen2.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G102 Gen 2</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">New, BH 6T</p>
+                                             <p class="listPrice__item--price">390.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g302.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G302</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">95%, BH 3T</p>
+                                             <p class="listPrice__item--price">350.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g402.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G402</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">95%, BH 3T</p>
+                                             <p class="listPrice__item--price">400.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/gpro-hero.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">GPRO Hero</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">95%, BH 3T</p>
+                                             <p class="listPrice__item--price">450.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g403-hero.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G403 Hero</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">90%, BH 3T</p>
+                                             <p class="listPrice__item--price">550.000đ</p>
+                                         </div>
+                                         <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">680.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g502-hero.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G502 Hero</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">95%, BH 3T</p>
+                                             <p class="listPrice__item--price">580.000đ</p>
+                                         </div>
+                                         <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, +Tạ, BH 3T</p>
+                                            <p class="listPrice__item--price">650.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Tạ, BH 3T</p>
+                                            <p class="listPrice__item--price">750.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g304-white.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G304 White</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">98%, BH 3T</p>
+                                             <p class="listPrice__item--price">650.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g603.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G603</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">95%, BH 3T</p>
+                                             <p class="listPrice__item--price">790.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g703.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G703</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">95%, BH 3T</p>
+                                             <p class="listPrice__item--price">900.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g703.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G703 Hero</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">98%, BH 3T</p>
+                                             <p class="listPrice__item--price">1.080.000đ</p>
+                                         </div>
+                                         <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Cáp, BH 3T</p>
+                                            <p class="listPrice__item--price">1.180.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">New, BH 6T</p>
+                                            <p class="listPrice__item--price">1.480.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/G903.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G903</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">98%, BH 3T</p>
+                                             <p class="listPrice__item--price">1.150.000đ</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/G903.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G903 Hero</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">98%, BH 3T</p>
+                                             <p class="listPrice__item--price">1.480.000đ</p>
+                                         </div>
+                                         <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Box, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g502-wireless.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G502 Wireless</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">98%, BH 3T</p>
+                                             <p class="listPrice__item--price">1.480.000đ</p>
+                                         </div>
+                                         <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Box, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/gpro-wireless.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">GPRO Wireless</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                             <p class="listPrice__item--info">98%, BH 3T</p>
+                                             <p class="listPrice__item--price">1.480.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Box, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, Pink, BH 3T</p>
+                                            <p class="listPrice__item--price">1.780.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/gpro-x-spl.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">GPRO X SuperLight</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">90%, Trắng, BH 3T</p>
+                                             <p class="listPrice__item--price">1.880.000đ</p>
+                                         </div>
+                                         <div class="listPrice__item">
+                                            <p class="listPrice__item--info">99%, BH 3T</p>
+                                            <p class="listPrice__item--price">2.080.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">99%, +Box, BH 3T</p>
+                                            <p class="listPrice__item--price">2.180.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/g303.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G303</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                         <div class="listPrice__item">
+                                             <p class="listPrice__item--info">98%, BH 3T</p>
+                                             <p class="listPrice__item--price">1.480.000đ</p>
+                                         </div>
+                                         <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Box, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                       </div>
+                       <div class="listPage__item--title office">
+                            <p class="title__text">Chuột Logitech - Văn Phòng</p>
+                        </div>
+                        <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/m185.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">M185</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 1T</p>
+                                            <p class="listPrice__item--price">90.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/M190.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">M190</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 3T</p>
+                                            <p class="listPrice__item--price">160.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/m221.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">M221</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 3T</p>
+                                            <p class="listPrice__item--price">160.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/m325.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">M325</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 3T</p>
+                                            <p class="listPrice__item--price">180.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/m350.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">M350</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 3T</p>
+                                            <p class="listPrice__item--price">250.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">280.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/m590.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">M590</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 3T</p>
+                                            <p class="listPrice__item--price">390.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/m650.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">M650 M/L</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">New NoBox, BH 3T</p>
+                                            <p class="listPrice__item--price">550.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/mx-master-2s.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">MX Master 2s</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 3T</p>
+                                            <p class="listPrice__item--price">790.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, +Cáp, BH 3T</p>
+                                            <p class="listPrice__item--price">850.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/mx-master-3-3s.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">MX Master 3</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">1.380.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Recei, BH 3T</p>
+                                            <p class="listPrice__item--price">1.480.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Recei, +Cáp, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/mx-master-3-3s.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">MX Master 3s</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">1.790.000đ</p>
+                                        </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g203.png" />
+                    </div>
+                     <!-- MOUSE RAZER -->
+                    <div id="mouseRazer" class="listPage__item">
+                        <div class="listPage__item--title">
+                            <p class="title__text">Chuột Razer - Gaming</p>
+                       </div>
+                       <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/da-v2-mini.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Deathadder V2 Mini</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">580.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
                             </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G203</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, BH 3T - <span class="price__label">280.000đ</span></p>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/da-elite.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Deathadder Elite</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">680.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/da-v2.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Deathadder V2</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">780.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/orochi-v2.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Orochi V2</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, Bluetooth, BH 1T</p>
+                                            <p class="listPrice__item--price">550.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">890.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/basilisk-x-hyperspeed.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Basilisk X Hyperspeed</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">750.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 12/24</p>
+                                            <p class="listPrice__item--price">880.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/basilisk-ultimate.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Basilisk Ultimate</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Dock, BH 3T</p>
+                                            <p class="listPrice__item--price">1.680.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/viper-ultimate.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Viper Ultimate</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Dock, BH 3T</p>
+                                            <p class="listPrice__item--price">1.650.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/viper-ultimate.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Viper Ultimate</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">1.580.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Dock, BH 3T</p>
+                                            <p class="listPrice__item--price">1.650.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/viper-pro-v2.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Viper Pro v2</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">2.450.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">New, BH 3T</p>
+                                            <p class="listPrice__item--price">2.580.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/da-v2-x-hyperspeed.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Deathadder v2 X Hyperspeed</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">950.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/da-v2-pro.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Deathadder v2 Pro</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">1.380.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Dock, BH 3T</p>
+                                            <p class="listPrice__item--price">1.650.000đ</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/mouses/da-v3-pro.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                   <div class="item__wrapInfo--name">Deathadder v3 Pro</div>
+                                   <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 3T</p>
+                                            <p class="listPrice__item--price">2.480.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, +Box, BH 3T</p>
+                                            <p class="listPrice__item--price">2.680.000đ</p>
+                                        </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g302.png" />
+                    </div>
+                    <!-- KEYBOARD LOGITECH -->
+                    <div id="keyboardLogitech" class="listPage__item">
+                        <div class="listPage__item--title gaming">
+                            <p class="title__text">Phím Logitech - Gaming</p>
+                        </div>
+                        <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/g512-gx.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G512 GX</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, LSM, BH 1T</p>
+                                            <p class="listPrice__item--price">890.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G302</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">320.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">350.000đ</span></p>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/g413-se-tkl.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G413 SE TKL</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">New, BH 1T</p>
+                                            <p class="listPrice__item--price">1.050.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/g413-se-fs.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G413 SE Full Size</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">New, BH 6T</p>
+                                            <p class="listPrice__item--price">1.350.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/g610.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G610</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 1T</p>
+                                            <p class="listPrice__item--price">1.280.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/gpro-x.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">GPRO 2022</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 1T</p>
+                                            <p class="listPrice__item--price">1.880.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/gpro-x.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">GPRO X</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">New, BH 6T</p>
+                                            <p class="listPrice__item--price">1.980.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/g613.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G613</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">95%, BH 24H</p>
+                                            <p class="listPrice__item--price">750.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 1T</p>
+                                            <p class="listPrice__item--price">1.080.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/g913-tkl.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G913 TKL</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 1T</p>
+                                            <p class="listPrice__item--price">2.380.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, White, BH 1T</p>
+                                            <p class="listPrice__item--price">2.680.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/g915-fs.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">G915 Full Size</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 1T</p>
+                                            <p class="listPrice__item--price">2.680.000đ</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g402.png" />
+                        <div class="listPage__item--title office">
+                            <p class="title__text">Phím Logitech - Văn Phòng</p>
+                        </div>
+                        <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/mx-keys-mini.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">MX Keys Mini</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 1T</p>
+                                            <p class="listPrice__item--price">1.650.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G402</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 90%, BH 3T - <span class="price__label">350.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">400.000đ</span></p>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/mx-keys-fs.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">MX Keys Full Size</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">97%, BH 1T</p>
+                                            <p class="listPrice__item--price">1.750.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">99%, BH 1T</p>
+                                            <p class="listPrice__item--price">1.850.000đ</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/gpro-hero.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">GPRO Hero</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">450.000đ</span></p>
+                    </div>
+                    <!-- KEYBOARD RAZER -->
+                    <div id="keyboardRazer" class="listPage__item">
+                        <div class="listPage__item--title gaming">
+                            <p class="title__text">Phím Razer - Gaming</p>
+                        </div>
+                        <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/keyboards/razer-blackwidow-v3-mini.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">Razer Blackwidow v3 Mini</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">98%, BH 1T</p>
+                                            <p class="listPrice__item--price">890.000đ</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g403-hero.png" />
+                    </div>
+                    <!-- RECEIVER -->
+                    <div id="receiver" class="listPage__item">
+                        <div class="listPage__item--title">
+                            <p class="title__text">Đầu Thu - Logitech</p>
+                        </div>
+                        <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/accessories/receiver-mouse.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">Đầu Thu Chuột</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">G403, G603, G703, G903, GPRO</p>
+                                            <p class="listPrice__item--price">350.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">GPRO X SPL, G303, G502 X Plus</p>
+                                            <p class="listPrice__item--price">600.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item__wrapNoti">
+                                    <p class="item__wrapNoti--text">Hàng Order 7 - 15 Ngày</p>
+                                </div>
                             </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G403 Hero</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 90%, BH 3T - <span class="price__label">550.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">650.000đ</span></p>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/accessories/receiver-headphone.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">Đầu Thu Tai Nghe</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">G733, GPRO X</p>
+                                            <p class="listPrice__item--price">1.100.000đ</p>
+                                        </div>
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">G935</p>
+                                            <p class="listPrice__item--price">1.150.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item__wrapNoti">
+                                    <p class="item__wrapNoti--text">Hàng Order 7 - 15 Ngày</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g502-hero.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G502 Hero</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 90%, BH 3T - <span class="price__label">590.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, Full Tạ, BH 3T - <span class="price__label">750.000đ</span></p>
+                    </div>
+                    <!-- FIXED GEAR -->
+                    <div id="fixedGear" class="listPage__item">
+                        <div class="listPage__item--title">
+                            <p class="title__text">Sửa Chữa Chuột</p>
+                        </div>
+                        <div class="listPage__item--listProduct">
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/accessories/fixed-switch.webp" />
+                                </div>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">Thay Switch</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">Omron, Kaih, Huano, ... BH 3 - 6T</p>
+                                            <p class="listPrice__item--price">Liên Hệ</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g304.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G304</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, Dán Logo, BH 3T - <span class="price__label">500.000đ</span></p>
+                            <div class="listProduct__item">
+                                <div class="item__wrapImg">
+                                    <img class="item__wrapImg--img" src="images/product/accessories/fixed-scroll.webp" />
                                 </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g304-white.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G304 White</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">650.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g603.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G603</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">780.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New, BH 6T - <span class="price__label">1.080.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g703-hero.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G703</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">880.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">980.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g703-hero.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G703 Hero</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">1.100.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New, BH 6T - <span class="price__label">1.480.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g903.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G903</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 97%, BH 3T - <span class="price__label">1.100.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">1.150.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g903-hero.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G903 Hero</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">1.480.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">1.580.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, Box, BH 3T - <span class="price__label">1.650.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/g502-wireless.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G502 Wireless</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">1.580.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, Box, BH 3T - <span class="price__label">1.680.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/gpro-wireless.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">GPRO Wireless</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">1.490.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">1.590.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, Box, BH 3T - <span class="price__label">1.690.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 99%, Box, BH Hãng - <span class="price__label">Liên Hệ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/gpro-x-super-light.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">GPRO X Superlight</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">2.080.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New NB, Đen, BH 3T - <span class="price__label">2.180.000</span></p>
-                                    <p class="wrapInfo__listPrice--price">New NB, Hồng, BH 3T - <span class="price__label">2.380.000</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 99%, Box, BH Hãng - <span class="price__label">Liên Hệ</span></p>
+                                <div class="item__wrapInfo">
+                                    <div class="item__wrapInfo--name">Thay Lăn Cuộn / Bánh Xe</div>
+                                    <div class="item__wrapInfo--listPrice">
+                                        <div class="listPrice__item">
+                                            <p class="listPrice__item--info">Các dòng Logitech, BH 3 - 6T</p>
+                                            <p class="listPrice__item--price">Liên Hệ</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="mouseOffice" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Chuột Văn Phòng</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/m185.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">M185 / M190 / M221</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__nextProduct">Mua SL >10, giảm 10K</span></p>
-                                    <br />
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">80.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">90.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">170.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/m331.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">M330/M325</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">190.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/m350.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">M350</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">250.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">280.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/m590.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">M590</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 3T - <span class="price__label">450.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/m650.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">M650 M/L</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">New NoBox, BH 3T - <span class="price__label">550.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/mx-master-2s.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">MX Master 2s</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">790.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, +Cáp, BH 3T - <span class="price__label">850.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/mx-anywhere-3.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">MX Anywhere 3</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 3T - <span class="price__label">1.250.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/mx-master-3.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">MX Master 3</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, Win/Mac, BH 3T - <span class="price__label">1.580.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/mouses/mx-master-3.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">MX Master 3s</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, Trắng, BH 3T - <span class="price__label">1.880.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="keyboard" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">BÀN PHÍM</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/keyboards/g610.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G610</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 1T - <span class="price__label">1.180.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/keyboards/g512-gx.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G512 GX</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, Red, LSM, BH 1T - <span class="price__label">890.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/keyboards/g413-se-fs.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G413 SE TKL/FS</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">New, TKL, BH 3T - <span class="price__label">1.080.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New, FS, BH 6T - <span class="price__label">1.350.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/keyboards/g813.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G813</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, Blue, BH 1T - <span class="price__label">1.450.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/keyboards/gpro-x.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">GPRO X/2022</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, Bản 2022, BH 1T - <span class="price__label">1.750.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, Bản X, BH 1T - <span class="price__label">1.850.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/keyboards/g613.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G613</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, BH 1T - <span class="price__label">1.080.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/keyboards/g913.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G913 TKL/FS</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, Box, BH 1T - <span class="price__label">2.680.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New, BH 1T - <span class="price__label">3.980.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="headphone" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Tai Nghe</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/headphones/g333.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G333</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, BH 3/24 - <span class="price__label">780.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/headphones/gpro-gen2.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G PRO Gen 2</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 1T - <span class="price__label">1.100.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/headphones/g633s.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G633s</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 1T - <span class="price__label">1.450.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/headphones/gpro-x.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G PRO X</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 1T - <span class="price__label">1.350.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/headphones/g733.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G733</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, BH 1T - <span class="price__label">2.150.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, +Box, BH 1T - <span class="price__label">2.180.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New OpenBox, BH 1T - <span class="price__label">2.350.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/headphones/g933s.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G935/G933s</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, BH 1T - <span class="price__label">1.350.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 98%, Box, BH 1T - <span class="price__label">1.450.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/headphones/gpro-x.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G PRO X Wireless</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 90%, BH 1T - <span class="price__label">2.480.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, BH 1T - <span class="price__label">2.680.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="webcam" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Webcam</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/webcams/c930e.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">C930e</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 95%, BH 1T - <span class="price__label">1.380.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New NB, BH 3T - <span class="price__label">1.580.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/webcams/c922.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">C922</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">New, BH 3T - <span class="price__label">1.680.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/webcams/c1000e.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">C1000e Brio 4K</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại Hình 95%, BH 1T - <span class="price__label">1.980.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">New No Box, BH 3T - <span class="price__label">2.880.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="pad" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">PAD</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/pads/g640-kda.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">G640 KDA</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">New - <span class="price__label">280.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/pads/qck-heavy-l.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">QCK Heavy L</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">New - <span class="price__label">750.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/pads/pad-powerplay.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">Power Play</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Ngoại hình 98%, +Pad Cứng, Box - <span class="price__label">1.590.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="accessory" class="blockItem">
-
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Phụ Kiện</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapImg">
-                                <img class="wrapImg--img" src="images/product/accessories/receiver-gaming.png" />
-                            </div>
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">Đầu Thu Chuột Gaming</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__listPrice--price">Các Dòng G - <span class="price__label">350.000đ</span></p>
-                                    <p class="wrapInfo__listPrice--price">Dòng GPRO X SPL - <span class="price__label">590.000đ</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="services" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Dịch Vụ (Khu Vực HCM)</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listProduct">
-                        <div class="listProduct__item">
-                            <div class="listProduct__item--wrapInfo">
-                                <p class="wrapInfo__name">Sửa Chữa Chuột/Phím</p>
-                                <div class="wrapInfo__listPrice">
-                                    <p class="wrapInfo__nextProduct">Liên Hệ Báo Giá</span></p>
-                                    <br />
-                                    <p class="wrapInfo__listPrice--price"><span class="price__label">Thay Switch Cho Chuột</span></p>
-                                    <p class="wrapInfo__listPrice--price"><span class="price__label">Thay Con Lăn/Bánh Xe Cho Chuột</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="payment" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Thông Tin Thanh Toán</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listBanking">
-                        <div class="listBanking__item">
-                            <div class="listBanking__item--wrapImg">
-                                <img class="wrapImg__img" src="images/icon/icVCB.webp" />
-                            </div>
-                            <div class="listBanking__item--wrapInfo">
-                                <p class="wrapInfo__nameBank">Vietcombank</p>
-                                <p class="wrapInfo__nameUser">VO TIEN THUAN</p>
-                                <p class="wrapInfo__numberBank vcb">0461000636243</p>
-                                <button class="wrapInfo__copy">
-                                    <img class="wrapInfo__copy--img" src="images/icon/icCopy.png" />
-                                </button>
-                            </div>
-                        </div>
-                        <div class="listBanking__item">
-                            <div class="listBanking__item--wrapImg">
-                                <img class="wrapImg__img mb" src="images/icon/icMB.webp" />
-                            </div>
-                            <div class="listBanking__item--wrapInfo">
-                                <p class="wrapInfo__nameBank">MB Bank</p>
-                                <p class="wrapInfo__nameUser">VO TIEN THUAN</p>
-                                <p class="wrapInfo__numberBank mb copy">9704229282239321</p>
-                                <button class="wrapInfo__copy">
-                                    <img class="wrapInfo__copy--img" src="images/icon/icCopy.png" />
-                                </button>
-                            </div>
-                        </div>
-                        <div class="listBanking__item">
-                            <div class="listBanking__item--wrapImg">
-                                <img class="wrapImg__img" src="images/icon/icMM.jpeg" />
-                            </div>
-                            <div class="listBanking__item--wrapInfo">
-                                <p class="wrapInfo__nameBank">MOMO</p>
-                                <p class="wrapInfo__nameUser">VO TIEN THUAN</p>
-                                <p class="wrapInfo__numberBank mm copy">0398637036</p>
-                                <button class="wrapInfo__copy">
-                                    <img class="wrapInfo__copy--img" src="images/icon/icCopy.png" />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="shop" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Địa Chỉ Cửa Hàng</p>
-                    <p class="blockItem__title--warning">* Hàng có thể có ở chi nhánh này nhưng không có ở chi nhánh khác, vui lòng liên hệ trước nếu đến mua trực tiếp</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listShop">
-                        <div class="listShop__item">
-                            <div class="listShop__item--wrapInfo">
-                                <p class="wrapInfo__location">Cửa Hàng Miền Bắc</p>
-                                <p class="wrapInfo__detail">• Thôn Du Mỹ, Vân Du, Ân Thi, Hưng Yên</p>
-                            </div>
-                        </div>
-                        <div class="listShop__item">
-                            <div class="listShop__item--wrapInfo">
-                                <p class="wrapInfo__location">Cửa Hàng Miền Nam</p>
-                                <p class="wrapInfo__detail">• 506/4 Đường 3 Tháng 2, P.14, Q.10, HCM</p>
-                                <p class="wrapInfo__detail">• 38C Trần Thị Điệu, Phước Long B, Thủ Đức, HCM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="checkWarranty" class="blockItem">
-                <div class="blockItem__title">
-                    <p class="blockItem__title--text">Tra Cứu Hoá Đơn</p>
-                </div>
-                <div class="blockItem__content">
-                    <div class="blockItem__content--listCheck">
-                        <div class="listCheck__item">
-                            <p class="listCheck__item--note">Nhập mã hoá đơn (gồm 4 số)</p>
-                            <div class="listCheck__item--formCheck">
-                                <input class="formCheck__input" type="text" maxlength="4" id="invoiceCode" />
-                                <button class="formCheck__btn" type="submit" onclick="checkInvoice()">Check</button>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-        </div> -->
+            </div>
+        </div>
+        <div class="blockLoading">
+            <div class="blockLoading__load"></div>
+            <div class="blockLoading__text">Đang tải</div>
+        </div>
+        <div class="blockLoadWeb active">
+            <div class="blockLoadWeb__load">
+                <img class="blockLoadWeb__load--logo" src="images/logo/logo.jpg" />
+            </div>
+            <div class="blockLoadWeb__progress"></div>
+        </div>
     </div>
-
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

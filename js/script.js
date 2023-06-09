@@ -1,73 +1,39 @@
 $(document).ready(function () {
-    // OPEN-CLOSED MENU
-    let menuFixed = false;
-    $('.blockMenuFixed__wrap--btnMenu').click(function () {
-        menuFixed = !menuFixed;
-      if (menuFixed === true) {
-        $('.blockMenuFixed').addClass('active');
-        $('.blockMenuFixed__wrap--btnMenu').addClass('active');
-      }
-      else {
-        $('.blockMenuFixed').removeClass('active');
-        $('.blockMenuFixed__wrap--btnMenu').removeClass('active');
-      }
-    });
-    // SCROLL TO ID
-    let anchorlinks = document.querySelectorAll('a[href^="#"]')
-    for (let item of anchorlinks) {
-      item.addEventListener('click', (e) => {
-        menuFixed = !menuFixed;
-        $('.blockMenuFixed').removeClass('active');
-        $('.blockMenuFixed__wrap--btnMenu').removeClass('active');
-        let hashval = item.getAttribute('href');
-        let target = document.querySelector(hashval);
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-        history.pushState(null, null, hashval);
-        e.preventDefault();
-      })
+  
+  let loading = $(".blockLoading");
+  let loadWeb = $(".blockLoadWeb");
+  let itemTab = $(".item__listChild--item");
+  loadWeb.addClass("active");
+  setTimeout(function() { 
+    loadWeb.removeClass("active");
+  }, 4000);
+  itemTab.click(function(){
+    loading.addClass("active");
+    $(".item__nameCate").removeClass("active");
+    setTimeout(function() { 
+      loading.removeClass("active");
+    }, 1500);
+    if (itemTab.hasClass("active")) {
+      $(this).parent().parent().children(".item__nameCate").removeClass("active");
+      $(this).parent().parent().children(".item__nameCate").addClass("active");
     }
-    // ENTER PRESS SEARCH INVOICE
-    $("#invoiceCode").keydown(function(event) {
-      if (event.keyCode == 13) {
-        checkInvoice();
-      }
-    });
-    copyBanking();
-
-    // SEARCH CODE
-    window.addEventListener("load", () => {
-      var filter = document.getElementById("filterItem"), 
-          list = document.querySelectorAll("#listItem li");
-      filter.onkeyup = () => {
-        let search = filter.value.toLowerCase();
-        for (let i of list) {
-          let item = i.innerHTML.toLowerCase();
-          if (item.indexOf(search) == -1) { i.classList.add("hide"); }
-          else { i.classList.remove("hide"); }
-        }
-      };
-    });
-    // COUNT ORDER
-    const countOrder = $('#listItem li').length;
-    document.getElementById("numberOrder").innerHTML = countOrder;
-});
-// SEARCH INVOICE
-function checkInvoice() {
-  window.open("https://tvgear.github.io/invoice/" + invoiceCode.value)
-}
- // COPY BANKING
-function copyBanking() {
-  var copyBtn = $('.wrapInfo__copy');
-  copyBtn.on('click', function() {
-    var content = $(this).prev('.wrapInfo__numberBank');
-    var clipboard = document.createRange();
-    clipboard.selectNode(content[0]);
-    window.getSelection().addRange(clipboard);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
+    else {
+      $(this).parent().parent().children(".item__nameCate").removeClass("active");
+    }
   });
+});
+function selectTab(event, tabName) {
+  var i, tabcontent, tablinks;  
+  tabcontent = document.getElementsByClassName("listPage__item");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("item__listChild--item");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    $('html, body').scrollTop(0);
+  }
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += " active";
+  
 }
-// COUNT ORDER
