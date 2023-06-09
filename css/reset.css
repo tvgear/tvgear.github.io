@@ -42,11 +42,14 @@ table {
   border-spacing: 0;
 }
 a {
-  color : #000;
+  color : #FFF;
+  transition: 0.4s all;
 }
 a:hover, a:focus {
   text-decoration: none;
-  color : #000;
+  color : #FFF;
+  opacity: 0.7;
+  transition: 0.4s all;
 }
 input[type=checkbox] {
   margin: 0px;
