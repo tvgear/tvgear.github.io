@@ -1,5 +1,7 @@
 
 
+
+
 @media screen and (max-width: 1199px) {
     .blockContainer {
         max-width: unset;
@@ -27,20 +29,33 @@
         padding: 0px;
     }
     .blockHeader .blockMenu__listCate {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .blockHeader__wrap {
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
     .blockLogo {
         width: 100%;
         height: 40px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: 10px 0px;
     }
     .blockMenu .item__nameCate {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 0px;
     }
     .blockMenu {
@@ -48,15 +63,23 @@
     }
     .blockMenu .blockMenu__listCate {
         width: 100%;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
     .blockMenu .blockMenu__listCate--item {
         width: 100%;
         height: 60px;
         margin: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .blockMenu__listCate--item:last-child {
         margin: 0px;
@@ -66,19 +89,27 @@
     }
     .blockMenu .item__nameCate .item__nameCate--img {
         display: block;
-        filter: invert(0.5);
+        -webkit-filter: invert(0.5);
+                filter: invert(0.5);
     }
     .blockMenu .item__nameCate.active {
         background: transparent;
     }
     .blockMenu .item__nameCate.active .item__nameCate--img {
-        filter: invert(0);
+        -webkit-filter: invert(0);
+                filter: invert(0);
     }
     .blockMenu__listCate--item .item__nameCate {
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .blockMenu__listCate--item:hover .item__nameCate {
         border-radius: 0px;
@@ -95,7 +126,8 @@
         width: 0px !important;
     }
     .blockContent .listProduct__item {
-        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
     }
     .blockLogo .blockLogo__wrap {
         width: 25px;
@@ -109,7 +141,8 @@
         padding: 20px 0px 100px 50px;
     }
     .blockContent .listPage__item .item__wrapImg--img {
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
 }
 @media screen and (max-width: 991px) {

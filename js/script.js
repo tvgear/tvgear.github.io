@@ -32,6 +32,7 @@ function selectTab(event, tabName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
     $('html, body').scrollTop(0);
+    $('.item__listChild').addClass("aaa");
   }
   document.getElementById(tabName).style.display = "block";
   event.currentTarget.className += " active";
