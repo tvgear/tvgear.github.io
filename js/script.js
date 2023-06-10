@@ -16,6 +16,9 @@ $(document).ready(function () {
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
     setTimeout(function() { 
+      $('.blockMenu__listCate--item').removeClass("showChild");
+    }, 500);
+    setTimeout(function() { 
       loading.removeClass("active");
     }, 1500);
     
