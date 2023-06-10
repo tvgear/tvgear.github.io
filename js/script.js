@@ -7,13 +7,25 @@ $(document).ready(function () {
   setTimeout(function() { 
     loadWeb.removeClass("active");
   }, 4000);
-  
-  itemTab.click(function(event){
+
+
+  let itemMenu = $(".blockMenu__listCate--item")
+  $('html,body').click(function(){
+    itemMenu.removeClass("showChild");
+  })
+  itemMenu.click(function(event){
+    event.stopPropagation();
+    $(this).addClass("showChild");
+  });
+  itemTab.click(function(){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
-    $(".blockMenu__listCate--item").unbind();
+    setTimeout(function() {
+      itemMenu.removeClass("showChild");
+    }, 500);
     setTimeout(function() { 
       loading.removeClass("active");
+     
     }, 1500);
     
     if (itemTab.hasClass("active")) {
