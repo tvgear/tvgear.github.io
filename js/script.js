@@ -9,15 +9,16 @@ $(document).ready(function () {
   }, 4000);
 
 
-  let itemMenu = $(".blockMenu__listCate--item");
+  let itemMenu = $(".item__nameCate");
   itemMenu.click(function() {
-    $(this).addClass("showChild");
+    $(".blockMenu__listCate--item").removeClass("showChild");
+    $(this).parent().addClass("showChild");
   });
   itemTab.click(function(){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
     setTimeout(function() {
-      itemMenu.removeClass("showChild");
+      $(".blockMenu__listCate--item").removeClass("showChild");
     }, 100);
     setTimeout(function() { 
       loading.removeClass("active");
