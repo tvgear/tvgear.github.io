@@ -538,7 +538,7 @@ html, body {
 .blockContent {
     position: relative;
     z-index: 1;
-    height: 100vh;
+    max-height: 100vh;
     overflow: auto;
 }
 .blockContent .blockContent__wrapContent--listPage {

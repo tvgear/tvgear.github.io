@@ -7,12 +7,14 @@ $(document).ready(function () {
   setTimeout(function() { 
     loadWeb.removeClass("active");
   }, 4000);
-  itemTab.click(function(){
+  
+  itemTab.click(function(event){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
     setTimeout(function() { 
       loading.removeClass("active");
     }, 1500);
+    event.preventDefault();
     if (itemTab.hasClass("active")) {
       $(this).parent().parent().children(".item__nameCate").removeClass("active");
       $(this).parent().parent().children(".item__nameCate").addClass("active");
@@ -32,7 +34,6 @@ function selectTab(event, tabName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
     $('html, body').scrollTop(0);
-    $('.item__listChild').addClass("aaa");
   }
   document.getElementById(tabName).style.display = "block";
   event.currentTarget.className += " active";

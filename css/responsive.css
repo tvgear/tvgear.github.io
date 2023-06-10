@@ -49,7 +49,7 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin: 10px 0px;
+        margin: 10px 0px 50px 0px;
     }
     .blockMenu .item__nameCate {
         -webkit-box-orient: vertical;
@@ -143,6 +143,27 @@
     .blockContent .listPage__item .item__wrapImg--img {
         -o-object-fit: contain;
            object-fit: contain;
+        height: 140px;
+    }
+    .blockContent .item__wrapInfo--name {
+        font-size: 1.4rem;
+        line-height: calc(1.4rem * 1.25);
+    }
+    .blockContent .listPrice__item {
+        font-size: 1rem;
+        line-height: calc(1rem * 1.25);
+    }
+    .blockMenu .item__imgChild {
+        width: 20px;
+        height: 20px;
+    }
+    .blockMenu .item__imgChild .item__imgChild--img {
+        width: 10px;
+        height: 10px;
+    }
+    .blockMenu .item__nameChild {
+        font-size: 1.2rem;
+        line-height: calc(1.2rem * 1.25);
     }
 }
 @media screen and (max-width: 991px) {
