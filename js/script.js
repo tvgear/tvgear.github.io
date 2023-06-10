@@ -14,9 +14,9 @@ $(document).ready(function () {
     itemMenu.removeClass("showChild");
   })
   itemMenu.click(function(event){
+    event.stopPropagation();
     itemMenu.removeClass("showChild");
     $(this).addClass("showChild");
-    event.stopPropagation();
   });
   itemTab.click(function(){
     loading.addClass("active");
