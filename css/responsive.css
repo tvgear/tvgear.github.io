@@ -127,9 +127,7 @@
         left: -200px;
     }
     .blockMenu__listCate--item:hover .item__listChild {
-        top : 0px;
-        right: unset;
-        left: -200px;
+       pointer-events: none;
     }
     ::-webkit-scrollbar {
         width: 0px !important;
