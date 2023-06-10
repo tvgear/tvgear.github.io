@@ -124,10 +124,12 @@
     .blockMenu .item__listChild.services {
         top : 0px;
         left: -200px;
+        transition: 0.4s all;
     }
     .blockMenu__listCate--item:hover .item__listChild {
         top : 0px;
         left: 60px;
+        transition: 0.4s all;
     }
     ::-webkit-scrollbar {
         width: 0px !important;
