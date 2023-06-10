@@ -91,8 +91,8 @@
     }
     .blockMenu .item__nameCate .item__nameCate--img {
         display: block;
-        -webkit-filter: invert(0.5);
-                filter: invert(0.5);
+        -webkit-filter: invert(0.7);
+                filter: invert(0.7);
     }
     .blockMenu .item__nameCate.active {
         background: transparent;
@@ -116,7 +116,6 @@
     }
     .blockMenu__listCate--item:hover .item__nameCate {
         border-radius: 0px;
-        background: #FFF;
         position: relative;
         z-index: 3;
     }
