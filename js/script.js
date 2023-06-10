@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  
   let loading = $(".blockLoading");
   let loadWeb = $(".blockLoadWeb");
   let itemTab = $(".item__listChild--item");
@@ -11,9 +10,9 @@ $(document).ready(function () {
 
   let itemMenu = $(".item__nameCate");
   itemMenu.click(function() {
-    $(".blockMenu__listCate--item").removeClass("showChild");
     $(this).parent().addClass("showChild");
   });
+
   itemTab.click(function(){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
@@ -22,7 +21,6 @@ $(document).ready(function () {
     }, 100);
     setTimeout(function() { 
       loading.removeClass("active");
-     
     }, 1500);
     
     if (itemTab.hasClass("active")) {

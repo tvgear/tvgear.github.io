@@ -178,9 +178,6 @@
         font-size: 1.2rem;
         line-height: calc(1.2rem * 1.25);
     }
-    .blockMenu__listCate--item.showChild .item__nameCate:hover {
-        background: rgba(0,0,0,0.04);
-    }
     .blockMenu__listCate--item.showChild .item__listChild {
         top : 0px;
         left: 60px;
