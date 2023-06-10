@@ -10,11 +10,7 @@ $(document).ready(function () {
 
 
   let itemMenu = $(".blockMenu__listCate--item")
-  $('html,body').click(function(){
-    itemMenu.removeClass("showChild");
-  })
-  itemMenu.click(function(event){
-    event.stopPropagation();
+  itemMenu.click(function() {
     itemMenu.removeClass("showChild");
     $(this).addClass("showChild");
   });
@@ -23,7 +19,7 @@ $(document).ready(function () {
     $(".item__nameCate").removeClass("active");
     setTimeout(function() {
       itemMenu.removeClass("showChild");
-    }, 500);
+    }, 100);
     setTimeout(function() { 
       loading.removeClass("active");
      
