@@ -124,12 +124,15 @@
     .blockMenu .item__listChild.services {
         top : 0px;
         left: -200px;
+        right: unset;
         transition: 0.4s all;
     }
-    .blockMenu__listCate--item:hover .item__listChild {
-        top : 0px;
-        left: 60px;
-        transition: 0.4s all;
+    /* .blockMenu__listCate--item:hover {
+        pointer-events: none;
+    } */
+    .blockMenu__listCate--item:hover .item__listChild,
+    .blockMenu__listCate--item:hover .item__listChild.services {
+        pointer-events: none;
     }
     ::-webkit-scrollbar {
         width: 0px !important;
@@ -177,6 +180,10 @@
     .blockMenu .item__nameChild {
         font-size: 1.2rem;
         line-height: calc(1.2rem * 1.25);
+    }
+    .blockMenu .blockMenu__listCate--item.showChild .item__listChild {
+        top : 0px;
+        left: 50px;
     }
 }
 @media screen and (max-width: 991px) {

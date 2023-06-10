@@ -7,6 +7,11 @@ $(document).ready(function () {
     loadWeb.removeClass("active");
   }, 4000);
 
+  $('.item__nameCate').click(function(){
+    $('.blockMenu__listCate--item').removeClass("showChild");
+    $(this).parent().addClass("showChild");
+  });
+
   itemTab.click(function(){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
