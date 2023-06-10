@@ -287,6 +287,11 @@ html, body {
     width: 16px;
     height: 16px;
 }
+.blockMenu .item__nameCate--img {
+    width: 18px;
+    height: 18px;
+    display: none;
+}
 /* LOADWEB */
 .blockLoadWeb {
     width: 100vw;
@@ -514,27 +519,4 @@ html, body {
     font-size: 1rem;
     line-height: calc(1rem * 1.25);
     color: #FFF;
-}
-
-/* NOTI */
-.blockNotification {
-    background: linear-gradient(to right, #b92b27, #1565c0);
-    height: 60px;
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: 0px auto 30px auto;
-    border-radius: 10px;
-    padding: 0px 30px;
-}
-.blockNotification .blockNotification__text {
-    font-size: 1.4rem;
-    line-height: calc(1.4rem * 1.25);
-    font-family: BEVNPRO-MEDIUM;
-    color: #FFF;
-    text-align: center;
 }
