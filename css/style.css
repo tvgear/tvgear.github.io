@@ -146,15 +146,7 @@ html, body {
     transition: 0.4s all;
 }
 .blockLogo .blockLogo__wrap:hover {
-    background: #FFF;
-    border: 3px solid #000;
-    -webkit-transition: 0.4s all;
-    -o-transition: 0.4s all;
-    transition: 0.4s all;
-}
-.blockLogo .blockLogo__wrap:hover .blockLogo__wrap--img {
-    -webkit-filter: invert(1);
-            filter: invert(1);
+    filter: brightness(1.2);
     -webkit-transition: 0.4s all;
     -o-transition: 0.4s all;
     transition: 0.4s all;
@@ -428,6 +420,12 @@ html, body {
 .blockLoadWeb .blockLoadWeb__load {
     width: 100px;
     height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,10 +444,13 @@ html, body {
     margin: 7.5px 0px 0px 0.5px;
 }
 .blockLoadWeb .blockLoadWeb__progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 0%;
-    height: 5px;
+    height: 7.5px;
     background: #000;
-    margin: 25px 0px 0px 0px;
+    margin: auto;
     -webkit-animation: zoomLoadWeb 4s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
             animation: zoomLoadWeb 4s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
 }

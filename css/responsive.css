@@ -120,6 +120,11 @@
         position: relative;
         z-index: 3;
     }
+    .blockMenu .item__listChild,
+    .blockMenu .item__listChild.services {
+        top : 0px;
+        left: -200px;
+    }
     .blockMenu__listCate--item:hover .item__listChild {
         top : 0px;
         left: 60px;
