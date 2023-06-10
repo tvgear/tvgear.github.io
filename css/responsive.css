@@ -127,13 +127,6 @@
         right: unset;
         transition: 0.4s all;
     }
-    .blockMenu__listCate--item:hover {
-        pointer-events: none;
-    }
-    /* .blockMenu__listCate--item:hover .item__listChild,
-    .blockMenu__listCate--item:hover .item__listChild.services {
-        pointer-events: none;
-    } */
     ::-webkit-scrollbar {
         width: 0px !important;
     }
