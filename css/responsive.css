@@ -21,8 +21,8 @@
     .blockHeader {
         top: 0;
         left: 0;
-        position: absolute;
-        height: 100%;
+        position: fixed;
+        min-height: 100%;
         width: 50px;
         background: #FFF;
     }
