@@ -120,14 +120,9 @@
         position: relative;
         z-index: 3;
     }
-    .blockMenu__listCate--item .item__listChild,
-    .blockMenu .item__listChild.services {
-        top : 0px;
-        right: unset;
-        left: -200px;
-    }
     .blockMenu__listCate--item:hover .item__listChild {
-       pointer-events: none;
+        top : 0px;
+        left: 60px;
     }
     ::-webkit-scrollbar {
         width: 0px !important;
@@ -175,10 +170,6 @@
     .blockMenu .item__nameChild {
         font-size: 1.2rem;
         line-height: calc(1.2rem * 1.25);
-    }
-    .blockMenu__listCate--item.showChild .item__listChild {
-        top : 0px;
-        left: 60px;
     }
 }
 @media screen and (max-width: 991px) {

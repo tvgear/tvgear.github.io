@@ -7,18 +7,9 @@ $(document).ready(function () {
     loadWeb.removeClass("active");
   }, 4000);
 
-
-  let itemMenu = $(".blockMenu__listCate--item");
-  itemMenu.click(function() {
-    $(this).addClass("showChild");
-  });
-
   itemTab.click(function(){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
-    setTimeout(function() {
-      $(".blockMenu__listCate--item").removeClass("showChild");
-    }, 100);
     setTimeout(function() { 
       loading.removeClass("active");
     }, 1500);
