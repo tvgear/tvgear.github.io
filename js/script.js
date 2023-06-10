@@ -6,7 +6,7 @@ $(document).ready(function () {
   loadWeb.addClass("active");
   setTimeout(function() { 
     loadWeb.removeClass("active");
-  }, 100);
+  }, 4000);
   itemTab.click(function(){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");

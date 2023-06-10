@@ -108,6 +108,9 @@
     .blockContent .blockContent__wrapContent--listPage {
         padding: 20px 0px 100px 50px;
     }
+    .blockContent .listPage__item .item__wrapImg--img {
+        object-fit: contain;
+    }
 }
 @media screen and (max-width: 991px) {
     
