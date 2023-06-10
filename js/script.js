@@ -7,10 +7,22 @@ $(document).ready(function () {
     loadWeb.removeClass("active");
   }, 4000);
 
-  $('.item__nameCate').click(function(){
-    $('.blockMenu__listCate--item').removeClass("showChild");
-    $(this).parent().addClass("showChild");
-  });
+  var clickCount = 0;
+$('.item__nameCate').click(function(){
+    // Increment the click count
+    clickCount++;
+    
+    // Check if the click count is less than or equal to 2
+    if (clickCount <= 2) {
+        $('.blockMenu__listCate--item').removeClass("showChild");
+        $(this).parent().addClass("showChild");
+        
+        // Reset the click count after a short delay
+        setTimeout(function() {
+            clickCount = 0;
+        }, 500);
+    }
+});
 
   itemTab.click(function(){
     loading.addClass("active");
