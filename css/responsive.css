@@ -115,6 +115,12 @@
             -ms-flex-pack: center;
                 justify-content: center;
     }
+    .blockMenu__listCate--item:hover .item__listChild,
+    .blockMenu__listCate--item:hover .item__listChild.item__listChild.services {
+        top : 0px;
+        left: 50px;
+        transition: 0.4s all;
+    }
     .blockMenu__listCate--item:hover .item__nameCate {
         border-radius: 0px;
         position: relative;
@@ -173,10 +179,6 @@
     .blockMenu .item__nameChild {
         font-size: 1.2rem;
         line-height: calc(1.2rem * 1.25);
-    }
-    .blockMenu .blockMenu__listCate--item.showChild .item__listChild {
-        top : 0px;
-        left: 50px;
     }
 }
 @media screen and (max-width: 991px) {
