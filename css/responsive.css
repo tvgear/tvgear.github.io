@@ -7,157 +7,19 @@
         margin: 0px;
         padding: 0px 15px;
     }
-    .blockListCate .listProduct__item {
-        height : 400px;
-        -webkit-box-orient : vertical;
-        -webkit-box-direction : normal;
-            -ms-flex-direction : column;
-                flex-direction : column;
-    }
-    .blockListCate .listProduct__item--wrapImg {
-        height: 200px;
-        width: 100%;
-    }
-    .blockListCate .listProduct__item--wrapInfo {
-        width : 100%;
-    }
-    .blockListCate .wrapInfo__name {
-        text-align: center;
-    }
-    .blockListCate .wrapInfo__listPrice--price {
-        text-align : center;
-        line-height : calc(13px * 1.3)
-    }
-    .blockListCate .wrapInfo__listPrice--price .price__label {
-        line-height : calc(14px * 1.3)
-    }
-    .blockListCate .blockItem__title .blockItem__title--text {
-        text-align : center;
-    }
-    .blockMenuFixed {
-        top : unset;
-        bottom : 35px;
-        left : 0;
-        right : 0;
-        margin : auto;
-    }
-    .blockListCate .blockItem__title--warning {
-        text-align : center;
-    }
-    .blockListCate .listBanking__item {
-        width : 100%;
-    }
-    .blockListCate .listShop__item {
-        width : 100%;
-        height : auto;
-    }
-    .blockListCate .wrapInfo__detail .wrapInfo__detail--time {
-        display : none
-    }
-    .blockListCate .wrapInfo__copy:hover {
-        -webkit-transition: 0.4s all;
-        -o-transition: 0.4s all;
-        transition: 0.4s all;
-        background: rgb(68, 158, 68);
-    }
-    .blockListCate .wrapInfo__copy:hover .wrapInfo__copy--img {
-        -webkit-filter: invert(1);
-                filter: invert(1);
-    }
-    .blockItem .wrapInfo__nextProduct {
-        text-align: center;
-        margin: auto;
-    }
 }
 @media screen and (max-width: 991px) {
-    .blockMenuFixed.active {
-        height : 100%;
-        width : 100%;
-        bottom : 0px;
-        border-radius : 0px;
-        -webkit-transition: 0.4s cubic-bezier(0.65, 0.12, 0.26, 1);
-        -o-transition: 0.4s cubic-bezier(0.65, 0.12, 0.26, 1);
-        transition: 0.4s cubic-bezier(0.65, 0.12, 0.26, 1);
-    }
-    .blockMenuFixed .categories__item {
-        width : calc(100% / 4 - 5px);
-    }
-    .blockListCate .blockItem__title .blockItem__title--text {
-        font-size : 20px;
-    }
-    .blockMenuFixed {
-        width : 150px;
-    }
+    
 }
 @media screen and (max-width: 767px) {
-    .blockMenuFixed.active {
-        bottom : 0px;
-        overflow-y : auto;
-    }
-    .blockMenuFixed .categories__item {
-        width : calc(100% / 2 - 5px);
-    }
-    .blockMenuFixed .categories__item--img {
-        width : 14px;
-        height : 14px;
-    }
-    .blockMenuFixed .categories__item--text {
-        font-size : 10px;
-    }
-    .blockListCate .listProduct__item {
-        width : 100%;
-    }
-    .blockListCate .listCheck__item {
-        -webkit-box-orient : vertical;
-        -webkit-box-direction : normal;
-            -ms-flex-direction : column;
-                flex-direction : column;
-        height : auto;
-        padding : 20px 15px;
-    }
-    .blockListCate .listCheck__item--note {
-        margin: 0px 0px 20px 0px;
-        text-align : center;
-        line-height : calc(14px * 1.3);
-    }
-    .fullListCode__filter,
-    .fullListCode__update {
-        width: calc(100% - 30px);
-    }
    
 }
 @media screen and (max-width: 479px) {
-    .blockMenuFixed.active {
-        height : 500px;
-        top : unset;
-        bottom : 0px;
-        overflow : hidden;
-    }
-    .blockListCate .listCheck__item--formCheck {
-        width : 100%;
-    }
+   
 }   
 @media screen and (max-width: 374px) {
     
 }
 @media screen and (max-width: 319px) {
-    .blockListCate .listBanking__item {
-        -webkit-box-orient : vertical;
-        -webkit-box-direction : normal;
-            -ms-flex-direction : column;
-                flex-direction : column;
-        height : auto;
-    }
-    .blockListCate .listBanking__item--wrapImg {
-        margin : 0px 0px 20px 0px;
-    }
-    .blockListCate .listBanking__item--wrapInfo {
-        width : 100%;
-    }
-    .blockListCate .listBanking__item--wrapInfo p {
-        text-align : center;
-    }
-    .blockListCate .blockItem__title .blockItem__title--text {
-        font-size : 18px;
-    }
+   
 }

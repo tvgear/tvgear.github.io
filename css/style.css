@@ -290,8 +290,8 @@ html, body {
 /* LOADWEB */
 .blockLoadWeb {
     width: 100vw;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     background: #FFF;
     backdrop-filter: blur(40px);
     z-index: -1;
