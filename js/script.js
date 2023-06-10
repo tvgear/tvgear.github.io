@@ -9,9 +9,8 @@ $(document).ready(function () {
   }, 4000);
 
 
-  let itemMenu = $(".blockMenu__listCate--item")
+  let itemMenu = $(".blockMenu__listCate--item");
   itemMenu.click(function() {
-    itemMenu.removeClass("showChild");
     $(this).addClass("showChild");
   });
   itemTab.click(function(){
