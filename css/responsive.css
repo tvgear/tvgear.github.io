@@ -157,9 +157,13 @@
         width: 20px;
         height: 20px;
     }
-    .blockMenu .item__imgChild .item__imgChild--img {
-        width: 10px;
-        height: 10px;
+    .blockMenu .item__imgChild.icLogi .item__imgChild--img {
+        width: 12px;
+        height: 12px;
+    }
+    .blockMenu .item__imgChild.icRazer .item__imgChild--img {
+        width: 12px;
+        height: 12px;
     }
     .blockMenu .item__nameChild {
         font-size: 1.2rem;

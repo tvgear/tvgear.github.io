@@ -11,10 +11,11 @@ $(document).ready(function () {
   itemTab.click(function(event){
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
+    $(".blockMenu__listCate--item").unbind();
     setTimeout(function() { 
       loading.removeClass("active");
     }, 1500);
-    event.preventDefault();
+    
     if (itemTab.hasClass("active")) {
       $(this).parent().parent().children(".item__nameCate").removeClass("active");
       $(this).parent().parent().children(".item__nameCate").addClass("active");
