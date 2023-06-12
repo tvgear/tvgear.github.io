@@ -13,7 +13,7 @@ $(document).ready(function () {
     $(".item__nameCate").removeClass("active");
     setTimeout(function() { 
       loading.removeClass("active");
-    }, 1500);
+    }, 1000);
     
     if (itemTab.hasClass("active")) {
       $(this).parent().parent().children(".item__nameCate").removeClass("active");
