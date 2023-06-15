@@ -1,10 +1,15 @@
 $(document).ready(function () {
   let loading = $(".blockLoading");
   let loadWeb = $(".blockLoadWeb");
+  let loadContent = $(".blockContent");
+  let loadBody = $("body");
   let itemTab = $(".item__listChild--item");
   loadWeb.addClass("active");
+  loadBody.addClass("disabled");
   setTimeout(function() { 
     loadWeb.removeClass("active");
+    loadContent.removeClass("disabled");
+    loadBody.removeClass("disabled");
   }, 8000);
 
 
