@@ -465,8 +465,8 @@ body.disabled {
     height: 7.5px;
     background: #000;
     margin: auto;
-    -webkit-animation: zoomLoadWeb 8s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
-            animation: zoomLoadWeb 8s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-animation: zoomLoadWeb 4s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: zoomLoadWeb 4s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 @-webkit-keyframes zoomLoadWeb {
     from {

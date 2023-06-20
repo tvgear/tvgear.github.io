@@ -10,7 +10,7 @@ $(document).ready(function () {
     loadWeb.removeClass("active");
     loadContent.removeClass("disabled");
     loadBody.removeClass("disabled");
-  }, 8000);
+  }, 4000);
 
 
   itemTab.click(function(){
