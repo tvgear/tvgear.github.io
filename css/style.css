@@ -421,9 +421,7 @@ body.disabled {
     opacity: 0;
 }
 .blockLoadWeb.active {
-    background: rgba(255,255,255,0.55);
-    -webkit-backdrop-filter: blur(40px);
-            backdrop-filter: blur(40px);
+    background: rgba(255,255,255,0.99);
     transform: scale(1);
     z-index: 999;
     opacity: 1;
