@@ -29,6 +29,7 @@
     --blueGradient : linear-gradient(to right, #5B86E5, #36D1DC);
     --grayGradient : linear-gradient(to right, #16222a, #3a6073);
     --greenGradient : linear-gradient(to right, #000000, #0f9b0f);
+    --redGradient : linear-gradient(to right, #ed213a, #93291e);
 }
 /* ---------------------- CUSTOM WEB  */
 html {
@@ -606,6 +607,18 @@ body.disabled {
 }
 #keyboardRazer .listPage__item--title {
     background: var(--greenGradient); 
+}
+#webcamLogitech .listPage__item--title {
+    background: var(--blueGradient); 
+}
+#speaker .listPage__item--title {
+    background: var(--blueGradient); 
+}
+#micro .listPage__item--title.razer {
+    background: var(--greenGradient); 
+}
+#micro .listPage__item--title.hyperx {
+    background: var(--redGradient); 
 }
 /* PRODUCT */
 .blockContent .listPage__item--listProduct {
