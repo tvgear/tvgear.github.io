@@ -10,7 +10,7 @@ $(document).ready(function () {
     loadWeb.removeClass("active");
     loadContent.removeClass("disabled");
     loadBody.removeClass("disabled");
-  }, 4000);
+  }, 2500);
 
 
   itemTab.click(function(){
@@ -18,7 +18,7 @@ $(document).ready(function () {
     $(".item__nameCate").removeClass("active");
     setTimeout(function() { 
       loading.removeClass("active");
-    }, 1000);
+    }, 800);
     
     if (itemTab.hasClass("active")) {
       $(this).parent().parent().children(".item__nameCate").removeClass("active");
