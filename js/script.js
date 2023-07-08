@@ -4,8 +4,10 @@ $(document).ready(function () {
   let loadContent = $(".blockContent");
   let loadBody = $("body");
   let itemTab = $(".item__listChild--item");
+  let itemCate = $(".blockMenu__listCate--item");
   loadWeb.addClass("active");
   loadBody.addClass("disabled");
+  
   setTimeout(function() { 
     loadWeb.removeClass("active");
     loadContent.removeClass("disabled");
@@ -13,7 +15,19 @@ $(document).ready(function () {
   }, 2500);
 
 
-  itemTab.click(function(){
+  loadBody.click(function() {
+    itemCate.removeClass("active");
+  }) 
+
+  itemCate.click(function(e){
+    e.stopPropagation();
+    itemCate.removeClass("active");
+    $(this).addClass("active");
+  })
+  
+  itemTab.click(function(e){
+    e.stopPropagation();
+    itemCate.removeClass("active");
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
     setTimeout(function() { 
@@ -26,6 +40,7 @@ $(document).ready(function () {
     }
     else {
       $(this).parent().parent().children(".item__nameCate").removeClass("active");
+      
     }
   });
 });

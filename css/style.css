@@ -30,6 +30,7 @@
     --grayGradient : linear-gradient(to right, #16222a, #3a6073);
     --greenGradient : linear-gradient(to right, #000000, #0f9b0f);
     --redGradient : linear-gradient(to right, #ed213a, #93291e);
+    --orangeGradient : linear-gradient(to right, rgb(235,80,58), rgb(237,106,84));
 }
 /* ---------------------- CUSTOM WEB  */
 html {
@@ -196,7 +197,7 @@ body.disabled {
 }
 .blockMenu__listCate--item .item__nameCate {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -225,6 +226,9 @@ body.disabled {
 .blockMenu .item__nameCate.active .item__nameCate--text {
     color: #FFF;
 }
+.blockMenu .item__nameCate.active .item__nameCate--menuDrop  {
+    filter: invert(1);
+}   
 .blockMenu .item__nameCate--text {
     font-size: 1.6rem;
     font-family: BEVNPRO-BOLD;
@@ -264,7 +268,7 @@ body.disabled {
     right: -40px;
     left: unset;
 }
-.blockMenu__listCate--item:hover .item__listChild {
+.blockMenu__listCate--item.active .item__listChild {
     top : 55px;
     visibility: visible;
     z-index: 2;
@@ -388,6 +392,11 @@ body.disabled {
     width: 18px;
     height: 18px;
     display: none;
+}
+.blockMenu .item__nameCate--menuDrop {
+    width: 8px;
+    height: 8px;
+    margin: 0px 0px 0px 5px;
 }
 /* LOADWEB */
 .blockLoadWeb {
@@ -620,6 +629,15 @@ body.disabled {
 #micro .listPage__item--title.hyperx {
     background: var(--redGradient); 
 }
+#headphoneHyperX .listPage__item--title.hyperx {
+    background: var(--redGradient); 
+}
+#headphoneSteel .listPage__item--title.steel {
+    background: var(--orangeGradient); 
+}
+#headphoneRazer .listPage__item--title {
+    background: var(--greenGradient); 
+}
 /* PRODUCT */
 .blockContent .listPage__item--listProduct {
     margin: 0px 0px 10px 0px;
@@ -737,4 +755,17 @@ body.disabled {
     font-size: 1rem;
     line-height: calc(1rem * 1.25);
     color: #FFF;
+}
+.blockContent .listProduct__itemBlank {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blockContent .listProduct__itemBlank--text {
+    font-family: BEVNPRO-SEMIBOLD;
+    color: #333;
+    font-size: 1.6rem;
+    line-height: calc(1.6rem * 1.25);
 }

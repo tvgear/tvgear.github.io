@@ -136,6 +136,9 @@
         right: unset;
         transition: 0.4s all;
     }
+    .blockMenu .item__nameCate--menuDrop {
+        display: none;
+    }
     ::-webkit-scrollbar {
         width: 0px !important;
     }
