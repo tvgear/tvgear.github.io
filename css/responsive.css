@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 1199px) {
     body {
         min-height: 100vh;
@@ -122,6 +124,8 @@
     .blockMenu__listCate--item:hover .item__listChild.item__listChild.services {
         top : 0px;
         left: 50px;
+        -webkit-transition: 0.4s all;
+        -o-transition: 0.4s all;
         transition: 0.4s all;
     }
     .blockMenu__listCate--item:hover .item__nameCate {
@@ -134,6 +138,8 @@
         top : 0px;
         left: -200px;
         right: unset;
+        -webkit-transition: 0.4s all;
+        -o-transition: 0.4s all;
         transition: 0.4s all;
     }
     .blockMenu .item__nameCate--menuDrop {
