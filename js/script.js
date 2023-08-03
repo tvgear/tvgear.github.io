@@ -43,6 +43,9 @@ $(document).ready(function () {
       
     }
   });
+
+  // GET 3DMODEL
+  document.getElementById('glbGPROXSPL').src= "https://www.logitechg.com/content/dam/gaming/en/ar-models/pro-x-superlight-white/pro-x-superlight-black-hexa.glb";
 });
 function selectTab(event, tabName) {
   var i, tabcontent, tablinks;  

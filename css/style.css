@@ -708,6 +708,13 @@ body.disabled {
     -o-object-fit: cover;
        object-fit: cover;
 }
+.blockContent .listPage__item .item__wrapImg--img3d {
+    width: 100%;
+    min-width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
 .blockContent .item__wrapInfo {
     width: 100%;
 }
