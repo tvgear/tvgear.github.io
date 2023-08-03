@@ -705,6 +705,7 @@ body.disabled {
 .blockContent .listPage__item .item__wrapImg--img {
     width: 100%;
     height: 200px;
+    transition: 0.4s all;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -712,16 +713,19 @@ body.disabled {
     display: none;
     width: 100%;
     min-width: 300px;
-    height: 200px;
+    height: 350px;
     --progress-bar-color: transparent;
     -o-object-fit: cover;
        object-fit: cover;
+       transition: 0.4s all;
 }
 .blockContent .listPage__item .item__wrapImg.show3d .item__wrapImg--img {
     display: none;
+    transition: 0.4s all;
 }
 .blockContent .listPage__item .item__wrapImg.show3d .item__wrapImg--img3d {
     display: block;
+    transition: 0.4s all;
 }
 .blockContent .item__wrapInfo {
     width: 100%;
@@ -819,13 +823,13 @@ body.disabled {
     position: absolute;
     top : 10px;
     right : 10px;
-    width : 45px;
-    height : 45px;
+    width : 50px;
+    height : 37.5px;
     display: flex;
     background: #e8e8e8;
     align-items : center;
     justify-content: center;
-    border-radius : 50%;
+    border-radius : 12px;
     transition: 0.4s all;
 }
 .blockContent .item__view3d--img {
