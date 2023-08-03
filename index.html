@@ -297,16 +297,10 @@
               <div class="listPage__item--listProduct">
                 <div class="listProduct__item">
                   <div class="item__wrapImg">
-                    <!-- <img
+                    <img
                       class="item__wrapImg--img"
                       src="images/product/mouses/g102.webp"
-                    /> -->
-                    <model-viewer
-                      src="https://tvgear.github.io/images/product3d/gpro-x-spl.glb"
-                      alt="dragon"
-                      auto-rotate
-                      camera-controls
-                    ></model-viewer>
+                    />
                   </div>
                   <div class="item__wrapInfo">
                     <div class="item__wrapInfo--name">G102</div>
@@ -579,6 +573,17 @@
                       class="item__wrapImg--img"
                       src="images/product/mouses/gpro-x-spl.webp"
                     />
+                    <model-viewer
+                      class="item__wrapImg--img3d"
+                      src="https://tvgear.github.io/images/product3d/mouses/gpro-x-spl.glb"
+                      camera-controls
+                      camera-orbit="0deg -50deg 0deg"
+                      interpolation-decay="350"
+                      disabled-tap
+                      disable-pan
+                      orbit-sensitivity="1"
+                      interaction-prompt="none"
+                    ></model-viewer>
                   </div>
                   <div class="item__wrapInfo">
                     <div class="item__wrapInfo--name">GPRO X SuperLight</div>
@@ -600,6 +605,9 @@
                         <p class="listPrice__item--price">Liên Hệ</p>
                       </div>
                     </div>
+                  </div>
+                  <div class="item__view3d">
+                    <img class="item__view3d--img" src="images/icon/ic3D.png" />
                   </div>
                 </div>
                 <div class="listProduct__item">
