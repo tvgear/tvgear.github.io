@@ -147,7 +147,7 @@
                     <p class="item__nameChild">Razer</p>
                     <p class="item__countChild">1</p>
                   </button> -->
-                  <button
+                  <!-- <button
                     class="item__listChild--item"
                     onclick="selectTab(event, 'headphoneHyperX')"
                   >
@@ -159,7 +159,7 @@
                     </div>
                     <p class="item__nameChild">HyperX</p>
                     <p class="item__countChild">9</p>
-                  </button>
+                  </button> -->
                   <!-- <button class="item__listChild--item" onclick="selectTab(event, 'headphoneSteel')">
                                     <div class="item__imgChild">
                                         <img class="item__imgChild--img" src="images/icon/icSteelSeries.png" />
@@ -1079,6 +1079,20 @@
                       class="item__wrapImg--img"
                       src="images/product/keyboards/gpro-x.webp"
                     />
+                    <model-viewer
+                      class="item__wrapImg--img3d"
+                      poster="images/product/keyboards/gpro-x.webp"
+                      src="https://tvgear.github.io/images/product3d/keyboards/gpro-x.glb"
+                      camera-controls
+                      camera-orbit="0deg 0deg 0deg"
+                      interpolation-decay="0"
+                      disabled-tap
+                      disable-pan
+                      orbit-sensitivity="1"
+                    />
+                  </div>
+                  <div class="item__view3d">
+                    <img class="item__view3d--img" src="images/icon/ic3D.png" />
                   </div>
                   <div class="item__wrapInfo">
                     <div class="item__wrapInfo--name">GPRO X</div>
@@ -1359,7 +1373,7 @@
                       poster="images/product/headphones/gpro-x.webp"
                       src="https://tvgear.github.io/images/product3d/headphones/gpro-x.glb"
                       camera-controls
-                      camera-orbit="0deg 0deg 0deg"
+                      camera-orbit="-90deg -90deg 0deg"
                       interpolation-decay="0"
                       disabled-tap
                       disable-pan
