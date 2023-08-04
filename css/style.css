@@ -705,7 +705,7 @@ body.disabled {
     margin: 0px 0px 20px 0px;
     transition: 0.4s all;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 .blockContent .listPage__item .item__wrapImg--img {
@@ -727,7 +727,7 @@ body.disabled {
        transition: 0.4s all;
 }
 .blockContent .listProduct__item.show3d .item__wrapImg {
-    height: 380px;
+    height: 375px;
     transition: 0.4s all;
 }
 .blockContent .listProduct__item.show3d .item__wrapImg .item__wrapImg--img {
