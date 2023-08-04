@@ -687,6 +687,7 @@ body.disabled {
     -o-transition: 0.4s all;
     transition: 0.4s all;
     cursor: pointer;
+    overflow: hidden;
     position: relative;
 }
 .blockContent .listProduct__item:hover {
@@ -700,31 +701,45 @@ body.disabled {
     margin: 0px 0px 20px 0px;
 }
 .blockContent .listPage__item .item__wrapImg {
+    width: 100%;
+    height: 200px;
     margin: 0px 0px 20px 0px;
+    transition: 0.4s all;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 .blockContent .listPage__item .item__wrapImg--img {
     width: 100%;
     height: 200px;
+    transform: translateX(0%);
     transition: 0.4s all;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 .blockContent .listPage__item .item__wrapImg--img3d {
-    display: none;
+    position: absolute;
     width: 100%;
-    min-width: 300px;
-    height: 350px;
+    height: 200px;
+    transform: translateX(100%);
     --progress-bar-color: transparent;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
        transition: 0.4s all;
 }
+.blockContent .listPage__item .item__wrapImg.show3d {
+    height: 380px;
+    transition: 0.4s all;
+}
 .blockContent .listPage__item .item__wrapImg.show3d .item__wrapImg--img {
-    display: none;
+    transform: translateX(-100%);
     transition: 0.4s all;
 }
 .blockContent .listPage__item .item__wrapImg.show3d .item__wrapImg--img3d {
-    display: block;
+    width: 100%;
+    min-width: 350px;
+    height: 350px;
+    transform: translateX(0%);
     transition: 0.4s all;
 }
 .blockContent .item__wrapInfo {
@@ -823,13 +838,13 @@ body.disabled {
     position: absolute;
     top : 10px;
     right : 10px;
-    width : 50px;
-    height : 37.5px;
+    width : 40px;
+    height : 40px;
     display: flex;
     background: #e8e8e8;
     align-items : center;
     justify-content: center;
-    border-radius : 12px;
+    border-radius : 10px;
     transition: 0.4s all;
 }
 .blockContent .item__view3d--img {
