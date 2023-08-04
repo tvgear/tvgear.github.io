@@ -727,15 +727,15 @@ body.disabled {
        object-fit: contain;
        transition: 0.4s all;
 }
-.blockContent .listPage__item .item__wrapImg.show3d {
+.blockContent .listProduct__item.show3d .item__wrapImg {
     height: 380px;
     transition: 0.4s all;
 }
-.blockContent .listPage__item .item__wrapImg.show3d .item__wrapImg--img {
+.blockContent .listProduct__item.show3d .item__wrapImg .item__wrapImg--img {
     transform: translateX(-100%);
     transition: 0.4s all;
 }
-.blockContent .listPage__item .item__wrapImg.show3d .item__wrapImg--img3d {
+.blockContent .listProduct__item.show3d .item__wrapImg .item__wrapImg--img3d {
     width: 100%;
     min-width: 350px;
     height: 350px;
@@ -853,11 +853,11 @@ body.disabled {
     transition: 0.4s all;
     margin : -2px 0px 0px 0px;
 }
-.blockContent .item__view3d.active {
+.blockContent .listProduct__item.show3d .item__view3d {
     background : #000;
     transition: 0.4s all;
 }
-.blockContent .item__view3d.active .item__view3d--img {
+.blockContent .listProduct__item.show3d .item__view3d .item__view3d--img {
     filter: invert(1);
     transition: 0.4s all;
 }
