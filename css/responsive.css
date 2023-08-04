@@ -123,7 +123,7 @@
     .blockMenu__listCate--item:hover .item__listChild,
     .blockMenu__listCate--item:hover .item__listChild.item__listChild.services {
         top : 0px;
-        left: 50px;
+        left: 55px;
         -webkit-transition: 0.4s all;
         -o-transition: 0.4s all;
         transition: 0.4s all;

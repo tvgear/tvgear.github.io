@@ -216,7 +216,6 @@ body.disabled {
     position: relative;
 }
 .blockMenu__listCate--item:hover .item__nameCate {
-    background: rgba(0, 0, 0, 0.05);
     -webkit-transition: 0.4s all;
     -o-transition: 0.4s all;
     transition: 0.4s all;
