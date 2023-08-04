@@ -46,15 +46,17 @@ $(document).ready(function () {
   let btnShow3d = $(".item__view3d");
   let blockImgProduct = $(".item__wrapImg");
   btnShow3d.click(function(){
+    isShow3d = false;
     isShow3d = !isShow3d;
+    btnShow3d.removeClass("active");
     if (isShow3d === true) {
       blockImgProduct.removeClass("show3d");
       $(this).addClass("active");
       $(this).parent().find(".item__wrapImg").addClass("show3d");
     } else {
-      $(this).parent().find(".item__wrapImg").removeClass("show3d");
       $(this).removeClass("active");
-    }
+      $(this).parent().find(".item__wrapImg").removeClass("show3d");
+    } 
   })
 });
 function selectTab(event, tabName) {
