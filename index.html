@@ -134,7 +134,7 @@
                     <p class="item__nameChild">Logitech</p>
                     <p class="item__countChild">6</p>
                   </button>
-                  <!-- <button
+                  <button
                     class="item__listChild--item"
                     onclick="selectTab(event, 'headphoneRazer')"
                   >
@@ -146,7 +146,7 @@
                     </div>
                     <p class="item__nameChild">Razer</p>
                     <p class="item__countChild">1</p>
-                  </button> -->
+                  </button>
                   <!-- <button
                     class="item__listChild--item"
                     onclick="selectTab(event, 'headphoneHyperX')"
@@ -324,7 +324,7 @@
                     <div class="item__wrapInfo--listPrice">
                       <div class="listPrice__item">
                         <p class="listPrice__item--info">New, BH 6T</p>
-                        <p class="listPrice__item--price">390.000đ</p>
+                        <p class="listPrice__item--price">380.000đ</p>
                       </div>
                     </div>
                   </div>
@@ -484,7 +484,7 @@
                         <p class="listPrice__item--price">580.000đ</p>
                       </div>
                       <div class="listPrice__item">
-                        <p class="listPrice__item--info">95%, Trắng, BH 3T</p>
+                        <p class="listPrice__item--info">98%, Trắng, BH 3T</p>
                         <p class="listPrice__item--price">630.000đ</p>
                       </div>
                       <div class="listPrice__item">
@@ -787,10 +787,6 @@
                       <div class="listPrice__item">
                         <p class="listPrice__item--info">98%, BH 1T</p>
                         <p class="listPrice__item--price">1.850.000đ</p>
-                      </div>
-                      <div class="listPrice__item">
-                        <p class="listPrice__item--info">New OpenBox, BH 3T</p>
-                        <p class="listPrice__item--price">1.950.000đ</p>
                       </div>
                     </div>
                   </div>
@@ -1165,15 +1161,19 @@
                         <p class="listPrice__item--price">1.980.000đ</p>
                       </div>
                       <div class="listPrice__item">
-                        <p class="listPrice__item--info">98%, Cáp Sạc, BH 1T</p>
+                        <p class="listPrice__item--info">
+                          98%, LSM, +Cáp Sạc, BH 1T
+                        </p>
                         <p class="listPrice__item--price">2.080.000đ</p>
                       </div>
                       <div class="listPrice__item">
-                        <p class="listPrice__item--info">98%, +Box, BH 1T</p>
-                        <p class="listPrice__item--price">2.180.000đ</p>
+                        <p class="listPrice__item--info">98%, BH 1T</p>
+                        <p class="listPrice__item--price">2.380.000đ</p>
                       </div>
                       <div class="listPrice__item">
-                        <p class="listPrice__item--info">New, BH 6T</p>
+                        <p class="listPrice__item--info">
+                          New OB, White, BH 1T
+                        </p>
                         <p class="listPrice__item--price">2.980.000đ</p>
                       </div>
                     </div>
@@ -1190,6 +1190,10 @@
                     <div class="item__wrapInfo--name">G913 Full Size</div>
                     <div class="item__wrapInfo--listPrice">
                       <div class="listPrice__item">
+                        <p class="listPrice__item--info">99%, BH 1T</p>
+                        <p class="listPrice__item--price">3.280.000đ</p>
+                      </div>
+                      <div class="listPrice__item">
                         <p class="listPrice__item--info">New OB, BH 3T</p>
                         <p class="listPrice__item--price">3.580.000đ</p>
                       </div>
@@ -1202,6 +1206,20 @@
                       class="item__wrapImg--img"
                       src="images/product/keyboards/mx-keys-fs.webp"
                     />
+                    <model-viewer
+                      class="item__wrapImg--img3d"
+                      poster="images/product/keyboards/mx-keys-fs.webp"
+                      src="https://tvgear.github.io/images/product3d/keyboards/mx-keys-fs.glb"
+                      camera-controls
+                      camera-orbit="0deg 0deg 0deg"
+                      interpolation-decay="0"
+                      disabled-tap
+                      disable-pan
+                      orbit-sensitivity="1"
+                    />
+                  </div>
+                  <div class="item__view3d">
+                    <img class="item__view3d--img" src="images/icon/ic3D.png" />
                   </div>
                   <div class="item__wrapInfo">
                     <div class="item__wrapInfo--name">MX Key Full Size</div>
@@ -1223,14 +1241,22 @@
                       class="item__wrapImg--img"
                       src="images/product/keyboards/mx-keys-mini.webp"
                     />
+                    <model-viewer
+                      class="item__wrapImg--img3d"
+                      poster="images/product/keyboards/mx-keys-mini.webp"
+                      src="https://tvgear.github.io/images/product3d/keyboards/mx-keys-mini.glb"
+                      camera-controls
+                      camera-orbit="0deg 0deg 0deg"
+                      interpolation-decay="0"
+                      disabled-tap
+                      disable-pan
+                      orbit-sensitivity="1"
+                    />
                   </div>
                   <div class="item__wrapInfo">
                     <div class="item__wrapInfo--name">MX Key Mini</div>
                     <div class="item__wrapInfo--listPrice">
-                      <div class="listPrice__item">
-                        <p class="listPrice__item--info">98%, +Box, BH 5/24</p>
-                        <p class="listPrice__item--price">1.780.000đ</p>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -1443,8 +1469,23 @@
                 <p class="title__text">Tai Nghe - Razer</p>
               </div>
               <div class="listPage__item--listProduct">
-                <div></div>
-              </div>
+                <div class="listProduct__item">
+                  <div class="item__wrapImg">
+                    <img
+                      class="item__wrapImg--img"
+                      src="images/product/headphones/razer-bsv2-x.webp"
+                    />
+                  </div>
+                  <div class="item__wrapInfo">
+                    <div class="item__wrapInfo--name">Blackshark v2 X</div>
+                    <div class="item__wrapInfo--listPrice">
+                      <div class="listPrice__item">
+                        <p class="listPrice__item--info">New, BH 3T</p>
+                        <p class="listPrice__item--price">850.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
             <!-- WEBCAM -->
             <div id="webcam" class="listPage__item">
