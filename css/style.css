@@ -1,4 +1,6 @@
 
+
+
 /* ---------------------- FONT ---------------------- */
 @font-face {
     font-family: BEVNPRO-REGULAR;
@@ -703,15 +705,27 @@ body.disabled {
     width: 100%;
     height: 200px;
     margin: 0px 0px 20px 0px;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .blockContent .listPage__item .item__wrapImg--img {
     width: 100%;
     height: 200px;
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
     -o-object-fit: contain;
        object-fit: contain;
@@ -720,25 +734,39 @@ body.disabled {
     position: absolute;
     width: 100%;
     height: 200px;
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
     --progress-bar-color: transparent;
     -o-object-fit: contain;
        object-fit: contain;
+       -webkit-transition: 0.4s all;
+       -o-transition: 0.4s all;
        transition: 0.4s all;
 }
 .blockContent .listProduct__item.show3d .item__wrapImg {
     height: 375px;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .blockContent .listProduct__item.show3d .item__wrapImg .item__wrapImg--img {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .blockContent .listProduct__item.show3d .item__wrapImg .item__wrapImg--img3d {
     width: 100%;
     min-width: 350px;
     height: 350px;
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .blockContent .item__wrapInfo {
@@ -801,9 +829,16 @@ body.disabled {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 .blockContent .listProduct__itemBlank--text {
     font-family: BEVNPRO-SEMIBOLD;
@@ -825,9 +860,15 @@ body.disabled {
     right : 10px;
     background: rgba(241,191,69);
     color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 5px;
     font-size: 1rem;
     line-height: calc(1rem * 1.5);
@@ -839,24 +880,39 @@ body.disabled {
     right : 10px;
     width : 40px;
     height : 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #e8e8e8;
-    align-items : center;
-    justify-content: center;
+    -webkit-box-align : center;
+        -ms-flex-align : center;
+            align-items : center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius : 10px;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .blockContent .item__view3d--img {
     width: 24px;
     height: 24px;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
     margin : -2px 0px 0px 0px;
 }
 .blockContent .listProduct__item.show3d .item__view3d {
     background : #000;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
 .blockContent .listProduct__item.show3d .item__view3d .item__view3d--img {
-    filter: invert(1);
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
     transition: 0.4s all;
 }
