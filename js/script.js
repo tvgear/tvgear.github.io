@@ -7,44 +7,50 @@ $(document).ready(function () {
   let itemCate = $(".blockMenu__listCate--item");
   loadWeb.addClass("active");
   loadBody.addClass("disabled");
-  
-  setTimeout(function() { 
+
+  setTimeout(function () {
     loadWeb.removeClass("active");
     loadContent.removeClass("disabled");
     loadBody.removeClass("disabled");
   }, 2500);
 
-
-  loadBody.click(function() {
+  loadBody.click(function () {
     itemCate.removeClass("active");
-  }) 
+  });
 
-  itemCate.click(function(e){
+  itemCate.click(function (e) {
     e.stopPropagation();
     itemCate.removeClass("active");
     $(this).addClass("active");
-  })
-  
-  itemTab.click(function(e){
+  });
+
+  itemTab.click(function (e) {
     e.stopPropagation();
     itemCate.removeClass("active");
     loading.addClass("active");
     $(".item__nameCate").removeClass("active");
-    setTimeout(function() { 
+    setTimeout(function () {
       loading.removeClass("active");
     }, 800);
-    
+
     if (itemTab.hasClass("active")) {
-      $(this).parent().parent().children(".item__nameCate").removeClass("active");
+      $(this)
+        .parent()
+        .parent()
+        .children(".item__nameCate")
+        .removeClass("active");
       $(this).parent().parent().children(".item__nameCate").addClass("active");
-    }
-    else {
-      $(this).parent().parent().children(".item__nameCate").removeClass("active");
+    } else {
+      $(this)
+        .parent()
+        .parent()
+        .children(".item__nameCate")
+        .removeClass("active");
     }
   });
   // SHOW 3D
   let btnShow3d = $(".item__view3d");
-  btnShow3d.on("click", function() {
+  btnShow3d.on("click", function () {
     let productParent = $(this).closest(".listProduct__item");
     $(".listProduct__item").not(productParent).removeClass("show3d");
     if (!productParent.hasClass("show3d")) {
@@ -55,7 +61,7 @@ $(document).ready(function () {
   });
 });
 function selectTab(event, tabName) {
-  var i, tabcontent, tablinks;  
+  var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("listPage__item");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -63,9 +69,8 @@ function selectTab(event, tabName) {
   tablinks = document.getElementsByClassName("item__listChild--item");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
-    $('html, body').scrollTop(0);
+    $("html, body").scrollTop(0);
   }
   document.getElementById(tabName).style.display = "block";
   event.currentTarget.className += " active";
-  
 }
