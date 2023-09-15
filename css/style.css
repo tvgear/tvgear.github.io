@@ -524,7 +524,7 @@ body.disabled {
 
 .blockLoadWeb .blockLoadWeb__progress {
     position: absolute;
-    left: calc(50% - 50px);
+    left: calc(50% - 75px);
     bottom: 15px;
     width: 0%;
     z-index: 1;
