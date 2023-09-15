@@ -534,8 +534,8 @@ body.disabled {
     backdrop-filter: blur(10px);
     margin: auto;
     border-radius: 20px;
-    -webkit-animation: zoomLoadWeb 2.5s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
-    animation: zoomLoadWeb 2.5s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-animation: zoomLoadWeb 5s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation: zoomLoadWeb 5s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 @-webkit-keyframes zoomLoadWeb {
@@ -544,7 +544,7 @@ body.disabled {
     }
 
     to {
-        width: 100px;
+        width: 150px;
     }
 }
 
@@ -554,7 +554,7 @@ body.disabled {
     }
 
     to {
-        width: 100px;
+        width: 150px;
     }
 }
 

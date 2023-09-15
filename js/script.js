@@ -12,7 +12,7 @@ $(document).ready(function () {
     loadWeb.removeClass("active");
     loadContent.removeClass("disabled");
     loadBody.removeClass("disabled");
-  }, 2500);
+  }, 5000);
 
   loadBody.click(function () {
     itemCate.removeClass("active");
