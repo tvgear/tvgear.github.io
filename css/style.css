@@ -782,8 +782,9 @@ body.disabled {
 }
 
 .blockContent .listProduct__item.hot {
-    border: 2.5px dashed rgba(217, 86, 68);
-    background: rgba(217, 86, 68, 0.05);
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
 }
 
 .blockContent .listProduct__item:hover {
@@ -884,14 +885,27 @@ body.disabled {
 }
 
 .blockContent .item__wrapInfo--name.hot {
-    color: rgba(214, 83, 65);
+    color: #FFF;
 }
+
+.blockContent .listPrice__item--info.hot {
+    color: #FFF;
+}
+
+.blockContent .listPrice__item--price.hot {
+    color: #FFF;
+}
+
 
 .blockContent .item__wrapInfo--listPrice {
     width: 100%;
     margin: 25px 0px 0px 0px;
     padding: 25px 0px 0px 0px;
     border-top: 1px solid #e8e8e8;
+}
+
+.blockContent .item__wrapInfo--listPrice.hot {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .blockContent .listPrice__item {
