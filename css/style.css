@@ -478,9 +478,6 @@ body.disabled {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: transform;
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
     opacity: 0;
 }
 
@@ -497,13 +494,13 @@ body.disabled {
 }
 
 .blockLoadWeb .blockLoadWeb__load {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    z-index: 1;
+    bottom: 40px;
     margin: auto;
     border-radius: 50%;
     display: -webkit-box;
@@ -519,19 +516,22 @@ body.disabled {
 }
 
 .blockLoadWeb .blockLoadWeb__load--logo {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     margin: 7.5px 0px 0px 0.5px;
+
 }
 
 .blockLoadWeb .blockLoadWeb__progress {
     position: absolute;
-    left: 0;
-    bottom: 0px;
+    left: calc(50% - 50px);
+    bottom: 15px;
     width: 0%;
+    z-index: 1;
     height: 5px;
-    background: #000;
+    background: #FFF;
     margin: auto;
+    border-radius: 20px;
     -webkit-animation: zoomLoadWeb 2.5s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
     animation: zoomLoadWeb 2.5s 1 cubic-bezier(0.39, 0.575, 0.565, 1);
 }
@@ -542,7 +542,7 @@ body.disabled {
     }
 
     to {
-        width: 100vw;
+        width: 100px;
     }
 }
 
@@ -552,7 +552,7 @@ body.disabled {
     }
 
     to {
-        width: 100vw;
+        width: 100px;
     }
 }
 
@@ -781,6 +781,11 @@ body.disabled {
     position: relative;
 }
 
+.blockContent .listProduct__item.hot {
+    border: 2.5px dashed rgba(217, 86, 68);
+    background: rgba(217, 86, 68, 0.05);
+}
+
 .blockContent .listProduct__item:hover {
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.08);
@@ -876,6 +881,10 @@ body.disabled {
     font-family: BEVNPRO-EXTRABOLD;
     font-size: 2rem;
     text-align: center;
+}
+
+.blockContent .item__wrapInfo--name.hot {
+    color: rgba(214, 83, 65);
 }
 
 .blockContent .item__wrapInfo--listPrice {
@@ -1043,6 +1052,7 @@ body.disabled {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
+    z-index: 1;
 }
 
 .blockLoadWeb .branding__item {
@@ -1088,4 +1098,58 @@ body.disabled {
 .blockLoadWeb .branding__item.razer .branding__item--img {
     width: 22px;
     height: 22px;
+}
+
+.blockLoadWeb .blockLoadWeb__intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockLoadWeb .intro__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.blockLoadWeb .intro__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: light 2.5s;
+}
+
+.blockLoadWeb .intro__text {
+    color: #FFF;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    font-family: BEVNPRO-BOLD;
+    font-size: 80px;
+}
+
+@keyframes light {
+    from {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.1);
+    }
 }
