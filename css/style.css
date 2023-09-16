@@ -478,14 +478,13 @@ body.disabled {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: transform;
-    opacity: 0;
+    transform: translateY(-100%);
+
 }
 
 .blockLoadWeb.active {
     background: rgba(255, 255, 255, 0.99);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    transform: translateY(0%);
     z-index: 999;
     opacity: 1;
     -webkit-transition: 0.6s all;
@@ -524,7 +523,7 @@ body.disabled {
 
 .blockLoadWeb .blockLoadWeb__progress {
     position: absolute;
-    left: calc(50% - 75px);
+    left: calc(50% - 125px);
     bottom: 15px;
     width: 0%;
     z-index: 1;
@@ -544,7 +543,7 @@ body.disabled {
     }
 
     to {
-        width: 150px;
+        width: 250px;
     }
 }
 
@@ -554,7 +553,7 @@ body.disabled {
     }
 
     to {
-        width: 150px;
+        width: 250px;
     }
 }
 
@@ -783,13 +782,6 @@ body.disabled {
     position: relative;
 }
 
-.blockContent .listProduct__item.hot {
-    background: #cb2d3e;
-    background: -webkit-gradient(linear, left top, right top, from(#ef473a), to(#cb2d3e));
-    background: -o-linear-gradient(left, #ef473a, #cb2d3e);
-    background: linear-gradient(to right, #ef473a, #cb2d3e);
-}
-
 .blockContent .listProduct__item:hover {
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.08);
@@ -887,28 +879,11 @@ body.disabled {
     text-align: center;
 }
 
-.blockContent .item__wrapInfo--name.hot {
-    color: #FFF;
-}
-
-.blockContent .listPrice__item--info.hot {
-    color: #FFF;
-}
-
-.blockContent .listPrice__item--price.hot {
-    color: #FFF;
-}
-
-
 .blockContent .item__wrapInfo--listPrice {
     width: 100%;
     margin: 25px 0px 0px 0px;
     padding: 25px 0px 0px 0px;
     border-top: 1px solid #e8e8e8;
-}
-
-.blockContent .item__wrapInfo--listPrice.hot {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .blockContent .listPrice__item {
@@ -1187,4 +1162,34 @@ body.disabled {
     to {
         background: rgba(0, 0, 0, 0.1);
     }
+}
+
+.blockContent .item__wrapInfo--hot {
+    width: fit-content;
+    background: #ED213A;
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+    background: linear-gradient(to right, #93291E, #ED213A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.blockContent .hot__text {
+    font-size: 1.25rem;
+    line-height: calc(1.25rem * 1.25);
+    color: #FFF;
+    font-family: BEVNPRO-BOLD;
+}
+
+.blockContent .item__wrapInfo--name.hot {
+    color: #ED213A;
+}
+
+.blockContent .listPrice__item--price.hot {
+    color: #ED213A;
 }
