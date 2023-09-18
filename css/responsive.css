@@ -241,13 +241,13 @@
     }
 
     .blockLoadWeb .intro__text {
-        font-size: 40px;
+        font-size: 38px;
     }
 }
 
 @media screen and (max-width: 479px) {
     .blockLoadWeb .intro__text {
-        font-size: 35px;
+        font-size: 24px;
     }
 }
 
