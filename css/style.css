@@ -1172,7 +1172,7 @@ body.disabled {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 15px;
+    padding: 7.5px 15px;
     border-radius: 20px;
     position: absolute;
     top: 15px;
