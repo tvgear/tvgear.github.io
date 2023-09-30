@@ -498,7 +498,7 @@ body.disabled {
     left: 0;
     right: 0;
     z-index: 1;
-    bottom: 40px;
+    top: 60px;
     margin: auto;
     border-radius: 50%;
     display: -webkit-box;
@@ -510,24 +510,25 @@ body.disabled {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    overflow: hidden;
     background: #000;
+    border: 3.5px solid rgba(255, 255, 255, 0.45);
 }
 
 .blockLoadWeb .blockLoadWeb__load--logo {
     width: 50px;
     height: 50px;
     margin: 7.5px 0px 0px 0.5px;
-
 }
 
 .blockLoadWeb .blockLoadWeb__progress {
     position: absolute;
-    left: calc(50% - 125px);
+    left: calc(50% - 175px);
     bottom: 15px;
     width: 0%;
     z-index: 1;
     height: 5px;
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.85);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     margin: auto;
@@ -542,7 +543,7 @@ body.disabled {
     }
 
     to {
-        width: 250px;
+        width: 350px;
     }
 }
 
@@ -552,7 +553,7 @@ body.disabled {
     }
 
     to {
-        width: 250px;
+        width: 350px;
     }
 }
 
@@ -1125,9 +1126,8 @@ body.disabled {
     top: 0;
     left: 0;
     z-index: 2;
-    -webkit-animation: light 2.5s;
-    animation: light 2.5s;
     transition: 0.4s all;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .blockLoadWeb .intro__text {
@@ -1144,25 +1144,7 @@ body.disabled {
     font-size: 60px;
 }
 
-@-webkit-keyframes light {
-    from {
-        background: rgba(0, 0, 0, 1);
-    }
 
-    to {
-        background: rgba(0, 0, 0, 0.1);
-    }
-}
-
-@keyframes light {
-    from {
-        background: rgba(0, 0, 0, 1);
-    }
-
-    to {
-        background: rgba(0, 0, 0, 0.1);
-    }
-}
 
 .blockContent .item__wrapInfo--hot {
     width: fit-content;
