@@ -226,6 +226,19 @@
         font-size: 1.2rem;
         line-height: calc(1.2rem * 1.25);
     }
+
+    .blockChat {
+        z-index: 99;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        bottom: 25px;
+    }
+
+    .blockChat .blockChat__item--img {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 @media screen and (max-width: 991px) {}
