@@ -1179,9 +1179,9 @@ body.disabled {
 /* CHAT */
 .blockChat {
     position: fixed;
-    right: 15px;
+    right: 17.5px;
     background: #000;
-    bottom: 60px;
+    bottom: 35px;
     width: 60px;
     height: 60px;
     z-index: 2;
