@@ -53,7 +53,7 @@ html, body {
 
 html.disabled,
 body.disabled {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .fullWeb {
@@ -1195,4 +1195,27 @@ body.disabled {
     width: 32.5px;
     height: 32.5px;
     filter: invert(1);
+}
+
+.listProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px 150px 0px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.listProduct img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0px 0px 30px 0px;
+}
+
+.listProduct p {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    font-family: BEVNPRO-BLACK;
+    font-size: 2rem;
+    line-height: calc(2rem * 1.25);
 }
