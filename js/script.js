@@ -15,7 +15,7 @@ $(document).ready(function () {
     loadContent.removeClass("disabled");
     loadBody.removeClass("disabled");
     loadHTML.removeClass("disabled");
-  }, 5000);
+  }, 2500);
 
   loadBody.click(function () {
     itemCate.removeClass("active");
