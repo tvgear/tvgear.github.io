@@ -472,23 +472,22 @@ body.disabled {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    -webkit-transition: 0.3s all;
-    -o-transition: 0.3s all;
-    transition: 0.3s all;
+    -webkit-transition: 0.6s all;
+    -o-transition: 0.6s all;
+    transition: 0.6s all;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: transform;
-    transform: translateX(100%);
+    visibility: hidden;
     z-index: 100;
 }
 
 .blockLoadWeb.active {
     background: #000;
-    transform: translateX(0%);
-    opacity: 1;
-    -webkit-transition: 0.3s all;
-    -o-transition: 0.3s all;
-    transition: 0.3s all;
+    visibility: visible;
+    -webkit-transition: 0.6s all;
+    -o-transition: 0.6s all;
+    transition: 0.6s all;
 }
 
 .blockLoadWeb .blockLoadWeb__load {
