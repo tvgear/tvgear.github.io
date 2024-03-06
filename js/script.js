@@ -12,13 +12,13 @@ $(document).ready(function () {
 
   setTimeout(function () {
     loadWeb.removeClass("active");
-  }, 2500);
+  }, 2000);
 
   setTimeout(function () {
     loadContent.removeClass("disabled");
     loadBody.removeClass("disabled");
     loadHTML.removeClass("disabled");
-  }, 3000);
+  }, 2600);
 
   loadBody.click(function () {
     itemCate.removeClass("active");
