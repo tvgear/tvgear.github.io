@@ -194,7 +194,7 @@
     .blockContent .listPage__item .item__wrapImg--img {
         -o-object-fit: contain;
         object-fit: contain;
-        height: 140px;
+        height: 180px;
     }
 
     .blockContent .item__wrapInfo--name {
