@@ -33,7 +33,15 @@
         position: fixed;
         min-height: 100vh;
         width: 50px;
+        border: 0px;
+        right: unset;
         background: #FFF;
+        border-radius: 0px;
+    }
+
+    .blockHeader .blockHeader__wrap {
+        justify-content: center;
+        width: 100%;
     }
 
     .blockHeader .blockContainer {
@@ -45,6 +53,10 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .blockHeader .blockMenu__listCate .blockMenu__listCate--item:first-child {
+        margin: 30px 0px 0px 0px;
     }
 
     .blockHeader__wrap {
