@@ -1241,3 +1241,18 @@ body.disabled {
     height: 100%;
     object-fit: cover;
 }
+
+.listPrice__note {
+    background: rgba(255, 214, 38, 0.3);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+.listPrice__note .listPrice__note--item {
+    color: #000;
+    font-family: BEVNPRO-BOLD;
+    font-size: 1.1rem;
+    line-height: calc(1.1rem * 1.25);
+    margin: 5px 0px;
+}
