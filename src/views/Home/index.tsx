@@ -7,7 +7,8 @@ interface HomeProps {}
 const Home: React.FC<HomeProps> = () => {
   return (
     <BlockHome>
-      <Logo />
+      {/* <Logo /> */}
+      TVGear đang nâng cấp giao diện. Vui lòng quay lại sau
     </BlockHome>
   );
 };
