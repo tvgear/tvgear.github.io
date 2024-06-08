@@ -8,6 +8,7 @@ const Logo: React.FC<AboutProps> = () => {
     <BlockLogo>
       <WrapLogo>
         <Triangle />
+        aa
       </WrapLogo>
     </BlockLogo>
   );
