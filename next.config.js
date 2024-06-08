@@ -14,3 +14,9 @@ module.exports = withBundleAnalyzer({
     unoptimized: true,
   },
 });
+
+module.exports = () => {
+  return {
+    output: "export",
+  };
+};
