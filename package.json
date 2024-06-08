@@ -1,7 +1,7 @@
 {
   "name": "votienthuan97",
   "version": "1.0.0",
-  "homepage": "https://github.com/votienthuan97/votienthuan97.github.io",
+  "homepage": "https://github.com/tvgear/tvgear.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
