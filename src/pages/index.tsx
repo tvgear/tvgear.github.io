@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
 import WindowWrapper from "@/components/WindowWrapper";
-// import Loading from "@/layouts/Loading";
 import styled from "styled-components";
 import Home from "@/views/Home";
 import Header from "@/layouts/Header";
+import Loading from "@/layouts/Loading";
 
 interface IndexProps {}
 
@@ -25,8 +25,16 @@ const Index: FunctionComponent<IndexProps> = ({}) => {
   }, []);
 
   return (
-    <Main meta={<Meta title="TVGEAR - Gaming Gear | Office Gear Secondhand & New" description="" image="" />}>
-      {/* {isLoading && <Loading />} */}
+    <Main
+      meta={
+        <Meta
+          title="TVGEAR - Gaming Gear | Office Gear Secondhand & New"
+          description=""
+          image=""
+        />
+      }
+    >
+      {isLoading && <Loading />}
       <WindowWrapper>
         <Header />
         <BlockWrapContent>
