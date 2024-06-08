@@ -1,12 +1,14 @@
 import React from "react";
-import { BlockHome } from "@/views/Home/style";
+import { BlockHome, ContentWrap, TextNote } from "@/views/Home/style";
 
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
     <BlockHome>
-      TVGear đang nâng cấp giao diện. Vui lòng quay lại sau
+      <ContentWrap className="blockContainer">
+        <TextNote>Website TVGEAR đang nâng cấp. Vui lòng quay lại sau!</TextNote>
+      </ContentWrap>
     </BlockHome>
   );
 };

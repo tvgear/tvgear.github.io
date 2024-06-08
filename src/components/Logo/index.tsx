@@ -1,14 +1,20 @@
 import React from "react";
-import { BlockLogo, Triangle, WrapLogo } from "./style";
+import { BlockLogo, Circle, CirclePoint, Line, WrapLogo } from "./style";
 
-interface AboutProps {}
+interface AboutProps {
+    scale? : string;
+}
 
-const Logo: React.FC<AboutProps> = () => {
+const Logo: React.FC<AboutProps> = ({ scale }) => {
   return (
-    <BlockLogo>
+    <BlockLogo style={{ transform : `scale(${scale})`}}>
       <WrapLogo>
-        <Triangle />
-        aa
+        <Circle>
+          <CirclePoint>
+            <Line />
+            <Line />
+          </CirclePoint>
+        </Circle>
       </WrapLogo>
     </BlockLogo>
   );

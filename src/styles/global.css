@@ -28,23 +28,33 @@ footer, header, hgroup, menu, nav, section {
 /* FONTS */
 
 @font-face {
-  font-family: EXCON_REGULAR;
-  src: url("../../public/assets/fonts/Excon-Regular.otf");
+  font-family: F_REGULAR;
+  src: url("../../public/assets/fonts/SF-Pro-Display-Regular.otf");
 }
 
 @font-face {
-  font-family: EXCON_MEDIUM;
-  src: url("../../public/assets/fonts/Excon-Medium.otf");
+  font-family: F_MEDIUM;
+  src: url("../../public/assets/fonts/SF-Pro-Display-Medium.otf");
 }
 
 @font-face {
-  font-family: EXCON_BOLD;
-  src: url("../../public/assets/fonts/Excon-Bold.otf");
+  font-family: F_SEMIBOLD;
+  src: url("../../public/assets/fonts/SF-Pro-Display-Semibold.otf");
 }
 
 @font-face {
-  font-family: EXCON_BLACK;
-  src: url("../../public/assets/fonts/Excon-Black.otf");
+  font-family: F_BOLD;
+  src: url("../../public/assets/fonts/SF-Pro-Display-Bold.otf");
+}
+
+@font-face {
+  font-family: F_HEAVY;
+  src: url("../../public/assets/fonts/SF-Pro-Display-Heavy.otf");
+}
+
+@font-face {
+  font-family: F_BLACK;
+  src: url("../../public/assets/fonts/SF-Pro-Display-Black.otf");
 }
 
 
@@ -104,15 +114,13 @@ html {
 }
 
 html, body {
-  /* background: #FFF; */
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: EXCON_REGULAR;
+  font-family: F_REGULAR;
   font-size: 1.4rem;
-  line-height: 1.75rem;
-  /* color: #000; */
+  line-height: calc(1.4rem * 1.25);
   overflow-x: hidden;
 }
 
@@ -133,3 +141,9 @@ body {
 }
 
 /* ANIMATION */
+
+@keyframes rotateLogo {
+  to {
+    transform : rotate(360deg);
+  }
+}

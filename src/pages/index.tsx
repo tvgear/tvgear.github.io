@@ -3,13 +3,16 @@ import { useEffect, useState } from "react";
 import { Meta } from "@/layouts/Meta";
 import { Main } from "@/templates/Main";
 import WindowWrapper from "@/components/WindowWrapper";
-import Loading from "@/layouts/Loading";
+// import Loading from "@/layouts/Loading";
 import styled from "styled-components";
 import Home from "@/views/Home";
+import Header from "@/layouts/Header";
 
 interface IndexProps {}
 
-const BlockWrapContent = styled.div``;
+const BlockWrapContent = styled.div`
+  padding: 55px 0px 0px 0px;
+`;
 
 const Index: FunctionComponent<IndexProps> = ({}) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,9 +25,10 @@ const Index: FunctionComponent<IndexProps> = ({}) => {
   }, []);
 
   return (
-    <Main meta={<Meta title="Thuan Vo Portfolio" description="" image="" />}>
-      {isLoading && <Loading />}
+    <Main meta={<Meta title="TVGEAR - Gaming Gear | Office Gear Secondhand & New" description="" image="" />}>
+      {/* {isLoading && <Loading />} */}
       <WindowWrapper>
+        <Header />
         <BlockWrapContent>
           <Home />
         </BlockWrapContent>
