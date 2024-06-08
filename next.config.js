@@ -1,18 +1,16 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
 });
 
 module.exports = withBundleAnalyzer({
   eslint: {
-    dirs: ['.'],
+    dirs: ["."],
   },
   poweredByHeader: false,
   trailingSlash: true,
-  basePath: '',
+  basePath: "",
   reactStrictMode: true,
   images: {
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 60,
     unoptimized: true,
   },
 });
