@@ -3,13 +3,14 @@ import Logo from "@/components/Logo";
 import {
   BlockHeader,
   ContentWrap,
-  ImgSearch,
+  ImgLink,
+  ItemLinkDirect,
   ItemMenu,
   MenuWeb,
-  SearchTool,
   WrapCenter,
   WrapHeader,
   WrapLeft,
+  WrapLinkDirect,
   WrapRight,
 } from "./style";
 
@@ -28,7 +29,7 @@ const dataMenu = [
   },
   {
     nameMenu: "Soundcard",
-    hrefMenu: "/souncard",
+    hrefMenu: "/soundcard",
   },
   {
     nameMenu: "Micro",
@@ -60,7 +61,7 @@ const Header: React.FC<HeaderProps> = () => {
       <ContentWrap className="blockContainer">
         <WrapHeader>
           <WrapLeft>
-            <Logo scale="0.5" />
+            <Logo scale="0.5" animation />
           </WrapLeft>
           <WrapCenter>
             <MenuWeb>
@@ -74,9 +75,17 @@ const Header: React.FC<HeaderProps> = () => {
             </MenuWeb>
           </WrapCenter>
           <WrapRight>
-            <SearchTool>
-              <ImgSearch src="/assets/images/icSearch.svg" />
-            </SearchTool>
+            <WrapLinkDirect>
+              <ItemLinkDirect href="https://m.me/tvgear" target="_blank">
+                <ImgLink src="/assets/images/icMess.svg" />
+              </ItemLinkDirect>
+              <ItemLinkDirect
+                href="https://facebook.com/tvgear"
+                target="_blank"
+              >
+                <ImgLink src="/assets/images/icShop.svg" />
+              </ItemLinkDirect>
+            </WrapLinkDirect>
           </WrapRight>
         </WrapHeader>
       </ContentWrap>

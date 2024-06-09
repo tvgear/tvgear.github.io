@@ -20,7 +20,7 @@ const Index: FunctionComponent<IndexProps> = ({}) => {
     Promise.all([]).then(() =>
       setTimeout(() => {
         setIsLoading(false);
-      }, 2000)
+      }, 3500)
     );
   }, []);
 
@@ -34,8 +34,8 @@ const Index: FunctionComponent<IndexProps> = ({}) => {
         />
       }
     >
-      {isLoading && <Loading />}
       <WindowWrapper>
+        <Loading showLoading={isLoading}  />
         <Header />
         <BlockWrapContent>
           <Home />

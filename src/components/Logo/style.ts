@@ -14,10 +14,9 @@ export const Line = styled.div`
     background : #000;
     border-radius : 50%;
     margin : 1px 0px;
-    animation : rotateLogo 15s infinite cubic-bezier(.41,1.13,.76,-0.3);
     transition : 0.4s all;
     &:nth-child(2) {
-    top : unset;
+        top : unset;
         bottom : -20px;
     }
 `
@@ -52,6 +51,20 @@ export const WrapLogo = styled.div`
     align-items: center;
     justify-content : center;
     transition : 0.4s all cubic-bezier(0.79,0.14,0.15,0.86);
+    &.move {
+        ${Line} {
+            animation : moveTopLogo 2.5s;
+            &:nth-child(2) {
+                top : unset;
+                animation : moveBottomLogo 2.5s;
+            }
+        }
+    }
+    &.active {
+        ${Line} {
+            animation : rotateLogo 15s infinite cubic-bezier(.41,1.13,.76,-0.3);
+        }
+    }
 `;
 
 export const CirclePoint  = styled.div`

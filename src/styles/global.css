@@ -147,3 +147,21 @@ body {
     transform : rotate(360deg);
   }
 }
+
+@keyframes moveTopLogo {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveBottomLogo {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

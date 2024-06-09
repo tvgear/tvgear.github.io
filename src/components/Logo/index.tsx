@@ -2,13 +2,15 @@ import React from "react";
 import { BlockLogo, Circle, CirclePoint, Line, WrapLogo } from "./style";
 
 interface AboutProps {
-    scale? : string;
+  scale?: string;
+  animation?: boolean;
+  moveAni? : boolean;
 }
 
-const Logo: React.FC<AboutProps> = ({ scale }) => {
+const Logo: React.FC<AboutProps> = ({ scale, animation, moveAni }) => {
   return (
-    <BlockLogo style={{ transform : `scale(${scale})`}}>
-      <WrapLogo>
+    <BlockLogo style={{ transform: `scale(${scale})` }}>
+      <WrapLogo className={`${animation ? "active" : "" || moveAni ? "move" : ""}`}>
         <Circle>
           <CirclePoint>
             <Line />

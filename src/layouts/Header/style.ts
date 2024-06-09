@@ -53,8 +53,19 @@ export const SearchTool = styled.div`
     cursor : pointer;
 `
 
-export const ImgSearch = styled.img`
+export const WrapLinkDirect = styled.div``
+export const ImgLink = styled.img`
     width: 16px;
     height: 16px;
     filter : invert(1);
+    transition : 0.4s all;
+`
+export const ItemLinkDirect = styled(Link)`
+    margin : 0px 0px 0px 20px;
+    &:hover {
+        ${ImgLink} {
+            opacity : 0.8;
+            transition : 0.4s all;
+        }
+    }
 `
