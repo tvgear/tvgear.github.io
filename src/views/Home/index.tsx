@@ -7,7 +7,7 @@ const Home: React.FC<HomeProps> = () => {
   return (
     <BlockHome>
       <ContentWrap className="blockContainer">
-        <TextNote>Website TVGEAR đang nâng cấp. Vui lòng quay lại sau!</TextNote>
+        <TextNote>TVGEAR đang cập nhật sản phẩm. Vui lòng quay lại sau!</TextNote>
       </ContentWrap>
     </BlockHome>
   );
