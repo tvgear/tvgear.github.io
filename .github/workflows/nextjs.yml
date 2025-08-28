@@ -45,7 +45,6 @@ jobs:
           node-version: "18"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
-      # ❌ bỏ static_site_generator để nó không inject config
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -63,13 +62,10 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-      - name: Static HTML export with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next export
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: .next/out
 
   deploy:
     environment:
