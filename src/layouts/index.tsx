@@ -25,7 +25,7 @@ const Layout = ({ children }: LayoutProps) => {
     Promise.all([]).then(() =>
       setTimeout(() => {
         setIsLoading(false);
-      }, 35000)
+      }, 3500)
     );
   }, []);
   return (

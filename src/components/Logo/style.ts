@@ -29,7 +29,7 @@ export const Line = styled.div`
   height: calc(100% + 1px);
   background: #000;
   transition: 0.4s all;
-  /* animation: rotateLogo 15s infinite; */
+  animation: rotateLogo 15s infinite;
   z-index: 1;
   will-change: transform;
 `;
