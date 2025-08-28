@@ -1,6 +1,7 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
+const withBundleAnalyzer =
+  process.env.ANALYZE === "true"
+    ? require("@next/bundle-analyzer")({ enabled: true })
+    : (config) => config;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,16 +12,15 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
 
-  // 👇 Cần cho GitHub Pages (xuất static HTML)
+  // 👇 Bắt buộc cho GitHub Pages
   output: "export",
 
-  // 👇 Bắt buộc khi export, nếu không next/image sẽ lỗi
+  // 👇 Tắt Image Optimization API
   images: {
     unoptimized: true,
   },
 
-  // 👇 Nếu deploy ở dạng username.github.io/repo-name
-  // thì đổi "" thành "/repo-name"
+  // 👇 Nếu repo là username.github.io/my-repo thì đổi thành "/my-repo"
   basePath: "",
 };
 
