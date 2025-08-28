@@ -29,7 +29,7 @@ export const Line = styled.div`
   height: calc(100% + 1px);
   background: #000;
   transition: 0.4s all;
-  animation: rotateLogo 24s infinite;
+  animation: rotateLogo 15s infinite;
   z-index: 1;
   will-change: transform;
 `;
@@ -77,7 +77,7 @@ export const LineBottomLeft = styled.div`
   );
     position: absolute;
     bottom : 20%;
-    left: 11.5%;
+    left: 12%;
     transform: rotate(45deg);
     z-index: 2;
 `
@@ -94,7 +94,7 @@ export const LineBottomRight = styled.div`
   );
     position: absolute;
     bottom : 20%;
-    right : 11.5%;
+    right : 12%;
     transform: rotate(-45deg);
     z-index: 2;
 `
@@ -123,12 +123,5 @@ export const BlockLogo = styled.div<{ size: number; scale: number }>`
     rgba(200, 210, 250, 1) 50%,
     rgba(230, 223, 248, 1) 100%
   );
-  &:hover {
-        ${Line} {
-            width: 35%;
-            transition: 0.4s all;
-          
-        }
-    }
 `;
 

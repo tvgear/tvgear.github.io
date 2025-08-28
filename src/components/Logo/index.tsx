@@ -11,14 +11,12 @@ const Logo: React.FC<LogoProps> = ({ size = 80, scale = 1, isText }) => {
   return (
     <BlockLogo size={size} scale={scale} className="blockLogo">
       <Circle>
-        {isText && (
-          <WrapBrandLine>
-            <LineTop />
-            <LineCenter />
-            <LineBottomLeft />
-            <LineBottomRight />
-          </WrapBrandLine>
-        )}
+        <WrapBrandLine>
+          <LineTop />
+          <LineCenter />
+          <LineBottomLeft />
+          <LineBottomRight />
+        </WrapBrandLine>
       </Circle>
       <Line />
     </BlockLogo>

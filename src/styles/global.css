@@ -29,22 +29,32 @@ footer, header, hgroup, menu, nav, section {
 
 @font-face {
   font-family: F_REGULAR;
-  src: url("../../public/assets/fonts/Satoshi-Regular.otf");
+  src: url("../../public/assets/fonts/BeVietnamPro-Regular.ttf");
 }
 
 @font-face {
   font-family: F_MEDIUM;
-  src: url("../../public/assets/fonts/Satoshi-Medium.otf");
+  src: url("../../public/assets/fonts/BeVietnamPro-Medium.ttf");
+}
+
+@font-face {
+  font-family: F_SEMIBOLD;
+  src: url("../../public/assets/fonts/BeVietnamPro-SemiBold.ttf");
 }
 
 @font-face {
   font-family: F_BOLD;
-  src: url("../../public/assets/fonts/Satoshi-Bold.otf");
+  src: url("../../public/assets/fonts/BeVietnamPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: F_EXTRABOLD;
+  src: url("../../public/assets/fonts/BeVietnamPro-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: F_BLACK;
-  src: url("../../public/assets/fonts/Satoshi-Black.otf");
+  src: url("../../public/assets/fonts/BeVietnamPro-Black.ttf");
 }
 
 

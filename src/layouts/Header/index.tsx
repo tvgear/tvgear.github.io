@@ -12,11 +12,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const dataMenu = [
-  { name: "Mouse", link: "/mouse" },
-  { name: "Keyboard", link: "/keyboard" },
-  { name: "Headphone", link: "/headphone" },
-  { name: "Soundcard", link: "/soundcard" },
-  { name: "Speaker", link: "/speaker" },
+  { name: "Chuột", link: "/mouse" },
+  { name: "Bàn Phím", link: "/keyboard" },
+  { name: "Tai Nghe", link: "/headphone" },
+  { name: "SoundCard", link: "/soundcard" },
+  { name: "Loa", link: "/speaker" },
   { name: "Micro", link: "/micro" },
   { name: "Webcam", link: "/webcam" },
 ];
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
     <BlockHeader>
       <ContentWrap className="blockContainer">
         <WrapLogo>
-          <Logo size={50} isText />
+          <Logo size={60} isText />
         </WrapLogo>
         <ListMenu>
           {dataMenu.map((menu, index) => {

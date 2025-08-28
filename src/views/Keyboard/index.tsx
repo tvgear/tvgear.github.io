@@ -4,7 +4,7 @@ import { BlockKeyboard } from "@/views/Keyboard/style";
 interface KeyboardProps {}
 
 const Keyboard: React.FC<KeyboardProps> = () => {
-  return <BlockKeyboard>Keyboard</BlockKeyboard>;
+  return <BlockKeyboard></BlockKeyboard>;
 };
 
 export default Keyboard;

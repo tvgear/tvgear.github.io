@@ -12,7 +12,10 @@ const Content = styled.div`
   position: relative;
   z-index: 1;
   @media screen and (max-width : 1199px) {
-    padding: 180px 0px 0px 0px;
+    padding: 185px 0px 0px 0px;
+  }
+  @media screen and (max-width : 767px) {
+    padding: 105px 0px 0px 0px;
   }
 `
 
@@ -22,7 +25,7 @@ const Layout = ({ children }: LayoutProps) => {
     Promise.all([]).then(() =>
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000)
+      }, 3500)
     );
   }, []);
   return (

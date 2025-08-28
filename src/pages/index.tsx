@@ -11,12 +11,16 @@ export const ListTab = styled.div`
     @media screen and (max-width : 1199px) {
        position: fixed;
        z-index: 2;
-       top : 125px;
+       top : 120px;
        padding: 10px;
+       width: 60px;
        overflow-y: auto;
        &::-webkit-scrollbar {
         display: none;
        }
+    }
+    @media screen and (max-width : 767px) {
+       top : 55px;
     }
 `;
 export const ItemTab = styled.div`
@@ -182,12 +186,18 @@ export const NameItem = styled.div`
   line-height: calc(1.8rem * 1.25);
   width: 100%;
   margin: 15px 0px 5px 0px;
+  text-align: center;
+  @media screen and (max-width : 1199px) {
+    font-size: 1.4rem;
+    line-height: calc(1.4rem * 1.25);
+  }
 `
 
 export const OptionItem = styled.div`
   margin: 7.5px 0px 0px 0px;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
 `
 
@@ -197,7 +207,9 @@ export const ItemOptionSelect = styled.div`
   margin: 0px 3.5px 0px 0px;
   border: 1.5px solid rgba(30,30, 30);
   border-radius: 10px;
-  font-family: F_MEDIUM;
+  font-family: F_SEMIBOLD;
+  font-size: 1.25rem; 
+  line-height: calc(1.25rem * 1.25);
   cursor: pointer;
   transition: 0.4s all;
   &.active {
@@ -219,10 +231,35 @@ export const PriceItem = styled.div`
     width: 100%;
     margin: 5px 0px 0px 0px;
     font-family: F_BOLD;
+    text-align: center;
     span {
         text-decoration: underline;
         font-size: 1.6rem;
         line-height: calc(1.6rem * 1.25);
+    }
+    @media screen and (max-width : 1199px) {
+        font-size: 1.6rem;
+        line-height: calc(1.6rem * 1.25);
+    }
+`
+
+export const TitleProduct = styled.div`
+    position: absolute;
+    color : #fff;
+    background: rgba(24,24,24);
+    padding: 7.5px 15px;
+    border-radius: 30px;
+    top : 135px;
+    z-index: 999;
+    display: none;
+    font-family: F_BOLD;
+    font-size: 1.25rem;
+    line-height: calc(1.25rem * 1.25);
+    @media screen and (max-width : 1199px) {
+        display: flex;
+    }
+    @media screen and (max-width : 1199px) {
+        top : 60px;
     }
 `
 

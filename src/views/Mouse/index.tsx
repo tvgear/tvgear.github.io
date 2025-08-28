@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BlockMouse, TitleProduct } from "@/views/Mouse/style";
-import { ColorItem, ColorProduct, ImgItem, ImgTab, ItemColorSelect, ItemOptionSelect, ItemProduct, ItemTab, ListProduct, ListTab, NameItem, OptionItem, PriceItem, TagItem, TextTab, TextTag, ViewTag } from "@/pages";
+import { BlockMouse } from "@/views/Mouse/style";
+import { ColorItem, ColorProduct, ImgItem, ImgTab, ItemColorSelect, ItemOptionSelect, ItemProduct, ItemTab, ListProduct, ListTab, NameItem, OptionItem, PriceItem, TagItem, TextTab, TextTag, TitleProduct, ViewTag } from "@/pages";
 
 interface ProductOption {
   name: string;
@@ -40,7 +40,7 @@ const products: Product[] = [
   {
     id: 1,
     brand: "logi",
-    tags: ["wired", "gaming"],
+    tags: ["Có Dây", "Chơi Game"],
     name: "G102 LightSync",
     colors: [
       { color: "black", image: "/assets/images/mouses/g102-black.webp", priceAdd : 0 },
@@ -56,7 +56,7 @@ const products: Product[] = [
     id: 2,
     brand: "logi",
     name: "G203 LightSync",
-    tags: ["wired", "gaming"],
+    tags: ["Có Dây", "Chơi Game"],
     colors: [
       // { color: "dodgerblue", image: "/assets/images/mouses/g203-blue.webp", priceAdd : 0 },
       { color: "lavender", image: "/assets/images/mouses/g203-lilac.webp", priceAdd : 0 },
@@ -70,7 +70,7 @@ const products: Product[] = [
     id: 3,
     brand: "logi",
     name: "G402 Hyperion Fury",
-    tags: ["wired", "gaming"],
+    tags: ["Có Dây", "Chơi Game"],
     colors: [
       { color: "black", image: "/assets/images/mouses/g402.webp", priceAdd : 0 },
     ],
@@ -82,7 +82,7 @@ const products: Product[] = [
     id: 3,
     brand: "logi",
     name: "G403 Hero",
-    tags: ["wired", "gaming"],
+    tags: ["Có Dây", "Chơi Game"],
     colors: [
       { color: "black", image: "/assets/images/mouses/g403-hero.png", priceAdd : 0 },
     ],

@@ -14,7 +14,7 @@ export const BlockHeader = styled.div`
     z-index: 9;
     width: 100%;
     @media screen and (max-width : 1199px) {
-        padding: 10px 0px;
+        padding: 7.5px 0px;
     }
 `
 
@@ -22,6 +22,9 @@ export const ContentWrap = styled.div`
     margin: 0 auto; 
     @media screen and (max-width : 1199px) {
         padding: 0px;
+    }
+    @media screen and (max-width : 767px) {
+        display: flex;
     }
 `
 
@@ -32,25 +35,36 @@ export const WrapLogo = styled.div`
     @media screen and (max-width : 1199px) {
         padding: 10px;
         .blockLogo {
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+    @media screen and (max-width : 767px) {
+        padding: 0px;
+        min-width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .blockLogo {
+            width: 37.5px;
+            height: 37.5px;
         }
     }
 `
 
 export const ListMenu = styled.div`
-    margin: 30px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     display: flex;
     justify-content: center;
     @media screen and (max-width : 1199px) {
-      margin: 10px 0px 0px 0px;
+      margin: 7.5px 0px 0px 0px;
       overflow: auto;
     }
     @media screen and (max-width : 767px) {
-      margin: 10px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
       justify-content: flex-start;
       overflow: auto;
-      padding: 0px 10px;
+      padding: 0px;
       &::-webkit-scrollbar {
         display: none;
       }
@@ -58,7 +72,7 @@ export const ListMenu = styled.div`
 `
 
 export const NameMenu = styled.div`
-   
+   white-space: nowrap;
 `
 
 export const ItemMenu = styled.div`
@@ -91,5 +105,12 @@ export const ItemMenu = styled.div`
       line-height: calc(1.25rem * 1.25);
       height: 37.5px;
       padding: 0px 12.5px;
+    }
+    @media screen and (max-width : 1199px) {
+      font-size: 1.1rem; 
+      line-height: calc(1.1rem * 1.25);
+      height: 37.5px;
+      padding: 0px 12.5px;
+      margin: 0px 5px 0px 0px;
     }
 `
