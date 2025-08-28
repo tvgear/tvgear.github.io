@@ -4,10 +4,9 @@ import { BlockLogo, Circle, Line, LineBottomLeft, LineBottomRight, LineCenter, L
 interface LogoProps {
   size?: number;
   scale?: number; 
-  isText? : boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ size = 80, scale = 1, isText }) => {
+const Logo: React.FC<LogoProps> = ({ size = 80, scale = 1 }) => {
   return (
     <BlockLogo size={size} scale={scale} className="blockLogo">
       <Circle>
