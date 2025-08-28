@@ -1,71 +1,95 @@
-import Link from "next/link";
+
 import styled from "styled-components";
 
 export const BlockHeader = styled.div`
-   background : rgba(0,0,0,0.9);
-   backdrop-filter: blur(10px);
-   position : fixed;
-   top : 0px;
-   left: 0px;
-   width: 100%;
-`
-export const ContentWrap = styled.div``
-
-export const WrapHeader = styled.div`
+    padding: 15px;
+    top : 0;
+    left : 0;
+    right: 0px;
+    position: fixed;
+    max-width: 950px;
+    margin: 0 auto;
+    background: rgba(0,0,0,.75);
+    backdrop-filter: blur(10px);
+    z-index: 9;
     width: 100%;
-    height : 55px;
-    display : flex;
-    align-items : center;
-    justify-content : space-between;
-`
-export const WrapLeft = styled.div`
-    display : flex;
-    width : 100px;
-`
-
-export const WrapCenter = styled.div`
- display : flex;
- width : calc(100% - 200px);
- align-items:  center;
- justify-content : center;
-`
-
-export const MenuWeb = styled.div`
-    display : flex;
-`
-export const ItemMenu = styled(Link)`
-    display : flex;
-    margin : 0px 17.5px;
-    font-family : F_SEMIBOLD;
-    transition : 0.4s all;
-    color : rgba(255, 255, 255, .8);
-    &:hover {
-        color : #FFF;
+    @media screen and (max-width : 1199px) {
+        padding: 10px 0px;
     }
 `
 
-export const WrapRight = styled.div`
- display : flex;
-  width : 100px;
+export const ContentWrap = styled.div`
+    margin: 0 auto; 
+    @media screen and (max-width : 1199px) {
+        padding: 0px;
+    }
 `
 
-export const SearchTool = styled.div`
-    cursor : pointer;
-`
-
-export const WrapLinkDirect = styled.div``
-export const ImgLink = styled.img`
-    width: 16px;
-    height: 16px;
-    filter : invert(1);
-    transition : 0.4s all;
-`
-export const ItemLinkDirect = styled(Link)`
-    margin : 0px 0px 0px 20px;
-    &:hover {
-        ${ImgLink} {
-            opacity : 0.8;
-            transition : 0.4s all;
+export const WrapLogo = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width : 1199px) {
+        padding: 10px;
+        .blockLogo {
+            width: 40px;
+            height: 40px;
         }
+    }
+`
+
+export const ListMenu = styled.div`
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width : 1199px) {
+      margin: 10px 0px 0px 0px;
+      overflow: auto;
+    }
+    @media screen and (max-width : 767px) {
+      margin: 10px 0px 0px 0px;
+      justify-content: flex-start;
+      overflow: auto;
+      padding: 0px 10px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+`
+
+export const NameMenu = styled.div`
+   
+`
+
+export const ItemMenu = styled.div`
+    margin: 0px 7.5px 0px 0px;
+    height: 45px;
+    width: fit-content;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-family: F_BLACK;
+    text-transform: uppercase;
+    transition: 0.4s all;
+    border: 2px solid rgba(30,30,30);
+    transition: 0.4s all;
+    &.active {
+        background: linear-gradient(
+    -135deg,
+    rgba(97, 221, 249, 1) 0%,
+    rgba(150, 215, 250, 1) 25%,
+    rgba(200, 210, 250, 1) 50%,
+    rgba(230, 223, 248, 1) 100%
+  );
+      color : #000;
+      transition: 0.4s all;
+    }
+    @media screen and (max-width : 1199px) {
+      font-size: 1.25rem; 
+      line-height: calc(1.25rem * 1.25);
+      height: 37.5px;
+      padding: 0px 12.5px;
     }
 `

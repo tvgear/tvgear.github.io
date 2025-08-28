@@ -16,7 +16,7 @@ const Main = (props: IMainProps) => (
           fetch(resource, init).then((res) => res.json()),
       }}
     >
-      <div className="content">{props.children}</div>
+      <>{props.children}</>
     </SWRConfig>
   </Fragment>
 );

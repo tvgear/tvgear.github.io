@@ -8,7 +8,7 @@ interface LoadingProps {
 const Loading: React.FC<LoadingProps> = ({ showLoading }) => {
   return (
     <BlockLoading className={`${showLoading ? "active" : ""}`}>
-      <Logo scale="4" moveAni />
+      <Logo size={150} isText />
     </BlockLoading>
   );
 };

@@ -3,20 +3,24 @@ import styled from "styled-components";
 export const BlockLoading = styled.div`
     position : fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background : #000;
     z-index: 999;
     display : flex;
     flex-direction: column;
     align-items:  center;
     justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 0%);
-    transform: translateY(100%);
     transition: 0.6s all cubic-bezier(.61,.07,.35,.59);
+    transform: scale(50);
+    visibility: hidden;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
     &.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        transition: 0.6s all cubic-bezier(.61,.07,.35,.59);
-        transform: translateY(0%);
+        transition: transform 0.6s cubic-bezier(.61,.07,.35,.59), visibility 0.6s;
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
     }
    
 `

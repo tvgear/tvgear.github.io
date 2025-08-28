@@ -29,32 +29,22 @@ footer, header, hgroup, menu, nav, section {
 
 @font-face {
   font-family: F_REGULAR;
-  src: url("../../public/assets/fonts/SF-Pro-Display-Regular.otf");
+  src: url("../../public/assets/fonts/Satoshi-Regular.otf");
 }
 
 @font-face {
   font-family: F_MEDIUM;
-  src: url("../../public/assets/fonts/SF-Pro-Display-Medium.otf");
-}
-
-@font-face {
-  font-family: F_SEMIBOLD;
-  src: url("../../public/assets/fonts/SF-Pro-Display-Semibold.otf");
+  src: url("../../public/assets/fonts/Satoshi-Medium.otf");
 }
 
 @font-face {
   font-family: F_BOLD;
-  src: url("../../public/assets/fonts/SF-Pro-Display-Bold.otf");
-}
-
-@font-face {
-  font-family: F_HEAVY;
-  src: url("../../public/assets/fonts/SF-Pro-Display-Heavy.otf");
+  src: url("../../public/assets/fonts/Satoshi-Bold.otf");
 }
 
 @font-face {
   font-family: F_BLACK;
-  src: url("../../public/assets/fonts/SF-Pro-Display-Black.otf");
+  src: url("../../public/assets/fonts/Satoshi-Black.otf");
 }
 
 
@@ -84,7 +74,7 @@ table {
 }
 
 a {
-  color: #000;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -122,10 +112,12 @@ body {
   font-size: 1.4rem;
   line-height: calc(1.4rem * 1.25);
   overflow-x: hidden;
+  background: #000;
+  color : #FFF;
 }
 
 .blockContainer {
-  max-width: 1300px;
+  max-width: 950px;
   min-width: 800px;
   margin: 0 auto;
   padding: 0px 15px;

@@ -1,23 +1,26 @@
 import React from "react";
-import { BlockLogo, Circle, CirclePoint, Line, WrapLogo } from "./style";
+import { BlockLogo, Circle, Line, LineBottomLeft, LineBottomRight, LineCenter, LineTop, WrapBrandLine } from "./style";
 
-interface AboutProps {
-  scale?: string;
-  animation?: boolean;
-  moveAni? : boolean;
+interface LogoProps {
+  size?: number;
+  scale?: number; 
+  isText? : boolean;
 }
 
-const Logo: React.FC<AboutProps> = ({ scale, animation, moveAni }) => {
+const Logo: React.FC<LogoProps> = ({ size = 80, scale = 1, isText }) => {
   return (
-    <BlockLogo style={{ transform: `scale(${scale})` }}>
-      <WrapLogo className={`${animation ? "active" : "" || moveAni ? "move" : ""}`}>
-        <Circle>
-          <CirclePoint>
-            <Line />
-            <Line />
-          </CirclePoint>
-        </Circle>
-      </WrapLogo>
+    <BlockLogo size={size} scale={scale} className="blockLogo">
+      <Circle>
+        {isText && (
+          <WrapBrandLine>
+            <LineTop />
+            <LineCenter />
+            <LineBottomLeft />
+            <LineBottomRight />
+          </WrapBrandLine>
+        )}
+      </Circle>
+      <Line />
     </BlockLogo>
   );
 };

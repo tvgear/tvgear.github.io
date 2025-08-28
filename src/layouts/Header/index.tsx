@@ -1,95 +1,67 @@
-import React from "react";
-import Logo from "@/components/Logo";
+import React, { useEffect, useRef } from "react";
 import {
   BlockHeader,
   ContentWrap,
-  ImgLink,
-  ItemLinkDirect,
   ItemMenu,
-  MenuWeb,
-  WrapCenter,
-  WrapHeader,
-  WrapLeft,
-  WrapLinkDirect,
-  WrapRight,
+  ListMenu,
+  NameMenu,
+  WrapLogo,
 } from "./style";
+import Logo from "@/components/Logo";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const dataMenu = [
-  {
-    nameMenu: "Chuột",
-    hrefMenu: "/chuot",
-  },
-  {
-    nameMenu: "Bàn phím",
-    hrefMenu: "/ban-phim",
-  },
-  {
-    nameMenu: "Tai nghe",
-    hrefMenu: "/tai-nghe",
-  },
-  {
-    nameMenu: "Soundcard",
-    hrefMenu: "/soundcard",
-  },
-  {
-    nameMenu: "Micro",
-    hrefMenu: "/micro",
-  },
-  {
-    nameMenu: "Webcam",
-    hrefMenu: "/webcam",
-  },
-  {
-    nameMenu: "Pad",
-    hrefMenu: "/pad",
-  },
-  {
-    nameMenu: "Loa",
-    hrefMenu: "/loa",
-  },
-  {
-    nameMenu: "Phụ kiện",
-    hrefMenu: "/phu-kien",
-  },
+  { name: "Mouse", link: "/mouse" },
+  { name: "Keyboard", link: "/keyboard" },
+  { name: "Headphone", link: "/headphone" },
+  { name: "Soundcard", link: "/soundcard" },
+  { name: "Speaker", link: "/speaker" },
+  { name: "Micro", link: "/micro" },
+  { name: "Webcam", link: "/webcam" },
 ];
 
-interface HeaderProps {}
+const Header: React.FC = () => {
+  const router = useRouter();
+  const menuRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-const Header: React.FC<HeaderProps> = () => {
+  useEffect(() => {
+    const activeIndex = dataMenu.findIndex((menu) =>
+      router.asPath.startsWith(menu.link)
+    );
+    if (activeIndex !== -1 && menuRefs.current[activeIndex]) {
+      menuRefs.current[activeIndex]?.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest",
+      });
+    }
+  }, [router.asPath]);
+
   return (
     <BlockHeader>
       <ContentWrap className="blockContainer">
-        <WrapHeader>
-          <WrapLeft>
-            <Logo scale="0.5" animation />
-          </WrapLeft>
-          <WrapCenter>
-            <MenuWeb>
-              {dataMenu.map((item, index) => {
-                return (
-                  <ItemMenu href={item.hrefMenu} key={index}>
-                    {item.nameMenu}
-                  </ItemMenu>
-                );
-              })}
-            </MenuWeb>
-          </WrapCenter>
-          <WrapRight>
-            <WrapLinkDirect>
-              <ItemLinkDirect href="https://m.me/tvgear" target="_blank">
-                <ImgLink src="/assets/images/icMess.svg" />
-              </ItemLinkDirect>
-              <ItemLinkDirect
-                href="https://facebook.com/tvgear"
-                target="_blank"
-              >
-                <ImgLink src="/assets/images/icShop.svg" />
-              </ItemLinkDirect>
-            </WrapLinkDirect>
-          </WrapRight>
-        </WrapHeader>
+        <WrapLogo>
+          <Logo size={50} isText />
+        </WrapLogo>
+        <ListMenu>
+          {dataMenu.map((menu, index) => {
+            const isActive = router.asPath.startsWith(menu.link);
+            return (
+              <Link href={menu.link} passHref key={index}>
+                <ItemMenu
+                  className={isActive ? "active" : ""}
+                  ref={(el) => (menuRefs.current[index] = el)}
+                >
+                  <NameMenu>{menu.name}</NameMenu>
+                </ItemMenu>
+              </Link>
+            );
+          })}
+        </ListMenu>
       </ContentWrap>
     </BlockHeader>
   );
 };
+
 export default Header;
