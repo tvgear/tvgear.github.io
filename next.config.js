@@ -12,10 +12,10 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
 
-  // 👇 Bắt buộc cho GitHub Pages
+  // 👇 Bắt buộc cho GitHub Pages (xuất static HTML)
   output: "export",
 
-  // 👇 Tắt Image Optimization API
+  // 👇 Tắt Image Optimization API (nếu không next/image sẽ crash)
   images: {
     unoptimized: true,
   },
