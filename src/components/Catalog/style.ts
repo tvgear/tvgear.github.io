@@ -59,7 +59,7 @@ export const ImgTab = styled.img`
 `
 
 export const TextTab = styled.div`
-    font-family: F_BOLD;
+    font-family: F_MEDIUM;
     @media screen and (max-width : 1199px) {
        display: none;
     }
@@ -169,7 +169,7 @@ export const ViewTag = styled.div`
 
 export const TextTag = styled.div`
     color : #000;
-    font-family: F_BOLD;
+    font-family: F_SEMIBOLD;
     font-size: 1rem;
     line-height: calc(1rem * 1.25);
     text-transform : uppercase;
@@ -289,6 +289,7 @@ export const ButtonLinkItem = styled(Link)`
   border-radius: 5px;
   font-family: F_BOLD;
   transition: 0.4s all;
+  text-transform: uppercase;
   &:active {
     color : #000;
     filter: brightness(0.9);

@@ -55,7 +55,7 @@ export function Catalog<B extends string>({ title, brands, products }: CatalogPr
       </ListTab>
 
       <ListProduct>
-        {title && <TitleProduct>{title} — {activeBrandLabel}</TitleProduct>}
+        <TitleProduct>{activeBrandLabel}</TitleProduct>
         {filtered.map((product) => {
           const selectedOptionIndex = selectedOptions[product.id] ?? 0;
           const selectedColorIndex = selectedColors[product.id] ?? 0;

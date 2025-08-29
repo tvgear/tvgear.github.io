@@ -13,18 +13,6 @@
       { "name": "Lỗi LED", "price": 880 },
       { "name": "LED Đẹp", "price": 980 }
     ]
-  },
-  {
-    "id": 2,
-    "brand": "logi",
-    "tags": ["Gaming"],
-    "name": "G512 GX RGB",
-    "colors": [
-      { "color": "black", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "Lỗi LED, Cấn", "price": 750 }
-    ]
   }
 ]
   

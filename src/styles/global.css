@@ -29,32 +29,32 @@ footer, header, hgroup, menu, nav, section {
 
 @font-face {
   font-family: F_REGULAR;
-  src: url("../../public/assets/fonts/BeVietnamPro-Regular.ttf");
+  src: url("../../public/assets/fonts/Lexend-Regular.ttf");
 }
 
 @font-face {
   font-family: F_MEDIUM;
-  src: url("../../public/assets/fonts/BeVietnamPro-Medium.ttf");
+  src: url("../../public/assets/fonts/Lexend-Medium.ttf");
 }
 
 @font-face {
   font-family: F_SEMIBOLD;
-  src: url("../../public/assets/fonts/BeVietnamPro-SemiBold.ttf");
+  src: url("../../public/assets/fonts/Lexend-SemiBold.ttf");
 }
 
 @font-face {
   font-family: F_BOLD;
-  src: url("../../public/assets/fonts/BeVietnamPro-Bold.ttf");
+  src: url("../../public/assets/fonts/Lexend-Bold.ttf");
 }
 
 @font-face {
   font-family: F_EXTRABOLD;
-  src: url("../../public/assets/fonts/BeVietnamPro-ExtraBold.ttf");
+  src: url("../../public/assets/fonts/Lexend-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: F_BLACK;
-  src: url("../../public/assets/fonts/BeVietnamPro-Black.ttf");
+  src: url("../../public/assets/fonts/Lexend-Black.ttf");
 }
 
 

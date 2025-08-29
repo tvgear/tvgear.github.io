@@ -7,7 +7,7 @@ export const BlockHeader = styled.div`
     left : 0;
     right: 0px;
     position: fixed;
-    max-width: 950px;
+    max-width: 1100px;
     margin: 0 auto;
     background: rgba(0,0,0,.75);
     backdrop-filter: blur(10px);
@@ -84,7 +84,7 @@ export const ItemMenu = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    font-family: F_BLACK;
+    font-family: F_BOLD;
     text-transform: uppercase;
     transition: 0.4s all;
     border: 2px solid rgba(30,30,30);
