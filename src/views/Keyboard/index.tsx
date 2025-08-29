@@ -1,10 +1,22 @@
-import React from "react";
+import * as React from "react";
 import { BlockKeyboard } from "@/views/Keyboard/style";
+import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
+import productsJson from "./_keyboard.json";
 
-interface KeyboardProps {}
+type KeyboardBrand = "logi" | "razer";
 
-const Keyboard: React.FC<KeyboardProps> = () => {
-  return <BlockKeyboard></BlockKeyboard>;
-};
+const brands = [
+  { key: "logi", label: "Logitech", image: "/assets/images/brands/logitech.svg" },
+  { key: "razer",   label: "Razer",    image: "/assets/images/brands/razer.svg" },
+] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 
-export default Keyboard;
+const products = productsJson as ReadonlyArray<BaseProduct<KeyboardBrand>>;
+
+
+export default function KeyboardPage() {
+  return (
+    <BlockKeyboard>
+      <Catalog<KeyboardBrand> title="Keyboard" brands={brands} products={products} />
+    </BlockKeyboard>
+  );
+}

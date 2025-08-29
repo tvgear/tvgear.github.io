@@ -1,0 +1,89 @@
+[
+    {
+      "id": 1,
+      "brand": "logi",
+      "tags": ["Gaming Có Dây"],
+      "name": "G102 LIGHTSYNC",
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
+        { "color": "white", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "90%", "price": 220 },
+        { "name": "95%", "price": 250 },
+        { "name": "Mod Slient", "price": 330 }
+      ]
+    },
+    {
+      "id": 2,
+      "brand": "logi",
+      "name": "G203 LIGHTSYNC",
+      "tags": ["Gaming Có Dây"],
+      "colors": [
+        { "color": "lavender", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "95%", "price": 250 },
+        { "name": "Mod Slient", "price": 330 }
+      ]
+    },
+    {
+      "id": 3,
+      "brand": "logi",
+      "name": "G402 Hyperion Fury Ultra",
+      "tags": ["Gaming Có Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g402.webp", "priceAdd": 0 }
+      ],
+      "options": [{ "name": "97%", "price": 400 }]
+    },
+    {
+      "id": 4,
+      "brand": "logi",
+      "name": "G403 Hero",
+      "tags": ["Gaming Có Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g403-hero.png", "priceAdd": 0 }
+      ],
+      "options": [{ "name": "90%", "price": 400 }]
+    },
+    {
+      "id": 5,
+      "brand": "logi",
+      "name": "G502 Hero",
+      "tags": ["Gaming Có Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g502-hero.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "95%", "price": 550 },
+        { "name": "97%", "price": 650 }
+      ]
+    },
+    {
+      "id": 6,
+      "brand": "logi",
+      "name": "G502 X",
+      "tags": ["Gaming Có Dây"],
+      "colors": [
+        { "color": "white", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
+      ],
+      "options": [{ "name": "97%", "price": 750 }]
+    },
+    {
+      "id": 7,
+      "brand": "logi",
+      "name": "G304 LightSpeed",
+      "tags": ["Gaming Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
+        { "color": "white", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "90%", "price": 430 },
+        { "name": "95%", "price": 480 },
+        { "name": "Mod Slient", "price": 580 }
+      ]
+    }
+]
+  

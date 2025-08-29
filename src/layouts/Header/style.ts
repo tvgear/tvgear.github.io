@@ -77,7 +77,7 @@ export const NameMenu = styled.div`
 
 export const ItemMenu = styled.div`
     margin: 0px 7.5px 0px 0px;
-    height: 45px;
+    height: 37.5px;
     width: fit-content;
     padding: 0px 15px;
     display: flex;
@@ -103,13 +103,11 @@ export const ItemMenu = styled.div`
     @media screen and (max-width : 1199px) {
       font-size: 1.25rem; 
       line-height: calc(1.25rem * 1.25);
-      height: 37.5px;
       padding: 0px 12.5px;
     }
     @media screen and (max-width : 1199px) {
       font-size: 1.1rem; 
       line-height: calc(1.1rem * 1.25);
-      height: 37.5px;
       padding: 0px 12.5px;
       margin: 0px 5px 0px 0px;
     }

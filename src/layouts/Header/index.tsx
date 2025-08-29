@@ -42,7 +42,7 @@ const Header: React.FC = () => {
     <BlockHeader>
       <ContentWrap className="blockContainer">
         <WrapLogo>
-          <Logo size={60} />
+          <Logo size={50} />
         </WrapLogo>
         <ListMenu>
           {dataMenu.map((menu, index) => {
