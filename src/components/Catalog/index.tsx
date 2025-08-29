@@ -20,7 +20,7 @@ type CatalogProps<B extends string> = {
   products: ReadonlyArray<BaseProduct<B>>;
 };
 
-export function Catalog<B extends string>({ title, brands, products }: CatalogProps<B>) {
+export function Catalog<B extends string>({ brands, products }: CatalogProps<B>) {
   const [activeBrand, setActiveBrand] = React.useState<B>(brands[0]?.key as B);
   const [selectedOptions, setSelectedOptions] = React.useState<Record<number, number>>({});
   const [selectedColors, setSelectedColors] = React.useState<Record<number, number>>({});
