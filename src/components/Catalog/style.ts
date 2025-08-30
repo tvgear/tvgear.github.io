@@ -201,9 +201,8 @@ export const NameItem = styled.div`
 `
 
 export const OptionItem = styled.div`
-  margin: 10px 0px 15px -1.5px;
+  margin: 10px 0px 0px -1.5px;
   display: flex;
-  justify-content: flex-start;
   width: 100%;
   min-height: 60px;
   flex-wrap: wrap;
@@ -224,26 +223,28 @@ export const ItemOptionSelect = styled.div`
   white-space: nowrap;
   user-select: none;
   &.active {
-    background: #FFF;
+    background: -webkit-linear-gradient(
+    -135deg,
+    rgba(97, 221, 249, 1) 0%,
+    rgba(150, 215, 250, 1) 25%,
+    rgba(200, 210, 250, 1) 50%,
+    rgba(230, 223, 248, 1) 100%
+  );
     color : #000;
     transition: 0.4s all;
   }
 `
 
 export const PriceItem = styled.div`
-    font-size: 1.8rem;
-    line-height: calc(1.8rem * 1.25);
+    font-size: 2rem;
+    line-height: calc(2rem * 1.25);
     width: 100%;
-    margin: 0px 0px 0px 0px;
+    margin: 7.5px 0px 0px 0px;
     font-family: F_BOLD;
     span {
         text-decoration: underline;
-        font-size: 1.6rem;
-        line-height: calc(1.6rem * 1.25);
-    }
-    @media screen and (max-width : 1199px) {
-        font-size: 1.6rem;
-        line-height: calc(1.6rem * 1.25);
+        font-size: 1.8rem;
+        line-height: calc(1.8rem * 1.25);
     }
 `
 
@@ -269,7 +270,7 @@ export const TitleProduct = styled.div`
 
 export const ButtonLinkItem = styled(Link)`
     position: absolute;
-    bottom: 10px;
+    bottom: 11.5px;
     right: 10px;
     background: -webkit-linear-gradient(
     -135deg,
