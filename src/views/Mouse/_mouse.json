@@ -2,7 +2,7 @@
     {
       "id": 1,
       "brand": "logi",
-      "tags": ["Gaming Có Dây"],
+      "tags": ["Gaming"],
       "name": "G102 LIGHTSYNC",
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
@@ -18,7 +18,7 @@
       "id": 2,
       "brand": "logi",
       "name": "G203 LIGHTSYNC",
-      "tags": ["Gaming Có Dây"],
+      "tags": ["Gaming"],
       "colors": [
         { "color": "lavender", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
       ],
@@ -31,7 +31,7 @@
       "id": 3,
       "brand": "logi",
       "name": "G402 Hyperion Fury Ultra",
-      "tags": ["Gaming Có Dây"],
+      "tags": ["Gaming"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g402.webp", "priceAdd": 0 }
       ],
@@ -41,7 +41,7 @@
       "id": 4,
       "brand": "logi",
       "name": "G403 Hero",
-      "tags": ["Gaming Có Dây"],
+      "tags": ["Gaming"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g403-hero.png", "priceAdd": 0 }
       ],
@@ -51,7 +51,7 @@
       "id": 5,
       "brand": "logi",
       "name": "G502 Hero",
-      "tags": ["Gaming Có Dây"],
+      "tags": ["Gaming"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g502-hero.webp", "priceAdd": 0 }
       ],
@@ -64,7 +64,7 @@
       "id": 6,
       "brand": "logi",
       "name": "G502 X",
-      "tags": ["Gaming Có Dây"],
+      "tags": ["Gaming"],
       "colors": [
         { "color": "white", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
       ],
@@ -74,7 +74,7 @@
       "id": 7,
       "brand": "logi",
       "name": "G304 LightSpeed",
-      "tags": ["Gaming Không Dây"],
+      "tags": ["Gaming"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
         { "color": "white", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
@@ -83,6 +83,31 @@
         { "name": "90%", "price": 430 },
         { "name": "95%", "price": 480 },
         { "name": "Mod Slient", "price": 580 }
+      ]
+    },
+    {
+      "id": 8,
+      "brand": "logi",
+      "name": "G703 Hero LightSpeed",
+      "tags": ["Gaming"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1080 }
+      ]
+    },
+    {
+      "id": 9,
+      "brand": "logi",
+      "name": "G PRO Wireless",
+      "tags": ["Gaming"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97% PK Đủ Dùng", "price": 1080 },
+        { "name": "97% Full ", "price": 1200 }
       ]
     }
 ]
