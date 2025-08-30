@@ -108,10 +108,9 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
 
               {selectedOption && selectedColor && (
                 <PriceItem>
-                  <span>đ</span> {selectedOption.price + selectedColor.priceAdd}.000
+                  <span>đ</span> {(selectedOption.price + selectedColor.priceAdd).toLocaleString("vi-VN")}.000
                 </PriceItem>
               )}
-
               <ButtonLinkItem href="https://fb.com/tvgear" target="_blank">
                 Mua
               </ButtonLinkItem>

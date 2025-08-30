@@ -1,8 +1,8 @@
 [
     {
       "id": 1,
-      "brand": "logi",
-      "tags": ["Gaming"],
+      "brand": "logig",
+      "tags": ["Có Dây"],
       "name": "G102 LIGHTSYNC",
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
@@ -16,9 +16,9 @@
     },
     {
       "id": 2,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G203 LIGHTSYNC",
-      "tags": ["Gaming"],
+      "tags": ["Có Dây"],
       "colors": [
         { "color": "lavender", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
       ],
@@ -29,9 +29,9 @@
     },
     {
       "id": 3,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G402 Hyperion Fury Ultra",
-      "tags": ["Gaming"],
+      "tags": ["Có Dây"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g402.webp", "priceAdd": 0 }
       ],
@@ -39,9 +39,9 @@
     },
     {
       "id": 4,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G403 Hero",
-      "tags": ["Gaming"],
+      "tags": ["Có Dây"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g403-hero.png", "priceAdd": 0 }
       ],
@@ -49,9 +49,9 @@
     },
     {
       "id": 5,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G502 Hero",
-      "tags": ["Gaming"],
+      "tags": ["Có Dây"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g502-hero.webp", "priceAdd": 0 }
       ],
@@ -62,9 +62,9 @@
     },
     {
       "id": 6,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G502 X",
-      "tags": ["Gaming"],
+      "tags": ["Có Dây"],
       "colors": [
         { "color": "white", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
       ],
@@ -72,9 +72,9 @@
     },
     {
       "id": 7,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G304 LightSpeed",
-      "tags": ["Gaming"],
+      "tags": ["Không Dây"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
         { "color": "white", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
@@ -87,9 +87,9 @@
     },
     {
       "id": 8,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G703 Hero LightSpeed",
-      "tags": ["Gaming"],
+      "tags": ["Không Dây"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
       ],
@@ -99,15 +99,124 @@
     },
     {
       "id": 9,
-      "brand": "logi",
+      "brand": "logig",
       "name": "G PRO Wireless",
-      "tags": ["Gaming"],
+      "tags": ["Không Dây"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97% PK Đủ Dùng", "price": 1080 },
-        { "name": "97% Full ", "price": 1200 }
+        { "name": "97% PK Đủ", "price": 1080 },
+        { "name": "97% PK Full, Box", "price": 1200 }
+      ]
+    },
+    {
+      "id": 10,
+      "brand": "logig",
+      "name": "G903 Hero LightSpeed",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g903.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1250 }
+      ]
+    },
+    {
+      "id": 11,
+      "brand": "logig",
+      "name": "G502 Wireless LightSpeed",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%, Box", "price": 1400 }
+      ]
+    },
+    {
+      "id": 12,
+      "brand": "logig",
+      "name": "G502 X Wireless",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g502-x-wl.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1600 }
+      ]
+    },
+    {
+      "id": 13,
+      "brand": "logig",
+      "name": "G502 X PLus Wireless",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g502-x-plus-wl.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1850 }
+      ]
+    },
+    {
+      "id": 14,
+      "brand": "logig",
+      "name": "G PRO X SuperLight",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 },
+        { "color": "white", "image": "/assets/images/mouses/gpro-x-spl-white.webp", "priceAdd": 100 },
+        { "color": "deeppink", "image": "/assets/images/mouses/gpro-x-spl-pink.webp", "priceAdd": 100 },
+        { "color": "crimson", "image": "/assets/images/mouses/gpro-x-spl-red.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1480 },
+        { "name": "97%, Box", "price": 1580 }
+      ]
+    },
+    {
+      "id": 15,
+      "brand": "logig",
+      "name": "G PRO X SuperLight 2",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 },
+        { "color": "white", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 },
+        { "color": "deeppink", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "90%", "price": 1900 },
+        { "name": "97%", "price": 2080 },
+        { "name": "97%, Box", "price": 2180 },
+        { "name": "New Đen BH SPC 4/27", "price": 2550 }
+      ]
+    },
+    {
+      "id": 16,
+      "brand": "logig",
+      "name": "G PRO X SuperLight 2 DEX",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp", "priceAdd": 0 }
+      ],
+      "_disabled_colors": [
+        { "color": "white", "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp", "priceAdd": 0 },
+        { "color": "deeppink", "image": "/assets/images/mouses/gpro-x-spl2-dex-pink.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%, Box", "price": 2380 }
+      ]
+    },
+    {
+      "id": 17,
+      "brand": "logio",
+      "name": "M185",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/m185-black.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 90 }
       ]
     }
 ]

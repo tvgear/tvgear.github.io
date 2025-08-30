@@ -51,6 +51,7 @@ export const ImgTab = styled.img`
     height: 22px;
     margin: 0px 12.5px 0px 0px;
     object-fit: contain;
+    border-radius: 4px;
     @media screen and (max-width : 1199px) {
         margin: 0px;
         width: 20px;
@@ -115,7 +116,7 @@ export const ColorItem = styled.div`
     position: absolute;
     align-items: flex-end;
     right : 10px;
-    bottom : 135px;
+    top : 7.5px;
 `
 
 export const ItemColorSelect = styled.div`
@@ -149,8 +150,8 @@ export const ColorProduct = styled.div`
 
 export const TagItem = styled.div`
    position: absolute;
-   left : 5px;
-   top : 5px;
+   left : 7.5px;
+   top : 7.5px;
 `
 
 export const ViewTag = styled.div`
@@ -162,14 +163,14 @@ export const ViewTag = styled.div`
     rgba(230, 223, 248, 1) 100%
   );
     text-transform: capitalize;
-    padding: 2.5px 5px;
+    padding: 4px 8px;
     border-radius: 2px;
     user-select: none;
 `
 
 export const TextTag = styled.div`
     color : #000;
-    font-family: F_SEMIBOLD;
+    font-family: F_BOLD;
     font-size: 1rem;
     line-height: calc(1rem * 1.25);
     text-transform : uppercase;
@@ -178,8 +179,8 @@ export const TextTag = styled.div`
 export const NameItem = styled.div`
   color : #FFF;
   font-family: F_BOLD;
-  font-size: 1.6rem;
-  line-height: calc(1.6rem * 1.25);
+  font-size: 1.4rem;
+  line-height: calc(1.4rem * 1.25);
   width: 100%;
   margin: 20px 0px 0px 0px;
   display: block;
