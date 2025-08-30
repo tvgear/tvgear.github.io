@@ -40,7 +40,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+        <title>TVGEAR SHOP | GAMING GEAR 2ND & NEW</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
         <body>
           <Main />
           <NextScript />
