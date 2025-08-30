@@ -11,7 +11,7 @@
       "options": [
         { "name": "90%", "price": 220 },
         { "name": "95%", "price": 250 },
-        { "name": "Mod Slient", "price": 330 }
+        { "name": "95% + Mod Slient", "price": 330 }
       ]
     },
     {
@@ -20,11 +20,11 @@
       "name": "G203 LIGHTSYNC",
       "tags": ["Có Dây"],
       "colors": [
-        { "color": "lavender", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
+        { "color": "lightsteelblue", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "95%", "price": 250 },
-        { "name": "Mod Slient", "price": 330 }
+        { "name": "95% + Mod Slient", "price": 330 }
       ]
     },
     {
@@ -82,7 +82,7 @@
       "options": [
         { "name": "90%", "price": 430 },
         { "name": "95%", "price": 480 },
-        { "name": "Mod Slient", "price": 580 }
+        { "name": "95% + Mod Slient", "price": 580 }
       ]
     },
     {
@@ -199,25 +199,41 @@
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp", "priceAdd": 0 }
       ],
-      "_disabled_colors": [
-        { "color": "white", "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp", "priceAdd": 0 },
-        { "color": "deeppink", "image": "/assets/images/mouses/gpro-x-spl2-dex-pink.webp", "priceAdd": 0 }
-      ],
       "options": [
         { "name": "97%, Box", "price": 2380 }
       ]
     },
+    
+
+
+
     {
       "id": 17,
       "brand": "logio",
       "name": "M185",
       "tags": ["Không Dây"],
       "colors": [
-        { "color": "black", "image": "/assets/images/mouses/m185-black.webp", "priceAdd": 0 }
+        { "color": "gray", "image": "/assets/images/mouses/m185-gray.webp", "priceAdd": 0 },
+        { "color": "blue", "image": "/assets/images/mouses/m185-blue.webp", "priceAdd": 0 },
+        { "color": "crimson", "image": "/assets/images/mouses/m185-red.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "97%", "price": 90 }
       ]
+    },
+    {
+      "id": 18,
+      "brand": "logio",
+      "name": "M190",
+      "tags": ["Không Dây"],
+      "colors": [
+        { "color": "gray", "image": "/assets/images/mouses/m190-black.webp", "priceAdd": 0 },
+        { "color": "blue", "image": "/assets/images/mouses/m190-blue.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 150 }
+      ]
     }
+    
 ]
   

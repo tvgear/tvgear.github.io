@@ -85,9 +85,8 @@ export const ListProduct = styled.div`
 `;
 export const ItemProduct = styled.div`
     width: calc(33% - 7.5px);
-    background: rgba(24,24,24);
-    border: 1px solid rgba(24,24,24);
-    padding: 30px 15px 12.5px 15px;
+    background: rgba(20,20,20);
+    padding: 12.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,6 +104,7 @@ export const ImgItem = styled.img`
     height: 175px;
     max-width: 100%;
     object-fit: contain;
+    margin: 10px 0px;
     @media screen and (max-width : 767px) {
         height: 150px;
     }
@@ -112,17 +112,14 @@ export const ImgItem = styled.img`
 
 export const ColorItem = styled.div`
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: flex-end;
-    right : 10px;
-    top : 7.5px;
+    width: 100%;
+    margin: 7.5px 0px 0px 0px;
 `
 
 export const ItemColorSelect = styled.div`
-    width: 22px;
-    height: 22px;
-    margin: 3.5px 0px;
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px 0px 0px;
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid rgba(40,40,40);
@@ -143,8 +140,8 @@ export const ItemColorSelect = styled.div`
 `
 
 export const ColorProduct = styled.div`
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
 `
 
@@ -182,7 +179,7 @@ export const NameItem = styled.div`
   font-size: 1.4rem;
   line-height: calc(1.4rem * 1.25);
   width: 100%;
-  margin: 20px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
   display: block;
   text-transform : uppercase;
   background: -webkit-linear-gradient(
@@ -204,7 +201,7 @@ export const NameItem = styled.div`
 `
 
 export const OptionItem = styled.div`
-  margin: 7.5px 0px 15px -1.5px;
+  margin: 10px 0px 15px -1.5px;
   display: flex;
   justify-content: flex-start;
   width: 100%;

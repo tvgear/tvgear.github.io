@@ -3,11 +3,11 @@ import { BlockKeyboard } from "@/views/Keyboard/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
 import productsJson from "./_keyboard.json";
 
-type KeyboardBrand = "logi" | "razer";
+type KeyboardBrand = "logig" | "razer";
 
 const brands = [
-  { key: "logi", label: "Logitech", image: "/assets/images/brands/logitech.svg" },
-  { key: "razer",   label: "Razer",    image: "/assets/images/brands/razer.svg" },
+  { key: "logig", label: "Logitech G", image: "/assets/images/brands/logitech-g.svg" },
+  { key: "razer",   label: "Razer",  image: "/assets/images/brands/razer.svg" },
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 
 const products = productsJson as ReadonlyArray<BaseProduct<KeyboardBrand>>;

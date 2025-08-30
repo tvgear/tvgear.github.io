@@ -65,23 +65,6 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
           return (
             <ItemProduct key={product.id}>
               <ImgItem src={selectedColor?.image || ""} />
-
-              {product.colors.length > 1 && (
-                <ColorItem>
-                  {product.colors.map((c, i) => (
-                    <ItemColorSelect
-                      key={`${product.id}-${c.color}`}
-                      className={i === selectedColorIndex ? "active" : ""}
-                      onClick={() =>
-                        setSelectedColors((prev) => ({ ...prev, [product.id]: i }))
-                      }
-                    >
-                      <ColorProduct style={{ background: c.color }} />
-                    </ItemColorSelect>
-                  ))}
-                </ColorItem>
-              )}
-
               <TagItem>
                 {product.tags.map((tag) => (
                   <ViewTag key={`${product.id}-${tag}`}>
@@ -91,6 +74,20 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
               </TagItem>
 
               <NameItem>{product.name}</NameItem>
+
+              <ColorItem>
+                {product.colors.map((c, i) => (
+                  <ItemColorSelect
+                    key={`${product.id}-${c.color}`}
+                    className={i === selectedColorIndex ? "active" : ""}
+                    onClick={() =>
+                      setSelectedColors((prev) => ({ ...prev, [product.id]: i }))
+                    }
+                  >
+                    <ColorProduct style={{ background: c.color }} />
+                  </ItemColorSelect>
+                ))}
+              </ColorItem>
 
               <OptionItem style={{ marginBottom: 8 }}>
                 {product.options.map((opt, i) => (
