@@ -41,8 +41,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head>
-        <title>TVGEAR SHOP | GAMING GEAR 2ND & NEW</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>TVGEAR Shop | Gaming Gear 2ND & New</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         </Head>
         <body>
           <Main />
