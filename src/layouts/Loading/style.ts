@@ -22,7 +22,15 @@ export const BlockLoading = styled.div`
         opacity: 1;
         visibility: visible;
     }
-   
+   &::before {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    content : "";
+    top : 0;
+    left : 0;
+   }
 `
 
 export const PercentLoading = styled.div`
