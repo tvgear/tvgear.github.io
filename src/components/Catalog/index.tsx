@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ListTab, ItemTab, ImgTab, TextTab, ListProduct, TitleProduct, ItemProduct, ImgItem, ColorItem, ItemColorSelect, ColorProduct, TagItem, ViewTag, TextTag, NameItem, OptionItem, ItemOptionSelect, PriceItem, ButtonLinkItem } from "./style";
+import { ListTab, ItemTab, ImgTab, TextTab, ListProduct, TitleProduct, ItemProduct, ImgItem, ColorItem, ItemColorSelect, ColorProduct, TagItem, ViewTag, TextTag, NameItem, OptionItem, ItemOptionSelect, PriceItem, ButtonLinkItem, TextButton } from "./style";
 
 
 export type ProductOption = { name: string; price: number };
@@ -75,6 +75,12 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
 
               <NameItem>{product.name}</NameItem>
 
+               {selectedOption && selectedColor && (
+                <PriceItem>
+                  <span>đ</span> {(selectedOption.price + selectedColor.priceAdd).toLocaleString("vi-VN")}.000
+                </PriceItem>
+              )}
+
               <ColorItem>
                 {product.colors.map((c, i) => (
                   <ItemColorSelect
@@ -102,14 +108,8 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                   </ItemOptionSelect>
                 ))}
               </OptionItem>
-
-              {selectedOption && selectedColor && (
-                <PriceItem>
-                  <span>đ</span> {(selectedOption.price + selectedColor.priceAdd).toLocaleString("vi-VN")}.000
-                </PriceItem>
-              )}
               <ButtonLinkItem href="https://fb.com/tvgear" target="_blank">
-                Mua
+                <TextButton>Liên Hệ Mua Sản Phẩm</TextButton>
               </ButtonLinkItem>
             </ItemProduct>
           );

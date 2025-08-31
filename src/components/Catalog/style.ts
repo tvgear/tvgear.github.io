@@ -85,12 +85,12 @@ export const ListProduct = styled.div`
 `;
 export const ItemProduct = styled.div`
     width: calc(33% - 7.5px);
-    background: rgba(20,20,20);
-    padding: 12.5px;
+    background: rgba(24,24,24);
+    padding: 12.5px 12.5px 2.5px 12.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     @media screen and (max-width : 1199px) {
       width: calc(50% - 7.5px);
@@ -113,13 +113,13 @@ export const ImgItem = styled.img`
 export const ColorItem = styled.div`
     display: flex;
     width: 100%;
-    margin: 7.5px 0px 0px 0px;
+    margin: 15px 0px 2.5px 0px;
 `
 
 export const ItemColorSelect = styled.div`
-    width: 20px;
-    height: 20px;
-    margin: 0px 5px 0px 0px;
+    width: 24px;
+    height: 24px;
+    margin: 0px 6.5px 0px 0px;
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid rgba(40,40,40);
@@ -140,8 +140,8 @@ export const ItemColorSelect = styled.div`
 `
 
 export const ColorProduct = styled.div`
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
 `
 
@@ -204,32 +204,25 @@ export const OptionItem = styled.div`
   margin: 10px 0px 0px -1.5px;
   display: flex;
   width: 100%;
-  min-height: 60px;
   flex-wrap: wrap;
 `
 
 export const ItemOptionSelect = styled.div`
   width: fit-content;
   padding: 3.5px 7.5px;
-  margin: 0px 5px 0px 0px;
+  margin: 0px 5px 5px 0px;
   height: fit-content;
   border: 1.5px solid rgba(40,40,40);
   border-radius: 6.5px;
   font-family: F_BOLD;
-  font-size: 1.2rem; 
-  line-height: calc(1.2rem * 1.25);
+  font-size: 1.25rem; 
+  line-height: calc(1.25rem * 1.25);
   cursor: pointer;
   transition: 0.4s all;
   white-space: nowrap;
   user-select: none;
   &.active {
-    background: -webkit-linear-gradient(
-    -135deg,
-    rgba(97, 221, 249, 1) 0%,
-    rgba(150, 215, 250, 1) 25%,
-    rgba(200, 210, 250, 1) 50%,
-    rgba(230, 223, 248, 1) 100%
-  );
+    background: #FFF;
     color : #000;
     transition: 0.4s all;
   }
@@ -239,7 +232,7 @@ export const PriceItem = styled.div`
     font-size: 2rem;
     line-height: calc(2rem * 1.25);
     width: 100%;
-    margin: 7.5px 0px 0px 0px;
+    margin: 3.5px 0px 0px 0px;
     font-family: F_BOLD;
     span {
         text-decoration: underline;
@@ -269,23 +262,15 @@ export const TitleProduct = styled.div`
 `
 
 export const ButtonLinkItem = styled(Link)`
-    position: absolute;
-    bottom: 11.5px;
-    right: 10px;
-    background: -webkit-linear-gradient(
-    -135deg,
-    rgba(97, 221, 249, 1) 0%,
-    rgba(150, 215, 250, 1) 25%,
-    rgba(200, 210, 250, 1) 50%,
-    rgba(230, 223, 248, 1) 100%
-  );
+  margin: 0px 0px 10px 0px;
+  background: #000;
   color : #000;
-  width: 75px;
-  height: 28px;
+  width: 100%;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 7.5px;
   font-family: F_BOLD;
   transition: 0.4s all;
   text-transform: uppercase;
@@ -299,4 +284,17 @@ export const ButtonLinkItem = styled(Link)`
     filter: brightness(0.9);
     transition: 0.4s all;
   }
+`
+
+export const TextButton = styled.div`
+  
+   background: -webkit-linear-gradient(
+    -135deg,
+    rgba(97, 221, 249, 1) 0%,
+    rgba(150, 215, 250, 1) 25%,
+    rgba(200, 210, 250, 1) 50%,
+    rgba(230, 223, 248, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
