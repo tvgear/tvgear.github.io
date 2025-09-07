@@ -14,11 +14,11 @@ import { useRouter } from "next/router";
 const dataMenu = [
   { name: "Chuột", link: "/mouse" },
   { name: "Bàn Phím", link: "/keyboard" },
-  { name: "Tai Nghe", link: "/headphone" },
-  { name: "SoundCard", link: "/soundcard" },
-  { name: "Loa", link: "/speaker" },
-  { name: "Micro", link: "/micro" },
-  { name: "Webcam", link: "/webcam" },
+  // { name: "Tai Nghe", link: "/headphone" },
+  // { name: "SoundCard", link: "/soundcard" },
+  // { name: "Loa", link: "/speaker" },
+  // { name: "Micro", link: "/micro" },
+  // { name: "Webcam", link: "/webcam" },
 ];
 
 const Header: React.FC = () => {
