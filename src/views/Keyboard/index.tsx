@@ -17,7 +17,7 @@ export default function KeyboardPage() {
   return (
     <BlockKeyboard>
       {/* <Catalog<KeyboardBrand> title="Keyboard" brands={brands} products={products} /> */}
-      <p>Trang Web Đang Bảo Trì Để Sản Phẩm Đang Cập Nhật Từ Web Cũ ...
+      <p>Trang Web Đang Bảo Trì Để Cập Nhật Sản Phẩm ...
         <br />
         <br />
         Xem List Hàng Trực Tiếp Tại Bài Ghim {`=>>`} <a href="https:/fb.com/tvgear" target="_blank">https://fb.com/tvgear</a>
