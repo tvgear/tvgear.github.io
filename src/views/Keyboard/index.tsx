@@ -23,7 +23,8 @@ export default function KeyboardPage() {
         Xem List Hàng Trực Tiếp Tại Bài Ghim {`=>>`} <a href="https://fb.com/tvgear" target="_blank" rel="noopener noreferrer">https://fb.com/tvgear</a>
         <br />
         <br />
-        Mua Hàng IB Trực Tiếp {`=>>`} <a href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">https://m.me/tvgear</a>
+        Mua Hàng IB Trực Tiếp {`=>>`} 
+        <a href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">https://m.me/tvgear</a>
       </p>
     </BlockKeyboard>
   );
