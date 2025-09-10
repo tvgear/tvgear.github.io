@@ -22,7 +22,12 @@ const products = productsJson as ReadonlyArray<BaseProduct<MouseBrand>>;
 export default function MousePage() {
   return (
     <BlockMouse>
-      <Catalog<MouseBrand> title="Mouse" brands={brands} products={products} />
+      {/* <Catalog<MouseBrand> title="Mouse" brands={brands} products={products} /> */}
+      <p>Sản Phẩm Đang Cập Nhật ...
+        <br />
+        <br />
+        Xem List Hàng Trực Tiếp Tại Bài Ghim {`=>>`} <a href="https:/fb.com/tvgear" target="_blank">https://fb.com/tvgear</a>
+      </p>
     </BlockMouse>
   );
 }
