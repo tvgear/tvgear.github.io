@@ -20,10 +20,10 @@ export default function KeyboardPage() {
       <p>Trang Web Đang Bảo Trì Để Cập Nhật Sản Phẩm ...
         <br />
         <br />
-        Xem List Hàng Trực Tiếp Tại Bài Ghim {`=>>`} <a href="fb.com/tvgear" target="_blank">https://fb.com/tvgear</a>
+        Xem List Hàng Trực Tiếp Tại Bài Ghim {`=>>`} <a href="https://fb.com/tvgear" target="_blank" rel="noopener noreferrer">https://fb.com/tvgear</a>
         <br />
         <br />
-        Mua Hàng IB Trực Tiếp {`=>>`} <a href="m.me/tvgear" target="_blank">https://m.me/tvgear</a>
+        Mua Hàng IB Trực Tiếp {`=>>`} <a href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">https://m.me/tvgear</a>
       </p>
     </BlockKeyboard>
   );
