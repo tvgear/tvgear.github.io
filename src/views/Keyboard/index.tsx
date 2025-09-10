@@ -21,6 +21,9 @@ export default function KeyboardPage() {
         <br />
         <br />
         Xem List Hàng Trực Tiếp Tại Bài Ghim {`=>>`} <a href="https:/fb.com/tvgear" target="_blank">https://fb.com/tvgear</a>
+        <br />
+        <br />
+        Mua Hàng IB Trực Tiếp {`=>>`} <a href="https:/m.me/tvgear" target="_blank">https://m.me/tvgear</a>
       </p>
     </BlockKeyboard>
   );
