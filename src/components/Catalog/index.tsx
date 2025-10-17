@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ListTab, ItemTab, ImgTab, TextTab, ListProduct, TitleProduct, ItemProduct, ImgItem, ColorItem, ItemColorSelect, ColorProduct, TagItem, ViewTag, TextTag, NameItem, OptionItem, ItemOptionSelect, PriceItem, ButtonLinkItem, TextButton } from "./style";
+import { ListTab, ItemTab, ImgTab, TextTab, ListProduct, ItemProduct, ImgItem, ColorItem, ItemColorSelect, ColorProduct, NameItem, OptionItem, ItemOptionSelect, ButtonLinkItem, TextButton } from "./style";
 
 
 export type ProductOption = { name: string; price: number };

@@ -13,15 +13,15 @@ const Loading: React.FC<LoadingProps> = ({ showLoading }) => {
   const [startGradient, setStartGradient] = useState(false);
 
  useEffect(() => {
-    if (showLoading) {
-      const grayTimer = setTimeout(() => setStartGray(true), 750);
-      const gradientTimer = setTimeout(() => setStartGradient(true), 2000);
-      return () => {
-        clearTimeout(grayTimer);
-        clearTimeout(gradientTimer);
-      };
-    }
-  }, [showLoading]);
+  if (!showLoading) return;
+  const grayTimer = setTimeout(() => setStartGray(true), 750);
+  const gradientTimer = setTimeout(() => setStartGradient(true), 2000);
+
+  return () => {
+    clearTimeout(grayTimer);
+    clearTimeout(gradientTimer);
+  };
+}, [showLoading]);
 
   return (
     <BlockLoading className={`${showLoading ? "active" : ""}`}>
