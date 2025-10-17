@@ -30,11 +30,6 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
     [products, activeBrand]
   );
 
-  const activeBrandLabel = React.useMemo(
-    () => brands.find((b) => b.key === activeBrand)?.label ?? String(activeBrand),
-    [brands, activeBrand]
-  );
-
   return (
     <>
       <ListTab>
@@ -53,9 +48,7 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
           </ItemTab>
         ))}
       </ListTab>
-
       <ListProduct>
-        <TitleProduct>{activeBrandLabel}</TitleProduct>
         {filtered.map((product) => {
           const selectedOptionIndex = selectedOptions[product.id] ?? 0;
           const selectedColorIndex = selectedColors[product.id] ?? 0;
@@ -65,21 +58,15 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
           return (
             <ItemProduct key={product.id}>
               <ImgItem src={selectedColor?.image || ""} />
-              <TagItem>
+              {/* <TagItem>
                 {product.tags.map((tag) => (
                   <ViewTag key={`${product.id}-${tag}`}>
                     <TextTag>{tag}</TextTag>
                   </ViewTag>
                 ))}
-              </TagItem>
+              </TagItem> */}
 
               <NameItem>{product.name}</NameItem>
-
-               {selectedOption && selectedColor && (
-                <PriceItem>
-                  <span>đ</span> {(selectedOption.price + selectedColor.priceAdd).toLocaleString("vi-VN")}.000
-                </PriceItem>
-              )}
 
               <ColorItem>
                 {product.colors.map((c, i) => (
@@ -109,7 +96,13 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                 ))}
               </OptionItem>
               <ButtonLinkItem href="https://fb.com/tvgear" target="_blank">
-                <TextButton>Liên Hệ Mua Sản Phẩm</TextButton>
+                <TextButton>
+                     {selectedOption && selectedColor && (
+                      <>
+                        {(selectedOption.price + selectedColor.priceAdd).toLocaleString("vi-VN")}.000 <span>đ</span>
+                      </>
+                    )}
+                </TextButton>
               </ButtonLinkItem>
             </ItemProduct>
           );

@@ -29,7 +29,6 @@ export const Line = styled.div`
   height: calc(100% + 1px);
   background: #000;
   transition: 0.4s all;
-  animation: rotateLogo 15s infinite;
   z-index: 1;
   will-change: transform;
 `;
@@ -112,6 +111,7 @@ export const BlockLogo = styled.div<{ size: number; scale: number }>`
   user-select: none;
   cursor: pointer;
   position: relative;
+ 
   width: ${({ size }) => size}px;
   height: ${({ size }) => size}px;
   transform: scale(${({ scale }) => scale});

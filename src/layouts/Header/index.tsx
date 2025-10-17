@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {
   BlockHeader,
-  ContentWrap,
   ItemMenu,
   ListMenu,
   NameMenu,
@@ -14,11 +13,11 @@ import { useRouter } from "next/router";
 const dataMenu = [
   { name: "Chuột", link: "/mouse" },
   { name: "Bàn Phím", link: "/keyboard" },
-  // { name: "Tai Nghe", link: "/headphone" },
-  // { name: "SoundCard", link: "/soundcard" },
-  // { name: "Loa", link: "/speaker" },
-  // { name: "Micro", link: "/micro" },
-  // { name: "Webcam", link: "/webcam" },
+  { name: "Tai Nghe", link: "/headphone" },
+  { name: "SoundCard", link: "/soundcard" },
+  { name: "Loa", link: "/speaker" },
+  { name: "Micro", link: "/micro" },
+  { name: "Webcam", link: "/webcam" },
 ];
 
 const Header: React.FC = () => {
@@ -40,26 +39,24 @@ const Header: React.FC = () => {
 
   return (
     <BlockHeader>
-      <ContentWrap className="blockContainer">
-        <WrapLogo>
-          <Logo size={50} />
-        </WrapLogo>
-        <ListMenu>
-          {dataMenu.map((menu, index) => {
-            const isActive = router.asPath.startsWith(menu.link);
-            return (
-              <Link href={menu.link} passHref key={index}>
-                <ItemMenu
-                  className={isActive ? "active" : ""}
-                  ref={(el) => (menuRefs.current[index] = el)}
-                >
-                  <NameMenu>{menu.name}</NameMenu>
-                </ItemMenu>
-              </Link>
-            );
-          })}
-        </ListMenu>
-      </ContentWrap>
+      <WrapLogo>
+        <Logo size={42.5} />
+      </WrapLogo>
+      <ListMenu>
+        {dataMenu.map((menu, index) => {
+          const isActive = router.asPath.startsWith(menu.link);
+          return (
+            <Link href={menu.link} passHref key={index}>
+              <ItemMenu
+                className={isActive ? "active" : ""}
+                ref={(el) => (menuRefs.current[index] = el)}
+              >
+                <NameMenu>{menu.name}</NameMenu>
+              </ItemMenu>
+            </Link>
+          );
+        })}
+      </ListMenu>
     </BlockHeader>
   );
 };
