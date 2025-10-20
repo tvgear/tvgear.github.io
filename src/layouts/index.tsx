@@ -8,45 +8,42 @@ interface LayoutProps {
 }
 
 const WrapWeb = styled.div`
-  background: linear-gradient(
-    -135deg,
-    rgba(97, 221, 249, 1) 0%,
-    rgba(150, 215, 250, 1) 25%,
-    rgba(200, 210, 250, 1) 50%,
-    rgba(230, 223, 248, 1) 100%
-  );
   height: 100dvh;
+  width: 100dvw;
   position: relative;
   display: flex;
   flex-direction: column;
   @media screen and (max-width : 1199px) {
     position: fixed;
-    width: 100dvw;
   }
 `;
 
 const Content = styled.div`
-  background: rgba(21,20,24);
-  height: calc(100dvh - 75px);
-  width: calc(100dvw - 20px);
-  margin: 2px auto 0px auto;
-  max-width: 1440px;
+  width: 100dvw;
+  height: 100dvh;
+  border : 1.25px solid #777;
+  border-bottom: none;
+  border-top: none;
+  margin: 0px auto;
   position: relative;
-  border-radius: 20px;
-  padding: 0px;
+  padding: 0px 0px 25px 0px;
   z-index: 1;
   overflow-y : auto;
   overflow-x : hidden;
   &::-webkit-scrollbar {
     display: none;
   }
-  @media screen and (max-width : 1199px) {
-    height: calc(100dvh - 55px);
-    width: calc(100dvw - 15px);
-    margin: 0px 0px 0px 7.5px;
-    border-radius: 18px;
-  }
-  
+`
+const Note = styled.div`
+  font-size : 1rem;
+  line-height: calc(1rem * 1.25);
+  padding: 3.5px 5px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(56,113,224);
+  text-transform: uppercase;
 `
 
 const Layout = ({ children }: LayoutProps) => {
@@ -64,6 +61,7 @@ const Layout = ({ children }: LayoutProps) => {
       <WrapWeb>
         <Header />
         <Content>
+          <Note>Sản phẩm đang được cập nhật. List hàng đầy đủ vui lòng xem tại bài ghim Facebook</Note>
           {children}
         </Content>
       </WrapWeb>

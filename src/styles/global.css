@@ -29,32 +29,22 @@ footer, header, hgroup, menu, nav, section {
 
 @font-face {
   font-family: F_REGULAR;
-  src: url("../../public/assets/fonts/Lexend-Regular.ttf");
+  src: url("../../public/assets/fonts/Oswald-Regular.ttf");
 }
 
 @font-face {
   font-family: F_MEDIUM;
-  src: url("../../public/assets/fonts/Lexend-Medium.ttf");
+  src: url("../../public/assets/fonts/Oswald-Medium.ttf");
 }
 
 @font-face {
   font-family: F_SEMIBOLD;
-  src: url("../../public/assets/fonts/Lexend-SemiBold.ttf");
+  src: url("../../public/assets/fonts/Oswald-SemiBold.ttf");
 }
 
 @font-face {
   font-family: F_BOLD;
-  src: url("../../public/assets/fonts/Lexend-Bold.ttf");
-}
-
-@font-face {
-  font-family: F_EXTRABOLD;
-  src: url("../../public/assets/fonts/Lexend-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: F_BLACK;
-  src: url("../../public/assets/fonts/Lexend-Black.ttf");
+  src: url("../../public/assets/fonts/Oswald-Bold.ttf");
 }
 
 

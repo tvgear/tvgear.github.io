@@ -6,10 +6,9 @@ import productsJson from "./_mouse.json";
 type MouseBrand = "logig" | "logio" | "razer" | "steel" | "pulsar" | "lamzu";
 
 const brands = [
-  { key: "logig", label: "Logitech G", image: "/assets/images/brands/logitech-g.svg" },
+  { key: "logig", label: "Logi G", image: "/assets/images/brands/logitech-g.svg" },
   { key: "logio", label: "Logi Office", image: "/assets/images/brands/logi-office.png" },
   { key: "razer", label: "Razer", image: "/assets/images/brands/razer.svg" },
-  { key: "steel", label: "SteelSeries", image: "/assets/images/brands/steelseries.svg" },
   { key: "pulsar", label: "Pulsar", image: "/assets/images/brands/pulsar.svg" },
   { key: "lamzu", label: "Lamzu", image: "/assets/images/brands/lamzu.png" },
 ] as const satisfies ReadonlyArray<BrandT<MouseBrand>>;

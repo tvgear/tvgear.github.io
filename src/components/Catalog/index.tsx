@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ListTab, ItemTab, ImgTab, TextTab, ListProduct, ItemProduct, ImgItem, ColorItem, ItemColorSelect, ColorProduct, NameItem, OptionItem, ItemOptionSelect, ButtonLinkItem, TextButton } from "./style";
+import { ListTab, ItemTab, TextTab, ListProduct, ItemProduct, ImgItem, ColorItem, ItemColorSelect, ColorProduct, NameItem, OptionItem, ItemOptionSelect, ButtonLinkItem, TagItem, TextTag, ViewTag, WrapImg, BuyItem, PriceOptionSelect, ImgLogo } from "./style";
 
 
 export type ProductOption = { name: string; price: number };
@@ -43,7 +43,6 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
               setSelectedColors({});
             }}
           >
-            <ImgTab src={brand.image} />
             <TextTab>{brand.label}</TextTab>
           </ItemTab>
         ))}
@@ -56,18 +55,18 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
           const selectedColor = product.colors?.[selectedColorIndex] ?? product.colors?.[0];
 
           return (
-            <ItemProduct key={product.id}>
-              <ImgItem src={selectedColor?.image || ""} />
-              {/* <TagItem>
+            <ItemProduct key={product.id} className={`${product.id === -1 ? "sold" : ""}`}>
+              <WrapImg>
+                <ImgItem src={selectedColor?.image || ""} />
+              </WrapImg>
+              <TagItem>
                 {product.tags.map((tag) => (
                   <ViewTag key={`${product.id}-${tag}`}>
                     <TextTag>{tag}</TextTag>
                   </ViewTag>
                 ))}
-              </TagItem> */}
-
+              </TagItem>
               <NameItem>{product.name}</NameItem>
-
               <ColorItem>
                 {product.colors.map((c, i) => (
                   <ItemColorSelect
@@ -81,7 +80,6 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                   </ItemColorSelect>
                 ))}
               </ColorItem>
-
               <OptionItem style={{ marginBottom: 8 }}>
                 {product.options.map((opt, i) => (
                   <ItemOptionSelect
@@ -95,15 +93,19 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                   </ItemOptionSelect>
                 ))}
               </OptionItem>
-              <ButtonLinkItem href="https://fb.com/tvgear" target="_blank">
-                <TextButton>
-                     {selectedOption && selectedColor && (
+              <BuyItem>
+                <PriceOptionSelect>
+                  {selectedOption && selectedColor && (
                       <>
                         {(selectedOption.price + selectedColor.priceAdd).toLocaleString("vi-VN")}.000 <span>đ</span>
                       </>
                     )}
-                </TextButton>
-              </ButtonLinkItem>
+                </PriceOptionSelect>
+                 <ButtonLinkItem href="https://fb.com/tvgear" target="_blank">
+                  <ImgLogo src="/logo.svg" />
+                    MUA
+                </ButtonLinkItem>
+              </BuyItem>
             </ItemProduct>
           );
         })}

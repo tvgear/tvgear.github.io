@@ -1,23 +1,26 @@
 import React, { useEffect, useRef } from "react";
 import {
   BlockHeader,
+  ImgLogo,
   ItemMenu,
+  LeftHeader,
   ListMenu,
   NameMenu,
+  RightHeader,
+  TextLogo,
   WrapLogo,
 } from "./style";
-import Logo from "@/components/Logo";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const dataMenu = [
   { name: "Chuột", link: "/mouse" },
-  { name: "Bàn Phím", link: "/keyboard" },
-  { name: "Tai Nghe", link: "/headphone" },
-  { name: "SoundCard", link: "/soundcard" },
-  { name: "Loa", link: "/speaker" },
-  { name: "Micro", link: "/micro" },
-  { name: "Webcam", link: "/webcam" },
+  { name: "Phím", link: "/keyboard" },
+  // { name: "Tai Nghe", link: "/headphone" },
+  // { name: "SoundCard", link: "/soundcard" },
+  // { name: "Loa", link: "/speaker" },
+  // { name: "Micro", link: "/micro" },
+  // { name: "Webcam", link: "/webcam" },
 ];
 
 const Header: React.FC = () => {
@@ -39,24 +42,32 @@ const Header: React.FC = () => {
 
   return (
     <BlockHeader>
-      <WrapLogo>
-        <Logo size={42.5} />
-      </WrapLogo>
-      <ListMenu>
-        {dataMenu.map((menu, index) => {
-          const isActive = router.asPath.startsWith(menu.link);
-          return (
-            <Link href={menu.link} passHref key={index}>
-              <ItemMenu
-                className={isActive ? "active" : ""}
-                ref={(el) => (menuRefs.current[index] = el)}
-              >
-                <NameMenu>{menu.name}</NameMenu>
-              </ItemMenu>
-            </Link>
-          );
-        })}
-      </ListMenu>
+      <LeftHeader>
+        <WrapLogo>
+          <ImgLogo src="/logo.svg" />
+          <TextLogo>
+            <span>TVGEAR</span>
+            <span>SHOP</span>
+          </TextLogo>
+        </WrapLogo>
+      </LeftHeader>
+      <RightHeader>
+        <ListMenu>
+          {dataMenu.map((menu, index) => {
+            const isActive = router.asPath.startsWith(menu.link);
+            return (
+              <Link href={menu.link} passHref key={index}>
+                <ItemMenu
+                  className={isActive ? "active" : ""}
+                  ref={(el) => (menuRefs.current[index] = el)}
+                >
+                  <NameMenu>{menu.name}</NameMenu>
+                </ItemMenu>
+              </Link>
+            );
+          })}
+        </ListMenu>
+      </RightHeader>
     </BlockHeader>
   );
 };
