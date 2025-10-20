@@ -6,8 +6,8 @@ import { BlockKeyboard } from "@/views/Keyboard/style";
 // type KeyboardBrand = "logig" | "razer";
 
 // const brands = [
-//   { key: "logig", label: "Logitech G", image: "/assets/images/brands/logitech-g.svg" },
-//   { key: "razer",   label: "Razer",  image: "/assets/images/brands/razer.svg" },
+//   { key: "logig", label: "Logitech G"},
+//   { key: "razer",   label: "Razer" },
 // ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 
 // const products = productsJson as ReadonlyArray<BaseProduct<KeyboardBrand>>;

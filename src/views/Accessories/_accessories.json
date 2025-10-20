@@ -1,0 +1,112 @@
+[
+   {
+    "id": 1,
+    "brand": "receiver",
+    "tags": ["Đầu Thu Chuột Văn Phòng / Bảo Hành 1 Tháng"],
+    "name": "Logi Bolt",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/receiver-bolt.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "99%", "price": 150 }
+    ]
+  },
+  {
+    "id": 2144,
+    "brand": "receiver",
+    "tags": ["Đầu Thu Chuột Văn Phòng / Bảo Hành 1 Tháng"],
+    "name": "Logi Unifying",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/receiver-unifying.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "99%", "price": 170 }
+    ]
+  },
+  {
+    "id": 2,
+    "brand": "receiver",
+    "tags": ["Đầu Thu Chuột Gaming / Bảo Hành 1 Tháng"],
+    "name": "G304",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/receiver-g304.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "99%", "price": 250 }
+    ]
+  },
+  {
+    "id": 4,
+    "brand": "receiver",
+    "tags": ["Đầu Thu Chuột Gaming / Bảo Hành 1 Tháng"],
+    "name": "G403/G603/G703/G502/G903/GPRO",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/receiver-g.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "99%", "price": 330 }
+    ]
+  },
+  {
+    "id": 4124,
+    "brand": "receiver",
+    "tags": ["Đầu Thu Gaming / Bảo Hành 1 Tháng"],
+    "name": "PRO X / PRO X 2",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/receiver-prox1.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "99%", "price": 450 }
+    ]
+  },
+
+  {
+    "" : "--------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "id": 5129,
+    "brand": "pad",
+    "tags": ["Pad Control / Không Bảo Hành"],
+    "name": "Logitech G640",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/logitech-g640.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% + BOX", "price": 550 },
+      { "name": "New Seal", "price": 650 }
+    ]
+  },
+
+  {
+    "id": 4192,
+    "brand": "pad",
+    "tags": ["Pad Control & Speed / Bảo Hành 9/27 GEARVN"],
+    "name": "Logitech PowerPlay 2",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/logitech-powerplay-2.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "99% + BOX", "price": 1850 }
+    ]
+  },
+
+  {
+    "" : "--------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "id": 1295,
+    "brand": "feet",
+    "tags": ["Feet Chuột / Không Bảo Hành"],
+    "name": "Tiger ICE - SPL1/SPL2/DIY",
+    "colors": [
+      { "color": "white", "image": "/assets/images/accessories/feet-tiger-ice.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "New Seal", "price": 125 }
+    ]
+  }
+
+]
+  

@@ -4,7 +4,7 @@ import { ListTab, ItemTab, TextTab, ListProduct, ItemProduct, ImgItem, ColorItem
 
 export type ProductOption = { name: string; price: number };
 export type ProductColor = { color: string; image: string; priceAdd: number };
-export type Brand<B extends string = string> = { key: B; label: string; image: string };
+export type Brand<B extends string = string> = { key: B; label: string; };
 export type BaseProduct<B extends string = string> = {
   id: number;
   brand: B;
