@@ -2,16 +2,14 @@
   {
     "id": 1,
     "brand": "logig",
-    "tags": ["Gaming"],
-    "name": "G512 GX RGB",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G512 GX",
     "colors": [
       { "color": "black", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "Lỗi LED, Cấn", "price": 750 },
-      { "name": "Lỗi/Mất LED", "price": 780 },
-      { "name": "Lỗi LED", "price": 880 },
-      { "name": "LED Đẹp", "price": 980 }
+      { "name": "97% Brown/Red - Lỗi LED", "price": 880 },
+      { "name": "97% Red - LED Đẹp", "price": 980 }
     ]
   }
 ]

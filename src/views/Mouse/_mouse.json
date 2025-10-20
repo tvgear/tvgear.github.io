@@ -114,15 +114,14 @@
     },
     {
       "id": 145,
-      "brand": "logig",
-      "name": "PRO WL / Hàng Thanh Lý",
+      "brand": "liquidation",
+      "name": "PRO WL / Thanh Lý",
       "tags": ["Không Dây / Bảo Hành 1 Tháng"],
       "colors": [
         { "color": "black", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "90%", "price": 850 },
-        { "name": "97% + BOX", "price": 1000 }
+        { "name": "90%", "price": 850 }
       ]
     },
     {
@@ -189,8 +188,8 @@
     },
     {
       "id": 1458,
-      "brand": "logig",
-      "name": "PRO X SuperLight / Hàng Thanh Lý",
+      "brand": "liquidation",
+      "name": "PRO X SuperLight / Thanh Lý",
       "tags": ["Không Dây / Bảo Hành 1 Tháng"],
       "colors": [
         { "color": "white", "image": "/assets/images/mouses/gpro-x-spl-white.webp", "priceAdd": 0 },
@@ -231,8 +230,8 @@
     },
     {
       "id": 1512,
-      "brand": "logig",
-      "name": "PRO X SuperLight 2 / Hàng Thanh Lý",
+      "brand": "liquidation",
+      "name": "PRO X SuperLight 2 / Thanh Lý",
       "tags": ["Không Dây / Bảo Hành 1 Tháng"],
       "colors": [
         { "color": "white", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 }

@@ -3,14 +3,15 @@ import { BlockMouse } from "@/views/Mouse/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
 import productsJson from "./_mouse.json";
 
-type MouseBrand = "logig" | "logio" | "razer" | "steel" | "pulsar" | "lamzu";
+type MouseBrand = "logig" | "logio" | "razer" | "steel" | "pulsar" | "lamzu" | "liquidation";
 
 const brands = [
-  { key: "logig", label: "Logi G"  },
-  { key: "logio", label: "Logi Office"},
+  { key: "logig", label: "Logitech G"  },
+  { key: "logio", label: "Logi Văn Phòng"},
   { key: "razer", label: "Razer"  },
   { key: "pulsar", label: "Pulsar"  },
   { key: "lamzu", label: "Lamzu" },
+  { key: "liquidation", label: "Hàng Thanh Lý" },
 ] as const satisfies ReadonlyArray<BrandT<MouseBrand>>;
 
 
