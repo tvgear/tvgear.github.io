@@ -54,7 +54,7 @@ const Meta = (props: IMetaProps) => {
         />
         <meta
           name="twitter:image"
-          content={props?.image ?? `${router.basePath}/logo.png`}
+          content={props?.image ?? `${router.basePath}/logo.svg`}
         />
         <meta name="twitter:description" content={props.description} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@ const Meta = (props: IMetaProps) => {
               ]
             : [
                 {
-                  url: `${router.basePath}/logo.png`,
+                  url: `${router.basePath}/logo.svg`,
                   alt: `Og ${AppConfig.site_name}`,
                   type: 'image/jpeg',
                 },
