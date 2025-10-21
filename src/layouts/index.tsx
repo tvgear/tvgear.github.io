@@ -74,7 +74,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Header />
         <Content>
           {children}
-          <Note>Các sản phẩm đang được đội ngũ hoàn tất cập nhật lên website.<br />List hàng đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
+          <Note>Danh sách sản phẩm đang được cập nhật lên website<br />List đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
         </Content>
       </WrapWeb>
     </>

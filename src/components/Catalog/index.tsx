@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   ListTab, ItemTab, TextTab, ListProduct, ItemProduct, ImgItem, ColorItem,
   ItemColorSelect, ColorProduct, NameItem, OptionItem, ItemOptionSelect,
-  ButtonLinkItem, TagItem, TextTag, ViewTag, WrapImg, BuyItem, PriceOptionSelect, ImgLogo
+  ButtonLinkItem, TagItem, TextTag, ViewTag, WrapImg, BuyItem, PriceOptionSelect, ImgLogo,
 } from "./style";
 
 export type ProductOption = { name: string; price: number };

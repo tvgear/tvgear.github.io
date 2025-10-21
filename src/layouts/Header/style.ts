@@ -35,8 +35,8 @@ export const ImgLogo = styled.img`
   width: 32px;
   height: 32px;
   @media screen and (max-width : 767px) {
-    width: 24px;
-    height: 24px;
+    width: 25.5px;
+    height: 25.5px;
   }
 `
 

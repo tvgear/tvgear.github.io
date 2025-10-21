@@ -121,7 +121,8 @@
         { "color": "black", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "90%", "price": 850 }
+        { "name": "90%", "price": 850 },
+        { "name": "97% + Box", "price": 1000 }
       ]
     },
     {
@@ -279,9 +280,22 @@
         { "name": "97%", "price": 2380 }
       ]
     },
+
+    {
+      "id": 1348,
+      "brand": "liquidation",
+      "name": "G703 Hero / Thanh Lý",
+      "tags": ["Không Dây / Bảo Hành 7 Ngày"],
+      "colors": [
+        { "color": "white", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97% + BOX", "price": 950 }
+      ]
+    },
     
     {
-      "" : "--------------------------------------------------------------------------------------------------------------------"
+      "" : "OFFICE --------------------------------------------------------------------------------------------------------------------"
     },
 
     {
@@ -451,6 +465,167 @@
       "options": [
         { "name": "97%", "price": 1150 },
         { "name": "97% + Box", "price": 1190 }
+      ]
+    },
+     {
+      "id": 518,
+      "brand": "liquidation",
+      "name": "MX Master 3s",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 7 Ngày"],
+      "colors": [
+        { "color": "white", "image": "/assets/images/mouses/mx-master-3s-white.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1350 }
+      ]
+    },
+
+    {
+      "" : "RAZER --------------------------------------------------------------------------------------------------------------------"
+    },
+
+    {
+      "id": 148,
+      "brand": "razer",
+      "name": "DA Elite",
+      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/da-elite.png", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "95%", "price": 390 },
+        { "name": "97% + Box", "price": 490 }
+      ]
+    },
+    {
+      "id": 14812,
+      "brand": "razer",
+      "name": "Corba v3",
+      "tags": ["Có Dây / Bảo Hành 06.2027"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/cobra-v3.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97% + Box", "price": 550 }
+      ]
+    },
+    {
+      "id": 14822,
+      "brand": "razer",
+      "name": "Basilisk v3",
+      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/basilisk-v3.png", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 750 }
+      ]
+    },
+    {
+      "id": 14122,
+      "brand": "razer",
+      "name": "Orochi v2",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/orochi-v2-black.png", "priceAdd": 0 },
+        { "color": "white", "image": "/assets/images/mouses/orochi-v2-white.png", "priceAdd": 0 },
+        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/orochi-v2-pink.png", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97% + BOX", "price": 580 }
+      ]
+    },
+    {
+      "id": 119122,
+      "brand": "razer",
+      "name": "Basilisk Ultimate",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/basilisk-ultimate.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1080 },
+        { "name": "97% + DOCK SẠC", "price": 1250 }
+      ]
+    },
+    {
+      "id": 19122,
+      "brand": "razer",
+      "name": "Viper Ultimate",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/viper-ultimate.png", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97% + DOCK SẠC", "price": 1250 }
+      ]
+    },
+    {
+      "id": 1122,
+      "brand": "razer",
+      "name": "Viper v2 Pro",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1400 },
+        { "name": "New Seal BH 6.2026", "price": 1780 }
+      ]
+    },
+    {
+      "id": 1142,
+      "brand": "liquidation",
+      "name": "Viper v2 Pro",
+      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "New Seal", "price": 1580 }
+      ]
+    },
+    {
+      "id": 1342,
+      "brand": "razer",
+      "name": "Pro Click v2 Vertical",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/pro-click-v2-vertical.png", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "New Seal", "price": 2300 }
+      ]
+    },
+
+    {
+      "" : "PULSAR --------------------------------------------------------------------------------------------------------------------"
+    },
+    {
+      "" : "LAMZU --------------------------------------------------------------------------------------------------------------------"
+    },
+    {
+      "id": 5491,
+      "brand": "lamzu",
+      "name": "Maya X 8K Purple Shadow",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "rgba(125,91,124)", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97% + BOX", "price": 2280 }
+      ]
+    },
+    {
+      "id": 54921,
+      "brand": "lamzu",
+      "name": "Maya X 8K Aimlabs",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "rgba(142,229,221)", "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 2480 }
       ]
     }
 ]

@@ -61,7 +61,7 @@
   },
 
   {
-    "" : "--------------------------------------------------------------------------------------------------------------------"
+    "" : "FEET --------------------------------------------------------------------------------------------------------------------"
   },
 
   {
@@ -81,7 +81,7 @@
   {
     "id": 4192,
     "brand": "pad",
-    "tags": ["Pad Control & Speed / Bảo Hành 9/27 GEARVN"],
+    "tags": ["Pad Control & Speed / Bảo Hành 9.27 GEARVN"],
     "name": "Logitech PowerPlay 2",
     "colors": [
       { "color": "black", "image": "/assets/images/accessories/logitech-powerplay-2.webp", "priceAdd": 0 }
@@ -92,7 +92,7 @@
   },
 
   {
-    "" : "--------------------------------------------------------------------------------------------------------------------"
+    "" : "FEET --------------------------------------------------------------------------------------------------------------------"
   },
 
   {
@@ -106,7 +106,61 @@
     "options": [
       { "name": "New Seal", "price": 125 }
     ]
+  },
+
+  {
+    "" : "WEBCAM --------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "id": 12195,
+    "brand": "webcam",
+    "tags": ["Quay, Gọi HD 720p 30FPS / Bảo Hành 1 Tháng"],
+    "name": "C270",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/c270.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 290 }
+    ]
+  },
+  {
+    "id": 112195,
+    "brand": "webcam",
+    "tags": ["Quay, Gọi HD 720p 30FPS / Bảo Hành 1 Tháng"],
+    "name": "C310",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/c310.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 350 }
+    ]
+  },
+  {
+    "id": 112195,
+    "brand": "webcam",
+    "tags": ["Quay, Gọi HD 1080p 60FPS / Bảo Hành 1 Tháng"],
+    "name": "C310",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/c925e.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1050 }
+    ]
+  },
+  {
+    "id": 112195,
+    "brand": "webcam",
+    "tags": ["Webcam Hội Nghị HD 1080p / Bảo Hành 1 Tháng"],
+    "name": "Conferrence BCC950",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/bcc950.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 2180 }
+    ]
   }
+  
 
 ]
   

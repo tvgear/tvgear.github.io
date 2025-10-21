@@ -35,12 +35,13 @@ export const TextTab = styled.div`
 `
 
 export const ItemTab = styled.div`
-    padding: 10px 12.5px;
+    padding: 11.5px 15px;
     margin: 0px 3.5px 0px 0px;
     font-family: F_SEMIBOLD;
     cursor: pointer;
     display: flex;
     align-items: center;
+    position: relative;
     transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &:hover {
       background: rgba(24,24,24);
@@ -302,3 +303,4 @@ export const ImgLogo = styled.img`
   margin: 0px 5px 0px 0px;
   filter: invert(1);
 `
+
