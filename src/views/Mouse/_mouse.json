@@ -445,8 +445,8 @@
       "name": "MX Anywhere 3s",
       "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "image": "/assets/images/mouses/mx-anywhere-3s.webp", "priceAdd": 0 },
-        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/mx-anywhere-3s.webp", "priceAdd": 0 }
+        { "color": "black", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 },
+        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/mx-anywhere-3s-pink.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "97%", "price": 1150 },
