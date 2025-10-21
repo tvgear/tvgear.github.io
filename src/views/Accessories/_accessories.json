@@ -137,10 +137,10 @@
     ]
   },
   {
-    "id": 112195,
+    "id": 182195,
     "brand": "webcam",
     "tags": ["Quay, Gọi HD 1080p 60FPS / Bảo Hành 1 Tháng"],
-    "name": "C310",
+    "name": "C925e",
     "colors": [
       { "color": "black", "image": "/assets/images/accessories/c925e.png", "priceAdd": 0 }
     ],
@@ -149,7 +149,7 @@
     ]
   },
   {
-    "id": 112195,
+    "id": 113195,
     "brand": "webcam",
     "tags": ["Webcam Hội Nghị HD 1080p / Bảo Hành 1 Tháng"],
     "name": "Conferrence BCC950",
