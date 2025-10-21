@@ -271,8 +271,8 @@ export const WrapImg = styled.div`
   align-items: center;
   justify-content: center;
   background:
-  radial-gradient(1000px 700px at 40% 30%, rgba(10,10,10,0.8), transparent 60%),
-  radial-gradient(800px 550px  at 70% 70%, rgba(255,255,255,.08), transparent 65%),
+  radial-gradient(1000px 700px at 40% 30%, rgba(0,0,0,1), transparent 60%),
+  radial-gradient(800px 550px  at 55% 55%, rgba(255,255,255,.12), transparent 40%),
   #0a0a0f;
   background-blend-mode: screen, screen, normal;
   @media screen and (max-width : 767px) {

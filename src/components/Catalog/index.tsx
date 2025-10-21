@@ -101,7 +101,7 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                       </>
                     )}
                 </PriceOptionSelect>
-                 <ButtonLinkItem href="https://fb.com/tvgear" target="_blank">
+                 <ButtonLinkItem href="https://m.me/tvgear" target="_blank">
                   <ImgLogo src="/logo.svg" />
                     MUA
                 </ButtonLinkItem>

@@ -45,7 +45,7 @@ const Note = styled.div`
   justify-content: center;
   background: rgba(56,113,224);
   text-transform: uppercase;
-  margin: 0px 5px;
+  margin: 20px 5px 5px 5px;
   text-align: center;
   a {
     text-decoration: underline;

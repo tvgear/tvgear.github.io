@@ -158,7 +158,18 @@
         { "color": "black", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "90%", "price": 1250 },
+        { "name": "90%", "price": 1250 }
+      ]
+    },
+    {
+      "id": 123,
+      "brand": "liquidation",
+      "name": "G502 WL - Thanh Lý",
+      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
+      ],
+      "options": [
         { "name": "95% + BOX", "price": 1380 }
       ]
     },
@@ -251,7 +262,7 @@
         { "color": "deeppink", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97% + BOX - Dùng USB SPL1", "price": 1750 }
+        { "name": "97% + BOX - Dùng Receiver SPL1", "price": 1750 }
       ]
     },
     {
@@ -277,7 +288,7 @@
       "id": 17,
       "brand": "logio",
       "name": "M185",
-      "tags": ["Không Dây"],
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
       "colors": [
         { "color": "gray", "image": "/assets/images/mouses/m185-gray.webp", "priceAdd": 0 },
         { "color": "rgba(64,98,177)", "image": "/assets/images/mouses/m185-blue.webp", "priceAdd": 0 },
@@ -291,15 +302,156 @@
       "id": 18,
       "brand": "logio",
       "name": "M190",
-      "tags": ["Không Dây"],
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
       "colors": [
         { "color": "gray", "image": "/assets/images/mouses/m190-black.webp", "priceAdd": 0 },
         { "color": "rgba(64,98,177)", "image": "/assets/images/mouses/m190-blue.webp", "priceAdd": 0 }
       ],
       "options": [
+        { "name": "97%", "price": 130 }
+      ]
+    },
+    {
+      "id": 19,
+      "brand": "logio",
+      "name": "M220/M221",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "gray", "image": "/assets/images/mouses/m220-black.webp", "priceAdd": 0 },
+        { "color": "white", "image": "/assets/images/mouses/m220-white.webp", "priceAdd": 0 },
+        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/m220-pink.webp", "priceAdd": 0 }
+      ],
+      "options": [
         { "name": "97%", "price": 150 }
       ]
+    },
+    {
+      "id": 20,
+      "brand": "logio",
+      "name": "M196",
+      "tags": ["Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "gray", "image": "/assets/images/mouses/m196-black.webp", "priceAdd": 0 },
+        { "color": "white", "image": "/assets/images/mouses/m196-white.webp", "priceAdd": 0 },
+        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/m196-pink.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 180 }
+      ]
+    },
+    {
+      "id": 21,
+      "brand": "logio",
+      "name": "M331",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/m331-black.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 230 }
+      ]
+    },
+    {
+      "id": 22,
+      "brand": "logio",
+      "name": "M325",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/m325-black.png", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 250 }
+      ]
+    },
+    {
+      "id": 23,
+      "brand": "logio",
+      "name": "M240",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/m240-black.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "New No Box + Logi Bolt", "price": 280 }
+      ]
+    },
+    {
+      "id": 24,
+      "brand": "logio",
+      "name": "M350s",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/m350s-black.webp", "priceAdd": 0 },
+        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/m350s-pink.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 330 },
+        { "name": "97% + Logi Bolt", "price": 430 }
+      ]
+    },
+    {
+      "id": 25,
+      "brand": "logio",
+      "name": "M550 L",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/m550-black.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 350 },
+        { "name": "97% + Logi Bolt", "price": 430 }
+      ]
+    },
+    {
+      "id": 27,
+      "brand": "logio",
+      "name": "M650 M/L",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/m650-black.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "[L] 97% + Logi Bolt", "price": 450 },
+        { "name": "[M] New No Box", "price": 550 }
+      ]
+    },
+    {
+      "id": 28,
+      "brand": "logio",
+      "name": "Lift Vertical",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/lift-pink.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97% + Logi Bolt", "price": 780 }
+      ]
+    },
+    {
+      "id": 30, 
+      "brand": "logio",
+      "name": "MX Anywhere 3",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/mx-anywhere-3.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 980 }
+      ]
+    },
+    {
+      "id": 31,
+      "brand": "logio",
+      "name": "MX Anywhere 3s",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "image": "/assets/images/mouses/mx-anywhere-3s.webp", "priceAdd": 0 },
+        { "color": "rgba(240,224,221)", "image": "/assets/images/mouses/mx-anywhere-3s.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 1150 },
+        { "name": "97% + Box", "price": 1190 }
+      ]
     }
-    
 ]
   
