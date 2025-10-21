@@ -98,8 +98,8 @@
   {
     "id": 1295,
     "brand": "feet",
-    "tags": ["Feet Chuột / Không Bảo Hành"],
-    "name": "Tiger ICE - SPL1/SPL2/DIY",
+    "tags": ["Tương Thích SPL1/SPL2 & DIY / Không Bảo Hành"],
+    "name": "Tiger ICE",
     "colors": [
       { "color": "white", "image": "/assets/images/accessories/feet-tiger-ice.webp", "priceAdd": 0 }
     ],
@@ -115,7 +115,7 @@
   {
     "id": 12195,
     "brand": "webcam",
-    "tags": ["Quay, Gọi HD 720p 30FPS / Bảo Hành 1 Tháng"],
+    "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C270",
     "colors": [
       { "color": "black", "image": "/assets/images/accessories/c270.webp", "priceAdd": 0 }
@@ -127,7 +127,7 @@
   {
     "id": 112195,
     "brand": "webcam",
-    "tags": ["Quay, Gọi HD 720p 30FPS / Bảo Hành 1 Tháng"],
+    "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C310",
     "colors": [
       { "color": "black", "image": "/assets/images/accessories/c310.webp", "priceAdd": 0 }
@@ -139,7 +139,7 @@
   {
     "id": 182195,
     "brand": "webcam",
-    "tags": ["Quay, Gọi HD 1080p 60FPS / Bảo Hành 1 Tháng"],
+    "tags": ["Cắm Dây, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "C925e",
     "colors": [
       { "color": "black", "image": "/assets/images/accessories/c925e.png", "priceAdd": 0 }
@@ -151,7 +151,7 @@
   {
     "id": 113195,
     "brand": "webcam",
-    "tags": ["Webcam Hội Nghị HD 1080p / Bảo Hành 1 Tháng"],
+    "tags": ["Cắm Dây & Remote, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "Conferrence BCC950",
     "colors": [
       { "color": "black", "image": "/assets/images/accessories/bcc950.webp", "priceAdd": 0 }
@@ -159,8 +159,83 @@
     "options": [
       { "name": "97%", "price": 2180 }
     ]
-  }
+  },
+
+  {
+    "" : "SOUNDCARD --------------------------------------------------------------------------------------------------------------------"
+  },
   
+  {
+    "id": 513195,
+    "brand": "soundcard",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "Hype X Cloud II 7.1 Kingston",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/sc-hyper-x-cl2.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% - Gãy Nẹp Lưng", "price": 600 }
+    ]
+  },
+  {
+    "id": 413195,
+    "brand": "soundcard",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "Sennheiser GSX 1000",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/gsx-1000.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% + BOX", "price": 2080 }
+    ]
+  },
+
+  {
+    "" : "LOA --------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "id": 463195,
+    "brand": "speaker",
+    "tags": ["Jack 3.5mm, 25W / Bảo Hành 1 Tháng"],
+    "name": "Z313",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/z313.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 600 },
+      { "name": "97% + BOX", "price": 680 }
+    ]
+  },
+  {
+    "id": 469195,
+    "brand": "speaker",
+    "tags": ["Jack 3.5mm & Bluetooth, 40 ~ 80W / Bảo Hành 1 Tháng"],
+    "name": "Z407",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1100 }
+    ]
+  },
+
+  {
+    "" : "TAY CẦM --------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "id": 269195,
+    "brand": "controller",
+    "tags": ["Type C, Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "X BOX Series X",
+    "colors": [
+      { "color": "black", "image": "/assets/images/accessories/xbox-series-x.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 800 }
+    ]
+  }
 
 ]
   
