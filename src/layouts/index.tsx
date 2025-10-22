@@ -13,9 +13,6 @@ const WrapWeb = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width : 1199px) {
-    position: fixed;
-  }
 `;
 
 const Content = styled.div`

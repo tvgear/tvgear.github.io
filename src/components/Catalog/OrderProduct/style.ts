@@ -181,9 +181,6 @@ export const ButtonOrder = styled.button`
   &:hover {
     color : #000;
   }
-  @media screen and (max-width : 767px) {
-    height: 30px;
-  }
 `
 
 export const FormError = styled.div`
