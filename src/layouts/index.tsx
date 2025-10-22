@@ -26,8 +26,8 @@ const Content = styled.div`
   border-top: none;
   margin: 0px auto;
   position: relative;
+  z-index: 9;
   padding: 0px 0px 25px 0px;
-  z-index: 1;
   overflow-y : auto;
   overflow-x : hidden;
   &::-webkit-scrollbar {
@@ -70,7 +70,6 @@ const Layout = ({ children }: LayoutProps) => {
      <Loading showLoading={isLoading}  />
       
       <WrapWeb>
-        
         <Header />
         <Content>
           {children}

@@ -2,10 +2,10 @@
    {
     "id": 1,
     "brand": "receiver",
-    "tags": ["Đầu Thu Chuột Văn Phòng / Bảo Hành 1 Tháng"],
+    "tags": ["Chuột Văn Phòng Bolt  / Bảo Hành 1 Tháng"],
     "name": "Logi Bolt",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/receiver-bolt.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-bolt.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 150 }
@@ -14,10 +14,10 @@
   {
     "id": 2144,
     "brand": "receiver",
-    "tags": ["Đầu Thu Chuột Văn Phòng / Bảo Hành 1 Tháng"],
+    "tags": ["Chuột Văn Phòng Unifying / Bảo Hành 1 Tháng"],
     "name": "Logi Unifying",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/receiver-unifying.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-unifying.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 170 }
@@ -26,10 +26,10 @@
   {
     "id": 2,
     "brand": "receiver",
-    "tags": ["Đầu Thu Chuột Gaming / Bảo Hành 1 Tháng"],
-    "name": "G304",
+    "tags": ["Cho Chuột Gaming G304 / Bảo Hành 1 Tháng"],
+    "name": "Receiver Chuột G304",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/receiver-g304.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g304.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 250 }
@@ -38,10 +38,10 @@
   {
     "id": 4,
     "brand": "receiver",
-    "tags": ["Đầu Thu Chuột Gaming / Bảo Hành 1 Tháng"],
-    "name": "G403/G603/G703/G502/G903/GPRO",
+    "tags": ["Cho Chuột Gaming Dòng G / Bảo Hành 1 Tháng"],
+    "name": "Receiver Chuột Dòng G",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/receiver-g.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 330 }
@@ -51,9 +51,9 @@
     "id": 4124,
     "brand": "receiver",
     "tags": ["Đầu Thu Gaming / Bảo Hành 1 Tháng"],
-    "name": "PRO X / PRO X 2",
+    "name": "Receiver Chuột PRO X / PRO X 2",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/receiver-prox1.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-prox1.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 450 }
@@ -70,7 +70,7 @@
     "tags": ["Pad Control / Không Bảo Hành"],
     "name": "Logitech G640",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/logitech-g640.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/logitech-g640.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97% + BOX", "price": 550 },
@@ -84,7 +84,7 @@
     "tags": ["Pad Control & Speed / Bảo Hành 9.27 GEARVN"],
     "name": "Logitech PowerPlay 2",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/logitech-powerplay-2.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/logitech-powerplay-2.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99% + BOX", "price": 1850 }
@@ -101,7 +101,7 @@
     "tags": ["Tương Thích SPL1/SPL2 & DIY / Không Bảo Hành"],
     "name": "Tiger ICE",
     "colors": [
-      { "color": "white", "image": "/assets/images/accessories/feet-tiger-ice.webp", "priceAdd": 0 }
+      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/accessories/feet-tiger-ice.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "New Seal", "price": 125 }
@@ -118,7 +118,7 @@
     "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C270",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/c270.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c270.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 290 }
@@ -130,7 +130,7 @@
     "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C310",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/c310.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c310.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 350 }
@@ -142,7 +142,7 @@
     "tags": ["Cắm Dây, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "C925e",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/c925e.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c925e.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 1050 }
@@ -154,7 +154,7 @@
     "tags": ["Cắm Dây & Remote, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "Conferrence BCC950",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/bcc950.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/bcc950.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 2180 }
@@ -171,7 +171,7 @@
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Hype X Cloud II 7.1 Kingston",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/sc-hyper-x-cl2.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-hyper-x-cl2.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97% - Gãy Nẹp Lưng", "price": 600 }
@@ -183,7 +183,7 @@
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Sennheiser GSX 1000",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/gsx-1000.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/gsx-1000.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97% + BOX", "price": 2080 }
@@ -200,7 +200,7 @@
     "tags": ["Jack 3.5mm, 25W / Bảo Hành 1 Tháng"],
     "name": "Z313",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/z313.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z313.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 600 },
@@ -213,7 +213,7 @@
     "tags": ["Jack 3.5mm & Bluetooth, 40 ~ 80W / Bảo Hành 1 Tháng"],
     "name": "Z407",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 1100 }
@@ -230,7 +230,7 @@
     "tags": ["Type C, Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "X BOX Series X",
     "colors": [
-      { "color": "black", "image": "/assets/images/accessories/xbox-series-x.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/xbox-series-x.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 800 }

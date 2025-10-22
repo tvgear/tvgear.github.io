@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 
 export const ListTab = styled.div`
@@ -238,8 +237,11 @@ export const TitleProduct = styled.div`
     }
 `
 
-export const ButtonLinkItem = styled(Link)`
+export const ButtonLinkItem = styled.div`
   width: fit-content;
+  border: none;
+  outline: none;
+  cursor: pointer;
   background: -webkit-linear-gradient(
     -135deg,
     rgba(97, 221, 249, 1) 0%,
@@ -300,7 +302,7 @@ export const PriceOptionSelect = styled.div`
 export const ImgLogo = styled.img`
   width: 14px;
   height: 14px;
-  margin: 0px 5px 0px 0px;
+  margin: 0px 7.5px 0px 0px;
   filter: invert(1);
 `
 

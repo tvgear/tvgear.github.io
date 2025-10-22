@@ -5,7 +5,7 @@
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G512 GX",
     "colors": [
-      { "color": "black", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97% Brown/Red - Lỗi LED", "price": 880 },
