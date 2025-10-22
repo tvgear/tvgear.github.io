@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const WrapModal = styled.div`
     position: fixed;
     top : 0px;
-    z-index: 1;
     z-index: 99;
     right: 0px;
     background: rgba(0,0,0,0.75);
