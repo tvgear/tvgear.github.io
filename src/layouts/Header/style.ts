@@ -8,6 +8,7 @@ export const BlockHeader = styled.div`
     margin: 0 auto;
     z-index: 9;
     width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
