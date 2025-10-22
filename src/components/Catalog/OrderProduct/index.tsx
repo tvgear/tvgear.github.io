@@ -68,6 +68,7 @@ export default function OrderProduct({
   onClose,
   onSuccess,
 }: OrderProductProps) {
+  const contentRef = React.useRef<HTMLDivElement>(null);
   const [customerName, setCustomerName] = React.useState("");
   const [customerPhone, setCustomerPhone] = React.useState("");
   const [customerAddress, setCustomerAddress] = React.useState("");
@@ -92,12 +93,18 @@ export default function OrderProduct({
       setSubmitting(false);
       setErrorMsg(null);
       setOkMsg(null);
-      setSubmittedInfo(null); 
+      setSubmittedInfo(null);
+      requestAnimationFrame(() => {
+        contentRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+        if (contentRef.current) contentRef.current.scrollTop = 0;
+      });
     }
     prevOpen.current = open;
   }, [open]);
 
   const handleClose = React.useCallback(() => {
+    contentRef.current?.scrollTo({ top: 0, behavior: "auto" });
+    if (contentRef.current) contentRef.current.scrollTop = 0;
     onSuccess?.();
     onClose();
   }, [onClose, onSuccess]);
@@ -141,6 +148,9 @@ export default function OrderProduct({
       });
 
       setOkMsg("Đặt Hàng Thành Công 🎉");
+      requestAnimationFrame(() => {
+        contentRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+      });
     } catch (err: any) {
       setErrorMsg(err?.message || "Đặt Hàng Thất Bại. Thử Lại.");
     } finally {
@@ -160,7 +170,7 @@ export default function OrderProduct({
             <ImgClose src="/assets/images/icCancel.svg" alt="Đóng" />
           </CloseForm>
         </HeaderForm>
-        <ContentForm>
+        <ContentForm ref={contentRef}>
           {okMsg ? (
             <InfoAfterOrder>
               <InfoProductOrder>

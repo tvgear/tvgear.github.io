@@ -79,6 +79,7 @@ export const ImgClose = styled.img`
 export const ContentForm = styled.div`
     height: calc(100dvh - 95px);
     overflow-y : auto;
+    overflow-x: hidden;
     &::-webkit-scrollbar {
         display: none;
     }
