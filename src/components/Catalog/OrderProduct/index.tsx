@@ -164,7 +164,7 @@ export default function OrderProduct({
   return (
     <WrapModal onClick={handleClose} className={open ? "active" : ""}>
       <WrapFormModal onClick={(e) => e.stopPropagation()} className={open ? "active" : ""}>
-        <HeaderForm>
+        <HeaderForm className={`${okMsg ? "orderSuccess" : ""}`}>
           <Title className={`${okMsg ? "orderSuccess" : ""}`}>{okMsg ? okMsg : "Đặt Hàng"}</Title>
           <CloseForm onClick={handleClose}>
             <ImgClose src="/assets/images/icCancel.svg" alt="Đóng" />

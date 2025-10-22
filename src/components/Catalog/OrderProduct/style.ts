@@ -48,6 +48,9 @@ export const HeaderForm = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 40px;
+    &.orderSuccess {
+       border-bottom : none;
+    }
 `;
 export const Title = styled.div`
     font-size : 1.8rem;
