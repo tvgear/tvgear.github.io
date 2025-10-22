@@ -2,26 +2,33 @@ import styled from "styled-components";
 
 export const WrapModal = styled.div`
     position: fixed;
-    top : 0px;
+    top : 55px;
     z-index: 99;
     right: 0px;
     background: rgba(0,0,0,0.75);
+    border-top : 1.25px solid #777;
     backdrop-filter: blur(10px);
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    height: 100dvh;
+    height: calc(100dvh - 55px);
     visibility: hidden;
     transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &.active {
         visibility: visible;
         transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
+    @media screen and (max-width : 1199px) {
+        top : 40px;
+        height: calc(100dvh - 40px);
+        
+    }
    
 `
 export const WrapFormModal = styled.div`
     border: 1.25px solid #777;
     border-bottom: none;
+    border-top : none;
     width: 380px;
     background: #000;
     transform: translateX(100%);
@@ -29,6 +36,9 @@ export const WrapFormModal = styled.div`
     &.active {
          transform: translateX(0%);
           transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+    @media screen and (max-width : 479px) {
+       width: 100%;
     }
 `;
 
@@ -64,11 +74,13 @@ export const ImgClose = styled.img`
 `
 
 export const ContentForm = styled.div`
-    height: calc(100dvh - 40px);
+    height: calc(100dvh - 95px);
     overflow-y : auto;
-   
     &::-webkit-scrollbar {
         display: none;
+    }
+    @media screen and (max-width : 1199px) {
+        height: calc(100dvh - 80px);
     }
 `;
 export const InfoProduct = styled.div`

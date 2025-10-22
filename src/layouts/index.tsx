@@ -14,7 +14,7 @@ const WrapWeb = styled.div`
   display: flex;
   flex-direction: column;
   @media screen and (max-width : 1199px) {
-    position: absolute;
+    position: fixed;
     z-index: 10;
   }
 `;
@@ -74,7 +74,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
      <Loading showLoading={isLoading}  />
      <WrapWeb>
-       <Header />
+      <Header />
       <Content>
         {children}
         <Note>Danh sách sản phẩm đang được cập nhật lên website<br />List đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
