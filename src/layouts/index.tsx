@@ -14,7 +14,7 @@ const WrapWeb = styled.div`
   display: flex;
   flex-direction: column;
   @media screen and (max-width : 1199px) {
-    position: fixed;
+    position: absolute;
     z-index: 10;
   }
 `;
@@ -33,6 +33,10 @@ const Content = styled.div`
   overflow-x : hidden;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media screen and (max-width : 1199px) {
+    overflow-y : auto;
+    overflow-x : auto;
   }
 `
 const Note = styled.div`
@@ -69,8 +73,8 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
      <Loading showLoading={isLoading}  />
-     <Header />
      <WrapWeb>
+       <Header />
       <Content>
         {children}
         <Note>Danh sách sản phẩm đang được cập nhật lên website<br />List đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
