@@ -13,6 +13,9 @@ const WrapWeb = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width : 1199px) {
+    position: fixed;
+  }
 `;
 
 const Content = styled.div`
@@ -23,7 +26,7 @@ const Content = styled.div`
   border-top: none;
   margin: 0px auto;
   position: relative;
-  z-index: 9;
+  z-index: 10;
   padding: 0px 0px 25px 0px;
   overflow-y : auto;
   overflow-x : hidden;
