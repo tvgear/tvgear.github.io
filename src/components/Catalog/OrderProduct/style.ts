@@ -21,6 +21,7 @@ export const WrapModal = styled.div`
     @media screen and (max-width : 1199px) {
         top : 40px;
         height: calc(100dvh - 40px);
+        backdrop-filter: blur(0px);
     }
    
 `
