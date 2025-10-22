@@ -159,7 +159,7 @@ export default function OrderProduct({
   };
 
   const shortAddress = (addr: string) =>
-    addr ? `${addr.slice(0, 8)}...${addr.slice(-8)}` : "";
+    addr ? `${addr.slice(0, 6)}...${addr.slice(-6)}` : "";
 
   return (
     <WrapModal onClick={handleClose} className={open ? "active" : ""}>
@@ -203,6 +203,7 @@ export default function OrderProduct({
                         Nhận Hàng Thanh Toán :{" "}
                         {((data?.productPriceOption ?? 0) - 50000).toLocaleString("vi-VN")} đ + Phí Ship
                       </span>
+                      <span className="note">* Phí cọc không hoàn lại trong mọi trường hợp hủy đơn & không nhận hàng</span>
                       <span className="note">
                         * Sau Khi Đặt Hàng, Vui Lòng Chụp Màn Hình Chuyển Khoản Tiền Cọc
                         Gửi Về Facebook Của TVGEAR Để Hoàn Tất Đặt Hàng
@@ -312,7 +313,6 @@ export default function OrderProduct({
                         </ItemTab>
                       ))}
                     </TabPayment>
-
                     <ContentPayment>
                       {method === 0 && (
                         <ItemPayment>
@@ -328,21 +328,20 @@ export default function OrderProduct({
                                   setTimeout(() => setCopied(false), 2000);
                                 }}
                               >
-                                {copied ? "Đã Sao Chép" : "Sao Chép"}
+                                {copied ? "Đã Sao Chép" : "Sao Chép Số Tài Khoản"}
                               </CopyNumberBank>
                             </WrapNumberBank>
                           </WrapQR>
                           <WrapContent>
-                            <span>Đơn Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
-                            <span>Phí Ship : 35.000 đ ~ 40.000 đ</span>
+                            <span>Tiền Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
                             <span className="payment">Phí Cọc Đơn Hàng : 50.000 đ</span>
                             <span>
                               Nhận Hàng Thanh Toán : {((data?.productPriceOption ?? 0) - 50000).toLocaleString("vi-VN")} đ + Phí Ship
                             </span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Phí cọc đơn hàng là bắt buộc với hình thức thanh toán Tiền Mặt / COD.</span>
-                            <span className="note">* Phí cọc không hoàn lại trong mọi trường hợp hủy đơn & không nhận hàng</span>
+                            <span className="note">* Phí cọc đơn hàng là phí bắt buộc với hình thức thanh toán Tiền Mặt / COD.</span>
+                            <span className="note">* Phí cọc đơn hàng sẽ dùng để thanh toán phí vận chuyển 2 chiều (phí chiều gửi đi & phí chiều hoàn về) cho đơn hàng trong trường hợp hủy / hoàn hàng từ phía khách. Nếu khách hàng hoàn tất đơn hàng, phí này đã được cấn trừ trực tiếp vào tiền COD.</span>
                           </WrapContent>
                         </ItemPayment>
                       )}
@@ -357,18 +356,18 @@ export default function OrderProduct({
                                 onClick={() => {
                                   navigator.clipboard.writeText("0461000636243");
                                   setCopied(true);
-                                  setTimeout(() => setCopied(false), 2000);
+                                  setTimeout(() => setCopied(false), 1000);
                                 }}
                               >
-                                {copied ? "Đã Sao Chép" : "Sao Chép"}
+                                {copied ? "Đã Sao Chép" : "Sao Chép Số Tài Khoản"}
                               </CopyNumberBank>
                             </WrapNumberBank>
                           </WrapQR>
                           <WrapContent>
-                            <span>Đơn Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
+                            <span>Tiền Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
                             <span>Phí Ship : 40.000 đ</span>
                             <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
-                            <span>Hỗ Trợ Phí Ship : 10.000 đ</span>
+                            <span>Hỗ Trợ Phí Ship : -10.000 đ</span>
                             <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ</span>
                           </WrapContent>
                         </ItemPayment>
@@ -379,7 +378,7 @@ export default function OrderProduct({
                             <ImgQR src="/assets/images/qr-crypto.jpg" />
                             <WrapNumberBank>
                               <NumberBank>{shortAddress("0x41ab3715ee3dd25c49d034a9cc85f34639372216")}</NumberBank>
-                              <InfoBank>BSC - BNB Smart Chain (BEP-20)</InfoBank>
+                              <InfoBank>BSC - BNB Smart Chain (BEP20)</InfoBank>
                               <CopyNumberBank
                                 onClick={() => {
                                   navigator.clipboard.writeText("0x41ab3715ee3dd25c49d034a9cc85f34639372216");
@@ -387,21 +386,21 @@ export default function OrderProduct({
                                   setTimeout(() => setCopied(false), 2000);
                                 }}
                               >
-                                {copied ? "Đã Sao Chép" : "Sao Chép"}
+                                {copied ? "Đã Sao Chép" : "Sao Chép Mã Ví"}
                               </CopyNumberBank>
                             </WrapNumberBank>
                           </WrapQR>
                           <WrapContent>
-                            <span>Đơn Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
+                            <span>Tiền Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
                             <span>Phí Ship : 40.000 đ</span>
                             <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
                             <span>Hỗ Trợ Phí Ship : 15.000 đ</span>
-                            <span>Tổng Thanh Toán VND : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ</span>
+                            <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ</span>
                             <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 25000).toFixed(2)} USDT</span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Tỉ Giá Quy Đổi 1 USDT = 25.000 VND (ĐÃ BAO GỒM PHÍ CHUYỂN ĐỔI P2P)</span>
-                            <span className="note">* Chỉ Gửi USDT Đến Địa Chỉ Trên, Không Gửi Các Token Khác</span>
+                            <span className="note">* Tỉ Giá 1 USDT = 25.000 VND (BAO GỒM PHÍ CHUYỂN ĐỔI P2P, CHƯA TÍNH PHÍ GAS BSC)</span>
+                            <span className="note">* Chỉ Gửi Duy Nhất USDT Đến Địa Chỉ Trên, Không Gửi Các Token Khác</span>
                           </WrapContent>
                         </ItemPayment>
                       )}

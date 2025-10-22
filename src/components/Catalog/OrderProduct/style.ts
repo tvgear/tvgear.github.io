@@ -178,6 +178,7 @@ export const TextAreaForm = styled.textarea`
     font-size: 1.6rem;
     line-height: calc(1.6rem * 1.25);
     text-transform: capitalize;
+    margin: 0px 0px 2.5px 0px;
 `
 
 export const ButtonOrder = styled.button`
@@ -200,7 +201,7 @@ export const ButtonOrder = styled.button`
   transition: 0.4s all;
   color : #000;
   padding: 0px 10px;
-  margin: -5px 0px 5px 0px;
+  margin: 15px 0px 10px 0px;
   text-transform: uppercase;
   font-size: 1.6rem; 
   line-height: calc(1.6rem * 1.25);
