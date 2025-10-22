@@ -13,15 +13,14 @@ export const WrapModal = styled.div`
     justify-content: flex-end;
     height: calc(100dvh - 55px);
     visibility: hidden;
-    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &.active {
         visibility: visible;
-        transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
     @media screen and (max-width : 1199px) {
         top : 40px;
         height: calc(100dvh - 40px);
-        
     }
    
 `
@@ -32,10 +31,10 @@ export const WrapFormModal = styled.div`
     width: 380px;
     background: #000;
     transform: translateX(100%);
-    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &.active {
          transform: translateX(0%);
-          transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
     @media screen and (max-width : 479px) {
        width: 100%;
