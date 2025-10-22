@@ -15,6 +15,7 @@ const WrapWeb = styled.div`
   flex-direction: column;
   @media screen and (max-width : 1199px) {
     position: fixed;
+    z-index: 10;
   }
 `;
 
@@ -68,14 +69,13 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
      <Loading showLoading={isLoading}  />
-      
-      <WrapWeb>
-        <Header />
-        <Content>
-          {children}
-          <Note>Danh sách sản phẩm đang được cập nhật lên website<br />List đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
-        </Content>
-      </WrapWeb>
+     <Header />
+     <WrapWeb>
+      <Content>
+        {children}
+        <Note>Danh sách sản phẩm đang được cập nhật lên website<br />List đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
+      </Content>
+     </WrapWeb>
     </>
   );
 };
