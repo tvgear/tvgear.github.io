@@ -39,7 +39,7 @@ import {
 } from "./style";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbzQ1s6HRl4xdO6j3C4VPZZl8JI_JyCUjNvvatEXwx8XZhrRccz2mRiMkgD6-iIkE9oG/exec";
+  "https://script.google.com/macros/s/AKfycbxfT6IJu3xlBI3Vl-5IjleFYphA-dJjsf99KY0VUjBd6YxjcWBJKJy6v8OmEGzYa1AU/exec";
   
 
 export type OrderData = {
