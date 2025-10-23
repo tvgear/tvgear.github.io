@@ -29,7 +29,7 @@ export const WrapFormModal = styled.div`
     border: 1.25px solid #777;
     border-bottom: none;
     border-top : none;
-    width: 400px;
+    width: 425px;
     background: #000;
     transform: translateX(100%);
      transition: 0.3s all;
@@ -302,12 +302,12 @@ export const ProfitItem = styled.div`
     background: rgba(224,55,43);
     color : #FFF;
     position: absolute;
-    top: -7.5px;
+    top: -5px;
     right : -3.5px;
-    font-size: 1rem;
-    line-height: calc(1rem * 1.25);
+    font-size: 0.9rem;
+    line-height: calc(0.9rem * 1.25);
     font-family: F_MEDIUM;
-    padding: 1.5px;
+    padding: 0.75px 1.5px;
     z-index: 2;
 `
 

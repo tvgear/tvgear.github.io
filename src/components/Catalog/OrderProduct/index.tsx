@@ -39,7 +39,8 @@ import {
 } from "./style";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbwApeFO-OCZFDoEtvewN7qwEPn49xq9dBz250t6OYhkMQtfH3h-phAqEoDpjUDqlY1D/exec";
+  "https://script.google.com/macros/s/AKfycbzQ1s6HRl4xdO6j3C4VPZZl8JI_JyCUjNvvatEXwx8XZhrRccz2mRiMkgD6-iIkE9oG/exec";
+  
 
 export type OrderData = {
   productName: string;
@@ -57,7 +58,7 @@ type OrderProductProps = {
 };
 
 const paymentMethod = [
-  { name: "Tiền Mặt / COD", profit: "" },
+  { name: "Tiền Mặt/COD", profit: "" },
   { name: "Chuyển Khoản", profit: "-10K Ship" },
   { name: "Crypto", profit: "-15K Ship" },
 ];
@@ -72,6 +73,7 @@ export default function OrderProduct({
   const [customerName, setCustomerName] = React.useState("");
   const [customerPhone, setCustomerPhone] = React.useState("");
   const [customerAddress, setCustomerAddress] = React.useState("");
+  const [customerNote, setCustomerNote] = React.useState("");
   const [submitting, setSubmitting] = React.useState(false);
   const [errorMsg, setErrorMsg] = React.useState<string | null>(null);
   const [okMsg, setOkMsg] = React.useState<string | null>(null);
@@ -82,6 +84,8 @@ export default function OrderProduct({
     name: string;
     phone: string;
     address: string;
+    note?: string;
+    payment?: string;
   } | null>(null);
 
   const prevOpen = React.useRef(false);
@@ -90,6 +94,7 @@ export default function OrderProduct({
       setCustomerName("");
       setCustomerPhone("");
       setCustomerAddress("");
+      setCustomerNote("");
       setSubmitting(false);
       setErrorMsg(null);
       setOkMsg(null);
@@ -123,20 +128,31 @@ export default function OrderProduct({
       setErrorMsg(null);
       setOkMsg(null);
 
+      const customerPayment = paymentMethod[method]?.name ?? "";
+
+      // Tránh preflight: KHÔNG đặt headers -> body đi như text/plain
+      const payload = {
+        productName: data.productName,
+        productColor: data.productColor,
+        productOption: data.productOption,
+        productPriceOption: data.productPriceOption,
+        customerName,
+        customerPhone,
+        customerAddress,
+        customerNote,
+        customerPayment,
+      };
+
       const res = await fetch(SHEET_ENDPOINT, {
         method: "POST",
-        body: JSON.stringify({
-          productName: data.productName,
-          productColor: data.productColor,
-          productOption: data.productOption,
-          productPriceOption: data.productPriceOption,
-          customerName,
-          customerPhone,
-          customerAddress,
-        }),
+        body: JSON.stringify(payload),
       });
 
-      const resp = await res.json().catch(() => ({}));
+      // Đọc text trước rồi parse JSON an toàn
+      const text = await res.text();
+      let resp: any = {};
+      try { resp = JSON.parse(text); } catch { resp = { ok: res.ok }; }
+
       if (!res.ok || resp?.ok === false) {
         throw new Error(resp?.error || "Gửi Thất Bại.");
       }
@@ -145,6 +161,8 @@ export default function OrderProduct({
         name: customerName,
         phone: customerPhone,
         address: customerAddress,
+        note: customerNote,
+        payment: customerPayment,
       });
 
       setOkMsg("Đặt Hàng Thành Công 🎉");
@@ -188,10 +206,13 @@ export default function OrderProduct({
                   </PriceSelectInfo>
                 </InfoOption>
               </InfoProductOrder>
+
               <WrapContent>
                 <span>{submittedInfo?.name || customerName}</span>
                 <span>{submittedInfo?.phone || customerPhone}</span>
                 <span>{submittedInfo?.address || customerAddress}</span>
+                <span>{submittedInfo?.note || customerNote}</span>
+                <span>{submittedInfo?.payment || paymentMethod[method]?.name}</span>
               </WrapContent>
 
               <ContentPayment>
@@ -204,10 +225,7 @@ export default function OrderProduct({
                         {((data?.productPriceOption ?? 0) - 50000).toLocaleString("vi-VN")} đ + Phí Ship
                       </span>
                       <span className="note">* Phí cọc không hoàn lại trong mọi trường hợp hủy đơn & không nhận hàng</span>
-                      <span className="note">
-                        * Sau Khi Đặt Hàng, Vui Lòng Chụp Màn Hình Chuyển Khoản Tiền Cọc
-                        Gửi Về Facebook Của TVGEAR Để Hoàn Tất Đặt Hàng
-                      </span>
+                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển khoản tiền cọc gửi về Facebook TVGEAR để hoàn tất.</span>
                     </WrapContent>
                   </ItemPayment>
                 )}
@@ -217,10 +235,7 @@ export default function OrderProduct({
                       <span className="payment">
                         Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ
                       </span>
-                      <span className="note">
-                        * Sau Khi Đặt Hàng, Vui Lòng Chụp Màn Hình Chuyển Khoản
-                        Gửi Về Facebook Của TVGEAR Để Hoàn Tất Đặt Hàng
-                      </span>
+                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển khoản gửi về Facebook TVGEAR để hoàn tất.</span>
                     </WrapContent>
                   </ItemPayment>
                 )}
@@ -231,13 +246,9 @@ export default function OrderProduct({
                         Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ
                       </span>
                       <span className="payment">
-                        Tổng Thanh Toán Quy Đổi :{" "}
-                        {(((data?.productPriceOption ?? 0) + 25000) / 25000).toFixed(2)} USDT
+                        Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT
                       </span>
-                      <span className="note">
-                        * Sau Khi Đặt Hàng, Vui Lòng Chụp Màn Hình Chuyển Khoản USDT
-                        Gửi Về Facebook Của TVGEAR Để Hoàn Tất Đặt Hàng
-                      </span>
+                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển USDT gửi về Facebook TVGEAR để hoàn tất.</span>
                     </WrapContent>
                   </ItemPayment>
                 )}
@@ -275,14 +286,14 @@ export default function OrderProduct({
                     <InputForm
                       value={customerName}
                       onChange={(e) => setCustomerName(e.target.value)}
-                      placeholder="Tên Facebook"
+                      placeholder="Tên Facebook *"
                     />
                   </ItemForm>
                   <ItemForm>
                     <InputForm
                       value={customerPhone}
                       onChange={(e) => setCustomerPhone(e.target.value)}
-                      placeholder="SĐT"
+                      placeholder="Số Điện Thoại *"
                       type="number"
                       inputMode="numeric"
                     />
@@ -292,7 +303,15 @@ export default function OrderProduct({
                       value={customerAddress}
                       rows={2}
                       onChange={(e) => setCustomerAddress(e.target.value)}
-                      placeholder="Địa Chỉ"
+                      placeholder="Địa Chỉ *"
+                    />
+                  </ItemForm>
+                  <ItemForm>
+                    <TextAreaForm
+                      value={customerNote}
+                      rows={2}
+                      onChange={(e) => setCustomerNote(e.target.value)}
+                      placeholder="Ghi Chú"
                     />
                   </ItemForm>
 
@@ -313,6 +332,7 @@ export default function OrderProduct({
                         </ItemTab>
                       ))}
                     </TabPayment>
+
                     <ContentPayment>
                       {method === 0 && (
                         <ItemPayment>
@@ -340,11 +360,12 @@ export default function OrderProduct({
                             </span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Phí cọc đơn hàng là phí bắt buộc với hình thức thanh toán Tiền Mặt / COD.</span>
-                            <span className="note">* Phí cọc đơn hàng sẽ dùng để thanh toán phí vận chuyển 2 chiều (phí chiều gửi đi & phí chiều hoàn về) cho đơn hàng trong trường hợp hủy / hoàn hàng từ phía khách. Nếu khách hàng hoàn tất đơn hàng, phí này đã được cấn trừ trực tiếp vào tiền COD.</span>
+                            <span className="note">* Phí cọc đơn hàng là bắt buộc với Tiền Mặt/COD.</span>
+                            <span className="note">* Phí cọc dùng để thanh toán phí vận chuyển 2 chiều nếu hủy/hoàn hàng.</span>
                           </WrapContent>
                         </ItemPayment>
                       )}
+
                       {method === 1 && (
                         <ItemPayment>
                           <WrapQR>
@@ -372,6 +393,7 @@ export default function OrderProduct({
                           </WrapContent>
                         </ItemPayment>
                       )}
+
                       {method === 2 && (
                         <ItemPayment>
                           <WrapQR>
@@ -396,11 +418,11 @@ export default function OrderProduct({
                             <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
                             <span>Hỗ Trợ Phí Ship : 15.000 đ</span>
                             <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ</span>
-                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 25000).toFixed(2)} USDT</span>
+                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT</span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Tỉ Giá 1 USDT = 25.000 VND (BAO GỒM PHÍ CHUYỂN ĐỔI P2P, CHƯA TÍNH PHÍ GAS BSC)</span>
-                            <span className="note">* Chỉ Gửi Duy Nhất USDT Đến Địa Chỉ Trên, Không Gửi Các Token Khác</span>
+                            <span className="note">* Tỉ giá 1 USDT = 26.000 VND (đã gồm phí P2P, chưa gồm gas).</span>
+                            <span className="note">* Chỉ gửi USDT (BEP20) đến địa chỉ trên.</span>
                           </WrapContent>
                         </ItemPayment>
                       )}
