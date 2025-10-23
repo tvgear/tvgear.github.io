@@ -8,76 +8,59 @@ interface LayoutProps {
 }
 
 const WrapWeb = styled.div`
-  height: 100vh;
-  @supports (height: 100svh) {
-    height: 100svh;
-  }
-  width: 100%;
+  height: 100dvh;
+  width: 100dvw;
   position: relative;
   display: flex;
   flex-direction: column;
-  @media (max-width: 1199px) {
+  @media screen and (max-width : 1199px) {
     position: fixed;
     z-index: 10;
   }
 `;
 
 const Content = styled.div`
-  flex: 1 1 auto;
-  min-height: 0; 
-  width: 100%;
-  position: relative;
-  z-index: 10;
-
-  border: 1.25px solid #777;
+  width: 100dvw;
+  height: 100dvh;
+  border : 1.25px solid #777;
   border-bottom: none;
   border-top: none;
-  margin: 0 auto;
-  padding: 0 0 25px 0;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-
+  margin: 0px auto;
+  position: relative;
+  z-index: 10;
+  padding: 0px 0px 25px 0px;
+  overflow-y : auto;
   &::-webkit-scrollbar {
     display: none;
   }
-
-  @media (max-width: 1199px) {
-    overflow-y: auto;
-    overflow-x: hidden;
+  @media screen and (max-width : 1199px) {
+    overflow-y : auto;
   }
-
- 
-  transform: translateZ(0);
-  will-change: transform;
-`;
-
+`
 const Note = styled.div`
-  font-size: 1.2rem;
+  font-size : 1.2rem;
   line-height: calc(1.2rem * 1.25);
   padding: 5px 5px;
-  color: #fff;
+  color: #FFF;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(56, 113, 224);
+  background: rgba(56,113,224);
   text-transform: uppercase;
   margin: 20px 5px 5px 5px;
   text-align: center;
   a {
     text-decoration: underline;
-    margin: 3.5px 0 2.5px 0;
+    margin: 3.5px 0px 2.5px 0px;
     &:hover {
-      color: #fff;
+      color : #FFF;
     }
   }
-`;
+`
 
 const Layout = ({ children }: LayoutProps) => {
-  const [isLoading, setIsLoading] = useState(true);
-
+ const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     Promise.all([]).then(() =>
       setTimeout(() => {
@@ -85,25 +68,16 @@ const Layout = ({ children }: LayoutProps) => {
       }, 3500)
     );
   }, []);
-
   return (
     <>
-      <Loading showLoading={isLoading} />
-      <WrapWeb>
-        <Header />
-        <Content>
-          {children}
-          <Note>
-            Danh sách sản phẩm đang được cập nhật lên website
-            <br />
-            List đầy đủ vui lòng xem tại bài ghim Facebook
-            <br />
-            <a href="https://facebook.com/tvgear" target="_blank" rel="noreferrer">
-              https://facebook.com/tvgear
-            </a>
-          </Note>
-        </Content>
-      </WrapWeb>
+     <Loading showLoading={isLoading}  />
+     <WrapWeb>
+      <Header />
+      <Content>
+        {children}
+        <Note>Danh sách sản phẩm đang được cập nhật lên website<br />List đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
+      </Content>
+     </WrapWeb>
     </>
   );
 };
