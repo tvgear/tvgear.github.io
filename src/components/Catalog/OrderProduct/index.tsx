@@ -39,7 +39,7 @@ import {
 } from "./style";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbxfT6IJu3xlBI3Vl-5IjleFYphA-dJjsf99KY0VUjBd6YxjcWBJKJy6v8OmEGzYa1AU/exec";
+  "https://script.google.com/macros/s/AKfycbyqgNDjJfbZYEC7GougRaM-4t08z4tXmWJWk58FIAHb1vG9vTCwmAQLQ2DspEwK8KE/exec";
   
 
 export type OrderData = {
@@ -79,6 +79,16 @@ export default function OrderProduct({
   const [okMsg, setOkMsg] = React.useState<string | null>(null);
   const [method, setMethod] = React.useState(0);
   const [copied, setCopied] = React.useState(false);
+
+  React.useEffect(() => {
+  if (!okMsg) return;
+  if (contentRef.current) {
+    contentRef.current.classList.add('repaint-hack');
+    contentRef.current.offsetHeight;
+    contentRef.current.classList.remove('repaint-hack');
+    contentRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}, [okMsg]);
 
   const [submittedInfo, setSubmittedInfo] = React.useState<{
     name: string;
@@ -130,7 +140,6 @@ export default function OrderProduct({
 
       const customerPayment = paymentMethod[method]?.name ?? "";
 
-      // Tránh preflight: KHÔNG đặt headers -> body đi như text/plain
       const payload = {
         productName: data.productName,
         productColor: data.productColor,
@@ -148,7 +157,7 @@ export default function OrderProduct({
         body: JSON.stringify(payload),
       });
 
-      // Đọc text trước rồi parse JSON an toàn
+      
       const text = await res.text();
       let resp: any = {};
       try { resp = JSON.parse(text); } catch { resp = { ok: res.ok }; }

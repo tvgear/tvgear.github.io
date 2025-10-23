@@ -22,6 +22,7 @@ export const WrapModal = styled.div`
         top : 40px;
         height: calc(100dvh - 40px);
         backdrop-filter: blur(0px);
+        transition: 0.3s all;
     }
    
 `
@@ -82,7 +83,6 @@ export const ImgClose = styled.img`
 export const ContentForm = styled.div`
     height: calc(100dvh - 95px);
     overflow-y : auto;
-    overflow-x: hidden;
     &::-webkit-scrollbar {
         display: none;
     }
