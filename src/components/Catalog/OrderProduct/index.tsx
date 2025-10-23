@@ -39,7 +39,7 @@ import {
 } from "./style";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbyqgNDjJfbZYEC7GougRaM-4t08z4tXmWJWk58FIAHb1vG9vTCwmAQLQ2DspEwK8KE/exec";
+  "https://script.google.com/macros/s/AKfycbyESvm823dSEXIiJq6Po4EupnxxYHKq4bz_XNGXPQRo-4lgqAa_lKS0Kv2V_MFT0Cu8/exec";
   
 
 export type OrderData = {
@@ -58,7 +58,7 @@ type OrderProductProps = {
 };
 
 const paymentMethod = [
-  { name: "Tiền Mặt/COD", profit: "" },
+  { name: "Tiền Mặt / COD", profit: "" },
   { name: "Chuyển Khoản", profit: "-10K Ship" },
   { name: "Crypto", profit: "-15K Ship" },
 ];
@@ -295,7 +295,7 @@ export default function OrderProduct({
                     <InputForm
                       value={customerName}
                       onChange={(e) => setCustomerName(e.target.value)}
-                      placeholder="Tên Facebook *"
+                      placeholder="Tên *"
                     />
                   </ItemForm>
                   <ItemForm>
@@ -315,14 +315,7 @@ export default function OrderProduct({
                       placeholder="Địa Chỉ *"
                     />
                   </ItemForm>
-                  <ItemForm>
-                    <TextAreaForm
-                      value={customerNote}
-                      rows={2}
-                      onChange={(e) => setCustomerNote(e.target.value)}
-                      placeholder="Ghi Chú"
-                    />
-                  </ItemForm>
+                  
 
                   <InfoPayment>
                     <TitleOrder className="inForm">
@@ -369,8 +362,8 @@ export default function OrderProduct({
                             </span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Phí cọc đơn hàng là bắt buộc với Tiền Mặt/COD.</span>
-                            <span className="note">* Phí cọc dùng để thanh toán phí vận chuyển 2 chiều nếu hủy/hoàn hàng.</span>
+                            <span className="note">* Phí cọc đơn hàng là bắt buộc với phương thức thanh toán Tiền Mặt/COD.</span>
+                            <span className="note">* Phí cọc dùng để thanh toán phí vận chuyển 2 chiều nếu hủy/hoàn hàng</span>
                           </WrapContent>
                         </ItemPayment>
                       )}
@@ -430,14 +423,21 @@ export default function OrderProduct({
                             <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT</span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Tỉ giá 1 USDT = 26.000 VND (đã gồm phí P2P, chưa gồm gas).</span>
+                            <span className="note">* Tỉ giá quy đổi 1 USDT = 26.000 VND</span>
                             <span className="note">* Chỉ gửi USDT (BEP20) đến địa chỉ trên.</span>
                           </WrapContent>
                         </ItemPayment>
                       )}
                     </ContentPayment>
                   </InfoPayment>
-
+                  <ItemForm>
+                    <TextAreaForm
+                      value={customerNote}
+                      rows={2}
+                      onChange={(e) => setCustomerNote(e.target.value)}
+                      placeholder="Ghi Chú Cho Đơn Hàng ..."
+                    />
+                  </ItemForm>
                   {errorMsg ? <FormError>{errorMsg}</FormError> : null}
                   <ButtonOrder type="submit" disabled={submitting}>
                     {submitting ? "Đang Xác Nhận Đơn Hàng ..." : "Xác Nhận Thanh Toán Đơn Hàng"}

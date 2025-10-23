@@ -5,9 +5,9 @@ export const WrapModal = styled.div`
     top : 55px;
     z-index: 99;
     right: 0px;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.88);
     border-top : 1.25px solid #777;
-    backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(5px);
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -18,11 +18,15 @@ export const WrapModal = styled.div`
         visibility: visible;
         transition: 0.3s all;
     }
-    @media screen and (max-width : 1199px) {
-        top : 40px;
-        height: calc(100dvh - 40px);
+     @media screen and (max-width : 1199px) {
+        top : 55px;
+        height: calc(100dvh - 55px);
         backdrop-filter: blur(0px);
         transition: 0.3s all;
+    }
+    @media screen and (max-width : 767px) {
+        top : 40px;
+        height: calc(100dvh - 40px);
     }
    
 `
@@ -30,12 +34,13 @@ export const WrapFormModal = styled.div`
     border: 1.25px solid #777;
     border-bottom: none;
     border-top : none;
-    width: 425px;
+    width: 480px;
     background: #000;
-    transform: translateX(100%);
-     transition: 0.3s all;
+    transform: translateY(100%);
+    margin: 0 auto;
+    transition: 0.3s all;
     &.active {
-        transform: translateX(0%);
+        transform: translateY(0%);
         transition: 0.3s all;
     }
     @media screen and (max-width : 479px) {
@@ -338,11 +343,11 @@ export const WrapContent = styled.div`
             color : #6bff8a;
         }
         &.note {
-            font-size: 1rem;
-            line-height: calc(1rem * 1.5);
+            font-size: 1.2rem;
+            line-height: calc(1.2rem * 1.5);
             margin: -2px 0px 5px 0px;
             text-transform: uppercase;
-            color : #FFF;
+            color : #AAA;
         }
         text-transform: uppercase;
         margin: 0px 0px 7.5px 0px;
