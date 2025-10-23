@@ -8,7 +8,6 @@ interface LayoutProps {
 }
 
 const WrapWeb = styled.div`
-  /* Chiều cao toàn trang – ưu tiên svh để xử lý thanh URL iOS */
   height: 100vh;
   @supports (height: 100svh) {
     height: 100svh;
@@ -17,18 +16,15 @@ const WrapWeb = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-
-  /* KHÔNG đặt fixed trên mobile để tránh khoá scroll lồng */
   @media (max-width: 1199px) {
-    position: relative;
+    position: fixed;
     z-index: 10;
   }
 `;
 
 const Content = styled.div`
-  /* Vùng cuộn chính */
   flex: 1 1 auto;
-  min-height: 0; /* bắt buộc để flex child cho phép overflow */
+  min-height: 0; 
   width: 100%;
   position: relative;
   z-index: 10;
@@ -52,7 +48,7 @@ const Content = styled.div`
     overflow-x: hidden;
   }
 
-  /* Ổn định layer cuộn cho iOS hiếm khi bị kẹt repaint */
+ 
   transform: translateZ(0);
   will-change: transform;
 `;
