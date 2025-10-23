@@ -2,8 +2,8 @@
    {
     "id": 1,
     "brand": "receiver",
-    "tags": ["Chuột Văn Phòng Bolt  / Bảo Hành 1 Tháng"],
-    "name": "Logi Bolt",
+    "tags": ["Chuột Văn Phòng Loại Bolt  / Bảo Hành 1 Tháng"],
+    "name": "Đầu Thu Logi Bolt",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-bolt.webp", "priceAdd": 0 }
     ],
@@ -14,8 +14,8 @@
   {
     "id": 2144,
     "brand": "receiver",
-    "tags": ["Chuột Văn Phòng Unifying / Bảo Hành 1 Tháng"],
-    "name": "Logi Unifying",
+    "tags": ["Chuột Văn Phòng Loại Unifying / Bảo Hành 1 Tháng"],
+    "name": "Đầu Thu Logi Unifying",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-unifying.webp", "priceAdd": 0 }
     ],
@@ -26,8 +26,8 @@
   {
     "id": 2,
     "brand": "receiver",
-    "tags": ["Cho Chuột Gaming G304 / Bảo Hành 1 Tháng"],
-    "name": "Receiver Chuột G304",
+    "tags": ["Chuột Gaming G304 / Bảo Hành 1 Tháng"],
+    "name": "Đầu Thu Logi G304",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g304.png", "priceAdd": 0 }
     ],
@@ -38,8 +38,8 @@
   {
     "id": 4,
     "brand": "receiver",
-    "tags": ["Cho Chuột Gaming Dòng G / Bảo Hành 1 Tháng"],
-    "name": "Receiver Chuột Dòng G",
+    "tags": ["Chuột Gaming Dòng G / Bảo Hành 1 Tháng"],
+    "name": "Đầu Thu Logi Dòng G",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g.png", "priceAdd": 0 }
     ],
@@ -50,8 +50,8 @@
   {
     "id": 4124,
     "brand": "receiver",
-    "tags": ["Đầu Thu Gaming / Bảo Hành 1 Tháng"],
-    "name": "Receiver Chuột PRO X / PRO X 2",
+    "tags": ["Chuột Gaming Dòng G PRO X / Bảo Hành 1 Tháng"],
+    "name": "Đầu Thu Logi PRO X",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-prox1.png", "priceAdd": 0 }
     ],
