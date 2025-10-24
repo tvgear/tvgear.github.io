@@ -58,8 +58,9 @@ type OrderProductProps = {
 };
 
 const paymentMethod = [
-  { name: "Tiền Mặt / COD", profit: "" },
-  { name: "Chuyển Khoản", profit: "-10K Ship" },
+  { name: "COD", profit: "" },
+  { name: "Bank", profit: "-10K Ship" },
+  { name: "PayPal", profit: "-10K Ship" },
   { name: "Crypto", profit: "-15K Ship" },
 ];
 
@@ -399,6 +400,38 @@ export default function OrderProduct({
                       {method === 2 && (
                         <ItemPayment>
                           <WrapQR>
+                            <ImgQR src="/assets/images/qr-paypal.png" />
+                            <WrapNumberBank>
+                              <NumberBank>votienthuan97</NumberBank>
+                              <InfoBank>PayPal</InfoBank>
+                              <CopyNumberBank
+                                onClick={() => {
+                                  navigator.clipboard.writeText("https://paypal.me/votienthuan97");
+                                  setCopied(true);
+                                  setTimeout(() => setCopied(false), 1000);
+                                }}
+                              >
+                                {copied ? "Đã Sao Chép" : "Sao Chép Link"}
+                              </CopyNumberBank>
+                            </WrapNumberBank>
+                          </WrapQR>
+                          <WrapContent>
+                            <span>Tiền Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
+                            <span>Phí Ship : 40.000 đ</span>
+                            <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
+                            <span>Hỗ Trợ Phí Ship : -10.000 đ</span>
+                            <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ</span>
+                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 25500).toFixed(2)} $</span>
+                          </WrapContent>
+                          <WrapContent>
+                            <span className="note">* Tỉ giá quy đổi 1$ = 25.500 VND (Theo Tỉ Giá & Phí PayPal)</span>
+                          </WrapContent>
+                        </ItemPayment>
+                      )}
+
+                      {method === 3 && (
+                        <ItemPayment>
+                          <WrapQR>
                             <ImgQR src="/assets/images/qr-crypto.jpg" />
                             <WrapNumberBank>
                               <NumberBank>{shortAddress("0x41ab3715ee3dd25c49d034a9cc85f34639372216")}</NumberBank>
@@ -423,8 +456,8 @@ export default function OrderProduct({
                             <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT</span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Tỉ giá quy đổi 1 USDT = 26.000 VND</span>
-                            <span className="note">* Chỉ gửi USDT (BEP20) đến địa chỉ trên.</span>
+                            <span className="note">* Tỉ giá quy đổi 1 USDT = 26.000 VND (Theo Tỉ Giá & Phí P2P Binance)</span>
+                            <span className="note">* Chỉ gửi USDT, BSC - BNB Smart Chain (BEP20) đến địa chỉ trên.</span>
                           </WrapContent>
                         </ItemPayment>
                       )}
