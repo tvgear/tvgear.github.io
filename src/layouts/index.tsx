@@ -38,9 +38,9 @@ const Content = styled.div`
   }
 `
 const Note = styled.div`
-  font-size : 1.2rem;
-  line-height: calc(1.2rem * 1.25);
-  padding: 5px 5px;
+  font-size : 1.3rem;
+  line-height: calc(1.3rem * 1.25);
+  padding: 10px 5px;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <Content>
         {children}
-        <Note>Danh sách sản phẩm đang được cập nhật lên website<br />List đầy đủ vui lòng xem tại bài ghim Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
+        <Note>Sản phẩm đang được cập nhật. List đầy đủ xem tại Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
       </Content>
      </WrapWeb>
     </>

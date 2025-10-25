@@ -28,7 +28,7 @@ const Loading: React.FC<LoadingProps> = ({ showLoading }) => {
       <WrapMove>
         <LineGray className={startGray ? "active" : ""} />
         <LineBlack className={startBlack ? "active" : ""}>
-          <ImgDirect src="/assets/images/icUp.svg" />
+          <ImgDirect src="/assets/images/icons/icUp.svg" />
         </LineBlack>
       </WrapMove>
     </BlockLoading>

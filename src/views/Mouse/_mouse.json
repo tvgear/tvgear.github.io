@@ -47,7 +47,7 @@
       "name": "G403 Hero",
       "tags": ["Có Dây / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g403-hero.png", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g403-hero.webp", "priceAdd": 0 }
       ],
       "options": [{ "name": "90%", "price": 450 }, { "name": "97%", "price": 580 }]
     },
@@ -251,7 +251,7 @@
         { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97% + BOX - Dùng Receiver SPL1", "price": 1750 }
+        { "name": "97%, Dùng Đầu Thu SPL1", "price": 1750 }
       ]
     },
     {
@@ -324,6 +324,7 @@
         { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/m220-pink.webp", "priceAdd": 0 }
       ],
       "options": [
+        { "name": "95%", "price": 130 },
         { "name": "97%", "price": 150 }
       ]
     },
@@ -359,7 +360,7 @@
       "name": "M325",
       "tags": ["Không Dây / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m325-black.png", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m325-black.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "97%", "price": 250 }
@@ -478,7 +479,7 @@
       "name": "DA Elite",
       "tags": ["Có Dây / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/da-elite.png", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/da-elite.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "95%", "price": 390 },
@@ -503,7 +504,7 @@
       "name": "Basilisk v3",
       "tags": ["Có Dây / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/basilisk-v3.png", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/basilisk-v3.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "97%", "price": 750 }
@@ -515,9 +516,9 @@
       "name": "Orochi v2",
       "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/orochi-v2-black.png", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/orochi-v2-white.png", "priceAdd": 0 },
-        { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/orochi-v2-pink.png", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/orochi-v2-black.webp", "priceAdd": 0 },
+        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/orochi-v2-white.webp", "priceAdd": 0 },
+        { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/orochi-v2-pink.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "97% + BOX", "price": 580 }
@@ -542,7 +543,7 @@
       "name": "Viper Ultimate",
       "tags": ["Không Dây / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/viper-ultimate.png", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/viper-ultimate.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "97% + DOCK SẠC", "price": 1250 }
@@ -557,8 +558,7 @@
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%", "price": 1400 },
-        { "name": "New Seal BH 6.2026", "price": 1780 }
+        { "name": "97%", "price": 1450 }
       ]
     },
     {
@@ -579,7 +579,7 @@
       "name": "Pro Click v2 Vertical",
       "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/pro-click-v2-vertical.png", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/pro-click-v2-vertical.webp", "priceAdd": 0 }
       ],
       "options": [
         { "name": "New Seal", "price": 2300 }

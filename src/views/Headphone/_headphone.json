@@ -1,0 +1,52 @@
+[
+  {
+    "id": 134,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G335",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g335-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "95%, Thiếu Dây Chia", "price": 550 },
+      { "name": "97%", "price": 650 }
+    ]
+  },
+  {
+    "id": 2134,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G333",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g333-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 600 }
+    ]
+  },
+  {
+    "id": 1134,
+    "brand": "logig",
+    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "G435",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g435-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%, Chỉ Dùng Bluetooth", "price": 650 }
+    ]
+  },
+  {
+    "id": 1134,
+    "brand": "logig",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "G733",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% + BOX", "price": 1580 }
+    ]
+  }
+]
+  

@@ -29,7 +29,7 @@
     "tags": ["Chuột Gaming G304 / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi G304",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g304.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g304.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 250 }
@@ -41,7 +41,7 @@
     "tags": ["Chuột Gaming Dòng G / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi Dòng G",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 330 }
@@ -53,7 +53,7 @@
     "tags": ["Chuột Gaming Dòng G PRO X / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi PRO X",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-prox1.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-prox1.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "99%", "price": 450 }
@@ -142,7 +142,7 @@
     "tags": ["Cắm Dây, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "C925e",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c925e.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c925e.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 1050 }
@@ -171,10 +171,10 @@
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Hype X Cloud II 7.1 Kingston",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-hyper-x-cl2.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-hyper-x-cl2.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% - Gãy Nẹp Lưng", "price": 600 }
+      { "name": "97% - Gãy Nẹp Lưng", "price": 590 }
     ]
   },
   {
@@ -183,7 +183,7 @@
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Sennheiser GSX 1000",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/gsx-1000.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/gsx-1000.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97% + BOX", "price": 2080 }
@@ -230,7 +230,7 @@
     "tags": ["Type C, Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "X BOX Series X",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/xbox-series-x.png", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/xbox-series-x.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 800 }

@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 const dataMenu = [
   { name: "Chuột", link: "/mouse" },
   { name: "Phím", link: "/keyboard" },
-  // { name: "Tai Nghe", link: "/headphone" },
+  { name: "Tai Nghe", link: "/headphone" },
   { name: "Phụ Kiện", link: "/accessories" },
 ];
 

@@ -195,7 +195,7 @@ export default function OrderProduct({
         <HeaderForm className={`${okMsg ? "orderSuccess" : ""}`}>
           <Title className={`${okMsg ? "orderSuccess" : ""}`}>{okMsg ? okMsg : "Đặt Hàng"}</Title>
           <CloseForm onClick={handleClose}>
-            <ImgClose src="/assets/images/icCancel.svg" alt="Đóng" />
+            <ImgClose src="/assets/images/icons/icCancel.svg" alt="Đóng" />
           </CloseForm>
         </HeaderForm>
         <ContentForm ref={contentRef}>
@@ -340,7 +340,7 @@ export default function OrderProduct({
                       {method === 0 && (
                         <ItemPayment>
                           <WrapQR>
-                            <ImgQR src="/assets/images/qr.jpg" />
+                            <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                             <WrapNumberBank>
                               <NumberBank>0461000636243</NumberBank>
                               <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
@@ -372,7 +372,7 @@ export default function OrderProduct({
                       {method === 1 && (
                         <ItemPayment>
                           <WrapQR>
-                            <ImgQR src="/assets/images/qr.jpg" />
+                            <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                             <WrapNumberBank>
                               <NumberBank>0461000636243</NumberBank>
                               <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
@@ -400,7 +400,7 @@ export default function OrderProduct({
                       {method === 2 && (
                         <ItemPayment>
                           <WrapQR>
-                            <ImgQR src="/assets/images/qr-paypal.png" />
+                            <ImgQR src="/assets/images/qr/qr-paypal.png" />
                             <WrapNumberBank>
                               <NumberBank>votienthuan97</NumberBank>
                               <InfoBank>PayPal</InfoBank>
@@ -432,7 +432,7 @@ export default function OrderProduct({
                       {method === 3 && (
                         <ItemPayment>
                           <WrapQR>
-                            <ImgQR src="/assets/images/qr-crypto.jpg" />
+                            <ImgQR src="/assets/images/qr/qr-crypto.jpg" />
                             <WrapNumberBank>
                               <NumberBank>{shortAddress("0x41ab3715ee3dd25c49d034a9cc85f34639372216")}</NumberBank>
                               <InfoBank>BSC - BNB Smart Chain (BEP20)</InfoBank>
@@ -468,7 +468,7 @@ export default function OrderProduct({
                       value={customerNote}
                       rows={2}
                       onChange={(e) => setCustomerNote(e.target.value)}
-                      placeholder="Ghi Chú Cho Đơn Hàng ..."
+                      placeholder="Ghi Chú Cho Đơn Hàng"
                     />
                   </ItemForm>
                   {errorMsg ? <FormError>{errorMsg}</FormError> : null}
