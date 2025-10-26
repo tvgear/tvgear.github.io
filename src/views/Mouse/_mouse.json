@@ -251,7 +251,8 @@
         { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%, Dùng Đầu Thu SPL1", "price": 1750 }
+        { "name": "97%, USB PRO X 1", "price": 1750 },
+        { "name": "New, BH 4/2026", "price": 2490 }
       ]
     },
     {
