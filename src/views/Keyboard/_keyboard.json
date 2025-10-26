@@ -1,6 +1,18 @@
 [
   {
-    "id": 1,
+    "id": 2133,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G413 SE Full Size",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-fs.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% + BOX, Brown", "price": 800 }
+    ]
+  },
+  {
+    "id": 2233,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G512 GX",
@@ -9,7 +21,98 @@
     ],
     "options": [
       { "name": "97% Brown/Red - Lỗi LED", "price": 880 },
-      { "name": "97% Red - LED Đẹp", "price": 980 }
+      { "name": "97% Red", "price": 980 }
+    ]
+  },
+  {
+    "id": 2239,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "PRO X TKL / Bản HotSwap",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97% Blue - Lỗi LED", "price": 1100 }
+    ]
+  },
+  {
+    "id": 2439,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G915 X",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g915-fs-x.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97% Blue", "price": 1950 }
+    ]
+  },
+  {
+    "id": 29439,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "PRO X TKL Rapid",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-white.webp", "priceAdd": 0 },
+      { "color": "deeppink", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97% + BOX - Lỗi Led", "price": 2180 },
+     { "name": "97%", "price": 2580 },
+      { "name": "New", "price": 2780 }
+    ]
+  },
+  {
+    "id": 25439,
+    "brand": "logig",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "G613",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g613.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97%", "price": 950 }
+    ]
+  },
+  {
+    "id": 25439,
+    "brand": "logig",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "G913 TKL",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97% Red + BOX", "price": 1680 }
+    ]
+  },
+  {
+    "id": 49102,
+    "brand": "logig",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "PRO X 60",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-black.webp", "priceAdd": 0 },
+      { "color": "deeppink", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97%", "price": 2100 },
+     { "name": "97% + BOX", "price": 2180 },
+     { "name": "97% + BOX, BH 9/27", "price": 2480 }
+    ]
+  },
+  {
+    "id": 19102,
+    "brand": "logig",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "G915 Full Size",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g915-fs.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97% - Lỗi LED", "price": 2280 }
     ]
   }
 ]
