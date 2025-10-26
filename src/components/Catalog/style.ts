@@ -43,12 +43,12 @@ export const ItemTab = styled.div`
     position: relative;
     transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     &:hover {
-      background: rgba(24,24,24);
+      background: rgba(28,28,28);
      transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
     &.active {
      transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      background: rgba(24,24,24);
+      background: rgba(28,28,28);
       ${TextTab} {
         color  : #FFF;
       }

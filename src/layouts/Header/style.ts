@@ -94,8 +94,8 @@ export const ItemMenu = styled.div`
     }
     @media screen and (max-width : 767px) {
       height: 40px;
-      font-size: 1.25rem;
-      line-height: calc(1.25rem * 1.25);
+      font-size: 1.2rem;
+      line-height: calc(1.2rem * 1.25);
       padding: 0px 10px;
     }
 `

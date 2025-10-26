@@ -201,7 +201,7 @@
     {
       "id": 1458,
       "brand": "liquidation",
-      "name": "PRO X SuperLight / Thanh Lý",
+      "name": "PRO X SuperLight 1 / Thanh Lý",
       "tags": ["Không Dây / Bảo Hành 1 Tháng"],
       "colors": [
         { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/gpro-x-spl-white.webp", "priceAdd": 0 },
@@ -215,7 +215,7 @@
     {
       "id": 1412,
       "brand": "logig",
-      "name": "PRO X SuperLight",
+      "name": "PRO X SuperLight 1",
       "tags": ["Không Dây / Bảo Hành 3 Tháng"],
       "colors": [
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 },
