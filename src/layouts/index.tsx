@@ -28,7 +28,7 @@ const Content = styled.div`
   margin: 0px auto;
   position: relative;
   z-index: 10;
-  padding: 0px 0px 25px 0px;
+  padding: 0px 0px 150px 0px;
   overflow-y : auto;
   &::-webkit-scrollbar {
     display: none;
