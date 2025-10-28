@@ -77,7 +77,7 @@
     ]
   },
   {
-    "id": 25439,
+    "id": 215439,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G913 TKL",
@@ -85,7 +85,8 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97% Red + BOX", "price": 1680 }
+     { "name": "95% Clicky + BOX", "price": 1850 },
+     { "name": "97% Tactile + BOX", "price": 1900 }
     ]
   },
   {
