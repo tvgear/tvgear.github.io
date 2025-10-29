@@ -558,8 +558,7 @@
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%", "price": 1450 },
-        { "name": "New, BH 6/26", "price": 1780 }
+        { "name": "97%", "price": 1450 }
       ]
     },
     {
