@@ -10,8 +10,7 @@
       ],
       "options": [
         { "name": "90%", "price": 200 },
-        { "name": "95%", "price": 250 },
-        { "name": "Mod Slient", "price": 330 }
+        { "name": "95%", "price": 250 }
       ]
     },
     {
@@ -20,12 +19,25 @@
       "name": "G203",
       "tags": ["Có Dây / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "rgba(58,122,193)", "labelColor" : "Xanh", "image": "/assets/images/mouses/g203-blue.webp", "priceAdd": 0 },
+        { "color": "lightsteelblue", "labelColor" : "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 },
+        { "color": "rgba(58,122,193)", "labelColor" : "Xanh", "image": "/assets/images/mouses/g203-blue.webp", "priceAdd": 10 }
+      ],
+      "options": [
+        { "name": "95%", "price": 250 }
+      ]
+    },
+    {
+      "id": 3912794,
+      "brand": "logig",
+      "name": "G102/G203 Mod Slient",
+      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
+        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 },
         { "color": "lightsteelblue", "labelColor" : "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "95%", "price": 250 },
-        { "name": "Mod Slient", "price": 330 }
+        { "name": "95%", "price": 330 }
       ]
     },
     {
@@ -85,11 +97,11 @@
       "options": [
         { "name": "90%", "price": 400 },
         { "name": "95%", "price": 480 },
-        { "name": "Mod Slient", "price": 580 }
+        { "name": "95% + Mod Slient", "price": 580 }
       ]
     },
     {
-      "id": -1,
+      "id": 1123890,
       "brand": "logig",
       "name": "G703 Hero",
       "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -97,7 +109,7 @@
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%", "price": 1080 }
+        { "name": "97%", "price": 980 }
       ]
     },
     {
@@ -135,7 +147,7 @@
       ],
       "options": [
         { "name": "90%", "price": 1080 },
-        { "name": "97% + BOX", "price": 1200 }
+        { "name": "97%", "price": 1180 }
       ]
     },
     {
@@ -208,7 +220,6 @@
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "90%", "price": 900 },
         { "name": "97% + Box", "price": 1400 }
       ]
     },
@@ -223,7 +234,7 @@
         { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/mouses/gpro-x-spl-pink.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "90%", "price": 1350 },
+        { "name": "90%", "price": 1380 },
         { "name": "97%", "price": 1500 },
         { "name": "97% + BOX", "price": 1600 }
       ]
@@ -251,7 +262,8 @@
         { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%, USB PRO X 1", "price": 1750 }
+        { "name": "95% + USB v1", "price": 1750 },
+        { "name": "95%", "price": 1900 }
       ]
     },
     {
@@ -270,7 +282,7 @@
     },
 
     {
-      "id": -1,
+      "id": 128983,
       "brand": "liquidation",
       "name": "G703 Hero / Thanh Lý",
       "tags": ["Không Dây / Bảo Hành 7 Ngày"],
@@ -278,7 +290,7 @@
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97% + BOX", "price": 950 }
+        { "name": "95%", "price": 880 }
       ]
     },
     
@@ -456,18 +468,31 @@
         { "name": "97% + Box", "price": 1190 }
       ]
     },
-     {
-      "id": -1,
+    {
+      "id": 123098,
       "brand": "liquidation",
-      "name": "MX Master 3s",
+      "name": "MX Master 3s / Thanh Lý",
       "tags": ["Không Dây & Bluetooth / Bảo Hành 7 Ngày"],
       "colors": [
         { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/mx-master-3s-white.webp", "priceAdd": 0 }
       ],
       "options": [
+        { "name": "97%", "price": 1380 }
+      ]
+    },
+    {
+      "id": 1238399,
+      "brand": "logio",
+      "name": "Pop Mouse",
+      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "rgba(158,196,177)", "labelColor" : "Xanh Tím", "image": "/assets/images/mouses/pop-mouse-green.webp", "priceAdd": 0 }
+      ],
+      "options": [
         { "name": "97%", "price": 1350 }
       ]
     },
+    
 
     {
       "" : "RAZER --------------------------------------------------------------------------------------------------------------------"
@@ -487,7 +512,7 @@
       ]
     },
     {
-      "id": 14812,
+      "id": -1,
       "brand": "razer",
       "name": "Corba v3",
       "tags": ["Có Dây / Bảo Hành 06.2027"],
