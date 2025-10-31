@@ -97,7 +97,20 @@
       "options": [
         { "name": "90%", "price": 400 },
         { "name": "95%", "price": 480 },
-        { "name": "95% + Mod Slient", "price": 580 }
+        { "name": "New, BH 12/26", "price": 600 }
+      ]
+    },
+    {
+      "id": 12912449,
+      "brand": "logig",
+      "name": "G304 Mod Slient",
+      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
+        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "95%", "price": 580 }
       ]
     },
     {
@@ -109,7 +122,8 @@
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%", "price": 980 }
+        { "name": "95%", "price": 980 },
+        { "name": "97%", "price": 1080 }
       ]
     },
     {
@@ -240,30 +254,17 @@
       ]
     },
     {
-      "id": -1,
-      "brand": "liquidation",
-      "name": "PRO X SuperLight 2 / Thanh Lý",
-      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-      "colors": [
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1980 }
-      ]
-    },
-    {
       "id": 15,
       "brand": "logig",
       "name": "PRO X SuperLight 2",
       "tags": ["Không Dây / Bảo Hành 3 Tháng"],
       "colors": [
         { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 },
-        { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
+        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "95% + USB v1", "price": 1750 },
-        { "name": "95%", "price": 1900 }
+        { "name": "95%", "price": 1900 },
+        { "name": "97% + BOX", "price": 2180 }
       ]
     },
     {
@@ -400,8 +401,7 @@
         { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/m350s-pink.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%", "price": 330 },
-        { "name": "97% + Logi Bolt", "price": 430 }
+        { "name": "97%", "price": 330 }
       ]
     },
     {
@@ -460,12 +460,10 @@
       "name": "MX Anywhere 3s",
       "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
       "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 },
-        { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/mx-anywhere-3s-pink.webp", "priceAdd": 0 }
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
       ],
       "options": [
-        { "name": "97%", "price": 1150 },
-        { "name": "97% + Box", "price": 1190 }
+        { "name": "95%", "price": 1150 }
       ]
     },
     {
@@ -533,6 +531,18 @@
       ],
       "options": [
         { "name": "97%", "price": 750 }
+      ]
+    },
+     {
+      "id": 94822,
+      "brand": "razer",
+      "name": "DA v3",
+      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+      "colors": [
+        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/basilisk-v3.webp", "priceAdd": 0 }
+      ],
+      "options": [
+        { "name": "97%", "price": 950 }
       ]
     },
     {
