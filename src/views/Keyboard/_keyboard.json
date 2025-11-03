@@ -1,6 +1,6 @@
 [
   {
-    "id": 2133,
+    "id": -1,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G413 SE Full Size",
@@ -99,8 +99,7 @@
       { "color": "deeppink", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97%", "price": 2100 },
-     { "name": "97% + BOX", "price": 2180 },
+     { "name": "97% + BOX", "price": 1880 },
      { "name": "97% + BOX, BH 9/27", "price": 2480 }
     ]
   },
@@ -114,6 +113,19 @@
     ],
     "options": [
      { "name": "97% - Lỗi LED", "price": 2280 }
+    ]
+  },
+   {
+    "id": 819102,
+    "brand": "logig",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành Hãng"],
+    "name": "G515 TKL",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "97%, BH 4/27", "price": 2000 },
+     { "name": "97% + BOX, BH 9/27", "price": 2100 }
     ]
   }
 ]
