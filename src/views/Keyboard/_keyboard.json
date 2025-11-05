@@ -115,7 +115,7 @@
      { "name": "97% - Lỗi LED", "price": 2280 }
     ]
   },
-   {
+  {
     "id": 819102,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành Hãng"],
@@ -126,6 +126,19 @@
     "options": [
      { "name": "97%, BH 4/27", "price": 2000 },
      { "name": "97% + BOX, BH 9/27", "price": 2100 }
+    ]
+  },
+  {
+    "id": 12819102,
+    "brand": "logig",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "G515 TKL",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+     { "name": "New Open Box", "price": 1980 },
+     { "name": "New Seal", "price": 2080 }
     ]
   }
 ]
