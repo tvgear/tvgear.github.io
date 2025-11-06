@@ -1,6 +1,6 @@
 [
   {
-    "id": -1,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G413 SE Full Size",
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "id": 2233,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G512 GX",
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "id": 2239,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "PRO X TKL / Bản HotSwap",
@@ -37,7 +37,7 @@
     ]
   },
   {
-    "id": 2439,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G915 X",
@@ -49,23 +49,25 @@
     ]
   },
   {
-    "id": 29439,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "PRO X TKL Rapid",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp", "priceAdd": 0 },
-      { "color": "white", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-white.webp", "priceAdd": 0 },
-      { "color": "deeppink", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
+      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-white.webp", "priceAdd": 0 },
+      { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97% + BOX - Lỗi Led", "price": 2180 },
-     { "name": "97%", "price": 2580 },
-      { "name": "New", "price": 2780 }
+     { "name": "97% + BOX - Lỗi Led", "price": 2180, "colors" : ["black"] },
+     { "name": "New", "price": 2780,  "colors" : ["black"] },
+     { "name": "97%", "price": 2580,  "colors" : ["white"] },
+     { "name": "New", "price": 2780,  "colors" : ["white"] },
+     { "name": "97%", "price": 2580,  "colors" : ["deeppink"] }
     ]
   },
   {
-    "id": 25439,
+    "visible": false,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G613",
@@ -77,7 +79,7 @@
     ]
   },
   {
-    "id": 215439,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G913 TKL",
@@ -90,21 +92,22 @@
     ]
   },
   {
-    "id": 49102,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "PRO X 60",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-black.webp", "priceAdd": 0 },
-      { "color": "deeppink", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-pink.webp", "priceAdd": 0 }
+      { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-60-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97% + BOX", "price": 1880 },
-     { "name": "97% + BOX, BH 9/27", "price": 2480 }
+     { "name": "97% + BOX", "price": 1880, "colors" : ["black"] },
+     { "name": "97% + BOX, BH 9/27", "price": 2480, "colors" : ["black"] },
+     { "name": "97% + BOX", "price": 1880, "colors" : ["deeppink"] }
     ]
   },
   {
-    "id": 19102,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G915 Full Size",
@@ -116,7 +119,7 @@
     ]
   },
   {
-    "id": 819102,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành Hãng"],
     "name": "G515 TKL",
@@ -129,12 +132,12 @@
     ]
   },
   {
-    "id": 12819102,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G515 TKL",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Tím", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
      { "name": "New Open Box", "price": 1980 },

@@ -1,708 +1,619 @@
 [
-    {
-      "id": 1,
-      "brand": "logig",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "name": "G102",
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "90%", "price": 200 },
-        { "name": "95%", "price": 250 }
-      ]
-    },
-    {
-      "id": 2,
-      "brand": "logig",
-      "name": "G203",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "lightsteelblue", "labelColor" : "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 },
-        { "color": "rgba(58,122,193)", "labelColor" : "Xanh", "image": "/assets/images/mouses/g203-blue.webp", "priceAdd": 10 }
-      ],
-      "options": [
-        { "name": "95%", "price": 250 }
-      ]
-    },
-    {
-      "id": 3912794,
-      "brand": "logig",
-      "name": "G102/G203 Mod Slient",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 },
-        { "color": "lightsteelblue", "labelColor" : "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 330 }
-      ]
-    },
-    {
-      "id": 3,
-      "brand": "logig",
-      "name": "G402",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g402.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "90%", "price": 350 },
-        { "name": "97%", "price": 450 }
-      ]
-    },
-    {
-      "id": 4,
-      "brand": "logig",
-      "name": "G403 Hero",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g403-hero.webp", "priceAdd": 0 }
-      ],
-      "options": [{ "name": "90%", "price": 450 }]
-    },
-    {
-      "id": 5,
-      "brand": "logig",
-      "name": "G502 Hero",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g502-hero.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 650 }
-      ]
-    },
-    {
-      "id": 6,
-      "brand": "logig",
-      "name": "G502 X",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
-      ],
-      "options": [{ "name": "97%", "price": 700 }]
-    },
-    {
-      "id": 7,
-      "brand": "logig",
-      "name": "G304",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "90%", "price": 400 },
-        { "name": "95%", "price": 480 }
-      ]
-    },
-    {
-      "id": 12912449,
-      "brand": "logig",
-      "name": "G304 Mod Slient",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 580 }
-      ]
-    },
-    {
-      "id": 1123890,
-      "brand": "logig",
-      "name": "G703 Hero",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 980 },
-        { "name": "97%", "price": 1080 }
-      ]
-    },
-    {
-      "id": -1,
-      "brand": "logig",
-      "name": "G309",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/g309-white.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 950 }
-      ]
-    },
-    {
-      "id": 145,
-      "brand": "liquidation",
-      "name": "PRO WL / Thanh Lý",
-      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "90%", "price": 850 }
-      ]
-    },
-    {
-      "id": 9,
-      "brand": "logig",
-      "name": "PRO WL",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "90%", "price": 1080 },
-        { "name": "97%", "price": 1180 }
-      ]
-    },
-    {
-      "id": 10,
-      "brand": "logig",
-      "name": "G903 Hero",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g903.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1250 }
-      ]
-    },
-    {
-      "id": 11,
-      "brand": "logig",
-      "name": "G502 WL",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "90%", "price": 1250 }
-      ]
-    },
-    {
-      "id": 123,
-      "brand": "liquidation",
-      "name": "G502 WL - Thanh Lý",
-      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95% + BOX", "price": 1380 }
-      ]
-    },
-    {
-      "id": -1,
-      "brand": "logig",
-      "name": "G502 X WL",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g502-x-wl.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1600 }
-      ]
-    },
-    {
-      "id": -1,
-      "brand": "logig",
-      "name": "G502 X PLus WL",
-      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g502-x-plus-wl.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1850 }
-      ]
-    },
-    {
-      "id": 1458,
-      "brand": "liquidation",
-      "name": "PRO X SuperLight 1 / Thanh Lý",
-      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97% + Box", "price": 1400 }
-      ]
-    },
-    {
-      "id": 1412,
-      "brand": "logig",
-      "name": "PRO X SuperLight 1",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "90%, Trắng", "price": 1300 },
-        { "name": "95%", "price": 1350 },
-        { "name": "97%", "price": 1500 },
-        { "name": "97% + BOX", "price": 1600 }
-      ]
-    },
-    {
-      "id": 15,
-      "brand": "logig",
-      "name": "PRO X SuperLight 2",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 1900 },
-        { "name": "97% + BOX", "price": 2180 }
-      ]
-    },
-    {
-      "id": 13123123,
-      "brand": "logig",
-      "name": "PRO X SuperLight 2 DEX",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 2180 }
-      ]
-    },
-
-    {
-      "id": 128983,
-      "brand": "liquidation",
-      "name": "G703 Hero / Thanh Lý",
-      "tags": ["Không Dây / Bảo Hành 7 Ngày"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 880 }
-      ]
-    },
-    
-    {
-      "" : "OFFICE --------------------------------------------------------------------------------------------------------------------"
-    },
-
-    {
-      "id": 17,
-      "brand": "logio",
-      "name": "M185",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "gray", "labelColor" : "Đen", "image": "/assets/images/mouses/m185-gray.webp", "priceAdd": 0 },
-        { "color": "rgba(64,98,177)", "labelColor" : "Xanh", "image": "/assets/images/mouses/m185-blue.webp", "priceAdd": 0 },
-        { "color": "rgba(123,40,50)", "labelColor" : "Đỏ", "image": "/assets/images/mouses/m185-red.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 90 }
-      ]
-    },
-    {
-      "id": 18,
-      "brand": "logio",
-      "name": "M190",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "gray", "labelColor" : "Đen", "image": "/assets/images/mouses/m190-black.webp", "priceAdd": 0 },
-        { "color": "rgba(64,98,177)", "labelColor" : "Xanh", "image": "/assets/images/mouses/m190-blue.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 130 }
-      ]
-    },
-    {
-      "id": 19,
-      "brand": "logio",
-      "name": "M220/M221",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "gray", "labelColor" : "Đen", "image": "/assets/images/mouses/m220-black.webp", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/m220-white.webp", "priceAdd": 0 },
-        { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/m220-pink.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 130 },
-        { "name": "97%", "price": 150 }
-      ]
-    },
-    {
-      "id": 20,
-      "brand": "logio",
-      "name": "M196",
-      "tags": ["Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "gray", "labelColor" : "Đen", "image": "/assets/images/mouses/m196-black.webp", "priceAdd": 0 },
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/m196-white.webp", "priceAdd": 0 },
-        { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/m196-pink.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 180 }
-      ]
-    },
-    {
-      "id": 21,
-      "brand": "logio",
-      "name": "M331",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m331-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%",  "price": 230 }
-      ]
-    },
-    {
-      "id": 22,
-      "brand": "logio",
-      "name": "M325",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m325-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 250 }
-      ]
-    },
-    {
-      "id": 23,
-      "brand": "logio",
-      "name": "M240",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m240-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "New No Box + Logi Bolt", "price": 280 }
-      ]
-    },
-    {
-      "id": 24,
-      "brand": "logio",
-      "name": "M350s",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m350s-black.webp", "priceAdd": 0 },
-        { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/m350s-pink.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 330 }
-      ]
-    },
-    {
-      "id": 25,
-      "brand": "logio",
-      "name": "M550 L",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m550-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 350 },
-        { "name": "97% + Logi Bolt", "price": 430 }
-      ]
-    },
-    {
-      "id": 27,
-      "brand": "logio",
-      "name": "M650 M/L",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/m650-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "[L] 97% + Logi Bolt", "price": 450 },
-        { "name": "[M] New No Box", "price": 550 }
-      ]
-    },
-    {
-      "id": 28,
-      "brand": "logio",
-      "name": "Lift Vertical",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "rgba(240,224,221)", "labelColor" : "Hồng", "image": "/assets/images/mouses/lift-pink.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97% + Logi Bolt", "price": 780 }
-      ]
-    },
-    {
-      "id": -1, 
-      "brand": "logio",
-      "name": "MX Anywhere 3",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/mx-anywhere-3.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 980 }
-       
-      ]
-    },
-    {
-      "id": 31,
-      "brand": "logio",
-      "name": "MX Anywhere 3s",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 1080 },
-        { "name": "95% + Logi Bolt", "price": 1150 }
-      ]
-    },
-    {
-      "id": 123098,
-      "brand": "liquidation",
-      "name": "MX Master 3s / Thanh Lý",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 7 Ngày"],
-      "colors": [
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/mx-master-3s-white.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1380 }
-      ]
-    },
-    {
-      "id": 1238399,
-      "brand": "logio",
-      "name": "Pop Mouse",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "rgba(158,196,177)", "labelColor" : "Xanh Tím", "image": "/assets/images/mouses/pop-mouse-green.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1350 }
-      ]
-    },
-    {
-      "id": 12113098,
-      "brand": "logio",
-      "name": "MX Master 3s",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/mx-master-3s-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1580 }
-      ]
-    },
-    {
-      "id": 4992113098,
-      "brand": "logio",
-      "name": "MX Anywhere 2s",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/mx-anywhere-2s-black.png", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 780 }
-      ]
-    },
-    {
-      "id": 2992113098,
-      "brand": "logio",
-      "name": "MX Master 2s",
-      "tags": ["Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/mx-master-2s-black.png", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95% - Bluetooth", "price": 750 }
-      ]
-    },
-    
-
-    {
-      "" : "RAZER --------------------------------------------------------------------------------------------------------------------"
-    },
-
-    {
-      "id": 148,
-      "brand": "razer",
-      "name": "DA Elite",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/da-elite.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "95%", "price": 390 },
-        { "name": "97% + Box", "price": 490 }
-      ]
-    },
-    {
-      "id": -1,
-      "brand": "razer",
-      "name": "Corba v3",
-      "tags": ["Có Dây / Bảo Hành 06.2027"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/cobra-v3.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97% + Box", "price": 550 }
-      ]
-    },
-    {
-      "id": 14822,
-      "brand": "razer",
-      "name": "Basilisk v3",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/basilisk-v3.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 750 }
-      ]
-    },
-     {
-      "id": 94822,
-      "brand": "razer",
-      "name": "DA v3",
-      "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/da-v3.png", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 950 }
-      ]
-    },
-    {
-      "id": 14122,
-      "brand": "razer",
-      "name": "Orochi v2",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/orochi-v2-black.png", "priceAdd": 0 }      
-      ],
-      "options": [
-        { "name": "97% + BOX", "price": 580 }
-      ]
-    },
-    {
-      "id": 119122,
-      "brand": "razer",
-      "name": "Basilisk Ultimate",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/basilisk-ultimate.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1080 },
-        { "name": "97% + DOCK SẠC", "price": 1250 }
-      ]
-    },
-    {
-      "id": 19122,
-      "brand": "razer",
-      "name": "Viper Ultimate",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/viper-ultimate.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97% + DOCK SẠC", "price": 1250 }
-      ]
-    },
-    {
-      "id": 1122,
-      "brand": "razer",
-      "name": "Viper v2 Pro",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 1450 }
-      ]
-    },
-    {
-      "id": 1142,
-      "brand": "liquidation",
-      "name": "Viper v2 Pro",
-      "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "New Seal", "price": 1580 }
-      ]
-    },
-    {
-      "id": -1,
-      "brand": "razer",
-      "name": "Pro Click v2 Vertical",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/pro-click-v2-vertical.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "New Seal", "price": 2300 }
-      ]
-    },
-    {
-      "id": 129081334,
-      "brand": "razer",
-      "name": "Basilisk v3 Pro Phantom 35K",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 2-26 MMZ"],
-      "colors": [
-        { "color": "black", "labelColor" : "Đen", "image": "/assets/images/mouses/basilisk-v3-pro-phantom.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97% + BOX", "price": 2900 }
-      ]
-    },
-    {
-      "id": 12901334,
-      "brand": "razer",
-      "name": "DA v4 Pro ",
-      "tags": ["Không Dây & Bluetooth / Bảo Hành 9-27 PV"],
-      "colors": [
-        { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/mouses/da-v4-pro-white.png", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97% + BOX", "price": 3480 }
-      ]
-    },
-
-    {
-      "" : "PULSAR --------------------------------------------------------------------------------------------------------------------"
-    },
-    {
-      "" : "LAMZU --------------------------------------------------------------------------------------------------------------------"
-    },
-    {
-      "id": 128209999,
-      "brand": "lamzu",
-      "name": "Maya X 8K Purple Shadow",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "rgba(125,91,124)", "labelColor" : "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97% + BOX", "price": 2280 }
-      ]
-    },
-    {
-      "id": 54921,
-      "brand": "lamzu",
-      "name": "Maya X 8K Aimlabs",
-      "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-      "colors": [
-        { "color": "rgba(142,229,221)", "labelColor" : "Xanh", "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp", "priceAdd": 0 }
-      ],
-      "options": [
-        { "name": "97%", "price": 2480 }
-      ]
-    }
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "name": "G102",
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "90%", "price": 200 },
+      { "name": "95%", "price": 250 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G203",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "lightsteelblue", "labelColor": "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 },
+      { "color": "rgba(58,122,193)", "labelColor": "Xanh", "image": "/assets/images/mouses/g203-blue.webp", "priceAdd": 10 }
+    ],
+    "options": [{ "name": "95%", "price": 250 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G102/G203 Mod Slient",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 },
+      { "color": "lightsteelblue", "labelColor": "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "95%", "price": 330 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G402",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g402.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "90%", "price": 350 },
+      { "name": "97%", "price": 450 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G403 Hero",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g403-hero.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "90%", "price": 450 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 Hero",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-hero.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 650 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 X",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 700 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G304",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "90%", "price": 400 },
+      { "name": "95%", "price": 480 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G304 Mod Slient",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "95%", "price": 580 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G703 Hero",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "95%", "price": 980 },
+      { "name": "97%", "price": 1080 }
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logig",
+    "name": "G309",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g309-white.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 950 }]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "PRO WL / Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "90%", "price": 850 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO WL",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "90%", "price": 1080 },
+      { "name": "97%", "price": 1180 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G903 Hero",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g903.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 1250 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 WL",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "90%", "price": 1250 }]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "G502 WL - Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "95% + BOX", "price": 1380 }]
+  },
+  {
+    "visible": false,
+    "brand": "logig",
+    "name": "G502 X WL",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-x-wl.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 1600 }]
+  },
+  {
+    "visible": false,
+    "brand": "logig",
+    "name": "G502 X PLus WL",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-x-plus-wl.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 1850 }]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "PRO X SuperLight 1 / Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + BOX", "price": 1400 }]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X SuperLight 1",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/gpro-x-spl-white.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "90%", "price": 1300, "colors": ["white"] },
+      { "name": "95%", "price": 1350, "colors": ["black"] },
+      { "name": "97%", "price": 1500, "colors": ["black"] },
+      { "name": "97% + BOX", "price": 1600, "colors": ["black"] }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X SuperLight 2",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% + BOX", "price": 2180 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X SuperLight 2 DEX",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 2180 }]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "G703 Hero / Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 7 Ngày"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "95%", "price": 880 }]
+  },
+  {
+    "": "OFFICE --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M185",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "gray", "labelColor": "Đen", "image": "/assets/images/mouses/m185-gray.webp", "priceAdd": 0 },
+      { "color": "rgba(64,98,177)", "labelColor": "Xanh", "image": "/assets/images/mouses/m185-blue.webp", "priceAdd": 0 },
+      { "color": "rgba(123,40,50)", "labelColor": "Đỏ", "image": "/assets/images/mouses/m185-red.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 90 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M190",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "gray", "labelColor": "Đen", "image": "/assets/images/mouses/m190-black.webp", "priceAdd": 0 },
+      { "color": "rgba(64,98,177)", "labelColor": "Xanh", "image": "/assets/images/mouses/m190-blue.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 130 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M220/M221",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "gray", "labelColor": "Đen", "image": "/assets/images/mouses/m220-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/m220-white.webp", "priceAdd": 0 },
+      { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/m220-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "95%", "price": 130 },
+      { "name": "97%", "price": 150 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M196",
+    "tags": ["Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "gray", "labelColor": "Đen", "image": "/assets/images/mouses/m196-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/m196-white.webp", "priceAdd": 0 },
+      { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/m196-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 180 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M331",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m331-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 230 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M325",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m325-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 250 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M240",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m240-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "New No Box + Logi Bolt", "price": 280 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M350s",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m350s-black.webp", "priceAdd": 0 },
+      { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/m350s-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 330 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M550 L",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m550-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 350 },
+      { "name": "97% + Logi Bolt", "price": 430 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M650 M/L",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m650-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "[L] 97% + Logi Bolt", "price": 450 },
+      { "name": "[M] New No Box", "price": 550 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "Lift Vertical",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/lift-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + Logi Bolt", "price": 780 }]
+  },
+  {
+    "visible": false,
+    "brand": "logio",
+    "name": "MX Anywhere 3",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 980 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Anywhere 3s",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "95%", "price": 1080 },
+      { "name": "95% + Logi Bolt", "price": 1150 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "MX Master 3s / Thanh Lý",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 7 Ngày"],
+    "colors": [
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/mx-master-3s-white.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 1380 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "Pop Mouse",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "rgba(158,196,177)", "labelColor": "Xanh Tím", "image": "/assets/images/mouses/pop-mouse-green.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 350 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Master 3s",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-master-3s-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 1580 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Anywhere 2s",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-2s-black.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "95%", "price": 780 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Master 2s",
+    "tags": ["Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-master-2s-black.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "95% - Bluetooth", "price": 750 }]
+  },
+  {
+    "": "RAZER --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "DA Elite",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-elite.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "95%", "price": 390 },
+      { "name": "97% + Box", "price": 490 }
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "razer",
+    "name": "Corba v3",
+    "tags": ["Có Dây / Bảo Hành 06.2027"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/cobra-v3.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + Box", "price": 550 }]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Basilisk v3",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-v3.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 750 }]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "DA v3",
+    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v3.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 950 }]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Orochi v2",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/orochi-v2-black.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + BOX", "price": 580 }]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Basilisk Ultimate",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-ultimate.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1080 },
+      { "name": "97% + DOCK SẠC", "price": 1250 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Viper Ultimate",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-ultimate.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + DOCK SẠC", "price": 1250 }]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Viper v2 Pro",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 1450 }]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Viper v2 Pro",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "New Seal", "price": 1580 }]
+  },
+  {
+    "visible": false,
+    "brand": "razer",
+    "name": "Pro Click v2 Vertical",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/pro-click-v2-vertical.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "New Seal", "price": 2300 }]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Basilisk v3 Pro Phantom 35K",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 2-26 MMZ"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-v3-pro-phantom.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + BOX", "price": 2900 }]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "DA v4 Pro ",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 9-27 PV"],
+    "colors": [
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/da-v4-pro-white.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + BOX", "price": 3480 }]
+  },
+  {
+    "": "PULSAR --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "lamzu",
+    "name": "Maya X 8K Purple Shadow",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "rgba(125,91,124)", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + BOX", "price": 2280 }]
+  },
+  {
+    "visible": true,
+    "brand": "lamzu",
+    "name": "Maya X 8K Aimlabs",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "rgba(142,229,221)", "labelColor": "Xanh", "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 2480 }]
+  }
 ]
-  

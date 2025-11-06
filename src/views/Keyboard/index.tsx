@@ -14,7 +14,12 @@ const brands = [
    { key: "logiocb", label: "Logi Văn Phòng Combo"},
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 
-const products = productsJson as ReadonlyArray<BaseProduct<KeyboardBrand>>;
+const products = (productsJson as any[])
+  .filter((p) => p.brand && p.visible !== false)
+  .map((p, index) => ({
+    ...p,
+    id: typeof p.id === "number" ? p.id : Date.now() + index,
+  })) as ReadonlyArray<BaseProduct<KeyboardBrand>>;
 
 
 export default function KeyboardPage() {

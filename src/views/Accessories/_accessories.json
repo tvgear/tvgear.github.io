@@ -1,6 +1,6 @@
 [
    {
-    "id": 1,
+    "visible": true,
     "brand": "receiver",
     "tags": ["Chuột Văn Phòng Loại Bolt  / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi Bolt",
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "id": 2144,
+     "visible": true,
     "brand": "receiver",
     "tags": ["Chuột Văn Phòng Loại Unifying / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi Unifying",
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "id": 2,
+    "visible": true,
     "brand": "receiver",
     "tags": ["Chuột Gaming G304 / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi G304",
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "id": 4,
+    "visible": true,
     "brand": "receiver",
     "tags": ["Chuột Gaming Dòng G / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi Dòng G",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "id": 4124,
+    "visible": true,
     "brand": "receiver",
     "tags": ["Chuột Gaming Dòng G PRO X / Bảo Hành 1 Tháng"],
     "name": "Đầu Thu Logi PRO X",
@@ -66,7 +66,7 @@
   },
 
   {
-    "id": 5129,
+    "visible": true,
     "brand": "pad",
     "tags": ["Pad Control / Không Bảo Hành"],
     "name": "Logitech G640",
@@ -80,7 +80,7 @@
   },
 
   {
-    "id": 4192,
+   "visible": true,
     "brand": "pad",
     "tags": ["Pad Control & Speed / Bảo Hành 9.27 GEARVN"],
     "name": "Logitech PowerPlay 2",
@@ -97,7 +97,7 @@
   },
 
   {
-    "id": 1295,
+   "visible": true,
     "brand": "feet",
     "tags": ["Bộ Dán Chân Chuột / Không Bảo Hành"],
     "name": "Tiger ICE",
@@ -116,7 +116,7 @@
   },
 
   {
-    "id": -1,
+    "visible": false,
     "brand": "webcam",
     "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C270",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "id": -1,
+    "visible": false,
     "brand": "webcam",
     "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C310",
@@ -140,7 +140,7 @@
     ]
   },
   {
-    "id": 182195,
+    "visible": true,
     "brand": "webcam",
     "tags": ["Cắm Dây, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "C925e",
@@ -152,7 +152,7 @@
     ]
   },
   {
-    "id": 113195,
+    "visible": true,
     "brand": "webcam",
     "tags": ["Cắm Dây & Remote, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "Conferrence BCC950",
@@ -169,7 +169,7 @@
   },
   
   {
-    "id": 513195,
+     "visible": true,
     "brand": "soundcard",
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Hype X Cloud II 7.1 Kingston",
@@ -181,7 +181,7 @@
     ]
   },
   {
-    "id": 413195,
+    "visible": true,
     "brand": "soundcard",
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Sennheiser GSX 1000",
@@ -198,7 +198,7 @@
   },
 
   {
-    "id": 463195,
+     "visible": true,
     "brand": "speaker",
     "tags": ["Jack 3.5mm, 25W / Bảo Hành 1 Tháng"],
     "name": "Z313",
@@ -211,7 +211,7 @@
     ]
   },
   {
-    "id": 469195,
+    "visible": true,
     "brand": "speaker",
     "tags": ["Jack 3.5mm & Bluetooth, 40 ~ 80W / Bảo Hành 1 Tháng"],
     "name": "Z407",
@@ -219,7 +219,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1100 }
+      { "name": "95% + Xước 2 Loa Vệ Tinh", "price": 1100 }
     ]
   },
 
@@ -228,7 +228,7 @@
   },
 
   {
-    "id": 269195,
+   "visible": true,
     "brand": "controller",
     "tags": ["Type C, Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "X BOX Series X",
@@ -245,7 +245,7 @@
   },
 
    {
-    "id": 44912,
+    "visible": true,
     "brand": "pen",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "Logitech Spotlight",
@@ -262,7 +262,7 @@
   },
 
    {
-    "id": 944912,
+    "visible": true,
     "brand": "cable",
     "tags": ["Dây Cáp Sạc Kết Nối / Bảo Hành 1 Tháng"],
     "name": "Dây Sạc USB A - Type C",
@@ -279,7 +279,7 @@
   },
 
   {
-    "id": 54912,
+    "visible": true,
     "brand": "extender",
     "tags": ["Đầu Chuyển USB / Bảo Hành 1 Tháng"],
     "name": "Đầu Mở Rộng USB A - Micro",
@@ -292,7 +292,7 @@
   },
 
   {
-    "id": 84912,
+   "visible": true,
     "brand": "extender",
     "tags": ["Đầu Chuyển USB / Bảo Hành 1 Tháng"],
     "name": "Đầu Mở Rộng USB A - Type C",

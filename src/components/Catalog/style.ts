@@ -190,7 +190,7 @@ export const OptionItem = styled.div`
 
 export const ItemOptionSelect = styled.div`
   width: fit-content;
-  padding: 5px 7.5px;
+  padding: 5px 10px;
   margin: 0px 0px 2.5px 0px;
   height: fit-content;
   border: 1.5px solid rgba(50,50,50);

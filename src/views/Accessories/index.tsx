@@ -18,8 +18,12 @@ const brands = [
   { key: "cable", label : "Dây Sạc"  },
 ] as const satisfies ReadonlyArray<BrandT<AccessoriesBrand>>;
 
-const products = productsJson as ReadonlyArray<BaseProduct<AccessoriesBrand>>;
-
+const products = (productsJson as any[])
+  .filter((p) => p.brand && p.visible !== false)
+  .map((p, index) => ({
+    ...p,
+    id: typeof p.id === "number" ? p.id : Date.now() + index,
+  })) as ReadonlyArray<BaseProduct<AccessoriesBrand>>;
 
 export default function AccessoriesPage() {
   return (

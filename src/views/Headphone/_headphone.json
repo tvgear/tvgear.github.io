@@ -1,6 +1,6 @@
 [
   {
-    "id": 134,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G335",
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "id": 2134,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G333",
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "id": 1134,
+    "visible": true,
     "brand": "logig",
     "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G435",
@@ -38,12 +38,12 @@
     ]
   },
   {
-    "id": -1,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "G733",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 }
+      { "color": "lightsteelblue", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-lilac.jpg", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97% + BOX", "price": 1580 }

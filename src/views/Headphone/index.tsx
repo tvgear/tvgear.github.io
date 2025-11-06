@@ -13,7 +13,12 @@ const brands = [
   { key: "steelseries",   label: "SteelSeries" },
 ] as const satisfies ReadonlyArray<BrandT<HeadphoneBrand>>;
 
-const products = productsJson as ReadonlyArray<BaseProduct<HeadphoneBrand>>;
+const products = (productsJson as any[])
+  .filter((p) => p.brand && p.visible !== false)
+  .map((p, index) => ({
+    ...p,
+    id: typeof p.id === "number" ? p.id : Date.now() + index,
+  })) as ReadonlyArray<BaseProduct<HeadphoneBrand>>;
 
 
 export default function HeadphonePage() {
