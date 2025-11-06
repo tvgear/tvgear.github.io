@@ -83,13 +83,13 @@
     "visible": true,
     "brand": "logig",
     "name": "G304",
-    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "tags": ["Không Dây / Bảo Hành 1 - 3 Tháng"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%", "price": 400 },
+      { "name": "90%, BH 1T", "price": 400 },
       { "name": "95%", "price": 480 }
     ]
   },
