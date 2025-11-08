@@ -3,6 +3,18 @@
     "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G213",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g213.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%, Giả Cơ", "price": 550 }
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G413 SE Full Size",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-fs.webp", "priceAdd": 0 }
@@ -37,7 +49,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G915 X",

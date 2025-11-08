@@ -19,8 +19,7 @@
     "name": "G203",
     "tags": ["Có Dây / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "lightsteelblue", "labelColor": "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 },
-      { "color": "rgba(58,122,193)", "labelColor": "Xanh", "image": "/assets/images/mouses/g203-blue.webp", "priceAdd": 10 }
+      { "color": "lightsteelblue", "labelColor": "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
     ],
     "options": [{ "name": "95%", "price": 250 }]
   },
@@ -89,7 +88,6 @@
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%, BH 1T", "price": 400 },
       { "name": "95%", "price": 480 }
     ]
   },
@@ -128,7 +126,7 @@
     "options": [{ "name": "97%", "price": 950 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "PRO WL / Thanh Lý",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -146,7 +144,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%", "price": 1080 },
+      { "name": "95%", "price": 1080 },
       { "name": "97%", "price": 1180 }
     ]
   },
@@ -171,7 +169,7 @@
     "options": [{ "name": "90%", "price": 1250 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "G502 WL - Thanh Lý",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -201,7 +199,7 @@
     "options": [{ "name": "97%", "price": 1850 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "PRO X SuperLight 1 / Thanh Lý",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -407,8 +405,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 1080 },
-      { "name": "95% + Logi Bolt", "price": 1150 }
+      { "name": "95%", "price": 1080 }
     ]
   },
   {
@@ -465,7 +462,7 @@
     "": "RAZER --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "DA Elite",
     "tags": ["Có Dây / Bảo Hành 3 Tháng"],
@@ -526,7 +523,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-ultimate.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1080 },
       { "name": "97% + DOCK SẠC", "price": 1250 }
     ]
   },
@@ -541,7 +537,7 @@
     "options": [{ "name": "97% + DOCK SẠC", "price": 1250 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper v2 Pro",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -551,7 +547,7 @@
     "options": [{ "name": "97%", "price": 1450 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "Viper v2 Pro",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -583,7 +579,7 @@
   {
     "visible": true,
     "brand": "razer",
-    "name": "DA v4 Pro ",
+    "name": "DA v4 Pro",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 9-27 PV"],
     "colors": [
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/da-v4-pro-white.png", "priceAdd": 0 }
@@ -592,6 +588,16 @@
   },
   {
     "": "PULSAR --------------------------------------------------------------------------------------------------------------------"
+  },
+   {
+    "visible": true,
+    "brand": "pulsar",
+    "name": "Pulsar TenZ SE",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 9-27 PV"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/pulsar-tenz-se-black.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + BOX", "price": 2750 }]
   },
   {
     "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
