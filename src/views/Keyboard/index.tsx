@@ -9,7 +9,7 @@ const brands = [
   { key: "logig", label: "Logitech G"},
   { key: "logio", label: "Logi Văn Phòng"},
   { key: "razer",   label: "Razer" },
-  { key: "akko",   label: "Akko" },
+  // { key: "akko",   label: "Akko" },
   { key: "he",   label: "HE" },
    { key: "logiocb", label: "Logi Văn Phòng Combo"},
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
