@@ -237,6 +237,22 @@ export default function OrderProduct({
                       <span className="note">* Phí cọc không hoàn lại trong mọi trường hợp hủy đơn & không nhận hàng</span>
                       <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển khoản tiền cọc gửi về Facebook TVGEAR để hoàn tất.</span>
                     </WrapContent>
+                     <WrapQR>
+                        <ImgQR src="/assets/images/qr/qr-banking.jpg" />
+                        <WrapNumberBank>
+                          <NumberBank>0461000636243</NumberBank>
+                          <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
+                          <CopyNumberBank
+                            onClick={() => {
+                              navigator.clipboard.writeText("0461000636243");
+                              setCopied(true);
+                              setTimeout(() => setCopied(false), 1000);
+                            }}
+                          >
+                            {copied ? "Đã Sao Chép" : "Sao Chép Số Tài Khoản"}
+                          </CopyNumberBank>
+                        </WrapNumberBank>
+                      </WrapQR>
                   </ItemPayment>
                 )}
                 {method === 1 && (
@@ -247,6 +263,22 @@ export default function OrderProduct({
                       </span>
                       <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển khoản gửi về Facebook TVGEAR để hoàn tất.</span>
                     </WrapContent>
+                     <WrapQR>
+                        <ImgQR src="/assets/images/qr/qr-banking.jpg" />
+                        <WrapNumberBank>
+                          <NumberBank>0461000636243</NumberBank>
+                          <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
+                          <CopyNumberBank
+                            onClick={() => {
+                              navigator.clipboard.writeText("0461000636243");
+                              setCopied(true);
+                              setTimeout(() => setCopied(false), 1000);
+                            }}
+                          >
+                            {copied ? "Đã Sao Chép" : "Sao Chép Số Tài Khoản"}
+                          </CopyNumberBank>
+                        </WrapNumberBank>
+                      </WrapQR>
                   </ItemPayment>
                 )}
                 {method === 2 && (
@@ -258,8 +290,53 @@ export default function OrderProduct({
                       <span className="payment">
                         Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT
                       </span>
-                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển USDT gửi về Facebook TVGEAR để hoàn tất.</span>
+                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình đã chuyển khoản $ đến Paypal gửi về Facebook TVGEAR để hoàn tất đơn hàng.</span>
                     </WrapContent>
+                    <WrapQR>
+                      <ImgQR src="/assets/images/qr/qr-paypal.png" />
+                      <WrapNumberBank>
+                        <NumberBank>votienthuan97</NumberBank>
+                        <InfoBank>PayPal</InfoBank>
+                        <CopyNumberBank
+                          onClick={() => {
+                            navigator.clipboard.writeText("https://paypal.me/votienthuan97");
+                            setCopied(true);
+                            setTimeout(() => setCopied(false), 1000);
+                          }}
+                        >
+                          {copied ? "Đã Sao Chép" : "Sao Chép Paypal"}
+                        </CopyNumberBank>
+                      </WrapNumberBank>
+                    </WrapQR>
+                  </ItemPayment>
+                )}
+                 {method === 3 && (
+                  <ItemPayment>
+                    <WrapContent>
+                      <span className="payment">
+                        Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ
+                      </span>
+                      <span className="payment">
+                        Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26300).toFixed(2)} USDT
+                      </span>
+                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển USDT gửi về Facebook TVGEAR để hoàn tất đơn hàng.</span>
+                    </WrapContent>
+                     <WrapQR>
+                        <ImgQR src="/assets/images/qr/qr-crypto.jpg" />
+                        <WrapNumberBank>
+                          <NumberBank>{shortAddress("0x41ab3715ee3dd25c49d034a9cc85f34639372216")}</NumberBank>
+                          <InfoBank>BSC - BNB Smart Chain (BEP20)</InfoBank>
+                          <CopyNumberBank
+                            onClick={() => {
+                              navigator.clipboard.writeText("0x41ab3715ee3dd25c49d034a9cc85f34639372216");
+                              setCopied(true);
+                              setTimeout(() => setCopied(false), 2000);
+                            }}
+                          >
+                            {copied ? "Đã Sao Chép" : "Sao Chép Mã Ví"}
+                          </CopyNumberBank>
+                        </WrapNumberBank>
+                      </WrapQR>
                   </ItemPayment>
                 )}
               </ContentPayment>
@@ -411,7 +488,7 @@ export default function OrderProduct({
                                   setTimeout(() => setCopied(false), 1000);
                                 }}
                               >
-                                {copied ? "Đã Sao Chép" : "Sao Chép Link"}
+                                {copied ? "Đã Sao Chép" : "Sao Chép Paypal"}
                               </CopyNumberBank>
                             </WrapNumberBank>
                           </WrapQR>
@@ -421,10 +498,10 @@ export default function OrderProduct({
                             <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
                             <span>Hỗ Trợ Phí Ship : -10.000 đ</span>
                             <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ</span>
-                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 25500).toFixed(2)} $</span>
+                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} $</span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Tỉ giá quy đổi 1$ = 25.500 VND (Theo Tỉ Giá & Phí PayPal)</span>
+                            <span className="note">* Tỉ giá quy đổi 1$ = 26.000 VND (Theo Tỉ Giá & Phí PayPal)</span>
                           </WrapContent>
                         </ItemPayment>
                       )}
@@ -453,10 +530,10 @@ export default function OrderProduct({
                             <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
                             <span>Hỗ Trợ Phí Ship : 15.000 đ</span>
                             <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ</span>
-                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT</span>
+                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26300).toFixed(2)} USDT</span>
                           </WrapContent>
                           <WrapContent>
-                            <span className="note">* Tỉ giá quy đổi 1 USDT = 26.000 VND (Theo Tỉ Giá & Phí P2P Binance)</span>
+                            <span className="note">* Tỉ giá quy đổi 1 USDT = 26.300 VND</span>
                             <span className="note">* Chỉ gửi USDT, BSC - BNB Smart Chain (BEP20) đến địa chỉ trên.</span>
                           </WrapContent>
                         </ItemPayment>
