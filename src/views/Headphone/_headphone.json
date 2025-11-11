@@ -5,11 +5,12 @@
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G335",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g335-black.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g335-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/headphones/g335-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%, Thiếu Dây Chia", "price": 550 },
-      { "name": "97%", "price": 650 }
+      { "name": "95%, Thiếu Dây Chia", "price": 550, "colors" : ["black"] },
+      { "name": "97%", "price": 650, "colors" : ["white"] }
     ]
   },
   {

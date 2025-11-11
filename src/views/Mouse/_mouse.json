@@ -3,25 +3,17 @@
     "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-    "name": "G102",
+    "name": "G102/G203",
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
-      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "90%", "price": 200 },
-      { "name": "95%", "price": 250 }
-    ]
-  },
-  {
-    "visible": true,
-    "brand": "logig",
-    "name": "G203",
-    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-    "colors": [
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 },
       { "color": "lightsteelblue", "labelColor": "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "95%", "price": 250 }]
+    "options": [
+      { "name": "90%", "price": 200, "colors" : ["black", "white"]},
+      { "name": "95%", "price": 250, "colors" : ["black", "white"]},
+      { "name": "95%", "price": 250, "colors" : ["lightsteelblue"] }
+    ]
   },
   {
     "visible": true,
@@ -76,7 +68,7 @@
     "colors": [
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 700 }]
+    "options": [{ "name": "97% + Nút Phụ Che", "price": 700 }, { "name": "97% + Nút Phụ Bấm", "price": 700 }]
   },
   {
     "visible": true,
@@ -126,16 +118,6 @@
     "options": [{ "name": "97%", "price": 950 }]
   },
   {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "PRO WL / Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "90%", "price": 850 }]
-  },
-  {
     "visible": true,
     "brand": "logig",
     "name": "PRO WL",
@@ -168,16 +150,7 @@
     ],
     "options": [{ "name": "90%", "price": 1250 }]
   },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "G502 WL - Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "95% + BOX", "price": 1380 }]
-  },
+  
   {
     "visible": false,
     "brand": "logig",
@@ -198,16 +171,7 @@
     ],
     "options": [{ "name": "97%", "price": 1850 }]
   },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "PRO X SuperLight 1 / Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97% + BOX", "price": 1400 }]
-  },
+  
   {
     "visible": true,
     "brand": "logig",
@@ -246,6 +210,26 @@
     ],
     "options": [{ "name": "97%", "price": 2180 }]
   },
+ 
+
+
+
+
+
+
+  {
+    "" : "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "PRO WL / Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "90%", "price": 850 }, { "name": "97% + BOX", "price": 1000 }]
+  },
   {
     "visible": true,
     "brand": "liquidation",
@@ -256,6 +240,33 @@
     ],
     "options": [{ "name": "95%", "price": 880 }]
   },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "G502 WL - Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "95% + BOX", "price": 1350 }]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "PRO X SuperLight 1 / Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97% + BOX", "price": 1400 }]
+  },
+
+
+
+
+
+
+
   {
     "": "OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
@@ -410,16 +421,6 @@
   },
   {
     "visible": true,
-    "brand": "liquidation",
-    "name": "MX Master 3s / Thanh Lý",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 7 Ngày"],
-    "colors": [
-      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/mx-master-3s-white.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97%", "price": 1380 }]
-  },
-  {
-    "visible": true,
     "brand": "logio",
     "name": "Pop Mouse",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -458,6 +459,10 @@
     ],
     "options": [{ "name": "95% - Bluetooth", "price": 750 }]
   },
+
+
+
+
   {
     "": "RAZER --------------------------------------------------------------------------------------------------------------------"
   },
@@ -586,6 +591,14 @@
     ],
     "options": [{ "name": "97% + BOX", "price": 3480 }]
   },
+
+
+
+
+
+
+
+
   {
     "": "PULSAR --------------------------------------------------------------------------------------------------------------------"
   },
@@ -599,6 +612,16 @@
     ],
     "options": [{ "name": "97% + BOX", "price": 2750 }]
   },
+
+
+
+
+
+
+
+
+
+
   {
     "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
   },
