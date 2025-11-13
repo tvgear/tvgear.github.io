@@ -68,7 +68,7 @@
     "colors": [
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + Nút Phụ Che", "price": 700 }, { "name": "97% + Nút Phụ Bấm", "price": 700 }]
+    "options": [{ "name": "97% + Nút Phụ Che", "price": 700 }]
   },
   {
     "visible": true,
@@ -542,14 +542,24 @@
     "options": [{ "name": "97% + DOCK SẠC", "price": 1250 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
     "name": "Viper v2 Pro",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 1450 }]
+    "options": [{ "name": "97%", "price": 1480 }]
+  },
+   {
+    "visible": true,
+    "brand": "razer",
+    "name": "Viper v3 Pro",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v3-pro-black.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 2380 }]
   },
   {
     "visible": false,
