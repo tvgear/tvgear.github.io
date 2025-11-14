@@ -149,8 +149,8 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
           const col = product.colors[colorIndex] ?? product.colors[0];
           const disabled = product.id === -1;
 
-          const filteredOpts = product.options.filter(
-            (opt) => !opt.colors || opt.colors.includes(col.color)
+         const filteredOpts = product.options.filter(
+            (opt) => !opt.colors || opt.colors.includes(col?.color ?? "")
           );
           const visibleOptions = filteredOpts.length > 0 ? filteredOpts : product.options;
 
