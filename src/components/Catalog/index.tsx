@@ -55,10 +55,14 @@ type CatalogProps<B extends string> = {
 
 export function Catalog<B extends string>({ brands, products }: CatalogProps<B>) {
   const [activeBrand, setActiveBrand] = React.useState<B>(brands[0]?.key as B);
-  const [selectedOptions, setSelectedOptions] = React.useState<Record<number, number>>({});
+
+  // --- lưu tên option thay vì index ---
+  const [selectedOptions, setSelectedOptions] = React.useState<Record<number, string>>({});
   const [selectedColors, setSelectedColors] = React.useState<Record<number, number>>({});
+
   const pageTopRef = React.useRef<HTMLDivElement>(null);
   const listRef = React.useRef<HTMLDivElement>(null);
+
   const [orderOpen, setOrderOpen] = React.useState(false);
   const [orderData, setOrderData] = React.useState<OrderData | undefined>(undefined);
 
@@ -96,14 +100,23 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
   };
 
   const openOrderFor = (product: BaseProduct<B>) => {
-    const optIndex = selectedOptions[product.id] ?? 0;
     const colorIndex = selectedColors[product.id] ?? 0;
-    const opt = product.options?.[optIndex] ?? product.options?.[0];
-    const col = product.colors?.[colorIndex] ?? product.colors?.[0];
+    const col = product.colors[colorIndex] ?? product.colors[0];
+
+    const filteredOpts = product.options.filter(
+      (opt) => !opt.colors || opt.colors.includes(col?.color ?? "")
+    );
+    const visibleOptions = filteredOpts.length > 0 ? filteredOpts : product.options;
+
+    const selectedOptionName = selectedOptions[product.id] ?? visibleOptions[0]?.name ?? "";
+    const opt = visibleOptions.find((o) => o.name === selectedOptionName) ?? visibleOptions[0];
+
     const optPrice = opt?.price ?? 0;
     const colorAdd = col?.priceAdd ?? 0;
     const priceVND = (optPrice + colorAdd) * 1000;
+
     const colorName = col?.labelColor ?? col?.color ?? "";
+
     setOrderData({
       productName: product.name,
       productColor: colorName,
@@ -117,6 +130,7 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
   return (
     <>
       <div ref={pageTopRef} />
+
       <ListTab>
         {brands.map((brand) => (
           <ItemTab
@@ -131,17 +145,21 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
 
       <ListProduct ref={listRef}>
         {filtered.map((product) => {
-          const optIndex = selectedOptions[product.id] ?? 0;
           const colorIndex = selectedColors[product.id] ?? 0;
           const col = product.colors[colorIndex] ?? product.colors[0];
           const disabled = product.id === -1;
+
           const filteredOpts = product.options.filter(
-            (opt) => !opt.colors || (col && opt.colors.includes(col.color))
+            (opt) => !opt.colors || opt.colors.includes(col.color)
           );
           const visibleOptions = filteredOpts.length > 0 ? filteredOpts : product.options;
-          const validOptIndex = Math.min(optIndex, visibleOptions.length - 1);
-          const optPrice = visibleOptions?.[validOptIndex]?.price ?? visibleOptions?.[0]?.price ?? 0;
-          const colorAdd = product.colors?.[colorIndex]?.priceAdd ?? product.colors?.[0]?.priceAdd ?? 0;
+
+          const selectedOptionName = selectedOptions[product.id] ?? visibleOptions[0]?.name ?? "";
+          const currentOptIndex = visibleOptions.findIndex((o) => o.name === selectedOptionName);
+          const validOptIndex = currentOptIndex >= 0 ? currentOptIndex : 0;
+
+          const optPrice = visibleOptions[validOptIndex]?.price ?? visibleOptions[0]?.price ?? 0;
+          const colorAdd = col?.priceAdd ?? 0;
           const displayPrice = (optPrice + colorAdd).toLocaleString("vi-VN");
 
           return (
@@ -170,14 +188,17 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                         ...prev,
                         [product.id]: i,
                       }));
+
+                      // reset option nếu option hiện tại không hợp lệ với màu mới
                       const allowedOpts = product.options.filter(
                         (opt) => !opt.colors || opt.colors.includes(c.color)
                       );
-                      const currentOpt = product.options[optIndex];
-                      if (allowedOpts.length > 0 && (!currentOpt || !allowedOpts.includes(currentOpt))) {
+                      const currentSelectedName = selectedOptions[product.id];
+                      const stillAllowed = allowedOpts.some((ao) => ao.name === currentSelectedName);
+                      if (!stillAllowed) {
                         setSelectedOptions((prev) => ({
                           ...prev,
-                          [product.id]: 0,
+                          [product.id]: allowedOpts[0]?.name ?? product.options[0]?.name ?? "",
                         }));
                       }
                     }}
@@ -188,14 +209,14 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
               </ColorItem>
 
               <OptionItem style={{ marginBottom: 8 }}>
-                {visibleOptions.map((o, i) => (
+                {visibleOptions.map((o) => (
                   <ItemOptionSelect
                     key={`${product.id}-${o.name}`}
-                    className={i === validOptIndex ? "active" : ""}
+                    className={o.name === selectedOptionName ? "active" : ""}
                     onClick={() =>
                       setSelectedOptions((prev) => ({
                         ...prev,
-                        [product.id]: i,
+                        [product.id]: o.name,
                       }))
                     }
                   >
@@ -209,8 +230,7 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                   {displayPrice}.000 <span>đ</span>
                 </PriceOptionSelect>
                 <ButtonLinkItem as="button" type="button" onClick={() => openOrderFor(product)}>
-                  <ImgLogo src="/logo.svg" />
-                  ĐẶT HÀNG
+                  <ImgLogo src="/logo.svg" /> ĐẶT HÀNG
                 </ButtonLinkItem>
               </BuyItem>
             </ItemProduct>
