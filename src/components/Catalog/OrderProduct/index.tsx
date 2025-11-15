@@ -31,12 +31,14 @@ import {
   TextAreaForm,
   Title,
   TitleOrder,
+  WrapContact,
   WrapContent,
   WrapFormModal,
   WrapModal,
   WrapNumberBank,
   WrapQR,
 } from "./style";
+import { Note } from "@/layouts";
 
 const SHEET_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbyESvm823dSEXIiJq6Po4EupnxxYHKq4bz_XNGXPQRo-4lgqAa_lKS0Kv2V_MFT0Cu8/exec";
@@ -217,14 +219,8 @@ export default function OrderProduct({
                 </InfoOption>
               </InfoProductOrder>
 
-              <WrapContent>
-                <span>{submittedInfo?.name || customerName}</span>
-                <span>{submittedInfo?.phone || customerPhone}</span>
-                <span>{submittedInfo?.address || customerAddress}</span>
-                <span>{submittedInfo?.note || customerNote}</span>
-                <span>{submittedInfo?.payment || paymentMethod[method]?.name}</span>
-              </WrapContent>
-
+             
+  
               <ContentPayment>
                 {method === 0 && (
                   <ItemPayment>
@@ -235,7 +231,6 @@ export default function OrderProduct({
                         {((data?.productPriceOption ?? 0) - 50000).toLocaleString("vi-VN")} đ + Phí Ship
                       </span>
                       <span className="note">* Phí cọc không hoàn lại trong mọi trường hợp hủy đơn & không nhận hàng</span>
-                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển khoản tiền cọc gửi về Facebook TVGEAR để hoàn tất.</span>
                     </WrapContent>
                      <WrapQR>
                         <ImgQR src="/assets/images/qr/qr-banking.jpg" />
@@ -253,16 +248,18 @@ export default function OrderProduct({
                           </CopyNumberBank>
                         </WrapNumberBank>
                       </WrapQR>
+                      
                   </ItemPayment>
                 )}
+               
                 {method === 1 && (
                   <ItemPayment>
                     <WrapContent>
                       <span className="payment">
                         Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ
                       </span>
-                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển khoản gửi về Facebook TVGEAR để hoàn tất.</span>
                     </WrapContent>
+                     
                      <WrapQR>
                         <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                         <WrapNumberBank>
@@ -290,8 +287,8 @@ export default function OrderProduct({
                       <span className="payment">
                         Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT
                       </span>
-                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình đã chuyển khoản $ đến Paypal gửi về Facebook TVGEAR để hoàn tất đơn hàng.</span>
                     </WrapContent>
+                    
                     <WrapQR>
                       <ImgQR src="/assets/images/qr/qr-paypal.png" />
                       <WrapNumberBank>
@@ -319,8 +316,8 @@ export default function OrderProduct({
                       <span className="payment">
                         Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26300).toFixed(2)} USDT
                       </span>
-                      <span className="note">* Sau Khi Đặt Hàng, vui lòng chụp màn hình chuyển USDT gửi về Facebook TVGEAR để hoàn tất đơn hàng.</span>
                     </WrapContent>
+                   
                      <WrapQR>
                         <ImgQR src="/assets/images/qr/qr-crypto.jpg" />
                         <WrapNumberBank>
@@ -339,6 +336,16 @@ export default function OrderProduct({
                       </WrapQR>
                   </ItemPayment>
                 )}
+                 <WrapContact>
+                        <Note>Sau Khi Chuyển Khoản/Cọc Vui Lòng Chụp Màn Hình Chuyển Khoản Gửi Vào Đây<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
+                    </WrapContact>
+                <WrapContent>
+                <span>{submittedInfo?.name || customerName}</span>
+                <span>{submittedInfo?.phone || customerPhone}</span>
+                <span>{submittedInfo?.address || customerAddress}</span>
+                <span>{submittedInfo?.note || customerNote}</span>
+                <span>{submittedInfo?.payment || paymentMethod[method]?.name}</span>
+              </WrapContent>
               </ContentPayment>
             </InfoAfterOrder>
           ) : (

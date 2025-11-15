@@ -68,7 +68,7 @@
     "colors": [
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + Nút Phụ Che", "price": 700 }]
+    "options": [{ "name": "97% + Kèm Nút Che", "price": 700 }]
   },
   {
     "visible": true,
@@ -103,7 +103,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 980 },
       { "name": "97%", "price": 1080 }
     ]
   },
@@ -374,7 +373,7 @@
       { "name": "97% + Logi Bolt", "price": 430 }
     ]
   },
-  {
+   {
     "visible": true,
     "brand": "logio",
     "name": "M650 M/L",
@@ -383,7 +382,8 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m650-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "[L] 97% + Logi Bolt", "price": 450 },
+      { "name": "[M] 97%", "price": 450 },
+      { "name": "[L] 97%", "price": 450 },
       { "name": "[M] New No Box", "price": 550 }
     ]
   },
@@ -416,7 +416,8 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 1080 }
+      { "name": "95%", "price": 1080 },
+      { "name": "95% + Logi Unifying", "price": 1150 }
     ]
   },
   {

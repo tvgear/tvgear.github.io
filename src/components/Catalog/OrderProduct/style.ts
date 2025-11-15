@@ -401,3 +401,7 @@ export const ImgLogo = styled.img`
     width: 14px;
     height: 14px;
 `
+
+export const WrapContact = styled.div`
+    margin: 0px 0px 0px 0px;
+`

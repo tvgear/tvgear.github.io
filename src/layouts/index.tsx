@@ -37,7 +37,7 @@ const Content = styled.div`
     overflow-y : auto;
   }
 `
-const Note = styled.div`
+export const Note = styled.div`
   font-size : 1.3rem;
   line-height: calc(1.3rem * 1.25);
   padding: 10px 5px;

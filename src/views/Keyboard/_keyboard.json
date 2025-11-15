@@ -1,6 +1,6 @@
 [
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G213",
@@ -139,9 +139,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97%, BH 4/27", "price": 2000 },
-     { "name": "97% + BOX, BH 9/27", "price": 2100 }
-    ]
+     { "name": "97%, BH 4/27", "price": 2000 }]
   },
   {
     "visible": true,

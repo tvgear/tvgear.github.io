@@ -165,9 +165,22 @@
   {
     "" : "SOUNDCARD --------------------------------------------------------------------------------------------------------------------"
   },
-  
+
   {
      "visible": true,
+    "brand": "soundcard",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "Logitech G433",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-g433.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 390 }
+    ]
+  },
+  
+  {
+     "visible": false,
     "brand": "soundcard",
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Hype X Cloud II 7.1 Kingston",
@@ -175,11 +188,11 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-hyper-x-cl2.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% - Gãy Nẹp Lưng", "price": 590 }
+      { "name": "97% Gãy Nẹp Lưng", "price": 590 }
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "soundcard",
     "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "Sennheiser GSX 1000",
