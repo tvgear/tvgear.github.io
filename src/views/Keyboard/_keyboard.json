@@ -67,14 +67,11 @@
     "name": "PRO X TKL Rapid",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp", "priceAdd": 0 },
-      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-white.webp", "priceAdd": 0 },
       { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
     ],
     "options": [
      { "name": "97% + BOX - Lỗi Led", "price": 2180, "colors" : ["black"] },
-     { "name": "New", "price": 2780,  "colors" : ["black"] },
-     { "name": "97%", "price": 2580,  "colors" : ["white"] },
-     { "name": "New", "price": 2780,  "colors" : ["white"] },
+     { "name": "New Seal", "price": 2780,  "colors" : ["black"] },
      { "name": "97%", "price": 2580,  "colors" : ["deeppink"] }
     ]
   },
@@ -133,25 +130,15 @@
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành Hãng"],
-    "name": "G515 TKL",
-    "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
-    ],
-    "options": [
-     { "name": "97%, BH 4/27", "price": 2000 }]
-  },
-  {
-    "visible": true,
-    "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G515 TKL",
     "colors": [
       { "color": "black", "labelColor" : "Tím", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "New Open Box", "price": 1980 },
-     { "name": "New Seal", "price": 2080 }
+      { "name": "97%, BH 4/27", "price": 1950 },
+     { "name": "New Open Box", "price": 2000 },
+     { "name": "New Seal", "price": 2100 }
     ]
   }
 ]

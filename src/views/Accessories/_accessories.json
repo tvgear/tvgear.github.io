@@ -57,7 +57,8 @@
     ],
     "options": [
       { "name": "PRO X 1", "price": 450 },
-       { "name": "PRO X 2 - Mất 4K Hz", "price": 450 }
+      { "name": "PRO X 2 - 1K Hz", "price": 450 },
+      { "name": "PRO X 2 - 8K Hz", "price": 1150 }
     ]
   },
 
@@ -221,6 +222,7 @@
       { "name": "97% + BOX", "price": 680 }
     ]
   },
+
   {
     "visible": false,
     "brand": "speaker",
@@ -233,6 +235,20 @@
       { "name": "95% + Xước 2 Loa Vệ Tinh", "price": 1100 }
     ]
   },
+
+  {
+    "visible": true,
+    "brand": "speaker",
+    "tags": ["Jack 3.5mm & Bluetooth, 120W ~ 240W / Bảo Hành 1 Tháng"],
+    "name": "G560",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/g560.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% + BOX", "price": 2580 }
+    ]
+  },
+  
 
   {
     "" : "TAY CẦM --------------------------------------------------------------------------------------------------------------------"
@@ -256,7 +272,7 @@
   },
 
    {
-    "visible": true,
+    "visible": false,
     "brand": "pen",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "Logitech Spotlight",

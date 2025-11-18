@@ -196,6 +196,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 }
     ],
     "options": [
+      { "name": "95% + BOX", "price": 1980 },
       { "name": "97% + BOX", "price": 2180 }
     ]
   },
@@ -219,6 +220,18 @@
   {
     "" : "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
+
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "G304 / Thanh Lý",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "90%", "price": 390 }]
+  },
+
   {
     "visible": true,
     "brand": "liquidation",
@@ -228,16 +241,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
     ],
     "options": [{ "name": "90%", "price": 850 }, { "name": "97% + BOX", "price": 1000 }]
-  },
-  {
-    "visible": true,
-    "brand": "liquidation",
-    "name": "G703 Hero / Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 7 Ngày"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "95%", "price": 880 }]
   },
   {
     "visible": true,
@@ -303,7 +306,6 @@
       { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/m220-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 130 },
       { "name": "97%", "price": 150 }
     ]
   },
@@ -563,7 +565,7 @@
     "options": [{ "name": "97%", "price": 2380 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "liquidation",
     "name": "Viper v2 Pro",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -600,7 +602,7 @@
     "colors": [
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/da-v4-pro-white.png", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX", "price": 3480 }]
+    "options": [{ "name": "97% + BOX", "price": 3280 }]
   },
 
 
