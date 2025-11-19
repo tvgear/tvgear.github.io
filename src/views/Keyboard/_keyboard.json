@@ -70,7 +70,6 @@
       { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97% + BOX - Lỗi Led", "price": 2180, "colors" : ["black"] },
      { "name": "New Seal", "price": 2780,  "colors" : ["black"] },
      { "name": "97%", "price": 2580,  "colors" : ["deeppink"] }
     ]

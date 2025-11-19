@@ -183,8 +183,8 @@
     "options": [
       { "name": "90%", "price": 1300, "colors": ["white"] },
       { "name": "95%", "price": 1350, "colors": ["black"] },
-      { "name": "97%", "price": 1500, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 1600, "colors": ["black"] }
+      { "name": "97%", "price": 1480, "colors": ["black"] },
+      { "name": "97% + BOX", "price": 1580, "colors": ["black"] }
     ]
   },
   {
@@ -252,21 +252,6 @@
     ],
     "options": [{ "name": "95% + BOX", "price": 1350 }]
   },
-  {
-    "visible": true,
-    "brand": "liquidation",
-    "name": "PRO X SuperLight 1 / Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97% + BOX", "price": 1400 }]
-  },
-
-
-
-
-
 
 
   {
@@ -418,8 +403,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 1080 },
-      { "name": "95% + Logi Unifying", "price": 1150 }
+      { "name": "95% + Logi Unifying", "price": 1180 }
     ]
   },
   {
@@ -555,7 +539,7 @@
     "options": [{ "name": "97% + Dây Sạc Ngoài", "price": 1480 }]
   },
    {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper v3 Pro",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -578,14 +562,14 @@
     "visible": true,
     "brand": "razer",
     "name": "Basilisk v3 Pro Phantom 35K",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 2-26 MMZ"],
+    "tags": ["Không Dây & Bluetooth / Bảo Hành Hãng"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-v3-pro-phantom.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX", "price": 2900 }]
+    "options": [{ "name": "97% + BOX, BH 3/27", "price": 2850 }, { "name": "97% + BOX, BH 7/27", "price": 2900 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "DA v4 Pro",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 9-27 PV"],

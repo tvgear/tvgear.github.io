@@ -92,6 +92,19 @@
   },
 
   {
+   "visible": true,
+    "brand": "pad",
+    "tags": ["Pad Hybrid, Micro-Textured / Bảo Hành 9.27 GEARVN"],
+    "name": "Razer Firefly V2 Pro",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/razer-firefly-v2-pro.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "99% + BOX", "price": 1980 }
+    ]
+  },
+
+  {
     "" : "FEET --------------------------------------------------------------------------------------------------------------------"
   },
 
