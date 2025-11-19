@@ -60,10 +60,8 @@ type OrderProductProps = {
 };
 
 const paymentMethod = [
-  { name: "COD", profit: "" },
-  { name: "Bank", profit: "-10K Ship" },
-  { name: "PayPal", profit: "-10K Ship" },
-  { name: "Crypto", profit: "-15K Ship" },
+  { name: "COD - Tiền Mặt", profit: "" },
+  { name: "Chuyển Khoản", profit: "-10K Ship" },
 ];
 
 export default function OrderProduct({
@@ -188,8 +186,6 @@ export default function OrderProduct({
     }
   };
 
-  const shortAddress = (addr: string) =>
-    addr ? `${addr.slice(0, 6)}...${addr.slice(-6)}` : "";
 
   return (
     <WrapModal onClick={handleClose} className={open ? "active" : ""}>
@@ -218,9 +214,6 @@ export default function OrderProduct({
                   </PriceSelectInfo>
                 </InfoOption>
               </InfoProductOrder>
-
-             
-  
               <ContentPayment>
                 {method === 0 && (
                   <ItemPayment>
@@ -235,11 +228,11 @@ export default function OrderProduct({
                      <WrapQR>
                         <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                         <WrapNumberBank>
-                          <NumberBank>0461000636243</NumberBank>
+                          <NumberBank>9398637036</NumberBank>
                           <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                           <CopyNumberBank
                             onClick={() => {
-                              navigator.clipboard.writeText("0461000636243");
+                              navigator.clipboard.writeText("9398637036");
                               setCopied(true);
                               setTimeout(() => setCopied(false), 1000);
                             }}
@@ -251,7 +244,6 @@ export default function OrderProduct({
                       
                   </ItemPayment>
                 )}
-               
                 {method === 1 && (
                   <ItemPayment>
                     <WrapContent>
@@ -259,15 +251,14 @@ export default function OrderProduct({
                         Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ
                       </span>
                     </WrapContent>
-                     
                      <WrapQR>
                         <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                         <WrapNumberBank>
-                          <NumberBank>0461000636243</NumberBank>
+                          <NumberBank>9398637036</NumberBank>
                           <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                           <CopyNumberBank
                             onClick={() => {
-                              navigator.clipboard.writeText("0461000636243");
+                              navigator.clipboard.writeText("9398637036");
                               setCopied(true);
                               setTimeout(() => setCopied(false), 1000);
                             }}
@@ -278,67 +269,9 @@ export default function OrderProduct({
                       </WrapQR>
                   </ItemPayment>
                 )}
-                {method === 2 && (
-                  <ItemPayment>
-                    <WrapContent>
-                      <span className="payment">
-                        Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ
-                      </span>
-                      <span className="payment">
-                        Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} USDT
-                      </span>
-                    </WrapContent>
-                    
-                    <WrapQR>
-                      <ImgQR src="/assets/images/qr/qr-paypal.png" />
-                      <WrapNumberBank>
-                        <NumberBank>votienthuan97</NumberBank>
-                        <InfoBank>PayPal</InfoBank>
-                        <CopyNumberBank
-                          onClick={() => {
-                            navigator.clipboard.writeText("https://paypal.me/votienthuan97");
-                            setCopied(true);
-                            setTimeout(() => setCopied(false), 1000);
-                          }}
-                        >
-                          {copied ? "Đã Sao Chép" : "Sao Chép Paypal"}
-                        </CopyNumberBank>
-                      </WrapNumberBank>
-                    </WrapQR>
-                  </ItemPayment>
-                )}
-                 {method === 3 && (
-                  <ItemPayment>
-                    <WrapContent>
-                      <span className="payment">
-                        Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ
-                      </span>
-                      <span className="payment">
-                        Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26300).toFixed(2)} USDT
-                      </span>
-                    </WrapContent>
-                   
-                     <WrapQR>
-                        <ImgQR src="/assets/images/qr/qr-crypto.jpg" />
-                        <WrapNumberBank>
-                          <NumberBank>{shortAddress("0x41ab3715ee3dd25c49d034a9cc85f34639372216")}</NumberBank>
-                          <InfoBank>BSC - BNB Smart Chain (BEP20)</InfoBank>
-                          <CopyNumberBank
-                            onClick={() => {
-                              navigator.clipboard.writeText("0x41ab3715ee3dd25c49d034a9cc85f34639372216");
-                              setCopied(true);
-                              setTimeout(() => setCopied(false), 2000);
-                            }}
-                          >
-                            {copied ? "Đã Sao Chép" : "Sao Chép Mã Ví"}
-                          </CopyNumberBank>
-                        </WrapNumberBank>
-                      </WrapQR>
-                  </ItemPayment>
-                )}
-                 <WrapContact>
-                        <Note>Sau Khi Chuyển Khoản/Cọc Vui Lòng Chụp Màn Hình Chuyển Khoản Gửi Vào Đây<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
-                    </WrapContact>
+                <WrapContact>
+                  <Note>Sau Khi Chuyển Khoản/Cọc Vui Lòng Chụp Màn Hình Chuyển Khoản Gửi Vào Đây<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
+                </WrapContact>
                 <WrapContent>
                 <span>{submittedInfo?.name || customerName}</span>
                 <span>{submittedInfo?.phone || customerPhone}</span>
@@ -426,11 +359,11 @@ export default function OrderProduct({
                           <WrapQR>
                             <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                             <WrapNumberBank>
-                              <NumberBank>0461000636243</NumberBank>
+                              <NumberBank>9398637036</NumberBank>
                               <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                               <CopyNumberBank
                                 onClick={() => {
-                                  navigator.clipboard.writeText("0461000636243");
+                                  navigator.clipboard.writeText("9398637036");
                                   setCopied(true);
                                   setTimeout(() => setCopied(false), 2000);
                                 }}
@@ -458,11 +391,11 @@ export default function OrderProduct({
                           <WrapQR>
                             <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                             <WrapNumberBank>
-                              <NumberBank>0461000636243</NumberBank>
+                              <NumberBank>9398637036</NumberBank>
                               <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                               <CopyNumberBank
                                 onClick={() => {
-                                  navigator.clipboard.writeText("0461000636243");
+                                  navigator.clipboard.writeText("9398637036");
                                   setCopied(true);
                                   setTimeout(() => setCopied(false), 1000);
                                 }}
@@ -477,71 +410,6 @@ export default function OrderProduct({
                             <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
                             <span>Hỗ Trợ Phí Ship : -10.000 đ</span>
                             <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ</span>
-                          </WrapContent>
-                        </ItemPayment>
-                      )}
-
-                      {method === 2 && (
-                        <ItemPayment>
-                          <WrapQR>
-                            <ImgQR src="/assets/images/qr/qr-paypal.png" />
-                            <WrapNumberBank>
-                              <NumberBank>votienthuan97</NumberBank>
-                              <InfoBank>PayPal</InfoBank>
-                              <CopyNumberBank
-                                onClick={() => {
-                                  navigator.clipboard.writeText("https://paypal.me/votienthuan97");
-                                  setCopied(true);
-                                  setTimeout(() => setCopied(false), 1000);
-                                }}
-                              >
-                                {copied ? "Đã Sao Chép" : "Sao Chép Paypal"}
-                              </CopyNumberBank>
-                            </WrapNumberBank>
-                          </WrapQR>
-                          <WrapContent>
-                            <span>Tiền Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
-                            <span>Phí Ship : 40.000 đ</span>
-                            <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
-                            <span>Hỗ Trợ Phí Ship : -10.000 đ</span>
-                            <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 30000).toLocaleString("vi-VN")} đ</span>
-                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26000).toFixed(2)} $</span>
-                          </WrapContent>
-                          <WrapContent>
-                            <span className="note">* Tỉ giá quy đổi 1$ = 26.000 VND (Theo Tỉ Giá & Phí PayPal)</span>
-                          </WrapContent>
-                        </ItemPayment>
-                      )}
-
-                      {method === 3 && (
-                        <ItemPayment>
-                          <WrapQR>
-                            <ImgQR src="/assets/images/qr/qr-crypto.jpg" />
-                            <WrapNumberBank>
-                              <NumberBank>{shortAddress("0x41ab3715ee3dd25c49d034a9cc85f34639372216")}</NumberBank>
-                              <InfoBank>BSC - BNB Smart Chain (BEP20)</InfoBank>
-                              <CopyNumberBank
-                                onClick={() => {
-                                  navigator.clipboard.writeText("0x41ab3715ee3dd25c49d034a9cc85f34639372216");
-                                  setCopied(true);
-                                  setTimeout(() => setCopied(false), 2000);
-                                }}
-                              >
-                                {copied ? "Đã Sao Chép" : "Sao Chép Mã Ví"}
-                              </CopyNumberBank>
-                            </WrapNumberBank>
-                          </WrapQR>
-                          <WrapContent>
-                            <span>Tiền Hàng : {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ</span>
-                            <span>Phí Ship : 40.000 đ</span>
-                            <span>Tổng Đơn Hàng : {((data?.productPriceOption ?? 0) + 40000).toLocaleString("vi-VN")} đ</span>
-                            <span>Hỗ Trợ Phí Ship : 15.000 đ</span>
-                            <span className="payment">Tổng Thanh Toán : {((data?.productPriceOption ?? 0) + 25000).toLocaleString("vi-VN")} đ</span>
-                            <span className="payment">Tổng Thanh Toán Quy Đổi : {(((data?.productPriceOption ?? 0) + 25000) / 26300).toFixed(2)} USDT</span>
-                          </WrapContent>
-                          <WrapContent>
-                            <span className="note">* Tỉ giá quy đổi 1 USDT = 26.300 VND</span>
-                            <span className="note">* Chỉ gửi USDT, BSC - BNB Smart Chain (BEP20) đến địa chỉ trên.</span>
                           </WrapContent>
                         </ItemPayment>
                       )}

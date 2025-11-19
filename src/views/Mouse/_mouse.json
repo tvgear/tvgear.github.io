@@ -552,7 +552,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 1480 }]
+    "options": [{ "name": "97% + Dây Sạc Ngoài", "price": 1480 }]
   },
    {
     "visible": true,
@@ -563,16 +563,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v3-pro-black.png", "priceAdd": 0 }
     ],
     "options": [{ "name": "97%", "price": 2380 }]
-  },
-  {
-    "visible": true,
-    "brand": "liquidation",
-    "name": "Viper v2 Pro",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "New Seal", "price": 1580 }]
   },
   {
     "visible": false,
