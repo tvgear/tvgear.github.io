@@ -417,7 +417,7 @@
     "options": [{ "name": "97%", "price": 350 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Master 3s",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -566,7 +566,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-v3-pro-phantom.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX, BH 3/27", "price": 2850 }, { "name": "97% + BOX, BH 7/27", "price": 2900 }]
+    "options": [{ "name": "97% + BOX, BH 3/27", "price": 2900 }]
   },
   {
     "visible": false,
