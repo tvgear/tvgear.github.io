@@ -181,7 +181,7 @@ export const NameItem = styled.div`
 `
 
 export const OptionItem = styled.div`
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0px 10px 0px;
   padding: 0px 10px;
   display: flex;
   width: 100%;
@@ -190,11 +190,11 @@ export const OptionItem = styled.div`
 
 export const ItemOptionSelect = styled.div`
   width: fit-content;
-  padding: 5px 10px;
-  margin: 0px 0px 2.5px 0px;
+  padding: 5px 12.5px;
+  margin: 0px 5px 5px 0px;
   height: fit-content;
-  border: 1.5px solid rgba(50,50,50);
-  border-left : none;
+  background: #111;
+  border: 1.5px solid #555;
   font-family: F_MEDIUM;
   font-size: 1.4rem; 
   line-height: calc(1.4rem * 1.25);
@@ -203,13 +203,10 @@ export const ItemOptionSelect = styled.div`
   white-space: nowrap;
   user-select: none;
   &.active {
-    border-left : none;
     background: #FFF;
+    /* border: 1.5px solid #FFF; */
     color : #000;
     transition: 0.4s all;
-  }
-  &:first-child {
-    border-left : 1.5px solid rgba(50,50,50);
   }
   @media screen and (max-width : 767px) {
     font-size: 1.25rem;

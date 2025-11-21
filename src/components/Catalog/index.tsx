@@ -208,7 +208,7 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
                 ))}
               </ColorItem>
 
-              <OptionItem style={{ marginBottom: 8 }}>
+              <OptionItem>
                 {visibleOptions.map((o) => (
                   <ItemOptionSelect
                     key={`${product.id}-${o.name}`}

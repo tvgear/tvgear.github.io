@@ -44,10 +44,12 @@
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "G733",
     "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 },
       { "color": "lightsteelblue", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-lilac.jpg", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 1580 }
+      { "name": "97% + BOX", "price": 1580,  "colors": ["lightsteelblue"]  },
+      { "name": "New, BH 4/27", "price": 1950, "colors": ["black"] }
     ]
   }
 ]
