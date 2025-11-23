@@ -240,7 +240,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "90%", "price": 850 }, { "name": "97% + BOX", "price": 1000 }]
+    "options": [{ "name": "90%", "price": 850 }]
   },
   {
     "visible": true,
@@ -417,7 +417,7 @@
     "options": [{ "name": "97%", "price": 350 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "MX Master 3s",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -524,7 +524,8 @@
     "name": "Viper Ultimate",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-ultimate.webp", "priceAdd": 0 }
+      { "color": "white", "labelColor": "Đen", "image": "/assets/images/mouses/viper-ultimate-white.png", "priceAdd": 0 },
+      { "color": "pink", "labelColor": "Đen", "image": "/assets/images/mouses/viper-ultimate-pink.png", "priceAdd": 0 }
     ],
     "options": [{ "name": "97% + DOCK SẠC", "price": 1250 }]
   },
