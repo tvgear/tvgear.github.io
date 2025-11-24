@@ -1,6 +1,6 @@
 [
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G213",
@@ -12,15 +12,15 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
-    "name": "G413 SE Full Size",
+    "name": "G413 SE TKL",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-fs.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX, Brown", "price": 800 }
+      { "name": "97% + Box", "price": 980 }
     ]
   },
   {
@@ -95,8 +95,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "95%, Lỗi LED + BOX", "price": 1780 },
-     { "name": "97% Clicky + BOX", "price": 1900 }
+     { "name": "95%, Lỗi LED + BOX", "price": 1780 }
     ]
   },
   {
