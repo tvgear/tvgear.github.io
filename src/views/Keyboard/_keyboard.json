@@ -95,7 +95,8 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "95%, Lỗi LED + BOX", "price": 1780 }
+      { "name": "95%, Lỗi LED + BOX", "price": 1780 },
+      { "name": "95% + BOX", "price": 1880 }
     ]
   },
   {

@@ -194,13 +194,11 @@
     "name": "PRO X SuperLight 2",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 },
-      { "color": "deeppink", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "95%", "price": 2000, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["deeppink"] }
+      { "name": "97% + BOX", "price": 2180, "colors": ["black"] }
     ]
   },
   {
