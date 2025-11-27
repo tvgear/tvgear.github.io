@@ -133,10 +133,11 @@ export const NameInfo = styled.div`
     display: flex;
     flex-direction: column;
     span {
-        color : #AAA;
+        width: fit-content;
+        color : #FFF;
         font-family: F_REGULAR;
-        font-size: 1.25rem;
-        line-height: calc(1.25rem * 1.25);
+        font-size: 1.4rem;
+        line-height: calc(1.4rem * 1.25);
         margin: 3.5px 0px 0px 0px;
     }
 `

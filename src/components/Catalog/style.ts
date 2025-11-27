@@ -5,6 +5,7 @@ export const ListTab = styled.div`
     position: sticky;
     top : 0px;
     display: flex;
+    z-index: 2;
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(22px);
     border-bottom : 1.25px solid #777;
@@ -67,6 +68,8 @@ export const ListProduct = styled.div`
     gap: 5px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 `;
 export const ItemProduct = styled.div`
     width: calc(25% - 3.75px);
@@ -94,6 +97,8 @@ export const ImgItem = styled.img`
     max-width: 100%;
     object-fit: contain;
     margin: -10px 0px 0px 0px;
+    z-index: 2;
+    position: relative;
     @media screen and (max-width : 767px) {
       height: 185px;
       width: 100%;
@@ -275,6 +280,7 @@ export const WrapImg = styled.div`
   radial-gradient(800px 550px  at 55% 55%, rgba(255,255,255,.15), transparent 40%),
   #0a0a0f;
   background-blend-mode: screen, screen, normal;
+  position: relative;
   @media screen and (max-width : 767px) {
     height: 230px;
   }
@@ -303,3 +309,18 @@ export const ImgLogo = styled.img`
   filter: invert(1);
 `
 
+export const TagMod = styled.div`
+  position: absolute;
+  left: -125px;
+  right: 0px;
+  top : 55px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 3;
+  font-size: 2.8rem;
+  line-height: calc(2.8rem * 1.25);
+  background: -webkit-linear-gradient(#fff, #222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: F_BOLD;
+`

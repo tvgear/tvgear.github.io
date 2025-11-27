@@ -18,7 +18,7 @@ const brands = [
   { key: "razer", label: "Razer" },
   { key: "pulsar", label: "Pulsar" },
   { key: "lamzu", label: "Lamzu" },
-  { key: "liquidation", label: "Hàng Thanh Lý" },
+  // { key: "liquidation", label: "Hàng Thanh Lý" },
 ] as const satisfies ReadonlyArray<BrandT<MouseBrand>>;
 
 const products = (productsJson as any[])

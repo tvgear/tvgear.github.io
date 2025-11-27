@@ -20,6 +20,7 @@ import {
   BuyItem,
   PriceOptionSelect,
   ImgLogo,
+  TagMod,
 } from "./style";
 import OrderProduct, { OrderData } from "./OrderProduct";
 
@@ -166,6 +167,7 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
             <ItemProduct key={product.id} className={disabled ? "sold" : ""}>
               <WrapImg>
                 <ImgItem src={col?.image || ""} loading="lazy" />
+                {product.name.includes("Mod Slient") && <TagMod>SLIENT</TagMod>}
               </WrapImg>
 
               <TagItem>

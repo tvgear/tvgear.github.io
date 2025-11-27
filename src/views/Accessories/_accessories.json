@@ -57,8 +57,7 @@
     ],
     "options": [
       { "name": "PRO X 1", "price": 450 },
-      { "name": "PRO X 2 - 1K Hz", "price": 450 },
-      { "name": "PRO X 2 - 8K Hz", "price": 1150 }
+      { "name": "PRO X 2 - 1K Hz", "price": 450 }
     ]
   },
 
@@ -67,7 +66,7 @@
   },
 
   {
-    "visible": true,
+    "visible": false,
     "brand": "pad",
     "tags": ["Pad Control / Không Bảo Hành"],
     "name": "Logitech G640",
@@ -152,7 +151,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "webcam",
     "tags": ["Cắm Dây, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "C925e",

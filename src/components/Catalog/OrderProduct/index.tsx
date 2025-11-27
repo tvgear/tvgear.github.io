@@ -294,8 +294,8 @@ export default function OrderProduct({
                 <InfoOption>
                   <NameInfo>
                     {data?.productName ?? ""}
-                    <span>{data?.productColor ?? ""}</span>
-                    <span>{data?.productOption ?? ""}</span>
+                    <span>Màu : {data?.productColor ?? ""}</span>
+                    <span>Phân Loại : {data?.productOption ?? ""}</span>
                   </NameInfo>
                   <PriceSelectInfo>
                     {(data?.productPriceOption ?? 0).toLocaleString("vi-VN")} đ

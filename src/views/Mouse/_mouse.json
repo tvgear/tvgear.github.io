@@ -68,7 +68,7 @@
     "colors": [
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + Kèm Nút Che", "price": 700 }]
+    "options": [{ "name": "97%", "price": 750 }]
   },
   {
     "visible": true,
@@ -92,7 +92,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "95%", "price": 580 }]
+    "options": [{ "name": "95%", "price": 600 }]
   },
   {
     "visible": true,
@@ -198,11 +198,13 @@
     ],
     "options": [
       { "name": "95%", "price": 2000, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["black"] }
+      { "name": "97% + BOX", "price": 2180, "colors": ["black"] },
+      { "name": "97%, BH 6/26", "price": 2280, "colors": ["black"] },
+      { "name": "New, BH 5/26", "price": 2480, "colors": ["black"] }
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X SuperLight 2 DEX",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -223,7 +225,7 @@
   },
 
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "G304 / Thanh Lý",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -234,7 +236,7 @@
   },
 
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "PRO WL / Thanh Lý",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -244,7 +246,7 @@
     "options": [{ "name": "90%", "price": 850 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "G502 WL - Thanh Lý",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
@@ -531,7 +533,7 @@
     "options": [{ "name": "97% + DOCK SẠC", "price": 1250 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper v2 Pro",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
