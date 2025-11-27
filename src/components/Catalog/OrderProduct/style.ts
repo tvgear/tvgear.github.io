@@ -326,8 +326,8 @@ export const WrapQR = styled.div`
     margin: 10px auto 10px auto;
 `;
 export const ImgQR = styled.img`
-    width: 175px;
-    height: 175px;
+    width: 240px;
+    height: 240px;
     object-fit: contain;
     user-select: none;
     margin: 2.5px;

@@ -228,11 +228,11 @@ export default function OrderProduct({
                      <WrapQR>
                         <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                         <WrapNumberBank>
-                          <NumberBank>9398637036</NumberBank>
+                          <NumberBank>0461000636243</NumberBank>
                           <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                           <CopyNumberBank
                             onClick={() => {
-                              navigator.clipboard.writeText("9398637036");
+                              navigator.clipboard.writeText("0461000636243");
                               setCopied(true);
                               setTimeout(() => setCopied(false), 1000);
                             }}
@@ -254,11 +254,11 @@ export default function OrderProduct({
                      <WrapQR>
                         <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                         <WrapNumberBank>
-                          <NumberBank>9398637036</NumberBank>
+                          <NumberBank>0461000636243</NumberBank>
                           <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                           <CopyNumberBank
                             onClick={() => {
-                              navigator.clipboard.writeText("9398637036");
+                              navigator.clipboard.writeText("0461000636243");
                               setCopied(true);
                               setTimeout(() => setCopied(false), 1000);
                             }}
@@ -359,11 +359,11 @@ export default function OrderProduct({
                           <WrapQR>
                             <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                             <WrapNumberBank>
-                              <NumberBank>9398637036</NumberBank>
+                              <NumberBank>0461000636243</NumberBank>
                               <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                               <CopyNumberBank
                                 onClick={() => {
-                                  navigator.clipboard.writeText("9398637036");
+                                  navigator.clipboard.writeText("0461000636243");
                                   setCopied(true);
                                   setTimeout(() => setCopied(false), 2000);
                                 }}
@@ -391,11 +391,11 @@ export default function OrderProduct({
                           <WrapQR>
                             <ImgQR src="/assets/images/qr/qr-banking.jpg" />
                             <WrapNumberBank>
-                              <NumberBank>9398637036</NumberBank>
+                              <NumberBank>0461000636243</NumberBank>
                               <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
                               <CopyNumberBank
                                 onClick={() => {
-                                  navigator.clipboard.writeText("9398637036");
+                                  navigator.clipboard.writeText("0461000636243");
                                   setCopied(true);
                                   setTimeout(() => setCopied(false), 1000);
                                 }}
