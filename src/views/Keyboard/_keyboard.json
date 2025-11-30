@@ -20,7 +20,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + Box", "price": 980 }
+      { "name": "97% + Box", "price": 950 }
     ]
   },
   {
@@ -32,7 +32,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% Brown/Red - Lỗi LED", "price": 880 }
+      { "name": "97% Linear - Lỗi LED", "price": 880 }
     ]
   },
   {
@@ -65,11 +65,9 @@
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "PRO X TKL Rapid",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp", "priceAdd": 0 },
       { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "New Seal", "price": 2780,  "colors" : ["black"] },
      { "name": "97%", "price": 2580,  "colors" : ["deeppink"] }
     ]
   },
@@ -94,7 +92,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%, Lỗi LED + BOX", "price": 1780 },
+      { "name": "95% - Lỗi LED", "price": 1780 },
       { "name": "95% + BOX", "price": 1880 }
     ]
   },
@@ -109,7 +107,6 @@
     ],
     "options": [
      { "name": "97% + BOX", "price": 1880, "colors" : ["black"] },
-     { "name": "97% + BOX, BH 9/27", "price": 2480, "colors" : ["black"] },
      { "name": "97% + BOX", "price": 1880, "colors" : ["deeppink"] }
     ]
   },
@@ -135,8 +132,8 @@
     ],
     "options": [
       { "name": "97%, BH 4/27", "price": 1950 },
-     { "name": "New Open Box", "price": 2000 },
-     { "name": "New Seal", "price": 2100 }
+      { "name": "New Open Box", "price": 2000 },
+      { "name": "New Seal", "price": 2100 }
     ]
   }
 ]

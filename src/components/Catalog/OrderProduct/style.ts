@@ -308,12 +308,12 @@ export const ProfitItem = styled.div`
     background: rgba(224,55,43);
     color : #FFF;
     position: absolute;
-    top: -5px;
-    right : -3.5px;
-    font-size: 0.9rem;
-    line-height: calc(0.9rem * 1.25);
+    top: -1px;
+    right : -1px;
+    font-size: 1rem;
+    line-height: calc(1rem * 1.25);
     font-family: F_MEDIUM;
-    padding: 0.75px 1.5px;
+    padding: 1px 2.5px;
     z-index: 2;
 `
 
@@ -340,15 +340,15 @@ export const WrapContent = styled.div`
     display: flex;
     flex-direction: column;
     span {
+       
         &.payment {
             color : #6bff8a;
         }
         &.note {
-            font-size: 1.2rem;
-            line-height: calc(1.2rem * 1.5);
+            font-size: 1.1rem;
+            line-height: calc(1.1rem * 1.5);
             margin: -2px 0px 5px 0px;
-            text-transform: uppercase;
-            color : #AAA;
+            color : #BBB;
         }
         text-transform: uppercase;
         margin: 0px 0px 7.5px 0px;

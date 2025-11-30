@@ -92,7 +92,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "95%", "price": 600 }]
+    "options": [{ "name": "95%", "price": 590 }]
   },
   {
     "visible": true,
@@ -103,6 +103,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
     ],
     "options": [
+      { "name": "95%", "price": 950 },
       { "name": "97%", "price": 1080 }
     ]
   },
@@ -199,9 +200,7 @@
     "options": [
       { "name": "95%", "price": 2000, "colors": ["black"] },
       { "name": "97% + BOX", "price": 2180, "colors": ["black"] },
-      { "name": "97%, BH 6/26", "price": 2280, "colors": ["black"] },
-      { "name": "New, BH 5/26", "price": 2480, "colors": ["black"] }
-    ]
+      { "name": "97%, BH 6/26", "price": 2280, "colors": ["black"] }]
   },
   {
     "visible": false,
@@ -359,8 +358,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m550-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 350 },
-      { "name": "97% + Logi Bolt", "price": 430 }
+      { "name": "97%", "price": 430 }
     ]
   },
    {
@@ -372,9 +370,9 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m650-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "[M] 97%", "price": 450 },
-      { "name": "[L] 97%", "price": 450 },
-      { "name": "[M] New No Box", "price": 550 }
+      { "name": "Size M - 97%", "price": 450 },
+      { "name": "Size L - 97%", "price": 450 },
+      { "name": "Size M - New", "price": 530 }
     ]
   },
   {
@@ -385,7 +383,7 @@
     "colors": [
       { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/lift-pink.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + Logi Bolt", "price": 780 }]
+    "options": [{ "name": "97%", "price": 780 }]
   },
   {
     "visible": false,
@@ -406,7 +404,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95% + Logi Unifying", "price": 1180 }
+      { "name": "95%", "price": 1180 }
     ]
   },
   {
@@ -563,7 +561,7 @@
     "options": [{ "name": "New Seal", "price": 2300 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Basilisk v3 Pro Phantom 35K",
     "tags": ["Không Dây & Bluetooth / Bảo Hành Hãng"],
@@ -624,7 +622,7 @@
     "colors": [
       { "color": "rgba(125,91,124)", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX", "price": 2280 }]
+    "options": [{ "name": "97% + BOX", "price": 2300 }]
   },
   {
     "visible": true,
