@@ -41,6 +41,18 @@
     "visible": true,
     "brand": "logig",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "G535",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g535-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1480,  "colors": ["black"]  }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "G733",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 },
@@ -51,5 +63,6 @@
       { "name": "New, BH 4/27", "price": 1950, "colors": ["black"] }
     ]
   }
+  
 ]
   

@@ -65,10 +65,12 @@
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "PRO X TKL Rapid",
     "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp", "priceAdd": 0 },
       { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97%", "price": 2580,  "colors" : ["deeppink"] }
+     { "name": "97%", "price": 2580,  "colors" : ["deeppink"] },
+     { "name": "97% + BOX", "price": 2680,  "colors" : ["black"] }
     ]
   },
   {
