@@ -133,7 +133,6 @@
       { "color": "black", "labelColor" : "Tím", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, BH 4/27", "price": 1950 },
       { "name": "New Open Box", "price": 2000 },
       { "name": "New Seal", "price": 2100 }
     ]

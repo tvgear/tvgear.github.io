@@ -184,8 +184,7 @@
       { "name": "90%", "price": 1300, "colors": ["white"] },
       { "name": "95%", "price": 1350, "colors": ["black"] },
       { "name": "97%", "price": 1480, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 1580, "colors": ["black"] },
-      { "name": "New, BH 4/27", "price": 1880, "colors": ["black"] }
+      { "name": "97% + BOX", "price": 1580, "colors": ["black"] }
     ]
   },
   {
@@ -198,8 +197,8 @@
     ],
     "options": [
       { "name": "95%", "price": 2000, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["black"] },
-      { "name": "97%, BH 6/26", "price": 2280, "colors": ["black"] }]
+      { "name": "97% + BOX", "price": 2180, "colors": ["black"] }
+    ]
   },
   {
     "visible": false,
@@ -614,7 +613,7 @@
     "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "lamzu",
     "name": "Maya X 8K Purple Shadow",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
