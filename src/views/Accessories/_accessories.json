@@ -174,6 +174,18 @@
       { "name": "97%", "price": 2180 }
     ]
   },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "tags": ["Camera, Mic, HUB, Remote, HD 1080p / Bảo Hành 1 Tháng"],
+    "name": "Conferrence Cam Group Live",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/cglive.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 9950 }
+    ]
+  },
 
   {
     "" : "SOUNDCARD --------------------------------------------------------------------------------------------------------------------"
@@ -238,7 +250,7 @@
   {
     "visible": true,
     "brand": "speaker",
-    "tags": ["Jack 3.5mm & Bluetooth, 40 ~ 80W / Bảo Hành 1 Tháng"],
+    "tags": ["Jack 3.5mm, 40 ~ 80W / Bảo Hành 1 Tháng"],
     "name": "Z407",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
@@ -258,6 +270,19 @@
     ],
     "options": [
       { "name": "97% + BOX", "price": 2580 }
+    ]
+  },
+
+  {
+    "visible": true,
+    "brand": "speaker",
+    "tags": ["Jack 3.5mm, 35W ~ 130W / Bảo Hành 1 Tháng"],
+    "name": "Z625",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z625.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1900 }
     ]
   },
   

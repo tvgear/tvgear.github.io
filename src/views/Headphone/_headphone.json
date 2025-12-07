@@ -46,7 +46,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g535-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1480,  "colors": ["black"]  }
+      { "name": "97%", "price": 1480  }
     ]
   },
   {
@@ -55,12 +55,36 @@
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "G733",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 },
-      { "color": "lightsteelblue", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-lilac.jpg", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 1580,  "colors": ["lightsteelblue"]  },
-      { "name": "New, BH 4/27", "price": 1950, "colors": ["black"] }
+      { "name": "97% + BOX", "price": 1580  }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "PRO 2 Lightspeed",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/pro2-wl-black.webp", "priceAdd": 0 },
+      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/headphones/pro2-wl-white.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%, Bluetooth", "price": 1800 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "G522",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g522-black.webp", "priceAdd": 0 }
+    
+    ],
+    "options": [
+      { "name": "97%", "price": 2280 }
     ]
   }
   

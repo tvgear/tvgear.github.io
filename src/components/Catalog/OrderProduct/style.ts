@@ -100,20 +100,24 @@ export const InfoProduct = styled.div`
     align-items: flex-start;
     border-bottom : 1.25px solid #777;
     border-top : 1.25px solid #777;
+    height: 225px;
 `;
 export const InfoImg = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     background: #151515;
-    width: 150px;
-    height: 120px;
-    padding: 0px 10px;
+    width: 200px;
+    height: 100%;
+    padding : 10px;
+    @media screen and (max-width:  479px) {
+        width: 150px;
+    }
     
 `;
 export const ImgProduct = styled.img`
     width: 100%;
-    height: 120px;
+    height: 100%;
     object-fit: contain;
 `;
 
@@ -121,9 +125,11 @@ export const InfoOption = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100% - 150px);
-    height: 120px;
+    width: calc(100% - 200px);
     padding: 5px 10px 10px 10px;
+     @media screen and (max-width:  479px) {
+        width: calc(100% - 150px);
+    }
 `
 
 export const NameInfo = styled.div`
@@ -142,10 +148,12 @@ export const NameInfo = styled.div`
     }
 `
 export const PriceSelectInfo = styled.div`
-    font-size: 1.6rem;
-    line-height: calc(1.6rem * 1.25);
+    font-size: 2rem;
+    line-height: calc(2rem * 1.25);
     margin: 5px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
     font-family: F_SEMIBOLD;
+  
 `
 
 export const InfoCustomer = styled.div`
@@ -153,7 +161,7 @@ export const InfoCustomer = styled.div`
 `
 
 export const ItemForm = styled.div`
-    /* margin: 0px 0px 5px 0px; */
+   
 `
 export const InputForm = styled.input`
     background: #000;
@@ -301,7 +309,7 @@ export const InfoProductOrder = styled.div`
     display: flex;
     border-bottom : 1.5px solid #777;
     border-top : 1.5px solid #777;
-    
+   
 `
 
 export const ProfitItem = styled.div`
@@ -405,4 +413,10 @@ export const ImgLogo = styled.img`
 
 export const WrapContact = styled.div`
     margin: 0px 0px 0px 0px;
+`
+
+export const TitleProductOrder = styled.div`
+    font-size: 1.25rem;
+    line-height: calc(1.25rem * 1.25);
+    margin: 10px 0px 0px 0px;
 `

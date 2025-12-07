@@ -129,6 +129,19 @@
       { "name": "97%", "price": 1180 }
     ]
   },
+   {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO WL 2",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro2-wl-black.webp", "priceAdd": 0 },
+      { "color": "deeppink", "labelColor": "Hồng", "image": "/assets/images/mouses/gpro2-wl-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1780 }
+    ]
+  },
   {
     "visible": true,
     "brand": "logig",
@@ -147,7 +160,10 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "90%", "price": 1250 }]
+    "options": [
+      { "name": "90%", "price": 1250 },
+      { "name": "97%", "price": 1400 }
+    ]
   },
   
   {
@@ -177,8 +193,8 @@
     "name": "PRO X SuperLight 1",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 },
-      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/gpro-x-spl-white.webp", "priceAdd": 0 }
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/gpro-x-spl-white.webp", "priceAdd": 0 },
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "90%", "price": 1300, "colors": ["white"] },
@@ -193,11 +209,12 @@
     "name": "PRO X SuperLight 2",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 },
+      { "color": "deeppink", "labelColor": "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "95%", "price": 2000, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["black"] }
+      { "name": "97% + BOX", "price": 2180, "colors": ["black", "deeppink"] }
     ]
   },
   {
@@ -211,47 +228,6 @@
     "options": [{ "name": "97%", "price": 2180 }]
   },
  
-
-
-
-
-
-
-  {
-    "" : "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
-  },
-
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "G304 / Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "90%", "price": 390 }]
-  },
-
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "PRO WL / Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "90%", "price": 850 }]
-  },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "G502 WL - Thanh Lý",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "95% + BOX", "price": 1350 }]
-  },
 
 
   {
@@ -601,26 +577,8 @@
   },
 
 
-
-
-
-
-
-
-
-
   {
     "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "lamzu",
-    "name": "Maya X 8K Purple Shadow",
-    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-    "colors": [
-      { "color": "rgba(125,91,124)", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97% + BOX", "price": 2300 }]
   },
   {
     "visible": true,

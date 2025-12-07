@@ -106,37 +106,35 @@ export const ImgItem = styled.img`
 `
 
 export const ColorItem = styled.div`
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top : 242.5px;
-    right: 2.5px;
-    @media screen and (max-width : 767px) {
-      top : 192.5px;
-    }
+  margin: 5px 0px 0px 0px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 `
 
 export const ItemColorSelect = styled.div`
-    width: 24px;
-    height: 24px;
-    margin: 0px 6.5px 0px 0px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid rgba(40,40,40);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: fit-content;
+  padding: 3.5px 10px;
+  margin: 0px 5px 5px 0px;
+  height: fit-content;
+  background: #111;
+  border: 1px solid #555;
+  font-family: F_MEDIUM;
+  font-size: 1.4rem; 
+  line-height: calc(1.4rem * 1.25);
+  cursor: pointer;
+  transition: 0.4s all;
+  white-space: nowrap;
+  user-select: none;
+  &.active {
+    background: #FFF;
+    color : #000;
     transition: 0.4s all;
-    &.active {
-        border: 2px solid #FFF;
-        &:hover {
-            border: 2px solid #FFF;
-        }
-    }
-    &:hover {
-        border: 2px solid rgba(60,60,60);
-        transition: 0.4s all;
-    }
+  }
+  @media screen and (max-width : 767px) {
+    font-size: 1.25rem;
+    line-height: calc(1.25rem * 1.25);
+  }
 `
 
 export const ColorProduct = styled.div`
@@ -169,8 +167,8 @@ export const TextTag = styled.div`
 export const NameItem = styled.div`
   color : #FFF;
   font-family: F_BOLD;
-  font-size: 2rem;
-  line-height: calc(2rem * 1.25);
+  font-size: 1.8rem;
+  line-height: calc(1.8rem * 1.25);
   width: 100%;
   margin: 2.5px 0px 0px 0px;
   padding: 0px 10px;
@@ -186,8 +184,7 @@ export const NameItem = styled.div`
 `
 
 export const OptionItem = styled.div`
-  margin: 10px 0px 10px 0px;
-  padding: 0px 10px;
+  margin: 5px 0px 0px 0px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -195,7 +192,7 @@ export const OptionItem = styled.div`
 
 export const ItemOptionSelect = styled.div`
   width: fit-content;
-  padding: 5px 12.5px;
+  padding: 3.5px 10px;
   margin: 0px 5px 5px 0px;
   height: fit-content;
   background: #111;
@@ -209,7 +206,6 @@ export const ItemOptionSelect = styled.div`
   user-select: none;
   &.active {
     background: #FFF;
-    /* border: 1.5px solid #FFF; */
     color : #000;
     transition: 0.4s all;
   }
@@ -251,7 +247,7 @@ export const ButtonLinkItem = styled.div`
     rgba(200, 210, 250, 1) 50%,
     rgba(230, 223, 248, 1) 100%
   );
-  height: 35px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,10 +287,11 @@ export const BuyItem = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0px 10px;
+  margin: 10px 0px 0px 0px;
 `;
 export const PriceOptionSelect = styled.div`
-  font-size: 2rem;
-  line-height: calc(2rem * 1.25);
+  font-size: 1.8rem;
+  line-height: calc(1.8rem * 1.25);
   font-family: F_SEMIBOLD;
   @media screen and (max-width : 767px) {
     font-size: 1.85rem;

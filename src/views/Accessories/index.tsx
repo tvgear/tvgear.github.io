@@ -12,8 +12,6 @@ const brands = [
   { key: "webcam",   label: "Webcam" },
   { key: "speaker",   label: "Loa" },
   { key: "soundcard", label: "SoundCard" },
-  // { key: "controller",   label: "Tay Cầm" },
-  // { key: "pen", label : "Bút Trình Chiếu"  },
   { key: "extender", label : "Đầu Chuyển" },
   { key: "cable", label : "Dây Sạc"  },
 ] as const satisfies ReadonlyArray<BrandT<AccessoriesBrand>>;

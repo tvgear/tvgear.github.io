@@ -130,7 +130,7 @@
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G515 TKL",
     "colors": [
-      { "color": "black", "labelColor" : "Tím", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "New Open Box", "price": 2000 },

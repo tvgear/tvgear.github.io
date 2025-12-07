@@ -20,7 +20,7 @@ const dataMenu = [
   { name: "Phụ Kiện", link: "/accessories" },
 ];
 
-const Header: React.FC = () => {
+const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   const router = useRouter();
   const menuRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -36,6 +36,14 @@ const Header: React.FC = () => {
       });
     }
   }, [router.asPath]);
+
+const scrollToTop = () => {
+    contentRef?.current?.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
 
   return (
     <BlockHeader>
@@ -53,10 +61,16 @@ const Header: React.FC = () => {
           {dataMenu.map((menu, index) => {
             const isActive = router.asPath.startsWith(menu.link);
             return (
-              <Link href={menu.link} passHref key={index}>
+              <Link href={menu.link} passHref key={index}  onClick={scrollToTop}>
                 <ItemMenu
                   className={isActive ? "active" : ""}
                   ref={(el) => (menuRefs.current[index] = el)}
+                  onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
                 >
                   <NameMenu>{menu.name}</NameMenu>
                 </ItemMenu>

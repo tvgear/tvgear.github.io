@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import Header from "@/layouts/Header";
 import Loading from "./Loading";
 import styled from "styled-components";
@@ -68,12 +68,15 @@ const Layout = ({ children }: LayoutProps) => {
       }, 3500)
     );
   }, []);
+
+  const contentRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
      <Loading showLoading={isLoading}  />
      <WrapWeb>
-      <Header />
-      <Content>
+      <Header contentRef={contentRef} />
+      <Content ref={contentRef}>
         {children}
         <Note>Sản phẩm đang được cập nhật. List đầy đủ xem tại Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note>
       </Content>
