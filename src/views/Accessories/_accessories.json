@@ -319,53 +319,6 @@
     "options": [
       { "name": "97%", "price": 1150 }
     ]
-  },
-
-  {
-    "" : "DÂY SẠC --------------------------------------------------------------------------------------------------------------------"
-  },
-
-   {
-    "visible": true,
-    "brand": "cable",
-    "tags": ["Dây Cáp Sạc Kết Nối / Bảo Hành 1 Tháng"],
-    "name": "Dây Sạc USB A - Type C",
-    "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/cable-a-c.png", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%", "price": 140 }
-    ]
-  },
-
-  {
-    "" : "EXTENDER --------------------------------------------------------------------------------------------------------------------"
-  },
-
-  {
-    "visible": true,
-    "brand": "extender",
-    "tags": ["Đầu Chuyển USB / Bảo Hành 1 Tháng"],
-    "name": "Đầu Mở Rộng USB A - Micro",
-    "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/extender-a-micro.png", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%", "price": 70 }
-    ]
-  },
-
-  {
-   "visible": true,
-    "brand": "extender",
-    "tags": ["Đầu Chuyển USB / Bảo Hành 1 Tháng"],
-    "name": "Đầu Mở Rộng USB A - Type C",
-    "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/extender-a-c.png", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%", "price": 120 }
-    ]
-  } 
+  }
 ]
   

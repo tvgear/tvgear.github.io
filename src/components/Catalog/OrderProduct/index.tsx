@@ -444,8 +444,15 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
                       placeholder="Địa Chỉ *"
                     />
                   </ItemForm>
+                  <ItemForm>
+                    <TextAreaForm
+                      value={customerNote}
+                      rows={2}
+                      onChange={(e) => setCustomerNote(e.target.value)}
+                      placeholder="Ghi Chú Cho Đơn Hàng"
+                    />
+                  </ItemForm>
 
-                  {/* PAYMENT METHOD */}
                   <InfoPayment>
                     <TitleOrder className="inForm">
                       <ImgLogo src="/logo.svg" /> Phương Thức Thanh Toán
@@ -531,14 +538,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
 </ContentPayment>
                   </InfoPayment>
 
-                  <ItemForm>
-                    <TextAreaForm
-                      value={customerNote}
-                      rows={2}
-                      onChange={(e) => setCustomerNote(e.target.value)}
-                      placeholder="Ghi Chú Cho Đơn Hàng"
-                    />
-                  </ItemForm>
+                  
 
                   {errorMsg && <FormError>{errorMsg}</FormError>}
 

@@ -5,11 +5,9 @@
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G335",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g335-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/headphones/g335-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%, Thiếu Dây Chia", "price": 550, "colors" : ["black"] },
       { "name": "97%", "price": 650, "colors" : ["white"] }
     ]
   },
@@ -74,19 +72,21 @@
       { "name": "97%, Bluetooth", "price": 1800 }
     ]
   },
+
+  {
+    "": "TAI LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
+  },
   {
     "visible": true,
-    "brand": "logig",
+    "brand": "logio",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
-    "name": "G522",
+    "name": "H150/H151",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g522-black.webp", "priceAdd": 0 }
-    
+      { "color": "blue", "labelColor" : "Xanh", "image": "/assets/images/headphones/h150.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 2280 }
+      { "name": "97%", "price": 180  }
     ]
   }
-  
 ]
   

@@ -107,7 +107,7 @@ export const InfoImg = styled.div`
     align-items: center;
     justify-content: center;
     background: #151515;
-    width: 200px;
+    width: 180px;
     height: 100%;
     padding : 10px;
     @media screen and (max-width:  479px) {
@@ -125,7 +125,7 @@ export const InfoOption = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     padding: 5px 10px 10px 10px;
      @media screen and (max-width:  479px) {
         width: calc(100% - 150px);
@@ -151,7 +151,7 @@ export const PriceSelectInfo = styled.div`
     font-size: 2rem;
     line-height: calc(2rem * 1.25);
     margin: 5px 0px 0px 0px;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 5px 0px;
     font-family: F_SEMIBOLD;
   
 `
@@ -161,7 +161,6 @@ export const InfoCustomer = styled.div`
 `
 
 export const ItemForm = styled.div`
-   
 `
 export const InputForm = styled.input`
     background: #000;
@@ -418,5 +417,5 @@ export const WrapContact = styled.div`
 export const TitleProductOrder = styled.div`
     font-size: 1.25rem;
     line-height: calc(1.25rem * 1.25);
-    margin: 10px 0px 0px 0px;
+    margin: 6.5px 0px 0px 0px;
 `
