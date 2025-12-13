@@ -94,7 +94,6 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
   return (
     <>
       <div ref={pageTopRef} />
-
      
       <ListTab>
         {brands.map((brand) => (
@@ -108,7 +107,6 @@ export function Catalog<B extends string>({ brands, products }: CatalogProps<B>)
         ))}
       </ListTab>
 
-     
       <ListProduct ref={listRef}>
         {filtered.map((product) => {
           const col = product.colors[0];

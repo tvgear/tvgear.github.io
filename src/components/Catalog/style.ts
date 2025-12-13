@@ -153,10 +153,11 @@ export const ViewTag = styled.div`
 `
 
 export const TextTag = styled.div`
-    color : #888;
     font-family: F_MEDIUM;
-    font-size: 1.1rem;
-    line-height: calc(1.1rem * 1.25);
+    font-size: 1.2rem;
+    line-height: calc(1.2rem * 1.25);
+    color : #AAA;
+    width: fit-content;
     text-transform : uppercase;
      @media screen and (max-width : 767px) {
       font-size: 1rem;
@@ -167,8 +168,8 @@ export const TextTag = styled.div`
 export const NameItem = styled.div`
   color : #FFF;
   font-family: F_BOLD;
-  font-size: 1.8rem;
-  line-height: calc(1.8rem * 1.25);
+  font-size: 2rem;
+  line-height: calc(2rem * 1.25);
   width: 100%;
   margin: 2.5px 0px 0px 0px;
   padding: 0px 10px;
