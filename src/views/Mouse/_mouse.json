@@ -373,6 +373,16 @@
   {
     "visible": true,
     "brand": "logio",
+    "name": "M720",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m720-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 650 }]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
     "name": "Lift Vertical",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
     "colors": [
