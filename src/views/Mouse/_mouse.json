@@ -126,9 +126,9 @@
     "name": "G309",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g309-white.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g309-black.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 950 }]
+    "options": [{ "name": "97%", "price": 1080 }]
   },
   {
     "visible": true,
@@ -218,7 +218,8 @@
       { "name": "95%", "price": 1350, "colors": ["black"] },
       { "name": "97%", "price": 1480, "colors": ["black"] },
       { "name": "97% + BOX", "price": 1580, "colors": ["black"] },
-      { "name": "New - BH 10/26", "price": 1950, "colors": ["black"] }
+      { "name": "New, BH 5/26", "price": 1850, "colors": ["black"] },
+      { "name": "New, BH 10/26", "price": 1950, "colors": ["black"] }
     ]
   },
   {
@@ -244,8 +245,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 2180 },
-      { "name": "New NoBox, BH 6/26", "price": 2380 }
+      { "name": "97%", "price": 2180 }
     ]
   },
  
@@ -391,7 +391,7 @@
     "options": [{ "name": "97%", "price": 780 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "MX Anywhere 3s",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -399,7 +399,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 1180 }
+      { "name": "97%", "price": 1080 }
     ]
   },
   {
@@ -413,7 +413,7 @@
     "options": [{ "name": "97%", "price": 350 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Master 3s",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -423,7 +423,7 @@
     "options": [{ "name": "97%", "price": 1580 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Anywhere 2s",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -574,6 +574,16 @@
   {
     "visible": true,
     "brand": "lamzu",
+    "name": "Maya 8K Purple Shadow",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 2300 }]
+  },
+  {
+    "visible": true,
+    "brand": "lamzu",
     "name": "Maya X 8K Aimlabs",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
@@ -581,4 +591,5 @@
     ],
     "options": [{ "name": "97%", "price": 2550 }]
   }
+  
 ]

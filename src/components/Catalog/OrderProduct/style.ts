@@ -100,7 +100,7 @@ export const InfoProduct = styled.div`
     align-items: flex-start;
     border-bottom : 1.25px solid #777;
     border-top : 1.25px solid #777;
-    height: 225px;
+    height: 245px;
 `;
 export const InfoImg = styled.div`
     display: flex;

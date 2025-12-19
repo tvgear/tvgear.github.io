@@ -5,7 +5,7 @@
   },
 
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G213",
@@ -37,8 +37,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% Linear - Lỗi LED", "price": 880 },
-      { "name": "97% Clicky", "price": 1080 }
+      { "name": "97% Tactile - Lỗi LED", "price": 880 }
     ]
   },
   {
@@ -51,8 +50,8 @@
       { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97%", "price": 2580,  "colors" : ["deeppink"] },
-     { "name": "97% + BOX", "price": 2680,  "colors" : ["black"] }
+     { "name": "97%", "price": 2550,  "colors" : ["deeppink"] },
+     { "name": "97% + BOX", "price": 2650,  "colors" : ["black"] }
     ]
   },
   {
@@ -77,7 +76,8 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-black.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97% + BOX", "price": 1880, "colors" : ["black"] }
+     { "name": "95%", "price": 1880, "colors" : ["black"] },
+     { "name": "97% + BOX", "price": 2100, "colors" : ["black"] }
     ]
   },
   {
@@ -89,9 +89,8 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1580 },
-      { "name": "New Open Box", "price": 2000 },
-      { "name": "New Seal", "price": 2100 }
+      { "name": "97%, BH 4/27", "price": 1980 },
+      { "name": "New Seal", "price": 2080 }
     ]
   },
 

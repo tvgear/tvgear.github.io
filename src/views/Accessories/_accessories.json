@@ -127,7 +127,7 @@
   },
 
   {
-    "visible": false,
+    "visible": true,
     "brand": "webcam",
     "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C270",
@@ -135,7 +135,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c270.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 290 }
+      { "name": "97%", "price": 280 }
     ]
   },
   {
