@@ -177,7 +177,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%", "price": 1250 },
       { "name": "97%", "price": 1400 }
     ]
   },

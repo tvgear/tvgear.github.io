@@ -46,12 +46,10 @@
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "PRO X TKL Rapid",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp", "priceAdd": 0 },
       { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97%", "price": 2550,  "colors" : ["deeppink"] },
-     { "name": "97% + BOX", "price": 2650,  "colors" : ["black"] }
+     { "name": "97%", "price": 2550,  "colors" : ["deeppink"] }
     ]
   },
   {
@@ -182,7 +180,7 @@
       { "name": "97%", "price": 1150 }
     ]
   },
-   {
+  {
     "visible": true,
     "brand": "logio",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
@@ -192,6 +190,18 @@
     ],
     "options": [
       { "name": "97%", "price": 1080 }
+    ]
+  },
+   {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "MX Keys Mini",
+    "colors": [
+      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/keyboards/mx-keys-mini-white.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1580 }
     ]
   },
 
