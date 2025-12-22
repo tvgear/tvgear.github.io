@@ -116,7 +116,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 1000 },
       { "name": "97%", "price": 1080 }
     ]
   },
