@@ -157,7 +157,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G903 Hero",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -216,8 +216,7 @@
       { "name": "95%", "price": 1350, "colors": ["black"] },
       { "name": "97%", "price": 1480, "colors": ["black"] },
       { "name": "97% + BOX", "price": 1580, "colors": ["black"] },
-      { "name": "New, BH 5/26", "price": 1850, "colors": ["black"] },
-      { "name": "New, BH 10/26", "price": 1950, "colors": ["black"] }
+      { "name": "New, BH 4/27", "price": 1850, "colors": ["black"] }
     ]
   },
   {
