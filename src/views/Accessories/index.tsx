@@ -7,7 +7,6 @@ type AccessoriesBrand = "receiver" | "pad" | "feet" | "webcam" | "soundcard" | "
 
 const brands = [
   { key: "receiver", label: "Đầu Thu" },
-  { key: "pad", label: "Pad" },
   { key: "feet",   label: "Feet" },
   { key: "webcam",   label: "Webcam" },
   { key: "speaker",   label: "Loa" },

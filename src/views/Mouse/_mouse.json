@@ -127,7 +127,10 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g309-black.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 1080 }]
+    "options": [
+      { "name": "95%", "price": 980 },
+      { "name": "97%", "price": 1080 }
+    ]
   },
   {
     "visible": true,
@@ -139,7 +142,8 @@
     ],
     "options": [
       { "name": "95%", "price": 1080 },
-      { "name": "97%", "price": 1180 }
+      { "name": "97%", "price": 1180 },
+      { "name": "97% + Box", "price": 1250 }
     ]
   },
    {
