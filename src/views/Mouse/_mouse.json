@@ -3,7 +3,7 @@
     "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-    "name": "G102/G203",
+    "name": "G102",
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g102-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 }
