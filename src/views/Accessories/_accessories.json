@@ -127,7 +127,7 @@
   },
 
   {
-    "visible": true,
+    "visible": false,
     "brand": "webcam",
     "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
     "name": "C270",
@@ -200,7 +200,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-g433.png", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 390 }
+      { "name": "97%", "price": 380 }
     ]
   },
   
@@ -242,8 +242,8 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z313.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 600 },
-      { "name": "97% + BOX", "price": 680 }
+      { "name": "97%", "price": 550 },
+      { "name": "97% + BOX", "price": 600 }
     ]
   },
 
@@ -256,7 +256,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%, Xước 2 Loa Vệ Tinh", "price": 1100 }
+      { "name": "95%, Xước 2 Loa Vệ Tinh", "price": 1080 }
     ]
   },
 
@@ -282,7 +282,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z625.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1900 }
+      { "name": "97%", "price": 1880 }
     ]
   },
   
