@@ -171,7 +171,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/bcc950.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 2180 }
+      { "name": "97%", "price": 2150 }
     ]
   },
   {
@@ -183,7 +183,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/cglive.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 9950 }
+      { "name": "97%", "price": 9750 }
     ]
   },
 
@@ -256,7 +256,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%, Xước 2 Loa Vệ Tinh", "price": 1080 }
+      { "name": "95%, Xước 2 Loa Vệ Tinh", "price": 1050 }
     ]
   },
 
@@ -282,7 +282,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z625.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1880 }
+      { "name": "97%", "price": 1850 }
     ]
   },
   

@@ -9,8 +9,8 @@
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%", "price": 200},
-      { "name": "95%", "price": 250}
+      { "name": "90%", "price": 210},
+      { "name": "95%", "price": 240}
     ]
   },
    {
@@ -22,7 +22,7 @@
       { "color": "lightsteelblue", "labelColor": "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 250 }
+      { "name": "95%", "price": 240 }
     ]
   },
   {
@@ -35,7 +35,7 @@
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g102-white.webp", "priceAdd": 0 },
       { "color": "lightsteelblue", "labelColor": "Tím", "image": "/assets/images/mouses/g203-lilac.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "95%", "price": 330 }]
+    "options": [{ "name": "95%", "price": 300 }]
   },
   {
     "visible": true,
@@ -68,7 +68,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-hero.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 650 }]
+    "options": [{ "name": "97%", "price": 600 }]
   },
   {
     "visible": true,
@@ -79,8 +79,7 @@
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g502-x-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + Nút Che", "price": 750 },
-      { "name": "97% + Nút Bấm", "price": 750 }
+      { "name": "97%", "price": 700 }
     ]
   },
   {
@@ -105,10 +104,10 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g304-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/g304-white.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "95%", "price": 590 }]
+    "options": [{ "name": "95%", "price": 580 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G703 Hero",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -128,8 +127,8 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g309-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 980 },
-      { "name": "97%", "price": 1080 }
+      { "name": "95%", "price": 950 },
+      { "name": "97%", "price": 1050 }
     ]
   },
   {
@@ -141,9 +140,9 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-wireless.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 1080 },
-      { "name": "97%", "price": 1180 },
-      { "name": "97% + Box", "price": 1250 }
+      { "name": "95%", "price": 1050 },
+      { "name": "97%", "price": 1150 },
+      { "name": "97% + Box", "price": 1200 }
     ]
   },
    {
@@ -156,8 +155,8 @@
       { "color": "deeppink", "labelColor": "Hồng", "image": "/assets/images/mouses/gpro2-wl-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95%", "price": 1680, "colors": ["black"] },
-      { "name": "97%", "price": 1780, "colors": ["deeppink"] }
+      { "name": "95%", "price": 1650, "colors": ["black"] },
+      { "name": "97%", "price": 1750, "colors": ["deeppink"] }
     ]
   },
   {
@@ -181,7 +180,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g502-wl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1400 }
+      { "name": "97%", "price": 1380 }
     ]
   },
   
@@ -216,11 +215,11 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%", "price": 1300, "colors": ["white"] },
+      { "name": "90%", "price": 1280, "colors": ["white"] },
       { "name": "95%", "price": 1350, "colors": ["black"] },
-      { "name": "97%", "price": 1480, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 1580, "colors": ["black"] },
-      { "name": "New, BH 4/27", "price": 1850, "colors": ["black"] }
+      { "name": "97%", "price": 1450, "colors": ["black"] },
+      { "name": "97% + BOX", "price": 1550, "colors": ["black"] },
+      { "name": "New, BH 4/27", "price": 1800, "colors": ["black"] }
     ]
   },
   {
@@ -233,9 +232,8 @@
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Đầu Thu 1K", "price": 1780, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 2180 },
-      { "name": "New, 8/27", "price": 1780, "colors": ["black"] }
+      { "name": "97%, Đầu Thu 1K", "price": 1750, "colors": ["black"] },
+      { "name": "97% + BOX", "price": 2150 }
     ]
   },
   {
@@ -247,7 +245,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 2180 }
+      { "name": "97%", "price": 2150 }
     ]
   },
  
@@ -277,7 +275,7 @@
       { "color": "gray", "labelColor": "Đen", "image": "/assets/images/mouses/m190-black.webp", "priceAdd": 0 },
       { "color": "rgba(64,98,177)", "labelColor": "Xanh", "image": "/assets/images/mouses/m190-blue.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 130 }]
+    "options": [{ "name": "97%", "price": 120 }]
   },
   {
     "visible": true,
@@ -303,7 +301,7 @@
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/m196-white.webp", "priceAdd": 0 },
       { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/m196-pink.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 180 }]
+    "options": [{ "name": "97%", "price": 170 }]
   },
   {
     "visible": true,
@@ -323,7 +321,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m325-black.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 250 }]
+    "options": [{ "name": "97%", "price": 230 }]
   },
   {
     "visible": true,
@@ -333,7 +331,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m240-black.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "New No Box + Logi Bolt", "price": 280 }]
+    "options": [{ "name": "97%", "price": 230 }, { "name": "New No Box + Logi Bolt", "price": 280 }]
   },
   {
     "visible": true,
@@ -344,7 +342,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m350s-black.webp", "priceAdd": 0 },
       { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/m350s-pink.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 330 }]
+    "options": [{ "name": "95%", "price": 280 }, { "name": "97%", "price": 300 }]
   },
   {
     "visible": true,
@@ -380,7 +378,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m720-black.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 650 }]
+    "options": [{ "name": "97%", "price": 600 }]
   },
   {
     "visible": true,
@@ -388,12 +386,12 @@
     "name": "Lift Vertical",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/lift-pink.webp", "priceAdd": 0 },
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/lift-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/lift-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 780, "colors" : ["pink"] },  
-      { "name": "97%", "price": 850, "colors" : ["white"] }]
+      { "name": "97%", "price": 800, "colors" : ["white"] },  
+      { "name": "New Open Box", "price": 900, "colors" : ["black"] }]
   },
   {
     "visible": true,
@@ -404,7 +402,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1080 }
+      { "name": "97%", "price": 1050 }
     ]
   },
   {
@@ -415,7 +413,7 @@
     "colors": [
       { "color": "rgba(158,196,177)", "labelColor": "Xanh Tím", "image": "/assets/images/mouses/pop-mouse-green.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 350 }]
+    "options": [{ "name": "97%", "price": 330 }]
   },
   {
     "visible": false,
@@ -445,7 +443,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-master-2s-black.png", "priceAdd": 0 }
     ],
-    "options": [{ "name": "95% - Bluetooth", "price": 750 }]
+    "options": [{ "name": "95% - Bluetooth", "price": 700 }]
   },
 
 
@@ -462,7 +460,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-v3.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 750 }]
+    "options": [{ "name": "97%", "price": 700 }]
   },
   {
     "visible": false,
@@ -493,7 +491,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-ultimate.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + DOCK SẠC", "price": 1250 }
+      { "name": "97% + DOCK SẠC", "price": 1200 }
     ]
   },
   {
@@ -505,7 +503,7 @@
       { "color": "white", "labelColor": "Đen", "image": "/assets/images/mouses/viper-ultimate-white.png", "priceAdd": 0 },
       { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/viper-ultimate-pink.png", "priceAdd": 0 }
     ],
-    "options": [{ "name": "90% + DOCK SẠC", "price": 1150 },{ "name": "97% + DOCK SẠC", "price": 1250 }]
+    "options": [{ "name": "90% + DOCK SẠC", "price": 1100 },{ "name": "97% + DOCK SẠC", "price": 1200 }]
   },
   {
     "visible": false,
@@ -525,7 +523,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v3-pro.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "New", "price": 2180 }]
+    "options": [{ "name": "New", "price": 2150 }]
   },
    {
     "visible": false,
@@ -584,7 +582,7 @@
     "colors": [
       { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 2300 }]
+    "options": [{ "name": "97%", "price": 2280 }]
   },
   {
     "visible": true,
@@ -594,7 +592,7 @@
     "colors": [
       { "color": "rgba(142,229,221)", "labelColor": "Xanh", "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 2550 }]
+    "options": [{ "name": "97%", "price": 2480 }]
   }
   
 ]

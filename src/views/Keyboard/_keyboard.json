@@ -25,7 +25,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 950 }
+      { "name": "97% + BOX", "price": 900 }
     ]
   },
   {
@@ -37,11 +37,11 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% Tactile - Lỗi LED", "price": 880 }
+      { "name": "97% Tactile - Lỗi LED", "price": 850 }
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "PRO X TKL Rapid",
@@ -61,7 +61,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "95% - Lỗi LED", "price": 1780 }
+      { "name": "97% - Lỗi LED", "price": 1750 }
       
     ]
   },
@@ -74,7 +74,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-black.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97% + BOX", "price": 2100, "colors" : ["black"] }
+     { "name": "97% + BOX", "price": 1850, "colors" : ["black"] }
     ]
   },
   {
@@ -86,8 +86,9 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, BH 4/27", "price": 1980 },
-      { "name": "New Seal", "price": 2080 }
+      { "name": "97%, BH 4/27", "price": 1900 },
+      { "name": "New Seal", "price": 2080 },
+      { "name": "New Seal, BH 1/27", "price": 2250 }
     ]
   },
 
@@ -116,7 +117,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k250.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 350 }
+      { "name": "97%", "price": 330 }
     ]
   },
   {
@@ -140,7 +141,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k650.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 650 }
+      { "name": "97%", "price": 600 }
     ]
   },
   {
@@ -152,7 +153,7 @@
       { "color": "pink", "labelColor" : "Hồng Trắng", "image": "/assets/images/keyboards/pop-icon-keys.png", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 650 }
+      { "name": "97%", "price": 600 }
     ]
   },
    {
@@ -164,7 +165,7 @@
       { "color": "violet", "labelColor" : "Tím Trắng", "image": "/assets/images/keyboards/pop-keys.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1150 }
+      { "name": "97%", "price": 1100 }
     ]
   },
   {
@@ -176,7 +177,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k950.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1080 }
+      { "name": "97%", "price": 1050 }
     ]
   },
    {
@@ -229,7 +230,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk345.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 380 }
+      { "name": "97%", "price": 360 }
     ]
   }
 
