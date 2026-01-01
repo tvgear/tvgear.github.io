@@ -141,8 +141,7 @@
     ],
     "options": [
       { "name": "95%", "price": 1050 },
-      { "name": "97%", "price": 1150 },
-      { "name": "97% + Box", "price": 1200 }
+      { "name": "97%", "price": 1150 }
     ]
   },
    {

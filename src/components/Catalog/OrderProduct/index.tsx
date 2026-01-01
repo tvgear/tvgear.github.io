@@ -40,7 +40,6 @@ import {
   WrapQR,
 } from "./style";
 
-// IMPORT UI màu + option từ style Catalog
 import {
   ColorItem,
   ItemColorSelect,
@@ -50,7 +49,6 @@ import {
 
 import { Note } from "@/layouts";
 
-// NEW OrderData (theo Catalog mới)
 export type ProductColor = {
   color: string;
   labelColor?: string;
@@ -74,7 +72,7 @@ export type OrderData = {
 };
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbyESvm823dSEXIiJq6Po4EupnxxYHKq4bz_XNGXPQRo-4lgqAa_lKS0Kv2V_MFT0Cu8/exec";
+  "https://script.google.com/macros/s/AKfycbwxl0f4cahfRxZcMDM-o7dYk8HVEL-WLwb0jtX4wUaQ2EF53kNw46gJ6jrvZ3BhvsgS/exec";
 
 type OrderProductProps = {
   open: boolean;
