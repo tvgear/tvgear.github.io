@@ -211,14 +211,16 @@
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/gpro-x-spl-white.webp", "priceAdd": 0 },
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 },
+      { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/gpro-x-spl-pink.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "90%", "price": 1280, "colors": ["white"] },
       { "name": "95%", "price": 1350, "colors": ["black"] },
       { "name": "97%", "price": 1450, "colors": ["black"] },
       { "name": "97% + BOX", "price": 1550, "colors": ["black"] },
-      { "name": "New, BH 4/27", "price": 1800, "colors": ["black"] }
+      { "name": "New, BH 4/27", "price": 1800, "colors": ["black"] },
+      { "name": "97%", "price": 1450, "colors": ["pink"] }
     ]
   },
   {
@@ -425,16 +427,6 @@
     "options": [{ "name": "97%", "price": 1580 }]
   },
   {
-    "visible": false,
-    "brand": "logio",
-    "name": "MX Anywhere 2s",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-2s-black.png", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "95%", "price": 780 }]
-  },
-  {
     "visible": true,
     "brand": "logio",
     "name": "MX Master 2s",
@@ -460,16 +452,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-v3.webp", "priceAdd": 0 }
     ],
     "options": [{ "name": "97%", "price": 700 }]
-  },
-  {
-    "visible": false,
-    "brand": "razer",
-    "name": "DA v3",
-    "tags": ["Có Dây / Bảo Hành 3 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v3.png", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97%", "price": 950 }]
   },
   {
     "visible": true,
@@ -534,37 +516,6 @@
     ],
     "options": [{ "name": "97%", "price": 2380 }]
   },
-  {
-    "visible": false,
-    "brand": "razer",
-    "name": "Pro Click v2 Vertical",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/pro-click-v2-vertical.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "New Seal", "price": 2300 }]
-  },
-  {
-    "visible": false,
-    "brand": "razer",
-    "name": "Basilisk v3 Pro Phantom 35K",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành Hãng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/basilisk-v3-pro-phantom.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97% + BOX, BH 3/27", "price": 2900 }]
-  },
-  {
-    "visible": false,
-    "brand": "razer",
-    "name": "DA v4 Pro",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 9-27 PV"],
-    "colors": [
-      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/da-v4-pro-white.png", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97% + BOX", "price": 3280 }]
-  },
-
 
   {
     "": "PULSAR --------------------------------------------------------------------------------------------------------------------"
