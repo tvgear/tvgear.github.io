@@ -72,7 +72,7 @@ export type OrderData = {
 };
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbwxl0f4cahfRxZcMDM-o7dYk8HVEL-WLwb0jtX4wUaQ2EF53kNw46gJ6jrvZ3BhvsgS/exec";
+  "https://script.google.com/macros/s/AKfycbyOn6VkpfA_YQk0Zxp4yPYmgVu8UUARurN6mX9m-_7nze0sI-v5VUD1smCyuTPWbrAA/exec";
 
 type OrderProductProps = {
   open: boolean;
