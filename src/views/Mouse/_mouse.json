@@ -268,7 +268,7 @@
     "options": [{ "name": "97%", "price": 90 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "M190",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
