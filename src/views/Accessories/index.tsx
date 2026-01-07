@@ -3,12 +3,13 @@ import { BlockAccessories } from "@/views/Accessories/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
 import productsJson from "./_accessories.json";
 
-type AccessoriesBrand = "receiver" | "pad" | "feet" | "webcam" | "soundcard" | "speaker" | "controller" | "pen" | "extender" | "cable";
+type AccessoriesBrand = "receiver" | "pad" | "feet" | "webcam" | "soundcard" | "speaker" | "controller" | "pen" | "extender" | "cable" | "micro";
 
 const brands = [
   { key: "receiver", label: "Đầu Thu" },
   { key: "feet",   label: "Feet" },
   { key: "webcam",   label: "Webcam" },
+  { key: "micro",   label: "Micro" },
   { key: "speaker",   label: "Loa" },
   { key: "soundcard", label: "SoundCard" },
 ] as const satisfies ReadonlyArray<BrandT<AccessoriesBrand>>;

@@ -17,7 +17,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G413 SE TKL",
@@ -231,6 +231,54 @@
     ],
     "options": [
       { "name": "97%", "price": 360 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "MK295",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk295.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 380 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "MK370",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk370.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "New", "price": 600 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "POP Icon Combo",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pop-icon-combo-pink.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 900 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "MK950",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk950.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1350 }
     ]
   }
 

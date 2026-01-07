@@ -115,7 +115,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1080 }
+      { "name": "95%", "price": 980 }
     ]
   },
   {
@@ -391,8 +391,8 @@
       { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/lift-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 800, "colors" : ["white"] },  
-      { "name": "New Open Box", "price": 900, "colors" : ["black"] }]
+      { "name": "97%", "price": 800, "colors" : ["white"] }
+    ]
   },
   {
     "visible": true,
@@ -403,7 +403,8 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1050 }
+      { "name": "95%", "price": 1050 },
+      { "name": "97%", "price": 1150 }
     ]
   },
   {
@@ -417,7 +418,7 @@
     "options": [{ "name": "97%", "price": 330 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "MX Master 3s",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -496,7 +497,17 @@
     ],
     "options": [{ "name": "97% + Dây Sạc Ngoài", "price": 1480 }]
   },
-   {
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "DA v2 Pro",
+    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v2-pro-black.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "98% + BOX", "price": 1100 }]
+  },
+  {
     "visible": true,
     "brand": "razer",
     "name": "DA v3 Pro",

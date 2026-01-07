@@ -80,13 +80,90 @@
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
     "name": "H150/H151",
     "colors": [
       { "color": "blue", "labelColor" : "Xanh", "image": "/assets/images/headphones/h150.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 170  }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "H340",
+    "colors": [
+      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h340.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 250  }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "H370",
+    "colors": [
+      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h370.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 330  }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "H390",
+    "colors": [
+      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h390.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 430  }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "H540",
+    "colors": [
+      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h540.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 480  }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "name": "H570e",
+    "colors": [
+      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h570e.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 580  }
+    ]
+  },
+
+  {
+    "": "TAI RAZER --------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "visible": true,
+    "brand": "razer",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "Barracuda X Chroma Phantom",
+    "colors": [
+      { "color": "green", "labelColor" : "Xanh Đen", "image": "/assets/images/headphones/barracuda-x-chroma-phantom.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "98%", "price": 2580  }
     ]
   }
 ]

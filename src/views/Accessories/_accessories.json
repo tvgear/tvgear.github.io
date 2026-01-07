@@ -308,7 +308,7 @@
     "" : "BÚT TRÌNH CHIẾU --------------------------------------------------------------------------------------------------------------------"
   },
 
-   {
+  {
     "visible": false,
     "brand": "pen",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
@@ -318,6 +318,23 @@
     ],
     "options": [
       { "name": "97%", "price": 1150 }
+    ]
+  },
+
+
+  {
+    "" : "MICRO --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "micro",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "HyperX Solocast",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/hyperx-solocast.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "98% + BOX", "price": 650 }
     ]
   }
 ]
