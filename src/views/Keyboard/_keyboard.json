@@ -17,7 +17,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G413 SE TKL",
@@ -25,11 +25,11 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 900 }
+      { "name": "97%", "price": 850 }
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G512 GX",
@@ -86,7 +86,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, BH 4/27", "price": 1900 },
+      { "name": "97%, BH 4/27", "price": 1780 },
       { "name": "New Seal", "price": 2080 },
       { "name": "New Seal, BH 1/27", "price": 2250 }
     ]
@@ -121,12 +121,12 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
-    "name": "K380",
+    "name": "K380s Pebble 2",
     "colors": [
-      { "color": "blue", "labelColor" : "Xanh", "image": "/assets/images/keyboards/k380-blue.png", "priceAdd": 0 }
+      { "color": "blue", "labelColor" : "Xanh", "image": "/assets/images/keyboards/k380s-pebble-2.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 480 }
@@ -159,7 +159,7 @@
    {
     "visible": true,
     "brand": "logio",
-    "tags": ["Không Dyâ & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "POP Keys",
     "colors": [
       { "color": "violet", "labelColor" : "Tím Trắng", "image": "/assets/images/keyboards/pop-keys.webp", "priceAdd": 0 }
