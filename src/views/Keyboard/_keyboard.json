@@ -13,7 +13,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g213.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Giả Cơ", "price": 550 }
+      { "name": "97%, Giả Cơ", "price": 580 }
     ]
   },
   {
@@ -25,7 +25,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 850 }
+      { "name": "97%", "price": 880 }
     ]
   },
   {
@@ -165,7 +165,7 @@
       { "color": "violet", "labelColor" : "Tím Trắng", "image": "/assets/images/keyboards/pop-keys.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1100 }
+      { "name": "97%", "price": 1150 }
     ]
   },
   {
