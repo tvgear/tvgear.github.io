@@ -465,7 +465,7 @@
     "options": [{ "name": "97%", "price": 1580 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Master 2s",
     "tags": ["Bluetooth / Bảo Hành 3 Tháng"],
