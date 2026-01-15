@@ -86,7 +86,6 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, BH 4/27", "price": 1780 },
       { "name": "New Seal", "price": 2080 },
       { "name": "New Seal, BH 1/27", "price": 2250 }
     ]
@@ -121,7 +120,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
     "name": "K380s Pebble 2",
@@ -169,7 +168,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "K950",

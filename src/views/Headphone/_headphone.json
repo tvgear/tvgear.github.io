@@ -65,12 +65,10 @@
     "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
     "name": "PRO 2 WL Lightspeed",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/pro2-wl-black.webp", "priceAdd": 0 },
       { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/headphones/pro2-wl-white.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Bluetooth", "price": 1750 },
-      { "name": "New Open Box", "price": 3750, "colors" : ["black"] }
+      { "name": "97%, Bluetooth", "price": 1650 }
     ]
   },
 
