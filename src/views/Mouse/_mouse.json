@@ -245,8 +245,7 @@
       { "name": "90%", "price": 1850, "colors": ["white"] },
       { "name": "95%", "price": 1950, "colors": ["black"] },
       { "name": "97% + BOX", "price": 2150, "colors": ["black", "white"] },
-      { "name": "97%", "price": 2150, "colors": ["pink"] },
-      { "name": "97% + BOX", "price": 2250, "colors": ["pink"] }
+      { "name": "97%", "price": 2150, "colors": ["pink"] }
     ]
   },
   {
@@ -263,7 +262,7 @@
     ]
   },
    {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X SuperLight 2c",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -540,7 +539,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v2-pro-black.png", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX", "price": 1150 }]
+    "options": [{ "name": "97% + BOX, BH 3/26", "price": 1150 }]
   },
   {
     "visible": false,
