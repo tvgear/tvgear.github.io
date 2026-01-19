@@ -246,9 +246,9 @@
       { "name": "97%, Đầu Thu 1K", "price": 1750, "colors": ["black"] },
       { "name": "95%", "price": 1950, "colors": ["black"] },
       { "name": "90%", "price": 1850, "colors": ["white"] },
-      { "name": "97% + BOX", "price": 2150, "colors": ["black", "white"] },
-      { "name": "95%", "price": 2080, "colors": ["pink"] },
-      { "name": "97%", "price": 2150, "colors": ["pink"] }
+      { "name": "95% + BOX", "price": 2150, "colors": ["black", "white"] },
+      { "name": "97% + BOX", "price": 2180, "colors": ["black"] },
+      { "name": "95%", "price": 2080, "colors": ["pink"] }
     ]
   },
   {
