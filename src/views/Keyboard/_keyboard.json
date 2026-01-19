@@ -279,6 +279,36 @@
     "options": [
       { "name": "97%", "price": 1350 }
     ]
+  },
+
+
+  {
+    "": "HE --------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "visible": true,
+    "brand": "he",
+    "tags": ["Không Dây / Bảo Hành 7 Ngày"],
+    "name": "ATK RS7 RGB",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen / Tím", "image": "/assets/images/keyboards/atk-rs7-rgb.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1600 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "he",
+    "tags": ["Không Dây / Bảo Hành 7 Ngày"],
+    "name": "Sikakeyb Castle HM80",
+    "colors": [
+      { "color": "white", "labelColor" : "Trắng / Xám", "image": "/assets/images/keyboards/sikakeyb-castle-hm80.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 2300 }
+    ]
   }
 
 ]
