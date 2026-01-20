@@ -591,7 +591,9 @@
     "colors": [
       { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX, BH 4/26", "price": 2000 }]
+    "options": [
+      { "name": "97% + BOX, BH 4/26", "price": 2100 }, 
+      { "name": "97% + BOX, BH 9/27", "price": 2380 }]
   },
   {
     "visible": true,

@@ -163,6 +163,23 @@
     "options": [
       { "name": "98%", "price": 2580  }
     ]
+  },
+
+  {
+    "": "TAI LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "visible": true,
+    "brand": "hyperx",
+    "tags": ["Có Dây / Bảo Hành Hãng"],
+    "name": "Hyper X Cloud 3",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/cloud-3.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "98% + BOX, BH 6/27", "price": 1650  }
+    ]
   }
 ]
   
