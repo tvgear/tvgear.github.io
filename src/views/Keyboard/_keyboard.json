@@ -17,7 +17,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G413 SE TKL",
@@ -25,11 +25,23 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 880 }
+      { "name": "97%", "price": 850 }
     ]
   },
   {
-    "visible": false,
+    "visible": true,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G413 SE Full Size",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-fs.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 850 }
+    ]
+  },
+  {
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G512 GX",
@@ -37,7 +49,19 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% Tactile - Lỗi LED", "price": 850 }
+      { "name": "97% Red + BOX", "price": 980 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "name": "G813",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g813.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% Clicky", "price": 1400 }
     ]
   },
   {
