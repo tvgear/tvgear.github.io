@@ -192,7 +192,7 @@
   },
   
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G502 X WL",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -416,7 +416,7 @@
     "options": [{ "name": "97%", "price": 650 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "Lift Vertical",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
@@ -540,14 +540,14 @@
     "options": [{ "name": "97% + BOX, BH 3/26", "price": 1150 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
     "name": "DA v3 Pro",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v3-pro.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "New", "price": 2150 }]
+    "options": [{ "name": "98% + BOX, BH 6/27", "price": 2000 }]
   },
    {
     "visible": false,
@@ -568,7 +568,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v3-pro-faker.jpg", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX, BH 11/26", "price": 2680 }]
+    "options": [{ "name": "98% + BOX, BH 11/26", "price": 2680 }]
   },
 
   {
@@ -581,7 +581,7 @@
   {
     "visible": true,
     "brand": "lamzu",
-    "name": "Maya 8K Purple Shadow",
+    "name": "Maya X 8K Purple Shadow",
     "tags": ["Không Dây / Bảo Hành Hãng"],
     "colors": [
       { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
