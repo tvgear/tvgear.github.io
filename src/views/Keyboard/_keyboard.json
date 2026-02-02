@@ -110,7 +110,6 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "New Seal", "price": 2080 },
       { "name": "New Seal, BH 1/27", "price": 2250 }
     ]
   },

@@ -59,6 +59,7 @@
       { "name": "97%", "price": 1400  }
     ]
   },
+ 
   {
     "visible": true,
     "brand": "logig",
@@ -69,6 +70,18 @@
     ],
     "options": [
       { "name": "97%, Bluetooth", "price": 1650 }
+    ]
+  },
+    {
+    "visible": true,
+    "brand": "logig",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "G522",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g522-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97% + BOX", "price": 2380  }
     ]
   },
 
@@ -180,6 +193,21 @@
     "options": [
       { "name": "98% + BOX, BH 6/27", "price": 1650  }
     ]
+  },
+
+  {
+    "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "G733",
+    "tags": ["Không Dây / Bao Test 3 Ngày"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "95% + BOX, Mic Bị Tróc", "price": 1300 }]
   }
 ]
   

@@ -3,12 +3,13 @@ import { BlockHeadphone } from "@/views/Headphone/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
 import productsJson from "./_headphone.json";
 
-type HeadphoneBrand = "logig" | "logio" | "razer" | "hyperx" | "steelseries";
+type HeadphoneBrand = "logig" | "logio" | "razer" | "hyperx" | "liquidation";
 
 const brands = [
   { key: "logig", label: "Logitech G"},
   { key: "logio", label: "Logi Văn Phòng"},
   // { key: "hyperx", label: "Hyper X"},
+  { key: "liquidation", label: "Hàng Thanh Lý"},
 ] as const satisfies ReadonlyArray<BrandT<HeadphoneBrand>>;
 
 const products = (productsJson as any[])

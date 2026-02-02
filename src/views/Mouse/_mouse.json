@@ -192,7 +192,7 @@
   },
   
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "G502 X WL",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -242,12 +242,13 @@
     ],
     "options": [
       { "name": "97%, Đầu Thu 1K", "price": 1750, "colors": ["black"] },
-      { "name": "90%", "price": 1850, "colors": ["white"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["black", "white"] }
+      { "name": "90% + BOX", "price": 1850, "colors": ["white"] },
+      { "name": "95%", "price": 2080, "colors": ["black"] },
+      { "name": "97% + BOX", "price": 2180, "colors": ["black"] }
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X SuperLight 2 DEX",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -586,18 +587,17 @@
       { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX, BH 4/26", "price": 2080 }, 
-      { "name": "97% + BOX, BH 9/27", "price": 2380 }]
+      { "name": "97% + BOX, BH 4/26", "price": 2080 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "lamzu",
     "name": "Maya X 8K Fnatic",
     "tags": ["Không Dây / Bảo Hành Hãng"],
     "colors": [
       { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-fnatic.png", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97% + BOX, BH 9/27", "price": 2450 }]
+    "options": [{ "name": "97% + BOX, BH 9/27", "price": 2380 }]
   },
   {
     "visible": true,
@@ -608,6 +608,20 @@
       { "color": "rgba(142,229,221)", "labelColor": "Xanh", "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp", "priceAdd": 0 }
     ],
     "options": [{ "name": "97%", "price": 2500 }]
+  },
+
+  {
+    "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Razer Viper V2 Pro",
+    "tags": ["Không Dây / Bao Test 3 Ngày"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "95%, Receiver + Sạc", "price": 900 }]
   }
-  
 ]
