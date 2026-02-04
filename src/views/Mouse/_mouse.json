@@ -603,11 +603,11 @@
     "visible": true,
     "brand": "lamzu",
     "name": "Maya X 8K Aimlabs",
-    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
+    "tags": ["Không Dây / Bảo Hành Hãng"],
     "colors": [
       { "color": "rgba(142,229,221)", "labelColor": "Xanh", "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "97%", "price": 2500 }]
+    "options": [{ "name": "97%, BH 4/26", "price": 2500 }]
   },
 
   {

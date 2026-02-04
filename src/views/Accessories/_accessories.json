@@ -50,8 +50,8 @@
   {
     "visible": true,
     "brand": "receiver",
-    "tags": ["Chuột Gaming Dòng G PRO X / Bảo Hành 1 Tháng"],
-    "name": "Đầu Thu Logi PRO X",
+    "tags": ["Chuột Gaming Dòng PRO, PRO X / Bảo Hành 1 Tháng"],
+    "name": "Đầu Thu Logi PRO / PRO X",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-prox1.webp", "priceAdd": 0 }
     ],
@@ -276,13 +276,26 @@
   {
     "visible": false,
     "brand": "speaker",
-    "tags": ["Jack 3.5mm, 35W ~ 130W / Bảo Hành 1 Tháng"],
+    "tags": ["35W ~ 130W, 3.5mm / Bảo Hành 1 Tháng"],
     "name": "Z625",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z625.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 1850 }
+    ]
+  },
+
+  {
+    "visible": true,
+    "brand": "speaker",
+    "tags": ["500W ~ 1000W, 3.5mm / Bảo Hành 1 Tháng"],
+    "name": "Z906",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z906.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "New", "price": 4950 }
     ]
   },
   
