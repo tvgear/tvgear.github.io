@@ -81,7 +81,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g522-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 2380  }
+      { "name": "97%", "price": 1680  }
     ]
   },
 

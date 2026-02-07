@@ -8,7 +8,7 @@ type HeadphoneBrand = "logig" | "logio" | "razer" | "hyperx" | "liquidation";
 const brands = [
   { key: "logig", label: "Logitech G"},
   { key: "logio", label: "Logi Văn Phòng"},
-  // { key: "hyperx", label: "Hyper X"},
+  { key: "hyperx", label: "Hyper X"},
   { key: "liquidation", label: "Hàng Thanh Lý"},
 ] as const satisfies ReadonlyArray<BrandT<HeadphoneBrand>>;
 
