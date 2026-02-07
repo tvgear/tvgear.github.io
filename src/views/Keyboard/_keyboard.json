@@ -297,6 +297,18 @@
     "visible": true,
     "brand": "logiocb",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "name": "MK540",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk540.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 750 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "POP Icon Combo",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pop-icon-combo-pink.webp", "priceAdd": 0 }
