@@ -242,8 +242,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z313.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 550 },
-      { "name": "97% + BOX", "price": 600 }
+      { "name": "97% + BOX", "price": 590 }
     ]
   },
 
