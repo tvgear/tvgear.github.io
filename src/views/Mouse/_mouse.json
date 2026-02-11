@@ -67,7 +67,7 @@
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g403-hero.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "90% + Tặng Grip", "price": 450 }]
+    "options": [{ "name": "90% + Tặng Grip", "price": 450 }, { "name": "97%", "price": 590 }]
   },
   {
     "visible": true,
@@ -426,15 +426,16 @@
     "options": [{ "name": "97%", "price": 650 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "Lift Vertical",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/lift-white.webp", "priceAdd": 0 }
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/lift-white.webp", "priceAdd": 0 },
+      { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/lift-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 850, "colors" : ["white"] }
+      { "name": "97%", "price": 790 }
     ]
   },
   {
@@ -455,22 +456,9 @@
     "name": "Pop Mouse",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "violet", "labelColor": "Xanh", "image": "/assets/images/mouses/pop-mouse-blue.webp", "priceAdd": 0 },
-      { "color": "violet", "labelColor": "Đen", "image": "/assets/images/mouses/pop-mouse-black.webp", "priceAdd": 0 },
-      { "color": "violet", "labelColor": "Trắng", "image": "/assets/images/mouses/pop-mouse-white.webp", "priceAdd": 0 },
       { "color": "violet", "labelColor": "Hồng", "image": "/assets/images/mouses/pop-mouse-pink.webp", "priceAdd": 0 }
     ],
     "options": [{ "name": "97%", "price": 330 }]
-  },
-  {
-    "visible": false,
-    "brand": "logio",
-    "name": "MX Master 3s",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-master-3s-black.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97%", "price": 1580 }]
   },
   {
     "visible": true,
@@ -484,7 +472,17 @@
       { "name": "95% - Bluetooth", "price": 750 },
       { "name": "95% - Receiver + Bluetooth", "price": 890 }]
   },
-
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Master 3s",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-master-3s-black.webp", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 1550 }]
+  },
+  
   {
     "": "RAZER --------------------------------------------------------------------------------------------------------------------"
   },

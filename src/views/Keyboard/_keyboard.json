@@ -79,7 +79,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G913 TKL",
@@ -87,7 +87,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% - Lỗi LED", "price": 1750 }
+      { "name": "97% + BOX", "price": 1980 }
       
     ]
   },
@@ -299,7 +299,7 @@
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "MK540",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk540.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk540.png", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%", "price": 750 }
