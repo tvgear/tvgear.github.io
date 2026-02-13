@@ -163,7 +163,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "webcam",
     "tags": ["Cắm Dây & Remote, HD 1080p / Bảo Hành 1 Tháng"],
     "name": "Conferrence BCC950",
@@ -236,7 +236,7 @@
   {
      "visible": true,
     "brand": "speaker",
-    "tags": ["Jack 3.5mm, 25W / Bảo Hành 1 Tháng"],
+    "tags": ["15W ~ 25W / Bảo Hành 1 Tháng"],
     "name": "Z313",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z313.webp", "priceAdd": 0 }
@@ -249,7 +249,7 @@
   {
     "visible": true,
     "brand": "speaker",
-    "tags": ["Jack 3.5mm, 40 ~ 80W / Bảo Hành 1 Tháng"],
+    "tags": ["40 ~ 80W / Bảo Hành 1 Tháng"],
     "name": "Z407",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
@@ -262,7 +262,7 @@
   {
     "visible": false,
     "brand": "speaker",
-    "tags": ["Jack 3.5mm & Bluetooth, 120W ~ 240W / Bảo Hành 1 Tháng"],
+    "tags": ["120W ~ 240W / Bảo Hành 1 Tháng"],
     "name": "G560",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/g560.webp", "priceAdd": 0 }
@@ -275,7 +275,7 @@
   {
     "visible": false,
     "brand": "speaker",
-    "tags": ["35W ~ 130W, 3.5mm / Bảo Hành 1 Tháng"],
+    "tags": ["35W ~ 130W / Bảo Hành 1 Tháng"],
     "name": "Z625",
     "colors": [
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z625.webp", "priceAdd": 0 }
@@ -294,6 +294,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z906.webp", "priceAdd": 0 }
     ],
     "options": [
+      { "name": "97%", "price": 3850 },
       { "name": "New", "price": 4950 }
     ]
   },

@@ -116,7 +116,7 @@
     "options": [{ "name": "95%", "price": 580 }]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "G703 Hero",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -124,8 +124,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/g703.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%", "price": 950 },
-      { "name": "97% + BOX", "price": 1090 }
+      { "name": "97% + BOX", "price": 1080 }
     ]
   },
   {
@@ -179,7 +178,7 @@
       { "name": "97% + BOX", "price": 1300 }]
     },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G502 WL",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -238,13 +237,15 @@
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2-black.webp", "priceAdd": 0 },
-      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 }
+      { "color": "white", "labelColor": "Trắng", "image": "/assets/images/mouses/gpro-x-spl2-white.webp", "priceAdd": 0 },
+       { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
     ],
     "options": [
       { "name": "97%, Đầu Thu 1K", "price": 1750, "colors": ["black", "white"] },
       { "name": "97%", "price": 2080, "colors": ["black"] },
       { "name": "90% + BOX", "price": 1850, "colors": ["white"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["white"] }
+      { "name": "97% + BOX", "price": 2180, "colors": ["white"] },
+      { "name": "97% + BOX", "price": 2180, "colors": ["pink"] }
     ]
   },
   {
@@ -260,7 +261,7 @@
     ]
   },
    {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "PRO X SuperLight 2c",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -268,7 +269,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2c-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 2350 }
+      { "name": "97%", "price": 2080 }
     ]
   },
  
