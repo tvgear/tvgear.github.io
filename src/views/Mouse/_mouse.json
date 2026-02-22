@@ -245,7 +245,7 @@
       { "name": "97%", "price": 2080, "colors": ["black"] },
       { "name": "90% + BOX", "price": 1850, "colors": ["white"] },
       { "name": "97% + BOX", "price": 2180, "colors": ["white"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["pink"] }
+      { "name": "97%", "price": 2180, "colors": ["pink"] }
     ]
   },
   {
@@ -376,7 +376,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/m350s-black.webp", "priceAdd": 0 },
       { "color": "rgba(240,224,221)", "labelColor": "Hồng", "image": "/assets/images/mouses/m350s-pink.webp", "priceAdd": 0 }
     ],
-    "options": [{ "name": "95%", "price": 280 }, { "name": "97%", "price": 300 }]
+    "options": [{ "name": "97%", "price": 300 }]
   },
   {
     "visible": true,
@@ -440,15 +440,16 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "MX Anywhere 3s",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/mx-anywhere-3s-black.webp", "priceAdd": 0 },
+      { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/mx-anywhere-3s-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 1050 }
+      { "name": "New No Box", "price": 1250 }
     ]
   },
   {
@@ -525,11 +526,10 @@
     "name": "Viper Ultimate",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
-      { "color": "white", "labelColor": "Đen", "image": "/assets/images/mouses/viper-ultimate-white.png", "priceAdd": 0 },
-      { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/viper-ultimate-pink.png", "priceAdd": 0 }
+      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-ultimate-black.png", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90% + DOCK SẠC", "price": 1150 }
+      { "name": "90% Tróc Cao Su + DOCK SẠC", "price": 1150 }
     ]
   },
   {
@@ -553,64 +553,11 @@
     "options": [{ "name": "97% + BOX, BH 3/26", "price": 1150 }]
   },
   {
-    "visible": true,
-    "brand": "razer",
-    "name": "DA v3 Pro",
-    "tags": ["Không Dây / Bảo Hành Hãng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v3-pro.webp", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "98% + BOX, BH 6/27", "price": 1980 }]
-  },
-   {
-    "visible": false,
-    "brand": "razer",
-    "name": "Viper v3 Pro",
-    "tags": ["Không Dây / Bảo Hành 3 Tháng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v3-pro-black.png", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97%", "price": 2380 }]
-  },
-
-  {
-    "visible": false,
-    "brand": "razer",
-    "name": "DA v3 Pro Faker",
-    "tags": ["Không Dây / Bảo Hành Hãng"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v3-pro-faker.jpg", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "98% + BOX, BH 11/26", "price": 2680 }]
-  },
-
-  {
     "": "PULSAR --------------------------------------------------------------------------------------------------------------------"
   },
 
   {
     "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": true,
-    "brand": "lamzu",
-    "name": "Maya X 8K Purple Shadow",
-    "tags": ["Không Dây / Bảo Hành Hãng"],
-    "colors": [
-      { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-purple.webp", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97% + BOX, BH 4/26", "price": 2080 }]
-  },
-  {
-    "visible": true,
-    "brand": "lamzu",
-    "name": "Maya X 8K Fnatic",
-    "tags": ["Không Dây / Bảo Hành Hãng"],
-    "colors": [
-      { "color": "violet", "labelColor": "Tím", "image": "/assets/images/mouses/lamzu-maya-x-fnatic.png", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97% + BOX, BH 9/27", "price": 2380 }]
   },
   {
     "visible": true,
@@ -635,7 +582,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v2-x-hyperspeed.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Không Kèm Receiver", "price": 890 }]
+      { "name": "97%", "price": 600 }]
   },
   {
     "visible": true,
@@ -646,6 +593,6 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Receiver + Sạc", "price": 650 }]
+      { "name": "97%, Không Kèm USB", "price": 800 }]
   }
 ]

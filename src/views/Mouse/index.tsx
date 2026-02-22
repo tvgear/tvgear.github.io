@@ -13,7 +13,7 @@ type MouseBrand =
   | "liquidation";
 
 const brands = [
-  { key: "logig", label: "Logitech G" },
+  { key: "logig", label: "Logitech Gaming" },
   { key: "logio", label: "Logi Văn Phòng" },
   { key: "razer", label: "Razer" },
   { key: "lamzu", label: "Lamzu" },

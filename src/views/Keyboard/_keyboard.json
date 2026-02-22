@@ -17,7 +17,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Có Dây / Bảo Hành 1 Tháng"],
     "name": "G413 SE TKL",
@@ -66,18 +66,7 @@
       { "name": "97% Clicky", "price": 1400 }
     ]
   },
-  {
-    "visible": false,
-    "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
-    "name": "PRO X TKL Rapid",
-    "colors": [
-      { "color": "deeppink", "labelColor" : "Hồng", "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp", "priceAdd": 0 }
-    ],
-    "options": [
-     { "name": "97%", "price": 2550,  "colors" : ["deeppink"] }
-    ]
-  },
+ 
   {
     "visible": true,
     "brand": "logig",
@@ -124,7 +113,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 2180 }
+      { "name": "97%, LED Sai Màu", "price": 2180 }
     ]
   },
 
@@ -327,36 +316,6 @@
     ],
     "options": [
       { "name": "97%", "price": 1350 }
-    ]
-  },
-
-
-  {
-    "": "HE --------------------------------------------------------------------------------------------------------------------"
-  },
-
-  {
-    "visible": false,
-    "brand": "he",
-    "tags": ["Không Dây / Bảo Hành 7 Ngày"],
-    "name": "ATK RS7 RGB",
-    "colors": [
-      { "color": "black", "labelColor" : "Đen Tím", "image": "/assets/images/keyboards/atk-rs7-rgb.png", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%", "price": 1600 }
-    ]
-  },
-  {
-    "visible": true,
-    "brand": "he",
-    "tags": ["Không Dây / Bảo Hành 7 Ngày"],
-    "name": "Sikakeyb Castle HM80",
-    "colors": [
-      { "color": "white", "labelColor" : "Trắng Xám", "image": "/assets/images/keyboards/sikakeyb-castle-hm80.png", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%", "price": 2300 }
     ]
   }
 
