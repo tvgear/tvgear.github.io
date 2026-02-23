@@ -89,7 +89,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-black.webp", "priceAdd": 0 }
     ],
     "options": [
-     { "name": "97% + BOX", "price": 1750, "colors" : ["black"] }
+     { "name": "97% + BOX", "price": 2100, "colors" : ["black"] }
     ]
   },
   {
@@ -120,7 +120,18 @@
   {
     "": "LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
-
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "K250",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k250.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 280 }
+    ]
+  },
   {
     "visible": true,
     "brand": "logio",
@@ -133,18 +144,7 @@
       { "name": "97%", "price": 300 }
     ]
   },
-  {
-    "visible": true,
-    "brand": "logio",
-    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
-    "name": "K250",
-    "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k250.webp", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%", "price": 330 }
-    ]
-  },
+  
   {
     "visible": true,
     "brand": "logio",
@@ -181,6 +181,19 @@
       { "name": "97%", "price": 600 }
     ]
   },
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "name": "Wave Keys",
+    "colors": [
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/wave-keys.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 750 }
+    ]
+  },
+  
    {
     "visible": true,
     "brand": "logio",

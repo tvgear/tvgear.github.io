@@ -174,39 +174,6 @@
     ]
   },
 
-  {
-    "": "TAI RAZER --------------------------------------------------------------------------------------------------------------------"
-  },
-
-  {
-    "visible": false,
-    "brand": "razer",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
-    "name": "Barracuda X Chroma Phantom",
-    "colors": [
-      { "color": "green", "labelColor" : "Xanh Đen", "image": "/assets/images/headphones/barracuda-x-chroma-phantom.png", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "98%", "price": 2580  }
-    ]
-  },
-
-  {
-    "": "TAI LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
-  },
-
-  {
-    "visible": true,
-    "brand": "hyperx",
-    "tags": ["Có Dây / Bảo Hành Hãng"],
-    "name": "Hyper X Cloud 3",
-    "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/cloud-3.png", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "98% + BOX, BH 6/27", "price": 1650  }
-    ]
-  },
 
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
@@ -214,13 +181,13 @@
   {
     "visible": true,
     "brand": "liquidation",
-    "name": "G733",
-    "tags": ["Không Dây / Bao Test 3 Ngày"],
+    "name": "Logitech G733",
+    "tags": ["Không Dây / Bao Test 7 Ngày"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX, Mic Bị Tróc", "price": 1200 }]
+      { "name": "97% + BOX, Mic Xấu", "price": 1250 }]
   }
 ]
   

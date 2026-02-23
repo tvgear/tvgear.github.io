@@ -116,7 +116,7 @@
     "options": [{ "name": "95%", "price": 580 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G703 Hero",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -221,13 +221,13 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90% + Grip", "price": 1300, "colors": ["white"] },
-      { "name": "95%", "price": 1450, "colors": ["white"] },
-      { "name": "95% + BOX", "price": 1580, "colors": ["white"] },
-      { "name": "98%", "price": 1550, "colors": ["white"] },
-      { "name": "90% + Grip", "price": 1350, "colors": ["black"] },
-      { "name": "95%", "price": 1450, "colors": ["black"] },
-      { "name": "98%", "price": 1550, "colors": ["black"] }
+      { "name": "90%", "price": 1300, "colors": ["white"] },
+      { "name": "97%", "price": 1450, "colors": ["white"] },
+      { "name": "97% + BOX", "price": 1580, "colors": ["white"] },
+      { "name": "99%", "price": 1550, "colors": ["white"] },
+      { "name": "95%", "price": 1350, "colors": ["black"] },
+      { "name": "97%", "price": 1450, "colors": ["black"] },
+      { "name": "99%", "price": 1550, "colors": ["black"] }
     ]
   },
   {
@@ -241,9 +241,8 @@
        { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Đầu Thu 1K", "price": 1750, "colors": ["black", "white"] },
-      { "name": "97%", "price": 2080, "colors": ["black"] },
-      { "name": "90% + BOX", "price": 1850, "colors": ["white"] },
+      { "name": "97%, Đầu Thu 1K", "price": 1750, "colors": ["black"] },
+      { "name": "95%", "price": 2080, "colors": ["black"] },
       { "name": "97% + BOX", "price": 2180, "colors": ["white"] },
       { "name": "97%", "price": 2180, "colors": ["pink"] }
     ]
@@ -577,22 +576,22 @@
     "visible": true,
     "brand": "liquidation",
     "name": "Razer DA v2 X Hyperspeed",
-    "tags": ["Không Dây / Bao Test 3 Ngày"],
+    "tags": ["Không Dây / Bao Test 7 Ngày"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v2-x-hyperspeed.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 600 }]
+      { "name": "97%", "price": 650 }]
   },
   {
     "visible": true,
     "brand": "liquidation",
     "name": "Razer Viper V2 Pro",
-    "tags": ["Không Dây / Bao Test 3 Ngày"],
+    "tags": ["Không Dây / Bao Test 7 Ngày"],
     "colors": [
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Không Kèm USB", "price": 800 }]
+      { "name": "97%, Không Kèm USB", "price": 850 }]
   }
 ]
