@@ -116,9 +116,19 @@
       { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/accessories/feet-tiger-ice.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "PRO X 1", "price": 125 },
-      { "name": "PRO X 2", "price": 125 },
-      { "name": "DIY - Tròn", "price": 125 }
+      { "name": "Logi PRO X / PRO X 2", "price": 125 }
+    ]
+  },
+  {
+   "visible": true,
+    "brand": "feet",
+    "tags": ["Bộ Dán Chân Chuột / Không Bảo Hành"],
+    "name": "Tiger ICE DOTS",
+    "colors": [
+      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/accessories/feet-tiger-ice-dots.webp", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "DIY - Mọi Loại Chuột", "price": 125 }
     ]
   },
 
@@ -308,12 +318,12 @@
    "visible": true,
     "brand": "controller",
     "tags": ["Type C, Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
-    "name": "X BOX Series X",
+    "name": "XBOX Elite",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/xbox-series-x.webp", "priceAdd": 0 }
+      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/xbox-elite.png", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 790 }
+      { "name": "97% + BOX", "price": 1350 }
     ]
   },
 

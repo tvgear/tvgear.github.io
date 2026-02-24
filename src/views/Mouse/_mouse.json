@@ -520,7 +520,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper Ultimate",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -571,27 +571,6 @@
 
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": true,
-    "brand": "liquidation",
-    "name": "Razer DA v2 X Hyperspeed",
-    "tags": ["Không Dây / Bao Test 7 Ngày"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/da-v2-x-hyperspeed.webp", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%", "price": 650 }]
-  },
-  {
-    "visible": true,
-    "brand": "liquidation",
-    "name": "Razer Viper V2 Pro",
-    "tags": ["Không Dây / Bao Test 7 Ngày"],
-    "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/viper-v2-pro-black.webp", "priceAdd": 0 }
-    ],
-    "options": [
-      { "name": "97%, Không Kèm USB", "price": 850 }]
   }
+  
 ]

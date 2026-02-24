@@ -9,9 +9,8 @@ const brands = [
   { key: "receiver", label: "Đầu Thu" },
   { key: "feet",   label: "Feet" },
   { key: "webcam",   label: "Webcam" },
-  // { key: "micro",   label: "Micro" },
   { key: "speaker",   label: "Loa" },
-  // { key: "soundcard", label: "SoundCard" },
+  { key: "controller", label: "Tay Cầm" },
 ] as const satisfies ReadonlyArray<BrandT<AccessoriesBrand>>;
 
 const products = (productsJson as any[])
