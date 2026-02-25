@@ -241,9 +241,9 @@
        { "color": "pink", "labelColor": "Hồng", "image": "/assets/images/mouses/gpro-x-spl2-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%, Đầu Thu 1K", "price": 1750, "colors": ["black"] },
-      { "name": "95%", "price": 2080, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 2180, "colors": ["white"] },
+      { "name": "97%, Đầu Thu SPL1", "price": 1750, "colors": ["black"] },
+      { "name": "97%", "price": 2080, "colors": ["black"] },
+      { "name": "95% + BOX", "price": 2080, "colors": ["white"] },
       { "name": "97%", "price": 2180, "colors": ["pink"] }
     ]
   },
@@ -520,7 +520,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
     "name": "Viper Ultimate",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
