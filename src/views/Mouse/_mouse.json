@@ -566,6 +566,17 @@
 
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+  },
+
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "SteelSeries Rival 5",
+    "tags": ["Có Dây / Bao Test 3 Ngày"],
+    "colors": [
+      { "color": "Đen", "labelColor": "Đen", "image": "/assets/images/mouses/steel-rival-5.png", "priceAdd": 0 }
+    ],
+    "options": [{ "name": "97%", "price": 450 }]
   }
   
 ]
