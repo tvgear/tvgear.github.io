@@ -221,13 +221,8 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "90%", "price": 1300, "colors": ["white"] },
-      { "name": "97%", "price": 1450, "colors": ["white"] },
-      { "name": "97% + BOX", "price": 1580, "colors": ["white"] },
-      { "name": "99%", "price": 1550, "colors": ["white"] },
-      { "name": "95%", "price": 1350, "colors": ["black"] },
-      { "name": "97%", "price": 1450, "colors": ["black"] },
-      { "name": "99%", "price": 1550, "colors": ["black"] }
+      { "name": "98%", "price": 1550, "colors": ["white"] },
+      { "name": "98%", "price": 1550, "colors": ["black"] }
     ]
   },
   {
