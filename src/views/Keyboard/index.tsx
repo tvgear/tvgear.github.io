@@ -8,7 +8,7 @@ type KeyboardBrand = "logig" | "logio" | "logiocb" | "he" | "liquidation";
 const brands = [
   { key: "logig", label: "Logitech G"},
   { key: "logio", label: "Logi Văn Phòng"},
-  { key: "logiocb", label: "Logi Văn Phòng Combo"},
+  { key: "logiocb", label: "Logi Combo"},
   { key: "liquidation", label: "Thanh Lý"},
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 
