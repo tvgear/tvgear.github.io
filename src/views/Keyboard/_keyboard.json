@@ -50,8 +50,7 @@
     ],
     "options": [
       { "name": "97% Red, Mất LED", "price": 900 },
-      { "name": "97% Red, Sai LED", "price": 950 },
-      { "name": "97% Red + BOX", "price": 990 }
+      { "name": "97% Red, Sai LED", "price": 950 }
     ]
   },
   {
@@ -105,7 +104,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "PRO X TKL WL",
