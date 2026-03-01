@@ -25,7 +25,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 850 }
+      { "name": "97% Brown", "price": 850 }
     ]
   },
   {
@@ -37,7 +37,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-fs.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 850 }
+      { "name": "97% Brown", "price": 850 }
     ]
   },
   {
@@ -49,8 +49,10 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% Red, Mất LED", "price": 900 },
-      { "name": "97% Red, Sai LED", "price": 950 }
+      { "name": "97% Red, Mất 1 LED", "price": 900 },
+      { "name": "97% Red, Sai LED U", "price": 950 },
+      { "name": "97% Red", "price": 1000 },
+      { "name": "99% Blue + BOX", "price": 1150 }
     ]
   },
   {
@@ -62,12 +64,12 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g813.png", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% Clicky", "price": 1400 }
+      { "name": "97% Blue", "price": 1400 }
     ]
   },
  
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
     "name": "G913 TKL",
@@ -75,7 +77,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 1980 }
+      { "name": "97% Blue + BOX", "price": 1980 }
       
     ]
   },
@@ -307,7 +309,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logiocb",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "POP Icon Combo",

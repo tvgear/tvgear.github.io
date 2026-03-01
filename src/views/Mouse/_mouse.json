@@ -263,7 +263,7 @@
       { "color": "black", "labelColor": "Đen", "image": "/assets/images/mouses/gpro-x-spl2c-black.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 2080 }
+      { "name": "97%", "price": 2100 }
     ]
   },
  
@@ -447,7 +447,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "Pop Mouse",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
