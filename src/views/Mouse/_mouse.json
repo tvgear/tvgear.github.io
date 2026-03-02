@@ -503,7 +503,7 @@
     "options": [{ "name": "97% + BOX", "price": 580 }]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Basilisk Ultimate",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
@@ -569,7 +569,7 @@
   },
 
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "SteelSeries Rival 5",
     "tags": ["Có Dây / Bao Test 3 Ngày"],

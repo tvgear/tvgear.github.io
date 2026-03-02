@@ -51,7 +51,7 @@
     "options": [
       { "name": "97% Red, Mất 1 LED", "price": 900 },
       { "name": "97% Red, Sai LED U", "price": 950 },
-      { "name": "97% Red", "price": 1000 },
+      { "name": "97% Red/Brown  ", "price": 1000 },
       { "name": "99% Blue + BOX", "price": 1150 }
     ]
   },
@@ -338,7 +338,7 @@
   },
 
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "SteelSeries Apex 7",
     "tags": ["Có Dây / Bao Test 3 Ngày"],
