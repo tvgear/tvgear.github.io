@@ -9,7 +9,6 @@ const brands = [
   { key: "logig", label: "Logitech G"},
   { key: "logio", label: "Logi Văn Phòng"},
   { key: "logiocb", label: "Logi Combo"},
-  { key: "liquidation", label: "Thanh Lý"},
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 
 const products = (productsJson as any[])
