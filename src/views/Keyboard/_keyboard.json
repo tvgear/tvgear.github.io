@@ -309,7 +309,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logiocb",
     "tags": ["Không Dây / Bảo Hành 1 Tháng"],
     "name": "POP Icon Combo",
@@ -317,7 +317,7 @@
       { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pop-icon-combo-pink.webp", "priceAdd": 0 }
     ],
     "options": [
-      { "name": "97%", "price": 900 }
+      { "name": "97%", "price": 890 }
     ]
   },
   {
@@ -335,17 +335,6 @@
 
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
-  },
-
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "SteelSeries Apex 7",
-    "tags": ["Có Dây / Bao Test 3 Ngày"],
-    "colors": [
-      { "color": "Đen", "labelColor": "Đen", "image": "/assets/images/keyboards/steel-apex-7.png", "priceAdd": 0 }
-    ],
-    "options": [{ "name": "97%", "price": 980 }]
   }
 
 ]

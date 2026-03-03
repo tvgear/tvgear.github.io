@@ -142,6 +142,18 @@
   {
     "visible": true,
     "brand": "logig",
+    "name": "G705",
+    "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
+    "colors": [
+      { "color": "white", "labelColor": "Đen", "image": "/assets/images/mouses/g705.png", "priceAdd": 0 }
+    ],
+    "options": [
+      { "name": "97%", "price": 1150 }
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
     "name": "PRO WL",
     "tags": ["Không Dây / Bảo Hành 3 Tháng"],
     "colors": [
@@ -165,12 +177,8 @@
     "options": [
       { "name": "90%", "price": 1300, "colors": ["white"] },
       { "name": "95%", "price": 1350, "colors": ["black"] },
-      { "name": "97%", "price": 1480, "colors": ["white"] },
-      { "name": "97%", "price": 1480, "colors": ["black"] },
-      { "name": "97% + BOX", "price": 1580, "colors": ["white"] },
-      { "name": "99%", "price": 1550, "colors": ["white"] },
-      { "name": "99%", "price": 1550, "colors": ["black"] }
-     
+      { "name": "98%", "price": 1550, "colors": ["white"] },
+      { "name": "98%", "price": 1550, "colors": ["black"] }
     ]
   },
   {
@@ -395,7 +403,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "Pop Mouse",
     "tags": ["Không Dây & Bluetooth / Bảo Hành 3 Tháng"],
