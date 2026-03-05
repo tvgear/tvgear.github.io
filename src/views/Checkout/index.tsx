@@ -152,6 +152,7 @@ const Textarea = styled.textarea`
 
 const PaymentMethods = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 8px;
   margin-bottom: 16px;
 `;
@@ -648,8 +649,8 @@ export default function CheckoutView() {
 
           <SubmitBtn onClick={handleSubmitOrder} disabled={submitting}>
             {method === 0 
-              ? `Tiến hành cọc đơn hàng — ${deposit.toLocaleString("vi-VN")}.000 đ` 
-              : `Tiến Hành Thanh Toán — ${(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ`}
+              ? `Cọc Đơn Hàng — ${deposit.toLocaleString("vi-VN")}.000 đ` 
+              : `Thanh Toán — ${(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ`}
           </SubmitBtn>
         </Card>
       </TwoCol>
