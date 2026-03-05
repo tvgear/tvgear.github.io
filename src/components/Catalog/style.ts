@@ -195,15 +195,20 @@ export const SelectSort = styled.select`
   }
   @media screen and (max-width: 991px) {
     flex: 1;
+    text-align: center;
+    text-align-last: center;
+    background-position: right 14px center;
+    padding-left: 20px;
   }
 `;
 
 /* ─── Mobile Elements ─── */
 export const MobilePageTitle = styled.h2`
   font-family: F_BOLD;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #000;
-  margin-bottom: 12px;
+  margin-top: 6px;
+  margin-bottom: 14px;
   line-height: 1;
 `;
 
@@ -228,16 +233,18 @@ export const MobileTabList = styled.div`
 
 export const MobileTab = styled.div<{ $active?: boolean }>`
   flex-shrink: 0;
-  padding: 7px 14px;
-  background: ${(p) => (p.$active ? "#000" : "#f6f6f6")};
-  color: ${(p) => (p.$active ? "#fff" : "#555")};
+  padding: 6px 14px;
+  background: #fff;
+  border: 1.5px solid ${(p) => (p.$active ? "#000" : "#eee")};
+  color: ${(p) => (p.$active ? "#000" : "#777")};
   border-radius: 100px;
   font-family: ${(p) => (p.$active ? "F_BOLD" : "F_MEDIUM")};
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.2s;
   span {
-    opacity: 0.6;
+    color: #000;
+    opacity: ${(p) => (p.$active ? 1 : 0.6)};
     margin-left: 3px;
   }
 `;
