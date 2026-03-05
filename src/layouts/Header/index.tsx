@@ -371,7 +371,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
       <BlockHeader>
         <InnerHeader>
           <LeftHeader>
-            <LogoArea onClick={() => { scrollToTop(); }}>
+            <LogoArea onClick={() => router.push("/mouse")}>
               <WrapLogo>
                 <img src="/logo.svg" />
               </WrapLogo>
