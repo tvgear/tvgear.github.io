@@ -10,7 +10,7 @@ export const CatalogWrapper = styled.div`
   margin: 0 auto;
   @media screen and (max-width: 991px) {
     flex-direction: column;
-    padding: 8px;
+    padding: 8px 8px 96px 8px;
     gap: 16px;
   }
 `;

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ShoppingBag, X } from "lucide-react";
+import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid } from "lucide-react";
 import { getCart, getCartTotal, updateQty as updateCartQuantity, removeFromCart } from "@/utils/carts";
 import { CartItem } from "@/types/product";
 
@@ -153,6 +153,44 @@ const Badge = styled.div`
   padding: 0 4px;
 `;
 
+const MobileBottomNav = styled.div`
+  display: none;
+  @media screen and (max-width: 991px) {
+    display: flex;
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-radius: 100px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 99990;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 8px;
+  }
+`;
+
+const BottomNavItem = styled.div<{ $active?: boolean }>`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex: 1;
+  height: 100%;
+  color: ${(p) => (p.$active ? "#000" : "#999")};
+  font-family: ${(p) => (p.$active ? "F_BOLD" : "F_MEDIUM")};
+  cursor: pointer;
+  transition: 0.2s;
+  span {
+    font-size: 1rem;
+  }
+`;
+
 /* ─── Cart Drawer Styles ─── */
 
 const CartOverlay = styled.div`
@@ -295,10 +333,10 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
 
   const categories = React.useMemo(() => [
-    { name: "Chuột", link: "/mouse" },
-    { name: "Bàn Phím", link: "/keyboard" },
-    { name: "Tai Nghe", link: "/headphone" },
-    { name: "Phụ Kiện", link: "/accessories" },
+    { name: "Chuột", link: "/mouse", icon: MouseIcon },
+    { name: "Bàn Phím", link: "/keyboard", icon: KeyboardIcon },
+    { name: "Tai Nghe", link: "/headphone", icon: Headphones },
+    { name: "Phụ Kiện", link: "/accessories", icon: LayoutGrid },
   ], []);
 
   const scrollToTop = () => {
@@ -412,6 +450,21 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
           </CartDrawer>
         </CartDrawerPortal>
       )}
+
+      <MobileBottomNav>
+        {categories.map((cat) => {
+          const Icon = cat.icon;
+          const isActive = router.pathname === cat.link;
+          return (
+            <Link key={cat.link} href={cat.link} passHref legacyBehavior>
+              <BottomNavItem $active={isActive} onClick={scrollToTop}>
+                <Icon size={20} strokeWidth={isActive ? 2.5 : 2} />
+                <span>{cat.name}</span>
+              </BottomNavItem>
+            </Link>
+          );
+        })}
+      </MobileBottomNav>
     </>
   );
 };
