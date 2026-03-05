@@ -444,7 +444,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "tags": [
       "Không Dây & Bluetooth"
@@ -660,7 +660,7 @@
     "visible": true,
     "brand": "logiocb",
     "tags": [
-      "Không Dây"
+      "Không Dây & Bluetooth"
     ],
     "name": "POP Icon Combo",
     "colors": [
@@ -679,14 +679,15 @@
     ],
     "warranty": "Bảo Hành 1 Tháng",
     "connect": [
-      "wireless"
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": true,
     "brand": "logiocb",
     "tags": [
-      "Không Dây"
+      "Không Dây & Bluetooth"
     ],
     "name": "MK950",
     "colors": [
@@ -705,7 +706,8 @@
     ],
     "warranty": "Bảo Hành 1 Tháng",
     "connect": [
-      "wireless"
+      "wireless",
+      "bluetooth"
     ]
   },
   {
