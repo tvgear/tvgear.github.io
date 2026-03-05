@@ -361,7 +361,9 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
               ))}
             </MobileTabList>
             <MobileActionRow>
-              <MobileActionBtn onClick={() => setShowMobileFilter(true)}>Bộ lọc</MobileActionBtn>
+              <MobileActionBtn onClick={() => setShowMobileFilter(true)}>
+                Bộ lọc {selectedPrices.length + selectedConns.length > 0 && `(${selectedPrices.length + selectedConns.length})`}
+              </MobileActionBtn>
               <SelectSort value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                 <option value="price-asc">Giá Thấp → Cao</option>
                 <option value="price-desc">Giá Cao → Thấp</option>
@@ -473,7 +475,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
             )}
           </MobileFilterContent>
           <MobileFilterFooter>
-            <ClearFilterBtn onClick={() => { setSelectedPrices([]); setSelectedConns([]); }}>Huỷ Tất Cả</ClearFilterBtn>
+            <ClearFilterBtn onClick={() => { setSelectedPrices([]); setSelectedConns([]); }}>Huỷ</ClearFilterBtn>
             <ApplyBtn onClick={() => setShowMobileFilter(false)}>Áp Dụng</ApplyBtn>
           </MobileFilterFooter>
         </MobileFilterOverlay>
