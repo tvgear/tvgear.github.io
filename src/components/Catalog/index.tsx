@@ -218,6 +218,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
       setSelectedBrand(key);
       setSelectedPrices([]);
       setSelectedConns([]);
+      setSortBy("price-asc");
     }
   };
 
