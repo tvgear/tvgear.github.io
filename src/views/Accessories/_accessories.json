@@ -5,7 +5,7 @@
     "tags": [
       "Chuột Văn Phòng Loại Bolt"
     ],
-    "name": "Đầu Thu Logi Bolt",
+    "name": "Logi Bolt",
     "colors": [
       {
         "color": "black",
@@ -29,7 +29,7 @@
     "tags": [
       "Chuột Văn Phòng Loại Unifying"
     ],
-    "name": "Đầu Thu Logi Unifying",
+    "name": "Logi Unifying",
     "colors": [
       {
         "color": "black",
@@ -41,7 +41,7 @@
     "options": [
       {
         "name": "99%",
-        "price": 170
+        "price": 150
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -53,7 +53,7 @@
     "tags": [
       "Chuột Gaming G304"
     ],
-    "name": "Đầu Thu Logi G304",
+    "name": "Logi G304",
     "colors": [
       {
         "color": "black",
@@ -77,7 +77,7 @@
     "tags": [
       "Chuột Gaming Dòng G"
     ],
-    "name": "Đầu Thu Logi Dòng G",
+    "name": "Logi Dòng G",
     "colors": [
       {
         "color": "black",
@@ -101,7 +101,7 @@
     "tags": [
       "Chuột Gaming Dòng PRO"
     ],
-    "name": "Đầu Thu Logi PRO / PRO 2 / PRO X",
+    "name": "Logi Dòng PRO 2 / PRO X",
     "colors": [
       {
         "color": "black",
