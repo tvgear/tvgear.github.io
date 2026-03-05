@@ -1,341 +1,714 @@
 [
-
   {
     "": "LOGI GAMING --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G213",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g213.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g213.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%, Giả Cơ", "price": 580 }
+      {
+        "name": "97%, Giả Cơ",
+        "price": 580
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G413 SE TKL",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-tkl.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g413-se-tkl.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% Brown", "price": 850 }
+      {
+        "name": "97% Brown",
+        "price": 850
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G413 SE Full Size",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g413-se-fs.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g413-se-fs.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% Brown", "price": 850 }
+      {
+        "name": "97% Brown",
+        "price": 850
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G512 GX",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g512-gx.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g512-gx.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% Red, Mất 1 LED", "price": 900 },
-      { "name": "97% Red, Sai LED U", "price": 950 },
-      { "name": "97% Red/Brown  ", "price": 1000 },
-      { "name": "99% Blue + BOX", "price": 1150 }
+      {
+        "name": "97% Red, Mất 1 LED",
+        "price": 900
+      },
+      {
+        "name": "97% Red, Sai LED U",
+        "price": 950
+      },
+      {
+        "name": "97% Red/Brown  ",
+        "price": 1000
+      },
+      {
+        "name": "99% Blue + BOX",
+        "price": 1150
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": false,
     "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G813",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g813.png", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g813.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% Blue", "price": 1400 }
+      {
+        "name": "97% Blue",
+        "price": 1400
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
- 
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "G913 TKL",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g913-tkl.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g913-tkl.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% Blue + BOX", "price": 1980 }
-      
+      {
+        "name": "97% Blue + BOX",
+        "price": 1980
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "PRO X 60",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-60-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/pro-x-60-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-     { "name": "97% + BOX", "price": 2100, "colors" : ["black"] }
+      {
+        "name": "97% + BOX",
+        "price": 2100,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": false,
     "brand": "logig",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "G515 TKL",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/g515-tkl-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g515-tkl-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "New Seal, BH 1/27", "price": 2250 }
+      {
+        "name": "New Seal, BH 1/27",
+        "price": 2250
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": false,
     "brand": "logig",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "PRO X TKL WL",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pro-x-tkl.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/pro-x-tkl.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%, LED Sai Màu", "price": 2180 }
+      {
+        "name": "97%, LED Sai Màu",
+        "price": 2180
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
-
   {
     "": "LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Bluetooth"
+    ],
     "name": "K250",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k250.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/k250.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 280 }
+      {
+        "name": "97%",
+        "price": 280
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "bluetooth"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "K270",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k270.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/k270.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 300 }
+      {
+        "name": "97%",
+        "price": 300
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
-  
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Bluetooth"
+    ],
     "name": "K380s",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k380s.png", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/k380s.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 480 }
+      {
+        "name": "97%",
+        "price": 480
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "bluetooth"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "K650",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k650.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/k650.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 600 }
+      {
+        "name": "97%",
+        "price": 600
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Bluetooth"
+    ],
     "name": "POP Icon",
     "colors": [
-      { "color": "pink", "labelColor" : "Hồng Trắng", "image": "/assets/images/keyboards/pop-icon-keys.png", "priceAdd": 0 }
+      {
+        "color": "pink",
+        "labelColor": "Hồng Trắng",
+        "image": "/assets/images/keyboards/pop-icon-keys.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 600 }
+      {
+        "name": "97%",
+        "price": 600
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "bluetooth"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "Wave Keys",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/wave-keys.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/wave-keys.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 750 }
+      {
+        "name": "97%",
+        "price": 750
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
-  
-   {
+  {
     "visible": true,
     "brand": "logio",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "POP Keys",
     "colors": [
-      { "color": "violet", "labelColor" : "Tím Trắng", "image": "/assets/images/keyboards/pop-keys.webp", "priceAdd": 0 }
+      {
+        "color": "violet",
+        "labelColor": "Tím Trắng",
+        "image": "/assets/images/keyboards/pop-keys.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1150 }
+      {
+        "name": "97%",
+        "price": 1150
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": false,
     "brand": "logio",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "K950",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/k950.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/k950.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 980 }
+      {
+        "name": "97%",
+        "price": 980
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
-   {
+  {
     "visible": true,
     "brand": "logio",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "MX Keys Mini",
     "colors": [
-      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/keyboards/mx-keys-mini-white.webp", "priceAdd": 0 }
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/mx-keys-mini-white.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1550 }
+      {
+        "name": "97%",
+        "price": 1550
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
-
   {
     "": "LOGI OFFICE COMBO --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
     "visible": true,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "MK220",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk220.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk220.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 280 }
+      {
+        "name": "97%",
+        "price": 280
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": false,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "MK240",
     "colors": [
-      { "color": "black", "labelColor" : "Đen Vàng", "image": "/assets/images/keyboards/mk240.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen Vàng",
+        "image": "/assets/images/keyboards/mk240.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 330 }
+      {
+        "name": "97%",
+        "price": 330
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": false,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "MK345",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk345.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk345.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 360 }
+      {
+        "name": "97%",
+        "price": 360
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": false,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "MK295",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk295.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk295.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 380 }
+      {
+        "name": "97%",
+        "price": 380
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": true,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "MK370",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk370.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk370.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "New", "price": 600 }
+      {
+        "name": "New",
+        "price": 600
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": true,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "MK540",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk540.png", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk540.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 750 }
+      {
+        "name": "97%",
+        "price": 750
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": true,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "POP Icon Combo",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/pop-icon-combo-pink.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/pop-icon-combo-pink.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 890 }
+      {
+        "name": "97%",
+        "price": 890
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": true,
     "brand": "logiocb",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "MK950",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/keyboards/mk950.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk950.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1350 }
+      {
+        "name": "97%",
+        "price": 1350
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
-
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   }
-
 ]
-  

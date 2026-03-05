@@ -2,179 +2,379 @@
   {
     "visible": false,
     "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G335",
     "colors": [
-      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/headphones/g335-white.webp", "priceAdd": 0 }
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/headphones/g335-white.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 650, "colors" : ["white"] }
+      {
+        "name": "97%",
+        "price": 650,
+        "colors": [
+          "white"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": false,
     "brand": "logig",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G333",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g333-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/g333-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 600 }
+      {
+        "name": "97%",
+        "price": 600
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "G435",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g435-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/g435-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%, Bluetooth", "price": 680 },
-      { "name": "97%", "price": 890 }
+      {
+        "name": "97%, Bluetooth",
+        "price": 680
+      },
+      {
+        "name": "97%",
+        "price": 890
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "G321",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g321-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/g321-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 850 }
+      {
+        "name": "97%",
+        "price": 850
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
     "visible": false,
     "brand": "logig",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "G535",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g535-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/g535-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1480  }
+      {
+        "name": "97%",
+        "price": 1480
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "G733",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/g733-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1480  }
+      {
+        "name": "97%",
+        "price": 1480
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
- 
   {
     "visible": true,
     "brand": "logig",
-    "tags": ["Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Bluetooth"
+    ],
     "name": "PRO 2 WL Lightspeed",
     "colors": [
-      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/headphones/pro2-wl-white.webp", "priceAdd": 0 }
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/headphones/pro2-wl-white.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%, Bluetooth", "price": 1650 }
+      {
+        "name": "97%, Bluetooth",
+        "price": 1650
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "bluetooth"
     ]
   },
-    {
+  {
     "visible": true,
     "brand": "logig",
-    "tags": ["Không Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây"
+    ],
     "name": "G522",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/headphones/g522-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/g522-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1680  }
+      {
+        "name": "97%",
+        "price": 1680
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
-
   {
     "": "TAI LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "H150/H151",
     "colors": [
-      { "color": "blue", "labelColor" : "Xanh", "image": "/assets/images/headphones/h150.webp", "priceAdd": 0 }
+      {
+        "color": "blue",
+        "labelColor": "Xanh",
+        "image": "/assets/images/headphones/h150.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 170  }
+      {
+        "name": "97%",
+        "price": 170
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "H340",
     "colors": [
-      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h340.webp", "priceAdd": 0 }
+      {
+        "color": "Đen",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/h340.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 250  }
+      {
+        "name": "97%",
+        "price": 250
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "H370",
     "colors": [
-      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h370.webp", "priceAdd": 0 }
+      {
+        "color": "Đen",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/h370.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 330  }
+      {
+        "name": "97%",
+        "price": 330
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "H390",
     "colors": [
-      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h390.png", "priceAdd": 0 }
+      {
+        "color": "Đen",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/h390.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 430  }
+      {
+        "name": "97%",
+        "price": 430
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "H540",
     "colors": [
-      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h540.webp", "priceAdd": 0 }
+      {
+        "color": "Đen",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/h540.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 480  }
+      {
+        "name": "97%",
+        "price": 480
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "logio",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "H570e",
     "colors": [
-      { "color": "Đen", "labelColor" : "Đen", "image": "/assets/images/headphones/h570e.webp", "priceAdd": 0 }
+      {
+        "color": "Đen",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/h570e.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 580  }
+      {
+        "name": "97%",
+        "price": 580
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
-
-
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
@@ -182,12 +382,26 @@
     "visible": true,
     "brand": "liquidation",
     "name": "Logitech G733",
-    "tags": ["Không Dây / Bao Test 7 Ngày"],
+    "tags": [
+      "Không Dây"
+    ],
     "colors": [
-      { "color": "black", "labelColor": "Đen", "image": "/assets/images/headphones/g733-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/g733-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% + BOX, Mic Xấu", "price": 1250 }]
+      {
+        "name": "97% + BOX, Mic Xấu",
+        "price": 1250
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wireless"
+    ]
   }
 ]
-  

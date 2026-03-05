@@ -1,364 +1,680 @@
 [
-   {
+  {
     "visible": true,
     "brand": "receiver",
-    "tags": ["Chuột Văn Phòng Loại Bolt  / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Chuột Văn Phòng Loại Bolt"
+    ],
     "name": "Đầu Thu Logi Bolt",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-bolt.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/receiver-bolt.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "99%", "price": 150 }
-    ]
+      {
+        "name": "99%",
+        "price": 150
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
   {
-     "visible": true,
+    "visible": true,
     "brand": "receiver",
-    "tags": ["Chuột Văn Phòng Loại Unifying / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Chuột Văn Phòng Loại Unifying"
+    ],
     "name": "Đầu Thu Logi Unifying",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-unifying.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/receiver-unifying.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "99%", "price": 170 }
-    ]
+      {
+        "name": "99%",
+        "price": 170
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
   {
     "visible": true,
     "brand": "receiver",
-    "tags": ["Chuột Gaming G304 / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Chuột Gaming G304"
+    ],
     "name": "Đầu Thu Logi G304",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g304.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/receiver-g304.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "99%", "price": 250 }
-    ]
+      {
+        "name": "99%",
+        "price": 250
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
   {
     "visible": true,
     "brand": "receiver",
-    "tags": ["Chuột Gaming Dòng G / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Chuột Gaming Dòng G"
+    ],
     "name": "Đầu Thu Logi Dòng G",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-g.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/receiver-g.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "99%", "price": 330 }
-    ]
+      {
+        "name": "99%",
+        "price": 330
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
   {
     "visible": true,
     "brand": "receiver",
-    "tags": ["Chuột Gaming Dòng PRO / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Chuột Gaming Dòng PRO"
+    ],
     "name": "Đầu Thu Logi PRO / PRO 2 / PRO X",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/receiver-prox1.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/receiver-prox1.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "PRO X 1", "price": 450 },
-      { "name": "PRO X 2 - 1K Hz", "price": 450 }
-    ]
+      {
+        "name": "PRO X 1",
+        "price": 450
+      },
+      {
+        "name": "PRO X 2 - 1K Hz",
+        "price": 450
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
-
   {
-    "" : "FEET --------------------------------------------------------------------------------------------------------------------"
+    "": "FEET --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
     "visible": false,
     "brand": "pad",
-    "tags": ["Pad Control / Không Bảo Hành"],
+    "tags": [
+      "Pad Control"
+    ],
     "name": "Logitech G640",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/logitech-g640.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/logitech-g640.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 550 } ]
+      {
+        "name": "97%",
+        "price": 550
+      }
+    ],
+    "warranty": "Không Bảo Hành",
+    "connect": []
   },
-
   {
-   "visible": false,
+    "visible": false,
     "brand": "pad",
-    "tags": ["Pad Control & Speed / Bảo Hành 9.27 GEARVN"],
+    "tags": [
+      "Pad Control & Speed"
+    ],
     "name": "Logitech PowerPlay 2",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/logitech-powerplay-2.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/logitech-powerplay-2.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "99% + BOX", "price": 1850 }
-    ]
+      {
+        "name": "99% + BOX",
+        "price": 1850
+      }
+    ],
+    "warranty": "Bảo Hành 9.27 GEARVN",
+    "connect": []
   },
-
   {
-   "visible": false,
+    "visible": false,
     "brand": "pad",
-    "tags": ["Pad Hybrid, Micro-Textured / Bảo Hành 9.27 GEARVN"],
+    "tags": [
+      "Pad Hybrid, Micro-Textured"
+    ],
     "name": "Razer Firefly V2 Pro",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/razer-firefly-v2-pro.png", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/razer-firefly-v2-pro.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "99% + BOX", "price": 1980 }
-    ]
+      {
+        "name": "99% + BOX",
+        "price": 1980
+      }
+    ],
+    "warranty": "Bảo Hành 9.27 GEARVN",
+    "connect": []
   },
-
   {
-    "" : "FEET --------------------------------------------------------------------------------------------------------------------"
+    "": "FEET --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
-   "visible": true,
+    "visible": true,
     "brand": "feet",
-    "tags": ["Bộ Dán Chân Chuột / Không Bảo Hành"],
+    "tags": [
+      "Bộ Dán Chân Chuột"
+    ],
     "name": "Tiger ICE",
     "colors": [
-      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/accessories/feet-tiger-ice.webp", "priceAdd": 0 }
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/accessories/feet-tiger-ice.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "Logi PRO X / PRO X 2", "price": 125 }
-    ]
+      {
+        "name": "Logi PRO X / PRO X 2",
+        "price": 125
+      }
+    ],
+    "warranty": "Không Bảo Hành",
+    "connect": []
   },
   {
-   "visible": true,
+    "visible": true,
     "brand": "feet",
-    "tags": ["Bộ Dán Chân Chuột / Không Bảo Hành"],
+    "tags": [
+      "Bộ Dán Chân Chuột"
+    ],
     "name": "Tiger ICE DOTS",
     "colors": [
-      { "color": "white", "labelColor" : "Trắng", "image": "/assets/images/accessories/feet-tiger-ice-dots.webp", "priceAdd": 0 }
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/accessories/feet-tiger-ice-dots.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "DIY - Mọi Loại Chuột", "price": 125 }
-    ]
+      {
+        "name": "DIY - Mọi Loại Chuột",
+        "price": 125
+      }
+    ],
+    "warranty": "Không Bảo Hành",
+    "connect": []
   },
-
   {
-    "" : "WEBCAM --------------------------------------------------------------------------------------------------------------------"
+    "": "WEBCAM --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
     "visible": false,
     "brand": "webcam",
-    "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây, HD 720p"
+    ],
     "name": "C270",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c270.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/c270.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 280 }
+      {
+        "name": "97%",
+        "price": 280
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": false,
     "brand": "webcam",
-    "tags": ["Cắm Dây, HD 720p / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây, HD 720p"
+    ],
     "name": "C310",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c310.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/c310.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 350 }
+      {
+        "name": "97%",
+        "price": 350
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": false,
     "brand": "webcam",
-    "tags": ["Cắm Dây, HD 1080p / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây, HD 1080p"
+    ],
     "name": "C925e",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/c925e.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/c925e.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1080 }
+      {
+        "name": "97%",
+        "price": 1080
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": false,
     "brand": "webcam",
-    "tags": ["Cắm Dây & Remote, HD 1080p / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây & Remote, HD 1080p"
+    ],
     "name": "Conferrence BCC950",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/bcc950.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/bcc950.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 2150 }
+      {
+        "name": "97%",
+        "price": 2150
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": true,
     "brand": "webcam",
-    "tags": ["Camera, Mic, HUB, Remote, HD 1080p / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Camera, Mic, HUB, Remote, HD 1080p"
+    ],
     "name": "Conferrence Cam Group Live",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/cglive.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/cglive.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 9750 }
-    ]
+      {
+        "name": "97%",
+        "price": 9750
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
-
   {
-    "" : "SOUNDCARD --------------------------------------------------------------------------------------------------------------------"
+    "": "SOUNDCARD --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
-     "visible": true,
+    "visible": true,
     "brand": "soundcard",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "Logitech G433",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-g433.png", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/sc-g433.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 380 }
+      {
+        "name": "97%",
+        "price": 380
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
-  
   {
-     "visible": false,
+    "visible": false,
     "brand": "soundcard",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "Hype X Cloud II 7.1 Kingston",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/sc-hyper-x-cl2.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/sc-hyper-x-cl2.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% Gãy Nẹp Lưng", "price": 590 }
+      {
+        "name": "97% Gãy Nẹp Lưng",
+        "price": 590
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
   {
     "visible": false,
     "brand": "soundcard",
-    "tags": ["Cắm Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Cắm Dây"
+    ],
     "name": "Sennheiser GSX 1000",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/gsx-1000.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/gsx-1000.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 2080 }
+      {
+        "name": "97% + BOX",
+        "price": 2080
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   },
-
   {
-    "" : "LOA --------------------------------------------------------------------------------------------------------------------"
+    "": "LOA --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
-     "visible": true,
+    "visible": true,
     "brand": "speaker",
-    "tags": ["15W ~ 25W / Bảo Hành 1 Tháng"],
+    "tags": [
+      "15W ~ 25W"
+    ],
     "name": "Z313",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z313.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/z313.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 590 }
-    ]
+      {
+        "name": "97% + BOX",
+        "price": 590
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
-
   {
     "visible": true,
     "brand": "speaker",
-    "tags": ["40 ~ 80W / Bảo Hành 1 Tháng"],
+    "tags": [
+      "40 ~ 80W"
+    ],
     "name": "Z407",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z407.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/z407.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "95%, Xước 2 Loa Vệ Tinh", "price": 1050 }
-    ]
+      {
+        "name": "95%, Xước 2 Loa Vệ Tinh",
+        "price": 1050
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
-
   {
     "visible": false,
     "brand": "speaker",
-    "tags": ["120W ~ 240W / Bảo Hành 1 Tháng"],
+    "tags": [
+      "120W ~ 240W"
+    ],
     "name": "G560",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/g560.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/g560.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 2580 }
-    ]
+      {
+        "name": "97% + BOX",
+        "price": 2580
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
-
   {
     "visible": false,
     "brand": "speaker",
-    "tags": ["35W ~ 130W / Bảo Hành 1 Tháng"],
+    "tags": [
+      "35W ~ 130W"
+    ],
     "name": "Z625",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z625.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/z625.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1850 }
-    ]
+      {
+        "name": "97%",
+        "price": 1850
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
-
   {
     "visible": true,
     "brand": "speaker",
-    "tags": ["500W ~ 1000W, 3.5mm / Bảo Hành 1 Tháng"],
+    "tags": [
+      "500W ~ 1000W, 3.5mm"
+    ],
     "name": "Z906",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/z906.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/z906.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 3850 },
-      { "name": "New", "price": 4950 }
-    ]
+      {
+        "name": "97%",
+        "price": 3850
+      },
+      {
+        "name": "New",
+        "price": 4950
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
   },
-  
-
   {
-    "" : "TAY CẦM --------------------------------------------------------------------------------------------------------------------"
+    "": "TAY CẦM --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
-   "visible": true,
+    "visible": true,
     "brand": "controller",
-    "tags": ["Type C, Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Type C, Không Dây & Bluetooth"
+    ],
     "name": "XBOX Elite",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/xbox-elite.png", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/xbox-elite.png",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97% + BOX", "price": 1350 }
+      {
+        "name": "97% + BOX",
+        "price": 1350
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
-
   {
-    "" : "BÚT TRÌNH CHIẾU --------------------------------------------------------------------------------------------------------------------"
+    "": "BÚT TRÌNH CHIẾU --------------------------------------------------------------------------------------------------------------------"
   },
-
   {
     "visible": false,
     "brand": "pen",
-    "tags": ["Không Dây & Bluetooth / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "Logitech Spotlight",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/logi-spotlight-black.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/logi-spotlight-black.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "97%", "price": 1150 }
+      {
+        "name": "97%",
+        "price": 1150
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
-
-
   {
-    "" : "MICRO --------------------------------------------------------------------------------------------------------------------"
+    "": "MICRO --------------------------------------------------------------------------------------------------------------------"
   },
   {
     "visible": false,
     "brand": "micro",
-    "tags": ["Có Dây / Bảo Hành 1 Tháng"],
+    "tags": [
+      "Có Dây"
+    ],
     "name": "HyperX Solocast",
     "colors": [
-      { "color": "black", "labelColor" : "Đen", "image": "/assets/images/accessories/hyperx-solocast.webp", "priceAdd": 0 }
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/hyperx-solocast.webp",
+        "priceAdd": 0
+      }
     ],
     "options": [
-      { "name": "98% + BOX", "price": 680 }
+      {
+        "name": "98% + BOX",
+        "price": 680
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
     ]
   }
 ]
-  

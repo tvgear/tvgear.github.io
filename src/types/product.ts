@@ -28,6 +28,8 @@ export type BaseProduct<B extends string = string> = {
   images?: string[];
   visible?: boolean;
   tags: string[];
+  connect?: string[];
+  warranty?: string;
 };
 
 export type CartItem = {

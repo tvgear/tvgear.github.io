@@ -35,7 +35,6 @@ import {
   PriceItem,
   CatItem,
   ItemMeta,
-  TagMod,
   DetailOverlay,
   DetailModal,
   DetailClose,
@@ -43,6 +42,7 @@ import {
   DetailMainImg,
   DetailContent,
   DetailName,
+  DetailWarranty,
   DetailPrice,
   DetailSection,
   DetailLabel,
@@ -111,13 +111,8 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     }
     if (selectedConns.length > 0) {
       result = result.filter((p) => {
-        const tag = (p.tags[0] || "").toLowerCase();
-        return selectedConns.some(id => {
-          if (id === "wired") return tag.includes("có dây");
-          if (id === "wireless") return tag.includes("không dây") || tag.includes("wireless");
-          if (id === "bluetooth") return tag.includes("bluetooth");
-          return false;
-        });
+        if (!p.connect) return false;
+        return selectedConns.some(id => p.connect!.includes(id));
       });
     }
     if (selectedPrices.length > 0) {
@@ -156,17 +151,24 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     let forPrice = baseFiltered;
     if (selectedConns.length > 0) {
       forPrice = forPrice.filter((p) => {
-        const tag = (p.tags[0] || "").toLowerCase();
-        return selectedConns.some(id => {
-          if (id === "wired") return tag.includes("có dây");
-          if (id === "wireless") return tag.includes("không dây");
-          if (id === "bluetooth") return tag.includes("bluetooth");
-          return false;
-        });
+        if (!p.connect) return false;
+        return selectedConns.some(id => p.connect!.includes(id));
       });
     }
 
     let forConn = baseFiltered;
+    if (selectedPrices.length > 0) {
+      forConn = forConn.filter((p) => {
+        return p.options.some(opt => {
+          return selectedPrices.some(rangeId => {
+            const range = PRICE_RANGES.find(r => r.id === rangeId);
+            if (!range) return false;
+            return opt.price >= range.min && opt.price < range.max;
+          });
+        });
+      });
+    }
+
     const priceIds = new Set<string>();
     forPrice.forEach((p) => {
       p.options.forEach(opt => {
@@ -178,10 +180,9 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
 
     const connIds = new Set<string>();
     forConn.forEach((p) => {
-      const tag = (p.tags[0] || "").toLowerCase();
-      if (tag.includes("có dây")) connIds.add("wired");
-      if (tag.includes("không dây") || tag.includes("wireless")) connIds.add("wireless");
-      if (tag.includes("bluetooth")) connIds.add("bluetooth");
+      if (p.connect) {
+        p.connect.forEach(c => connIds.add(c));
+      }
     });
 
     return {
@@ -397,7 +398,11 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
                   </WrapImg>
                   <ItemMeta>
                     <NameItem>{p.name}</NameItem>
-                    <CatItem>{p.tags[0]}</CatItem>
+                    <CatItem>
+                      {p.connect && p.connect.length > 0 
+                        ? p.connect.map(c => CONNECTIONS.find(x => x.id === c)?.label || c).join(" & ") 
+                        : "\u00A0"}
+                    </CatItem>
                     <PriceItem>{priceText}</PriceItem>
                   </ItemMeta>
                 </ItemProduct>
@@ -520,6 +525,7 @@ function ProductDetailModal({ product, onClose, onAddToCart, onBuyNow }: {
         </DetailImgWrap>
         <DetailContent>
           <DetailName>{product.name}</DetailName>
+          {product.warranty && <DetailWarranty>{product.warranty}</DetailWarranty>}
           <DetailPrice>{price.toLocaleString("vi-VN")}.000đ</DetailPrice>
           
           <DetailSection>

@@ -345,13 +345,13 @@ export const WrapImg = styled.div`
 `;
 
 export const ImgItem = styled.img`
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   object-fit: contain;
   transition: 0.3s;
   @media screen and (max-width: 767px) {
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 70%;
   }
 `;
 
@@ -528,12 +528,19 @@ export const DetailName = styled.h1`
   font-family: F_BOLD;
   font-size: 2rem;
   color: #000;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   line-height: 1.1;
   @media screen and (max-width: 767px) {
     font-size: 1.4rem;
     margin-bottom: 4px;
   }
+`;
+
+export const DetailWarranty = styled.div`
+  font-family: F_MEDIUM;
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 14px;
 `;
 
 export const DetailPrice = styled.div`
@@ -558,8 +565,8 @@ export const DetailLabel = styled.div`
   font-family: F_BOLD;
   font-size: 1.3rem;
   text-transform: uppercase;
-  color: #bbb;
-  margin-bottom: 12px;
+  color: #000;
+  margin-bottom: 8px;
   span {
     color: #000;
     margin-left: 8px;
@@ -573,17 +580,17 @@ export const DetailValues = styled.div`
 `;
 
 export const OptionChip = styled.div<{ $active?: boolean }>`
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1.5px solid ${(p) => (p.$active ? "#000" : "#f0f0f0")};
   background: #fff;
   font-family: F_MEDIUM;
   font-size: 1.3rem;
   @media screen and (max-width: 767px) {
-    padding: 8px 16px;
+    padding: 6px 14px;
     font-size: 1.2rem;
   }
   color: #000;
-  border-radius: 100px;
+  border-radius: 12px;
   cursor: pointer;
   transition: 0.2s;
   &:hover {
@@ -592,9 +599,9 @@ export const OptionChip = styled.div<{ $active?: boolean }>`
 `;
 
 export const DetailThumb = styled.div<{ $active?: boolean; $color?: string }>`
-  width: 36px;
-  height: 36px;
-  border-radius: 100px;
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
   border: 1.5px solid ${(p) => (p.$active ? "#000" : "#f0f0f0")};
   padding: 3px;
   cursor: pointer;
@@ -607,7 +614,7 @@ export const DetailThumb = styled.div<{ $active?: boolean; $color?: string }>`
     width: 100%;
     height: 100%;
     background: ${(p) => p.$color || "#eee"};
-    border-radius: 100px;
+    border-radius: 8px;
   }
   &:hover {
     border-color: #000;
