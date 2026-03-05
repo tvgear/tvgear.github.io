@@ -15,19 +15,18 @@ const BlockHeader = styled.header`
   z-index: 100;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   width: 100%;
 `;
 
 const InnerHeader = styled.div`
   width: 100%;
-  height: 80px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
   @media screen and (max-width: 991px) {
-    height: 64px;
+    height: 56px;
     padding: 0 16px;
   }
 `;
