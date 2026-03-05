@@ -20,14 +20,10 @@ const WrapWeb = styled.div`
 `;
 
 const Content = styled.div`
-  width: 100dvw;
-  height: 100dvh;
-  border : 1.25px solid #777;
-  border-bottom: none;
-  border-top: none;
+  width: 100%;
+  max-width: 1440px;
   margin: 0px auto;
   position: relative;
-  z-index: 10;
   padding: 0px 0px 100px 0px;
   overflow-y : auto;
   &::-webkit-scrollbar {
@@ -35,6 +31,9 @@ const Content = styled.div`
   }
   @media screen and (max-width : 1199px) {
     overflow-y : auto;
+  }
+  @media screen and (max-width: 991px) {
+    padding-top: 0px;
   }
 `
 export const Note = styled.div`
@@ -75,8 +74,8 @@ const Layout = ({ children }: LayoutProps) => {
     <>
      <Loading showLoading={isLoading}  />
      <WrapWeb>
-      <Header contentRef={contentRef} />
       <Content ref={contentRef}>
+        <Header contentRef={contentRef} />
         {children}
         {/* <Note>Sản phẩm đang được cập nhật. List đầy đủ xem tại Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note> */}
       </Content>

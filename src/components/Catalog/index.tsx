@@ -1,166 +1,556 @@
 import * as React from "react";
+import ReactDOM from "react-dom";
+import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid } from "lucide-react";
+import { addToCart, clearCart } from "@/utils/carts";
+import { useRouter } from "next/router";
+import { BaseProduct, Brand as BrandT } from "@/types/product";
+export type { BaseProduct, BrandT as Brand };
 import {
-  ListTab,
-  ItemTab,
-  TextTab,
+  CatalogWrapper,
+  Sidebar,
+  SidebarTitle,
+  SidebarSection,
+  SidebarSectionTitle,
+  SidebarList,
+  SidebarItem,
+  CheckboxGroup,
+  MainContent,
+  MainHeader,
+  MobileBar,
+  MobilePageTitle,
+  MobileTabList,
+  MobileTab,
+  MobileActionRow,
+  MobileActionBtn,
+  MobileFilterOverlay,
+  MobileFilterContent,
+  MobileFilterFooter,
+  ApplyBtn,
+  ClearFilterBtn,
   ListProduct,
   ItemProduct,
-  ImgItem,
-  TagItem,
-  TextTag,
-  ViewTag,
   WrapImg,
-  BuyItem,
-  PriceOptionSelect,
-  ImgLogo,
-  TagMod,
-  ButtonLinkItem,
+  ImgItem,
   NameItem,
+  PriceItem,
+  CatItem,
+  ItemMeta,
+  TagMod,
+  DetailOverlay,
+  DetailModal,
+  DetailClose,
+  DetailImgWrap,
+  DetailMainImg,
+  DetailContent,
+  DetailName,
+  DetailPrice,
+  DetailSection,
+  DetailLabel,
+  DetailValues,
+  OptionChip,
+  DetailThumb,
+  ModalActionRow,
+  BuyNowBtn,
+  AddCartGhostBtn,
+  EmptyState,
+  SidebarBrandList,
+  SortSelectWrap,
+  SelectSort,
 } from "./style";
-import OrderProduct, { OrderData } from "./OrderProduct";
 
-export type ProductOption = {
-  name: string;
-  price: number;
-  colors?: string[];
-};
+const PRICE_RANGES = [
+  { id: "r1", label: "< 500.000", min: 0, max: 500 },
+  { id: "r2", label: "500.000 - 1.000.000", min: 500, max: 1000 },
+  { id: "r3", label: "1.000.000 - 1.500.000", min: 1000, max: 1500 },
+  { id: "r4", label: "1.500.000 - 2.000.000", min: 1500, max: 2000 },
+  { id: "r5", label: "> 2.000.000", min: 2000, max: 99999 },
+];
 
-export type ProductColor = {
-  color: string;
-  labelColor?: string;
-  image: string;
-  priceAdd: number;
-};
+const CONNECTIONS = [
+  { id: "wired", label: "Có Dây" },
+  { id: "wireless", label: "Không Dây" },
+  { id: "bluetooth", label: "Bluetooth" },
+];
 
-export type Brand<B extends string = string> = { key: B; label: string };
-
-export type BaseProduct<B extends string = string> = {
-  id: number;
-  brand: B;
-  name: string;
-  tags: string[];
-  colors: ProductColor[];
-  options: ProductOption[];
-};
-
-type CatalogProps<B extends string> = {
+type CatalogProps<T extends string> = {
   title?: string;
-  brands: ReadonlyArray<Brand<B>>;
-  products: ReadonlyArray<BaseProduct<B>>;
+  brands: ReadonlyArray<BrandT<T>>;
+  products: ReadonlyArray<BaseProduct<T>>;
 };
 
-export function Catalog<B extends string>({ brands, products }: CatalogProps<B>) {
-  const [activeBrand, setActiveBrand] = React.useState<B>(brands[0]?.key as B);
-  const [orderOpen, setOrderOpen] = React.useState(false);
-  const [orderData, setOrderData] = React.useState<OrderData | undefined>(undefined);
+function ModalPortal({ children }: { children: React.ReactNode }) {
+  const [mounted, setMounted] = React.useState(false);
+  React.useEffect(() => { setMounted(true); }, []);
+  if (!mounted) return null;
+  return ReactDOM.createPortal(children, document.body);
+}
 
-  const pageTopRef = React.useRef<HTMLDivElement>(null);
-  const listRef = React.useRef<HTMLDivElement>(null);
+export function Catalog<T extends string = string>({ brands, products }: CatalogProps<T>) {
+  const router = useRouter();
+  const [selectedBrand, setSelectedBrand] = React.useState<string>(brands[0]?.key || "all");
+  const [selectedPrices, setSelectedPrices] = React.useState<string[]>([]);
+  const [selectedConns, setSelectedConns] = React.useState<string[]>([]);
+  const [sortBy, setSortBy] = React.useState("price-asc");
+  const [detailProduct, setDetailProduct] = React.useState<BaseProduct | null>(null);
+  const [showMobileFilter, setShowMobileFilter] = React.useState(false);
+  const tabListRef = React.useRef<HTMLDivElement>(null);
 
-  // Tạo id cho sản phẩm
-  const preparedProducts = React.useMemo(() => {
-    return products.map((p, index) => ({ ...p, id: p.id ?? Date.now() + index }));
+  const pageName = React.useMemo(() => {
+    const route = router.pathname;
+    if (route === "/mouse") return "Chuột";
+    if (route === "/keyboard") return "Bàn Phím";
+    if (route === "/headphone") return "Tai Nghe";
+    if (route === "/accessories") return "Phụ Kiện";
+    return "Sản Phẩm";
+  }, [router.pathname]);
+
+  const filtered = React.useMemo(() => {
+    let result = [...products];
+    if (selectedBrand !== "all") {
+      result = result.filter((p) => p.brand === selectedBrand);
+    }
+    if (selectedConns.length > 0) {
+      result = result.filter((p) => {
+        const tag = (p.tags[0] || "").toLowerCase();
+        return selectedConns.some(id => {
+          if (id === "wired") return tag.includes("có dây");
+          if (id === "wireless") return tag.includes("không dây") || tag.includes("wireless");
+          if (id === "bluetooth") return tag.includes("bluetooth");
+          return false;
+        });
+      });
+    }
+    if (selectedPrices.length > 0) {
+      result = result.filter((p) => {
+        return p.options.some(opt => {
+          return selectedPrices.some(rangeId => {
+            const range = PRICE_RANGES.find(r => r.id === rangeId);
+            if (!range) return false;
+            return opt.price >= range.min && opt.price < range.max;
+          });
+        });
+      });
+    }
+    if (sortBy === "price-asc") {
+      result.sort((a, b) => Math.min(...a.options.map(o => o.price)) - Math.min(...b.options.map(o => o.price)));
+    } else if (sortBy === "price-desc") {
+      result.sort((a, b) => Math.max(...b.options.map(o => o.price)) - Math.max(...a.options.map(o => o.price)));
+    }
+    return result;
+  }, [products, selectedBrand, selectedPrices, selectedConns, sortBy]);
+
+  const brandCounts = React.useMemo(() => {
+    const counts: Record<string, number> = {};
+    products.forEach(p => {
+      counts[p.brand] = (counts[p.brand] || 0) + 1;
+    });
+    return counts;
   }, [products]);
 
-  const filtered = React.useMemo(
-    () => preparedProducts.filter((p) => p.brand === activeBrand),
-    [preparedProducts, activeBrand]
-  );
+  const { availablePrices, availableConns } = React.useMemo(() => {
+    let baseFiltered = [...products];
+    if (selectedBrand !== "all") {
+      baseFiltered = baseFiltered.filter((p) => p.brand === selectedBrand);
+    }
 
-  // Chuyển tab brand
-  const handleSwitchBrand = (key: B) => {
-    setActiveBrand(key);
-    if (pageTopRef.current) {
-    pageTopRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+    let forPrice = baseFiltered;
+    if (selectedConns.length > 0) {
+      forPrice = forPrice.filter((p) => {
+        const tag = (p.tags[0] || "").toLowerCase();
+        return selectedConns.some(id => {
+          if (id === "wired") return tag.includes("có dây");
+          if (id === "wireless") return tag.includes("không dây");
+          if (id === "bluetooth") return tag.includes("bluetooth");
+          return false;
+        });
+      });
+    }
+
+    let forConn = baseFiltered;
+    const priceIds = new Set<string>();
+    forPrice.forEach((p) => {
+      p.options.forEach(opt => {
+        PRICE_RANGES.forEach(r => {
+          if (opt.price >= r.min && opt.price < r.max) priceIds.add(r.id);
+        });
+      });
     });
-  }
+
+    const connIds = new Set<string>();
+    forConn.forEach((p) => {
+      const tag = (p.tags[0] || "").toLowerCase();
+      if (tag.includes("có dây")) connIds.add("wired");
+      if (tag.includes("không dây") || tag.includes("wireless")) connIds.add("wireless");
+      if (tag.includes("bluetooth")) connIds.add("bluetooth");
+    });
+
+    return {
+      availablePrices: Array.from(priceIds),
+      availableConns: Array.from(connIds),
+    };
+  }, [products, selectedBrand, selectedPrices, selectedConns]);
+
+  // Smart Filter side effects
+  React.useEffect(() => {
+    if (selectedBrand !== "all") {
+      const firstPrice = availablePrices[0];
+      if (availablePrices.length === 1 && firstPrice && !selectedPrices.includes(firstPrice)) {
+        setSelectedPrices([firstPrice]);
+      }
+      const firstConn = availableConns[0];
+      if (availableConns.length === 1 && firstConn && !selectedConns.includes(firstConn)) {
+        setSelectedConns([firstConn]);
+      }
+    }
+  }, [selectedBrand, availablePrices, availableConns, selectedPrices, selectedConns]);
+
+  const togglePrice = (id: string) => {
+    setSelectedPrices(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   };
 
-  // Mở modal đặt hàng
-  const openOrderFor = (product: BaseProduct<B>) => {
-    setOrderData({
-      productName: product.name,
-      colors: product.colors,
-      options: product.options,
-      selectedColorIndex: 0,
-      selectedOptionName: product.options[0]?.name ?? "",
-      image: product.colors[0]?.image,
-    });
-    setOrderOpen(true);
+  const toggleConn = (id: string) => {
+    setSelectedConns(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  };
+
+  const handleBrandChange = (key: string) => {
+    if (selectedBrand !== key) {
+      setSelectedBrand(key);
+      setSelectedPrices([]);
+      setSelectedConns([]);
+    }
+  };
+
+  const isPriceLocked = (id: string) => {
+    return selectedBrand !== "all" && availablePrices.length === 1 && availablePrices[0] === id;
+  };
+
+  const isConnLocked = (id: string) => {
+    return selectedBrand !== "all" && availableConns.length === 1 && availableConns[0] === id;
+  };
+
+  const handleBuyNowFromDetail = (product: BaseProduct, currentColor: any, currentOption: any) => {
+    clearCart();
+    addToCart(product.name, currentColor, currentOption, 1);
+    window.dispatchEvent(new Event("cart-updated"));
+    setDetailProduct(null);
+    router.push("/checkout");
+  };
+
+  const handleAddToCartFromDetail = (product: BaseProduct, currentColor: any, currentOption: any, imgRef: React.RefObject<HTMLImageElement>) => {
+    const imgElement = imgRef.current;
+    const cartIcon = document.getElementById("cart-icon-btn");
+    if (imgElement && cartIcon) {
+      const rect = imgElement.getBoundingClientRect();
+      const cartRect = cartIcon.getBoundingClientRect();
+      const clone = imgElement.cloneNode(true) as HTMLImageElement;
+      Object.assign(clone.style, {
+        position: "fixed",
+        top: `${rect.top}px`,
+        left: `${rect.left}px`,
+        width: `${rect.width}px`,
+        height: `${rect.height}px`,
+        zIndex: "10000",
+        transition: "all 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+        pointerEvents: "none"
+      });
+      document.body.appendChild(clone);
+      clone.getBoundingClientRect();
+      Object.assign(clone.style, {
+        top: `${cartRect.top + 10}px`,
+        left: `${cartRect.left + 10}px`,
+        width: "20px",
+        height: "20px",
+        opacity: "0.2"
+      });
+      setTimeout(() => document.body.removeChild(clone), 700);
+    }
+    addToCart(product.name, currentColor, currentOption, 1);
+    window.dispatchEvent(new Event("cart-updated"));
+    setDetailProduct(null);
   };
 
   return (
     <>
-      <div ref={pageTopRef} />
-     
-      <ListTab>
-        {brands.map((brand) => (
-          <ItemTab
-            key={brand.key}
-            className={activeBrand === brand.key ? "active" : ""}
-            onClick={() => handleSwitchBrand(brand.key)}
-          >
-            <TextTab>{brand.label}</TextTab>
-          </ItemTab>
-        ))}
-      </ListTab>
+    <CatalogWrapper>
+      <Sidebar>
+        <SidebarTitle>{pageName} ({products.length})</SidebarTitle>
+        <SidebarSection>
+          <SidebarSectionTitle>
+            {router.pathname === "/accessories" ? <LayoutGrid size={13} strokeWidth={2.5}/> : <GamepadDirectional size={14} strokeWidth={2.5}/>}
+            {router.pathname === "/accessories" ? "Phân Loại" : "Thương Hiệu"}
+          </SidebarSectionTitle>
+          <SidebarBrandList>
+            {brands.map(b => (
+              <SidebarItem key={b.key} $active={selectedBrand === b.key} onClick={() => handleBrandChange(b.key)}>
+                {b.label} <span>({brandCounts[b.key] || 0})</span>
+              </SidebarItem>
+            ))}
+          </SidebarBrandList>
+        </SidebarSection>
+        <SidebarSection>
+          <SidebarSectionTitle><CircleDollarSign size={14} strokeWidth={2.5}/> Giá</SidebarSectionTitle>
+          <SidebarList>
+            {PRICE_RANGES.map(r => {
+              const active = selectedPrices.includes(r.id);
+              const available = availablePrices.includes(r.id);
+              const locked = isPriceLocked(r.id);
+              return (
+                <CheckboxGroup key={r.id} className={(!available && !active) ? 'disabled' : ''}>
+                  <input 
+                    type="checkbox" 
+                    checked={active} 
+                    disabled={(!available && !active) || locked} 
+                    onChange={() => togglePrice(r.id)} 
+                  />
+                  <span className="custom-checkbox" />
+                  {r.label}
+                </CheckboxGroup>
+              );
+            })}
+          </SidebarList>
+        </SidebarSection>
+        {router.pathname !== "/accessories" && (
+          <SidebarSection>
+            <SidebarSectionTitle><SatelliteDish size={14} strokeWidth={2.5}/> Kết Nối</SidebarSectionTitle>
+            <SidebarList>
+              {CONNECTIONS.map(c => {
+                const active = selectedConns.includes(c.id);
+                const available = availableConns.includes(c.id);
+                const locked = isConnLocked(c.id);
+                return (
+                  <CheckboxGroup key={c.id} className={(!available && !active) ? 'disabled' : ''}>
+                    <input 
+                      type="checkbox" 
+                      checked={active} 
+                      disabled={(!available && !active) || locked} 
+                      onChange={() => toggleConn(c.id)} 
+                    />
+                    <span className="custom-checkbox" />
+                    {c.label}
+                  </CheckboxGroup>
+                );
+              })}
+            </SidebarList>
+          </SidebarSection>
+        )}
+      </Sidebar>
 
-      <ListProduct ref={listRef}>
-        {filtered.map((product) => {
-          const col = product.colors[0];
-          const colorAdd = col?.priceAdd ?? 0;
-
-        
-          const prices = product.options.map((o) => o.price + colorAdd);
-
-          const minPrice = Math.min(...prices);
-          const maxPrice = Math.max(...prices);
-
-        
-          const displayPrice =
-            minPrice === maxPrice
-              ? `${minPrice.toLocaleString("vi-VN")}.000`
-              : `${minPrice.toLocaleString("vi-VN")}.000 - ${maxPrice.toLocaleString("vi-VN")}.000`;
-
-          return (
-            <ItemProduct key={product.id}>
-              <WrapImg>
-                <ImgItem src={col?.image || ""} loading="lazy" />
-                {product.name.includes("Mod Slient") && <TagMod>SLIENT</TagMod>}
-              </WrapImg>
-
-              <TagItem>
-                {product.tags.map((tag) => (
-                  <ViewTag key={`${product.id}-${tag}`}>
-                    <TextTag>{tag}</TextTag>
-                  </ViewTag>
-                ))}
-              </TagItem>
-
-              <NameItem>{product.name}</NameItem>
-            
-              <BuyItem>
-                <PriceOptionSelect>{displayPrice} đ</PriceOptionSelect>
-                <ButtonLinkItem
-                  as="button"
-                  type="button"
-                  onClick={() => openOrderFor(product)}
+      <MainContent>
+        <MainHeader>
+          <MobileBar>
+            <MobilePageTitle>{pageName} ({products.length})</MobilePageTitle>
+            <MobileTabList ref={tabListRef}>
+              {brands.map(b => (
+                <MobileTab
+                  key={b.key}
+                  $active={selectedBrand === b.key}
+                  onClick={(e) => {
+                    handleBrandChange(b.key);
+                    const el = e.currentTarget;
+                    const container = tabListRef.current;
+                    if (container) {
+                      const scrollLeft = el.offsetLeft - container.offsetWidth / 2 + el.offsetWidth / 2;
+                      container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+                    }
+                  }}
                 >
-                  <ImgLogo src="/logo.svg" />ĐẶT HÀNG
-                </ButtonLinkItem>
-              </BuyItem>
-            </ItemProduct>
-          );
-        })}
-      </ListProduct>
-      <OrderProduct
-        open={orderOpen}
-        data={orderData}
-        onClose={() => setOrderOpen(false)}
-        onSuccess={() => setOrderData(undefined)}
-      />
+                  {b.label} <span>({brandCounts[b.key] || 0})</span>
+                </MobileTab>
+              ))}
+            </MobileTabList>
+            <MobileActionRow>
+              <MobileActionBtn onClick={() => setShowMobileFilter(true)}>Bộ lọc</MobileActionBtn>
+              <SelectSort value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+                <option value="price-asc">Giá Thấp → Cao</option>
+                <option value="price-desc">Giá Cao → Thấp</option>
+              </SelectSort>
+            </MobileActionRow>
+          </MobileBar>
+          <div className="desktop-sort">
+            <SortSelectWrap>
+              <SelectSort value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+                <option value="price-asc">Giá Thấp → Cao</option>
+                <option value="price-desc">Giá Cao → Thấp</option>
+              </SelectSort>
+            </SortSelectWrap>
+          </div>
+        </MainHeader>
+
+        {filtered.length === 0 ? (
+          <EmptyState>
+            <AlertCircle size={48} strokeWidth={1} />
+            <p>Không tìm thấy sản phẩm phù hợp</p>
+            <button onClick={() => { setSelectedBrand("all"); setSelectedPrices([]); setSelectedConns([]); }}>Xóa tất cả bộ lọc</button>
+          </EmptyState>
+        ) : (
+          <ListProduct>
+            {filtered.map(p => {
+              const minPrice = Math.min(...p.options.map(o => o.price));
+              const maxPrice = Math.max(...p.options.map(o => o.price));
+              const priceText = minPrice === maxPrice
+                ? `${minPrice.toLocaleString("vi-VN")}.000đ`
+                : `${minPrice.toLocaleString("vi-VN")}.000đ - ${maxPrice.toLocaleString("vi-VN")}.000đ`;
+              return (
+                <ItemProduct key={p.id} onClick={() => setDetailProduct(p)}>
+                  <WrapImg>
+                    <ImgItem src={p.colors[0]?.image} />
+                  </WrapImg>
+                  <ItemMeta>
+                    <NameItem>{p.name}</NameItem>
+                    <CatItem>{p.tags[0]}</CatItem>
+                    <PriceItem>{priceText}</PriceItem>
+                  </ItemMeta>
+                </ItemProduct>
+              );
+            })}
+          </ListProduct>
+        )}
+      </MainContent>
+    </CatalogWrapper>
+
+    {/* Detail Modal - rendered via portal */}
+    {detailProduct && (
+      <ModalPortal>
+        <ProductDetailModal
+          product={detailProduct}
+          onClose={() => setDetailProduct(null)}
+          onAddToCart={handleAddToCartFromDetail}
+          onBuyNow={handleBuyNowFromDetail}
+        />
+      </ModalPortal>
+    )}
+
+    {/* Mobile Filter Overlay - rendered via portal */}
+    {showMobileFilter && (
+      <ModalPortal>
+        <MobileFilterOverlay>
+          <MobileFilterContent>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
+              <h2 style={{ fontFamily: 'F_BOLD', fontSize: '2rem' }}>Bộ lọc</h2>
+              <X onClick={() => setShowMobileFilter(false)} />
+            </div>
+            
+            <div style={{ marginBottom: '30px' }}>
+              <h3 style={{ fontFamily: 'F_BOLD', fontSize: '1.4rem', marginBottom: '15px' }}>Giá</h3>
+              <SidebarList>
+                {PRICE_RANGES.map(r => {
+                  const active = selectedPrices.includes(r.id);
+                  const available = availablePrices.includes(r.id);
+                  return (
+                    <CheckboxGroup key={r.id} className={!available && !active ? 'disabled' : ''}>
+                      <input type="checkbox" checked={active} disabled={!available && !active} onChange={() => togglePrice(r.id)} />
+                      <span className="custom-checkbox" />
+                      {r.label}
+                    </CheckboxGroup>
+                  );
+                })}
+              </SidebarList>
+            </div>
+
+            {router.pathname !== "/accessories" && (
+              <div style={{ marginBottom: '30px' }}>
+                <h3 style={{ fontFamily: 'F_BOLD', fontSize: '1.4rem', marginBottom: '15px' }}>Kết nối</h3>
+                <SidebarList>
+                  {CONNECTIONS.map(c => {
+                    const active = selectedConns.includes(c.id);
+                    const available = availableConns.includes(c.id);
+                    return (
+                      <CheckboxGroup key={c.id} className={!available && !active ? 'disabled' : ''}>
+                        <input type="checkbox" checked={active} disabled={!available && !active} onChange={() => toggleConn(c.id)} />
+                        <span className="custom-checkbox" />
+                        {c.label}
+                      </CheckboxGroup>
+                    );
+                  })}
+                </SidebarList>
+              </div>
+            )}
+          </MobileFilterContent>
+          <MobileFilterFooter>
+            <ClearFilterBtn onClick={() => { setSelectedPrices([]); setSelectedConns([]); }}>Huỷ Tất Cả</ClearFilterBtn>
+            <ApplyBtn onClick={() => setShowMobileFilter(false)}>Áp Dụng</ApplyBtn>
+          </MobileFilterFooter>
+        </MobileFilterOverlay>
+      </ModalPortal>
+    )}
     </>
+  );
+}
+
+function ProductDetailModal({ product, onClose, onAddToCart, onBuyNow }: {
+  product: BaseProduct;
+  onClose: () => void;
+  onAddToCart: (p: BaseProduct, c: any, o: any, r: any) => void;
+  onBuyNow: (p: BaseProduct, c: any, o: any) => void;
+}) {
+  const [selectedColorIdx, setSelectedColorIdx] = React.useState(0);
+  const [selectedOptIdx, setSelectedOptIdx] = React.useState(0);
+  const imgRef = React.useRef<HTMLImageElement>(null);
+
+  const currentColor = product.colors[selectedColorIdx] || product.colors[0];
+
+  // Filter options that have the selected color
+  const filteredOptions = React.useMemo(() => {
+    if (!currentColor) return product.options;
+    return product.options.filter(opt => 
+      !opt.colors || opt.colors.length === 0 || opt.colors.includes(currentColor.color)
+    );
+  }, [currentColor, product.options]);
+
+  // Auto-select first available option when color changes
+  React.useEffect(() => {
+    if (filteredOptions.length > 0) {
+      const currentOpt = product.options[selectedOptIdx];
+      if (currentOpt && !filteredOptions.includes(currentOpt)) {
+        const first = filteredOptions[0];
+        if (first) setSelectedOptIdx(product.options.indexOf(first));
+      }
+    }
+  }, [filteredOptions, selectedOptIdx, product.options]);
+
+  const currentOption = product.options[selectedOptIdx] || product.options[0];
+  const price = (currentOption?.price || 0) + (currentColor?.priceAdd || 0);
+
+  return (
+    <DetailOverlay onClick={onClose}>
+      <DetailModal onClick={e => e.stopPropagation()}>
+        <DetailClose onClick={onClose}><X size={20}/></DetailClose>
+        <DetailImgWrap>
+          <DetailMainImg ref={imgRef} src={currentColor?.image} />
+        </DetailImgWrap>
+        <DetailContent>
+          <DetailName>{product.name}</DetailName>
+          <DetailPrice>{price.toLocaleString("vi-VN")}.000đ</DetailPrice>
+          
+          <DetailSection>
+            <DetailLabel>Màu</DetailLabel>
+            <DetailValues>
+              {product.colors.map((c, i) => (
+                <DetailThumb key={c.image} $active={selectedColorIdx === i} $color={c.color} onClick={() => setSelectedColorIdx(i)} />
+              ))}
+            </DetailValues>
+          </DetailSection>
+
+          <DetailSection>
+            <DetailLabel>Phân loại</DetailLabel>
+            <DetailValues>
+              {filteredOptions.map((opt) => {
+                const realIdx = product.options.indexOf(opt);
+                return (
+                  <OptionChip key={opt.name} $active={selectedOptIdx === realIdx} onClick={() => setSelectedOptIdx(realIdx)}>
+                    {opt.name}
+                  </OptionChip>
+                );
+              })}
+            </DetailValues>
+          </DetailSection>
+
+          <ModalActionRow>
+            <AddCartGhostBtn onClick={() => onAddToCart(product, currentColor, currentOption, imgRef)}>Thêm Giỏ Hàng</AddCartGhostBtn>
+            <BuyNowBtn onClick={() => onBuyNow(product, currentColor, currentOption)}>Mua Ngay</BuyNowBtn>
+          </ModalActionRow>
+        </DetailContent>
+      </DetailModal>
+    </DetailOverlay>
   );
 }
