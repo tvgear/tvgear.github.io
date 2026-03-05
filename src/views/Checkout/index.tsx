@@ -18,17 +18,19 @@ const Page = styled.div`
   }
 `;
 
-const BackBtn = styled.div`
-  display: inline-flex;
+const MobileBackBtn = styled.div`
+  display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  border-radius: 50%;
   cursor: pointer;
-  font-family: F_SEMIBOLD;
-  font-size: 1.4rem;
-  color: #555;
-  margin-bottom: 16px;
+  margin-right: 12px;
+  transition: 0.2s;
   &:hover {
-    color: #000;
+    background: #e5e5e5;
   }
 `;
 
@@ -45,9 +47,8 @@ const TwoCol = styled.div`
 
 const Card = styled.div`
   background: #fff;
-  border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
 `;
 
 const SectionTitle = styled.div`
@@ -63,7 +64,6 @@ const CheckoutItem = styled.div`
   display: flex;
   gap: 12px;
   padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
   &:last-child {
     border-bottom: none;
   }
@@ -73,10 +73,10 @@ const CIImg = styled.img`
   height: 64px;
   object-fit: contain;
   border-radius: 8px;
-  background: #f5f5f5;
 `;
 const CIInfo = styled.div`
   flex: 1;
+  margin : 0px 0px 0px 7.5px;
 `;
 const CIName = styled.div`
   font-family: F_BOLD;
@@ -387,9 +387,11 @@ export default function CheckoutView() {
   if (cartItems.length === 0 && step === "form") {
     return (
       <Page>
-        <BackBtn onClick={() => router.push("/")}>
-          <ArrowLeft size={16} /> Quay lại
-        </BackBtn>
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+          <MobileBackBtn onClick={() => router.push("/")}>
+            <ArrowLeft size={20} />
+          </MobileBackBtn>
+        </div>
         <Card style={{ textAlign: "center", padding: "60px 20px", maxWidth: 480, margin: "0 auto" }}>
           <div style={{ fontSize: "1.6rem", color: "#999" }}>Giỏ hàng trống</div>
           <SubmitBtn style={{ marginTop: 20, maxWidth: 240, margin: "20px auto 0" }} onClick={() => router.push("/")}>
@@ -510,9 +512,11 @@ export default function CheckoutView() {
   if (step === "payment") {
     return (
       <Page ref={pageRef}>
-        <BackBtn onClick={() => setStep("form")}>
-          <ArrowLeft size={16} /> Quay lại
-        </BackBtn>
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+          <MobileBackBtn onClick={() => setStep("form")}>
+            <ArrowLeft size={20} />
+          </MobileBackBtn>
+        </div>
         <PaymentCard>
           {method === 0 ? (
             <>
@@ -566,13 +570,14 @@ export default function CheckoutView() {
 
   return (
     <Page ref={pageRef}>
-      <BackBtn onClick={() => router.push("/")}>
-        <ArrowLeft size={16} /> Quay lại
-      </BackBtn>
-
       <TwoCol>
         <Card>
-          <SectionTitle>Đơn hàng ({cartItems.length} sản phẩm)</SectionTitle>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+            <MobileBackBtn onClick={() => router.push("/")}>
+              <ArrowLeft size={20} />
+            </MobileBackBtn>
+            <SectionTitle style={{ marginBottom: 0 }}>Đơn Hàng ({cartItems.length} Sản Phẩm)</SectionTitle>
+          </div>
           {cartItems.map((item, idx) => {
             const up = item.option.price;
             return (
@@ -589,46 +594,46 @@ export default function CheckoutView() {
             );
           })}
           <Divider />
-          <SummaryRow><span>Tạm tính</span><span>{totalPrice.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
-          <SummaryRow><span>Phí Ship dự kiến</span><span>{shipFee.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+          <SummaryRow><span>Tạm Tính</span><span>{totalPrice.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+          <SummaryRow><span>Phí Ship Dự Kiến</span><span>{shipFee.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
           {method === 0 && (
-            <SummaryRow><span>Tiền cọc</span><span>{deposit.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+            <SummaryRow><span>Tiền Cọc Đơn Hàng</span><span>{deposit.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
           )}
           {method === 1 && (
-            <SummaryRow><span>Hỗ trợ Ship</span><span style={{ color: "#22c55e" }}>-{shipDiscount.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+            <SummaryRow><span>Hỗ Trợ Phí Ship</span><span style={{ color: "#22c55e" }}>-{shipDiscount.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
           )}
           <Divider />
           <SummaryRow $bold>
-            <span>Tổng</span>
+            <span>{method === 1 ? 'Tổng Thanh Toán' : 'Tổng Thanh Toán Khi Nhận'}</span>
             <span>
               {method === 0
-                ? `${(totalPrice + shipFee).toLocaleString("vi-VN")}.000 đ`
+                ? `${(totalPrice + shipFee - deposit).toLocaleString("vi-VN")}.000 đ`
                 : `${(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ`}
             </span>
           </SummaryRow>
         </Card>
 
         <Card>
-          <SectionTitle>Thông tin nhận hàng</SectionTitle>
+          <SectionTitle>Thông Tin Nhận Hàng</SectionTitle>
 
           <FormGroup>
             <Label>Tên *</Label>
             <Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên" />
           </FormGroup>
           <FormGroup>
-            <Label>Số điện thoại *</Label>
+            <Label>Số Điện Thoại *</Label>
             <Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập SĐT" type="tel" inputMode="numeric" />
           </FormGroup>
           <FormGroup>
-            <Label>Địa chỉ *</Label>
+            <Label>Địa Chỉ *</Label>
             <Textarea value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Nhập địa chỉ" rows={2} />
           </FormGroup>
           <FormGroup>
-            <Label>Ghi chú</Label>
+            <Label>Ghi Chú</Label>
             <Textarea value={note} onChange={(e) => setNote(e.target.value)} placeholder="Ghi chú cho đơn hàng" rows={2} />
           </FormGroup>
 
-          <SectionTitle>Phương thức thanh toán</SectionTitle>
+          <SectionTitle>Phương Thức Thanh Toán</SectionTitle>
           <PaymentMethods>
             <PayMethodBtn $active={method === 0} onClick={() => setMethod(0)}>
               COD - Tiền Mặt
@@ -642,7 +647,9 @@ export default function CheckoutView() {
           {error && <ErrorMsg>{error}</ErrorMsg>}
 
           <SubmitBtn onClick={handleSubmitOrder} disabled={submitting}>
-            Tiến hành thanh toán — {totalPrice.toLocaleString("vi-VN")}.000 đ
+            {method === 0 
+              ? `Tiến hành cọc đơn hàng — ${deposit.toLocaleString("vi-VN")}.000 đ` 
+              : `Tiến Hành Thanh Toán — ${(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ`}
           </SubmitBtn>
         </Card>
       </TwoCol>
