@@ -401,11 +401,11 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
                   </WrapImg>
                   <ItemMeta>
                     <NameItem>{p.name}</NameItem>
-                    <CatItem>
-                      {p.connect && p.connect.length > 0 
-                        ? p.connect.map(c => CONNECTIONS.find(x => x.id === c)?.label || c).join(" & ") 
-                        : "\u00A0"}
-                    </CatItem>
+                    {p.connect && p.connect.length > 0 && (
+                      <CatItem>
+                        {p.connect.map(c => CONNECTIONS.find(x => x.id === c)?.label || c).join(" & ")}
+                      </CatItem>
+                    )}
                     <PriceItem>{priceText}</PriceItem>
                   </ItemMeta>
                 </ItemProduct>
