@@ -177,12 +177,28 @@
         "labelColor": "Trắng",
         "image": "/assets/images/headphones/pro2-wl-white.webp",
         "priceAdd": 0
+      },
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/pro2-wl-black.webp",
+        "priceAdd": 0
       }
     ],
     "options": [
       {
         "name": "97%, Bluetooth",
-        "price": 1650
+        "price": 1650,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "97%, Thiếu Đệm Nỉ",
+        "price": 2550,
+        "colors": [
+          "black"
+        ]
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",

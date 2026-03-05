@@ -548,12 +548,28 @@
         "labelColor": "Đen",
         "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp",
         "priceAdd": 0
+      },
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp",
+        "priceAdd": 0
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 2180
+        "price": 2180,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "97% + BOX, BH 7/27",
+        "price": 2390,
+        "colors": [
+          "white"
+        ]
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -835,8 +851,8 @@
         "price": 230
       },
       {
-        "name": "New No Box + Logi Bolt",
-        "price": 280
+        "name": "New No Box",
+        "price": 300
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -858,18 +874,16 @@
         "labelColor": "Đen",
         "image": "/assets/images/mouses/m350s-black.webp",
         "priceAdd": 0
-      },
-      {
-        "color": "rgba(240,224,221)",
-        "labelColor": "Hồng",
-        "image": "/assets/images/mouses/m350s-pink.webp",
-        "priceAdd": 0
       }
     ],
     "options": [
       {
         "name": "97%",
         "price": 300
+      },
+      {
+        "name": "New No Box",
+        "price": 380
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -899,8 +913,12 @@
         "price": 330
       },
       {
-        "name": "97% + Logi Bolt",
+        "name": "97% + Đầu Thu",
         "price": 430
+      },
+      {
+        "name": "New No Box + Đầu Thu",
+        "price": 480
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1018,7 +1036,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 790
+        "price": 780
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1088,7 +1106,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Master 2s",
     "tags": [
@@ -1148,7 +1166,7 @@
     "": "RAZER --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
     "name": "Basilisk v3",
     "tags": [
@@ -1165,7 +1183,33 @@
     "options": [
       {
         "name": "97%",
-        "price": 700
+        "price": 750
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "DA v3",
+    "tags": [
+      "Có Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/da-v3.png",
+        "priceAdd": 0
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 850
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1328,7 +1372,7 @@
     "options": [
       {
         "name": "97%, BH 4/26",
-        "price": 2500
+        "price": 2180
       }
     ],
     "warranty": "Bảo Hành Hãng",
