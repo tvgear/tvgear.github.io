@@ -210,6 +210,7 @@ export const MobilePageTitle = styled.h2`
   margin-top: 6px;
   margin-bottom: 14px;
   line-height: 1;
+  text-align: center;
 `;
 
 export const MobileBar = styled.div`
