@@ -17,7 +17,7 @@
     "prepare": "husky install",
     "postbuild": "next-sitemap",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
