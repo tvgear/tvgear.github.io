@@ -204,11 +204,12 @@ const CartItemRow = styled.div`
 `;
 
 const CartImg = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   background: #f6f6f6;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 4px;
 `;
 
 const CartInfo = styled.div`
