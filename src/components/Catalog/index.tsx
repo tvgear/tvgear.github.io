@@ -1,6 +1,6 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
-import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid } from "lucide-react";
+import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid, MessageCircleMore } from "lucide-react";
 import { addToCart, clearCart } from "@/utils/carts";
 import { useRouter } from "next/router";
 import { BaseProduct, Brand as BrandT } from "@/types/product";
@@ -56,14 +56,29 @@ import {
   SidebarBrandList,
   SortSelectWrap,
   SelectSort,
+  ChatBtn,
+  ContactOverlay,
+  ContactModal,
+  ContactClose,
+  ContactTitle,
+  ContactProductSummary,
+  ContactProductImg,
+  ContactProductInfo,
+  ContactProductName,
+  ContactProductMeta,
+  ContactProductPrice,
+  ContactNote,
+  ContactActions,
+  ContactBtn,
+  HighlightAction,
+  HighlightName,
 } from "./style";
 
 const PRICE_RANGES = [
   { id: "r1", label: "< 500.000", min: 0, max: 500 },
   { id: "r2", label: "500.000 - 1.000.000", min: 500, max: 1000 },
   { id: "r3", label: "1.000.000 - 1.500.000", min: 1000, max: 1500 },
-  { id: "r4", label: "1.500.000 - 2.000.000", min: 1500, max: 2000 },
-  { id: "r5", label: "> 2.000.000", min: 2000, max: 99999 },
+  { id: "r4", label: "> 1.500.000", min: 1500, max: 99999 },
 ];
 
 const CONNECTIONS = [
@@ -213,6 +228,8 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     setSelectedConns(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
   };
 
+
+
   const handleBrandChange = (key: string) => {
     if (selectedBrand !== key) {
       setSelectedBrand(key);
@@ -234,8 +251,18 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     clearCart();
     addToCart(product.name, currentColor, currentOption, 1);
     window.dispatchEvent(new Event("cart-updated"));
-    setDetailProduct(null);
+    handleCloseDetail();
     router.push("/checkout");
+  };
+
+  const [isClosingDetail, setIsClosingDetail] = React.useState(false);
+
+  const handleCloseDetail = () => {
+    setIsClosingDetail(true);
+    setTimeout(() => {
+      setDetailProduct(null);
+      setIsClosingDetail(false);
+    }, 300);
   };
 
   const handleAddToCartFromDetail = (product: BaseProduct, currentColor: any, currentOption: any, imgRef: React.RefObject<HTMLImageElement>) => {
@@ -268,7 +295,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     }
     addToCart(product.name, currentColor, currentOption, 1);
     window.dispatchEvent(new Event("cart-updated"));
-    setDetailProduct(null);
+    handleCloseDetail();
   };
 
   return (
@@ -278,7 +305,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
         <SidebarTitle>{pageName}</SidebarTitle>
         <SidebarSection>
           <SidebarSectionTitle>
-            {router.pathname === "/accessories" ? <LayoutGrid size={13} strokeWidth={2.5}/> : <GamepadDirectional size={14} strokeWidth={2.5}/>}
+            {router.pathname === "/accessories" ? <LayoutGrid size={11} strokeWidth={2.5}/> : <GamepadDirectional size={12} strokeWidth={2.5}/>}
             {router.pathname === "/accessories" ? "Phân Loại" : "Thương Hiệu"}
           </SidebarSectionTitle>
           <SidebarBrandList>
@@ -290,7 +317,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
           </SidebarBrandList>
         </SidebarSection>
         <SidebarSection>
-          <SidebarSectionTitle><CircleDollarSign size={14} strokeWidth={2.5}/> Giá</SidebarSectionTitle>
+          <SidebarSectionTitle><CircleDollarSign size={12} strokeWidth={2.5}/> Giá</SidebarSectionTitle>
           <SidebarList>
             {PRICE_RANGES.map(r => {
               const active = selectedPrices.includes(r.id);
@@ -313,7 +340,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
         </SidebarSection>
         {router.pathname !== "/accessories" && (
           <SidebarSection>
-            <SidebarSectionTitle><SatelliteDish size={14} strokeWidth={2.5}/> Kết Nối</SidebarSectionTitle>
+            <SidebarSectionTitle><SatelliteDish size={12} strokeWidth={2.5}/> Kết Nối</SidebarSectionTitle>
             <SidebarList>
               {CONNECTIONS.map(c => {
                 const active = selectedConns.includes(c.id);
@@ -421,7 +448,8 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
       <ModalPortal>
         <ProductDetailModal
           product={detailProduct}
-          onClose={() => setDetailProduct(null)}
+          onClose={handleCloseDetail}
+          isClosing={isClosingDetail}
           onAddToCart={handleAddToCartFromDetail}
           onBuyNow={handleBuyNowFromDetail}
         />
@@ -485,22 +513,33 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
   );
 }
 
-function ProductDetailModal({ product, onClose, onAddToCart, onBuyNow }: {
+function ProductDetailModal({ product, onClose, isClosing, onAddToCart, onBuyNow }: {
   product: BaseProduct;
   onClose: () => void;
+  isClosing: boolean;
   onAddToCart: (p: BaseProduct, c: any, o: any, r: any) => void;
   onBuyNow: (p: BaseProduct, c: any, o: any) => void;
 }) {
   const [selectedColorIdx, setSelectedColorIdx] = React.useState(0);
   const [selectedOptIdx, setSelectedOptIdx] = React.useState(0);
+  const [showContactModal, setShowContactModal] = React.useState(false);
+  const [isClosingContact, setIsClosingContact] = React.useState(false);
   const imgRef = React.useRef<HTMLImageElement>(null);
+
+  const handleCloseContact = () => {
+    setIsClosingContact(true);
+    setTimeout(() => {
+      setShowContactModal(false);
+      setIsClosingContact(false);
+    }, 300);
+  };
 
   const currentColor = product.colors[selectedColorIdx] || product.colors[0];
 
   // Filter options that have the selected color
   const filteredOptions = React.useMemo(() => {
     if (!currentColor) return product.options;
-    return product.options.filter(opt => 
+    return product.options.filter(opt =>
       !opt.colors || opt.colors.length === 0 || opt.colors.includes(currentColor.color)
     );
   }, [currentColor, product.options]);
@@ -518,10 +557,22 @@ function ProductDetailModal({ product, onClose, onAddToCart, onBuyNow }: {
 
   const currentOption = product.options[selectedOptIdx] || product.options[0];
   const price = (currentOption?.price || 0) + (currentColor?.priceAdd || 0);
+  const colorLabel = currentColor?.labelColor || currentColor?.color;
+
+  const handleChatClick = () => {
+    const text = `${product.name}
+${colorLabel}
+${currentOption?.name}
+${price.toLocaleString("vi-VN")}.000đ
+
+Mình cần tư vấn sản phẩm này.`;
+    navigator.clipboard.writeText(text);
+    setShowContactModal(true);
+  };
 
   return (
-    <DetailOverlay onClick={onClose}>
-      <DetailModal onClick={e => e.stopPropagation()}>
+    <DetailOverlay $isClosing={isClosing} onClick={onClose}>
+      <DetailModal $isClosing={isClosing} onClick={e => e.stopPropagation()}>
         <DetailClose onClick={onClose}><X size={20}/></DetailClose>
         <DetailImgWrap>
           <DetailMainImg ref={imgRef} src={currentColor?.image} />
@@ -564,11 +615,50 @@ function ProductDetailModal({ product, onClose, onAddToCart, onBuyNow }: {
           </DetailSection>
 
           <ModalActionRow>
-            <AddCartGhostBtn onClick={() => onAddToCart(product, currentColor, currentOption, imgRef)}>Thêm Giỏ Hàng</AddCartGhostBtn>
-            <BuyNowBtn onClick={() => onBuyNow(product, currentColor, currentOption)}>Mua Ngay</BuyNowBtn>
+            <ChatBtn onClick={handleChatClick}>
+              <MessageCircleMore size={20} strokeWidth={1.5} />
+            </ChatBtn>
+            <AddCartGhostBtn onClick={() => onAddToCart(product, currentColor, currentOption, imgRef)}>Thêm Giỏ</AddCartGhostBtn>
+            <BuyNowBtn onClick={() => onBuyNow(product, currentColor, currentOption)}>Đặt Mua</BuyNowBtn>
           </ModalActionRow>
         </DetailContent>
       </DetailModal>
+
+      {showContactModal && (
+        <ModalPortal>
+          <ContactOverlay $isClosing={isClosingContact} onClick={handleCloseContact}>
+            <ContactModal $isClosing={isClosingContact} onClick={e => e.stopPropagation()}>
+              <ContactClose onClick={handleCloseContact}>
+                <X size={18} />
+              </ContactClose>
+              <ContactTitle>Tư Vấn Sản Phẩm</ContactTitle>
+              
+              <ContactProductSummary>
+                <ContactProductImg src={currentColor?.image} />
+                <ContactProductInfo>
+                  <ContactProductName>{product.name}</ContactProductName>
+                  <ContactProductMeta>{colorLabel} · {currentOption?.name}</ContactProductMeta>
+                  <ContactProductPrice>{price.toLocaleString("vi-VN")}.000đ</ContactProductPrice>
+                </ContactProductInfo>
+              </ContactProductSummary>
+
+              <ContactNote>
+                <div>Thông tin sản phẩm đã được <HighlightAction $type="copy">Sao Chép</HighlightAction></div>
+                <div>Chọn <HighlightAction $type="paste">Dán</HighlightAction> thông tin đơn hàng vào khung chat của ứng dụng và nhấn gửi để <HighlightName>TVGEAR</HighlightName> có thể hỗ trợ tư vấn sản phẩm cho bạn.</div>
+              </ContactNote>
+
+              <ContactActions>
+                <ContactBtn $type="zalo" href="https://zalo.me/0398637036" target="_blank" rel="noopener noreferrer">
+                  Zalo
+                </ContactBtn>
+                <ContactBtn $type="fb" href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">
+                  Messenger
+                </ContactBtn>
+              </ContactActions>
+            </ContactModal>
+          </ContactOverlay>
+        </ModalPortal>
+      )}
     </DetailOverlay>
   );
 }

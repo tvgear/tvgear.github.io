@@ -7,15 +7,21 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const WrapWeb = styled.div`
+import { useRouter } from "next/router";
+
+const WrapWeb = styled.div<{ $isCheckout?: boolean }>`
   height: 100dvh;
   width: 100dvw;
   position: relative;
   display: flex;
   flex-direction: column;
+  background: ${(p) => p.$isCheckout ? "linear-gradient(to right, #f9f9f9 50%, #fff 50%)" : "transparent"};
   @media screen and (max-width : 1199px) {
     position: fixed;
     z-index: 10;
+  }
+  @media screen and (max-width: 767px) {
+    background: ${(p) => p.$isCheckout ? "#f9f9f9" : "transparent"};
   }
 `;
 
@@ -59,6 +65,8 @@ export const Note = styled.div`
 `
 
 const Layout = ({ children }: LayoutProps) => {
+ const router = useRouter();
+ const isCheckout = router.pathname === "/checkout";
  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     Promise.all([]).then(() =>
@@ -73,9 +81,9 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
      <Loading showLoading={isLoading}  />
-     <WrapWeb>
+     <WrapWeb $isCheckout={isCheckout}>
       <Content ref={contentRef}>
-        <Header contentRef={contentRef} />
+        {!isCheckout && <Header contentRef={contentRef} />}
         {children}
         {/* <Note>Sản phẩm đang được cập nhật. List đầy đủ xem tại Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note> */}
       </Content>

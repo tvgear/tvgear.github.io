@@ -1,14 +1,34 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid } from "lucide-react";
+import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus } from "lucide-react";
 import { getCart, getCartTotal, updateQty as updateCartQuantity, removeFromCart } from "@/utils/carts";
 import { CartItem } from "@/types/product";
 
 
 /* ─── Styled Components ─── */
+
+const fadeIn = keyframes`
+  from { opacity: 0; }
+  to { opacity: 1; }
+`;
+
+const slideLeft = keyframes`
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+`;
+
+const fadeOut = keyframes`
+  from { opacity: 1; }
+  to { opacity: 0; }
+`;
+
+const slideOut = keyframes`
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+`;
 
 const BlockHeader = styled.header`
   position: relative;
@@ -43,12 +63,12 @@ const LogoArea = styled.div`
   gap: 5px;
   height: 42.5px;
   cursor: pointer;
-  background: #f0f0f0;
+  background: #f6f6f6;
   padding: 5px 15px 5px 12.5px;
   border-radius: 100px;
   transition: 0.2s;
   &:hover {
-    background: #e8e8e8;
+    background: #f0f0f0;
   }
   @media screen and (max-width: 991px) {
     height: 38px;
@@ -192,15 +212,33 @@ const BottomNavItem = styled.div<{ $active?: boolean }>`
 
 /* ─── Cart Drawer Styles ─── */
 
-const CartOverlay = styled.div`
+const CartOverlay = styled.div<{ $isClosing?: boolean }>`
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   z-index: 99999;
+  animation: ${(p) => (p.$isClosing ? fadeOut : fadeIn)} 0.25s ease forwards;
 `;
 
-const CartDrawer = styled.div`
+const CloseBtn = styled.button`
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  background: #f6f6f6;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background: #ececec;
+  }
+`;
+
+const CartDrawer = styled.div<{ $isClosing?: boolean }>`
   position: fixed;
   top: 0;
   right: 0;
@@ -211,27 +249,31 @@ const CartDrawer = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+  animation: ${(p) => (p.$isClosing ? slideOut : slideLeft)} 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   @media screen and (max-width: 480px) {
     width: 100%;
   }
 `;
 
 const CartHeader = styled.div`
-  padding: 32px;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
   h2 {
     font-family: F_BOLD;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 `;
 
 const CartList = styled.div`
   flex: 1;
   overflow-y: auto;
-  padding: 32px;
+  padding: 24px;
 `;
 
 const CartItemRow = styled.div`
@@ -241,79 +283,142 @@ const CartItemRow = styled.div`
 `;
 
 const CartImg = styled.img`
-  width: 64px;
-  height: 64px;
+  width: 76px;
+  height: 76px;
   background: #f6f6f6;
   border-radius: 12px;
   object-fit: contain;
-  padding: 4px;
+  padding: 6px;
 `;
 
 const CartInfo = styled.div`
   flex: 1;
   .name {
     font-family: F_BOLD;
-    font-size: 1.5rem;
-    margin-bottom: 4px;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    margin-bottom: 2px;
   }
   .opt {
     font-family: F_MEDIUM;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #777;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 `;
 
 const QtyControl = styled.div`
   display: flex;
   align-items: center;
-  gap: 12px;
-  span {
+  gap: 8px;
+  input {
+    width: 32px;
+    text-align: center;
     font-family: F_BOLD;
     font-size: 1.4rem;
+    border: none;
+    outline: none;
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
   }
   button {
-    width: 24px;
-    height: 24px;
-    border: 1px solid #ddd;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #eee;
     background: #fff;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    &:hover {
+      border-color: #000;
+      color: #000;
+    }
   }
 `;
 
+const CartActionBtn = styled.button`
+  background: #fff1f0;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ff3b30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  &:hover {
+    background: #ffccc7;
+    color: #cf1322;
+  }
+`;
+
+const CartItemBottom = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+`;
+
 const CartFooter = styled.div`
-  padding: 32px;
+  padding: 16px 24px 20px;
   border-top: 1px solid #f0f0f0;
+  background: #fff;
 `;
 
 const TotalRow = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   .label {
     font-family: F_MEDIUM;
-    color: #777;
+    color: #000;
     font-size: 1.4rem;
   }
   .value {
     font-family: F_BOLD;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 `;
 
 const CheckoutBtn = styled.button`
   width: 100%;
-  height: 56px;
+  height: 52px;
   background: #000;
   color: #fff;
   border: none;
   border-radius: 100px;
   font-family: F_BOLD;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.2s;
   &:hover {
-    opacity: 0.9;
+    opacity: 0.85;
+  }
+`;
+
+const EmptyCart = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  color: #bbb;
+  gap: 16px;
+  svg {
+    opacity: 0.3;
+  }
+  span {
+    font-family: F_REGULAR;
+    font-size: 1.4rem;
   }
 `;
 
@@ -329,7 +434,16 @@ function CartDrawerPortal({ children }: { children: React.ReactNode }) {
 const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   const router = useRouter();
   const [showCart, setShowCart] = React.useState(false);
+  const [isClosingCart, setIsClosingCart] = React.useState(false);
   const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
+
+  const handleCloseCart = () => {
+    setIsClosingCart(true);
+    setTimeout(() => {
+      setShowCart(false);
+      setIsClosingCart(false);
+    }, 240);
+  };
 
   const categories = React.useMemo(() => [
     { name: "Chuột", link: "/mouse", icon: MouseIcon },
@@ -362,6 +476,18 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
 
   const handleRemove = (idx: number) => {
     removeFromCart(idx);
+    setCartItems(getCart());
+    window.dispatchEvent(new Event("cart-updated"));
+  };
+
+  const handleQtyChange = (idx: number, e: React.ChangeEvent<HTMLInputElement>) => {
+    let val = parseInt(e.target.value);
+    if (isNaN(val)) val = 1;
+    if (val < 1) val = 1;
+    if (val > 99) val = 99;
+    const item = cartItems[idx];
+    if (!item) return;
+    updateCartQuantity(idx, val);
     setCartItems(getCart());
     window.dispatchEvent(new Event("cart-updated"));
   };
@@ -402,17 +528,22 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
       {/* Cart Drawer - rendered via portal to body */}
       {showCart && (
         <CartDrawerPortal>
-          <CartOverlay onClick={() => setShowCart(false)} />
-          <CartDrawer>
+          <CartOverlay $isClosing={isClosingCart} onClick={handleCloseCart} />
+          <CartDrawer $isClosing={isClosingCart}>
             <CartHeader>
-              <h2>Giỏ hàng của bạn</h2>
-              <X onClick={() => setShowCart(false)} style={{ cursor: 'pointer' }} />
+              <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                Giỏ Hàng <Badge style={{ position: 'relative', top: 0, right: 0, transform: 'none' }}>{cartItems.reduce((acc, item) => acc + item.quantity, 0)}</Badge>
+              </h2>
+              <CloseBtn onClick={handleCloseCart}>
+                <X size={20} />
+              </CloseBtn>
             </CartHeader>
             <CartList>
               {cartItems.length === 0 ? (
-                <div style={{ textAlign: 'center', color: '#bbb', marginTop: '40px' }}>
-                  Trống rỗng...
-                </div>
+                <EmptyCart>
+                  <ShoppingBag size={48} strokeWidth={1.5} />
+                  <span>Giỏ hàng đang trống ...</span>
+                </EmptyCart>
               ) : (
                 cartItems.map((item, idx) => (
                   <CartItemRow key={`${item.productName}-${idx}`}>
@@ -420,16 +551,18 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                     <CartInfo>
                       <div className="name">{item.productName}</div>
                       <div className="opt">
-                        {item.option.name} / {item.color.labelColor}
+                        {item.color.labelColor} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
                       </div>
-                      <QtyControl>
-                        <button onClick={() => handleQty(idx, -1)}>-</button>
-                        <span>{item.quantity}</span>
-                        <button onClick={() => handleQty(idx, 1)}>+</button>
-                        <IconBtn onClick={() => handleRemove(idx)} style={{ marginLeft: 'auto', padding: '4px' }}>
-                          <X size={14} />
-                        </IconBtn>
-                      </QtyControl>
+                      <CartItemBottom>
+                        <QtyControl>
+                          <button onClick={() => handleQty(idx, -1)}><Minus size={18} /></button>
+                          <input type="number" value={item.quantity} min={1} max={99} onChange={(e) => handleQtyChange(idx, e)} />
+                          <button onClick={() => handleQty(idx, 1)}><Plus size={18} /></button>
+                        </QtyControl>
+                        <CartActionBtn onClick={() => handleRemove(idx)}>
+                          <Trash2 size={15} />
+                        </CartActionBtn>
+                      </CartItemBottom>
                     </CartInfo>
                   </CartItemRow>
                 ))
@@ -438,11 +571,11 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
             {cartItems.length > 0 && (
               <CartFooter>
                 <TotalRow>
-                  <div className="label">Tổng cộng</div>
+                  <div className="label">Tổng Cộng</div>
                   <div className="value">{getCartTotal(cartItems).toLocaleString("vi-VN")}.000đ</div>
                 </TotalRow>
-                <CheckoutBtn onClick={() => { setShowCart(false); router.push("/checkout"); }}>
-                  Thanh Toán Ngay
+                <CheckoutBtn onClick={() => { handleCloseCart(); setTimeout(() => router.push("/checkout"), 250); }}>
+                  Đặt Hàng
                 </CheckoutBtn>
               </CartFooter>
             )}

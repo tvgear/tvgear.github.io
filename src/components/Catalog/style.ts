@@ -1,4 +1,24 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from { opacity: 0; }
+  to { opacity: 1; }
+`;
+
+const slideUp = keyframes`
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+`;
+
+const fadeOut = keyframes`
+  from { opacity: 1; }
+  to { opacity: 0; }
+`;
+
+const slideDown = keyframes`
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(100%); opacity: 0; }
+`;
 
 export const CatalogWrapper = styled.div`
   display: flex;
@@ -199,6 +219,7 @@ export const SelectSort = styled.select`
     text-align-last: center;
     background-position: right 14px center;
     padding-left: 20px;
+    height: 36px;
   }
 `;
 
@@ -207,10 +228,11 @@ export const MobilePageTitle = styled.h2`
   font-family: F_BOLD;
   font-size: 2rem;
   color: #000;
-  margin-top: 6px;
+  margin-top: 2px;
   margin-bottom: 14px;
   line-height: 1;
-  text-align: center;
+  text-align: left;
+  padding-left: 4px;
 `;
 
 export const MobileBar = styled.div`
@@ -260,7 +282,7 @@ export const MobileActionBtn = styled.button`
   flex: 1;
   background: #fff;
   border: 1.5px solid #eee;
-  height: 40px;
+  height: 36px;
   border-radius: 100px;
   font-family: F_BOLD;
   font-size: 1.2rem;
@@ -324,7 +346,7 @@ export const ListProduct = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 767px) {
-    gap: 12px;
+    gap: 8px;
   }
 `;
 
@@ -385,10 +407,13 @@ export const ItemMeta = styled.div`
 
 export const CatItem = styled.div`
   font-family: F_MEDIUM;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #777;
   text-transform: uppercase;
   margin-bottom: 2px;
+  @media screen and (max-width: 767px) {
+    font-size: 0.95rem;
+  }
 `;
 
 export const NameItem = styled.div`
@@ -405,11 +430,11 @@ export const NameItem = styled.div`
 
 export const PriceItem = styled.div`
   font-family: F_EXTRABOLD;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #000;
   margin-top: 6px;
   @media screen and (max-width: 767px) {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-top: 4px;
   }
 `;
@@ -438,12 +463,13 @@ export const EmptyState = styled.div`
 `;
 
 /* ─── Detail Modal ─── */
-export const DetailOverlay = styled.div`
+export const DetailOverlay = styled.div<{ $isClosing?: boolean }>`
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   z-index: 10000;
+  animation: ${(p) => (p.$isClosing ? fadeOut : fadeIn)} 0.25s ease forwards;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,7 +480,7 @@ export const DetailOverlay = styled.div`
   }
 `;
 
-export const DetailModal = styled.div`
+export const DetailModal = styled.div<{ $isClosing?: boolean }>`
   background: #fff;
   width: 100%;
   max-width: 900px;
@@ -463,12 +489,13 @@ export const DetailModal = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  animation: ${(p) => (p.$isClosing ? slideDown : slideUp)} 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   @media screen and (max-width: 767px) {
     flex-direction: column;
     width: 100%;
     max-width: 100%;
     max-height: 100dvh;
-    height: 92.5dvh;
+    height: 95dvh;
     border-radius: 24px 24px 0px 0px;
     overflow: hidden;
   }
@@ -480,16 +507,17 @@ export const DetailClose = styled.div`
   right: 20px;
   width: 36px;
   height: 36px;
-  background: #fff;
-  border: 1px solid #eee;
+  background: #f6f6f6;
+  border: none;
   border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 1;
+  transition: 0.2s;
   &:hover {
-    background: #f6f6f6;
+    background: #ececec;
   }
   @media screen and (max-width: 767px) {
     top: 12px;
@@ -538,6 +566,7 @@ export const DetailName = styled.h1`
   color: #000;
   margin-bottom: 8px;
   line-height: 1.1;
+  text-transform: uppercase;
   @media screen and (max-width: 767px) {
     font-size: 1.4rem;
     margin-bottom: 4px;
@@ -549,6 +578,7 @@ export const DetailWarranty = styled.div`
   font-size: 1.2rem;
   color: #777;
   margin-bottom: 14px;
+  text-transform: uppercase;
   @media screen and (max-width: 767px) {
     margin-bottom: 6px;
   }
@@ -574,10 +604,13 @@ export const DetailSection = styled.div`
 
 export const DetailLabel = styled.div`
   font-family: F_BOLD;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #000;
   margin-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    font-size: 1.1rem;
+  }
   span {
     color: #000;
     margin-left: 8px;
@@ -644,7 +677,7 @@ export const ModalActionRow = styled.div`
     margin: 0;
     padding: 12px 16px;
     background: #fff;
-    border-top: 1px solid #eee;
+    border-top: none;
     z-index: 2;
   }
 `;
@@ -655,12 +688,17 @@ export const BuyNowBtn = styled.button`
   background: #000;
   color: #fff;
   border: none;
-  border-radius: 100px;
+  border-radius: 16px;
   font-family: F_BOLD;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.2s;
   &:hover {
     opacity: 0.9;
+  }
+  @media screen and (max-width: 767px) {
+    height: 42px;
+    font-size: 1.3rem;
   }
 `;
 
@@ -670,12 +708,209 @@ export const AddCartGhostBtn = styled.button`
   background: #fff;
   color: #000;
   border: 1.5px solid #ddd;
-  border-radius: 100px;
+  border-radius: 16px;
   font-family: F_BOLD;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.2s;
   &:hover {
     border-color: #000;
+  }
+  @media screen and (max-width: 767px) {
+    height: 42px;
+    font-size: 1.3rem;
+  }
+`;
+
+export const ChatBtn = styled.button`
+  width: 48px;
+  height: 48px;
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.9;
+  }
+  @media screen and (max-width: 767px) {
+    width: 42px;
+    height: 42px;
+  }
+`;
+
+export const ContactOverlay = styled.div<{ $isClosing?: boolean }>`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 10005;
+  animation: ${(p) => (p.$isClosing ? fadeOut : fadeIn)} 0.25s ease forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  @media screen and (max-width: 767px) {
+    padding: 16px;
+    align-items: flex-end;
+  }
+`;
+
+export const ContactModal = styled.div<{ $isClosing?: boolean }>`
+  background: #fff;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  animation: ${(p) => (p.$isClosing ? slideDown : slideUp)} 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+    border-radius: 20px;
+  }
+`;
+
+export const ContactClose = styled.div`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  background: #f6f6f6;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background: #ececec;
+  }
+`;
+
+export const ContactTitle = styled.div`
+  font-family: F_BOLD;
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 16px;
+  text-align: center;
+`;
+
+export const ContactProductSummary = styled.div`
+  display: flex;
+  gap: 16px;
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+`;
+
+export const ContactProductImg = styled.img`
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #eee;
+`;
+
+export const ContactProductInfo = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
+export const ContactProductName = styled.div`
+  font-family: F_BOLD;
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 1.25;
+  text-transform: uppercase;
+`;
+
+export const ContactProductMeta = styled.div`
+  font-family: F_MEDIUM;
+  font-size: 1.2rem;
+  color: #666;
+`;
+
+export const ContactProductPrice = styled.div`
+  font-family: F_EXTRABOLD;
+  font-size: 1.4rem;
+  color: #000;
+  margin-top: 2px;
+`;
+
+export const ContactNote = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: F_MEDIUM;
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 0 10px;
+`;
+
+export const HighlightAction = styled.span<{ $type: "copy" | "paste" }>`
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-family: F_BOLD;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  background: ${(p) => p.$type === "copy" ? "#e6f8ec" : "#fff0e6"};
+  color: ${(p) => p.$type === "copy" ? "#00c853" : "#ff9800"};
+  border: 1px solid ${(p) => p.$type === "copy" ? "#00c853" : "#ff9800"};
+  vertical-align: middle;
+  transform: translateY(-1px);
+`;
+
+export const HighlightName = styled.span`
+  font-family: F_EXTRABOLD;
+  color: #000;
+`;
+
+export const ContactActions = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+`;
+
+export const ContactBtn = styled.a<{ $type: "fb" | "zalo" }>`
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 100px;
+  font-family: F_BOLD;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  background: ${(p) => p.$type === "fb" ? "#1877F2" : "#000"};
+  color: #fff;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.9;
+    color: #fff;
+  }
+  @media screen and (max-width: 767px) {
+    height: 50px;
+    font-size: 1.4rem;
   }
 `;
 

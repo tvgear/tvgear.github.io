@@ -611,7 +611,7 @@
     "brand": "logio",
     "name": "M90",
     "tags": [
-      "Không Dây"
+      "Có Dây"
     ],
     "colors": [
       {
@@ -629,7 +629,7 @@
     ],
     "warranty": "Bảo Hành 3 Tháng",
     "connect": [
-      "wireless"
+      "wired"
     ]
   },
   {
