@@ -275,7 +275,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     <>
     <CatalogWrapper>
       <Sidebar>
-        <SidebarTitle>{pageName} ({products.length})</SidebarTitle>
+        <SidebarTitle>{pageName}</SidebarTitle>
         <SidebarSection>
           <SidebarSectionTitle>
             {router.pathname === "/accessories" ? <LayoutGrid size={13} strokeWidth={2.5}/> : <GamepadDirectional size={14} strokeWidth={2.5}/>}
@@ -340,7 +340,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
       <MainContent>
         <MainHeader>
           <MobileBar>
-            <MobilePageTitle>{pageName} ({products.length})</MobilePageTitle>
+            <MobilePageTitle>{pageName}</MobilePageTitle>
             <MobileTabList ref={tabListRef}>
               {brands.map(b => (
                 <MobileTab
@@ -362,7 +362,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
             </MobileTabList>
             <MobileActionRow>
               <MobileActionBtn onClick={() => setShowMobileFilter(true)}>
-                Bộ lọc {selectedPrices.length + selectedConns.length > 0 && `(${selectedPrices.length + selectedConns.length})`}
+                Bộ Lọc {selectedPrices.length + selectedConns.length > 0 && `(${selectedPrices.length + selectedConns.length})`}
               </MobileActionBtn>
               <SelectSort value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                 <option value="price-asc">Giá Thấp → Cao</option>
@@ -434,7 +434,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
         <MobileFilterOverlay>
           <MobileFilterContent>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
-              <h2 style={{ fontFamily: 'F_BOLD', fontSize: '2rem' }}>Bộ lọc</h2>
+              <h2 style={{ fontFamily: 'F_BOLD', fontSize: '2rem' }}>Bộ Lọc</h2>
               <X onClick={() => setShowMobileFilter(false)} />
             </div>
             
@@ -528,7 +528,16 @@ function ProductDetailModal({ product, onClose, onAddToCart, onBuyNow }: {
         </DetailImgWrap>
         <DetailContent>
           <DetailName>{product.name}</DetailName>
-          {product.warranty && <DetailWarranty>{product.warranty}</DetailWarranty>}
+          {(product.warranty || (product.connect && product.connect.length > 0)) && (
+            <DetailWarranty>
+              {[
+                product.connect && product.connect.length > 0
+                  ? product.connect.map(c => CONNECTIONS.find(x => x.id === c)?.label || c).join(" & ")
+                  : null,
+                product.warranty
+              ].filter(Boolean).join(" · ")}
+            </DetailWarranty>
+          )}
           <DetailPrice>{price.toLocaleString("vi-VN")}.000đ</DetailPrice>
           
           <DetailSection>

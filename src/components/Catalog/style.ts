@@ -205,7 +205,7 @@ export const SelectSort = styled.select`
 /* ─── Mobile Elements ─── */
 export const MobilePageTitle = styled.h2`
   font-family: F_BOLD;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #000;
   margin-top: 6px;
   margin-bottom: 14px;
@@ -225,7 +225,7 @@ export const MobileTabList = styled.div`
   display: flex;
   overflow-x: auto;
   gap: 8px;
-  padding-bottom: 12px;
+  padding-bottom: 4px;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
     display: none;
@@ -549,6 +549,9 @@ export const DetailWarranty = styled.div`
   font-size: 1.2rem;
   color: #777;
   margin-bottom: 14px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 6px;
+  }
 `;
 
 export const DetailPrice = styled.div`
@@ -557,7 +560,7 @@ export const DetailPrice = styled.div`
   color: #000;
   margin-bottom: 40px;
   @media screen and (max-width: 767px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 12px;
   }
 `;
