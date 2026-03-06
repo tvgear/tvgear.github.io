@@ -684,7 +684,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   const handleTabChange = (idx: number) => {
     setActiveTab(idx);
     if (aboutScrollRef.current) {
-      aboutScrollRef.current.scrollTo({ top: 0, behavior: 'instant' });
+      aboutScrollRef.current.scrollTo({ top: 0, behavior: 'auto' });
     }
   };
 
