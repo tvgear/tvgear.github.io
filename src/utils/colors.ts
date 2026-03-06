@@ -1,7 +1,7 @@
 export const COLOR_PALETTE = [
   { color: "black", label: "Đen" },
   { color: "white", label: "Trắng" },
-  { color: "pink", label: "Hồng" },
+  { color: "#ff637e", label: "Hồng" },
   { color: "blue", label: "Xanh Dương" },
   { color: "red", label: "Đỏ" },
   { color: "gray", label: "Xám" },

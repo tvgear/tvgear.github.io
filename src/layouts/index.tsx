@@ -25,23 +25,23 @@ const WrapWeb = styled.div<{ $isCheckout?: boolean }>`
   }
 `;
 
-const Content = styled.div`
+const Content = styled.div<{ $hasHeader?: boolean }>`
   width: 100%;
   max-width: 1440px;
   margin: 0px auto;
   position: relative;
-  padding: 0px 0px 100px 0px;
-  overflow-y : auto;
+  padding: ${(p) => (p.$hasHeader ? "68px" : "0px")} 0px 100px 0px;
+  overflow-y: auto;
   &::-webkit-scrollbar {
     display: none;
   }
-  @media screen and (max-width : 1199px) {
-    overflow-y : auto;
+  @media screen and (max-width: 1199px) {
+    overflow-y: auto;
   }
   @media screen and (max-width: 991px) {
-    padding-top: 0px;
+    padding-top: ${(p) => (p.$hasHeader ? "50px" : "0px")};
   }
-`
+`;
 export const Note = styled.div`
   font-size : 1.3rem;
   line-height: calc(1.3rem * 1.25);
@@ -82,7 +82,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
      <Loading showLoading={isLoading}  />
      <WrapWeb $isCheckout={isCheckout}>
-      <Content ref={contentRef}>
+      <Content id="main-content" ref={contentRef} $hasHeader={!isCheckout}>
         {!isCheckout && <Header contentRef={contentRef} />}
         {children}
         {/* <Note>Sản phẩm đang được cập nhật. List đầy đủ xem tại Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note> */}

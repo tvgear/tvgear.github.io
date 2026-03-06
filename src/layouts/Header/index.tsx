@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus } from "lucide-react";
+import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus, ChevronDown, MapPin } from "lucide-react";
 import { getCart, getCartTotal, updateQty as updateCartQuantity, removeFromCart } from "@/utils/carts";
 import { CartItem } from "@/types/product";
 
@@ -31,11 +31,20 @@ const slideOut = keyframes`
 `;
 
 const BlockHeader = styled.header`
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  z-index: 1000;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   width: 100%;
+  @media screen and (max-width: 991px) {
+    background: #fff;
+    backdrop-filter: none;
+  }
 `;
 
 const InnerHeader = styled.div`
@@ -46,33 +55,35 @@ const InnerHeader = styled.div`
   justify-content: space-between;
   padding: 0 40px;
   @media screen and (max-width: 991px) {
-    height: 56px;
-    padding: 0 16px;
+    height: 50px;
+    padding: 0 8px;
   }
 `;
 
 const LeftHeader = styled.div`
   display: flex;
   align-items: center;
-  gap: 48px;
+  flex: 1;
 `;
 
 const LogoArea = styled.div`
   display: flex;
   align-items: center;
-  gap: 5px;
-  height: 42.5px;
+  gap: 4.5px;
+  height: 46px;
   cursor: pointer;
-  background: #f6f6f6;
-  padding: 5px 15px 5px 12.5px;
-  border-radius: 100px;
+  background: #000;
+  padding: 0 16px 0 12px;
+  border-radius: 26px;
   transition: 0.2s;
   &:hover {
-    background: #f0f0f0;
+    background: #222;
   }
   @media screen and (max-width: 991px) {
-    height: 38px;
-    padding: 4px 12px 4px 10px;
+    height: 36px;
+    padding: 0 12px 0 7.5px;
+    gap: 2.5px;
+    border-radius: 20px;
   }
 `;
 
@@ -84,43 +95,43 @@ const WrapLogo = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    width: 22px;
-    height: 22px;
-    filter: invert(1);
+    width: 20px;
+    height: 20px;
     object-fit: contain;
   }
   @media screen and (max-width: 991px) {
     width: 30px;
     height: 30px;
     img {
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
     }
   }
 `;
 
 const LogoText = styled.div`
   font-family: F_BOLD;
-  font-size: 2rem;
-  color: #000;
+  font-size: 2.1rem;
+  color: #fff;
+  &.dark { color: #000; }
   line-height: 1;
   margin-top: -1px;
   @media screen and (max-width: 991px) {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 `;
 
 const NavLeft = styled.nav`
   display: flex;
-  gap: 32px;
+  gap: 48px;
   @media screen and (max-width: 991px) {
     display: none;
   }
 `;
 
 const NavLink = styled.div<{ $active?: boolean }>`
-  font-family: F_BOLD;
-  font-size: 1.3rem;
+  font-family: F_EXTRABOLD;
+  font-size: 1.5rem;
   color: ${(p) => (p.$active ? "#000" : "#777")};
   cursor: pointer;
   transition: 0.2s;
@@ -136,6 +147,8 @@ const RightHeader = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
 `;
 
 const IconBtn = styled.button`
@@ -152,6 +165,13 @@ const IconBtn = styled.button`
   &:hover {
     opacity: 0.7;
     transform: scale(1.1);
+  }
+  @media screen and (max-width: 991px) {
+    padding: 4px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 `;
 
@@ -170,43 +190,66 @@ const Badge = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 4px;
-`;
-
-const MobileBottomNav = styled.div`
-  display: none;
+  transform: translate(25%, -25%);
   @media screen and (max-width: 991px) {
-    display: flex;
-    position: fixed;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-    height: 64px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(20px);
-    border-radius: 100px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    z-index: 99990;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 8px;
+    min-width: 14px;
+    height: 14px;
+    font-size: 0.8rem;
   }
 `;
 
-const BottomNavItem = styled.div<{ $active?: boolean }>`
+const MobileCategorySelector = styled.div`
+  display: none;
+  @media screen and (max-width: 991px) {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 8px;
+    padding: 6px 4px;
+    background: transparent;
+    border-radius: 100px;
+    font-family: F_EXTRABOLD;
+    font-size: 1.4rem;
+    color: #000;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-transform: uppercase;
+  }
+`;
+
+const MobileDropdownPortal = styled.div`
+  position: fixed;
+  top: 64px;
+  left: 12px;
+  right: 12px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+  z-index: 10001;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+`;
+
+const DropdownItem = styled.div<{ $active?: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  flex: 1;
-  height: 100%;
-  color: ${(p) => (p.$active ? "#000" : "#999")};
-  font-family: ${(p) => (p.$active ? "F_BOLD" : "F_MEDIUM")};
-  cursor: pointer;
+  gap: 8px;
+  padding: 12px 4px;
+  border-radius: 16px;
+  color: ${(p) => (p.$active ? "#000" : "#777")};
+  background: ${(p) => (p.$active ? "#f6f6f6" : "transparent")};
   transition: 0.2s;
   span {
-    font-size: 1rem;
+    font-family: ${(p) => (p.$active ? "F_EXTRABOLD" : "F_BOLD")};
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
   }
 `;
 
@@ -422,6 +465,202 @@ const EmptyCart = styled.div`
   }
 `;
 
+/* ─── About/Store Modal Styles ─── */
+const AboutOverlay = styled.div<{ $isClosing?: boolean }>`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: ${fadeIn} 0.3s ease forwards;
+  ${(p) => p.$isClosing && css`animation: ${fadeOut} 0.3s ease forwards;`}
+  @media screen and (max-width: 991px) {
+    align-items: flex-end;
+  }
+`;
+
+const slideUp = keyframes`
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+`;
+
+const AboutModalContainer = styled.div<{ $isClosing?: boolean }>`
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 95dvh;
+  animation: ${slideUp} 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  ${(p) => p.$isClosing && `transform: translateY(100%); transition: 0.3s ease-in;`}
+  @media screen and (max-width: 991px) {
+    border-radius: 24px 24px 0 0;
+  }
+`;
+
+const AboutHeader = styled.div`
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+`;
+
+const AboutTabsContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 8px 16px;
+  min-height: 50px;
+  box-sizing: border-box;
+  background: transparent;
+  gap: 8px;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+`;
+
+const AboutTabItem = styled.div<{ $active?: boolean }>`
+  height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 100px;
+  font-family: F_BOLD;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.2s;
+  background: ${(p) => (p.$active ? "#000" : "#f6f6f6")};
+  color: ${(p) => (p.$active ? "#fff" : "#777")};
+  &:hover {
+    background: ${(p) => (p.$active ? "#000" : "#eee")};
+    color: ${(p) => (p.$active ? "#fff" : "#333")};
+  }
+`;
+
+const AboutContentScroll = styled.div`
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px 24px;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #eee;
+    border-radius: 10px;
+  }
+`;
+
+const ContentParagraph = styled.p`
+  font-family: F_REGULAR;
+  font-size: 1.45rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+`;
+
+const SectionTitle = styled.h4`
+  font-family: F_BOLD;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #000;
+  text-transform: uppercase;
+`;
+
+const ListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+`;
+
+const ListItem = styled.div`
+  display: flex;
+  gap: 12px;
+  font-family: F_MEDIUM;
+  font-size: 1.45rem;
+  line-height: 1.5;
+  color: #444;
+  &::before {
+    content: '•';
+    color: #000;
+    font-weight: bold;
+  }
+`;
+
+const StoreSocials = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+`;
+
+const SocialBox = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #f6f6f6;
+  color: #333;
+  text-decoration: none;
+  gap: 10px;
+  transition: 0.2s;
+  &:hover {
+    background: #eee;
+    transform: translateY(-2px);
+  }
+  span {
+    font-family: F_BOLD;
+    font-size: 1.35rem;
+    color: #000;
+  }
+`;
+
+const BranchItem = styled.div`
+  margin-bottom: 24px;
+  .name {
+    font-family: F_BOLD;
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .address {
+    font-family: F_MEDIUM;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.6;
+  }
+`;
+
+const StoreNote = styled.div`
+  font-family: F_BOLD;
+  font-size: 1.2rem;
+  color: #ff3b30;
+  background: #fffbfa;
+  border: 1px solid #ffccc7;
+  padding: 12px 16px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 32px;
+  line-height: 1.5;
+  text-transform: uppercase;
+`;
+
 /* ─── Cart Drawer Portal ─── */
 function CartDrawerPortal({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = React.useState(false);
@@ -436,6 +675,31 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   const [showCart, setShowCart] = React.useState(false);
   const [isClosingCart, setIsClosingCart] = React.useState(false);
   const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
+  const [showMobileMenu, setShowMobileMenu] = React.useState(false);
+  const [showAbout, setShowAbout] = React.useState(false);
+  const [isClosingAbout, setIsClosingAbout] = React.useState(false);
+  const [activeTab, setActiveTab] = React.useState(0);
+  const aboutScrollRef = React.useRef<HTMLDivElement>(null);
+
+  const handleTabChange = (idx: number) => {
+    setActiveTab(idx);
+    if (aboutScrollRef.current) {
+      aboutScrollRef.current.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  };
+
+  const handleOpenAbout = () => {
+    setShowAbout(true);
+    setActiveTab(0);
+  };
+
+  const handleCloseAbout = () => {
+    setIsClosingAbout(true);
+    setTimeout(() => {
+      setShowAbout(false);
+      setIsClosingAbout(false);
+    }, 300);
+  };
 
   const handleCloseCart = () => {
     setIsClosingCart(true);
@@ -451,6 +715,8 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
     { name: "Tai Nghe", link: "/headphone", icon: Headphones },
     { name: "Phụ Kiện", link: "/accessories", icon: LayoutGrid },
   ], []);
+
+  const currentCategory = categories.find(c => c.link === router.pathname) || categories[0]!;
 
   const scrollToTop = () => {
     contentRef?.current?.scrollTo({
@@ -497,22 +763,27 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
       <BlockHeader>
         <InnerHeader>
           <LeftHeader>
-            <LogoArea onClick={() => router.push("/mouse")}>
+            <LogoArea onClick={handleOpenAbout}>
               <WrapLogo>
                 <img src="/logo.svg" />
               </WrapLogo>
               <LogoText>tvgear</LogoText>
             </LogoArea>
-            <NavLeft>
-              {categories.map((cat) => (
-                <Link key={cat.link} href={cat.link} passHref legacyBehavior>
-                  <NavLink $active={router.pathname === cat.link} onClick={scrollToTop}>
-                    {cat.name}
-                  </NavLink>
-                </Link>
-              ))}
-            </NavLeft>
+            <MobileCategorySelector onClick={() => setShowMobileMenu(!showMobileMenu)}>
+              {currentCategory.name}
+              <ChevronDown size={15} style={{ transform: showMobileMenu ? 'rotate(180deg)' : 'none', transition: '0.2s' }} />
+            </MobileCategorySelector>
           </LeftHeader>
+
+          <NavLeft>
+            {categories.map((cat) => (
+              <Link key={cat.link} href={cat.link} passHref legacyBehavior>
+                <NavLink $active={router.pathname === cat.link} onClick={scrollToTop}>
+                  {cat.name}
+                </NavLink>
+              </Link>
+            ))}
+          </NavLeft>
 
           <RightHeader>
             <IconBtn id="cart-icon-btn" onClick={() => setShowCart(true)}>
@@ -525,7 +796,191 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
         </InnerHeader>
       </BlockHeader>
 
+      {showMobileMenu && (
+        <CartDrawerPortal>
+          <div 
+            style={{ position: 'fixed', inset: 0, zIndex: 10000 }} 
+            onClick={() => setShowMobileMenu(false)} 
+          />
+          <MobileDropdownPortal>
+            {categories.map((cat) => {
+              const Icon = cat.icon;
+              return (
+                <Link key={cat.link} href={cat.link} passHref legacyBehavior>
+                  <DropdownItem 
+                    $active={router.pathname === cat.link} 
+                    onClick={() => { setShowMobileMenu(false); scrollToTop(); }}
+                  >
+                    <Icon size={24} strokeWidth={router.pathname === cat.link ? 2.5 : 2} />
+                    <span>{cat.name}</span>
+                  </DropdownItem>
+                </Link>
+              );
+            })}
+          </MobileDropdownPortal>
+        </CartDrawerPortal>
+      )}
+
+      {/* About/Store Modal */}
+      {showAbout && (
+        <CartDrawerPortal>
+          <AboutOverlay $isClosing={isClosingAbout} onClick={handleCloseAbout}>
+            <AboutModalContainer $isClosing={isClosingAbout} onClick={(e) => e.stopPropagation()}>
+              <AboutHeader>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <div 
+                    onClick={() => { handleCloseAbout(); router.push("/mouse"); }}
+                    style={{ display: 'flex', alignItems: 'center', gap: '5px', height: '50px', padding: '0 8px', cursor: 'pointer' }}
+                  >
+                    <WrapLogo style={{ width: '34px', height: '34px' }}>
+                      <img src="/logo.svg" style={{ filter: 'invert(1)', width: '22px', height: '22px' }} />
+                    </WrapLogo>
+                    <LogoText className="dark" style={{ fontSize: '2.4rem' }}>tvgear</LogoText>
+                  </div>
+                </div>
+                <CloseBtn onClick={handleCloseAbout}>
+                  <X size={20} />
+                </CloseBtn>
+              </AboutHeader>
+
+              <AboutTabsContainer>
+                {["Thông Tin", "Bảo Hành", "Đổi Trả"].map((tab, idx) => (
+                  <AboutTabItem 
+                    key={tab} 
+                    $active={activeTab === idx} 
+                    onClick={() => handleTabChange(idx)}
+                  >
+                    {tab}
+                  </AboutTabItem>
+                ))}
+              </AboutTabsContainer>
+
+              <AboutContentScroll ref={aboutScrollRef}>
+                {activeTab === 0 && (
+                  <div key="tab-info">
+                    <ContentParagraph>
+                      TVGEAR Shop chuyên kinh doanh các sản phẩm gaming gear (thiết thiết bị điện tử) bao gồm : chuột, bàn phím, tai nghe, phụ kiện, ... đã qua sử dụng và hàng mới chưa qua sử dụng.
+                    </ContentParagraph>
+                    <ContentParagraph>
+                      Sản phẩm tại shop 95% là hàng đã qua sử dụng và bảo hành tại shop. Những sản phẩm có gắn tag bảo hành hãng sẽ có kèm tháng và năm còn bảo hành hãng, những sản phẩm này sẽ được bảo hành hãng và sẽ không bảo hành tại shop (trừ khi còn bảo hành quá ít tại hãng).
+                    </ContentParagraph>
+                    <ContentParagraph>
+                      Sản phẩm tại shop 90% là hàng chính hãng từ Logitech, Razer. 10% còn lại là hàng chính hãng từ các hãng khác như Lamzu, Pulsar, ... Shop không bán hàng fake bất cứ mã sản phẩm nào.
+                    </ContentParagraph>
+                    <ContentParagraph style={{ marginBottom: '32px' }}>
+                      Shop chỉ bán sản phẩm, không nhận thu vào, trade up hoặc trade down.
+                    </ContentParagraph>
+
+                    <SectionTitle>Shop Online</SectionTitle>
+                    <StoreSocials style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px', marginBottom: '32px' }}>
+                      <SocialBox href="https://facebook.com/tvgear" target="_blank">
+                        <span>TVGEAR - Facebook</span>
+                      </SocialBox>
+                      <SocialBox href="https://m.me/tvgear" target="_blank">
+                        <span>TVGEAR - Messenger</span>
+                      </SocialBox>
+                    </StoreSocials>
+
+                    <SectionTitle>Shop Offline</SectionTitle>
+                    <BranchItem>
+                      <div className="name"><MapPin size={18} /> Chi Nhánh Hưng Yên</div>
+                      <div className="address">Thôn Du Mỹ, Vân Du, Ân Thi, Hưng Yên</div>
+                    </BranchItem>
+
+                    <BranchItem style={{ marginBottom: '24px' }}>
+                      <div className="name"><MapPin size={18} /> Chi Nhánh TP.HCM</div>
+                      <div className="address">
+                        194/21a Bùi Đình Tuý, P.12, Q. Bình Thạnh, TP.HCM<br/>
+                        9 Hoa Cau, P.7, Q. Phú Nhuận, TP.HCM
+                      </div>
+                    </BranchItem>
+
+                    <StoreNote>
+                      VUI LÒNG LIÊN HỆ TRƯỚC VỚI SHOP TRƯỚC KHI QUA MUA SẢN PHẨM, VÌ SẢN PHẨM CÓ THỂ KHÔNG SẴN TẠI CỬA HÀNG
+                    </StoreNote>
+                  </div>
+                )}
+
+                {activeTab === 1 && (
+                  <div key="tab-warranty">
+                    <SectionTitle>Thời hạn bảo hành</SectionTitle>
+                    <ListContainer>
+                      <ListItem>Chuột: 3 tháng bảo hành tại shop</ListItem>
+                      <ListItem>Phím, Tai Nghe và Phụ Kiện khác: 1 tháng bảo hành tại shop</ListItem>
+                      <ListItem>Một số phụ kiện đặc biệt sẽ không có bảo hành (pad chuột, feet chuột, ...)</ListItem>
+                      <ListItem>Sản phẩm có bảo hành hãng sẽ có ghi Tháng/Năm bảo hành từ hãng, khách mua có thể tự xử lí với hãng sau khi mua sản phẩm có bảo hành hãng.</ListItem>
+                    </ListContainer>
+
+                    <SectionTitle>Điều kiện bảo hành</SectionTitle>
+                    <ListContainer>
+                      <ListItem>Tem bảo hành còn nguyên vẹn</ListItem>
+                      <ListItem>Ốc vít của sản phẩm không có dấu hiệu bị cạy mở</ListItem>
+                      <ListItem>Sản phẩm không bị vào nước, chất liệu có nước, bám bụi bẩn, keo,...</ListItem>
+                      <ListItem>Sản phẩm không bị vỡ nát do tác động vật lý dù vô ý hay cố ý</ListItem>
+                      <ListItem>Sản phẩm không có dấu hiệu bị chập cháy, ám khói do vật liệu nổ, chảy nhựa.</ListItem>
+                      <ListItem>Sản phẩm sử dụng sai quy cách, về sạc pin, thao tác dẫn đến hư hỏng vô ý.</ListItem>
+                      <ListItem>Sản phẩm còn đủ linh kiện & phụ kiện khi shop bán ra, không bị tráo hàng, tráo linh kiện và thay đổi cấu trúc linh kiện phụ kiện (trừ các trường hợp thay feet, dán grip tape, mất hộp, thiếu phụ kiện phụ). Riêng trường hợp thiếu phụ kiện phụ trước khi bảo hành vui lòng chụp lại và báo trước với shop, shop sẽ không chịu trách nhiệm khi phụ kiện gửi về không đủ.</ListItem>
+                    </ListContainer>
+
+                    <SectionTitle>Chi Phí Vận chuyển</SectionTitle>
+                    <ListContainer>
+                      <ListItem>Trong vòng 3 ngày (từ ngày nhận hàng) : shop chịu phí ship 2 chiều</ListItem>
+                      <ListItem>Từ ngày thứ 4 &rarr; ngày thứ 30 (tròn 1 tháng từ ngày nhận hàng) : khách chịu phí ship gửi về, shop chịu phí ship gửi lại</ListItem>
+                      <ListItem>Sau 1 tháng : khách chịu 2 đầu phí ship gửi về và chiều shop gửi lại</ListItem>
+                    </ListContainer>
+
+                    <ContentParagraph style={{ fontSize: '1.35rem', color: '#666', marginTop: '24px' }}>
+                      Shop sẽ sẵn sàng hỗ trợ những trường hợp còn có thể cứu vãn sản phẩm trong thời gian còn bảo hành, thông qua thảo luận về chi phí sửa chữa, nguồn linh kiện phục vụ cho sửa chữa nếu có thể. Nếu không đạt được thoả thuận, shop có thể tư vấn khách đem đến 1 shop quen khác chuyên sửa chữa gaming gear chuyên sâu để khách hàng tự quyết định về việc sửa chữa sản phẩm với các thoả thuận khác.
+                    </ContentParagraph>
+                    <ContentParagraph style={{ fontSize: '1.35rem', color: '#666' }}>
+                      Sau khi hết thời hạn bảo hành shop có nhận sửa chữa các lỗi cơ bản cho sản phẩm về switch, lăn, các nút, ... Nếu không thể sửa chữa các lỗi nặng hơn, shop có thể tư vấn khách đem đến 1 shop quen khác chuyên sửa chữa gaming gear chuyên sâu để khách hàng có thể sửa chữa sản phẩm.
+                    </ContentParagraph>
+                  </div>
+                )}
+
+                {activeTab === 2 && (
+                  <div key="tab-return">
+                    <SectionTitle>Thời hạn đổi trả</SectionTitle>
+                    <ListContainer>
+                      <ListItem>Tối đa 1 ngày sau khi đơn hàng giao thành công</ListItem>
+                      <ListItem>Đổi sản phẩm khác (sẵn tại chi nhánh shop) hoặc hoàn 100% tiền hàng đã thanh toán</ListItem>
+                      <ListItem>Sau thời gian trên không đổi trả vì bất kì lý do nào, sản phẩm sẽ được bảo hành nếu phát sinh lỗi.</ListItem>
+                    </ListContainer>
+
+                    <SectionTitle>Điều kiện đổi trả</SectionTitle>
+                    <ContentParagraph style={{ fontSize: '1.4rem', color: '#000', fontFamily: 'F_EXTRABOLD' }}>
+                      <span style={{ color: '#ff3b30' }}>CỰC KÌ QUAN TRỌNG, BẮT BUỘC PHẢI CÓ VIDEO KHI MỞ GÓI HÀNG</span> (VIDEO QUAY CÁC GÓC GÓI HÀNG CHƯA BỊ THÁO MỞ HOẶC CÓ DẤU HIỆU THÁO MỞ KHI NHẬN ĐƯỢC TỪ SHIPPER & CÓ MẶT SHIPPER TẠI ĐÓ KHI NHẬN HÀNG, VIDEO QUAY TỪ TRONG RA NGOÀI GÓI HÀNG VÀ CẬN CẢNH LỖI NGOẠI HÌNH SẢN PHẨM TỪ KHI MỞ GÓI HÀNG ĐẾN KHI BẮT ĐẦU SỬ DỤNG HOẶC BẮT ĐẦU KIỂM TRA)
+                    </ContentParagraph>
+                    <div style={{ fontStyle: 'italic', marginBottom: '16px', color: '#ff3b30', fontSize: '1.2rem', marginTop: '-12px', fontWeight: 'bold' }}>
+                      *Không đáp ứng điều kiện này thì sản phẩm sẽ được đưa về diện bảo hành nếu phát sinh lỗi, không áp dụng đổi trả.
+                    </div>
+
+                    <ListContainer>
+                      <ListItem>Sản phẩm bị hư hỏng ngay lần đầu tiên hoặc trong ngày khi sử dụng.</ListItem>
+                      <ListItem>Sản phẩm không thuộc nhóm sản phẩm hàng thanh lý.</ListItem>
+                      <ListItem>Sản phẩm bị nứt, vỡ khi vừa nhận hàng đến tay và khui hàng.</ListItem>
+                      <ListItem>Sản phẩm có dấu hiệu bị cạy mở, bị tráo hàng, tráo phụ kiện từ khâu vận chuyển.</ListItem>
+                      <ListItem>Sản phẩm có dính nước, chất liệu có nước, bụi bẩn, keo,... khi khui hàng.</ListItem>
+                    </ListContainer>
+
+                    <SectionTitle>Chi Phí Vận chuyển</SectionTitle>
+                    <ListContainer>
+                      <ListItem>Shop chịu 2 đầu phí ship nếu đạt thoả thuận đổi sản phẩm khác do sản phẩm hư hỏng, shop chịu 1 đầu phí ship gửi lại nếu đạt thoả thuận hoàn trả sản phẩm và nhận lại 100% tiền.</ListItem>
+                    </ListContainer>
+
+                    <ContentParagraph style={{ fontSize: '1.35rem', color: '#666', marginTop: '16px' }}>
+                      Khách hàng vui lòng liên hệ shop khi gặp các trường hợp trên để trao đổi về trách nhiệm và giải quyết các vấn đề liên quan đến vận chuyển và sử dụng sản phẩm.
+                    </ContentParagraph>
+                  </div>
+                )}
+              </AboutContentScroll>
+            </AboutModalContainer>
+          </AboutOverlay>
+        </CartDrawerPortal>
+      )}
+
       {/* Cart Drawer - rendered via portal to body */}
+
       {showCart && (
         <CartDrawerPortal>
           <CartOverlay $isClosing={isClosingCart} onClick={handleCloseCart} />
@@ -582,21 +1037,6 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
           </CartDrawer>
         </CartDrawerPortal>
       )}
-
-      <MobileBottomNav>
-        {categories.map((cat) => {
-          const Icon = cat.icon;
-          const isActive = router.pathname === cat.link;
-          return (
-            <Link key={cat.link} href={cat.link} passHref legacyBehavior>
-              <BottomNavItem $active={isActive} onClick={scrollToTop}>
-                <Icon size={20} strokeWidth={isActive ? 2.5 : 2} />
-                <span>{cat.name}</span>
-              </BottomNavItem>
-            </Link>
-          );
-        })}
-      </MobileBottomNav>
     </>
   );
 };

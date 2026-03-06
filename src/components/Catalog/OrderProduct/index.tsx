@@ -48,6 +48,7 @@ import {
 } from "../style";
 
 import { Note } from "@/layouts";
+import { copyToClipboard } from "@/utils";
 
 export type ProductColor = {
   color: string;
@@ -292,7 +293,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
 
                         <CopyNumberBank
                           onClick={() => {
-                            navigator.clipboard.writeText("0461000636243");
+                            copyToClipboard("0461000636243");
                             setCopied(true);
                             setTimeout(() => setCopied(false), 1000);
                           }}
@@ -489,7 +490,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
           <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
           <CopyNumberBank
             onClick={() => {
-              navigator.clipboard.writeText("0461000636243");
+              copyToClipboard("0461000636243");
               setCopied(true);
               setTimeout(() => setCopied(false), 1000);
             }}
@@ -522,7 +523,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
           <InfoBank>VO TIEN THUAN - VIETCOMBANK</InfoBank>
           <CopyNumberBank
             onClick={() => {
-              navigator.clipboard.writeText("0461000636243");
+              copyToClipboard("0461000636243");
               setCopied(true);
               setTimeout(() => setCopied(false), 1000);
             }}

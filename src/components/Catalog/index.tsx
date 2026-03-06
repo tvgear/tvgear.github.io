@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid, MessageCircleMore, ExternalLink } from "lucide-react";
 import { addToCart, clearCart } from "@/utils/carts";
 import { useRouter } from "next/router";
+import { copyToClipboard } from "@/utils";
 import { BaseProduct, Brand as BrandT } from "@/types/product";
 export type { BaseProduct, BrandT as Brand };
 import {
@@ -17,10 +18,14 @@ import {
   MainContent,
   MainHeader,
   MobileBar,
-  MobilePageTitle,
+  SortSelectWrap,
+  SelectSort,
   MobileTabList,
   MobileTab,
+  MobileProductCount,
   MobileActionRow,
+  MobileActionGroup,
+  MobileSeparator,
   MobileActionBtn,
   MobileFilterOverlay,
   MobileFilterContent,
@@ -54,13 +59,12 @@ import {
   AddCartGhostBtn,
   EmptyState,
   SidebarBrandList,
-  SortSelectWrap,
-  SelectSort,
   ChatBtn,
   ContactOverlay,
   ContactModal,
   ContactClose,
   ContactTitle,
+  PasteInstructImg,
   ContactProductSummary,
   ContactProductImg,
   ContactProductInfo,
@@ -149,14 +153,6 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     return result;
   }, [products, selectedBrand, selectedPrices, selectedConns, sortBy]);
 
-  const brandCounts = React.useMemo(() => {
-    const counts: Record<string, number> = {};
-    products.forEach(p => {
-      counts[p.brand] = (counts[p.brand] || 0) + 1;
-    });
-    return counts;
-  }, [products]);
-
   const { availablePrices, availableConns } = React.useMemo(() => {
     let baseFiltered = [...products];
     if (selectedBrand !== "all") {
@@ -236,6 +232,14 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
       setSelectedPrices([]);
       setSelectedConns([]);
       setSortBy("price-asc");
+      
+      // Scroll to top when brand changes
+      const mainContent = document.getElementById("main-content");
+      if (mainContent) {
+        mainContent.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
   };
 
@@ -311,7 +315,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
           <SidebarBrandList>
             {brands.map(b => (
               <SidebarItem key={b.key} $active={selectedBrand === b.key} onClick={() => handleBrandChange(b.key)}>
-                {b.label} <span>({brandCounts[b.key] || 0})</span>
+                {b.label}
               </SidebarItem>
             ))}
           </SidebarBrandList>
@@ -367,7 +371,6 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
       <MainContent>
         <MainHeader>
           <MobileBar>
-            <MobilePageTitle>{pageName}</MobilePageTitle>
             <MobileTabList ref={tabListRef}>
               {brands.map(b => (
                 <MobileTab
@@ -383,22 +386,29 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
                     }
                   }}
                 >
-                  {b.label} <span>({brandCounts[b.key] || 0})</span>
+                  {b.label}
                 </MobileTab>
               ))}
             </MobileTabList>
             <MobileActionRow>
-              <MobileActionBtn onClick={() => setShowMobileFilter(true)}>
-                Bộ Lọc {selectedPrices.length + selectedConns.length > 0 && `(${selectedPrices.length + selectedConns.length})`}
-              </MobileActionBtn>
-              <SelectSort value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
-                <option value="price-asc">Giá Thấp → Cao</option>
-                <option value="price-desc">Giá Cao → Thấp</option>
-              </SelectSort>
+              <MobileProductCount>{filtered.length} Sản Phẩm</MobileProductCount>
+              <MobileActionGroup>
+                <MobileActionBtn onClick={() => setShowMobileFilter(true)}>
+                  Bộ Lọc {selectedPrices.length + selectedConns.length > 0 && `(${selectedPrices.length + selectedConns.length})`}
+                </MobileActionBtn>
+                <MobileSeparator />
+                <SortSelectWrap style={{ width: 'fit-content' }}>
+                  <SelectSort value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+                    <option value="price-asc">Giá Thấp → Cao</option>
+                    <option value="price-desc">Giá Cao → Thấp</option>
+                  </SelectSort>
+                </SortSelectWrap>
+              </MobileActionGroup>
             </MobileActionRow>
           </MobileBar>
-          <div className="desktop-sort">
-            <SortSelectWrap>
+          <div className="desktop-sort" style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <MobileProductCount>{filtered.length} Sản Phẩm</MobileProductCount>
+            <SortSelectWrap style={{ width: '145px' }}>
               <SelectSort value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                 <option value="price-asc">Giá Thấp → Cao</option>
                 <option value="price-desc">Giá Cao → Thấp</option>
@@ -566,7 +576,7 @@ ${currentOption?.name}
 ${price.toLocaleString("vi-VN")}.000đ
 
 Mình cần tư vấn sản phẩm này.`;
-    navigator.clipboard.writeText(text);
+    copyToClipboard(text);
     setShowContactModal(true);
   };
 
@@ -644,6 +654,7 @@ Mình cần tư vấn sản phẩm này.`;
 
               <ContactNote>
                 <div>Thông tin sản phẩm này đã được <HighlightAction $type="copy">Sao Chép</HighlightAction></div>
+                <PasteInstructImg src="/assets/images/intructs/paste-content.png" />
                 <div>Chọn <HighlightAction $type="paste">Dán</HighlightAction> thông tin sản phẩm vào khung chat của ứng dụng và nhấn gửi để <HighlightName>TVGEAR</HighlightName> có thể hỗ trợ tư vấn sản phẩm cho bạn.</div>
               </ContactNote>
 

@@ -426,7 +426,7 @@
         "priceAdd": 0
       },
       {
-        "color": "pink",
+        "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/gpro-x-spl-pink.webp",
         "priceAdd": 0
@@ -457,7 +457,7 @@
         "name": "95%",
         "price": 1400,
         "colors": [
-          "pink"
+          "#ff637e"
         ]
       },
       {
@@ -494,7 +494,7 @@
         "priceAdd": 0
       },
       {
-        "color": "pink",
+        "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/gpro-x-spl2-pink.webp",
         "priceAdd": 0
@@ -526,7 +526,7 @@
         "name": "97%",
         "price": 2180,
         "colors": [
-          "pink"
+          "#ff637e"
         ]
       }
     ],
@@ -723,7 +723,7 @@
         "priceAdd": 0
       },
       {
-        "color": "pink",
+        "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/m220-pink.webp",
         "priceAdd": 0
@@ -1027,7 +1027,7 @@
         "priceAdd": 0
       },
       {
-        "color": "pink",
+        "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/lift-pink.webp",
         "priceAdd": 0
@@ -1060,7 +1060,7 @@
         "priceAdd": 0
       },
       {
-        "color": "pink",
+        "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/mx-anywhere-3s-pink.webp",
         "priceAdd": 0

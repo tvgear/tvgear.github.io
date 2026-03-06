@@ -5,6 +5,7 @@ import { ArrowLeft, Check, CheckCircle } from "lucide-react";
 import { CartItem } from "@/types/product";
 import { getCart, getCartTotal, clearCart } from "@/utils/carts";
 import { findColorDef } from "@/utils/colors";
+import { copyToClipboard } from "@/utils";
 
 const SHEET_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbwCEQg77LAHejCaX4ZaDJYU9-V896QwwYu6gpLU65rVwbFmlplYwaT0bkP1cbe9dtzt/exec";
@@ -601,7 +602,7 @@ export default function CheckoutView() {
               $success={copied}
               style={{ padding: '6px 16px', marginBottom: 0, minWidth: '130px' }}
               onClick={() => {
-                navigator.clipboard.writeText("0461000636243");
+                copyToClipboard("0461000636243");
                 setCopied(true);
                 setTimeout(() => setCopied(false), 2000);
               }}

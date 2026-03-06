@@ -30,7 +30,7 @@ export const BlockLoading = styled.div`
   width: 100vw;
   height: 100dvh;
   background: #FFF;
-  z-index: 999;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: center;

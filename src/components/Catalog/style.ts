@@ -30,8 +30,8 @@ export const CatalogWrapper = styled.div`
   margin: 0 auto;
   @media screen and (max-width: 991px) {
     flex-direction: column;
-    padding: 8px 8px 96px 8px;
-    gap: 16px;
+    padding: 38px 8px 96px 8px;
+    gap: 8px;
   }
 `;
 
@@ -40,7 +40,7 @@ export const Sidebar = styled.div`
   width: 260px;
   flex-shrink: 0;
   position: sticky;
-  top: 20px;
+  top: 25px;
   align-self: flex-start;
   height: fit-content;
   z-index: 10;
@@ -55,6 +55,7 @@ export const SidebarTitle = styled.h2`
   margin-bottom: 24px;
   line-height: 1;
   color: #000;
+  display: none;
 `;
 
 export const SidebarSection = styled.div`
@@ -162,14 +163,15 @@ export const MainContent = styled.div`
 
 export const MainHeader = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   @media screen and (max-width: 991px) {
-    margin-bottom: 16px;
+    margin: 0 0 12px 0 !important;
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
+    padding: 0;
     .desktop-sort {
       display: none !important;
     }
@@ -194,32 +196,48 @@ export const SortSelectWrap = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
   margin-left: auto;
+  @media screen and (max-width: 991px) {
+    margin-left: 0;
+    width: fit-content;
+  }
+`;
+
+export const SortIconWrap = styled.div`
+  position: absolute;
+  left: 12px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  color: #777;
+  z-index: 1;
 `;
 
 export const SelectSort = styled.select`
   appearance: none;
-  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23777' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;
+  background: #fff;
   border: 1.5px solid #eee;
-  padding: 8px 34px 8px 14px;
+  padding: 8px 10px;
   border-radius: 100px;
   font-family: F_BOLD;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   cursor: pointer;
   outline: none;
   transition: 0.2s;
   color: #333;
+  width: 100%;
+  text-align: center;
+  text-align-last: center;
   &:hover {
     border-color: #000;
   }
   @media screen and (max-width: 991px) {
-    flex: 1;
-    text-align: center;
-    text-align-last: center;
-    background-position: right 14px center;
-    padding-left: 20px;
+    width: fit-content;
     height: 36px;
+    font-size: 1.15rem;
+    border: none;
+    padding: 0 4px 0 8px;
+    background: transparent;
   }
 `;
 
@@ -236,58 +254,97 @@ export const MobilePageTitle = styled.h2`
 `;
 
 export const MobileBar = styled.div`
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
-  @media screen and (max-width: 991px) {
-    display: block;
+  padding-bottom: 2px;
+  @media screen and (min-width: 992px) {
+    display: none;
   }
 `;
 
 export const MobileTabList = styled.div`
   display: flex;
   overflow-x: auto;
-  gap: 8px;
-  padding-bottom: 4px;
+  gap: 10px;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media screen and (max-width: 991px) {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    padding: 2px 8px 8px;
+    border-bottom: none;
+    margin: 0;
   }
 `;
 
 export const MobileTab = styled.div<{ $active?: boolean }>`
   flex-shrink: 0;
   padding: 6px 14px;
-  background: #fff;
-  border: 1.5px solid ${(p) => (p.$active ? "#000" : "#eee")};
+  background: ${(p) => (p.$active ? "#f2f2f2" : "#fff")};
+  border: 1.5px solid ${(p) => (p.$active ? "#f2f2f2" : "#eee")};
   color: ${(p) => (p.$active ? "#000" : "#777")};
   border-radius: 100px;
   font-family: ${(p) => (p.$active ? "F_BOLD" : "F_MEDIUM")};
   font-size: 1.2rem;
   cursor: pointer;
-  transition: 0.2s;
-  span {
-    color: #000;
-    opacity: ${(p) => (p.$active ? 1 : 0.6)};
-    margin-left: 3px;
+  transition: 0.15s;
+`;
+
+export const MobileProductCount = styled.div`
+  font-family: F_EXTRABOLD;
+  font-size: 1.3rem;
+  color: #000;
+  white-space: nowrap;
+  padding-left: 4px;
+  @media screen and (min-width: 992px) {
+    font-size: 1.6rem;
+    padding-left: 0;
   }
 `;
 
 export const MobileActionRow = styled.div`
   display: flex;
-  gap: 8px;
-  margin-top: 4px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 0;
+`;
+
+export const MobileActionGroup = styled.div`
+  display: flex;
+  align-items: center;
+  background: transparent;
+  overflow: hidden;
+  height: 36px;
+`;
+
+export const MobileSeparator = styled.div`
+  width: 1.5px;
+  height: 14px;
+  background: #eee;
+  flex-shrink: 0;
 `;
 
 export const MobileActionBtn = styled.button`
-  flex: 1;
-  background: #fff;
-  border: 1.5px solid #eee;
-  height: 36px;
-  border-radius: 100px;
+  background: transparent;
+  border: none;
+  height: 100%;
+  padding: 0 10px 0 0;
   font-family: F_BOLD;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   cursor: pointer;
   color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 `;
 
 /* ─── Mobile Filter Overlay ─── */
@@ -346,7 +403,7 @@ export const ListProduct = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 767px) {
-    gap: 8px;
+    gap: 20px 8px;
   }
 `;
 
@@ -434,7 +491,7 @@ export const PriceItem = styled.div`
   color: #000;
   margin-top: 6px;
   @media screen and (max-width: 767px) {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-top: 4px;
   }
 `;
@@ -882,6 +939,15 @@ export const HighlightAction = styled.span<{ $type: "copy" | "paste" }>`
 export const HighlightName = styled.span`
   font-family: F_EXTRABOLD;
   color: #000;
+`;
+
+export const PasteInstructImg = styled.img`
+  width: 100%;
+  max-width: 280px;
+  margin: 2px auto 8px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  display: block;
 `;
 
 export const ContactActions = styled.div`
