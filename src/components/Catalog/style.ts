@@ -797,7 +797,7 @@ export const ContactTitle = styled.div`
   font-family: F_BOLD;
   font-size: 1.8rem;
   color: #000;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   text-align: center;
 `;
 
@@ -807,6 +807,7 @@ export const ContactProductSummary = styled.div`
   background: #f8f8f8;
   padding: 12px;
   border-radius: 12px;
+  margin-top: 12px;
   margin-bottom: 20px;
   align-items: center;
 `;
@@ -886,31 +887,34 @@ export const HighlightName = styled.span`
 export const ContactActions = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 8px;
 `;
 
 export const ContactBtn = styled.a<{ $type: "fb" | "zalo" }>`
   width: 100%;
-  height: 54px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  border-radius: 100px;
+  gap: 6px;
+  border-radius: 20px;
   font-family: F_BOLD;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   cursor: pointer;
   text-decoration: none;
   background: ${(p) => p.$type === "fb" ? "#1877F2" : "#000"};
   color: #fff;
   transition: 0.2s;
+  
   &:hover {
-    opacity: 0.9;
+    opacity: 0.85;
     color: #fff;
   }
+
   @media screen and (max-width: 767px) {
-    height: 50px;
-    font-size: 1.4rem;
+    height: 48px;
+    font-size: 1.2rem;
+    border-radius: 16px;
   }
 `;
 

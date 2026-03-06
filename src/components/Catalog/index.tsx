@@ -1,6 +1,6 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
-import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid, MessageCircleMore } from "lucide-react";
+import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid, MessageCircleMore, ExternalLink } from "lucide-react";
 import { addToCart, clearCart } from "@/utils/carts";
 import { useRouter } from "next/router";
 import { BaseProduct, Brand as BrandT } from "@/types/product";
@@ -643,16 +643,18 @@ Mình cần tư vấn sản phẩm này.`;
               </ContactProductSummary>
 
               <ContactNote>
-                <div>Thông tin sản phẩm đã được <HighlightAction $type="copy">Sao Chép</HighlightAction></div>
-                <div>Chọn <HighlightAction $type="paste">Dán</HighlightAction> thông tin đơn hàng vào khung chat của ứng dụng và nhấn gửi để <HighlightName>TVGEAR</HighlightName> có thể hỗ trợ tư vấn sản phẩm cho bạn.</div>
+                <div>Thông tin sản phẩm này đã được <HighlightAction $type="copy">Sao Chép</HighlightAction></div>
+                <div>Chọn <HighlightAction $type="paste">Dán</HighlightAction> thông tin sản phẩm vào khung chat của ứng dụng và nhấn gửi để <HighlightName>TVGEAR</HighlightName> có thể hỗ trợ tư vấn sản phẩm cho bạn.</div>
               </ContactNote>
 
               <ContactActions>
                 <ContactBtn $type="zalo" href="https://zalo.me/0398637036" target="_blank" rel="noopener noreferrer">
-                  Zalo
+                  <span>Đến Zalo</span>
+                  <ExternalLink size={14} style={{ opacity: 0.6 }} />
                 </ContactBtn>
                 <ContactBtn $type="fb" href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">
-                  Messenger
+                  <span>Đến Messenger</span>
+                  <ExternalLink size={14} style={{ opacity: 0.6 }} />
                 </ContactBtn>
               </ContactActions>
             </ContactModal>
