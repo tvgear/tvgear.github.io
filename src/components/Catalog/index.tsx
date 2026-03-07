@@ -570,11 +570,8 @@ function ProductDetailModal({ product, onClose, isClosing, onAddToCart, onBuyNow
   const colorLabel = currentColor?.labelColor || currentColor?.color;
 
   const handleChatClick = () => {
-    const text = `${product.name}
-${colorLabel}
-${currentOption?.name}
+    const text = `${product.name}, ${colorLabel}, ${currentOption?.name}
 ${price.toLocaleString("vi-VN")}.000đ
-
 Mình cần tư vấn sản phẩm này.`;
     copyToClipboard(text);
     setShowContactModal(true);

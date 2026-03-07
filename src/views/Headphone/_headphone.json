@@ -419,5 +419,34 @@
     "connect": [
       "wireless"
     ]
+  },
+  {
+    "": "HYPER --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "hyperx",
+    "name": "Cloud 3",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/cloud-3.png",
+        "priceAdd": 0
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX, BH SPC 22/04/27",
+        "price": 1650
+      }
+    ],
+    "warranty": "BH Hãng",
+    "connect": [
+      "wired"
+    ]
   }
 ]
