@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import styled, { keyframes, css } from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus, ChevronDown, MapPin } from "lucide-react";
+import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus, MapPin, ChevronDown } from "lucide-react";
 import { getCart, getCartTotal, updateQty as updateCartQuantity, removeFromCart } from "@/utils/carts";
 import { CartItem } from "@/types/product";
 
@@ -49,14 +49,14 @@ const BlockHeader = styled.header`
 
 const InnerHeader = styled.div`
   width: 100%;
-  height: 68px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
   @media screen and (max-width: 991px) {
-    height: 50px;
-    padding: 0 8px;
+    height: 48px;
+    padding: 0 12px 0 7.5px;
   }
 `;
 
@@ -64,6 +64,9 @@ const LeftHeader = styled.div`
   display: flex;
   align-items: center;
   flex: 1;
+  @media screen and (max-width: 991px) {
+    justify-content: flex-start;
+  }
 `;
 
 const LogoArea = styled.div`
@@ -80,8 +83,8 @@ const LogoArea = styled.div`
     background: #222;
   }
   @media screen and (max-width: 991px) {
-    height: 36px;
-    padding: 0 12px 0 7.5px;
+    height: 34px;
+    padding: 0 11px 0 6.5px;
     gap: 2.5px;
     border-radius: 20px;
   }
@@ -149,6 +152,9 @@ const RightHeader = styled.div`
   gap: 20px;
   flex: 1;
   justify-content: flex-end;
+  @media screen and (max-width: 991px) {
+    gap: 12px;
+  }
 `;
 
 const IconBtn = styled.button`
@@ -198,14 +204,25 @@ const Badge = styled.div`
   }
 `;
 
+const MobileDivider = styled.div`
+  display: none;
+  @media screen and (max-width: 991px) {
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #eee;
+    margin-left: 12px;
+  }
+`;
+
 const MobileCategorySelector = styled.div`
   display: none;
   @media screen and (max-width: 991px) {
     display: flex;
     align-items: center;
-    gap: 3px;
-    margin-left: 8px;
-    padding: 6px 4px;
+    gap: 4.5px;
+    margin-left: 10px;
+    padding: 6px 0;
     background: transparent;
     border-radius: 100px;
     font-family: F_EXTRABOLD;
@@ -220,14 +237,14 @@ const MobileCategorySelector = styled.div`
 
 const MobileDropdownPortal = styled.div`
   position: fixed;
-  top: 64px;
+  top: 48px;
   left: 12px;
   right: 12px;
   background: #fff;
   border-radius: 24px;
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
   z-index: 10001;
-  padding: 16px;
+  padding: 10px 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
@@ -238,8 +255,8 @@ const DropdownItem = styled.div<{ $active?: boolean }>`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 12px 4px;
+  gap: 6px;
+  padding: 8px 4px;
   border-radius: 16px;
   color: ${(p) => (p.$active ? "#000" : "#777")};
   background: ${(p) => (p.$active ? "#f6f6f6" : "transparent")};
@@ -252,8 +269,6 @@ const DropdownItem = styled.div<{ $active?: boolean }>`
     white-space: nowrap;
   }
 `;
-
-/* ─── Cart Drawer Styles ─── */
 
 const CartOverlay = styled.div<{ $isClosing?: boolean }>`
   position: fixed;
@@ -769,9 +784,10 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
               </WrapLogo>
               <LogoText>tvgear</LogoText>
             </LogoArea>
+            <MobileDivider />
             <MobileCategorySelector onClick={() => setShowMobileMenu(!showMobileMenu)}>
-              {currentCategory.name}
-              <ChevronDown size={15} style={{ transform: showMobileMenu ? 'rotate(180deg)' : 'none', transition: '0.2s' }} />
+              <span style={{ fontSize: '1.3rem' }}>{currentCategory.name}</span>
+              <ChevronDown size={14} strokeWidth={2.5} style={{ transform: showMobileMenu ? 'rotate(180deg)' : 'none', transition: '0.2s' }} />
             </MobileCategorySelector>
           </LeftHeader>
 

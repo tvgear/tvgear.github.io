@@ -712,5 +712,31 @@
   },
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "HE MelGeek MADE68",
+    "tags": [
+      "Có Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/made-68.png",
+        "priceAdd": 0
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + Keycap Yuri Trắng Đỏ",
+        "price": 1700
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired"
+    ]
   }
 ]

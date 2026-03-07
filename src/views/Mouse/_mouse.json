@@ -1408,5 +1408,31 @@
     "connect": [
       "wired"
     ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Ninjutso Sora V2",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/sora-v2.png",
+        "priceAdd": 0
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX",
+        "price": 1650
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wireless"
+    ]
   }
 ]

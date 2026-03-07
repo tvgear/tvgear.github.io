@@ -167,7 +167,7 @@ export const MainHeader = styled.div`
   align-items: center;
   margin-bottom: 16px;
   @media screen and (max-width: 991px) {
-    margin: 0 0 12px 0 !important;
+    margin: 0 0 2.5px 0 !important;
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
@@ -267,19 +267,19 @@ export const MobileBar = styled.div`
 export const MobileTabList = styled.div`
   display: flex;
   overflow-x: auto;
-  gap: 10px;
+  gap: 6px;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
     display: none;
   }
   @media screen and (max-width: 991px) {
     position: fixed;
-    top: 50px;
+    top: 48px;
     left: 0;
     width: 100%;
     z-index: 999;
     background: #fff;
-    padding: 2px 8px 8px;
+    padding: 0px 7.5px 5px 7.5px;
     border-bottom: none;
     margin: 0;
   }
@@ -287,7 +287,7 @@ export const MobileTabList = styled.div`
 
 export const MobileTab = styled.div<{ $active?: boolean }>`
   flex-shrink: 0;
-  padding: 6px 14px;
+  padding: 6px 13px;
   background: ${(p) => (p.$active ? "#f2f2f2" : "#fff")};
   border: 1.5px solid ${(p) => (p.$active ? "#f2f2f2" : "#eee")};
   color: ${(p) => (p.$active ? "#000" : "#777")};
