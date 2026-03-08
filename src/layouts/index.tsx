@@ -85,7 +85,6 @@ const Layout = ({ children }: LayoutProps) => {
       <Content id="main-content" ref={contentRef} $hasHeader={!isCheckout}>
         {!isCheckout && <Header contentRef={contentRef} />}
         {children}
-        {/* <Note>Sản phẩm đang được cập nhật. List đầy đủ xem tại Facebook<br /><a href="https://facebook.com/tvgear" target="_blank">https://facebook.com/tvgear</a></Note> */}
       </Content>
      </WrapWeb>
     </>

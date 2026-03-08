@@ -621,13 +621,13 @@
     ],
     "colors": [
       {
-        "color": "gray",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/m185-gray.webp",
         "priceAdd": 0
       },
       {
-        "color": "blue",
+        "color": "rgba(48,75,147)",
         "labelColor": "Xanh",
         "image": "/assets/images/mouses/m185-blue.webp",
         "priceAdd": 0
@@ -659,13 +659,13 @@
     ],
     "colors": [
       {
-        "color": "gray",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/m190-black.webp",
         "priceAdd": 0
       },
       {
-        "color": "blue",
+        "color": "rgba(48,75,147)",
         "labelColor": "Xanh",
         "image": "/assets/images/mouses/m190-blue.webp",
         "priceAdd": 0
@@ -691,7 +691,7 @@
     ],
     "colors": [
       {
-        "color": "gray",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/m220-black.webp",
         "priceAdd": 0
@@ -729,7 +729,7 @@
     ],
     "colors": [
       {
-        "color": "gray",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/m196-black.webp",
         "priceAdd": 0
@@ -1067,7 +1067,7 @@
     ],
     "colors": [
       {
-        "color": "violet",
+        "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/pop-mouse-pink.webp",
         "priceAdd": 0

@@ -875,7 +875,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                 {activeTab === 0 && (
                   <div key="tab-info">
                     <ContentParagraph>
-                      TVGEAR Shop chuyên kinh doanh các sản phẩm gaming gear (thiết thiết bị điện tử) bao gồm : chuột, bàn phím, tai nghe, phụ kiện, ... đã qua sử dụng và hàng mới chưa qua sử dụng.
+                      TVGEAR Shop chuyên kinh doanh các sản phẩm gaming gear (thiết bị điện tử) bao gồm : chuột, bàn phím, tai nghe, phụ kiện, ... đã qua sử dụng và hàng mới chưa qua sử dụng.
                     </ContentParagraph>
                     <ContentParagraph>
                       Sản phẩm tại shop 95% là hàng đã qua sử dụng và bảo hành tại shop. Những sản phẩm có gắn tag bảo hành hãng sẽ có kèm tháng và năm còn bảo hành hãng, những sản phẩm này sẽ được bảo hành hãng và sẽ không bảo hành tại shop (trừ khi còn bảo hành quá ít tại hãng).

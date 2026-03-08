@@ -158,11 +158,10 @@ export const CheckboxGroup = styled.label`
 
 /* ─── Main Content ─── */
 export const LastUpdated = styled.div`
-  margin-top: 60px;
+  margin-top: 150px;
   padding-top: 24px;
-  border-top: 1px solid #f0f0f0;
   font-family: F_MEDIUM;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #999;
   text-align: center;
   @media screen and (max-width: 991px) {

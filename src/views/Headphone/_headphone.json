@@ -245,7 +245,7 @@
     "name": "H150/H151",
     "colors": [
       {
-        "color": "blue",
+        "color": "rgba(48,75,147)",
         "labelColor": "Xanh",
         "image": "/assets/images/headphones/h150.webp",
         "priceAdd": 0

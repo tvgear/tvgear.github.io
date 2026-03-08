@@ -425,7 +425,7 @@
     "name": "POP Keys",
     "colors": [
       {
-        "color": "violet",
+        "color": "#ff637e",
         "labelColor": "Tím Trắng",
         "image": "/assets/images/keyboards/pop-keys.webp",
         "priceAdd": 0
@@ -714,29 +714,30 @@
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "liquidation",
-    "name": "HE MelGeek MADE68",
+    "name": "PRO X TKL WL",
     "tags": [
-      "Có Dây"
+      "Không Dây & Bluetooth"
     ],
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/keyboards/made-68.png",
+        "color": "pink",
+        "labelColor": "Hồng",
+        "image": "/assets/images/keyboards/pro-x-tkl-pink.png",
         "priceAdd": 0
       }
     ],
     "options": [
       {
-        "name": "98% + Keycap Yuri Trắng Đỏ",
-        "price": 1700
+        "name": "98%",
+        "price": 2280
       }
     ],
     "warranty": "Bao Test 7 Ngày",
     "connect": [
-      "wired"
+      "wireless",
+      "bluetooth"
     ]
   }
 ]
