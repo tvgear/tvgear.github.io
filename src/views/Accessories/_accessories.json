@@ -5,7 +5,7 @@
     "tags": [
       "Chuột Văn Phòng Loại Bolt"
     ],
-    "name": "Logi Bolt",
+    "name": "Đầu Thu Logi Bolt",
     "colors": [
       {
         "color": "black",
@@ -16,7 +16,7 @@
     ],
     "options": [
       {
-        "name": "99%",
+       "name": "Chuột Văn Phòng Có Kí Hiệu ⚡︎ Màu Xanh",
         "price": 150
       }
     ],
@@ -29,7 +29,7 @@
     "tags": [
       "Chuột Văn Phòng Loại Unifying"
     ],
-    "name": "Logi Unifying",
+    "name": "Đầu Thu Logi Unifying",
     "colors": [
       {
         "color": "black",
@@ -40,7 +40,7 @@
     ],
     "options": [
       {
-        "name": "99%",
+        "name": "Chuột Văn Phòng Có Kí Hiệu * Màu Cam",
         "price": 150
       }
     ],
@@ -53,7 +53,7 @@
     "tags": [
       "Chuột Gaming G304"
     ],
-    "name": "Logi G304",
+    "name": "Đầu Thu Logi G304",
     "colors": [
       {
         "color": "black",
@@ -64,7 +64,7 @@
     ],
     "options": [
       {
-        "name": "99%",
+        "name": "Cho Chuột Gaming G304",
         "price": 250
       }
     ],
@@ -77,7 +77,7 @@
     "tags": [
       "Chuột Gaming Dòng G"
     ],
-    "name": "Logi Dòng G",
+    "name": "Đầu Thu Logi G",
     "colors": [
       {
         "color": "black",
@@ -88,7 +88,7 @@
     ],
     "options": [
       {
-        "name": "99%",
+        "name": "G403/G603/G703/G903/G502/PRO WL",
         "price": 330
       }
     ],
@@ -101,7 +101,7 @@
     "tags": [
       "Chuột Gaming Dòng PRO"
     ],
-    "name": "Logi Dòng PRO 2 / PRO X",
+    "name": "Đầu Thu Logi PRO",
     "colors": [
       {
         "color": "black",
@@ -112,11 +112,15 @@
     ],
     "options": [
       {
-        "name": "PRO X 1",
+        "name": "PRO 2 WL",
         "price": 450
       },
       {
-        "name": "PRO X 2 - 1K Hz",
+        "name": "PRO X SPL1",
+        "price": 450
+      },
+      {
+        "name": "PRO X SPL2/SPL2DEX/SPL2C -- 1K Hz",
         "price": 450
       }
     ],

@@ -76,7 +76,9 @@ import {
   ContactBtn,
   HighlightAction,
   HighlightName,
+  LastUpdated,
 } from "./style";
+import metadata from "@/metadata.json";
 
 const PRICE_RANGES = [
   { id: "r1", label: "< 500.000", min: 0, max: 500 },
@@ -450,6 +452,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
             })}
           </ListProduct>
         )}
+        <LastUpdated>Cập nhật lần cuối lúc {metadata.lastUpdated}</LastUpdated>
       </MainContent>
     </CatalogWrapper>
 

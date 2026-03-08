@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "homepage": "https://github.com/tvgear/tvgear.github.io",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node scripts/generate-build-time.js && next dev",
+    "build": "node scripts/generate-build-time.js && next build",
     "start": "NEXT_SHARP_PATH=/node_modules/sharp next start -p 3012",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "export": "next export",

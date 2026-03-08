@@ -157,6 +157,22 @@ export const CheckboxGroup = styled.label`
 `;
 
 /* ─── Main Content ─── */
+export const LastUpdated = styled.div`
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+  font-family: F_MEDIUM;
+  font-size: 1.2rem;
+  color: #999;
+  text-align: center;
+  @media screen and (max-width: 991px) {
+    margin-top: 40px;
+    padding-top: 16px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+`;
+
 export const MainContent = styled.div`
   flex: 1;
 `;

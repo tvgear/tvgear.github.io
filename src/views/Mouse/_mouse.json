@@ -482,12 +482,6 @@
     ],
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/gpro-x-spl2-black.webp",
-        "priceAdd": 0
-      },
-      {
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/mouses/gpro-x-spl2-white.webp",
@@ -502,29 +496,15 @@
     ],
     "options": [
       {
-        "name": "95%, Đầu Thu SPL1",
-        "price": 1750,
-        "colors": [
-          "black"
-        ]
-      },
-      {
-        "name": "95%",
-        "price": 2080,
-        "colors": [
-          "black"
-        ]
-      },
-      {
-        "name": "90% + BOX",
-        "price": 2080,
+        "name": "90% + BOX, Đầu Thu SPL1",
+        "price": 1880,
         "colors": [
           "white"
         ]
       },
       {
-        "name": "97%",
-        "price": 2180,
+        "name": "97% + Đầu Thu SPL1",
+        "price": 1880,
         "colors": [
           "#ff637e"
         ]
@@ -558,8 +538,8 @@
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 2180,
+        "name": "97% + Đầu Thu SPL1",
+        "price": 1880,
         "colors": [
           "black"
         ]
@@ -578,7 +558,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X SuperLight 2c",
     "tags": [
@@ -594,8 +574,8 @@
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 2080
+        "name": "97% + Đầu Thu SPL1",
+        "price": 1780
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
