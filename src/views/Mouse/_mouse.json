@@ -10,14 +10,12 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g102-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g102-black.webp"
       },
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/g102-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g102-white.webp"
       }
     ],
     "options": [
@@ -46,8 +44,7 @@
       {
         "color": "lightsteelblue",
         "labelColor": "Tím",
-        "image": "/assets/images/mouses/g203-lilac.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g203-lilac.webp"
       }
     ],
     "options": [
@@ -72,14 +69,12 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g102-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g102-black.webp"
       },
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/g102-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g102-white.webp"
       }
     ],
     "options": [
@@ -104,8 +99,7 @@
       {
         "color": "lightsteelblue",
         "labelColor": "Tím",
-        "image": "/assets/images/mouses/g203-lilac.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g203-lilac.webp"
       }
     ],
     "options": [
@@ -130,8 +124,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g402.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g402.webp"
       }
     ],
     "options": [
@@ -160,8 +153,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g403-hero.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g403-hero.webp"
       }
     ],
     "options": [
@@ -190,8 +182,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g502-hero.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g502-hero.webp"
       }
     ],
     "options": [
@@ -216,8 +207,7 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/g502-x-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g502-x-white.webp"
       }
     ],
     "options": [
@@ -242,14 +232,12 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g304-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g304-black.webp"
       },
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/g304-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g304-white.webp"
       }
     ],
     "options": [
@@ -274,14 +262,12 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g304-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g304-black.webp"
       },
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/g304-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g304-white.webp"
       }
     ],
     "options": [
@@ -306,8 +292,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g703.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g703.webp"
       }
     ],
     "options": [
@@ -332,8 +317,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g309-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g309-black.webp"
       }
     ],
     "options": [
@@ -359,8 +343,7 @@
       {
         "color": "white",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/g705.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/g705.png"
       }
     ],
     "options": [
@@ -386,8 +369,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/gpro-wireless.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-wireless.webp"
       }
     ],
     "options": [
@@ -416,26 +398,22 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/gpro-x-spl-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-x-spl-white.webp"
       },
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/gpro-x-spl-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-x-spl-black.webp"
       },
       {
         "color": "#ff637e",
         "labelColor": "Hồng",
-        "image": "/assets/images/mouses/gpro-x-spl-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-x-spl-pink.webp"
       },
       {
         "color": "red",
         "labelColor": "Đỏ",
-        "image": "/assets/images/mouses/gpro-x-spl-red.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-x-spl-red.webp"
       }
     ],
     "options": [
@@ -484,8 +462,7 @@
       {
         "color": "#ff637e",
         "labelColor": "Hồng",
-        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
       }
     ],
     "options": [
@@ -513,8 +490,7 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp"
       }
     ],
     "options": [
@@ -542,8 +518,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/gpro-x-spl2c-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/gpro-x-spl2c-black.webp"
       }
     ],
     "options": [
@@ -571,8 +546,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m90.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m90.webp"
       }
     ],
     "options": [
@@ -597,20 +571,17 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m185-gray.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m185-gray.webp"
       },
       {
         "color": "rgba(48,75,147)",
         "labelColor": "Xanh",
-        "image": "/assets/images/mouses/m185-blue.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m185-blue.webp"
       },
       {
         "color": "red",
         "labelColor": "Đỏ",
-        "image": "/assets/images/mouses/m185-red.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m185-red.webp"
       }
     ],
     "options": [
@@ -635,14 +606,12 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m190-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m190-black.webp"
       },
       {
         "color": "rgba(48,75,147)",
         "labelColor": "Xanh",
-        "image": "/assets/images/mouses/m190-blue.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m190-blue.webp"
       }
     ],
     "options": [
@@ -667,20 +636,17 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m220-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m220-black.webp"
       },
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/m220-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m220-white.webp"
       },
       {
         "color": "#ff637e",
         "labelColor": "Hồng",
-        "image": "/assets/images/mouses/m220-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m220-pink.webp"
       }
     ],
     "options": [
@@ -705,20 +671,17 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m196-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m196-black.webp"
       },
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/m196-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m196-white.webp"
       },
       {
         "color": "rgba(240,224,221)",
         "labelColor": "Hồng",
-        "image": "/assets/images/mouses/m196-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m196-pink.webp"
       }
     ],
     "options": [
@@ -743,8 +706,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m331-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m331-black.webp"
       }
     ],
     "options": [
@@ -769,8 +731,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m325-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m325-black.webp"
       }
     ],
     "options": [
@@ -795,8 +756,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m240-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m240-black.webp"
       }
     ],
     "options": [
@@ -826,8 +786,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m350s-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m350s-black.webp"
       }
     ],
     "options": [
@@ -857,8 +816,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m550-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m550-black.webp"
       }
     ],
     "options": [
@@ -892,8 +850,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m650-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m650-black.webp"
       }
     ],
     "options": [
@@ -923,8 +880,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m650-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m650-black.webp"
       }
     ],
     "options": [
@@ -950,8 +906,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/m720-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/m720-black.webp"
       }
     ],
     "options": [
@@ -977,14 +932,12 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/lift-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/lift-white.webp"
       },
       {
         "color": "#ff637e",
         "labelColor": "Hồng",
-        "image": "/assets/images/mouses/lift-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/lift-pink.webp"
       }
     ],
     "options": [
@@ -1010,14 +963,12 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/mx-anywhere-3s-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/mx-anywhere-3s-black.webp"
       },
       {
         "color": "#ff637e",
         "labelColor": "Hồng",
-        "image": "/assets/images/mouses/mx-anywhere-3s-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/mx-anywhere-3s-pink.webp"
       }
     ],
     "options": [
@@ -1043,26 +994,22 @@
       {
         "color": "#b5b9ff",
         "labelColor": "Xanh",
-        "image": "/assets/images/mouses/pop-mouse-blue.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/pop-mouse-blue.webp"
       },
-       {
+      {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/pop-mouse-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/pop-mouse-black.webp"
       },
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/pop-mouse-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/pop-mouse-white.webp"
       },
       {
         "color": "#f2b8c6",
         "labelColor": "Hồng",
-        "image": "/assets/images/mouses/pop-mouse-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/pop-mouse-pink.webp"
       }
     ],
     "options": [
@@ -1088,8 +1035,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/mx-master-2s-black.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/mx-master-2s-black.png"
       }
     ],
     "options": [
@@ -1118,8 +1064,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/mx-master-3s-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/mx-master-3s-black.webp"
       }
     ],
     "options": [
@@ -1148,8 +1093,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/basilisk-v3.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/basilisk-v3.webp"
       }
     ],
     "options": [
@@ -1174,8 +1118,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/da-v3.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/da-v3.png"
       }
     ],
     "options": [
@@ -1200,8 +1143,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/orochi-v2-black.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/orochi-v2-black.png"
       }
     ],
     "options": [
@@ -1227,8 +1169,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/basilisk-ultimate.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/basilisk-ultimate.webp"
       }
     ],
     "options": [
@@ -1253,8 +1194,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/viper-ultimate-black.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/viper-ultimate-black.png"
       }
     ],
     "options": [
@@ -1279,8 +1219,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/viper-v2-pro-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/viper-v2-pro-black.webp"
       }
     ],
     "options": [
@@ -1305,8 +1244,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/da-v2-pro-black.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/da-v2-pro-black.png"
       }
     ],
     "options": [
@@ -1337,8 +1275,7 @@
       {
         "color": "rgba(142,229,221)",
         "labelColor": "Xanh",
-        "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp"
       }
     ],
     "options": [
@@ -1366,8 +1303,7 @@
       {
         "color": "Đen",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/steel-rival-5.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/steel-rival-5.png"
       }
     ],
     "options": [
@@ -1392,8 +1328,7 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/sora-v2.png",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/sora-v2.png"
       }
     ],
     "options": [
@@ -1418,8 +1353,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/da-v2-x-hyperspeed.webp",
-        "priceAdd": 0
+        "image": "/assets/images/mouses/da-v2-x-hyperspeed.webp"
       }
     ],
     "options": [

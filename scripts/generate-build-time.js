@@ -7,18 +7,19 @@ const path = require('path');
 function getFormattedTime() {
   const now = new Date();
   
-  const days = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
-  const dayName = days[now.getDay()];
+  // Calculate Vietnam time (GMT+7) regardless of environment timezone
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const vn = new Date(utc + (3600000 * 7));
   
-  const hh = now.getHours().toString().padStart(2, '0');
-  const mm = now.getMinutes().toString().padStart(2, '0');
-  const ss = now.getSeconds().toString().padStart(2, '0');
+  const hh = vn.getHours().toString().padStart(2, '0');
+  const mm = vn.getMinutes().toString().padStart(2, '0');
+  const ss = vn.getSeconds().toString().padStart(2, '0');
   
-  const d = now.getDate();
-  const m = now.getMonth() + 1;
-  const y = now.getFullYear();
+  const d = vn.getDate();
+  const m = vn.getMonth() + 1;
+  const y = vn.getFullYear();
   
-  return `${hh}:${mm}:${ss} ${dayName}, ${d}/${m}/${y}`;
+  return `${hh}:${mm}:${ss}, ${d}/${m}/${y}`;
 }
 
 const metadata = {

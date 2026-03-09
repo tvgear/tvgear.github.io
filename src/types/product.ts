@@ -2,7 +2,6 @@ export type ProductColor = {
   color: string;
   labelColor?: string;
   image: string;
-  priceAdd: number;
 };
 
 export type ProductOption = {

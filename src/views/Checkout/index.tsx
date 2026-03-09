@@ -1,22 +1,40 @@
 import React, { useState, useEffect, useRef } from "react";
-import styled from "styled-components";
+import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { useRouter } from "next/router";
-import { ArrowLeft, Check, CheckCircle, ChevronDown, ChevronUp, Copy } from "lucide-react";
+import { ArrowLeft, Check, ChevronDown, ChevronUp, Copy } from "lucide-react";
 import { CartItem } from "@/types/product";
 import { getCart, getCartTotal, clearCart } from "@/utils/carts";
 import { findColorDef } from "@/utils/colors";
 import { copyToClipboard } from "@/utils";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbwCEQg77LAHejCaX4ZaDJYU9-V896QwwYu6gpLU65rVwbFmlplYwaT0bkP1cbe9dtzt/exec";
+  "https://script.google.com/macros/s/AKfycbweimQGN6gaZ6RqQgoYybF7tnU7OlVT6KU8_TfnButyiwAiZ6v-K5mV1KWKRf7TrJsZ/exec";
+
+import divisions from "@/data/vietnam-divisions.json";
+
+interface Division {
+  n: string;
+  d: {
+    n: string;
+    w: string[];
+  }[];
+}
+
+const VIETNAM_DATA = divisions as Division[];
 
 /* ─── styled ─── */
 const Page = styled.div<{ $success?: boolean }>`
-  min-height: 100%;
+  min-height: 100vh;
   padding: 24px 40px;
-  background: ${(p) => (p.$success ? "#f8f8f8" : "transparent")};
+  background: transparent;
   @media screen and (max-width: 767px) {
     padding: 0;
+  }
+`;
+
+const SuccessBackgroundStyle = createGlobalStyle`
+  #layout-wrapper {
+    background: #f2f2f2 !important;
   }
 `;
 
@@ -139,7 +157,7 @@ const CIImg = styled.img`
   object-fit: contain;
   border-radius: 12px;
   background: #fafafa;
-  padding: 6px;
+  padding: 10px;
 `;
 const CIInfo = styled.div`
   flex: 1;
@@ -187,13 +205,25 @@ const CIQty = styled.div`
 const SummaryRow = styled.div<{ $bold?: boolean; $large?: boolean; $color?: string }>`
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   font-family: ${(p) => (p.$bold || p.$large ? "F_BOLD" : "F_REGULAR")};
   font-size: ${(p) => (p.$large ? "1.5rem" : "1.4rem")};
   padding: 3px 0;
   color: ${(p) => p.$color || (p.$bold || p.$large ? "#000" : "#555")};
+  
+  span:first-child {
+    flex-shrink: 0;
+  }
+  
+  span:last-child {
+    text-align: right;
+    word-break: break-word;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: ${(p) => (p.$large ? "1.3rem" : "1.2rem")};
     padding: 2px 0;
+    gap: 12px;
   }
 `;
 
@@ -276,9 +306,50 @@ const Label = styled.label`
     margin-bottom: 4px;
   }
 `;
+
+const SelectFlex = styled.div`
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  @media screen and (max-width : 767px) {
+    flex-direction: column;
+    gap: 8px;
+  }
+`;
+
+const Select = styled.select`
+  width: 100%;
+  height: 38px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 0 32px 0 12px;
+  font-size: 1.3rem;
+  font-family: F_MEDIUM;
+  color: #000;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  &:focus {
+    border-color: #c8e64a;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+  }
+  @media screen and (max-width: 767px) {
+    height: 34px;
+    font-size: 1.2rem;
+    padding-right: 28px;
+    background-position: right 10px center;
+  }
+`;
+
 const Input = styled.input`
   width: 100%;
-  height: 40px;
+  height: 38px;
   border: 1.5px solid #e0e0e0;
   border-radius: 10px;
   padding: 0 14px;
@@ -292,7 +363,7 @@ const Input = styled.input`
     border-color: #c8e64a;
   }
   @media screen and (max-width: 767px) {
-    height: 36px;
+    height: 34px;
   }
 `;
 
@@ -466,20 +537,70 @@ const CopyBtn = styled.button<{ $success?: boolean }>`
   }
 `;
 const SuccessWrap = styled.div`
-  max-width: 560px;
+  max-width: 480px;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
+  @media screen and (max-width: 767px) {
+    padding: 20px 16px;
+  }
 `;
+const scaleUp = keyframes`
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+`;
+
+const confettiFade = keyframes`
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx), var(--ty)) scale(0.2); opacity: 0; }
+`;
+
 const SuccessIcon = styled.div`
   color: #22c55e;
   margin-bottom: 12px;
+  position: relative;
+  display: inline-flex;
+  
+  svg {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    z-index: 2;
+    animation: ${scaleUp} 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  @media screen and (max-width: 767px) {
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+`;
+
+const ConfettiPiece = styled.div<{ $color: string; $rot: number; $tx: number; $ty: number; $delay: number }>`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  background: ${p => p.$color};
+  border-radius: 2px;
+  z-index: 1;
+  --rot: ${p => p.$rot}deg;
+  --tx: ${p => p.$tx}px;
+  --ty: ${p => p.$ty}px;
+  animation: ${confettiFade} 0.8s ease-out both;
+  animation-delay: ${p => p.$delay}s;
 `;
 const SuccessTitle = styled.div`
   font-family: F_BOLD;
   font-size: 2.4rem;
   margin-bottom: 24px;
   color: #22c55e;
+  @media screen and (max-width: 767px) {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
 `;
 const SuccessCard = styled.div`
   background: #fff;
@@ -499,10 +620,14 @@ const SuccessBtn = styled.button`
   font-family: F_BOLD;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-top: 8px;
+  margin-top: 16px;
   transition: 0.2s;
   &:hover {
     background: #333;
+  }
+  @media screen and (max-width: 767px) {
+    height: 42px;
+    font-size: 1.3rem;
   }
 `;
 const ContactBtn = styled.a`
@@ -516,7 +641,7 @@ const ContactBtn = styled.a`
   font-family: F_BOLD;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-top: 8px;
+  margin-top: 12px;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -524,6 +649,11 @@ const ContactBtn = styled.a`
   &:hover {
     background: #f5f5f5;
     color: #000;
+  }
+  @media screen and (max-width: 767px) {
+    height: 42px;
+    font-size: 1.3rem;
+    margin-top: 10px;
   }
 `;
 
@@ -536,7 +666,10 @@ export default function CheckoutView() {
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [district, setDistrict] = useState("");
+  const [ward, setWard] = useState("");
+  const [street, setStreet] = useState("");
   const [method, setMethod] = useState(0); // 0 = COD, 1 = CK
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -577,33 +710,40 @@ export default function CheckoutView() {
   }
 
   const handleSubmitOrder = async () => {
-    if (!name.trim() || !phone.trim() || !address.trim()) {
+    if (!name.trim() || !phone.trim() || !city || !district || !ward || !street.trim()) {
       setError("Vui lòng nhập đầy đủ Tên, SĐT và Địa chỉ.");
       return;
     }
     setError(null);
     
+    // Combine address parts
+    const fullAddress = `${street.trim()}, ${ward}, ${district}, ${city}`;
+    
     try {
       setSubmitting(true);
-      for (const item of cartItems) {
-        const unitPrice = item.option.price + (item.color.priceAdd || 0);
-        const payload = {
+      const items = cartItems.map(item => {
+        const unitPrice = item.option.price;
+        return {
           productName: item.productName,
           productColor: findColorDef(item.color.color)?.label ?? item.color.color ?? "",
           productOption: item.option.name,
           productPriceOption: unitPrice * 1000,
           productQuantity: item.quantity,
-          customerName: name,
-          customerPhone: phone,
-          customerAddress: address,
-          customerNote: "",
-          customerPayment: method === 0 ? "COD - Tiền Mặt" : "Chuyển Khoản",
         };
-        await fetch(SHEET_ENDPOINT, {
-          method: "POST",
-          body: JSON.stringify(payload),
-        });
-      }
+      });
+
+      const payload = {
+        items,
+        customerName: name,
+        customerPhone: phone,
+        customerAddress: fullAddress,
+        customerPayment: method === 0 ? "COD - Tiền Mặt" : "Chuyển Khoản",
+      };
+
+      await fetch(SHEET_ENDPOINT, {
+        method: "POST",
+        body: JSON.stringify(payload),
+      });
       clearCart();
       window.dispatchEvent(new Event("cart-updated"));
       setStep("success");
@@ -620,9 +760,27 @@ export default function CheckoutView() {
   if (step === "success") {
     return (
       <Page ref={pageRef} $success>
+        <SuccessBackgroundStyle />
         <SuccessWrap>
           <SuccessIcon>
-            <CheckCircle size={64} />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+            </svg>
+            {[...Array(12)].map((_, i) => {
+              const colors = ['#FFD700', '#FF3B30', '#22C55E', '#007AFF', '#FF9500', '#AF52DE'];
+              const angle = (i * 30) * (Math.PI / 180);
+              const dist = 60 + Math.random() * 40;
+              return (
+                <ConfettiPiece 
+                  key={i}
+                  $color={colors[i % colors.length]!}
+                  $rot={i * 30}
+                  $tx={Math.cos(angle) * dist}
+                  $ty={Math.sin(angle) * dist}
+                  $delay={0.2 + (Math.random() * 0.2)}
+                />
+              );
+            })}
           </SuccessIcon>
           <SuccessTitle>Đặt Hàng Thành Công</SuccessTitle>
 
@@ -630,7 +788,7 @@ export default function CheckoutView() {
             <SectionTitle>Sản Phẩm</SectionTitle>
             <div style={{ background: '#fcfcfc', borderRadius: '12px', padding: '16px', marginBottom: '16px' }}>
               {cartItems.map((item, idx) => {
-                const up = item.option.price + (item.color.priceAdd || 0);
+                const up = item.option.price;
                 return (
                   <CheckoutItem key={idx}>
                     <CIImg src={item.image} />
@@ -668,16 +826,22 @@ export default function CheckoutView() {
             <SectionTitle>Thông Tin Nhận Hàng</SectionTitle>
             <SummaryRow><span>Tên</span><span>{name}</span></SummaryRow>
             <SummaryRow><span>SĐT</span><span>{phone}</span></SummaryRow>
-            <SummaryRow><span>Địa chỉ</span><span>{address}</span></SummaryRow>
-            <SummaryRow><span>Thanh toán</span>
+            <SummaryRow><span>Địa Chỉ</span><span>{`${street}, ${ward}, ${district}, ${city}`}</span></SummaryRow>
+            <SummaryRow><span>Thanh Toán</span><span>{method === 0 ? "COD - Tiền Mặt" : "Chuyển Khoản"}</span></SummaryRow>
+            <SummaryRow>
+              <span>Tổng Tiền</span>
               <span>
                 {method === 0 
-                  ? "COD - Đã Cọc 40K Phí ship" 
-                  : `Chuyển Khoản + ${(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ`}
+                  ? `${(totalPrice + shipFee).toLocaleString("vi-VN")}.000 đ`
+                  : `${(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ`}
               </span>
             </SummaryRow>
             {method === 0 && (
               <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px dashed #ddd' }}>
+                 <SummaryRow>
+                  <span>Tiền Cọc Ship</span>
+                  <span>{deposit.toLocaleString("vi-VN")}.000 đ</span>
+                </SummaryRow>
                 <SummaryRow $bold>
                   <span style={{ color: '#ff3b30' }}>Thanh Toán Khi Nhận</span>
                   <span style={{ color: '#ff3b30' }}>{(totalPrice + shipFee - deposit).toLocaleString("vi-VN")}.000 đ</span>
@@ -733,7 +897,7 @@ export default function CheckoutView() {
           </div>
           <ProductListWrap>
             {(showAll ? cartItems : cartItems.slice(0, limit)).map((item, idx) => {
-              const up = item.option.price + (item.color.priceAdd || 0);
+              const up = item.option.price;
               return (
                 <CheckoutItem key={idx}>
                   <CIImg src={item.image} />
@@ -786,7 +950,53 @@ export default function CheckoutView() {
           </InputRow>
           <FormGroup>
             <Label>Địa Chỉ *</Label>
-            <Input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Nhập Địa Chỉ" />
+            <div style={{ marginBottom: "12px" }}>
+              <Select 
+                value={city} 
+                onChange={(e) => {
+                  setCity(e.target.value);
+                  setDistrict("");
+                  setWard("");
+                }}
+              >
+                <option value="">Chọn Tỉnh/Thành Phố</option>
+                {VIETNAM_DATA.map(p => (
+                  <option key={p.n} value={p.n}>{p.n}</option>
+                ))}
+              </Select>
+            </div>
+
+            <SelectFlex>
+              <Select 
+                value={district} 
+                disabled={!city}
+                onChange={(e) => {
+                  setDistrict(e.target.value);
+                  setWard("");
+                }}
+              >
+                <option value="">Chọn Quận/Huyện</option>
+                {city && VIETNAM_DATA.find(p => p.n === city)?.d.map(d => (
+                  <option key={d.n} value={d.n}>{d.n}</option>
+                ))}
+              </Select>
+
+              <Select 
+                value={ward} 
+                disabled={!district}
+                onChange={(e) => setWard(e.target.value)}
+              >
+                <option value="">Chọn Phường/Xã</option>
+                {district && VIETNAM_DATA.find(p => p.n === city)?.d.find(d => d.n === district)?.w.map(w => (
+                  <option key={w} value={w}>{w}</option>
+                ))}
+              </Select>
+            </SelectFlex>
+            <Input 
+              value={street} 
+              onChange={(e) => setStreet(e.target.value)} 
+              placeholder="Số Nhà, Tên Đường ..." 
+            />
           </FormGroup>
 
 

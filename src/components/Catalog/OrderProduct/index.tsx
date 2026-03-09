@@ -38,7 +38,20 @@ import {
   WrapModal,
   WrapNumberBank,
   WrapQR,
+  SelectForm,
+  FlexRowForm,
 } from "./style";
+import divisions from "@/data/vietnam-divisions.json";
+
+interface Division {
+  n: string;
+  d: {
+    n: string;
+    w: string[];
+  }[];
+}
+
+const VIETNAM_DATA = divisions as Division[];
 
 import {
   ColorItem,
@@ -54,7 +67,6 @@ export type ProductColor = {
   color: string;
   labelColor?: string;
   image: string;
-  priceAdd: number;
 };
 
 export type ProductOption = {
@@ -73,7 +85,7 @@ export type OrderData = {
 };
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbwCEQg77LAHejCaX4ZaDJYU9-V896QwwYu6gpLU65rVwbFmlplYwaT0bkP1cbe9dtzt/exec";
+  "https://script.google.com/macros/s/AKfycbweimQGN6gaZ6RqQgoYybF7tnU7OlVT6KU8_TfnButyiwAiZ6v-K5mV1KWKRf7TrJsZ/exec";
 
 type OrderProductProps = {
   open: boolean;
@@ -93,7 +105,10 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
  
   const [customerName, setCustomerName] = React.useState("");
   const [customerPhone, setCustomerPhone] = React.useState("");
-  const [customerAddress, setCustomerAddress] = React.useState("");
+  const [customerCity, setCustomerCity] = React.useState("");
+  const [customerDistrict, setCustomerDistrict] = React.useState("");
+  const [customerWard, setCustomerWard] = React.useState("");
+  const [customerStreet, setCustomerStreet] = React.useState("");
   const [customerNote, setCustomerNote] = React.useState("");
 
   const [submitting, setSubmitting] = React.useState(false);
@@ -123,7 +138,10 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
     if (open && !prevOpen.current && data) {
       setCustomerName("");
       setCustomerPhone("");
-      setCustomerAddress("");
+      setCustomerCity("");
+      setCustomerDistrict("");
+      setCustomerWard("");
+      setCustomerStreet("");
       setCustomerNote("");
       setSubmitting(false);
       setErrorMsg(null);
@@ -161,9 +179,8 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
   const currentOption =
     visibleOptions.find((o) => o.name === optionName) ?? visibleOptions[0];
 
-  // giá = option.price + color.priceAdd
-  const finalPrice =
-    (currentOption?.price ?? 0) + (currentColor?.priceAdd ?? 0);
+  // giá = option.price
+  const finalPrice = currentOption?.price ?? 0;
 
   // ===========================================
   // SUBMIT FORM
@@ -172,23 +189,28 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
     e.preventDefault();
     if (!data) return;
 
-    if (!customerName.trim() || !customerPhone.trim() || !customerAddress.trim()) {
+    if (!customerName.trim() || !customerPhone.trim() || !customerCity || !customerDistrict || !customerWard || !customerStreet.trim()) {
       setErrorMsg("Nhập đầy đủ thông tin nhận hàng.");
       return;
     }
+
+    const fullAddress = `${customerStreet.trim()}, ${customerWard}, ${customerDistrict}, ${customerCity}`;
 
     try {
       setSubmitting(true);
       setErrorMsg(null);
 
       const payload = {
-        productName: data.productName,
-        productColor: currentColor?.labelColor ?? currentColor?.color ?? "",
-        productOption: currentOption?.name,
-        productPriceOption: finalPrice * 1000,
+        items: [{
+          productName: data.productName,
+          productColor: currentColor?.labelColor ?? currentColor?.color ?? "",
+          productOption: currentOption?.name,
+          productPriceOption: finalPrice * 1000,
+          productQuantity: 1,
+        }],
         customerName,
         customerPhone,
-        customerAddress,
+        customerAddress: fullAddress,
         customerNote,
         customerPayment: paymentMethod[method]?.name ?? "",
       };
@@ -212,7 +234,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
       setSubmittedInfo({
         name: customerName,
         phone: customerPhone,
-        address: customerAddress,
+        address: fullAddress,
         note: customerNote,
         payment: paymentMethod[method]?.name,
       });
@@ -435,12 +457,59 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
                     />
                   </ItemForm>
 
+
                   <ItemForm>
-                    <TextAreaForm
-                      value={customerAddress}
-                      rows={2}
-                      onChange={(e) => setCustomerAddress(e.target.value)}
-                      placeholder="Địa Chỉ *"
+                    <SelectForm
+                      value={customerCity}
+                      onChange={(e) => {
+                        setCustomerCity(e.target.value);
+                        setCustomerDistrict("");
+                        setCustomerWard("");
+                      }}
+                    >
+                      <option value="">Chọn Tỉnh/Thành Phố</option>
+                      {VIETNAM_DATA.map(p => (
+                        <option key={p.n} value={p.n}>{p.n}</option>
+                      ))}
+                    </SelectForm>
+                  </ItemForm>
+                  
+                  <FlexRowForm>
+                    <ItemForm>
+                      <SelectForm
+                        value={customerDistrict}
+                        disabled={!customerCity}
+                        onChange={(e) => {
+                          setCustomerDistrict(e.target.value);
+                          setCustomerWard("");
+                        }}
+                      >
+                        <option value="">Chọn Quận/Huyện</option>
+                        {customerCity && VIETNAM_DATA.find(p => p.n === customerCity)?.d.map(d => (
+                          <option key={d.n} value={d.n}>{d.n}</option>
+                        ))}
+                      </SelectForm>
+                    </ItemForm>
+
+                    <ItemForm>
+                      <SelectForm
+                        value={customerWard}
+                        disabled={!customerDistrict}
+                        onChange={(e) => setCustomerWard(e.target.value)}
+                      >
+                        <option value="">Chọn Phường/Xã</option>
+                        {customerDistrict && VIETNAM_DATA.find(p => p.n === customerCity)?.d.find(d => d.n === customerDistrict)?.w.map(w => (
+                          <option key={w} value={w}>{w}</option>
+                        ))}
+                      </SelectForm>
+                    </ItemForm>
+                  </FlexRowForm>
+
+                  <ItemForm>
+                    <InputForm
+                      value={customerStreet}
+                      onChange={(e) => setCustomerStreet(e.target.value)}
+                      placeholder="Số Nhà, Tên Đường ..."
                     />
                   </ItemForm>
                   <ItemForm>

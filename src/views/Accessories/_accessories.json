@@ -10,13 +10,12 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/receiver-bolt.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/receiver-bolt.webp"
       }
     ],
     "options": [
       {
-       "name": "Chuột Văn Phòng Có Kí Hiệu ⚡︎ Màu Xanh",
+        "name": "Chuột Văn Phòng Có Kí Hiệu ⚡︎ Màu Xanh",
         "price": 150
       }
     ],
@@ -34,8 +33,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/receiver-unifying.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/receiver-unifying.webp"
       }
     ],
     "options": [
@@ -58,8 +56,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/receiver-g304.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/receiver-g304.webp"
       }
     ],
     "options": [
@@ -82,8 +79,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/receiver-g.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/receiver-g.webp"
       }
     ],
     "options": [
@@ -106,8 +102,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/receiver-prox1.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/receiver-prox1.webp"
       }
     ],
     "options": [
@@ -141,8 +136,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/logitech-g640.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/logitech-g640.webp"
       }
     ],
     "options": [
@@ -165,8 +159,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/logitech-powerplay-2.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/logitech-powerplay-2.webp"
       }
     ],
     "options": [
@@ -189,8 +182,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/razer-firefly-v2-pro.png",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/razer-firefly-v2-pro.png"
       }
     ],
     "options": [
@@ -216,8 +208,7 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/accessories/feet-tiger-ice.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/feet-tiger-ice.webp"
       }
     ],
     "options": [
@@ -240,8 +231,7 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/accessories/feet-tiger-ice-dots.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/feet-tiger-ice-dots.webp"
       }
     ],
     "options": [
@@ -267,8 +257,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/c270.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/c270.webp"
       }
     ],
     "options": [
@@ -293,8 +282,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/c310.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/c310.webp"
       }
     ],
     "options": [
@@ -319,8 +307,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/c925e.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/c925e.webp"
       }
     ],
     "options": [
@@ -345,8 +332,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/bcc950.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/bcc950.webp"
       }
     ],
     "options": [
@@ -371,8 +357,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/cglive.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/cglive.webp"
       }
     ],
     "options": [
@@ -398,8 +383,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/sc-g433.png",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/sc-g433.png"
       }
     ],
     "options": [
@@ -424,8 +408,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/sc-hyper-x-cl2.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/sc-hyper-x-cl2.webp"
       }
     ],
     "options": [
@@ -450,8 +433,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/gsx-1000.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/gsx-1000.webp"
       }
     ],
     "options": [
@@ -479,8 +461,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/z313.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/z313.webp"
       }
     ],
     "options": [
@@ -503,8 +484,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/z407.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/z407.webp"
       }
     ],
     "options": [
@@ -527,8 +507,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/g560.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/g560.webp"
       }
     ],
     "options": [
@@ -551,8 +530,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/z625.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/z625.webp"
       }
     ],
     "options": [
@@ -575,8 +553,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/z906.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/z906.webp"
       }
     ],
     "options": [
@@ -606,8 +583,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/xbox-elite.png",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/xbox-elite.png"
       }
     ],
     "options": [
@@ -636,8 +612,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/logi-spotlight-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/logi-spotlight-black.webp"
       }
     ],
     "options": [
@@ -666,8 +641,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/hyperx-solocast.webp",
-        "priceAdd": 0
+        "image": "/assets/images/accessories/hyperx-solocast.webp"
       }
     ],
     "options": [

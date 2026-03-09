@@ -876,12 +876,14 @@ export const ContactTitle = styled.div`
 export const ContactProductSummary = styled.div`
   display: flex;
   gap: 16px;
-  background: #f8f8f8;
+  background: #f1fcf4;
   padding: 12px;
   border-radius: 12px;
   margin-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   align-items: center;
+  border: 1.5px solid #00c853;
+  position: relative;
 `;
 
 export const ContactProductImg = styled.img`
@@ -963,6 +965,23 @@ export const PasteInstructImg = styled.img`
   border-radius: 8px;
   border: 1px solid #eee;
   display: block;
+`;
+
+export const CurvedArrowWrap = styled.div`
+  position: absolute;
+  top: calc(100% - 20px);
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  pointer-events: none;
+  z-index: 10;
+  color: #00c853;
+  @media screen and (max-width: 767px) {
+    right: -5px;
+    top: calc(100% - 25px);
+    width: 50px;
+    height: 52px;
+  }
 `;
 
 export const ContactActions = styled.div`

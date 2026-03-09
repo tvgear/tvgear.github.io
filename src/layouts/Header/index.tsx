@@ -752,6 +752,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   const [isClosingAbout, setIsClosingAbout] = React.useState(false);
   const [activeTab, setActiveTab] = React.useState(0);
   const aboutScrollRef = React.useRef<HTMLDivElement>(null);
+  const [editingQty, setEditingQty] = React.useState<{ [key: number]: string }>({});
 
   const handleTabChange = (idx: number) => {
     setActiveTab(idx);
@@ -819,15 +820,29 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   };
 
   const handleQtyChange = (idx: number, e: React.ChangeEvent<HTMLInputElement>) => {
-    let val = parseInt(e.target.value);
+    const valStr = e.target.value;
+    setEditingQty(prev => ({ ...prev, [idx]: valStr }));
+    
+    let val = parseInt(valStr);
     if (isNaN(val)) val = 1;
     if (val < 1) val = 1;
     if (val > 99) val = 99;
+    
     const item = cartItems[idx];
     if (!item) return;
+
     updateCartQuantity(idx, val);
     setCartItems(getCart());
     window.dispatchEvent(new Event("cart-updated"));
+  };
+
+  const handleQtyBlur = (idx: number) => {
+    setEditingQty(prev => {
+      const next = { ...prev };
+      delete next[idx];
+      return next;
+    });
+    setCartItems(getCart());
   };
 
   return (
@@ -1082,13 +1097,20 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                         {item.color.labelColor} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
                       </div>
                       <div className="item-price">
-                        {((item.option.price + (item.color.priceAdd || 0)) * item.quantity).toLocaleString("vi-VN")}.000đ
+                        {(item.option.price * item.quantity).toLocaleString("vi-VN")}.000đ
                       </div>
                       <CartItemBottom>
                         <QtyControl>
-                          <button onClick={() => handleQty(idx, -1)}><Minus size={16} strokeWidth={3} /></button>
-                          <input type="number" value={item.quantity} min={1} max={99} onChange={(e) => handleQtyChange(idx, e)} />
-                          <button onClick={() => handleQty(idx, 1)}><Plus size={16} strokeWidth={3} /></button>
+                          <button onClick={() => { handleQtyBlur(idx); handleQty(idx, -1); }}><Minus size={16} strokeWidth={3} /></button>
+                          <input 
+                            type="number" 
+                            value={editingQty[idx] !== undefined ? editingQty[idx] : item.quantity} 
+                            min={1} 
+                            max={99} 
+                            onChange={(e) => handleQtyChange(idx, e)} 
+                            onBlur={() => handleQtyBlur(idx)}
+                          />
+                          <button onClick={() => { handleQtyBlur(idx); handleQty(idx, 1); }}><Plus size={16} strokeWidth={3} /></button>
                         </QtyControl>
                         <CartActionBtn onClick={() => handleRemove(idx)}>
                           <Trash2 size={15} />

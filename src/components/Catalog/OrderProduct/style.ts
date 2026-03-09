@@ -162,6 +162,18 @@ export const InfoCustomer = styled.div`
 
 export const ItemForm = styled.div`
 `
+export const FlexRowForm = styled.div`
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2.5px;
+    @media screen and (max-width : 479px) {
+        flex-direction: column;
+        gap: 0px;
+    }
+    div {
+        flex: 1;
+    }
+`
 export const InputForm = styled.input`
     background: #000;
     border: none;
@@ -175,6 +187,28 @@ export const InputForm = styled.input`
     font-size: 1.6rem;
     line-height: calc(1.6rem * 1.25);
     text-transform: capitalize;
+`
+
+export const SelectForm = styled.select`
+    background: #000;
+    border: none;
+    border-bottom : 1.5px solid #777;
+    outline: none;
+    height: 45px;
+    padding: 0px 5px;
+    color : #fff;
+    width: 100%;
+    font-family: F_REGULAR;
+    font-size: 1.6rem;
+    line-height: calc(1.6rem * 1.25);
+    cursor: pointer;
+    appearance: none;
+    background: #000 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 5px center;
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        background-color: #1a1a1a;
+    }
 `
 
 export const TextAreaForm = styled.textarea`

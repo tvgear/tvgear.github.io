@@ -81,7 +81,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
      <Loading showLoading={isLoading}  />
-     <WrapWeb $isCheckout={isCheckout}>
+     <WrapWeb id="layout-wrapper" $isCheckout={isCheckout}>
       <Content id="main-content" ref={contentRef} $hasHeader={!isCheckout}>
         {!isCheckout && <Header contentRef={contentRef} />}
         {children}

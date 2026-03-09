@@ -77,6 +77,7 @@ import {
   HighlightAction,
   HighlightName,
   LastUpdated,
+  CurvedArrowWrap,
 } from "./style";
 import metadata from "@/metadata.json";
 
@@ -569,7 +570,7 @@ function ProductDetailModal({ product, onClose, isClosing, onAddToCart, onBuyNow
   }, [filteredOptions, selectedOptIdx, product.options]);
 
   const currentOption = product.options[selectedOptIdx] || product.options[0];
-  const price = (currentOption?.price || 0) + (currentColor?.priceAdd || 0);
+  const price = currentOption?.price || 0;
   const colorLabel = currentColor?.labelColor || currentColor?.color;
 
   const handleChatClick = () => {
@@ -650,10 +651,16 @@ Mình cần tư vấn sản phẩm này.`;
                   <ContactProductMeta>{colorLabel} · {currentOption?.name}</ContactProductMeta>
                   <ContactProductPrice>{price.toLocaleString("vi-VN")}.000đ</ContactProductPrice>
                 </ContactProductInfo>
+                <CurvedArrowWrap>
+                  <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M 40 2 C 55 20, 10 30, 30 15 C 50 0, 55 45, 25 52" />
+                    <path d="M 33 44 L 25 52 L 32 55" />
+                  </svg>
+                </CurvedArrowWrap>
               </ContactProductSummary>
 
               <ContactNote>
-                <div>Thông tin sản phẩm này đã được <HighlightAction $type="copy">Sao Chép</HighlightAction></div>
+                <div>Thông tin sản phẩm đã được <HighlightAction $type="copy">Sao Chép</HighlightAction></div>
                 <PasteInstructImg src="/assets/images/intructs/paste-content.png" />
                 <div>Chọn <HighlightAction $type="paste">Dán</HighlightAction> thông tin sản phẩm vào khung chat của ứng dụng và nhấn gửi để <HighlightName>TVGEAR</HighlightName> có thể hỗ trợ tư vấn sản phẩm cho bạn.</div>
               </ContactNote>

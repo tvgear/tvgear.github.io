@@ -14,7 +14,7 @@ export const COLOR_PALETTE = [
   { color: "brown", label: "Nâu" },
   { color: "silver", label: "Bạc" },
   { color: "gold", label: "Vàng Gold" },
-  { color: "lightsteelblue", label: "Xanh Nhạt" },
+  { color: "lightsteelblue", label: "Tím" },
   { color: "rgba(142,229,221)", label: "Xanh" },
 ];
 

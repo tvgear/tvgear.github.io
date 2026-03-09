@@ -13,8 +13,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g213.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/g213.webp"
       }
     ],
     "options": [
@@ -39,8 +38,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g413-se-tkl.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/g413-se-tkl.webp"
       }
     ],
     "options": [
@@ -65,8 +63,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g413-se-fs.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/g413-se-fs.webp"
       }
     ],
     "options": [
@@ -91,8 +88,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g512-gx.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/g512-gx.webp"
       }
     ],
     "options": [
@@ -129,8 +125,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g813.png",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/g813.png"
       }
     ],
     "options": [
@@ -155,8 +150,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g913-tkl.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/g913-tkl.webp"
       }
     ],
     "options": [
@@ -182,8 +176,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/pro-x-60-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/pro-x-60-black.webp"
       }
     ],
     "options": [
@@ -212,8 +205,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g515-tkl-black.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/g515-tkl-black.webp"
       }
     ],
     "options": [
@@ -239,8 +231,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/pro-x-tkl.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/pro-x-tkl.webp"
       }
     ],
     "options": [
@@ -269,8 +260,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/k250.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/k250.webp"
       }
     ],
     "options": [
@@ -295,8 +285,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/k270.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/k270.webp"
       }
     ],
     "options": [
@@ -321,8 +310,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/k380s.png",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/k380s.png"
       }
     ],
     "options": [
@@ -347,8 +335,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/k650.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/k650.webp"
       }
     ],
     "options": [
@@ -374,8 +361,7 @@
       {
         "color": "#ff637e",
         "labelColor": "Hồng Trắng",
-        "image": "/assets/images/keyboards/pop-icon-keys.png",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/pop-icon-keys.png"
       }
     ],
     "options": [
@@ -400,8 +386,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/wave-keys.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/wave-keys.webp"
       }
     ],
     "options": [
@@ -427,8 +412,7 @@
       {
         "color": "#ff637e",
         "labelColor": "Tím Trắng",
-        "image": "/assets/images/keyboards/pop-keys.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/pop-keys.webp"
       }
     ],
     "options": [
@@ -454,8 +438,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/k950.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/k950.webp"
       }
     ],
     "options": [
@@ -481,8 +464,7 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/keyboards/mx-keys-mini-white.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mx-keys-mini-white.webp"
       }
     ],
     "options": [
@@ -511,8 +493,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/mk220.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mk220.webp"
       }
     ],
     "options": [
@@ -537,8 +518,7 @@
       {
         "color": "black",
         "labelColor": "Đen Vàng",
-        "image": "/assets/images/keyboards/mk240.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mk240.webp"
       }
     ],
     "options": [
@@ -563,8 +543,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/mk345.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mk345.webp"
       }
     ],
     "options": [
@@ -589,8 +568,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/mk295.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mk295.webp"
       }
     ],
     "options": [
@@ -615,8 +593,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/mk370.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mk370.webp"
       }
     ],
     "options": [
@@ -641,8 +618,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/mk540.png",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mk540.png"
       }
     ],
     "options": [
@@ -667,8 +643,7 @@
       {
         "color": "pink",
         "labelColor": "Hồng",
-        "image": "/assets/images/keyboards/pop-icon-combo-pink.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/pop-icon-combo-pink.webp"
       }
     ],
     "options": [
@@ -694,8 +669,7 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/mk950.webp",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/mk950.webp"
       }
     ],
     "options": [
@@ -714,7 +688,7 @@
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "PRO X TKL WL",
     "tags": [
@@ -724,8 +698,7 @@
       {
         "color": "pink",
         "labelColor": "Hồng",
-        "image": "/assets/images/keyboards/pro-x-tkl-pink.png",
-        "priceAdd": 0
+        "image": "/assets/images/keyboards/pro-x-tkl-pink.png"
       }
     ],
     "options": [
