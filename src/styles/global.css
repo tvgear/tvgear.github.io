@@ -164,30 +164,35 @@ input[type="checkbox"] {
   font-family: F_REGULAR;
   src: url("/assets/fonts/PlusJakartaSans-Variable.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: F_MEDIUM;
   src: url("/assets/fonts/PlusJakartaSans-Variable.ttf");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: F_SEMIBOLD;
   src: url("/assets/fonts/PlusJakartaSans-Variable.ttf");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: F_BOLD;
   src: url("/assets/fonts/PlusJakartaSans-Variable.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: F_EXTRABOLD;
   src: url("/assets/fonts/PlusJakartaSans-Variable.ttf");
   font-weight: 800;
+  font-display: swap;
 }
 
 /* CUSTOM WEB */

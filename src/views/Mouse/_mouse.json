@@ -61,7 +61,7 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "G102 Mod Slient",
+    "name": "G102/G203 Mod Slient",
     "tags": [
       "Có Dây"
     ],
@@ -75,27 +75,7 @@
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/mouses/g102-white.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "95%",
-        "price": 300
-      }
-    ],
-    "warranty": "Bảo Hành 3 Tháng",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": true,
-    "brand": "logig",
-    "name": "G203 Mod Slient",
-    "tags": [
-      "Có Dây"
-    ],
-    "colors": [
+      },
       {
         "color": "lightsteelblue",
         "labelColor": "Tím",
@@ -460,17 +440,35 @@
     ],
     "colors": [
       {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/gpro-x-spl2-black.webp"
+      },
+      {
         "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
+      },
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/gpro-x-spl2-white.webp"
       }
     ],
     "options": [
       {
-        "name": "97% + Đầu Thu SPL1",
+        "name": "97%, Đầu Thu SPL1",
         "price": 1780,
         "colors": [
+          "black",
           "#ff637e"
+        ]
+      },
+       {
+        "name": "90% + BOX + Đầu Thu SPL1",
+        "price": 1780,
+        "colors": [
+          "white"
         ]
       }
     ],

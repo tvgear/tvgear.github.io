@@ -148,11 +148,25 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
         });
       });
     }
-    if (sortBy === "price-asc") {
-      result.sort((a, b) => Math.min(...a.options.map(o => o.price)) - Math.min(...b.options.map(o => o.price)));
-    } else if (sortBy === "price-desc") {
-      result.sort((a, b) => Math.max(...b.options.map(o => o.price)) - Math.max(...a.options.map(o => o.price)));
+
+    if (sortBy === "price-asc" || sortBy === "price-desc") {
+      // Pre-calculate min/max prices for efficient sorting
+      const productPrices = new Map<string, { min: number; max: number }>();
+      result.forEach(p => {
+        const prices = p.options.map(o => o.price);
+        productPrices.set(p.name, {
+          min: Math.min(...prices),
+          max: Math.max(...prices)
+        });
+      });
+
+      if (sortBy === "price-asc") {
+        result.sort((a, b) => productPrices.get(a.name)!.min - productPrices.get(b.name)!.min);
+      } else {
+        result.sort((a, b) => productPrices.get(b.name)!.max - productPrices.get(a.name)!.max);
+      }
     }
+
     return result;
   }, [products, selectedBrand, selectedPrices, selectedConns, sortBy]);
 
@@ -437,7 +451,11 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
               return (
                 <ItemProduct key={p.id} onClick={() => setDetailProduct(p)}>
                   <WrapImg>
-                    <ImgItem src={p.colors[0]?.image} />
+                    <ImgItem 
+                      src={p.colors[0]?.image} 
+                      loading="lazy" 
+                      decoding="async"
+                    />
                   </WrapImg>
                   <ItemMeta>
                     <NameItem>{p.name}</NameItem>
