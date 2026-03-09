@@ -654,5 +654,76 @@
     "connect": [
       "wired"
     ]
+  },
+  {
+    "": "CABLE --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "cable",
+    "tags": [
+      ""
+    ],
+    "name": "Cáp Sạc USB A to Type C",
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/accessories/cable-a-c-white.png"
+      },
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/cable-a-c-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 150,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "98%",
+        "price": 170,
+         "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "Không Bảo Hành",
+    "connect": [
+      ""
+    ]
+  },
+  {
+    "": "ADAPTER --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "adapter",
+    "tags": [
+      ""
+    ],
+    "name": "Đầu Chuyển USB A - C",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/adapter-a-c.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 150
+      }
+    ],
+    "warranty": "Không Bảo Hành",
+    "connect": [
+      ""
+    ]
   }
 ]

@@ -11,6 +11,9 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   trailingSlash: true,
+  compiler: {
+    styledComponents: true,
+  },
 
   // 👇 Bắt buộc cho GitHub Pages (xuất static HTML)
   output: "export",

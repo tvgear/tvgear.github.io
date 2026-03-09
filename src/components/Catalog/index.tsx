@@ -453,7 +453,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
             })}
           </ListProduct>
         )}
-        <LastUpdated>Cập nhật lần cuối - {metadata.lastUpdated}</LastUpdated>
+        <LastUpdated>Cập Nhật Lần Cuối - {metadata.lastUpdated}</LastUpdated>
       </MainContent>
     </CatalogWrapper>
 

@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang={AppConfig.locale}>
+      <Html lang={AppConfig.locale} data-scroll-behavior="smooth">
         <Head>
         <title>TVGEAR Shop | Gaming Gear 2ND & New</title>
         <meta name="description" content="TVGEAR chuyên cung cấp Gaming Gear cũ và mới, có bảo hành, sửa chữa, ship hàng toàn quốc." />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { useRouter } from "next/router";
-import { ArrowLeft, Check, ChevronDown, ChevronUp, Copy } from "lucide-react";
+import { ArrowLeft, Check, ChevronDown, ChevronUp, Copy, Loader2 } from "lucide-react";
 import { CartItem } from "@/types/product";
 import { getCart, getCartTotal, clearCart } from "@/utils/carts";
 import { findColorDef } from "@/utils/colors";
@@ -213,9 +213,13 @@ const SummaryRow = styled.div<{ $bold?: boolean; $large?: boolean; $color?: stri
   
   span:first-child {
     flex-shrink: 0;
+    min-width: 150px;
+    color: #777;
+    font-family: F_MEDIUM;
   }
   
   span:last-child {
+    flex: 1;
     text-align: right;
     word-break: break-word;
   }
@@ -224,6 +228,10 @@ const SummaryRow = styled.div<{ $bold?: boolean; $large?: boolean; $color?: stri
     font-size: ${(p) => (p.$large ? "1.3rem" : "1.2rem")};
     padding: 2px 0;
     gap: 12px;
+    
+    span:first-child {
+      min-width: 100px;
+    }
   }
 `;
 
@@ -592,6 +600,15 @@ const ConfettiPiece = styled.div<{ $color: string; $rot: number; $tx: number; $t
   animation: ${confettiFade} 0.8s ease-out both;
   animation-delay: ${p => p.$delay}s;
 `;
+const spin = keyframes`
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+`;
+
+const LoadingSpinner = styled(Loader2)`
+  animation: ${spin} 1s linear infinite;
+`;
+
 const SuccessTitle = styled.div`
   font-family: F_BOLD;
   font-size: 2.4rem;
@@ -691,6 +708,11 @@ export default function CheckoutView() {
   const deposit = 40;
   const shipDiscount = 10;
 
+  const availableWards = React.useMemo(() => {
+    if (!city || !district) return [];
+    return VIETNAM_DATA.find(p => p.n === city)?.d.find(d => d.n === district)?.w || [];
+  }, [city, district]);
+
   if (cartItems.length === 0 && step === "form") {
     return (
       <Page>
@@ -710,14 +732,16 @@ export default function CheckoutView() {
   }
 
   const handleSubmitOrder = async () => {
-    if (!name.trim() || !phone.trim() || !city || !district || !ward || !street.trim()) {
+    const isWardRequired = availableWards.length > 0;
+    if (!name.trim() || !phone.trim() || !city || !district || (isWardRequired && !ward) || !street.trim()) {
       setError("Vui lòng nhập đầy đủ Tên, SĐT và Địa chỉ.");
       return;
     }
     setError(null);
     
     // Combine address parts
-    const fullAddress = `${street.trim()}, ${ward}, ${district}, ${city}`;
+    const addressParts = [street.trim(), ward, district, city].filter(Boolean);
+    const fullAddress = addressParts.join(", ");
     
     try {
       setSubmitting(true);
@@ -747,7 +771,7 @@ export default function CheckoutView() {
       clearCart();
       window.dispatchEvent(new Event("cart-updated"));
       setStep("success");
-      pageRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setError("Gửi đơn hàng thất bại. Vui lòng thử lại.");
     } finally {
@@ -826,7 +850,7 @@ export default function CheckoutView() {
             <SectionTitle>Thông Tin Nhận Hàng</SectionTitle>
             <SummaryRow><span>Tên</span><span>{name}</span></SummaryRow>
             <SummaryRow><span>SĐT</span><span>{phone}</span></SummaryRow>
-            <SummaryRow><span>Địa Chỉ</span><span>{`${street}, ${ward}, ${district}, ${city}`}</span></SummaryRow>
+            <SummaryRow><span>Địa Chỉ</span><span>{[street, ward, district, city].filter(Boolean).join(", ")}</span></SummaryRow>
             <SummaryRow><span>Thanh Toán</span><span>{method === 0 ? "COD - Tiền Mặt" : "Chuyển Khoản"}</span></SummaryRow>
             <SummaryRow>
               <span>Tổng Tiền</span>
@@ -983,11 +1007,11 @@ export default function CheckoutView() {
 
               <Select 
                 value={ward} 
-                disabled={!district}
+                disabled={!district || availableWards.length === 0}
                 onChange={(e) => setWard(e.target.value)}
               >
-                <option value="">Chọn Phường/Xã</option>
-                {district && VIETNAM_DATA.find(p => p.n === city)?.d.find(d => d.n === district)?.w.map(w => (
+                <option value="">{district && availableWards.length === 0 ? "--" : "Chọn Phường/Xã"}</option>
+                {availableWards.map(w => (
                   <option key={w} value={w}>{w}</option>
                 ))}
               </Select>
@@ -1049,7 +1073,12 @@ export default function CheckoutView() {
           {error && <ErrorMsg>{error}</ErrorMsg>}
 
           <SubmitBtn onClick={handleSubmitOrder} disabled={submitting}>
-            {submitting ? "Đang xử lý..." : method === 0 ? "Xác Nhận Đã Cọc" : "Xác Nhận Đã Chuyển Khoản"}
+            {submitting ? (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                <LoadingSpinner size={20} />
+                <span>Đang Đặt Hàng...</span>
+              </div>
+            ) : method === 0 ? "Xác Nhận Đã Cọc" : "Xác Nhận Đã Chuyển Khoản"}
           </SubmitBtn>
         </Card>
       </TwoCol>

@@ -132,13 +132,14 @@ const NavLeft = styled.nav`
   }
 `;
 
-const NavLink = styled.div<{ $active?: boolean }>`
+const NavLink = styled(Link)<{ $active?: boolean }>`
   font-family: F_EXTRABOLD;
   font-size: 1.5rem;
   color: ${(p) => (p.$active ? "#000" : "#777")};
   cursor: pointer;
   transition: 0.2s;
   position: relative;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   &:hover {
@@ -270,7 +271,7 @@ const MobileDropdownPortal = styled.div`
   gap: 12px;
 `;
 
-const DropdownItem = styled.div<{ $active?: boolean }>`
+const DropdownItem = styled(Link)<{ $active?: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,6 +279,7 @@ const DropdownItem = styled.div<{ $active?: boolean }>`
   gap: 6px;
   padding: 8px 4px;
   border-radius: 16px;
+  text-decoration: none;
   color: ${(p) => (p.$active ? "#000" : "#777")};
   background: ${(p) => (p.$active ? "#f6f6f6" : "transparent")};
   transition: 0.2s;
@@ -623,7 +625,7 @@ const AboutTabItem = styled.div<{ $active?: boolean }>`
 const AboutContentScroll = styled.div`
   flex: 1;
   overflow-y: auto;
-  padding: 32px 24px;
+  padding: 16px 20px 32px;
   &::-webkit-scrollbar {
     width: 6px;
   }
@@ -634,7 +636,7 @@ const AboutContentScroll = styled.div`
 `;
 
 const ContentParagraph = styled.p`
-  font-family: F_REGULAR;
+  font-family: F_MEDIUM;
   font-size: 1.45rem;
   line-height: 1.7;
   color: #333;
@@ -644,8 +646,8 @@ const ContentParagraph = styled.p`
 
 const SectionTitle = styled.h4`
   font-family: F_BOLD;
-  font-size: 1.6rem;
-  margin-bottom: 16px;
+  font-size: 1.45rem;
+  margin-bottom: 12px;
   color: #000;
   text-transform: uppercase;
 `;
@@ -676,6 +678,10 @@ const StoreSocials = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
 `;
 
 const SocialBox = styled.a`
@@ -865,11 +871,14 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
 
           <NavLeft>
             {categories.map((cat) => (
-              <Link key={cat.link} href={cat.link} passHref legacyBehavior>
-                <NavLink $active={router.pathname === cat.link} onClick={scrollToTop}>
-                  {cat.name}
-                </NavLink>
-              </Link>
+              <NavLink 
+                key={cat.link} 
+                href={cat.link}
+                $active={router.pathname === cat.link} 
+                onClick={scrollToTop}
+              >
+                {cat.name}
+              </NavLink>
             ))}
           </NavLeft>
 
@@ -894,15 +903,15 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
             {categories.map((cat) => {
               const Icon = cat.icon;
               return (
-                <Link key={cat.link} href={cat.link} passHref legacyBehavior>
-                  <DropdownItem 
-                    $active={router.pathname === cat.link} 
-                    onClick={() => { setShowMobileMenu(false); scrollToTop(); }}
-                  >
-                    <Icon size={24} strokeWidth={router.pathname === cat.link ? 2.5 : 2} />
-                    <span>{cat.name}</span>
-                  </DropdownItem>
-                </Link>
+                <DropdownItem 
+                  key={cat.link}
+                  href={cat.link}
+                  $active={router.pathname === cat.link} 
+                  onClick={() => { setShowMobileMenu(false); scrollToTop(); }}
+                >
+                  <Icon size={24} strokeWidth={router.pathname === cat.link ? 2.5 : 2} />
+                  <span>{cat.name}</span>
+                </DropdownItem>
               );
             })}
           </MobileDropdownPortal>
@@ -947,7 +956,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                 {activeTab === 0 && (
                   <div key="tab-info">
                     <ContentParagraph>
-                      TVGEAR Shop chuyên kinh doanh các sản phẩm gaming gear (thiết bị điện tử) bao gồm : chuột, bàn phím, tai nghe, phụ kiện, ... đã qua sử dụng và hàng mới chưa qua sử dụng.
+                      <span style={{ fontFamily: 'F_BOLD' }}>TVGEAR Shop</span> chuyên kinh doanh các sản phẩm gaming gear (thiết bị điện tử) bao gồm : chuột, bàn phím, tai nghe, phụ kiện, ... đã qua sử dụng và hàng mới chưa qua sử dụng.
                     </ContentParagraph>
                     <ContentParagraph>
                       Sản phẩm tại shop 95% là hàng đã qua sử dụng và bảo hành tại shop. Những sản phẩm có gắn tag bảo hành hãng sẽ có kèm tháng và năm còn bảo hành hãng, những sản phẩm này sẽ được bảo hành hãng và sẽ không bảo hành tại shop (trừ khi còn bảo hành quá ít tại hãng).
@@ -960,7 +969,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                     </ContentParagraph>
 
                     <SectionTitle>Shop Online</SectionTitle>
-                    <StoreSocials style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px', marginBottom: '32px' }}>
+                    <StoreSocials>
                       <SocialBox href="https://facebook.com/tvgear" target="_blank">
                         <span>TVGEAR - Facebook</span>
                       </SocialBox>
@@ -1017,12 +1026,11 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                       <ListItem>Sau 1 tháng : khách chịu 2 đầu phí ship gửi về và chiều shop gửi lại</ListItem>
                     </ListContainer>
 
-                    <ContentParagraph style={{ fontSize: '1.35rem', color: '#666', marginTop: '24px' }}>
-                      Shop sẽ sẵn sàng hỗ trợ những trường hợp còn có thể cứu vãn sản phẩm trong thời gian còn bảo hành, thông qua thảo luận về chi phí sửa chữa, nguồn linh kiện phục vụ cho sửa chữa nếu có thể. Nếu không đạt được thoả thuận, shop có thể tư vấn khách đem đến 1 shop quen khác chuyên sửa chữa gaming gear chuyên sâu để khách hàng tự quyết định về việc sửa chữa sản phẩm với các thoả thuận khác.
-                    </ContentParagraph>
-                    <ContentParagraph style={{ fontSize: '1.35rem', color: '#666' }}>
-                      Sau khi hết thời hạn bảo hành shop có nhận sửa chữa các lỗi cơ bản cho sản phẩm về switch, lăn, các nút, ... Nếu không thể sửa chữa các lỗi nặng hơn, shop có thể tư vấn khách đem đến 1 shop quen khác chuyên sửa chữa gaming gear chuyên sâu để khách hàng có thể sửa chữa sản phẩm.
-                    </ContentParagraph>
+                    <SectionTitle>Hậu Mãi</SectionTitle>
+                    <ListContainer>
+                      <ListItem>Shop sẽ sẵn sàng hỗ trợ những trường hợp còn có thể cứu vãn sản phẩm trong thời gian còn bảo hành, thông qua thảo luận về chi phí sửa chữa, nguồn linh kiện phục vụ cho sửa chữa nếu có thể. Nếu không đạt được thoả thuận, shop có thể tư vấn khách đem đến 1 shop quen khác chuyên sửa chữa gaming gear chuyên sâu để khách hàng tự quyết định về việc sửa chữa sản phẩm với các thoả thuận khác.</ListItem>
+                      <ListItem>Sau khi hết thời hạn bảo hành shop có nhận sửa chữa các lỗi cơ bản cho sản phẩm về switch, lăn, các nút, ... Nếu không thể sửa chữa các lỗi nặng hơn, shop có thể tư vấn khách đem đến 1 shop quen khác chuyên sửa chữa gaming gear chuyên sâu để khách hàng có thể sửa chữa sản phẩm.</ListItem>
+                    </ListContainer>
                   </div>
                 )}
 
@@ -1036,29 +1044,29 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                     </ListContainer>
 
                     <SectionTitle>Điều kiện đổi trả</SectionTitle>
-                    <ContentParagraph style={{ fontSize: '1.4rem', color: '#000', fontFamily: 'F_EXTRABOLD' }}>
-                      <span style={{ color: '#ff3b30' }}>CỰC KÌ QUAN TRỌNG, BẮT BUỘC PHẢI CÓ VIDEO KHI MỞ GÓI HÀNG</span> (VIDEO QUAY CÁC GÓC GÓI HÀNG CHƯA BỊ THÁO MỞ HOẶC CÓ DẤU HIỆU THÁO MỞ KHI NHẬN ĐƯỢC TỪ SHIPPER & CÓ MẶT SHIPPER TẠI ĐÓ KHI NHẬN HÀNG, VIDEO QUAY TỪ TRONG RA NGOÀI GÓI HÀNG VÀ CẬN CẢNH LỖI NGOẠI HÌNH SẢN PHẨM TỪ KHI MỞ GÓI HÀNG ĐẾN KHI BẮT ĐẦU SỬ DỤNG HOẶC BẮT ĐẦU KIỂM TRA)
-                    </ContentParagraph>
-                    <div style={{ fontStyle: 'italic', marginBottom: '16px', color: '#ff3b30', fontSize: '1.2rem', marginTop: '-12px', fontWeight: 'bold' }}>
-                      *Không đáp ứng điều kiện này thì sản phẩm sẽ được đưa về diện bảo hành nếu phát sinh lỗi, không áp dụng đổi trả.
-                    </div>
-
                     <ListContainer>
+                      <ListItem>
+                        <span>
+                          <span style={{ color: '#ff3b30', fontFamily: 'F_EXTRABOLD' }}>CỰC KÌ QUAN TRỌNG, BẮT BUỘC PHẢI CÓ VIDEO KHI MỞ GÓI HÀNG</span> (Video quay các góc gói hàng chưa bị tháo mở hoặc có dấu hiệu tháo mở khi nhận được từ shipper & có mặt shipper tại đó khi nhận hàng, video quay từ trong ra ngoài gói hàng và cận cảnh lỗi ngoại hình sản phẩm từ khi mở gói hàng đến khi bắt đầu sử dụng hoặc bắt đầu kiểm tra).
+                        </span>
+                      </ListItem>
+                      <div style={{ fontStyle: 'italic', color: '#ff3b30', fontSize: '1.2rem', fontWeight: 'bold', paddingLeft: '24px', marginTop: '-4px', marginBottom: '8px' }}>
+                        *Không đáp ứng điều kiện này thì sản phẩm sẽ được đưa về diện bảo hành nếu phát sinh lỗi, không áp dụng đổi trả.
+                      </div>
                       <ListItem>Sản phẩm bị hư hỏng ngay lần đầu tiên hoặc trong ngày khi sử dụng.</ListItem>
                       <ListItem>Sản phẩm không thuộc nhóm sản phẩm hàng thanh lý.</ListItem>
                       <ListItem>Sản phẩm bị nứt, vỡ khi vừa nhận hàng đến tay và khui hàng.</ListItem>
                       <ListItem>Sản phẩm có dấu hiệu bị cạy mở, bị tráo hàng, tráo phụ kiện từ khâu vận chuyển.</ListItem>
                       <ListItem>Sản phẩm có dính nước, chất liệu có nước, bụi bẩn, keo,... khi khui hàng.</ListItem>
+                      <div style={{ fontStyle: 'italic', color: '#ff3b30', fontSize: '1.2rem', fontWeight: 'bold', paddingLeft: '24px', marginTop: '4px' }}>
+                        * Khách hàng vui lòng liên hệ shop khi gặp các trường hợp trên để trao đổi về trách nhiệm và giải quyết các vấn đề liên quan đến vận chuyển và sử dụng sản phẩm.
+                      </div>
                     </ListContainer>
 
                     <SectionTitle>Chi Phí Vận chuyển</SectionTitle>
                     <ListContainer>
                       <ListItem>Shop chịu 2 đầu phí ship nếu đạt thoả thuận đổi sản phẩm khác do sản phẩm hư hỏng, shop chịu 1 đầu phí ship gửi lại nếu đạt thoả thuận hoàn trả sản phẩm và nhận lại 100% tiền.</ListItem>
                     </ListContainer>
-
-                    <ContentParagraph style={{ fontSize: '1.35rem', color: '#666', marginTop: '16px' }}>
-                      Khách hàng vui lòng liên hệ shop khi gặp các trường hợp trên để trao đổi về trách nhiệm và giải quyết các vấn đề liên quan đến vận chuyển và sử dụng sản phẩm.
-                    </ContentParagraph>
                   </div>
                 )}
               </AboutContentScroll>
