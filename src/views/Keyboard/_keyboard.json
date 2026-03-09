@@ -665,8 +665,8 @@
     "name": "POP Icon Combo",
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
+        "color": "pink",
+        "labelColor": "Hồng",
         "image": "/assets/images/keyboards/pop-icon-combo-pink.webp",
         "priceAdd": 0
       }

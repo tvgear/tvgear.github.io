@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import { ArrowLeft, Check, CheckCircle } from "lucide-react";
+import { ArrowLeft, Check, CheckCircle, ChevronDown, ChevronUp, Copy } from "lucide-react";
 import { CartItem } from "@/types/product";
 import { getCart, getCartTotal, clearCart } from "@/utils/carts";
 import { findColorDef } from "@/utils/colors";
@@ -16,7 +16,7 @@ const Page = styled.div<{ $success?: boolean }>`
   padding: 24px 40px;
   background: ${(p) => (p.$success ? "#f8f8f8" : "transparent")};
   @media screen and (max-width: 767px) {
-    padding: 16px;
+    padding: 0;
   }
 `;
 
@@ -24,8 +24,8 @@ const MobileBackBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: #ebebeb;
   border-radius: 50%;
   cursor: pointer;
@@ -33,6 +33,13 @@ const MobileBackBtn = styled.div`
   transition: 0.2s;
   &:hover {
     background: #dddddd;
+  }
+  @media screen and (max-width: 767px) {
+    margin-right: 8px;
+    svg {
+      width: 14px;
+      height: 14px;
+    }
   }
 `;
 
@@ -45,17 +52,17 @@ const TwoCol = styled.div`
   align-items: flex-start;
   @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 0px;
   }
 `;
 
 const Card = styled.div`
   background: transparent;
-  padding: 0;
+  padding: 0 20px;
   @media screen and (max-width: 767px) {
     background: #fff;
-    padding: 24px;
-    border-radius: 16px;
+    padding: 8px 16px 16px;
+    border-radius: 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   }
 `;
@@ -64,22 +71,57 @@ const Badge = styled.div`
   background: #ff3b30;
   color: #fff;
   font-family: F_BOLD;
-  font-size: 1.2rem;
-  padding: 0 8px;
+  font-size: 1.05rem;
   height: 20px;
-  border-radius: 100px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  @media screen and (max-width: 767px) {
+    font-size: 0.9rem;
+    height: 18px;
+    padding: 0 6px;
+  }
 `;
 
 const SectionTitle = styled.div`
   font-family: F_BOLD;
-  font-size: 1.6rem;
-  margin-bottom: 16px;
+  font-size: 1.4rem;
+  margin-top: 32px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 8px;
+  &:first-child {
+    margin-top: 0;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 1.2rem;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    &.mobile-no-mt {
+      margin-top: 0;
+    }
+    &.mobile-hide {
+      display: none;
+    }
+  }
+`;
+
+const ProductListWrap = styled.div`
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  @media screen and (max-width: 767px) {
+    padding: 0px;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
 `;
 
 const CheckoutItem = styled.div`
@@ -108,11 +150,17 @@ const CIName = styled.div`
   font-size: 1.35rem;
   text-transform: uppercase;
   margin-bottom: 2px;
+  @media screen and (max-width: 767px) {
+    font-size: 1.15rem;
+  }
 `;
 const CIMeta = styled.div`
   font-size: 1.2rem;
   color: #777;
   margin: 2px 0;
+  @media screen and (max-width: 767px) {
+    font-size: 1rem;
+  }
 `;
 const CIPriceWrap = styled.div`
   display: flex;
@@ -123,30 +171,99 @@ const CIPriceWrap = styled.div`
 const CIPrice = styled.div`
   font-family: F_SEMIBOLD;
   font-size: 1.4rem;
+  @media screen and (max-width: 767px) {
+    font-size: 1.25rem;
+  }
 `;
 const CIQty = styled.div`
   font-family: F_MEDIUM;
   font-size: 1.3rem;
   color: #555;
+  @media screen and (max-width: 767px) {
+    font-size: 1.15rem;
+  }
 `;
 
-const SummaryRow = styled.div<{ $bold?: boolean }>`
+const SummaryRow = styled.div<{ $bold?: boolean; $large?: boolean; $color?: string }>`
   display: flex;
   justify-content: space-between;
-  font-family: ${(p) => (p.$bold ? "F_BOLD" : "F_REGULAR")};
-  font-size: ${(p) => (p.$bold ? "1.6rem" : "1.4rem")};
-  padding: 6px 0;
-  color: ${(p) => (p.$bold ? "#000" : "#555")};
+  font-family: ${(p) => (p.$bold || p.$large ? "F_BOLD" : "F_REGULAR")};
+  font-size: ${(p) => (p.$large ? "1.5rem" : "1.4rem")};
+  padding: 3px 0;
+  color: ${(p) => p.$color || (p.$bold || p.$large ? "#000" : "#555")};
+  @media screen and (max-width: 767px) {
+    font-size: ${(p) => (p.$large ? "1.3rem" : "1.2rem")};
+    padding: 2px 0;
+  }
+`;
+
+const SummaryContainer = styled.div`
+  margin-top: 16px;
+  @media screen and (max-width: 767px) {
+    margin-top: 12px;
+  }
+`;
+
+const MethodSummaryWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 12px 0;
+  @media screen and (max-width: 767px) {
+    margin: 8px 0;
+    padding: 8px 0;
+    gap: 6px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+  }
 `;
 
 const Divider = styled.div`
   height: 1px;
   background: #eee;
-  margin: 8px 0;
+  margin: 6px 0;
 `;
 
 const FormGroup = styled.div`
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+  flex: 1;
+`;
+const ShowMoreBtn = styled.button`
+  width: 100%;
+  padding: 10px;
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-family: F_BOLD;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0;
+  transition: 0.2s;
+  &:hover {
+    background: #f0f0f0;
+    color: #000;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 1.1rem;
+    padding: 8px;
+    margin: 8px 0;
+  }
+`;
+
+const InputRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  @media screen and (max-width: 767px) {
+    gap: 12px;
+    margin-top: 12px;
+  }
 `;
 const Label = styled.label`
   font-family: F_SEMIBOLD;
@@ -154,6 +271,10 @@ const Label = styled.label`
   color: #555;
   display: block;
   margin-bottom: 6px;
+  @media screen and (max-width: 767px) {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
 `;
 const Input = styled.input`
   width: 100%;
@@ -162,7 +283,7 @@ const Input = styled.input`
   border-radius: 10px;
   padding: 0 14px;
   font-size: 1.3rem;
-  font-family: F_REGULAR;
+  font-family: F_MEDIUM;
   color: #000;
   background: #fff;
   outline: none;
@@ -170,32 +291,19 @@ const Input = styled.input`
   &:focus {
     border-color: #c8e64a;
   }
-`;
-const Textarea = styled.textarea`
-  width: 100%;
-  border: 1.5px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 8px 14px;
-  font-size: 1.3rem;
-  font-family: F_REGULAR;
-  color: #000;
-  background: #fff;
-  outline: none;
-  resize: none;
-  transition: 0.2s;
-  &:focus {
-    border-color: #c8e64a;
+  @media screen and (max-width: 767px) {
+    height: 36px;
   }
 `;
 
 const PaymentMethods = styled.div`
   display: flex;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 `;
 const PayMethodBtn = styled.div<{ $active: boolean }>`
   flex: 1;
-  padding: 12px;
+  padding: 10px;
   border-radius: 10px;
   border: 1.5px solid ${(p) => (p.$active ? "#000" : "#e0e0e0")};
   background: ${(p) => (p.$active ? "#000" : "#fff")};
@@ -206,28 +314,37 @@ const PayMethodBtn = styled.div<{ $active: boolean }>`
   font-size: 1.3rem;
   transition: 0.2s;
   position: relative;
+  @media screen and (max-width: 767px) {
+    font-size: 1.25rem;
+    padding: 8px;
+  }
 `;
 const DiscountTag = styled.div`
   position: absolute;
-  top: -1px;
-  right: -1px;
+  top: -8px;
+  right: -4px;
   background: #e53935;
   color: #fff;
   font-size: 1rem;
   font-family: F_BOLD;
-  padding: 2px 6px;
-  border-radius: 0 10px 0 6px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  @media screen and (max-width: 767px) {
+    font-size: 0.8rem;
+    padding: 1px 4px;
+  }
 `;
 
 const SubmitBtn = styled.button`
   width: 100%;
-  height: 52px;
+  height: 46px;
   border: none;
   border-radius: 14px;
   background: #c8e64a;
   color: #000;
   font-family: F_BOLD;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: 0.2s;
   &:hover {
@@ -236,6 +353,11 @@ const SubmitBtn = styled.button`
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+  @media screen and (max-width: 767px) {
+    height: 42px;
+    font-size: 1.4rem;
+    border-radius: 12px;
   }
 `;
 
@@ -250,22 +372,79 @@ const ErrorMsg = styled.div`
   margin-bottom: 12px;
 `;
 
+const QRBlock = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    gap: 16px;
+    padding: 8px;
+  }
+`;
+const QRWrap = styled.div`
+  background: #fcfcfc;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  @media screen and (max-width: 767px) {
+    padding: 6px;
+  }
+`;
+const QRInfoWrap = styled.div`
+  flex: 1;
+  text-align: left;
+`;
 const QRImg = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
-  margin: 12px auto;
+  @media screen and (max-width: 767px) {
+    width: 144px;
+    height: 144px;
+  }
 `;
 const BankInfo = styled.div`
   font-family: F_BOLD;
   font-size: 1.8rem;
-  margin: 4px 0;
+  margin: 6px 0 8px;
+  @media screen and (max-width: 767px) {
+    font-size: 1.5rem;
+    margin: 4px 0 6px;
+  }
 `;
 const BankName = styled.div`
   font-family: F_MEDIUM;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #777;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
+  &.bank-title {
+    color: #000;
+    font-family: F_BOLD;
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    img {
+      height: 14px;
+      object-fit: contain;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+      gap: 6px;
+      img {
+        height: 12px;
+      }
+    }
+  }
 `;
 const CopyBtn = styled.button<{ $success?: boolean }>`
   background: ${(p) => (p.$success ? "#22c55e" : "#000")};
@@ -362,11 +541,16 @@ export default function CheckoutView() {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [showAll, setShowAll] = useState(false);
+  const [limit, setLimit] = useState(2);
 
   const pageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setCartItems(getCart());
+    if (typeof window !== 'undefined' && window.innerWidth > 767) {
+      setLimit(4);
+    }
   }, []);
 
   const totalPrice = getCartTotal(cartItems);
@@ -402,7 +586,7 @@ export default function CheckoutView() {
     try {
       setSubmitting(true);
       for (const item of cartItems) {
-        const unitPrice = item.option.price;
+        const unitPrice = item.option.price + (item.color.priceAdd || 0);
         const payload = {
           productName: item.productName,
           productColor: findColorDef(item.color.color)?.label ?? item.color.color ?? "",
@@ -446,7 +630,7 @@ export default function CheckoutView() {
             <SectionTitle>Sản Phẩm</SectionTitle>
             <div style={{ background: '#fcfcfc', borderRadius: '12px', padding: '16px', marginBottom: '16px' }}>
               {cartItems.map((item, idx) => {
-                const up = item.option.price;
+                const up = item.option.price + (item.color.priceAdd || 0);
                 return (
                   <CheckoutItem key={idx}>
                     <CIImg src={item.image} />
@@ -515,19 +699,41 @@ export default function CheckoutView() {
 
 
 
+  const PaymentMethodSummary = () => (
+    <MethodSummaryWrap>
+      {method === 0 ? (
+        <>
+          <SummaryRow $bold $color="#ff3b30"><span>Tiền Cọc Phí Ship</span><span>{deposit.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+          <SummaryRow $bold>
+            <span>Thanh Toán Khi Nhận</span>
+            <span>{totalPrice.toLocaleString("vi-VN")}.000 đ</span>
+          </SummaryRow>
+        </>
+      ) : (
+        <>
+          <SummaryRow $bold $color="#22c55e"><span>Hỗ Trợ Phí Ship</span><span>-{shipDiscount.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+          <SummaryRow $bold>
+            <span>Tổng Chuyển Khoản</span>
+            <span>{(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ</span>
+          </SummaryRow>
+        </>
+      )}
+    </MethodSummaryWrap>
+  );
+
   return (
     <Page ref={pageRef}>
       <TwoCol>
         <Card>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
             <MobileBackBtn onClick={() => router.push("/")}>
-              <ArrowLeft size={20} />
+              <ArrowLeft size={18} />
             </MobileBackBtn>
-            <SectionTitle style={{ marginBottom: 0, gap: '12px' }}>Đơn Hàng <Badge>{cartItems.reduce((acc, item) => acc + item.quantity, 0)}</Badge></SectionTitle>
+            <SectionTitle className="mobile-no-mt" style={{ marginTop: 0, marginBottom: 0, gap: '12px' }}>Đơn Hàng <Badge>{cartItems.reduce((acc, item) => acc + item.quantity, 0)} Sản Phẩm</Badge></SectionTitle>
           </div>
-          <div style={{ background: '#fff', borderRadius: '16px', padding: '12px 20px', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
-            {cartItems.map((item, idx) => {
-              const up = item.option.price;
+          <ProductListWrap>
+            {(showAll ? cartItems : cartItems.slice(0, limit)).map((item, idx) => {
+              const up = item.option.price + (item.color.priceAdd || 0);
               return (
                 <CheckoutItem key={idx}>
                   <CIImg src={item.image} />
@@ -544,42 +750,43 @@ export default function CheckoutView() {
                 </CheckoutItem>
               );
             })}
-          </div>
-          <div style={{ marginTop: '24px' }}>
-            <SummaryRow><span>Tạm Tính</span><span>{totalPrice.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+          </ProductListWrap>
+          {cartItems.length > limit && (
+            <ShowMoreBtn onClick={() => setShowAll(!showAll)}>
+              {showAll ? (
+                <>Thu Gọn <ChevronUp size={16} /></>
+              ) : (
+                <>Xem Thêm {cartItems.length - limit} Sản Phẩm <ChevronDown size={16} /></>
+              )}
+            </ShowMoreBtn>
+          )}
+          <SummaryContainer>
+            <SummaryRow><span>Tổng Đơn Hàng</span><span>{totalPrice.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
             <SummaryRow><span>Phí Ship</span><span>{shipFee.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
-          </div>
-          <Divider />
-          {method === 0 && (
-            <SummaryRow><span>Tiền Cọc Phí Ship</span><span style={{ color: "#ff3b30" }}>{deposit.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
-          )}
-          {method === 1 && (
-            <SummaryRow><span>Hỗ Trợ Phí Ship</span><span style={{ color: "#22c55e" }}>-{shipDiscount.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
-          )}
-          <SummaryRow $bold>
-            <span>{method === 1 ? 'Tổng Thanh Toán' : 'Tổng Thanh Toán Khi Nhận'}</span>
-            <span>
-              {method === 0
-                ? `${(totalPrice + shipFee - deposit).toLocaleString("vi-VN")}.000 đ`
-                : `${(totalPrice + shipFee - shipDiscount).toLocaleString("vi-VN")}.000 đ`}
-            </span>
-          </SummaryRow>
+            <Divider style={{ margin: '8px 0' }} />
+            <SummaryRow $large>
+              <span>Tạm Tính</span>
+              <span>{(totalPrice + shipFee).toLocaleString("vi-VN")}.000 đ</span>
+            </SummaryRow>
+          </SummaryContainer>
         </Card>
 
         <Card>
-          <SectionTitle>Thông Tin Nhận Hàng</SectionTitle>
+          <SectionTitle className="mobile-no-mt">Thông Tin Nhận Hàng</SectionTitle>
 
-          <FormGroup>
-            <Label>Tên *</Label>
-            <Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên" />
-          </FormGroup>
-          <FormGroup>
-            <Label>Số Điện Thoại *</Label>
-            <Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập SĐT" type="tel" inputMode="numeric" />
-          </FormGroup>
+          <InputRow>
+            <FormGroup>
+              <Label>Tên *</Label>
+              <Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập Tên" />
+            </FormGroup>
+            <FormGroup>
+              <Label>Số Điện Thoại *</Label>
+              <Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập SĐT" type="tel" inputMode="numeric" />
+            </FormGroup>
+          </InputRow>
           <FormGroup>
             <Label>Địa Chỉ *</Label>
-            <Textarea value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Nhập địa chỉ" rows={2} />
+            <Input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Nhập Địa Chỉ" />
           </FormGroup>
 
 
@@ -594,38 +801,45 @@ export default function CheckoutView() {
             </PayMethodBtn>
           </PaymentMethods>
 
-          <div style={{ background: '#fcfcfc', borderRadius: '12px', padding: '16px', border: '1px solid #f0f0f0', textAlign: 'center', marginBottom: '20px' }}>
-            <QRImg src="/assets/images/qr/qr-banking.jpg" style={{ width: '160px', height: '160px', margin: '0 auto 12px' }} />
-            <BankInfo style={{ fontSize: '1.6rem' }}>0461000636243</BankInfo>
-            <BankName>VO TIEN THUAN - VIETCOMBANK</BankName>
-            <CopyBtn
-              $success={copied}
-              style={{ padding: '6px 16px', marginBottom: 0, minWidth: '130px' }}
-              onClick={() => {
-                copyToClipboard("0461000636243");
-                setCopied(true);
-                setTimeout(() => setCopied(false), 2000);
-              }}
-            >
-              {copied ? (
-                <>
-                  <Check size={14} strokeWidth={3} />
-                  <span>Đã sao chép</span>
-                </>
-              ) : (
-                "Sao Chép STK"
-              )}
-            </CopyBtn>
-          </div>
+          <PaymentMethodSummary />
 
-
+          <QRBlock>
+            <QRWrap>
+              <QRImg src="/assets/images/qr/qr-banking.jpg" />
+            </QRWrap>
+            <QRInfoWrap>
+              <BankName className="bank-title">
+                <img src="/assets/images/bank/vietcombank-logo.png" alt="VCB" />
+                VIETCOMBANK
+              </BankName>
+              <BankInfo>0461000636243</BankInfo>
+              <BankName style={{ marginBottom: '12px' }}>VO TIEN THUAN</BankName>
+              <CopyBtn
+                $success={copied}
+                onClick={() => {
+                  copyToClipboard("0461000636243");
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }}
+                style={{ marginTop: '10px', marginBottom: 0 }}
+              >
+                {copied ? (
+                  <>
+                    <Check size={14} /> <span>Đã sao chép</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy size={14} /> <span>Sao Chép STK</span>
+                  </>
+                )}
+              </CopyBtn>
+            </QRInfoWrap>
+          </QRBlock>
 
           {error && <ErrorMsg>{error}</ErrorMsg>}
 
           <SubmitBtn onClick={handleSubmitOrder} disabled={submitting}>
-            {submitting ? "Đang xử lý..." : method === 0 
-              ? "Xác Nhận Đã Cọc" 
-              : "Xác Nhận Đã Chuyển Khoản"}
+            {submitting ? "Đang xử lý..." : method === 0 ? "Xác Nhận Đã Cọc" : "Xác Nhận Đã Chuyển Khoản"}
           </SubmitBtn>
         </Card>
       </TwoCol>

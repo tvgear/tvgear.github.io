@@ -204,6 +204,26 @@ const Badge = styled.div`
   }
 `;
 
+const CartHeaderBadge = styled.div`
+  background: #ff3b30;
+  color: #fff;
+  font-family: F_BOLD;
+  font-size: 1.05rem;
+  height: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+    height: 18px;
+    padding: 0 6px;
+  }
+`;
+
 const MobileDivider = styled.div`
   display: none;
   @media screen and (max-width: 991px) {
@@ -280,8 +300,8 @@ const CartOverlay = styled.div<{ $isClosing?: boolean }>`
 `;
 
 const CloseBtn = styled.button`
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 100px;
   background: #f6f6f6;
   color: #333;
@@ -301,7 +321,7 @@ const CartDrawer = styled.div<{ $isClosing?: boolean }>`
   top: 0;
   right: 0;
   bottom: 0;
-  width: 400px;
+  width: 380px;
   background: #fff;
   z-index: 100000;
   display: flex;
@@ -309,12 +329,13 @@ const CartDrawer = styled.div<{ $isClosing?: boolean }>`
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
   animation: ${(p) => (p.$isClosing ? slideOut : slideLeft)} 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 90dvw;
+    right: 0;
   }
 `;
 
 const CartHeader = styled.div`
-  padding: 12px 24px;
+  padding: 12px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -326,12 +347,17 @@ const CartHeader = styled.div`
     align-items: center;
     gap: 12px;
   }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
 `;
 
 const CartList = styled.div`
   flex: 1;
   overflow-y: auto;
-  padding: 24px;
+  padding: 24px 16px;
 `;
 
 const CartItemRow = styled.div`
@@ -341,12 +367,12 @@ const CartItemRow = styled.div`
 `;
 
 const CartImg = styled.img`
-  width: 76px;
-  height: 76px;
+  width: 84px;
+  height: 84px;
   background: #f6f6f6;
   border-radius: 12px;
   object-fit: contain;
-  padding: 6px;
+  padding: 10px;
 `;
 
 const CartInfo = styled.div`
@@ -356,25 +382,42 @@ const CartInfo = styled.div`
     font-size: 1.35rem;
     text-transform: uppercase;
     margin-bottom: 2px;
+    @media screen and (max-width: 480px) {
+      font-size: 1.15rem;
+    }
   }
   .opt {
     font-family: F_MEDIUM;
     font-size: 1.15rem;
     color: #777;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+  .item-price {
+    font-family: F_BOLD;
+    font-size: 1.45rem;
+    color: #000;
+    @media screen and (max-width: 480px) {
+      font-size: 1.25rem;
+    }
   }
 `;
 
 const QtyControl = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   input {
     width: 32px;
     text-align: center;
     font-family: F_BOLD;
     font-size: 1.4rem;
     border: none;
+    @media screen and (max-width: 480px) {
+      font-size: 1.25rem;
+    }
     outline: none;
     -moz-appearance: textfield;
     &::-webkit-outer-spin-button,
@@ -393,10 +436,11 @@ const QtyControl = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #000;
     transition: 0.2s;
+    -webkit-tap-highlight-color: transparent;
     &:hover {
       border-color: #000;
-      color: #000;
     }
   }
 `;
@@ -423,11 +467,11 @@ const CartItemBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 6px;
 `;
 
 const CartFooter = styled.div`
-  padding: 16px 24px 20px;
+  padding: 16px 16px 20px;
   border-top: 1px solid #f0f0f0;
   background: #fff;
 `;
@@ -445,6 +489,15 @@ const TotalRow = styled.div`
     font-family: F_BOLD;
     font-size: 1.8rem;
   }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 12px;
+    .label {
+      font-size: 1.3rem;
+    }
+    .value {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 const CheckoutBtn = styled.button`
@@ -460,6 +513,10 @@ const CheckoutBtn = styled.button`
   transition: 0.2s;
   &:hover {
     opacity: 0.85;
+  }
+  @media screen and (max-width: 480px) {
+    height: 46px;
+    font-size: 1.4rem;
   }
 `;
 
@@ -1003,7 +1060,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
           <CartDrawer $isClosing={isClosingCart}>
             <CartHeader>
               <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                Giỏ Hàng <Badge style={{ position: 'relative', top: 0, right: 0, transform: 'none' }}>{cartItems.reduce((acc, item) => acc + item.quantity, 0)}</Badge>
+                Giỏ Hàng <CartHeaderBadge>{cartItems.reduce((acc, item) => acc + item.quantity, 0)} Sản Phẩm</CartHeaderBadge>
               </h2>
               <CloseBtn onClick={handleCloseCart}>
                 <X size={20} />
@@ -1024,11 +1081,14 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                       <div className="opt">
                         {item.color.labelColor} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
                       </div>
+                      <div className="item-price">
+                        {((item.option.price + (item.color.priceAdd || 0)) * item.quantity).toLocaleString("vi-VN")}.000đ
+                      </div>
                       <CartItemBottom>
                         <QtyControl>
-                          <button onClick={() => handleQty(idx, -1)}><Minus size={18} /></button>
+                          <button onClick={() => handleQty(idx, -1)}><Minus size={16} strokeWidth={3} /></button>
                           <input type="number" value={item.quantity} min={1} max={99} onChange={(e) => handleQtyChange(idx, e)} />
-                          <button onClick={() => handleQty(idx, 1)}><Plus size={18} /></button>
+                          <button onClick={() => handleQty(idx, 1)}><Plus size={16} strokeWidth={3} /></button>
                         </QtyControl>
                         <CartActionBtn onClick={() => handleRemove(idx)}>
                           <Trash2 size={15} />

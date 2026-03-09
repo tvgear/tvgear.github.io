@@ -94,9 +94,9 @@
     "name": "G321",
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/headphones/g321-black.webp",
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/headphones/g321-white.png",
         "priceAdd": 0
       }
     ],

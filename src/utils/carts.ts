@@ -52,5 +52,5 @@ export function clearCart() {
 }
 
 export function getCartTotal(items: CartItem[]): number {
-  return items.reduce((sum, item) => sum + item.option.price * item.quantity, 0);
+  return items.reduce((sum, item) => sum + (item.option.price + (item.color.priceAdd || 0)) * item.quantity, 0);
 }
