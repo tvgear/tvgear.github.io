@@ -246,6 +246,32 @@
       "bluetooth"
     ]
   },
+   {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
+    "name": "G515 TKL",
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/g515-tkl-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX, BH 2/28",
+        "price": 2080
+      }
+    ],
+    "warranty": "Bảo Hành Hãng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
   {
     "": "LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
   },

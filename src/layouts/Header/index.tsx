@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import styled, { keyframes, css } from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus, MapPin, ChevronDown } from "lucide-react";
+import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus, MapPin, ChevronDown, MessageCircleMore } from "lucide-react";
 import { getCart, getCartTotal, updateQty as updateCartQuantity, removeFromCart } from "@/utils/carts";
 import { CartItem } from "@/types/product";
 
@@ -150,11 +150,11 @@ const NavLink = styled(Link)<{ $active?: boolean }>`
 const RightHeader = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   flex: 1;
   justify-content: flex-end;
   @media screen and (max-width: 991px) {
-    gap: 12px;
+    gap: 6px;
   }
 `;
 
@@ -176,8 +176,8 @@ const IconBtn = styled.button`
   @media screen and (max-width: 991px) {
     padding: 4px;
     svg {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
 `;
@@ -235,6 +235,28 @@ const MobileDivider = styled.div`
     margin-left: 12px;
   }
 `;
+
+const HeaderSeparator = styled.div`
+  width: 1px;
+  height: 16px;
+  background: #eee;
+  margin: 0 2px;
+`;
+
+const StoreNote = styled.div`
+  font-family: F_BOLD;
+  font-size: 1.2rem;
+  color: #ff3b30;
+  background: #fffbfa;
+  border: 1px solid #ffccc7;
+  padding: 12px 16px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 32px;
+  line-height: 1.5;
+  text-transform: uppercase;
+`;
+
 
 const MobileCategorySelector = styled.div`
   display: none;
@@ -556,10 +578,31 @@ const AboutOverlay = styled.div<{ $isClosing?: boolean }>`
   }
 `;
 
+const ChatOverlay = styled(AboutOverlay)`
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 20px 20px 0; 
+  @media screen and (max-width: 991px) {
+    justify-content: center;
+    padding-right: 0;
+    padding: 8px;
+    align-items: flex-end;
+  }
+`;
+
+
+
+const popOut = keyframes`
+  0% { transform: scale(0.92); opacity: 0; }
+  60% { transform: scale(1.03); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+`;
+
 const slideUp = keyframes`
   from { transform: translateY(50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 `;
+
 
 const AboutModalContainer = styled.div<{ $isClosing?: boolean }>`
   width: 100%;
@@ -725,19 +768,214 @@ const BranchItem = styled.div`
   }
 `;
 
-const StoreNote = styled.div`
-  font-family: F_BOLD;
-  font-size: 1.2rem;
-  color: #ff3b30;
-  background: #fffbfa;
-  border: 1px solid #ffccc7;
-  padding: 12px 16px;
-  border-radius: 12px;
-  text-align: center;
-  margin-top: 32px;
-  line-height: 1.5;
-  text-transform: uppercase;
+/* ─── Chat Modal Styles ─── */
+const ChatModalContainer = styled.div<{ $isClosing?: boolean }>`
+  width: 92%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  animation: ${slideUp} 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  ${(p) => p.$isClosing && `transform: translateY(100%); transition: 0.3s ease-in; opacity: 0;`}
+  @media screen and (max-width: 991px) {
+    width: 96%;
+    margin-bottom: 8px;
+  }
 `;
+
+
+const ChatHeader = styled.div`
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border-bottom: 1px solid #f6f6f6;
+  position: relative;
+`;
+
+
+const ChatAvatar = styled.div`
+  width: 62px;
+  height: 62px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
+  }
+`;
+
+const ChatHeaderInfo = styled.div`
+  flex: 1;
+  .shop-name {
+    font-family: F_BOLD;
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1.2;
+  }
+  .status-text {
+    font-family: F_MEDIUM;
+    font-size: 1.15rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 2px;
+  }
+`;
+
+
+const ChatBody = styled.div`
+  padding: 20px;
+  background: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+`;
+
+
+const ChatTime = styled.div`
+  font-family: F_MEDIUM;
+  font-size: 1.1rem;
+  color: #bbb;
+  text-align: center;
+  margin-bottom: 16px;
+`;
+
+const MessageBubble = styled.div<{ $show?: boolean; $isTip?: boolean }>`
+  align-self: flex-start;
+  background: ${(p) => (p.$isTip ? "#f0f7ff" : "#f1f3f4")};
+  border: ${(p) => (p.$isTip ? "1.5px solid #1877f2" : "none")};
+  padding: 12px 18px;
+  border-radius: 16px;
+  max-width: 85%;
+  font-family: F_MEDIUM;
+  font-size: 1.45rem;
+  color: #333;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  margin-bottom: 12px;
+  transform-origin: top left;
+  animation: ${(p) => (p.$show ? css`${popOut} 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards` : 'none')};
+  
+  .highlight-blue {
+    color: #1877f2;
+    font-family: F_BOLD;
+  }
+`;
+
+
+
+
+
+
+
+const LoadingDots = styled.div`
+  display: flex;
+  gap: 4px;
+  padding: 12px 18px;
+  background: #f1f3f4;
+  border-radius: 16px;
+  width: fit-content;
+  margin-bottom: 24px;
+  
+  span {
+    width: 6px;
+    height: 6px;
+    background: #999;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+    &:nth-child(1) { animation-delay: -0.32s; }
+    &:nth-child(2) { animation-delay: -0.16s; }
+  }
+
+  @keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+  }
+`;
+
+const ChatActions = styled.div<{ $show?: boolean }>`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 12px;
+  opacity: ${(p) => (p.$show ? 1 : 0)};
+  transform: translateY(${(p) => (p.$show ? 0 : '20px')});
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0.3s;
+`;
+
+const ChatActionBtn = styled.a<{ $type: "zalo" | "messenger" }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  border-radius: 20px;
+  font-family: F_BOLD;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: 0.2s;
+  background: ${(p) => (p.$type === "zalo" ? "#000" : "#1877F2")};
+  color: #fff !important;
+  &:hover, &:visited, &:active {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    color: #fff !important;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 1.25rem;
+    height: 48px;
+    border-radius: 20px;
+    gap: 4px;
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+`;
+
+
+const ChatModalClose = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: #f6f6f6;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #777;
+  transition: 0.2s;
+  z-index: 2;
+  &:hover {
+    background: #eee;
+    color: #000;
+  }
+`;
+
+
 
 /* ─── Cart Drawer Portal ─── */
 function CartDrawerPortal({ children }: { children: React.ReactNode }) {
@@ -754,11 +992,49 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
   const [isClosingCart, setIsClosingCart] = React.useState(false);
   const [cartItems, setCartItems] = React.useState<CartItem[]>([]);
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
-  const [showAbout, setShowAbout] = React.useState(false);
-  const [isClosingAbout, setIsClosingAbout] = React.useState(false);
   const [activeTab, setActiveTab] = React.useState(0);
   const aboutScrollRef = React.useRef<HTMLDivElement>(null);
   const [editingQty, setEditingQty] = React.useState<{ [key: number]: string }>({});
+  
+  const [showChatModal, setShowChatModal] = React.useState(false);
+  const [isClosingChatModal, setIsClosingChatModal] = React.useState(false);
+  const [isChatLoading, setIsChatLoading] = React.useState(false);
+  const [showChatMessage, setShowChatMessage] = React.useState(false);
+  const [showSecondMessage, setShowSecondMessage] = React.useState(false);
+  const [showAbout, setShowAbout] = React.useState(false);
+
+  const [isClosingAbout, setIsClosingAbout] = React.useState(false);
+
+  const currentHour = new Date().getHours();
+  const isOnline = currentHour >= 9 && currentHour < 23;
+
+  const handleOpenChat = () => {
+    setShowChatModal(true);
+    setIsChatLoading(true);
+    setShowChatMessage(false);
+    setShowSecondMessage(false);
+    setTimeout(() => {
+      setIsChatLoading(false);
+      setShowChatMessage(true);
+      setTimeout(() => {
+        setShowSecondMessage(true);
+      }, 700);
+    }, 2500);
+  };
+
+
+  const handleCloseChatModal = () => {
+    setIsClosingChatModal(true);
+    setTimeout(() => {
+      setShowChatModal(false);
+      setIsClosingChatModal(false);
+      setIsChatLoading(false);
+      setShowChatMessage(false);
+      setShowSecondMessage(false);
+    }, 300);
+  };
+
+
 
   const handleTabChange = (idx: number) => {
     setActiveTab(idx);
@@ -883,6 +1159,10 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
           </NavLeft>
 
           <RightHeader>
+            <IconBtn onClick={handleOpenChat}>
+              <MessageCircleMore size={22} />
+            </IconBtn>
+            <HeaderSeparator />
             <IconBtn id="cart-icon-btn" onClick={() => setShowCart(true)}>
               <ShoppingBag size={23} />
               {cartItems.length > 0 && (
@@ -1072,6 +1352,67 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
               </AboutContentScroll>
             </AboutModalContainer>
           </AboutOverlay>
+        </CartDrawerPortal>
+      )}
+
+      {/* Chat Modal */}
+      {showChatModal && (
+        <CartDrawerPortal>
+          <ChatOverlay $isClosing={isClosingChatModal} onClick={handleCloseChatModal}>
+            <ChatModalContainer $isClosing={isClosingChatModal} onClick={(e) => e.stopPropagation()}>
+              <ChatHeader>
+                <ChatModalClose onClick={handleCloseChatModal}>
+                  <X size={20} strokeWidth={2.5} />
+                </ChatModalClose>
+                <ChatAvatar>
+                  <img src="/logo.svg" alt="TVGEAR Logo" />
+                </ChatAvatar>
+                <ChatHeaderInfo>
+
+                  <div className="shop-name">TVGEAR</div>
+                  <div className="status-text">
+                    <span style={{ color: isOnline ? '#22c55e' : '#94a3b8' }}>●</span>
+                    {isOnline ? 'Online' : 'Offline'}
+                  </div>
+                </ChatHeaderInfo>
+              </ChatHeader>
+              <ChatBody>
+                <ChatTime>{new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}</ChatTime>
+                
+                {isChatLoading ? (
+                  <LoadingDots>
+                    <span /><span /><span />
+                  </LoadingDots>
+                ) : (
+                  <>
+                    <MessageBubble $show={showChatMessage} $isTip>
+                      💖 MẸO: Bạn có thể bấm vào sản phẩm, chọn loại sản phẩm muốn tư vấn và nhấn vào nút <span className="highlight-blue">Chat Màu Xanh</span> để gửi thông tin đến TVGEAR nhé.
+                    </MessageBubble>
+
+
+
+
+                    {showSecondMessage && (
+                      <MessageBubble $show={showSecondMessage}>
+                        Xin chào 👋{"\n"}Bạn cần tư vấn sản phẩm nào ở TVGEAR?
+                      </MessageBubble>
+                    )}
+                    <ChatActions $show={showSecondMessage}>
+                      <ChatActionBtn $type="zalo" href="https://zalo.me/0398637036" target="_blank" rel="noopener noreferrer">
+                        Chat Zalo
+                      </ChatActionBtn>
+                      <ChatActionBtn $type="messenger" href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">
+                        Chat Messenger
+                      </ChatActionBtn>
+                    </ChatActions>
+
+
+                  </>
+                )}
+              </ChatBody>
+
+            </ChatModalContainer>
+          </ChatOverlay>
         </CartDrawerPortal>
       )}
 

@@ -1108,7 +1108,7 @@
   {
     "visible": true,
     "brand": "razer",
-    "name": "DA v3",
+    "name": "DeathAdder v3",
     "tags": [
       "Có Dây"
     ],
@@ -1234,7 +1234,7 @@
   {
     "visible": true,
     "brand": "razer",
-    "name": "DA v2 Pro",
+    "name": "DeathAdder v2 Pro",
     "tags": [
       "Không Dây"
     ],
@@ -1249,6 +1249,31 @@
       {
         "name": "97% + BOX, BH 3/26",
         "price": 1150
+      }
+    ],
+    "warranty": "Bảo Hành Hãng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "DeathAdder v3 HyperSpeed",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/da-v3-hyperspeed.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%, BH 5/27",
+        "price": 1680
       }
     ],
     "warranty": "Bảo Hành Hãng",

@@ -84,7 +84,7 @@
     ],
     "options": [
       {
-        "name": "G403/G603/G703/G903/G502/PRO WL",
+        "name": "G603/G703/G903/G502/PRO WL",
         "price": 330
       }
     ],
@@ -115,8 +115,43 @@
         "price": 450
       },
       {
-        "name": "PRO X SPL2/SPL2DEX/SPL2C -- 1K Hz",
+        "name": "PRO X SPL2/SPL2DEX/SPL2c (1K Hz)",
         "price": 450
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": []
+  },
+  {
+    "visible": true,
+    "brand": "receiver",
+    "tags": [
+      "Chuột Razer Tương Thích 8K"
+    ],
+    "name": "Hyper Polling Dongle 8K",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/razer-dongle-8k.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "Cobra Pro",
+        "price": 600
+      },
+       {
+        "name": "Basilisk V3 Pro",
+        "price": 600
+      },
+      {
+        "name": "Viper V2/V3 Pro",
+        "price": 600
+      },
+      {
+        "name": "DeathAdder V2/V3 Pro",
+        "price": 600
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
