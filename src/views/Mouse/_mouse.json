@@ -389,11 +389,6 @@
         "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/gpro-x-spl-pink.webp"
-      },
-      {
-        "color": "red",
-        "labelColor": "Đỏ",
-        "image": "/assets/images/mouses/gpro-x-spl-red.webp"
       }
     ],
     "options": [
@@ -416,13 +411,6 @@
         "price": 1400,
         "colors": [
           "#ff637e"
-        ]
-      },
-      {
-        "name": "95%",
-        "price": 1450,
-        "colors": [
-          "red"
         ]
       }
     ],

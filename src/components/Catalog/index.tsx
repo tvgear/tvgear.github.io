@@ -1,6 +1,6 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
-import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid, MessageCircleQuestion, ExternalLink } from "lucide-react";
+import { X, AlertCircle, CircleDollarSign, SatelliteDish, GamepadDirectional, LayoutGrid, MessageCircleMore, ExternalLink } from "lucide-react";
 import { addToCart, clearCart } from "@/utils/carts";
 import { useRouter } from "next/router";
 import { copyToClipboard } from "@/utils";
@@ -645,7 +645,7 @@ Mình cần tư vấn sản phẩm này.`;
 
           <ModalActionRow>
             <ChatBtn onClick={handleChatClick}>
-              <MessageCircleQuestion size={20} strokeWidth={1.5} />
+              <MessageCircleMore size={20} strokeWidth={1.5} />
             </ChatBtn>
             <AddCartGhostBtn onClick={() => onAddToCart(product, currentColor, currentOption, imgRef)}>Thêm Giỏ</AddCartGhostBtn>
             <BuyNowBtn onClick={() => onBuyNow(product, currentColor, currentOption)}>Đặt Mua</BuyNowBtn>

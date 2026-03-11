@@ -1386,7 +1386,11 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                 ) : (
                   <>
                     <MessageBubble $show={showChatMessage} $isTip>
-                      💖 MẸO: Bạn có thể bấm vào sản phẩm, chọn loại sản phẩm muốn tư vấn và nhấn vào nút <span className="highlight-blue">Chat Màu Xanh</span> để gửi thông tin đến TVGEAR nhé.
+                      💖 MẸO: Bạn có thể bấm vào sản phẩm, chọn loại sản phẩm muốn tư vấn và nhấn vào nút
+                      <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '24px', height: '24px', background: '#1877f2', borderRadius: '7px', verticalAlign: 'middle', margin: '0 5px', color: '#fff' }}>
+                        <MessageCircleMore size={14} strokeWidth={2.5} />
+                      </span>
+                      để gửi thông tin đến TVGEAR nhé.
                     </MessageBubble>
 
 
