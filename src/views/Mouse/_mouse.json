@@ -433,14 +433,14 @@
         "image": "/assets/images/mouses/gpro-x-spl2-black.webp"
       },
       {
-        "color": "#ff637e",
-        "labelColor": "Hồng",
-        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
-      },
-      {
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/mouses/gpro-x-spl2-white.webp"
+      },
+      {
+        "color": "#ff637e",
+        "labelColor": "Hồng",
+        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
       }
     ],
     "options": [
@@ -448,15 +448,28 @@
         "name": "97%, Đầu Thu SPL1",
         "price": 1780,
         "colors": [
-          "black",
-          "#ff637e"
+          "black"
         ]
       },
-       {
+      {
         "name": "90% + BOX + Đầu Thu SPL1",
         "price": 1780,
         "colors": [
           "white"
+        ]
+      },
+      {
+        "name": "97%, Đầu Thu SPL1",
+        "price": 1880,
+        "colors": [
+          "#ff637e"
+        ]
+      },
+      {
+        "name": "97% + BOX",
+        "price": 2180,
+        "colors": [
+          "#ff637e"
         ]
       }
     ],
@@ -474,12 +487,24 @@
     ],
     "colors": [
       {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp"
+      },
+      {
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp"
       }
     ],
     "options": [
+      {
+        "name": "97%",
+        "price": 2180,
+        "colors": [
+          "black"
+        ]
+      },
       {
         "name": "97% + BOX, BH 7/27",
         "price": 2390,
@@ -807,16 +832,8 @@
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 330
-      },
-      {
-        "name": "97% + Đầu Thu",
-        "price": 430
-      },
-      {
-        "name": "New No Box + Đầu Thu",
-        "price": 480
+        "name": "New No Box",
+        "price": 450
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1119,7 +1136,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Orochi v2",
     "tags": [
