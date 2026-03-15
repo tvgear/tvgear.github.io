@@ -225,7 +225,8 @@
     ],
     "warranty": "Bảo Hành 1 Tháng",
     "connect": [
-      "wireless"
+      "wireless",
+      "bluetooth"
     ]
   },
   {
@@ -413,7 +414,7 @@
     "": "HYPER --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "hyperx",
     "name": "Cloud 3",
     "tags": [
@@ -428,13 +429,43 @@
     ],
     "options": [
       {
-        "name": "98% + BOX, BH SPC 22/04/27",
+        "name": "98% + BOX, BH GEARVN 1/2028",
         "price": 1650
       }
     ],
     "warranty": "BH Hãng",
     "connect": [
       "wired"
+    ]
+  },
+  {
+    "": "MCHOSE --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "MChose v9 Pro",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/headphones/mchose-v9-pro-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 800
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired",
+      "wireless",
+      "bluetooth"
     ]
   }
 ]

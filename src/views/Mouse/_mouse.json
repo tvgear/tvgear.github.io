@@ -20,8 +20,14 @@
     ],
     "options": [
       {
-        "name": "90%",
-        "price": 220
+        "name": "90%, Bóng",
+        "price": 220,
+        "colors": ["black"]
+      },
+      {
+        "name": "90%, Ố",
+        "price": 220,
+        "colors": ["white"]
       },
       {
         "name": "95%",
@@ -109,7 +115,7 @@
     ],
     "options": [
       {
-        "name": "90%",
+        "name": "90%, Xước Cao Su",
         "price": 350
       },
       {
@@ -138,12 +144,8 @@
     ],
     "options": [
       {
-        "name": "90% + Tặng Grip",
+        "name": "90%, Xước Cao Su + Tặng Griptape",
         "price": 450
-      },
-      {
-        "name": "97%",
-        "price": 580
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -192,7 +194,7 @@
     ],
     "options": [
       {
-        "name": "97%",
+        "name": "97% + Kèm Nút Che Cạnh Trái",
         "price": 750
       }
     ],
@@ -223,7 +225,7 @@
     "options": [
       {
         "name": "95%",
-        "price": 480
+        "price": 490
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -253,32 +255,7 @@
     "options": [
       {
         "name": "95%",
-        "price": 580
-      }
-    ],
-    "warranty": "Bảo Hành 3 Tháng",
-    "connect": [
-      "wireless"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "logig",
-    "name": "G703 Hero",
-    "tags": [
-      "Không Dây"
-    ],
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/g703.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97% + BOX",
-        "price": 1080
+        "price": 590
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -354,7 +331,7 @@
     ],
     "options": [
       {
-        "name": "95%",
+        "name": "90%, Bóng + Tặng Kèm Gripate",
         "price": 1080
       },
       {
@@ -393,21 +370,21 @@
     ],
     "options": [
       {
-        "name": "90% + Grip Tape",
+        "name": "90%, Ố + Tặng Grip Tape",
         "price": 1300,
         "colors": [
           "white"
         ]
       },
       {
-        "name": "95% + Grip Tape",
+        "name": "95%, Bóng + Tặng Grip Tape",
         "price": 1350,
         "colors": [
           "black"
         ]
       },
       {
-        "name": "95%",
+        "name": "95%, Xước Nhẹ Cạnh",
         "price": 1400,
         "colors": [
           "#ff637e"
@@ -452,7 +429,7 @@
         ]
       },
       {
-        "name": "90% + BOX + Đầu Thu SPL1",
+        "name": "90%, Ố + BOX + Đầu Thu SPL1",
         "price": 1780,
         "colors": [
           "white"
@@ -463,6 +440,20 @@
         "price": 1880,
         "colors": [
           "#ff637e"
+        ]
+      },
+      {
+        "name": "97%",
+        "price": 2080,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "90%, Ố + BOX",
+        "price": 2080,
+        "colors": [
+          "white"
         ]
       },
       {
@@ -507,7 +498,7 @@
       },
       {
         "name": "97% + BOX, BH 7/27",
-        "price": 2390,
+        "price": 2380,
         "colors": [
           "white"
         ]
@@ -1136,7 +1127,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
     "name": "Orochi v2",
     "tags": [
@@ -1151,7 +1142,7 @@
     ],
     "options": [
       {
-        "name": "97% + BOX",
+        "name": "97%",
         "price": 580
       }
     ],
@@ -1213,31 +1204,6 @@
   },
   {
     "visible": false,
-    "brand": "razer",
-    "name": "Viper v2 Pro",
-    "tags": [
-      "Không Dây"
-    ],
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/viper-v2-pro-black.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97% + Dây Sạc Ngoài",
-        "price": 1480
-      }
-    ],
-    "warranty": "Bảo Hành 3 Tháng",
-    "connect": [
-      "wireless"
-    ]
-  },
-  {
-    "visible": true,
     "brand": "razer",
     "name": "DeathAdder v2 Pro",
     "tags": [
@@ -1309,7 +1275,7 @@
     "options": [
       {
         "name": "97%, BH 4/26",
-        "price": 2180
+        "price": 2150
       }
     ],
     "warranty": "Bảo Hành Hãng",

@@ -462,9 +462,9 @@
     "name": "K950",
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/keyboards/k950.webp"
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/k950-white.png"
       }
     ],
     "options": [
@@ -693,9 +693,9 @@
     "name": "MK950",
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/keyboards/mk950.webp"
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/mk950-white.png"
       }
     ],
     "options": [
