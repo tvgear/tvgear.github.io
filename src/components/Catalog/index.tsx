@@ -126,11 +126,16 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     return "Sản Phẩm";
   }, [router.pathname]);
 
-  const filtered = React.useMemo(() => {
+  const baseFiltered = React.useMemo(() => {
     let result = [...products];
     if (selectedBrand !== "all") {
       result = result.filter((p) => p.brand === selectedBrand);
     }
+    return result;
+  }, [products, selectedBrand]);
+
+  const filtered = React.useMemo(() => {
+    let result = baseFiltered;
     if (selectedConns.length > 0) {
       result = result.filter((p) => {
         if (!p.connect) return false;
@@ -168,14 +173,9 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
     }
 
     return result;
-  }, [products, selectedBrand, selectedPrices, selectedConns, sortBy]);
+  }, [baseFiltered, selectedPrices, selectedConns, sortBy]);
 
-  const { availablePrices, availableConns } = React.useMemo(() => {
-    let baseFiltered = [...products];
-    if (selectedBrand !== "all") {
-      baseFiltered = baseFiltered.filter((p) => p.brand === selectedBrand);
-    }
-
+  const { availablePrices, availableConns, brandAvailablePrices, brandAvailableConns } = React.useMemo(() => {
     let forPrice = baseFiltered;
     if (selectedConns.length > 0) {
       forPrice = forPrice.filter((p) => {
@@ -213,32 +213,98 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
       }
     });
 
+    const brandPriceIds = new Set<string>();
+    const brandConnIds = new Set<string>();
+    baseFiltered.forEach((p) => {
+      p.options.forEach(opt => {
+        PRICE_RANGES.forEach(r => {
+          if (opt.price >= r.min && opt.price < r.max) brandPriceIds.add(r.id);
+        });
+      });
+      if (p.connect) {
+        p.connect.forEach(c => brandConnIds.add(c));
+      }
+    });
+
     return {
       availablePrices: Array.from(priceIds),
       availableConns: Array.from(connIds),
+      brandAvailablePrices: Array.from(brandPriceIds),
+      brandAvailableConns: Array.from(brandConnIds),
     };
-  }, [products, selectedBrand, selectedPrices, selectedConns]);
+  }, [baseFiltered, selectedPrices, selectedConns]);
 
   // Smart Filter side effects
   React.useEffect(() => {
     if (selectedBrand !== "all") {
-      const firstPrice = availablePrices[0];
-      if (availablePrices.length === 1 && firstPrice && !selectedPrices.includes(firstPrice)) {
+      const firstPrice = brandAvailablePrices[0];
+      if (brandAvailablePrices.length === 1 && firstPrice && !selectedPrices.includes(firstPrice)) {
         setSelectedPrices([firstPrice]);
       }
-      const firstConn = availableConns[0];
-      if (availableConns.length === 1 && firstConn && !selectedConns.includes(firstConn)) {
+      const firstConn = brandAvailableConns[0];
+      if (brandAvailableConns.length === 1 && firstConn && !selectedConns.includes(firstConn)) {
         setSelectedConns([firstConn]);
       }
     }
-  }, [selectedBrand, availablePrices, availableConns, selectedPrices, selectedConns]);
+  }, [selectedBrand, brandAvailablePrices, brandAvailableConns, selectedPrices, selectedConns]);
 
   const togglePrice = (id: string) => {
-    setSelectedPrices(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+    setSelectedPrices(prev => {
+      const isAdding = !prev.includes(id);
+      const newPrices = isAdding ? [...prev, id] : prev.filter(x => x !== id);
+      
+      if (isAdding) {
+        const forConn = baseFiltered.filter((p) => {
+          return p.options.some(opt => {
+            return newPrices.some(rangeId => {
+              const range = PRICE_RANGES.find(r => r.id === rangeId);
+              if (!range) return false;
+              return opt.price >= range.min && opt.price < range.max;
+            });
+          });
+        });
+        const conns = new Set<string>();
+        forConn.forEach((p) => {
+          if (p.connect) p.connect.forEach(c => conns.add(c));
+        });
+        
+        if (conns.size === 1) {
+          const onlyConn = Array.from(conns)[0]!;
+          setSelectedConns(prevConns => prevConns.includes(onlyConn) ? prevConns : [...prevConns, onlyConn]);
+        }
+      }
+      
+      return newPrices;
+    });
   };
 
   const toggleConn = (id: string) => {
-    setSelectedConns(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+    setSelectedConns(prev => {
+      const isAdding = !prev.includes(id);
+      const newConns = isAdding ? [...prev, id] : prev.filter(x => x !== id);
+      
+      if (isAdding) {
+        const forPrice = baseFiltered.filter((p) => {
+          if (!p.connect) return false;
+          return newConns.some(cid => p.connect!.includes(cid));
+        });
+        const prices = new Set<string>();
+        forPrice.forEach((p) => {
+          p.options.forEach(opt => {
+            PRICE_RANGES.forEach(r => {
+              if (opt.price >= r.min && opt.price < r.max) prices.add(r.id);
+            });
+          });
+        });
+        
+        if (prices.size === 1) {
+          const onlyPrice = Array.from(prices)[0]!;
+          setSelectedPrices(prevPrices => prevPrices.includes(onlyPrice) ? prevPrices : [...prevPrices, onlyPrice]);
+        }
+      }
+      
+      return newConns;
+    });
   };
 
 
@@ -261,11 +327,11 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
   };
 
   const isPriceLocked = (id: string) => {
-    return selectedBrand !== "all" && availablePrices.length === 1 && availablePrices[0] === id;
+    return selectedBrand !== "all" && brandAvailablePrices.length === 1 && brandAvailablePrices[0] === id;
   };
 
   const isConnLocked = (id: string) => {
-    return selectedBrand !== "all" && availableConns.length === 1 && availableConns[0] === id;
+    return selectedBrand !== "all" && brandAvailableConns.length === 1 && brandAvailableConns[0] === id;
   };
 
   const handleBuyNowFromDetail = (product: BaseProduct, currentColor: any, currentOption: any) => {
@@ -504,9 +570,10 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
                 {PRICE_RANGES.map(r => {
                   const active = selectedPrices.includes(r.id);
                   const available = availablePrices.includes(r.id);
+                  const locked = isPriceLocked(r.id);
                   return (
                     <CheckboxGroup key={r.id} className={!available && !active ? 'disabled' : ''}>
-                      <input type="checkbox" checked={active} disabled={!available && !active} onChange={() => togglePrice(r.id)} />
+                      <input type="checkbox" checked={active} disabled={(!available && !active) || locked} onChange={() => togglePrice(r.id)} />
                       <span className="custom-checkbox" />
                       {r.label}
                     </CheckboxGroup>
@@ -522,9 +589,10 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
                   {CONNECTIONS.map(c => {
                     const active = selectedConns.includes(c.id);
                     const available = availableConns.includes(c.id);
+                    const locked = isConnLocked(c.id);
                     return (
                       <CheckboxGroup key={c.id} className={!available && !active ? 'disabled' : ''}>
-                        <input type="checkbox" checked={active} disabled={!available && !active} onChange={() => toggleConn(c.id)} />
+                        <input type="checkbox" checked={active} disabled={(!available && !active) || locked} onChange={() => toggleConn(c.id)} />
                         <span className="custom-checkbox" />
                         {c.label}
                       </CheckboxGroup>

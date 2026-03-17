@@ -1267,7 +1267,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                     <BranchItem style={{ marginBottom: '24px' }}>
                       <div className="name"><MapPin size={18} /> Chi Nhánh TP.HCM</div>
                       <div className="address">
-                        194/21a Bùi Đình Tuý, P.12, Q. Bình Thạnh, TP.HCM<br/>
+                        Toà B Saigonres Plaza, 188 Nguyễn Xí, P.26, Bình Thạnh, TP.HCM<br/>
                         9 Hoa Cau, P.7, Q. Phú Nhuận, TP.HCM
                       </div>
                     </BranchItem>

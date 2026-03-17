@@ -1227,6 +1227,7 @@
       "wireless"
     ]
   },
+  
   {
     "visible": true,
     "brand": "razer",
@@ -1252,6 +1253,7 @@
       "wireless"
     ]
   },
+  
   {
     "": "PULSAR --------------------------------------------------------------------------------------------------------------------"
   },
@@ -1335,6 +1337,57 @@
     "connect": [
       "wireless",
       "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Razer Viper Mini",
+    "tags": [
+      "Có Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/viper-mini-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 380
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "Logitech G102",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/g102-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "90%, Bóng",
+        "price": 190,
+        "colors": ["black"]
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired"
     ]
   }
 ]
