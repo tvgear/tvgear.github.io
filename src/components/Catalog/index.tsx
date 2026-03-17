@@ -237,74 +237,136 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
   // Smart Filter side effects
   React.useEffect(() => {
     if (selectedBrand !== "all") {
-      const firstPrice = brandAvailablePrices[0];
-      if (brandAvailablePrices.length === 1 && firstPrice && !selectedPrices.includes(firstPrice)) {
-        setSelectedPrices([firstPrice]);
-      }
-      const firstConn = brandAvailableConns[0];
-      if (brandAvailableConns.length === 1 && firstConn && !selectedConns.includes(firstConn)) {
-        setSelectedConns([firstConn]);
-      }
-    }
-  }, [selectedBrand, brandAvailablePrices, brandAvailableConns, selectedPrices, selectedConns]);
-
-  const togglePrice = (id: string) => {
-    setSelectedPrices(prev => {
-      const isAdding = !prev.includes(id);
-      const newPrices = isAdding ? [...prev, id] : prev.filter(x => x !== id);
-      
-      if (isAdding) {
-        const forConn = baseFiltered.filter((p) => {
-          return p.options.some(opt => {
-            return newPrices.some(rangeId => {
-              const range = PRICE_RANGES.find(r => r.id === rangeId);
-              if (!range) return false;
-              return opt.price >= range.min && opt.price < range.max;
+      let allHaveSameBrandPrices = brandAvailablePrices.length > 0;
+      if (allHaveSameBrandPrices) {
+        for (const p of baseFiltered) {
+          const pPrices = new Set<string>();
+          p.options.forEach(opt => {
+            PRICE_RANGES.forEach(r => {
+              if (opt.price >= r.min && opt.price < r.max) pPrices.add(r.id);
             });
           });
-        });
-        const conns = new Set<string>();
-        forConn.forEach((p) => {
-          if (p.connect) p.connect.forEach(c => conns.add(c));
-        });
-        
-        if (conns.size === 1) {
-          const onlyConn = Array.from(conns)[0]!;
-          setSelectedConns(prevConns => prevConns.includes(onlyConn) ? prevConns : [...prevConns, onlyConn]);
+          if (pPrices.size !== brandAvailablePrices.length) {
+            allHaveSameBrandPrices = false;
+            break;
+          }
         }
       }
       
-      return newPrices;
-    });
+      if (allHaveSameBrandPrices) {
+        setSelectedPrices(prev => {
+          const missing = brandAvailablePrices.filter(c => !prev.includes(c));
+          if (missing.length > 0) return [...prev, ...missing];
+          return prev;
+        });
+      }
+
+      let allHaveSameBrandConns = brandAvailableConns.length > 0;
+      if (allHaveSameBrandConns) {
+        for (const p of baseFiltered) {
+          if (!p.connect || p.connect.length !== brandAvailableConns.length) {
+            allHaveSameBrandConns = false; break;
+          }
+        }
+      }
+
+      if (allHaveSameBrandConns) {
+        setSelectedConns(prev => {
+          const missing = brandAvailableConns.filter(c => !prev.includes(c));
+          if (missing.length > 0) return [...prev, ...missing];
+          return prev;
+        });
+      }
+    }
+  }, [selectedBrand, brandAvailablePrices, brandAvailableConns, baseFiltered]);
+
+  const togglePrice = (id: string) => {
+    const isAdding = !selectedPrices.includes(id);
+    const newPrices = isAdding ? [...selectedPrices, id] : selectedPrices.filter(x => x !== id);
+    
+    setSelectedPrices(newPrices);
+    
+    if (newPrices.length > 0) {
+      const forConn = baseFiltered.filter((p) => {
+        return p.options.some(opt => {
+          return newPrices.some(rangeId => {
+            const range = PRICE_RANGES.find(r => r.id === rangeId);
+            if (!range) return false;
+            return opt.price >= range.min && opt.price < range.max;
+          });
+        });
+      });
+      const conns = new Set<string>();
+      forConn.forEach((p) => {
+        if (p.connect) p.connect.forEach(c => conns.add(c));
+      });
+      
+      let allHaveSameConns = conns.size > 0;
+      if (allHaveSameConns) {
+        for (const p of forConn) {
+          if (!p.connect || p.connect.length !== conns.size) {
+            allHaveSameConns = false;
+            break;
+          }
+        }
+      }
+      
+      if (allHaveSameConns) {
+        const onlyConns = Array.from(conns);
+        setSelectedConns(prevConns => {
+          const missing = onlyConns.filter(c => !prevConns.includes(c));
+          if (missing.length > 0) return [...prevConns, ...missing];
+          return prevConns;
+        });
+      }
+    }
   };
 
   const toggleConn = (id: string) => {
-    setSelectedConns(prev => {
-      const isAdding = !prev.includes(id);
-      const newConns = isAdding ? [...prev, id] : prev.filter(x => x !== id);
-      
-      if (isAdding) {
-        const forPrice = baseFiltered.filter((p) => {
-          if (!p.connect) return false;
-          return newConns.some(cid => p.connect!.includes(cid));
-        });
-        const prices = new Set<string>();
-        forPrice.forEach((p) => {
-          p.options.forEach(opt => {
-            PRICE_RANGES.forEach(r => {
-              if (opt.price >= r.min && opt.price < r.max) prices.add(r.id);
-            });
+    const isAdding = !selectedConns.includes(id);
+    const newConns = isAdding ? [...selectedConns, id] : selectedConns.filter(x => x !== id);
+    
+    setSelectedConns(newConns);
+    
+    if (newConns.length > 0) {
+      const forPrice = baseFiltered.filter((p) => {
+        if (!p.connect) return false;
+        return newConns.some(cid => p.connect!.includes(cid));
+      });
+      const prices = new Set<string>();
+      forPrice.forEach((p) => {
+        p.options.forEach(opt => {
+          PRICE_RANGES.forEach(r => {
+            if (opt.price >= r.min && opt.price < r.max) prices.add(r.id);
           });
         });
-        
-        if (prices.size === 1) {
-          const onlyPrice = Array.from(prices)[0]!;
-          setSelectedPrices(prevPrices => prevPrices.includes(onlyPrice) ? prevPrices : [...prevPrices, onlyPrice]);
+      });
+      
+      let allHaveSamePrices = prices.size > 0;
+      if (allHaveSamePrices) {
+        for (const p of forPrice) {
+          const pPrices = new Set<string>();
+          p.options.forEach(opt => {
+            PRICE_RANGES.forEach(r => {
+              if (opt.price >= r.min && opt.price < r.max) pPrices.add(r.id);
+            });
+          });
+          if (pPrices.size !== prices.size) {
+            allHaveSamePrices = false;
+            break;
+          }
         }
       }
       
-      return newConns;
-    });
+      if (allHaveSamePrices) {
+        const onlyPrices = Array.from(prices);
+        setSelectedPrices(prevPrices => {
+          const missing = onlyPrices.filter(c => !prevPrices.includes(c));
+          if (missing.length > 0) return [...prevPrices, ...missing];
+          return prevPrices;
+        });
+      }
+    }
   };
 
 
