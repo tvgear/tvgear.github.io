@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { useRouter } from "next/router";
-import { ArrowLeft, Check, ChevronDown, ChevronUp, Copy, Loader2, Image as ImageIcon, HelpCircle, X, Edit2, ChevronRight, FolderCog, ImageUp } from "lucide-react";
+import { ArrowLeft, Check, ChevronDown, ChevronUp, Copy, Loader2, Image as ImageIcon, HelpCircle, X, Edit2, ChevronRight, ImageUp } from "lucide-react";
 import { CartItem } from "@/types/product";
 import { getCart, getCartTotal, clearCart } from "@/utils/carts";
 import { findColorDef } from "@/utils/colors";
 import { copyToClipboard } from "@/utils";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycby4SQsPkz_lJdqqVmd28qrCcf2x-daCG3MT3ProRNmqh7LVZHJKTKKR5wAxRZr5qg9H/exec";
+  "https://script.google.com/macros/s/AKfycbyVpj6d0HHD5sp2XnCfL63tsQReF9oHBWUSTVJldAdZ08x5EOmXwA-yu4lmiZ8mFe99/exec";
 
 import divisions from "@/data/vietnam-divisions.json";
 
@@ -270,9 +270,9 @@ const FormGroup = styled.div`
 const ShowMoreBtn = styled.button`
   width: 100%;
   padding: 10px;
-  background: #f8f8f8;
-  border: 1px solid #eee;
-  border-radius: 10px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 12px;
   font-family: F_BOLD;
   font-size: 1.2rem;
   color: #555;
@@ -315,45 +315,8 @@ const Label = styled.label`
   }
 `;
 
-const SelectFlex = styled.div`
-  display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
-  @media screen and (max-width : 767px) {
-    flex-direction: column;
-    gap: 8px;
-  }
-`;
 
-const Select = styled.select`
-  width: 100%;
-  height: 38px;
-  border: 1.5px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 0 32px 0 12px;
-  font-size: 1.3rem;
-  font-family: F_MEDIUM;
-  color: #000;
-  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s;
-  &:focus {
-    border-color: #c8e64a;
-  }
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    background-color: #f5f5f5;
-  }
-  @media screen and (max-width: 767px) {
-    height: 34px;
-    font-size: 1.2rem;
-    padding-right: 28px;
-    background-position: right 10px center;
-  }
-`;
+
 
 const Input = styled.input`
   width: 100%;
@@ -534,17 +497,20 @@ const UploadZone = styled.div`
 const UploadImgPreview = styled.div`
   position: relative;
   width: 100%;
-  max-height: 350px;
+  height: 300px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background: #fafafa;
+  border: 1px solid #eee;
+  background: #fdfdfd;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
   img {
-    width: 100%; 
-    max-height: 350px; 
+    max-width: 100%; 
+    max-height: 100%; 
     object-fit: contain;
+    border-radius: 8px;
   }
 `;
 
@@ -609,18 +575,18 @@ const QRInfoWrap = styled.div`
   text-align: left;
 `;
 const QRImg = styled.img`
-  width: 130px;
-  height: 130px;
+  width: 154px;
+  height: 154px;
   object-fit: contain;
   @media screen and (max-width: 767px) {
-    width: 114px;
-    height: 114px;
+    width: 132px;
+    height: 132px;
   }
 `;
 const BankInfo = styled.div`
   font-family: F_BOLD;
   font-size: 1.8rem;
-  margin: 6px 0 8px;
+  margin: 0 0 4px;
   @media screen and (max-width: 767px) {
     font-size: 1.5rem;
     margin: 4px 0 6px;
@@ -728,14 +694,9 @@ const ConfettiPiece = styled.div<{ $color: string; $rot: number; $tx: number; $t
   animation: ${confettiFade} 0.8s ease-out both;
   animation-delay: ${p => p.$delay}s;
 `;
-const spin = keyframes`
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-`;
 
-const LoadingSpinner = styled(Loader2)`
-  animation: ${spin} 1s linear infinite;
-`;
+
+
 
 const SuccessTitle = styled.div`
   font-family: F_BOLD;
@@ -802,11 +763,31 @@ const ContactBtn = styled.a`
   }
 `;
 
+const ProgressOverlay = styled.div`
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+`;
+
+const ProgressContainer = styled.div`
+  width: 90%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 type Step = "form" | "payment" | "success";
 
 export default function CheckoutView() {
   const router = useRouter();
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [cartItems, setCartItems] = useState<CartItem[] | null>(null);
   const [step, setStep] = useState<Step>("form");
 
   const [name, setName] = useState("");
@@ -823,8 +804,7 @@ export default function CheckoutView() {
   const [limit, setLimit] = useState(2);
 
   const [isDepositModalOpen, setDepositModalOpen] = useState(false);
-  const [isBillModalOpen, setBillModalOpen] = useState(false);
-  const [requireBill, setRequireBill] = useState(true);
+  const [requireBill] = useState(true);
   const [billImage, setBillImage] = useState<string | null>(null);
   const [billFileName, setBillFileName] = useState<string | null>(null);
   const [isConverting, setIsConverting] = useState(false);
@@ -835,11 +815,76 @@ export default function CheckoutView() {
   const [addressStep, setAddressStep] = useState(1);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  const [progress, setProgress] = useState(0);
+  const [loadingTextIndex, setLoadingTextIndex] = useState(0);
+
+  const loadingTexts = [
+    "Đang kiểm tra danh sách sản phẩm ...",
+    "Đơn hàng đang được gửi đến TVGEAR ...",
+    "Đơn hàng đã được TVGEAR tiếp nhận ..."
+  ];
+
+  useEffect(() => {
+    let textInterval: NodeJS.Timeout;
+    
+    if (submitting) {
+      const startTime = Date.now();
+      const duration = 6000;
+      
+      const updateProgress = () => {
+        const elapsed = Date.now() - startTime;
+        const p = Math.min(elapsed / duration, 1);
+        
+        // Slow -> Fast -> Slow easing
+        // t < 0.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1
+        let easedP;
+        if (p < 0.5) {
+          easedP = 4 * p * p * p;
+        } else {
+          easedP = 1 - Math.pow(-2 * p + 2, 3) / 2;
+        }
+        
+        setProgress(Math.round(easedP * 100));
+        
+        if (p < 1) {
+          requestAnimationFrame(updateProgress);
+        }
+      };
+      
+      requestAnimationFrame(updateProgress);
+
+      textInterval = setInterval(() => {
+        setLoadingTextIndex(prev => (prev < 2 ? prev + 1 : prev));
+      }, 2000);
+    } else {
+      setProgress(0);
+      setLoadingTextIndex(0);
+    }
+    
+    return () => {
+      clearInterval(textInterval);
+    };
+  }, [submitting]);
+
+  useEffect(() => {
+    if (step === "success") {
+      const scrollTarget = document.getElementById('main-content') || window;
+      setTimeout(() => {
+        scrollTarget.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }, 100);
+    }
+    if (cartItems !== null && cartItems.length === 0 && step === "form") {
+      router.push("/");
+    }
+  }, [cartItems, step, router]);
+
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = 0;
   }, [addressStep]);
 
-  const formatCityName = (n: string) => n.replace(/^Tỉnh\s+/i, "").replace(/^Thành phố\s+/i, "Thành Phố ");
+  const formatCityName = (n: string) => n.replace(/^Thành phố\s+/i, "").replace(/^Tỉnh\s+/i, "").trim();
 
   const [tempCity, setTempCity] = useState("");
   const [tempDistrict, setTempDistrict] = useState("");
@@ -855,7 +900,7 @@ export default function CheckoutView() {
     }
   }, []);
 
-  const totalPrice = getCartTotal(cartItems);
+  const totalPrice = getCartTotal(cartItems || []);
   const shipFee = 40;
   const deposit = 50;
   const shipDiscount = 10;
@@ -880,58 +925,95 @@ export default function CheckoutView() {
       setBillFileName(file.name);
       setIsHeicPreviewFailed(false);
       setIsConverting(true);
+      setError(null);
+      setBillImage(null); // Clear previous to show loading state
+      setIsHeicPreviewFailed(false);
       
       try {
         const isHeic = file.name.toLowerCase().endsWith('.heic') || file.name.toLowerCase().endsWith('.heif');
         let fileToProcess: File | Blob = file;
 
-        // Step 1: Force convert HEIC if needed, because iOS often provides empty MIME types which crash libraries
         if (isHeic) {
-          const heicModule = await import("heic2any");
-          const heic2anyFn = heicModule.default || heicModule;
-          const typedBlob = new Blob([file], { type: "image/heic" }); // Fix for missing MIME
-          const conversionResult = await heic2anyFn({
-            blob: typedBlob,
-            toType: "image/jpeg",
-            quality: 0.8
-          });
-          const blobResult = (Array.isArray(conversionResult) ? conversionResult[0] : conversionResult) as Blob;
-          fileToProcess = new File([blobResult], file.name.replace(/\.[^/.]+$/, ".jpg"), { type: "image/jpeg" });
+          try {
+            console.log("Starting HEIC conversion for:", file.name);
+            const heicModule = await import("heic2any");
+            const heic2any = heicModule.default || heicModule;
+            
+            // Try converting to jpeg first
+            let conversionResult;
+            try {
+              conversionResult = await (heic2any as any)({
+                blob: file,
+                toType: "image/jpeg",
+                quality: 0.8
+              });
+            } catch (err) {
+              console.warn("HEIC to JPEG failed, trying PNG...", err);
+              conversionResult = await (heic2any as any)({
+                blob: file,
+                toType: "image/png"
+              });
+            }
+            
+            const blobResult = (Array.isArray(conversionResult) ? conversionResult[0] : conversionResult) as Blob;
+            if (blobResult && (blobResult.type === "image/jpeg" || blobResult.type === "image/png")) {
+              console.log("HEIC conversion successful, type:", blobResult.type);
+              fileToProcess = new File([blobResult], file.name.replace(/\.[^/.]+$/, ".jpg"), { type: blobResult.type });
+            } else {
+              console.error("HEIC conversion returned invalid blob type:", blobResult?.type);
+            }
+          } catch (e) {
+            console.error("HEIC conversion fatal error:", e);
+          }
         }
 
-        // Step 2: Compress
-        const imageCompression = (await import("browser-image-compression")).default;
-        const options = {
-          maxSizeMB: 2,
-          maxWidthOrHeight: 1920,
-          useWebWorker: true,
-          fileType: "image/jpeg"
-        };
-        const compressedFile = await imageCompression(fileToProcess as File, options);
-        
-        // Step 3: Read result
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          setBillImage(reader.result as string);
-          setIsConverting(false);
-        };
-        reader.readAsDataURL(compressedFile);
-      } catch (error) {
-        console.error("Image processing error:", error);
-        const isHeic = file.name.toLowerCase().endsWith('.heic') || file.name.toLowerCase().endsWith('.heif');
-        if (isHeic) {
-          setIsHeicPreviewFailed(true);
+        try {
+          const imageCompressionModule = await import("browser-image-compression");
+          const imageCompression = imageCompressionModule.default || imageCompressionModule;
+          
+          const options = {
+            maxSizeMB: 1,
+            maxWidthOrHeight: 1280,
+            useWebWorker: true,
+            fileType: "image/jpeg"
+          };
+          
+          fileToProcess = await (imageCompression as any)(fileToProcess as File, options);
+          console.log("Compression successful");
+        } catch (e) {
+          console.error("Compression failed, using uncompressed:", e);
         }
-        // Fallback: use raw file (if it's HEIC, preview fails but data uploads)
+        
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          const result = reader.result as string;
+          setBillImage(result);
+          setIsConverting(false);
+          
+          // CRITICAL: Check if the resulting data URL is actually displayable if it was HEIC
+          if (isHeic) {
+             const isSuccess = result.startsWith('data:image/jpeg') || result.startsWith('data:image/png');
+             if (!isSuccess) setIsHeicPreviewFailed(true);
+          }
+        };
+        reader.readAsDataURL(fileToProcess as File);
+      } catch (error) {
+        console.error("Fatal image processing error:", error);
+        // Last resort fallback
         const reader = new FileReader();
         reader.onloadend = () => {
           setBillImage(reader.result as string);
           setIsConverting(false);
+          // If we reached here with HEIC and conversion failed, browser won't show it.
+          const isStillHeic = file.name.toLowerCase().endsWith('.heic') || file.name.toLowerCase().endsWith('.heif');
+          if (isStillHeic) setIsHeicPreviewFailed(true);
         };
         reader.readAsDataURL(file);
       }
     }
   };
+
+  if (cartItems === null) return null;
 
   if (cartItems.length === 0 && step === "form") {
     return (
@@ -958,7 +1040,7 @@ export default function CheckoutView() {
       return;
     }
     if (requireBill && !billImage) {
-      setError("Vui lòng tải lên Hình Ảnh Chuyển Khoản để hoàn tất, nếu bạn không thể upload ảnh hãy bấm vào biểu tượng kế bên để tắt upload ảnh.");
+      setError("Vui lòng tải lên Ảnh Chụp Màn Hình Chuyển Khoản để hoàn tất.");
       return;
     }
     setError(null);
@@ -969,7 +1051,10 @@ export default function CheckoutView() {
     
     try {
       setSubmitting(true);
-      const items = cartItems.map(item => {
+      document.getElementById('main-content')?.scrollTo(0, 0);
+      window.scrollTo(0, 0);
+      
+      const items = (cartItems || []).map(item => {
         const unitPrice = item.option.price;
         return {
           productName: item.productName,
@@ -989,17 +1074,25 @@ export default function CheckoutView() {
         billImage: requireBill ? billImage : null,
       };
 
-      await fetch(SHEET_ENDPOINT, {
+      const apiCall = fetch(SHEET_ENDPOINT, {
         method: "POST",
         body: JSON.stringify(payload),
       });
+
+      const animationTimer = new Promise(resolve => setTimeout(resolve, 6000));
+
+      await Promise.all([apiCall, animationTimer]);
+      
       clearCart();
       window.dispatchEvent(new Event("cart-updated"));
       setStep("success");
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      setSubmitting(false);
+      setTimeout(() => {
+        document.getElementById('main-content')?.scrollTo(0, 0);
+        window.scrollTo(0, 0);
+      }, 0);
     } catch {
       setError("Gửi đơn hàng thất bại. Vui lòng thử lại.");
-    } finally {
       setSubmitting(false);
     }
   };
@@ -1250,6 +1343,7 @@ export default function CheckoutView() {
                 <img src="/assets/images/bank/vietcombank-logo.png" alt="VCB" />
                 VIETCOMBANK
               </BankName>
+              <div style={{ fontSize: '1rem', color: '#777', fontFamily: 'F_REGULAR', marginTop: '-4px', marginBottom: '4px' }}>Ngân Hàng TMCP Ngoại Thương VN</div>
               <BankInfo>0461000636243</BankInfo>
               <BankName style={{ marginBottom: '2px' }}>VO TIEN THUAN</BankName>
               <CopyBtn
@@ -1263,11 +1357,11 @@ export default function CheckoutView() {
               >
                 {copied ? (
                   <>
-                    <Check size={14} /> <span>Đã sao chép</span>
+                    <Check size={14} /> <span>Đã Sao Chép</span>
                   </>
                 ) : (
                   <>
-                    <Copy size={14} /> <span>Sao Chép STK</span>
+                    <Copy size={14} /> <span>Sao Chép</span>
                   </>
                 )}
               </CopyBtn>
@@ -1276,26 +1370,21 @@ export default function CheckoutView() {
 
           <PaymentMethodSummary />
 
-          <div style={{ marginBottom: '24px', marginTop: '24px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-              <Label style={{ margin: 0 }}>Hình Ảnh Chuyển Khoản {requireBill ? '*' : ''}</Label>
-              <FolderCog size={18} color="#3b82f6" style={{ cursor: 'pointer' }} onClick={() => setBillModalOpen(true)} />
-            </div>
+          <div style={{ marginBottom: '16px', marginTop: '20px' }}>
+            <SectionTitle style={{ marginBottom: '8px' }}>Hình Ảnh Chuyển Khoản</SectionTitle>
             
-            {!billImage ? (
+            {isConverting ? (
+              <UploadZone>
+                <Spinner size={28} color="#22c55e" />
+                <span style={{ fontSize: '1rem', color: '#555', marginTop: '8px' }}>
+                  Đang xử lý ảnh...
+                </span>
+              </UploadZone>
+            ) : !billImage ? (
               <UploadZone onClick={() => {
-                if (!isConverting) fileInputRef.current?.click();
+                fileInputRef.current?.click();
               }}>
-                {isConverting ? (
-                  <>
-                    <Spinner size={28} color="#22c55e" />
-                    <span style={{ fontSize: '1rem', color: '#555', marginTop: '8px' }}>
-                      Đang xử lý ảnh HEIC...
-                    </span>
-                  </>
-                ) : (
-                  <ImageUp size={28} color="#777" />
-                )}
+                <ImageUp size={28} color="#777" />
               </UploadZone>
             ) : (
               <UploadImgPreview>
@@ -1326,15 +1415,26 @@ export default function CheckoutView() {
           {error && <ErrorMsg>{error}</ErrorMsg>}
 
           <SubmitBtn onClick={handleSubmitOrder} disabled={submitting}>
-            {submitting ? (
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                <LoadingSpinner size={20} />
-                <span>Đang Đặt Hàng...</span>
-              </div>
-            ) : "Xác Nhận Đặt Hàng"}
+            Xác Nhận Đặt Hàng
           </SubmitBtn>
         </Card>
       </TwoCol>
+
+      {submitting && (
+        <ProgressOverlay>
+          <ProgressContainer>
+            <div style={{ display: 'flex', alignItems: 'center', width: '100%', gap: '12px' }}>
+              <div style={{ flex: 1, height: '8px', background: '#eee', borderRadius: '4px', overflow: 'hidden' }}>
+                <div style={{ width: `${progress}%`, height: '100%', background: '#c8e64a', transition: 'width 0.1s linear' }} />
+              </div>
+              <span style={{ width: '40px', textAlign: 'right', fontFamily: 'F_BOLD', fontSize: '1.3rem', color: '#000' }}>{progress}%</span>
+            </div>
+            <div style={{ marginTop: '16px', fontSize: '1.25rem', fontFamily: 'F_MEDIUM', color: '#555', textAlign: 'center' }}>
+              {loadingTexts[loadingTextIndex]}
+            </div>
+          </ProgressContainer>
+        </ProgressOverlay>
+      )}
 
       {/* MODALS */}
       {isDepositModalOpen && (
@@ -1359,47 +1459,13 @@ export default function CheckoutView() {
         </ModalOverlay>
       )}
 
-      {isBillModalOpen && (
-        <ModalOverlay onClick={() => setBillModalOpen(false)}>
-          <ModalContent onClick={e => e.stopPropagation()} style={{ height: 'auto' }}>
-            <ModalTitle>
-              Tuỳ Chọn Upload
-              <CloseBtn onClick={() => setBillModalOpen(false)}><X size={18} /></CloseBtn>
-            </ModalTitle>
-            <div style={{ fontSize: '1.3rem', lineHeight: 1.6, color: '#333', marginBottom: '20px' }}>
-              Nếu bạn không thể chụp ảnh màn hình hoặc gặp lỗi khi upload ảnh, hãy nhấn nút tắt bên dưới để bỏ qua phần upload ảnh bill chuyển khoản.
-            </div>
-            
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#f8f8f8', padding: '16px', borderRadius: '12px' }}>
-              <span style={{ fontFamily: 'F_SEMIBOLD', fontSize: '1.25rem' }}>UPLOAD ẢNH CHUYỂN KHOẢN</span>
-              <div 
-                style={{
-                  width: '46px', height: '26px', 
-                  borderRadius: '20px', 
-                  background: requireBill ? '#22c55e' : '#ccc', 
-                  position: 'relative', cursor: 'pointer',
-                  transition: '0.3s'
-                }}
-                onClick={() => setRequireBill(!requireBill)}
-              >
-                <div style={{
-                  width: '22px', height: '22px',
-                  background: '#fff', borderRadius: '50%',
-                  position: 'absolute', top: '2px',
-                  left: requireBill ? '22px' : '2px',
-                  transition: '0.3s'
-                }} />
-              </div>
-            </div>
-          </ModalContent>
-        </ModalOverlay>
-      )}
+
 
       {isAddressModalOpen && (
         <ModalOverlay onClick={() => setAddressModalOpen(false)}>
           <ModalContent onClick={e => e.stopPropagation()}>
             <ModalTitle>
-              <span>Địa Chỉ</span>
+              <span>Chọn Địa Chỉ</span>
               <CloseBtn onClick={() => setAddressModalOpen(false)}><X size={18} /></CloseBtn>
             </ModalTitle>
 
@@ -1407,18 +1473,18 @@ export default function CheckoutView() {
             {(() => {
               const getDotStyle = (stepNum: number, tempVal: string) => {
                 if (stepNum === 3 && tempDistrict && currentAvailableWards.length === 0) {
-                  return { width: '8px', height: '8px', background: '#ccc', border: 'none', marginTop: '4px' };
+                  return { width: '6px', height: '6px', background: '#ccc', border: 'none' };
                 }
                 const isCurrent = addressStep === stepNum;
                 const isPassed = !!tempVal && addressStep !== stepNum;
                 
-                if (isPassed) {
-                  return { width: '16px', height: '16px', background: '#fff', border: '5px solid #000', marginTop: 0 };
-                }
                 if (isCurrent) {
-                  return { width: '8px', height: '8px', background: '#000', border: 'none', marginTop: '4px' };
+                  return { width: '16px', height: '16px', background: '#c8e64a', border: '5px solid #000' };
                 }
-                return { width: '8px', height: '8px', background: '#ccc', border: 'none', marginTop: '4px' };
+                if (isPassed) {
+                  return { width: '8px', height: '8px', background: '#000', border: 'none' };
+                }
+                return { width: '6px', height: '6px', background: '#ccc', border: 'none' };
               };
 
               const getTextStyle = (stepNum: number, tempVal: string) => {
@@ -1430,65 +1496,84 @@ export default function CheckoutView() {
               };
 
               return (
-                <>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                    <span style={{color: '#999', fontSize: '1.2rem', fontFamily: 'F_MEDIUM'}}>Chọn Địa Chỉ</span>
-                  </div>
-
-                  <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '16px' }}>
+                <div style={{ border: '1px solid #eee', borderRadius: '12px', padding: '10px 16px', marginBottom: '16px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column' }}>
                     {/* Step 1: City */}
-                    <div style={{ display: 'flex', position: 'relative', cursor: 'pointer' }} onClick={() => setAddressStep(1)}>
-                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '24px' }}>
-                        <div style={{ ...getDotStyle(1, tempCity), borderRadius: '50%', zIndex: 2 }} />
-                        <div style={{ width: '1px', background: '#eee', flex: 1, minHeight: '16px' }} />
+                    <div style={{ display: 'flex', position: 'relative', cursor: 'pointer', height: '36px', alignItems: 'center' }} onClick={() => setAddressStep(1)}>
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '20px', height: '100%' }}>
+                        <div style={{ flex: 1 }} />
+                        <div style={{ ...getDotStyle(1, tempCity), borderRadius: '50%', zIndex: 2, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+
+                        </div>
+                        <div style={{ width: '1px', background: '#eee', flex: 1 }} />
                       </div>
-                      <div style={{ flex: 1, paddingLeft: '8px', paddingBottom: '10px', color: (addressStep === 1 || tempCity) ? '#000' : '#ccc', fontFamily: getTextStyle(1, tempCity), fontSize: '1.3rem' }}>
-                        {tempCity ? formatCityName(tempCity) : "Chọn Thành Phố"}
+                      <div style={{ flex: 1, paddingLeft: '8px', color: (addressStep === 1 || tempCity) ? '#000' : '#ccc', fontFamily: getTextStyle(1, tempCity), fontSize: '1.25rem' }}>
+                        {tempCity ? formatCityName(tempCity) : "Tỉnh/Thành Phố"}
                       </div>
                     </div>
 
                     {/* Step 2: District */}
-                    <div style={{ display: 'flex', position: 'relative', cursor: tempCity ? 'pointer' : 'default' }} onClick={() => tempCity && setAddressStep(2)}>
-                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '24px' }}>
-                        <div style={{ ...getDotStyle(2, tempDistrict), borderRadius: '50%', zIndex: 2 }} />
-                        <div style={{ width: '1px', background: '#eee', flex: 1, minHeight: '16px' }} />
+                    <div style={{ display: 'flex', position: 'relative', cursor: tempCity ? 'pointer' : 'default', height: '36px', alignItems: 'center' }} onClick={() => tempCity && setAddressStep(2)}>
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '20px', height: '100%' }}>
+                        <div style={{ width: '1px', background: '#eee', flex: 1 }} />
+                        <div style={{ ...getDotStyle(2, tempDistrict), borderRadius: '50%', zIndex: 2, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        </div>
+                        <div style={{ width: '1px', background: '#eee', flex: 1 }} />
                       </div>
-                      <div style={{ flex: 1, paddingLeft: '8px', paddingBottom: '10px', color: (addressStep === 2 || tempDistrict) ? '#000' : '#ccc', fontFamily: getTextStyle(2, tempDistrict), fontSize: '1.3rem' }}>
-                        {tempDistrict || "Chọn Quận/Huyện"}
+                      <div style={{ flex: 1, paddingLeft: '8px', color: (addressStep === 2 || tempDistrict) ? '#000' : '#ccc', fontFamily: getTextStyle(2, tempDistrict), fontSize: '1.25rem' }}>
+                        {tempDistrict || "Quận/Huyện"}
                       </div>
                     </div>
 
                     {/* Step 3: Ward */}
-                    <div style={{ display: 'flex', position: 'relative', cursor: (currentAvailableWards.length > 0 && tempDistrict) ? 'pointer' : (tempDistrict ? 'not-allowed' : 'default') }} onClick={() => tempDistrict && currentAvailableWards.length > 0 && setAddressStep(3)}>
-                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '24px' }}>
-                        <div style={{ ...getDotStyle(3, tempWard), borderRadius: '50%', zIndex: 2 }} />
+                    <div style={{ display: 'flex', position: 'relative', cursor: (currentAvailableWards.length > 0 && tempDistrict) ? 'pointer' : (tempDistrict ? 'not-allowed' : 'default'), height: '36px', alignItems: 'center' }} onClick={() => tempDistrict && currentAvailableWards.length > 0 && setAddressStep(3)}>
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '20px', height: '100%' }}>
+                        <div style={{ width: '1px', background: '#eee', flex: 1 }} />
+                        <div style={{ ...getDotStyle(3, tempWard), borderRadius: '50%', zIndex: 2, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        </div>
+                        <div style={{ flex: 1 }} />
                       </div>
-                      <div style={{ flex: 1, paddingLeft: '8px', paddingBottom: '4px', color: tempDistrict && currentAvailableWards.length === 0 ? '#ccc' : ((addressStep === 3 || tempWard) ? '#000' : '#ccc'), fontFamily: tempDistrict && currentAvailableWards.length === 0 ? 'F_REGULAR' : getTextStyle(3, tempWard), fontSize: '1.3rem' }}>
-                        {tempDistrict && currentAvailableWards.length === 0 ? "Không có Phường/Xã" : (tempWard || "Chọn Phường/Xã")}
+                      <div style={{ flex: 1, paddingLeft: '8px', color: tempDistrict && currentAvailableWards.length === 0 ? '#ccc' : ((addressStep === 3 || tempWard) ? '#000' : '#ccc'), fontFamily: tempDistrict && currentAvailableWards.length === 0 ? 'F_REGULAR' : getTextStyle(3, tempWard), fontSize: '1.25rem' }}>
+                        {tempDistrict && currentAvailableWards.length === 0 ? "--" : (tempWard || "Phường/Xã")}
                       </div>
                     </div>
                   </div>
-                </>
+                </div>
               );
             })()}
 
             {/* Address Step Content */}
-            <div style={{ paddingBottom: '8px', fontSize: '1.1rem', color: '#999', fontFamily: 'F_MEDIUM' }}>
-              {addressStep === 1 && "Thành Phố"}
-              {addressStep === 2 && "Quận/Huyện"}
-              {addressStep === 3 && "Phường/Xã"}
-              {addressStep === 4 && "Số Nhà, Tên Đường"}
+            <div style={{ paddingBottom: '8px', fontSize: '1.1rem', color: '#777', fontFamily: 'F_MEDIUM' }}>
+              {addressStep === 1 && "Chọn Tỉnh/Thành Phố"}
+              {addressStep === 2 && "Chọn Quận/Huyện"}
+              {addressStep === 3 && "Chọn Phường/Xã"}
+              {addressStep === 4 && "Nhập Số Nhà, Tên Đường *"}
             </div>
 
             <div style={{ flex: 1, overflowY: 'auto' }} ref={scrollRef}>
               {addressStep === 1 && (
                 <div style={{ display: 'flex', flexDirection: 'column', fontSize: '1.3rem' }}>
                   {[...VIETNAM_DATA]
-                    .sort((a,b) => formatCityName(a.n).localeCompare(formatCityName(b.n), 'vi'))
-                    .map(p => (
+                    .sort((a,b) => {
+                      const nameA = formatCityName(a.n);
+                      const nameB = formatCityName(b.n);
+                      
+                      const isA_HCM = nameA === "Hồ Chí Minh";
+                      const isA_HN = nameA === "Hà Nội";
+                      const isB_HCM = nameB === "Hồ Chí Minh";
+                      const isB_HN = nameB === "Hà Nội";
+
+                      if (isA_HCM) return -1;
+                      if (isB_HCM) return 1;
+                      if (isA_HN) return -1;
+                      if (isB_HN) return 1;
+
+                      return nameA.localeCompare(nameB, 'vi');
+                    })
+                    .map((p, index, array) => (
                     <div 
                       key={p.n} 
-                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 8px', borderBottom: '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempCity === p.n ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 16px', borderBottom: index === array.length - 1 ? 'none' : '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempCity === p.n ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
                       onClick={() => {
                         setTempCity(p.n);
                         setTempDistrict("");
@@ -1504,11 +1589,11 @@ export default function CheckoutView() {
               )}
               {addressStep === 2 && (
                 <div style={{ display: 'flex', flexDirection: 'column', fontSize: '1.3rem' }}>
-                  {VIETNAM_DATA.find(p => p.n === tempCity)?.d
-                    .map(d => (
+                   {VIETNAM_DATA.find(p => p.n === tempCity)?.d
+                    .map((d, index, array) => (
                     <div 
                       key={d.n} 
-                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 8px', borderBottom: '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempDistrict === d.n ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 16px', borderBottom: index === array.length - 1 ? 'none' : '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempDistrict === d.n ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
                       onClick={() => {
                         setTempDistrict(d.n);
                         setTempWard("");
@@ -1526,10 +1611,10 @@ export default function CheckoutView() {
               {addressStep === 3 && (
                 <div style={{ display: 'flex', flexDirection: 'column', fontSize: '1.3rem' }}>
                   {currentAvailableWards
-                    .map(w => (
+                    .map((w, index, array) => (
                     <div 
                       key={w} 
-                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 8px', borderBottom: '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempWard === w ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 16px', borderBottom: index === array.length - 1 ? 'none' : '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempWard === w ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
                       onClick={() => {
                         setTempWard(w);
                         setAddressStep(4);
@@ -1557,6 +1642,7 @@ export default function CheckoutView() {
               <div style={{ marginTop: '20px', display: 'flex', gap: '12px' }}>
                 <SubmitBtn 
                   style={{ flex: 2 }} 
+                  disabled={!tempStreet.trim()}
                   onClick={() => {
                     setCity(tempCity);
                     setDistrict(tempDistrict);
