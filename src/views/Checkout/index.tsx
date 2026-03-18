@@ -27,6 +27,7 @@ const Page = styled.div<{ $success?: boolean }>`
   min-height: 100vh;
   padding: 24px 40px;
   background: transparent;
+  -webkit-tap-highlight-color: transparent;
   @media screen and (max-width: 767px) {
     padding: 0;
   }
@@ -420,15 +421,16 @@ const ModalContent = styled.div`
   background: #fff;
   width: 100%;
   max-width: 500px;
-  max-height: 90vh;
+  max-height: 90dvh;
   border-radius: 20px 20px 0 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     border-radius: 20px;
-    height: 80vh;
+    max-height: 80vh;
   }
 `;
 
@@ -451,7 +453,23 @@ const CloseBtn = styled.button`
   justify-content: center;
   cursor: pointer;
   transition: 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  color: #555;
   &:hover { background: #e0e0e0; }
+  @media screen and (max-width: 767px) {
+    color: #555 !important;
+  }
+`;
+
+const IconBtn = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  color: inherit;
 `;
 
 const ClickableDiv = styled.div`
@@ -1214,7 +1232,9 @@ export default function CheckoutView() {
           <SummaryRow $bold $color="#ff3b30">
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               Tiền Cọc Đơn Hàng
-              <HelpCircle size={16} style={{ cursor: 'pointer' }} onClick={() => setDepositModalOpen(true)} />
+            <IconBtn onClick={() => setDepositModalOpen(true)}>
+              <HelpCircle size={16} />
+            </IconBtn>
             </span>
             <span>{deposit.toLocaleString("vi-VN")}.000 đ</span>
           </SummaryRow>
