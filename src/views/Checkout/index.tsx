@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { useRouter } from "next/router";
-import { ArrowLeft, Check, ChevronDown, ChevronUp, Copy, Loader2 } from "lucide-react";
+import { ArrowLeft, Check, ChevronDown, ChevronUp, Copy, Loader2, Image as ImageIcon, HelpCircle, X, Edit2, ChevronRight, FolderCog, ImageUp } from "lucide-react";
 import { CartItem } from "@/types/product";
 import { getCart, getCartTotal, clearCart } from "@/utils/carts";
 import { findColorDef } from "@/utils/colors";
 import { copyToClipboard } from "@/utils";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbweimQGN6gaZ6RqQgoYybF7tnU7OlVT6KU8_TfnButyiwAiZ6v-K5mV1KWKRf7TrJsZ/exec";
+  "https://script.google.com/macros/s/AKfycby4SQsPkz_lJdqqVmd28qrCcf2x-daCG3MT3ProRNmqh7LVZHJKTKKR5wAxRZr5qg9H/exec";
 
 import divisions from "@/data/vietnam-divisions.json";
 
@@ -440,6 +440,133 @@ const SubmitBtn = styled.button`
   }
 `;
 
+const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+`;
+
+const ModalContent = styled.div`
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    border-radius: 20px;
+    height: 80vh;
+  }
+`;
+
+const ModalTitle = styled.div`
+  font-family: F_BOLD;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const CloseBtn = styled.button`
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 32px; height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover { background: #e0e0e0; }
+`;
+
+const ClickableDiv = styled.div`
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+  &:hover { border-color: #c8e64a; }
+`;
+
+const spinnerSpin = keyframes`
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+`;
+const Spinner = styled(Loader2)`
+  animation: ${spinnerSpin} 1s linear infinite;
+`;
+
+const UploadZone = styled.div`
+  border: 1.5px dashed #ccc;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  background: #fafafa;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  &:hover {
+    border-color: #c8e64a;
+    background: #f0fbcc;
+  }
+`;
+
+const UploadImgPreview = styled.div`
+  position: relative;
+  width: 100%;
+  max-height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 100%; 
+    max-height: 350px; 
+    object-fit: contain;
+  }
+`;
+
+const EditImgBtn = styled.button`
+  position: absolute;
+  top: 8px; right: 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background: rgba(0,0,0,0.8);
+  }
+`;
+
+
 const ErrorMsg = styled.div`
   background: rgba(229, 57, 53, 0.08);
   color: #e53935;
@@ -458,10 +585,11 @@ const QRBlock = styled.div`
   border: 1px solid #f0f0f0;
   border-radius: 16px;
   padding: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   @media screen and (max-width: 767px) {
     gap: 16px;
     padding: 8px;
+    margin-bottom: 4px;
   }
 `;
 const QRWrap = styled.div`
@@ -481,12 +609,12 @@ const QRInfoWrap = styled.div`
   text-align: left;
 `;
 const QRImg = styled.img`
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   object-fit: contain;
   @media screen and (max-width: 767px) {
-    width: 144px;
-    height: 144px;
+    width: 114px;
+    height: 114px;
   }
 `;
 const BankInfo = styled.div`
@@ -694,6 +822,30 @@ export default function CheckoutView() {
   const [showAll, setShowAll] = useState(false);
   const [limit, setLimit] = useState(2);
 
+  const [isDepositModalOpen, setDepositModalOpen] = useState(false);
+  const [isBillModalOpen, setBillModalOpen] = useState(false);
+  const [requireBill, setRequireBill] = useState(true);
+  const [billImage, setBillImage] = useState<string | null>(null);
+  const [billFileName, setBillFileName] = useState<string | null>(null);
+  const [isConverting, setIsConverting] = useState(false);
+  const [isHeicPreviewFailed, setIsHeicPreviewFailed] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const [isAddressModalOpen, setAddressModalOpen] = useState(false);
+  const [addressStep, setAddressStep] = useState(1);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (scrollRef.current) scrollRef.current.scrollTop = 0;
+  }, [addressStep]);
+
+  const formatCityName = (n: string) => n.replace(/^Tỉnh\s+/i, "").replace(/^Thành phố\s+/i, "Thành Phố ");
+
+  const [tempCity, setTempCity] = useState("");
+  const [tempDistrict, setTempDistrict] = useState("");
+  const [tempWard, setTempWard] = useState("");
+  const [tempStreet, setTempStreet] = useState("");
+
   const pageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -705,13 +857,81 @@ export default function CheckoutView() {
 
   const totalPrice = getCartTotal(cartItems);
   const shipFee = 40;
-  const deposit = 40;
+  const deposit = 50;
   const shipDiscount = 10;
 
   const availableWards = React.useMemo(() => {
     if (!city || !district) return [];
     return VIETNAM_DATA.find(p => p.n === city)?.d.find(d => d.n === district)?.w || [];
   }, [city, district]);
+
+  const currentAvailableWards = React.useMemo(() => {
+    if (!tempCity || !tempDistrict) return [];
+    return VIETNAM_DATA.find(p => p.n === tempCity)?.d.find(d => d.n === tempDistrict)?.w || [];
+  }, [tempCity, tempDistrict]);
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      if (file.size > 10 * 1024 * 1024) {
+        alert("Kích thước ảnh quá lớn, vui lòng chọn ảnh < 10MB");
+        return;
+      }
+      setBillFileName(file.name);
+      setIsHeicPreviewFailed(false);
+      setIsConverting(true);
+      
+      try {
+        const isHeic = file.name.toLowerCase().endsWith('.heic') || file.name.toLowerCase().endsWith('.heif');
+        let fileToProcess: File | Blob = file;
+
+        // Step 1: Force convert HEIC if needed, because iOS often provides empty MIME types which crash libraries
+        if (isHeic) {
+          const heicModule = await import("heic2any");
+          const heic2anyFn = heicModule.default || heicModule;
+          const typedBlob = new Blob([file], { type: "image/heic" }); // Fix for missing MIME
+          const conversionResult = await heic2anyFn({
+            blob: typedBlob,
+            toType: "image/jpeg",
+            quality: 0.8
+          });
+          const blobResult = (Array.isArray(conversionResult) ? conversionResult[0] : conversionResult) as Blob;
+          fileToProcess = new File([blobResult], file.name.replace(/\.[^/.]+$/, ".jpg"), { type: "image/jpeg" });
+        }
+
+        // Step 2: Compress
+        const imageCompression = (await import("browser-image-compression")).default;
+        const options = {
+          maxSizeMB: 2,
+          maxWidthOrHeight: 1920,
+          useWebWorker: true,
+          fileType: "image/jpeg"
+        };
+        const compressedFile = await imageCompression(fileToProcess as File, options);
+        
+        // Step 3: Read result
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          setBillImage(reader.result as string);
+          setIsConverting(false);
+        };
+        reader.readAsDataURL(compressedFile);
+      } catch (error) {
+        console.error("Image processing error:", error);
+        const isHeic = file.name.toLowerCase().endsWith('.heic') || file.name.toLowerCase().endsWith('.heif');
+        if (isHeic) {
+          setIsHeicPreviewFailed(true);
+        }
+        // Fallback: use raw file (if it's HEIC, preview fails but data uploads)
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          setBillImage(reader.result as string);
+          setIsConverting(false);
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  };
 
   if (cartItems.length === 0 && step === "form") {
     return (
@@ -735,6 +955,10 @@ export default function CheckoutView() {
     const isWardRequired = availableWards.length > 0;
     if (!name.trim() || !phone.trim() || !city || !district || (isWardRequired && !ward) || !street.trim()) {
       setError("Vui lòng nhập đầy đủ Tên, SĐT và Địa chỉ.");
+      return;
+    }
+    if (requireBill && !billImage) {
+      setError("Vui lòng tải lên Hình Ảnh Chuyển Khoản để hoàn tất, nếu bạn không thể upload ảnh hãy bấm vào biểu tượng kế bên để tắt upload ảnh.");
       return;
     }
     setError(null);
@@ -762,6 +986,7 @@ export default function CheckoutView() {
         customerPhone: phone,
         customerAddress: fullAddress,
         customerPayment: method === 0 ? "COD - Tiền Mặt" : "Chuyển Khoản",
+        billImage: requireBill ? billImage : null,
       };
 
       await fetch(SHEET_ENDPOINT, {
@@ -887,14 +1112,22 @@ export default function CheckoutView() {
 
 
 
+
+
   const PaymentMethodSummary = () => (
     <MethodSummaryWrap>
       {method === 0 ? (
         <>
-          <SummaryRow $bold $color="#ff3b30"><span>Tiền Cọc Phí Ship</span><span>{deposit.toLocaleString("vi-VN")}.000 đ</span></SummaryRow>
+          <SummaryRow $bold $color="#ff3b30">
+            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              Tiền Cọc Đơn Hàng
+              <HelpCircle size={16} style={{ cursor: 'pointer' }} onClick={() => setDepositModalOpen(true)} />
+            </span>
+            <span>{deposit.toLocaleString("vi-VN")}.000 đ</span>
+          </SummaryRow>
           <SummaryRow $bold>
             <span>Thanh Toán Khi Nhận</span>
-            <span>{totalPrice.toLocaleString("vi-VN")}.000 đ</span>
+            <span>{(totalPrice + shipFee - deposit).toLocaleString("vi-VN")}.000 đ</span>
           </SummaryRow>
         </>
       ) : (
@@ -974,53 +1207,26 @@ export default function CheckoutView() {
           </InputRow>
           <FormGroup>
             <Label>Địa Chỉ *</Label>
-            <div style={{ marginBottom: "12px" }}>
-              <Select 
-                value={city} 
-                onChange={(e) => {
-                  setCity(e.target.value);
-                  setDistrict("");
-                  setWard("");
-                }}
-              >
-                <option value="">Chọn Tỉnh/Thành Phố</option>
-                {VIETNAM_DATA.map(p => (
-                  <option key={p.n} value={p.n}>{p.n}</option>
-                ))}
-              </Select>
-            </div>
-
-            <SelectFlex>
-              <Select 
-                value={district} 
-                disabled={!city}
-                onChange={(e) => {
-                  setDistrict(e.target.value);
-                  setWard("");
-                }}
-              >
-                <option value="">Chọn Quận/Huyện</option>
-                {city && VIETNAM_DATA.find(p => p.n === city)?.d.map(d => (
-                  <option key={d.n} value={d.n}>{d.n}</option>
-                ))}
-              </Select>
-
-              <Select 
-                value={ward} 
-                disabled={!district || availableWards.length === 0}
-                onChange={(e) => setWard(e.target.value)}
-              >
-                <option value="">{district && availableWards.length === 0 ? "--" : "Chọn Phường/Xã"}</option>
-                {availableWards.map(w => (
-                  <option key={w} value={w}>{w}</option>
-                ))}
-              </Select>
-            </SelectFlex>
-            <Input 
-              value={street} 
-              onChange={(e) => setStreet(e.target.value)} 
-              placeholder="Số Nhà, Tên Đường ..." 
-            />
+            <ClickableDiv onClick={() => {
+              setTempCity(city);
+              setTempDistrict(district);
+              setTempWard(ward);
+              setTempStreet(street);
+              setAddressStep(1);
+              setAddressModalOpen(true);
+            }}>
+              <div style={{ flex: 1, marginRight: '16px' }}>
+                {!city ? (
+                  <span style={{ color: '#777', fontFamily: 'F_MEDIUM', fontSize: '1.3rem' }}>Chọn Địa Chỉ</span>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <span style={{ fontFamily: 'F_SEMIBOLD', fontSize: '1.3rem', color: '#000' }}>{street || "---"}</span>
+                    <span style={{ color: '#555', fontSize: '1.15rem' }}>{[ward, district, city].filter(Boolean).join(", ")}</span>
+                  </div>
+                )}
+              </div>
+              <ChevronRight size={20} color="#777" />
+            </ClickableDiv>
           </FormGroup>
 
 
@@ -1035,8 +1241,6 @@ export default function CheckoutView() {
             </PayMethodBtn>
           </PaymentMethods>
 
-          <PaymentMethodSummary />
-
           <QRBlock>
             <QRWrap>
               <QRImg src="/assets/images/qr/qr-banking.jpg" />
@@ -1047,7 +1251,7 @@ export default function CheckoutView() {
                 VIETCOMBANK
               </BankName>
               <BankInfo>0461000636243</BankInfo>
-              <BankName style={{ marginBottom: '12px' }}>VO TIEN THUAN</BankName>
+              <BankName style={{ marginBottom: '2px' }}>VO TIEN THUAN</BankName>
               <CopyBtn
                 $success={copied}
                 onClick={() => {
@@ -1055,7 +1259,7 @@ export default function CheckoutView() {
                   setCopied(true);
                   setTimeout(() => setCopied(false), 2000);
                 }}
-                style={{ marginTop: '10px', marginBottom: 0 }}
+                style={{ marginTop: '4px', marginBottom: 0 }}
               >
                 {copied ? (
                   <>
@@ -1070,6 +1274,55 @@ export default function CheckoutView() {
             </QRInfoWrap>
           </QRBlock>
 
+          <PaymentMethodSummary />
+
+          <div style={{ marginBottom: '24px', marginTop: '24px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+              <Label style={{ margin: 0 }}>Hình Ảnh Chuyển Khoản {requireBill ? '*' : ''}</Label>
+              <FolderCog size={18} color="#3b82f6" style={{ cursor: 'pointer' }} onClick={() => setBillModalOpen(true)} />
+            </div>
+            
+            {!billImage ? (
+              <UploadZone onClick={() => {
+                if (!isConverting) fileInputRef.current?.click();
+              }}>
+                {isConverting ? (
+                  <>
+                    <Spinner size={28} color="#22c55e" />
+                    <span style={{ fontSize: '1rem', color: '#555', marginTop: '8px' }}>
+                      Đang xử lý ảnh HEIC...
+                    </span>
+                  </>
+                ) : (
+                  <ImageUp size={28} color="#777" />
+                )}
+              </UploadZone>
+            ) : (
+              <UploadImgPreview>
+                {isHeicPreviewFailed ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', padding: '20px' }}>
+                    <ImageIcon size={32} color="#777" />
+                    <span style={{ fontSize: '1.2rem', color: '#555', fontFamily: 'F_MEDIUM', textAlign: 'center', wordBreak: 'break-all' }}>
+                      {billFileName}
+                    </span>
+                  </div>
+                ) : (
+                  <img src={billImage} alt="Bill Transfer" />
+                )}
+                <EditImgBtn onClick={() => fileInputRef.current?.click()}>
+                  <Edit2 size={16} />
+                </EditImgBtn>
+              </UploadImgPreview>
+            )}
+            <input 
+              type="file" 
+              accept="image/*" 
+              ref={fileInputRef} 
+              style={{ display: 'none' }} 
+              onChange={handleImageUpload} 
+            />
+          </div>
+
           {error && <ErrorMsg>{error}</ErrorMsg>}
 
           <SubmitBtn onClick={handleSubmitOrder} disabled={submitting}>
@@ -1078,10 +1331,248 @@ export default function CheckoutView() {
                 <LoadingSpinner size={20} />
                 <span>Đang Đặt Hàng...</span>
               </div>
-            ) : method === 0 ? "Xác Nhận Đã Cọc" : "Xác Nhận Đã Chuyển Khoản"}
+            ) : "Xác Nhận Đặt Hàng"}
           </SubmitBtn>
         </Card>
       </TwoCol>
+
+      {/* MODALS */}
+      {isDepositModalOpen && (
+        <ModalOverlay onClick={() => setDepositModalOpen(false)}>
+          <ModalContent onClick={e => e.stopPropagation()} style={{ height: 'auto', maxHeight: '90vh' }}>
+            <ModalTitle>
+              Tiền Cọc Đơn Hàng
+              <CloseBtn onClick={() => setDepositModalOpen(false)}><X size={18} /></CloseBtn>
+            </ModalTitle>
+            <div style={{ fontSize: '1.3rem', lineHeight: 1.6, color: '#333' }}>
+              <p style={{ marginBottom: '12px' }}>
+                Tiền Cọc Đơn Hàng là phần tiền để shop dùng trả phí ship của đơn hàng (~40K) + tiền hoàn (10K) nếu đơn hàng không giao thành công.
+              </p>
+              <p style={{ marginBottom: '12px' }}>
+                Tiền Cọc Đơn Hàng là bắt buộc đối với mọi đơn COD (Cash On Delivery - Thanh Toán Khi Nhận Hàng) bán ra tại shop, đối với mọi khách hàng.
+              </p>
+              <p>
+                Phần tiền dư sau khi trừ Phí Ship sẽ được shop trừ thẳng vào giá sản phẩm để thanh toán khi nhận.
+              </p>
+            </div>
+          </ModalContent>
+        </ModalOverlay>
+      )}
+
+      {isBillModalOpen && (
+        <ModalOverlay onClick={() => setBillModalOpen(false)}>
+          <ModalContent onClick={e => e.stopPropagation()} style={{ height: 'auto' }}>
+            <ModalTitle>
+              Tuỳ Chọn Upload
+              <CloseBtn onClick={() => setBillModalOpen(false)}><X size={18} /></CloseBtn>
+            </ModalTitle>
+            <div style={{ fontSize: '1.3rem', lineHeight: 1.6, color: '#333', marginBottom: '20px' }}>
+              Nếu bạn không thể chụp ảnh màn hình hoặc gặp lỗi khi upload ảnh, hãy nhấn nút tắt bên dưới để bỏ qua phần upload ảnh bill chuyển khoản.
+            </div>
+            
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#f8f8f8', padding: '16px', borderRadius: '12px' }}>
+              <span style={{ fontFamily: 'F_SEMIBOLD', fontSize: '1.25rem' }}>UPLOAD ẢNH CHUYỂN KHOẢN</span>
+              <div 
+                style={{
+                  width: '46px', height: '26px', 
+                  borderRadius: '20px', 
+                  background: requireBill ? '#22c55e' : '#ccc', 
+                  position: 'relative', cursor: 'pointer',
+                  transition: '0.3s'
+                }}
+                onClick={() => setRequireBill(!requireBill)}
+              >
+                <div style={{
+                  width: '22px', height: '22px',
+                  background: '#fff', borderRadius: '50%',
+                  position: 'absolute', top: '2px',
+                  left: requireBill ? '22px' : '2px',
+                  transition: '0.3s'
+                }} />
+              </div>
+            </div>
+          </ModalContent>
+        </ModalOverlay>
+      )}
+
+      {isAddressModalOpen && (
+        <ModalOverlay onClick={() => setAddressModalOpen(false)}>
+          <ModalContent onClick={e => e.stopPropagation()}>
+            <ModalTitle>
+              <span>Địa Chỉ</span>
+              <CloseBtn onClick={() => setAddressModalOpen(false)}><X size={18} /></CloseBtn>
+            </ModalTitle>
+
+            {/* Address Progress Bar */}
+            {(() => {
+              const getDotStyle = (stepNum: number, tempVal: string) => {
+                if (stepNum === 3 && tempDistrict && currentAvailableWards.length === 0) {
+                  return { width: '8px', height: '8px', background: '#ccc', border: 'none', marginTop: '4px' };
+                }
+                const isCurrent = addressStep === stepNum;
+                const isPassed = !!tempVal && addressStep !== stepNum;
+                
+                if (isPassed) {
+                  return { width: '16px', height: '16px', background: '#fff', border: '5px solid #000', marginTop: 0 };
+                }
+                if (isCurrent) {
+                  return { width: '8px', height: '8px', background: '#000', border: 'none', marginTop: '4px' };
+                }
+                return { width: '8px', height: '8px', background: '#ccc', border: 'none', marginTop: '4px' };
+              };
+
+              const getTextStyle = (stepNum: number, tempVal: string) => {
+                const isCurrent = addressStep === stepNum;
+                const isPassed = !!tempVal && addressStep !== stepNum;
+                if (isPassed) return 'F_SEMIBOLD';
+                if (isCurrent) return 'F_MEDIUM';
+                return 'F_REGULAR';
+              };
+
+              return (
+                <>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                    <span style={{color: '#999', fontSize: '1.2rem', fontFamily: 'F_MEDIUM'}}>Chọn Địa Chỉ</span>
+                  </div>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '16px' }}>
+                    {/* Step 1: City */}
+                    <div style={{ display: 'flex', position: 'relative', cursor: 'pointer' }} onClick={() => setAddressStep(1)}>
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '24px' }}>
+                        <div style={{ ...getDotStyle(1, tempCity), borderRadius: '50%', zIndex: 2 }} />
+                        <div style={{ width: '1px', background: '#eee', flex: 1, minHeight: '16px' }} />
+                      </div>
+                      <div style={{ flex: 1, paddingLeft: '8px', paddingBottom: '10px', color: (addressStep === 1 || tempCity) ? '#000' : '#ccc', fontFamily: getTextStyle(1, tempCity), fontSize: '1.3rem' }}>
+                        {tempCity ? formatCityName(tempCity) : "Chọn Thành Phố"}
+                      </div>
+                    </div>
+
+                    {/* Step 2: District */}
+                    <div style={{ display: 'flex', position: 'relative', cursor: tempCity ? 'pointer' : 'default' }} onClick={() => tempCity && setAddressStep(2)}>
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '24px' }}>
+                        <div style={{ ...getDotStyle(2, tempDistrict), borderRadius: '50%', zIndex: 2 }} />
+                        <div style={{ width: '1px', background: '#eee', flex: 1, minHeight: '16px' }} />
+                      </div>
+                      <div style={{ flex: 1, paddingLeft: '8px', paddingBottom: '10px', color: (addressStep === 2 || tempDistrict) ? '#000' : '#ccc', fontFamily: getTextStyle(2, tempDistrict), fontSize: '1.3rem' }}>
+                        {tempDistrict || "Chọn Quận/Huyện"}
+                      </div>
+                    </div>
+
+                    {/* Step 3: Ward */}
+                    <div style={{ display: 'flex', position: 'relative', cursor: (currentAvailableWards.length > 0 && tempDistrict) ? 'pointer' : (tempDistrict ? 'not-allowed' : 'default') }} onClick={() => tempDistrict && currentAvailableWards.length > 0 && setAddressStep(3)}>
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '24px' }}>
+                        <div style={{ ...getDotStyle(3, tempWard), borderRadius: '50%', zIndex: 2 }} />
+                      </div>
+                      <div style={{ flex: 1, paddingLeft: '8px', paddingBottom: '4px', color: tempDistrict && currentAvailableWards.length === 0 ? '#ccc' : ((addressStep === 3 || tempWard) ? '#000' : '#ccc'), fontFamily: tempDistrict && currentAvailableWards.length === 0 ? 'F_REGULAR' : getTextStyle(3, tempWard), fontSize: '1.3rem' }}>
+                        {tempDistrict && currentAvailableWards.length === 0 ? "Không có Phường/Xã" : (tempWard || "Chọn Phường/Xã")}
+                      </div>
+                    </div>
+                  </div>
+                </>
+              );
+            })()}
+
+            {/* Address Step Content */}
+            <div style={{ paddingBottom: '8px', fontSize: '1.1rem', color: '#999', fontFamily: 'F_MEDIUM' }}>
+              {addressStep === 1 && "Thành Phố"}
+              {addressStep === 2 && "Quận/Huyện"}
+              {addressStep === 3 && "Phường/Xã"}
+              {addressStep === 4 && "Số Nhà, Tên Đường"}
+            </div>
+
+            <div style={{ flex: 1, overflowY: 'auto' }} ref={scrollRef}>
+              {addressStep === 1 && (
+                <div style={{ display: 'flex', flexDirection: 'column', fontSize: '1.3rem' }}>
+                  {[...VIETNAM_DATA]
+                    .sort((a,b) => formatCityName(a.n).localeCompare(formatCityName(b.n), 'vi'))
+                    .map(p => (
+                    <div 
+                      key={p.n} 
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 8px', borderBottom: '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempCity === p.n ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
+                      onClick={() => {
+                        setTempCity(p.n);
+                        setTempDistrict("");
+                        setTempWard("");
+                        setAddressStep(2);
+                      }}
+                    >
+                      {formatCityName(p.n)}
+                      {tempCity === p.n && <Check size={16} color="#000" strokeWidth={3} />}
+                    </div>
+                  ))}
+                </div>
+              )}
+              {addressStep === 2 && (
+                <div style={{ display: 'flex', flexDirection: 'column', fontSize: '1.3rem' }}>
+                  {VIETNAM_DATA.find(p => p.n === tempCity)?.d
+                    .map(d => (
+                    <div 
+                      key={d.n} 
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 8px', borderBottom: '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempDistrict === d.n ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
+                      onClick={() => {
+                        setTempDistrict(d.n);
+                        setTempWard("");
+                        const dWards = VIETNAM_DATA.find(p => p.n === tempCity)?.d.find(dx => dx.n === d.n)?.w || [];
+                        if (dWards.length === 0) setAddressStep(4);
+                        else setAddressStep(3);
+                      }}
+                    >
+                      {d.n}
+                      {tempDistrict === d.n && <Check size={16} color="#000" strokeWidth={3} />}
+                    </div>
+                  ))}
+                </div>
+              )}
+              {addressStep === 3 && (
+                <div style={{ display: 'flex', flexDirection: 'column', fontSize: '1.3rem' }}>
+                  {currentAvailableWards
+                    .map(w => (
+                    <div 
+                      key={w} 
+                      style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 8px', borderBottom: '1px solid #f5f5f5', cursor: 'pointer', fontFamily: tempWard === w ? 'F_BOLD' : 'F_REGULAR', color: '#000' }}
+                      onClick={() => {
+                        setTempWard(w);
+                        setAddressStep(4);
+                      }}
+                    >
+                      {w}
+                      {tempWard === w && <Check size={16} color="#000" strokeWidth={3} />}
+                    </div>
+                  ))}
+                </div>
+              )}
+              {addressStep === 4 && (
+                <div style={{ display: 'flex', flexDirection: 'column', paddingTop: '4px' }}>
+                  <Input 
+                    value={tempStreet}
+                    onChange={e => setTempStreet(e.target.value)}
+                    placeholder="Nhập địa chỉ cụ thể"
+                    autoFocus
+                  />
+                </div>
+              )}
+            </div>
+
+            {addressStep === 4 && (
+              <div style={{ marginTop: '20px', display: 'flex', gap: '12px' }}>
+                <SubmitBtn 
+                  style={{ flex: 2 }} 
+                  onClick={() => {
+                    setCity(tempCity);
+                    setDistrict(tempDistrict);
+                    setWard(tempWard);
+                    setStreet(tempStreet);
+                    setAddressModalOpen(false);
+                  }}
+                >
+                  Thiết Lập Địa Chỉ
+                </SubmitBtn>
+              </div>
+            )}
+          </ModalContent>
+        </ModalOverlay>
+      )}
+
     </Page>
   );
 }
