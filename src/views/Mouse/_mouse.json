@@ -425,40 +425,21 @@
         "name": "97%, Đầu Thu SPL1",
         "price": 1780,
         "colors": [
-          "black"
-        ]
-      },
-      {
-        "name": "90%, Ố + BOX + Đầu Thu SPL1",
-        "price": 1780,
-        "colors": [
-          "white"
-        ]
-      },
-      {
-        "name": "97%, Đầu Thu SPL1",
-        "price": 1880,
-        "colors": [
+          "black",
+          "white",
           "#ff637e"
-        ]
-      },
-      {
-        "name": "97%",
-        "price": 2080,
-        "colors": [
-          "black"
-        ]
-      },
-      {
-        "name": "90%, Ố + BOX",
-        "price": 2080,
-        "colors": [
-          "white"
         ]
       },
       {
         "name": "97% + BOX",
         "price": 2180,
+        "colors": [
+          "#ff637e"
+        ]
+      },
+      {
+        "name": "New, BH 12/27 DGW",
+        "price": 2580,
         "colors": [
           "#ff637e"
         ]
@@ -494,13 +475,6 @@
         "price": 2180,
         "colors": [
           "black"
-        ]
-      },
-      {
-        "name": "97% + BOX, BH 7/27",
-        "price": 2380,
-        "colors": [
-          "white"
         ]
       }
     ],
@@ -947,7 +921,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Anywhere 3s",
     "tags": [
@@ -1178,7 +1152,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper Ultimate",
     "tags": [
@@ -1261,7 +1235,7 @@
     "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "lamzu",
     "name": "Maya X 8K Aimlabs",
     "tags": [
@@ -1287,31 +1261,6 @@
   },
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "SteelSeries Rival 5",
-    "tags": [
-      "Có Dây"
-    ],
-    "colors": [
-      {
-        "color": "Đen",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/steel-rival-5.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 450
-      }
-    ],
-    "warranty": "Bao Test 3 Ngày",
-    "connect": [
-      "wired"
-    ]
   },
   {
     "visible": true,
@@ -1357,32 +1306,6 @@
       {
         "name": "97%",
         "price": 380
-      }
-    ],
-    "warranty": "Bao Test 7 Ngày",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": true,
-    "brand": "liquidation",
-    "tags": [
-      "Có Dây"
-    ],
-    "name": "Logitech G102",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/g102-black.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "90%, Bóng",
-        "price": 190,
-        "colors": ["black"]
       }
     ],
     "warranty": "Bao Test 7 Ngày",

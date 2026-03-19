@@ -134,7 +134,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Không Dây"
@@ -414,7 +414,7 @@
     "": "HYPER --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "hyperx",
     "name": "Cloud 3",
     "tags": [

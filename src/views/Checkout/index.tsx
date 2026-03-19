@@ -8,7 +8,7 @@ import { findColorDef } from "@/utils/colors";
 import { copyToClipboard } from "@/utils";
 
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbyVpj6d0HHD5sp2XnCfL63tsQReF9oHBWUSTVJldAdZ08x5EOmXwA-yu4lmiZ8mFe99/exec";
+  "https://script.google.com/macros/s/AKfycbyXnNS8abQ3YqwQr8Vsg_f4gv_6d1yoFko1vOpv6spGBjToeu5rErbxFamWmPR7UR3t/exec";
 
 import divisions from "@/data/vietnam-divisions.json";
 
@@ -212,14 +212,14 @@ const SummaryRow = styled.div<{ $bold?: boolean; $large?: boolean; $color?: stri
   padding: 3px 0;
   color: ${(p) => p.$color || (p.$bold || p.$large ? "#000" : "#555")};
   
-  span:first-child {
+  & > span:first-child {
     flex-shrink: 0;
     min-width: 150px;
     color: #777;
     font-family: F_MEDIUM;
   }
   
-  span:last-child {
+  & > span:last-child {
     flex: 1;
     text-align: right;
     word-break: break-word;
@@ -230,7 +230,7 @@ const SummaryRow = styled.div<{ $bold?: boolean; $large?: boolean; $color?: stri
     padding: 2px 0;
     gap: 12px;
     
-    span:first-child {
+    & > span:first-child {
       min-width: 100px;
     }
   }
@@ -1230,11 +1230,11 @@ export default function CheckoutView() {
       {method === 0 ? (
         <>
           <SummaryRow $bold $color="#ff3b30">
-            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span>
               Tiền Cọc Đơn Hàng
-            <IconBtn onClick={() => setDepositModalOpen(true)}>
-              <HelpCircle size={16} />
-            </IconBtn>
+              <IconBtn onClick={() => setDepositModalOpen(true)} style={{ marginLeft: '6px', cursor: 'pointer', verticalAlign: 'middle', display: 'inline-flex' }}>
+                <HelpCircle size={16} />
+              </IconBtn>
             </span>
             <span>{deposit.toLocaleString("vi-VN")}.000 đ</span>
           </SummaryRow>
