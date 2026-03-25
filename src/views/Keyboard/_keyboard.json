@@ -722,26 +722,26 @@
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "liquidation",
-    "name": "PRO X TKL WL",
     "tags": [
       "Không Dây & Bluetooth"
     ],
+    "name": "HE MelGeek Made68 Pro",
     "colors": [
       {
-        "color": "pink",
-        "labelColor": "Hồng",
-        "image": "/assets/images/keyboards/pro-x-tkl-pink.png"
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/made-68-pro.png"
       }
     ],
     "options": [
       {
-        "name": "98%",
-        "price": 2280
+        "name": "97%",
+        "price": 2500
       }
     ],
-    "warranty": "Bao Test 7 Ngày",
+    "warranty": "Bảo Hành 7 Ngày",
     "connect": [
       "wireless",
       "bluetooth"

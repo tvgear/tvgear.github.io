@@ -282,103 +282,28 @@
     "": "WEBCAM --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "webcam",
     "tags": [
-      "Cắm Dây, HD 720p"
+      "Quay 4K"
     ],
-    "name": "C270",
+    "name": "C1000 Brio 4K",
     "colors": [
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/c270.webp"
+        "image": "/assets/images/accessories/c1000-brio-4k.png"
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 280
+        "price": 1680
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
     "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "webcam",
-    "tags": [
-      "Cắm Dây, HD 720p"
-    ],
-    "name": "C310",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/accessories/c310.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 350
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "webcam",
-    "tags": [
-      "Cắm Dây, HD 1080p"
-    ],
-    "name": "C925e",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/accessories/c925e.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 1080
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "webcam",
-    "tags": [
-      "Cắm Dây & Remote, HD 1080p"
-    ],
-    "name": "Conferrence BCC950",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/accessories/bcc950.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 2150
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wired"
+      
     ]
   },
   {

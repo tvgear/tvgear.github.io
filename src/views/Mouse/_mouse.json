@@ -299,7 +299,7 @@
     "colors": [
       {
         "color": "white",
-        "labelColor": "Đen",
+        "labelColor": "Trắng",
         "image": "/assets/images/mouses/g705.png"
       }
     ],
@@ -313,6 +313,31 @@
     "connect": [
       "wireless",
       "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G703",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/g703.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "New",
+        "price": 1350
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
     ]
   },
   {
@@ -347,7 +372,7 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "PRO X SuperLight 1",
+    "name": "PRO X SuperLight",
     "tags": [
       "Không Dây"
     ],
@@ -384,8 +409,22 @@
         ]
       },
       {
+        "name": "98% + BOX, BH 2/28",
+        "price": 1850,
+        "colors": [
+          "black"
+        ]
+      },
+      {
         "name": "95%, Xước Nhẹ Cạnh",
         "price": 1400,
+        "colors": [
+          "#ff637e"
+        ]
+      },
+      {
+        "name": "97% + BOX",
+        "price": 1580,
         "colors": [
           "#ff637e"
         ]
@@ -517,31 +556,6 @@
   },
   {
     "": "OFFICE --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": true,
-    "brand": "logio",
-    "name": "M90",
-    "tags": [
-      "Có Dây"
-    ],
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/m90.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 70
-      }
-    ],
-    "warranty": "Bảo Hành 3 Tháng",
-    "connect": [
-      "wired"
-    ]
   },
   {
     "visible": true,
@@ -826,16 +840,17 @@
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/m650-black.webp"
+      },
+       {
+        "color": "pink",
+        "labelColor": "Hồng",
+        "image": "/assets/images/mouses/m650-pink.png"
       }
     ],
     "options": [
       {
         "name": "97%",
         "price": 450
-      },
-      {
-        "name": "New No Box",
-        "price": 530
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -919,6 +934,13 @@
       {
         "name": "97%",
         "price": 780
+      },
+      {
+        "name": "New No Box",
+        "price": 980,
+        "colors": [
+          "white"
+        ]
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
