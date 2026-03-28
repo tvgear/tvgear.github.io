@@ -28,7 +28,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Có Dây"
@@ -103,10 +103,6 @@
       {
         "name": "98% Red, Sai LED",
         "price": 950
-      },
-      {
-        "name": "98% Brown",
-        "price": 1050
       },
        {
         "name": "98% Red",
@@ -698,6 +694,32 @@
     "tags": [
       "Không Dây & Bluetooth"
     ],
+    "name": "Combo Pebble",
+    "colors": [
+      {
+        "color": "rgba(144,158,177)",
+        "labelColor": "Xanh",
+        "image": "/assets/images/keyboards/pebble-combo.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 790
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
     "name": "MK950",
     "colors": [
       {
@@ -720,6 +742,32 @@
   },
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
+    "name": "HE MelGeek Made68",
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/made-68-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1600
+      }
+    ],
+    "warranty": "Bảo Hành 7 Ngày",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
   },
   {
     "visible": true,

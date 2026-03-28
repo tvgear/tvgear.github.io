@@ -434,7 +434,7 @@
     "connect": []
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "speaker",
     "tags": [
       "40 ~ 80W"

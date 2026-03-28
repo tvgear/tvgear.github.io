@@ -408,6 +408,13 @@
           "black"
         ]
       },
+       {
+        "name": "97% + BOX",
+        "price": 1580,
+        "colors": [
+          "black"
+        ]
+      },
       {
         "name": "98% + BOX, BH 2/28",
         "price": 1850,
@@ -418,13 +425,6 @@
       {
         "name": "95%, Xước Nhẹ Cạnh",
         "price": 1400,
-        "colors": [
-          "#ff637e"
-        ]
-      },
-      {
-        "name": "97% + BOX",
-        "price": 1580,
         "colors": [
           "#ff637e"
         ]
@@ -462,7 +462,7 @@
     "options": [
       {
         "name": "97%, Đầu Thu SPL1",
-        "price": 1780,
+        "price": 1750,
         "colors": [
           "black",
           "white",
@@ -470,24 +470,10 @@
         ]
       },
       {
-        "name": "97%",
-        "price": 2080,
+        "name": "98% + Grip Core Pad",
+        "price": 1880,
         "colors": [
           "black"
-        ]
-      },
-      {
-        "name": "97% + BOX",
-        "price": 2180,
-        "colors": [
-          "#ff637e"
-        ]
-      },
-      {
-        "name": "New, BH 12/27 DGW",
-        "price": 2580,
-        "colors": [
-          "#ff637e"
         ]
       }
     ],
@@ -497,7 +483,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X SuperLight 2 DEX",
     "tags": [
@@ -508,11 +494,6 @@
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp"
-      },
-      {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp"
       }
     ],
     "options": [
@@ -1051,7 +1032,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Master 3s",
     "tags": [
@@ -1258,34 +1239,61 @@
   },
   
   {
-    "": "PULSAR --------------------------------------------------------------------------------------------------------------------"
+    "": "MADLIONS --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "": "LAMZU --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "lamzu",
-    "name": "Maya X 8K Aimlabs",
+    "visible": true,
+    "brand": "madlions",
+    "name": "MAD G PRO",
     "tags": [
       "Không Dây"
     ],
     "colors": [
       {
-        "color": "rgba(142,229,221)",
-        "labelColor": "Xanh",
-        "image": "/assets/images/mouses/lamzu-maya-x-aimlabs.webp"
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/mad-gpro.png"
       }
     ],
     "options": [
       {
-        "name": "97%, BH 4/26",
-        "price": 2150
+        "name": "97% + BOX",
+        "price": 700
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "": "ATK --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "atk",
+    "name": "X1 V2 Ultimate",
+    "tags": [
+      "Không Dây",
+      "Bluetooth"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/atk-x1-v2-ultimate-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX, BH 2/27",
+        "price": 1250
       }
     ],
     "warranty": "Bảo Hành Hãng",
     "connect": [
-      "wireless"
+      "wireless",
+      "bluetooth"
     ]
   },
   {
@@ -1340,6 +1348,36 @@
     "warranty": "Bao Test 7 Ngày",
     "connect": [
       "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Logitech PRO X SuperLight 2",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "#ff637e",
+        "labelColor": "Hồng",
+        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%",
+        "price": 1900,
+        "colors": [
+          "black",
+          "white",
+          "#ff637e"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành 7 Ngày",
+    "connect": [
+      "wireless"
     ]
   }
 ]
