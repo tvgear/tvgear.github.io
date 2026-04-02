@@ -16,7 +16,6 @@ const brands = [
   { key: "logio", label: "Logi Văn Phòng" },
   { key: "razer", label: "Razer" },
   { key: "madlions", label: "Madlions" },
-  { key: "atk", label: "ATK" },
   { key: "liquidation", label: "Hàng Thanh Lý" },
 ] as const satisfies ReadonlyArray<BrandT<MouseBrand>>;
 

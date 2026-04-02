@@ -83,7 +83,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Không Dây & Bluetooth"
@@ -382,6 +382,35 @@
       "wired"
     ]
   },
+   {
+    "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
+    "name": "Barracuda X Chroma Phantom",
+    "colors": [
+      {
+        "color": "green",
+        "labelColor": "Xanh",
+        "image": "/assets/images/headphones/barracuda-x-chroma-phantom.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX, BH 7/27 MMZ",
+        "price": 2580
+      }
+    ],
+    "warranty": "Bảo Hành Hãng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
   {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
@@ -402,7 +431,7 @@
     "options": [
       {
         "name": "97% + BOX, Mic Xấu",
-        "price": 1250
+        "price": 1150
       }
     ],
     "warranty": "Bao Test 7 Ngày",

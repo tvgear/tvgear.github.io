@@ -19,8 +19,13 @@
     "options": [
       {
         "name": "97%, Giả Cơ",
+        "price": 530
+      },
+      {
+        "name": "97%, Giả Cơ + BOX",
         "price": 580
       }
+
     ],
     "warranty": "Bảo Hành 1 Tháng",
     "connect": [
@@ -406,7 +411,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "tags": [
       "Không Dây & Bluetooth"

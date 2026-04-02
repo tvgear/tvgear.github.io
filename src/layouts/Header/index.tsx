@@ -1261,14 +1261,14 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                     <SectionTitle>Shop Offline</SectionTitle>
                     <BranchItem>
                       <div className="name"><MapPin size={18} /> Chi Nhánh Hưng Yên</div>
-                      <div className="address">Thôn Du Mỹ, Vân Du, Ân Thi, Hưng Yên</div>
+                      <div className="address">📌  Thôn Du Mỹ, Vân Du, Ân Thi, Hưng Yên</div>
                     </BranchItem>
 
                     <BranchItem style={{ marginBottom: '24px' }}>
                       <div className="name"><MapPin size={18} /> Chi Nhánh TP.HCM</div>
                       <div className="address">
-                        Toà B Saigonres Plaza, 188 Nguyễn Xí, P.26, Bình Thạnh, TP.HCM<br/>
-                        9 Hoa Cau, P.7, Q. Phú Nhuận, TP.HCM
+                        📌  Toà B Saigonres Plaza, 188 Nguyễn Xí, P.26, Bình Thạnh, TP.HCM<br/>
+                        📌  9 Hoa Cau, P.7, Q. Phú Nhuận, TP.HCM
                       </div>
                     </BranchItem>
 
