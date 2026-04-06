@@ -434,7 +434,7 @@
     "connect": []
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "speaker",
     "tags": [
       "40 ~ 80W"
@@ -449,8 +449,8 @@
     ],
     "options": [
       {
-        "name": "95%, Xước 2 Loa Vệ Tinh",
-        "price": 1050
+        "name": "97%",
+        "price": 1150
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",

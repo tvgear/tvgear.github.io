@@ -73,7 +73,7 @@
       },
       {
         "name": "97%",
-        "price": 890
+        "price": 900
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -184,7 +184,7 @@
     "options": [
       {
         "name": "97%, Bluetooth",
-        "price": 1650,
+        "price": 1680,
         "colors": [
           "white"
         ]
@@ -219,7 +219,7 @@
     ],
     "options": [
       {
-        "name": "97%",
+        "name": "97% + BOX",
         "price": 1680
       }
     ],
@@ -266,7 +266,7 @@
     "name": "H340",
     "colors": [
       {
-        "color": "Đen",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/headphones/h340.webp"
       }
@@ -291,7 +291,7 @@
     "name": "H370",
     "colors": [
       {
-        "color": "Đen",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/headphones/h370.webp"
       }
@@ -316,7 +316,7 @@
     "name": "H390",
     "colors": [
       {
-        "color": "Đen",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/headphones/h390.png"
       }
@@ -341,7 +341,7 @@
     "name": "H540",
     "colors": [
       {
-        "color": "Đen",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/headphones/h540.webp"
       }
@@ -366,7 +366,7 @@
     "name": "H570e",
     "colors": [
       {
-        "color": "Đen",
+        "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/headphones/h570e.webp"
       }

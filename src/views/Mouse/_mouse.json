@@ -379,6 +379,31 @@
   {
     "visible": true,
     "brand": "logig",
+    "name": "PRO 2 WL",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/gpro-2-wl-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 1590
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
     "name": "PRO X SuperLight",
     "tags": [
       "Không Dây"
@@ -463,13 +488,6 @@
           "white",
           "#ff637e"
         ]
-      },
-      {
-        "name": "98% + Grip Core Pad",
-        "price": 1880,
-        "colors": [
-          "black"
-        ]
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -478,7 +496,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "PRO X SuperLight 2 DEX",
     "tags": [
@@ -493,8 +511,8 @@
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 2180,
+        "name": "97%, Đầu Thu SPL1",
+        "price": 1750,
         "colors": [
           "black"
         ]
@@ -1153,7 +1171,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
     "name": "Viper Ultimate",
     "tags": [
@@ -1161,14 +1179,14 @@
     ],
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/viper-ultimate-black.png"
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/viper-ultimate-white.png"
       }
     ],
     "options": [
       {
-        "name": "90% Tróc Cao Su + DOCK SẠC",
+        "name": "97 + DOCK SẠC",
         "price": 1150
       }
     ],
@@ -1204,9 +1222,9 @@
   },
   
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
-    "name": "DeathAdder v3 HyperSpeed",
+    "name": "Viper v4 Pro",
     "tags": [
       "Không Dây"
     ],
@@ -1214,13 +1232,13 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/da-v3-hyperspeed.png"
+        "image": "/assets/images/mouses/viper-v4-pro-black.png"
       }
     ],
     "options": [
       {
-        "name": "98%, BH 5/27",
-        "price": 1680
+        "name": "New Seal, BH 4/28",
+        "price": 3690
       }
     ],
     "warranty": "Bảo Hành Hãng",
