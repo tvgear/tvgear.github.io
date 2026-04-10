@@ -323,7 +323,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G703",
     "tags": [
@@ -443,7 +443,7 @@
         ]
       },
       {
-        "name": "98% + BOX, BH 2/28",
+        "name": "New, BH 12/27",
         "price": 1850,
         "colors": [
           "black"
@@ -1238,7 +1238,7 @@
     "options": [
       {
         "name": "New Seal, BH 4/28",
-        "price": 3690
+        "price": 3700
       }
     ],
     "warranty": "Bảo Hành Hãng",
@@ -1267,7 +1267,7 @@
     "options": [
       {
         "name": "97% + BOX",
-        "price": 700
+        "price": 690
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1335,7 +1335,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "Razer Viper Mini",
     "tags": [
@@ -1376,7 +1376,7 @@
     "options": [
       {
         "name": "95%",
-        "price": 1900,
+        "price": 1880,
         "colors": [
           "black",
           "white",

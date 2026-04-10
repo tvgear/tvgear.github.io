@@ -3,7 +3,7 @@
     "": "LOGI GAMING --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Có Dây"
@@ -771,7 +771,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "tags": [
       "Không Dây & Bluetooth"
