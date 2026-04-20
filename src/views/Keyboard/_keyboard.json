@@ -54,7 +54,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Có Dây"
@@ -501,7 +501,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 1550
+        "price": 1400
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -771,23 +771,23 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "liquidation",
     "tags": [
       "Không Dây & Bluetooth"
     ],
-    "name": "HE MelGeek Made68 Pro",
+    "name": "HE MADLIONS Fire68",
     "colors": [
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/keyboards/made-68-pro.png"
+        "image": "/assets/images/keyboards/fire68-white.png"
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 2500
+        "price": 750
       }
     ],
     "warranty": "Bảo Hành 7 Ngày",

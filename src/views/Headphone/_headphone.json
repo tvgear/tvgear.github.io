@@ -443,9 +443,9 @@
     "": "HYPER --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "hyperx",
-    "name": "Cloud 3",
+    "name": "Earbuds v2",
     "tags": [
       "Không Dây"
     ],
@@ -453,13 +453,13 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/headphones/cloud-3.png"
+        "image": "/assets/images/headphones/earbud-2-black.png"
       }
     ],
     "options": [
       {
-        "name": "98% + BOX, BH GEARVN 1/2028",
-        "price": 1650
+        "name": "98% + BOX, BH PHONG VU 5/27",
+        "price": 490
       }
     ],
     "warranty": "BH Hãng",

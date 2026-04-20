@@ -194,8 +194,12 @@
     ],
     "options": [
       {
-        "name": "97% + Kèm Nút Che Cạnh Trái",
+        "name": "97% + Chỉ Kèm Nút Che",
         "price": 750
+      },
+      {
+        "name": "97% + BOX",
+        "price": 850
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -393,7 +397,57 @@
     "options": [
       {
         "name": "97% + BOX",
-        "price": 1600
+        "price": 1590
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 WL",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/g502-wl.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1280
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 X Plus",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/g502-x-plus-wl.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1900
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -413,19 +467,31 @@
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/gpro-x-spl-black.webp"
+      },
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/gpro-x-spl-white.webp"
       }
     ],
     "options": [
        {
-        "name": "97% + BOX",
-        "price": 1580,
+        "name": "97%",
+        "price": 1500,
         "colors": [
           "black"
         ]
       },
+       {
+        "name": "97%",
+        "price": 1550,
+        "colors": [
+          "white"
+        ]
+      },
       {
         "name": "New, BH 12/27",
-        "price": 1850,
+        "price": 1800,
         "colors": [
           "black"
         ]
@@ -448,26 +514,14 @@
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/gpro-x-spl2-black.webp"
-      },
-      {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/mouses/gpro-x-spl2-white.webp"
-      },
-      {
-        "color": "#ff637e",
-        "labelColor": "Hồng",
-        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
       }
     ],
     "options": [
       {
-        "name": "97%, Đầu Thu SPL1",
-        "price": 1750,
+        "name": "95%, Đầu Thu SPL1",
+        "price": 1650,
         "colors": [
-          "black",
-          "white",
-          "#ff637e"
+          "black"
         ]
       }
     ],
@@ -477,7 +531,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X SuperLight 2 DEX",
     "tags": [
@@ -808,7 +862,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "M650 M",
     "tags": [
@@ -916,13 +970,6 @@
       {
         "name": "97%",
         "price": 780
-      },
-      {
-        "name": "New No Box",
-        "price": 980,
-        "colors": [
-          "white"
-        ]
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1163,7 +1210,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper Ultimate",
     "tags": [
@@ -1230,7 +1277,7 @@
     "options": [
       {
         "name": "New Seal, BH 4/28",
-        "price": 3700
+        "price": 3590
       }
     ],
     "warranty": "Bảo Hành Hãng",
@@ -1303,21 +1350,22 @@
   {
     "visible": true,
     "brand": "liquidation",
-    "name": "Razer DA v2 X Hyperspeed",
+    "name": "Mchose K7 Ultra",
     "tags": [
-      "Không Dây"
+      "Không Dây",
+      "Bluetooth"
     ],
     "colors": [
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/da-v2-x-hyperspeed.webp"
+        "image": "/assets/images/mouses/mchose-k7-ultra.png"
       }
     ],
     "options": [
       {
-        "name": "98%",
-        "price": 580
+        "name": "97% + BOX",
+        "price": 1250
       }
     ],
     "warranty": "Bao Test 7 Ngày",
