@@ -483,17 +483,10 @@
         ]
       },
        {
-        "name": "97%",
+        "name": "97% + BOX",
         "price": 1550,
         "colors": [
           "white"
-        ]
-      },
-      {
-        "name": "New, BH 12/27",
-        "price": 1800,
-        "colors": [
-          "black"
         ]
       }
     ],
@@ -531,7 +524,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "PRO X SuperLight 2 DEX",
     "tags": [
@@ -547,7 +540,7 @@
     "options": [
       {
         "name": "97%, Đầu Thu SPL1",
-        "price": 1750,
+        "price": 1780,
         "colors": [
           "black"
         ]
@@ -587,7 +580,7 @@
     "": "OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "M185",
     "tags": [
@@ -670,7 +663,7 @@
         "image": "/assets/images/mouses/m220-white.webp"
       },
       {
-        "color": "#ff637e",
+        "color": "rgba(240,227,223)",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/m220-pink.webp"
       }
@@ -788,7 +781,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 230
+        "price": 250
       },
       {
         "name": "New No Box",
@@ -1041,7 +1034,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 330
+        "price": 350
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1051,7 +1044,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "MX Master 2s",
     "tags": [
@@ -1066,12 +1059,8 @@
     ],
     "options": [
       {
-        "name": "95% - Bluetooth",
-        "price": 750
-      },
-      {
-        "name": "95% - Receiver + Bluetooth",
-        "price": 890
+        "name": "97% + BOX, Bản Bluetooth",
+        "price": 880
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1235,9 +1224,9 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
-    "name": "DeathAdder v2 Pro",
+    "name": "DeathAdder v3 Pro",
     "tags": [
       "Không Dây"
     ],
@@ -1245,13 +1234,13 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/da-v2-pro-black.png"
+        "image": "/assets/images/mouses/da-v3-pro.webp"
       }
     ],
     "options": [
       {
-        "name": "97% + BOX, BH 3/26",
-        "price": 1150
+        "name": "97% + BOX, BH 12/27",
+        "price": 1780
       }
     ],
     "warranty": "Bảo Hành Hãng",
@@ -1348,7 +1337,7 @@
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "Mchose K7 Ultra",
     "tags": [

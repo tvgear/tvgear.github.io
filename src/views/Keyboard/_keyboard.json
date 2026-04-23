@@ -347,7 +347,11 @@
     "options": [
       {
         "name": "97%",
-        "price": 500
+        "price": 490
+      },
+      {
+        "name": "97% + BOX",
+        "price": 550
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -372,7 +376,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 600
+        "price": 580
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -449,7 +453,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 1150
+        "price": 1100
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -614,7 +618,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logiocb",
     "tags": [
       "Không Dây"
