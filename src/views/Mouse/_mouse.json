@@ -577,6 +577,34 @@
     ]
   },
   {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X2 Superstrike",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/pro-x2-superstrike.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New",
+        "price": 5380,
+        "colors": [
+          "white"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành 24 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
     "": "OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
   {
@@ -1304,118 +1332,6 @@
     ]
   },
   {
-    "": "ATK --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "atk",
-    "name": "X1 V2 Ultimate",
-    "tags": [
-      "Không Dây",
-      "Bluetooth"
-    ],
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/atk-x1-v2-ultimate-black.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "97% + BOX, BH 2/27",
-        "price": 1250
-      }
-    ],
-    "warranty": "Bảo Hành Hãng",
-    "connect": [
-      "wireless",
-      "bluetooth"
-    ]
-  },
-  {
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "Mchose K7 Ultra",
-    "tags": [
-      "Không Dây",
-      "Bluetooth"
-    ],
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/mchose-k7-ultra.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "97% + BOX",
-        "price": 1250
-      }
-    ],
-    "warranty": "Bao Test 7 Ngày",
-    "connect": [
-      "wireless",
-      "bluetooth"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "Razer Viper Mini",
-    "tags": [
-      "Có Dây"
-    ],
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/mouses/viper-mini-black.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 380
-      }
-    ],
-    "warranty": "Bao Test 7 Ngày",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "Logitech PRO X SuperLight 2",
-    "tags": [
-      "Không Dây"
-    ],
-    "colors": [
-      {
-        "color": "#ff637e",
-        "labelColor": "Hồng",
-        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "95%",
-        "price": 1880,
-        "colors": [
-          "black",
-          "white",
-          "#ff637e"
-        ]
-      }
-    ],
-    "warranty": "Bảo Hành 7 Ngày",
-    "connect": [
-      "wireless"
-    ]
   }
 ]

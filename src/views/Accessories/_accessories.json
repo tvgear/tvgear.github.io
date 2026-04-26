@@ -282,7 +282,7 @@
     "": "WEBCAM --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "webcam",
     "tags": [
       "Quay 4K"
@@ -323,7 +323,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 9750
+        "price": 9500
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -434,7 +434,7 @@
     "connect": []
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "speaker",
     "tags": [
       "40 ~ 80W"
@@ -519,7 +519,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 3850
+        "price": 3800
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
