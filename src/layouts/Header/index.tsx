@@ -1438,7 +1438,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
               {cartItems.length === 0 ? (
                 <EmptyCart>
                   <ShoppingBag size={48} strokeWidth={1.5} />
-                  <span>Giỏ hàng đang trống ...</span>
+                  <span>Giỏ hàng trống</span>
                 </EmptyCart>
               ) : (
                 cartItems.map((item, idx) => (
