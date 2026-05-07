@@ -749,7 +749,7 @@
     "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "tags": [
       "Không Dây & Bluetooth"
@@ -775,7 +775,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "tags": [
       "Không Dây & Bluetooth"

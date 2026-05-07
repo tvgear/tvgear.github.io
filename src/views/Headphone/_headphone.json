@@ -191,7 +191,7 @@
       },
       {
         "name": "97%, Thiếu Đệm Nỉ",
-        "price": 2550,
+        "price": 2480,
         "colors": [
           "black"
         ]
@@ -220,7 +220,7 @@
     "options": [
       {
         "name": "97% + BOX",
-        "price": 1680
+        "price": 2080
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -443,23 +443,23 @@
     "": "HYPER --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "hyperx",
-    "name": "Earbuds v2",
+    "name": "Cloud 3",
     "tags": [
-      "Không Dây"
+      "Có Dây"
     ],
     "colors": [
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/headphones/earbud-2-black.png"
+        "image": "/assets/images/headphones/cloud-3.png"
       }
     ],
     "options": [
       {
-        "name": "98% + BOX, BH PHONG VU 5/27",
-        "price": 490
+        "name": "98% + BOX, BH 11/27",
+        "price": 1580
       }
     ],
     "warranty": "BH Hãng",
@@ -487,7 +487,7 @@
     "options": [
       {
         "name": "98%",
-        "price": 750
+        "price": 700
       }
     ],
     "warranty": "Bao Test 7 Ngày",

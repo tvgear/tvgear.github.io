@@ -577,7 +577,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X2 Superstrike",
     "tags": [
@@ -883,7 +883,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "M650 M",
     "tags": [
@@ -891,14 +891,14 @@
     ],
     "colors": [
       {
-        "color": "pink",
-        "labelColor": "Hồng",
-        "image": "/assets/images/mouses/m650-pink.png"
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/m650-black.webp"
       }
     ],
     "options": [
       {
-        "name": "97% + BOX",
+        "name": "New No Box",
         "price": 450
       }
     ],
@@ -985,12 +985,29 @@
         "color": "#ff637e",
         "labelColor": "Hồng",
         "image": "/assets/images/mouses/lift-pink.webp"
+      },
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/lift-black.webp"
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 780
+        "price": 780,
+        "colors": [
+          "white",
+          "#ff637e"
+        ]
+
+      },
+       {
+        "name": "97% + BOX",
+        "price": 880,
+        "colors": [
+          "black"
+        ]
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -1126,7 +1143,7 @@
     "": "RAZER --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Basilisk v3",
     "tags": [
@@ -1151,7 +1168,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "DeathAdder v3",
     "tags": [
@@ -1260,8 +1277,8 @@
     ],
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
+        "color": "white",
+        "labelColor": "Trắng",
         "image": "/assets/images/mouses/da-v3-pro.webp"
       }
     ],
@@ -1278,7 +1295,7 @@
   },
   
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper v4 Pro",
     "tags": [
@@ -1330,8 +1347,5 @@
     "connect": [
       "wireless"
     ]
-  },
-  {
-    "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   }
 ]
