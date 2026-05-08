@@ -93,25 +93,22 @@
       }
     ],
     "options": [
-      {
-        "name": "98% Brown, Sai LED",
-        "price": 900
-      },
+      
       {
         "name": "98% Red, Mất 1 LED",
         "price": 900
       },
       {
+        "name": "98% Brown, Sai LED",
+        "price": 950
+      },
+      {
         "name": "98% Red, Sai LED",
         "price": 950
       },
-       {
-        "name": "98% Red",
-        "price": 1050
-      },
       {
-        "name": "99% Blue + BOX",
-        "price": 1150
+        "name": "98% Red, LED Đẹp",
+        "price": 1050
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",

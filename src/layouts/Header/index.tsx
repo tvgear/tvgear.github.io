@@ -1253,7 +1253,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                       <SocialBox href="https://facebook.com/tvgear" target="_blank">
                         <span>TVGEAR - Facebook</span>
                       </SocialBox>
-                      <SocialBox href="https://m.me/tvgear" target="_blank">
+                      <SocialBox href="https://fb.me/tvgear" target="_blank">
                         <span>TVGEAR - Messenger</span>
                       </SocialBox>
                     </StoreSocials>
@@ -1405,7 +1405,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                       <ChatActionBtn $type="zalo" href="https://zalo.me/0398637036" target="_blank" rel="noopener noreferrer">
                         Chat Zalo
                       </ChatActionBtn>
-                      <ChatActionBtn $type="messenger" href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">
+                      <ChatActionBtn $type="messenger" href="https://fb.me/tvgear" target="_blank" rel="noopener noreferrer">
                         Chat Messenger
                       </ChatActionBtn>
                     </ChatActions>

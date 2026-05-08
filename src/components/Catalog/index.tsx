@@ -818,7 +818,7 @@ Mình cần tư vấn sản phẩm này.`;
                   <span>Đến Zalo</span>
                   <ExternalLink size={14} style={{ opacity: 0.6 }} />
                 </ContactBtn>
-                <ContactBtn $type="fb" href="https://m.me/tvgear" target="_blank" rel="noopener noreferrer">
+                <ContactBtn $type="fb" href="https://fb.me/tvgear" target="_blank" rel="noopener noreferrer">
                   <span>Đến Messenger</span>
                   <ExternalLink size={14} style={{ opacity: 0.6 }} />
                 </ContactBtn>
