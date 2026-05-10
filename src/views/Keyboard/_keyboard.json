@@ -202,32 +202,6 @@
     "tags": [
       "Không Dây & Bluetooth"
     ],
-    "name": "G515 TKL",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/keyboards/g515-tkl-black.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "New Seal, BH 1/27",
-        "price": 2250
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wireless",
-      "bluetooth"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "logig",
-    "tags": [
-      "Không Dây & Bluetooth"
-    ],
     "name": "PRO X TKL WL",
     "colors": [
       {
@@ -265,7 +239,7 @@
     "options": [
       {
         "name": "98% + BOX, BH 2/28",
-        "price": 2080
+        "price": 1980
       }
     ],
     "warranty": "Bảo Hành Hãng",
@@ -336,19 +310,15 @@
     "name": "K380s",
     "colors": [
       {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/keyboards/k380s.png"
+        "color": "rgba(160,173,193)",
+        "labelColor": "Xanh",
+        "image": "/assets/images/keyboards/k380s-pebble-2.png"
       }
     ],
     "options": [
       {
         "name": "97%",
         "price": 490
-      },
-      {
-        "name": "97% + BOX",
-        "price": 550
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",

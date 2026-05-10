@@ -977,31 +977,12 @@
     ],
     "colors": [
       {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/mouses/lift-white.webp"
-      },
-      {
-        "color": "#ff637e",
-        "labelColor": "Hồng",
-        "image": "/assets/images/mouses/lift-pink.webp"
-      },
-      {
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/lift-black.webp"
       }
     ],
     "options": [
-      {
-        "name": "97%",
-        "price": 780,
-        "colors": [
-          "white",
-          "#ff637e"
-        ]
-
-      },
        {
         "name": "97% + BOX",
         "price": 880,
@@ -1208,7 +1189,7 @@
     ],
     "options": [
       {
-        "name": "97%",
+        "name": "97% + BOX",
         "price": 580
       }
     ],
@@ -1269,7 +1250,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "DeathAdder v3 Pro",
     "tags": [

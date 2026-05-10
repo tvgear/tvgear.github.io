@@ -73,7 +73,7 @@
       },
       {
         "name": "97%",
-        "price": 900
+        "price": 890
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -183,14 +183,14 @@
     ],
     "options": [
       {
-        "name": "97%, Thiếu Receiver + Đệm Nỉ",
-        "price": 1680,
+        "name": "97%, Bluetooth",
+        "price": 1650,
         "colors": [
           "white"
         ]
       },
       {
-        "name": "97%, Thiếu Đệm Nỉ",
+        "name": "97% + BOX, Thiếu Đệm Nỉ",
         "price": 2480,
         "colors": [
           "black"
@@ -248,7 +248,7 @@
     ],
     "options": [
       {
-        "name": "97%",
+        "name": "98%",
         "price": 170
       }
     ],
@@ -274,7 +274,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 250
+        "price": 280
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -299,7 +299,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 330
+        "price": 350
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -324,7 +324,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 430
+        "price": 450
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -349,7 +349,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 480
+        "price": 500
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -374,7 +374,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 580
+        "price": 600
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -431,7 +431,7 @@
     "options": [
       {
         "name": "97% + BOX, Mic Xấu",
-        "price": 1080
+        "price": 980
       }
     ],
     "warranty": "Bao Test 7 Ngày",
@@ -471,7 +471,7 @@
     "": "MCHOSE --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "MChose v9 Pro",
     "tags": [
