@@ -223,7 +223,7 @@
     ]
   },
    {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Không Dây & Bluetooth"
@@ -302,7 +302,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "tags": [
       "Bluetooth"
@@ -430,7 +430,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "tags": [
       "Không Dây & Bluetooth"
@@ -472,7 +472,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 1400
+        "price": 1380
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -661,7 +661,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logiocb",
     "tags": [
       "Không Dây & Bluetooth"

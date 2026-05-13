@@ -68,11 +68,11 @@
     ],
     "options": [
       {
-        "name": "97%, Bluetooth",
-        "price": 680
+        "name": "97% Đen/Trắng/Xanh + BOX, Bluetooth",
+        "price": 650
       },
       {
-        "name": "97%",
+        "name": "97% Đen, Bluetooth + Wireless",
         "price": 890
       }
     ],
@@ -233,7 +233,7 @@
     "": "TAI LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "tags": [
       "Cắm Dây"
@@ -333,7 +333,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "tags": [
       "Cắm Dây"
@@ -431,7 +431,7 @@
     "options": [
       {
         "name": "97% + BOX, Mic Xấu",
-        "price": 980
+        "price": 1000
       }
     ],
     "warranty": "Bao Test 7 Ngày",
