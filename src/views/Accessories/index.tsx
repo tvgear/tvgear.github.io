@@ -9,7 +9,6 @@ const brands = [
   { key: "receiver", label: "Đầu Thu" },
   { key: "webcam",   label: "Webcam" },
   { key: "speaker",   label: "Loa" },
-  { key: "controller", label: "Tay Cầm" },
   { key: "cable", label: "Cáp Sạc" },
   { key: "adapter", label: "Đầu Chuyển" },
 ] as const satisfies ReadonlyArray<BrandT<AccessoriesBrand>>;

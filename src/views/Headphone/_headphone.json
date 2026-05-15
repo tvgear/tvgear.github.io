@@ -1,58 +1,5 @@
 [
   {
-    "visible": false,
-    "brand": "logig",
-    "tags": [
-      "Có Dây"
-    ],
-    "name": "G335",
-    "colors": [
-      {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/headphones/g335-white.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 650,
-        "colors": [
-          "white"
-        ]
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "logig",
-    "tags": [
-      "Có Dây"
-    ],
-    "name": "G333",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/headphones/g333-black.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 600
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
     "visible": true,
     "brand": "logig",
     "tags": [
@@ -80,86 +27,6 @@
     "connect": [
       "wireless",
       "bluetooth"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "logig",
-    "tags": [
-      "Không Dây & Bluetooth"
-    ],
-    "name": "G321",
-    "colors": [
-      {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/headphones/g321-white.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 850
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wireless",
-      "bluetooth"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "logig",
-    "tags": [
-      "Không Dây"
-    ],
-    "name": "G535",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/headphones/g535-black.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 1480
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wireless"
-    ]
-  },
-  {
-    "visible": false,
-    "brand": "logig",
-    "tags": [
-      "Không Dây"
-    ],
-    "name": "G733",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/headphones/g733-black.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 1480
-      },
-      {
-        "name": "97% + BOX, BH 12/26",
-        "price": 1600
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wireless"
     ]
   },
   {
@@ -231,31 +98,6 @@
   },
   {
     "": "TAI LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "logio",
-    "tags": [
-      "Cắm Dây"
-    ],
-    "name": "H150/H151",
-    "colors": [
-      {
-        "color": "rgba(48,75,147)",
-        "labelColor": "Xanh",
-        "image": "/assets/images/headphones/h150.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "98%",
-        "price": 170
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wired"
-    ]
   },
   {
     "visible": true,
@@ -333,31 +175,6 @@
     ]
   },
   {
-    "visible": false,
-    "brand": "logio",
-    "tags": [
-      "Cắm Dây"
-    ],
-    "name": "H540",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/headphones/h540.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 500
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
     "visible": true,
     "brand": "logio",
     "tags": [
@@ -381,38 +198,6 @@
     "connect": [
       "wired"
     ]
-  },
-   {
-    "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "razer",
-    "tags": [
-      "Không Dây & Bluetooth"
-    ],
-    "name": "Barracuda X Chroma Phantom",
-    "colors": [
-      {
-        "color": "green",
-        "labelColor": "Xanh",
-        "image": "/assets/images/headphones/barracuda-x-chroma-phantom.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "97% + BOX, BH 7/27 MMZ",
-        "price": 2580
-      }
-    ],
-    "warranty": "Bảo Hành Hãng",
-    "connect": [
-      "wireless",
-      "bluetooth"
-    ]
-  },
-  {
-    "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
   },
   {
     "visible": true,
@@ -465,36 +250,6 @@
     "warranty": "BH Hãng",
     "connect": [
       "wired"
-    ]
-  },
-  {
-    "": "MCHOSE --------------------------------------------------------------------------------------------------------------------"
-  },
-  {
-    "visible": false,
-    "brand": "liquidation",
-    "name": "MChose v9 Pro",
-    "tags": [
-      "Không Dây"
-    ],
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/headphones/mchose-v9-pro-black.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "98%",
-        "price": 700
-      }
-    ],
-    "warranty": "Bao Test 7 Ngày",
-    "connect": [
-      "wired",
-      "wireless",
-      "bluetooth"
     ]
   }
 ]
