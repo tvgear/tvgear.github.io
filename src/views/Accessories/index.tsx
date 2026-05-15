@@ -7,7 +7,6 @@ type AccessoriesBrand = "receiver" | "webcam" | "speaker" | "controller" | "cabl
 
 const brands = [
   { key: "receiver", label: "Đầu Thu" },
-  { key: "webcam",   label: "Webcam" },
   { key: "speaker",   label: "Loa" },
   { key: "cable", label: "Cáp Sạc" },
   { key: "adapter", label: "Đầu Chuyển" },

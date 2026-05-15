@@ -178,29 +178,6 @@
     "": "WEBCAM --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
-    "brand": "webcam",
-    "tags": [
-      "Camera, Mic, HUB, Remote, HD 1080p"
-    ],
-    "name": "Conferrence Cam Group Live",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/accessories/cglive.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 9500
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": []
-  },
-  {
     "": "SOUNDCARD --------------------------------------------------------------------------------------------------------------------"
   },
   {
