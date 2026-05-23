@@ -71,7 +71,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Không Dây"
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "Logitech G733",
     "tags": [

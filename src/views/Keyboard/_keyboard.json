@@ -125,6 +125,32 @@
     "visible": true,
     "brand": "logio",
     "tags": [
+      "Không Dây"
+    ],
+    "name": "K650",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/k650.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 580
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": [
       "Bluetooth"
     ],
     "name": "POP Icon",
