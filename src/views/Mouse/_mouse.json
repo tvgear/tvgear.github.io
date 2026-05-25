@@ -279,7 +279,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO 2 WL",
     "tags": [
@@ -562,10 +562,6 @@
       {
         "name": "97%",
         "price": 250
-      },
-      {
-        "name": "New No Box",
-        "price": 300
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -807,7 +803,7 @@
     "": "MADLIONS --------------------------------------------------------------------------------------------------------------------"
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "madlions",
     "name": "MAD G PRO",
     "tags": [
