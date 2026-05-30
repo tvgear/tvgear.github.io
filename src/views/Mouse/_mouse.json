@@ -414,9 +414,44 @@
         "colors": [
           "white"
         ]
+      },
+      {
+        "name": "95% + BOX, Bao Test 7 Ngày",
+        "price": 1850,
+        "colors": [
+          "white"
+        ]
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X SuperLight 2",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/pro-x2-superstrike.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New",
+        "price": 4280,
+        "colors": [
+          "white"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành Hãng 24 Tháng",
     "connect": [
       "wireless"
     ]
