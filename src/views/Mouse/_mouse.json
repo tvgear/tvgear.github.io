@@ -214,7 +214,7 @@
         "name": "New Open Box",
         "price": 590,
         "colors": [
-          "black"
+          "white"
         ]
       }
     ],
@@ -431,7 +431,7 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "PRO X SuperLight 2",
+    "name": "PRO X2 Strike",
     "tags": [
       "Không Dây"
     ],
