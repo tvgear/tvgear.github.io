@@ -150,6 +150,35 @@
       {
         "name": "90%, Xước Cao Su + Tặng Griptape",
         "price": 450
+      },
+      {
+        "name": "97%",
+        "price": 580
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 Hero",
+    "tags": [
+      "Có Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/g502-hero.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 650
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -173,12 +202,8 @@
     ],
     "options": [
       {
-        "name": "97% + Chỉ Kèm Nút Che",
+        "name": "97% + Kèm Nút Che",
         "price": 750
-      },
-      {
-        "name": "97% + BOX",
-        "price": 850
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -209,13 +234,6 @@
       {
         "name": "95%",
         "price": 490
-      },
-      {
-        "name": "New Open Box",
-        "price": 590,
-        "colors": [
-          "white"
-        ]
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
@@ -251,6 +269,32 @@
     "warranty": "Bảo Hành 3 Tháng",
     "connect": [
       "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G309",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/g309-white.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 950
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
     ]
   },
   {
@@ -370,12 +414,31 @@
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/mouses/gpro-x-spl-white.webp"
+      },
+       {
+        "color": "red",
+        "labelColor": "Đỏ",
+        "image": "/assets/images/mouses/gpro-x-spl-red.webp"
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 1500,
+        "price": 1450,
+        "colors": [
+          "red"
+        ]
+      },
+      {
+        "name": "97%",
+        "price": 1550,
+        "colors": [
+          "black"
+        ]
+      },
+       {
+        "name": "New, BH 8/26 SPC",
+        "price": 1680,
         "colors": [
           "black"
         ]
@@ -405,21 +468,45 @@
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/mouses/gpro-x-spl2-white.webp"
+      },
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/gpro-x-spl2-black.webp"
+      },
+      {
+        "color": "rgba(204,61,99)",
+        "labelColor": "Hồng",
+        "image": "/assets/images/mouses/gpro-x-spl2-pink.webp"
       }
     ],
     "options": [
       {
         "name": "95%, Đầu Thu SPL1",
-        "price": 1650,
+        "price": 1680,
         "colors": [
           "white"
         ]
       },
       {
         "name": "95% + BOX, Bao Test 7 Ngày",
-        "price": 1850,
+        "price": 1800,
         "colors": [
           "white"
+        ]
+      },
+      {
+        "name": "97%",
+        "price": 2180,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "97%",
+        "price": 2180,
+        "colors": [
+          "pink"
         ]
       }
     ],
@@ -445,7 +532,7 @@
     "options": [
       {
         "name": "New",
-        "price": 4280,
+        "price": 4190,
         "colors": [
           "white"
         ]
@@ -781,9 +868,9 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
-    "name": "MX Master 2s",
+    "name": "MX Anywhere 2s",
     "tags": [
       "Bluetooth"
     ],
@@ -791,17 +878,44 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/mx-master-2s-black.png"
+        "image": "/assets/images/mouses/mx-anywhere-2s-black.png"
       }
     ],
     "options": [
       {
-        "name": "97% + BOX, Bản Bluetooth",
-        "price": 880
+        "name": "97%",
+        "price": 780
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
     "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Master 3s",
+    "tags": [
+      "Bluetooth"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/mx-master-3s-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1580
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless",
       "bluetooth"
     ]
   },
@@ -835,12 +949,34 @@
     ]
   },
   {
-    "": "MADLIONS --------------------------------------------------------------------------------------------------------------------"
+    "visible": false,
+    "brand": "razer",
+    "name": "Viper V3 Pro Sentinals",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/viper-v3-pro-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 2080
+      }
+    ],
+    "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
   },
   {
-    "visible": false,
-    "brand": "madlions",
-    "name": "MAD G PRO",
+    "visible": true,
+    "brand": "razer",
+    "name": "DA v4 Pro",
     "tags": [
       "Không Dây"
     ],
@@ -848,13 +984,13 @@
       {
         "color": "white",
         "labelColor": "Trắng",
-        "image": "/assets/images/mouses/mad-gpro.png"
+        "image": "/assets/images/mouses/da-v4-pro-white.png"
       }
     ],
     "options": [
       {
-        "name": "97% + BOX",
-        "price": 690
+        "name": "97%",
+        "price": 2680
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
