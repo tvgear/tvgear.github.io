@@ -195,9 +195,9 @@
     ],
     "colors": [
       {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/mouses/g502-x-white.webp"
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/g502-x-black.webp"
       }
     ],
     "options": [
@@ -506,7 +506,7 @@
         "name": "97%",
         "price": 2180,
         "colors": [
-          "pink"
+          "rgba(204,61,99)"
         ]
       }
     ],
@@ -518,7 +518,35 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "PRO X2 Strike",
+    "name": "PRO X Superlight 2 DEX",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 2180,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành Hãng 24 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X2 SuperStrike",
     "tags": [
       "Không Dây"
     ],
@@ -949,7 +977,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "razer",
     "name": "Viper V3 Pro Sentinals",
     "tags": [
@@ -959,16 +987,41 @@
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/mouses/viper-v3-pro-black.png"
+        "image": "/assets/images/mouses/viper-v3-pro-sentinals.png"
       }
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 2080
+        "name": "97% + BOX",
+        "price": 2980
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Basilisk v3 Pro",
+    "tags": [
+      "Không Dây"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/basilisk-v3-pro-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX, BH 11/27",
+        "price": 2780
+      }
+    ],
+    "warranty": "Bảo Hành Hãng",
     "connect": [
       "wireless"
     ]
@@ -989,7 +1042,7 @@
     ],
     "options": [
       {
-        "name": "97%",
+        "name": "97% + BOX",
         "price": 2680
       }
     ],

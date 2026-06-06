@@ -8,6 +8,81 @@
     "tags": [
       "Có Dây"
     ],
+    "name": "G213",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g213.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 580
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "G413 SE TKL",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g413-se-tkl.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 800
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "G413 SE FULL SIZE",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g413-se-fs.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 850
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
+      "Có Dây"
+    ],
     "name": "G512 GX",
     "colors": [
       {
@@ -18,20 +93,16 @@
     ],
     "options": [
       {
-        "name": "98% Red, Mất 1 LED",
-        "price": 900
-      },
-      {
         "name": "98% Brown, Sai LED",
-        "price": 950
-      },
-      {
-        "name": "98% Red, Sai LED",
         "price": 950
       },
       {
         "name": "98% Red, LED Đẹp",
         "price": 1050
+      },
+      {
+        "name": "98% Blue, LED Đẹp + BOX",
+        "price": 1150
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -48,12 +119,24 @@
     "name": "PRO X 60",
     "colors": [
       {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/pro-x-60-white.webp"
+      },
+      {
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/keyboards/pro-x-60-black.webp"
       }
     ],
     "options": [
+       {
+        "name": "97% + BOX Cứng",
+        "price": 2050,
+        "colors": [
+          "white"
+        ]
+      },
       {
         "name": "97% + BOX",
         "price": 2100,
@@ -67,6 +150,72 @@
       "wireless",
       "bluetooth"
     ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "PRO X TKL Rapid",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp"
+      },
+       {
+        "color": "pink",
+        "labelColor": "Hồng",
+        "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp"
+      }
+    ],
+    "options": [
+       {
+        "name": "New",
+        "price": 2580,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "New",
+        "price": 2580,
+        "colors": [
+          "pink"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành 24 Tháng",
+    "connect": [
+      "wired"    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "G515 TKL Rapid",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g515-tkl-black.webp"
+      }
+    ],
+    "options": [
+       {
+        "name": "New",
+        "price": 2980,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "Bảo Hành 24 Tháng",
+    "connect": [
+      "wired"    ]
   },
   {
     "": "LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
@@ -121,6 +270,7 @@
       "wireless"
     ]
   },
+  
   {
     "visible": true,
     "brand": "logio",
@@ -133,12 +283,27 @@
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/keyboards/k650.webp"
+      },
+       {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/k650-white.png"
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 580
+        "price": 580,
+        "colors" : [
+          "black"
+        ]
+      },
+      {
+        "name": "97%",
+        "price": 650,
+        "colors" : [
+          "white"
+        ]
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
@@ -147,6 +312,34 @@
       "bluetooth"
     ]
   },
+
+  {
+    "visible": true,
+    "brand": "logio",
+    "tags": [
+      "Không Dây"
+    ],
+    "name": "K380s",
+    "colors": [
+      {
+        "color": "pink",
+        "labelColor": "Hồng",
+        "image": "/assets/images/keyboards/k380s-pink.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 450
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+
   {
     "visible": true,
     "brand": "logio",
@@ -275,32 +468,6 @@
     "warranty": "Bảo Hành 1 Tháng",
     "connect": [
       "wireless"
-    ]
-  },
-  {
-    "visible": true,
-    "brand": "logiocb",
-    "tags": [
-      "Không Dây & Bluetooth"
-    ],
-    "name": "POP Icon Combo",
-    "colors": [
-      {
-        "color": "pink",
-        "labelColor": "Hồng",
-        "image": "/assets/images/keyboards/pop-icon-combo-pink.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 890
-      }
-    ],
-    "warranty": "Bảo Hành 1 Tháng",
-    "connect": [
-      "wireless",
-      "bluetooth"
     ]
   },
   {

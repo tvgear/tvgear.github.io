@@ -212,7 +212,32 @@
     "visible": true,
     "brand": "speaker",
     "tags": [
-      "500W ~ 1000W, 3.5mm"
+      ""
+    ],
+    "name": "Z313",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/z313.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 580
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "speaker",
+    "tags": [
+      ""
     ],
     "name": "Z906",
     "colors": [
@@ -229,7 +254,9 @@
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
-    "connect": []
+    "connect": [
+      "wired"
+    ]
   },
   {
     "": "CABLE --------------------------------------------------------------------------------------------------------------------"
@@ -300,6 +327,112 @@
     "warranty": "Không Bảo Hành",
     "connect": [
       ""
+    ]
+  },
+  {
+    "": "WEBCAM --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "tags": [
+      ""
+    ],
+    "name": "Logi Conferrence BCC950",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/bcc950.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 2100
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "tags": [
+      ""
+    ],
+    "name": "Logi Conferrence Live",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/cglive.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 9380
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "": "CONTROLLER --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "controller",
+    "tags": [
+      ""
+    ],
+    "name": "Xbox Elite",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/xbox-elite.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 1250
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+   {
+    "visible": true,
+    "brand": "controller",
+    "tags": [
+      ""
+    ],
+    "name": "Xbox Elite v2 Core",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/xbox-elite.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX",
+        "price": 1350
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
     ]
   }
 ]

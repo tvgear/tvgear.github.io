@@ -3,6 +3,31 @@
     "visible": true,
     "brand": "logig",
     "tags": [
+      "Có Dây"
+    ],
+    "name": "G333",
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/headphones/g333-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 590
+      }
+    ],
+    "warranty": "Bảo Hành 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
       "Không Dây & Bluetooth"
     ],
     "name": "G435",
@@ -71,7 +96,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "tags": [
       "Không Dây"
@@ -87,7 +112,7 @@
     "options": [
       {
         "name": "97% + BOX",
-        "price": 2080
+        "price": 1680
       }
     ],
     "warranty": "Bảo Hành 1 Tháng",
