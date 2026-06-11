@@ -497,14 +497,14 @@
       },
       {
         "name": "97%",
-        "price": 2180,
+        "price": 1780,
         "colors": [
           "black"
         ]
       },
       {
         "name": "97%",
-        "price": 2180,
+        "price": 1780,
         "colors": [
           "rgba(204,61,99)"
         ]
@@ -527,15 +527,22 @@
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp"
+      },
+       {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp"
+      },
+       {
+        "color": "rgba(204,61,99)",
+        "labelColor": "Hồng",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-pink.webp"
       }
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 2180,
-        "colors": [
-          "black"
-        ]
+        "name": "97%, Đầu Thu SPL1",
+        "price": 1780
       }
     ],
     "warranty": "Bảo Hành Hãng 24 Tháng",
@@ -1044,6 +1051,10 @@
       {
         "name": "97% + BOX",
         "price": 2680
+      },
+       {
+        "name": "97% + BOX, BH 4/28",
+        "price": 2900
       }
     ],
     "warranty": "Bảo Hành 3 Tháng",
