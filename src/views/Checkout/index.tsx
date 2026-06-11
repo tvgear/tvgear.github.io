@@ -1325,7 +1325,22 @@ export default function CheckoutView() {
               setTempDistrict(district);
               setTempWard(ward);
               setTempStreet(street);
-              setAddressStep(1);
+              
+              let nextStep = 1;
+              if (city) {
+                if (district) {
+                  if (availableWards.length === 0 || ward) {
+                    nextStep = 4;
+                  } else {
+                    nextStep = 3;
+                  }
+                } else {
+                  nextStep = 2;
+                }
+              }
+              console.log("[DEBUG] Reopening modal. city:", city, "district:", district, "ward:", ward, "availableWards:", availableWards.length, "=> nextStep:", nextStep);
+              
+              setAddressStep(nextStep);
               setAddressModalOpen(true);
             }}>
               <div style={{ flex: 1, marginRight: '16px' }}>
