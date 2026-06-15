@@ -587,9 +587,14 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
                   </WrapImg>
                   <ItemMeta>
                     <NameItem>{p.name}</NameItem>
-                    {p.connect && p.connect.length > 0 && (
+                    {(p.warranty || (p.connect && p.connect.length > 0)) && (
                       <CatItem>
-                        {p.connect.map(c => CONNECTIONS.find(x => x.id === c)?.label || c).join(" & ")}
+                        {[
+                          p.connect && p.connect.length > 0
+                            ? p.connect.map(c => CONNECTIONS.find(x => x.id === c)?.label || c).join(" & ")
+                            : null,
+                          p.warranty
+                        ].filter(Boolean).join(" · ")}
                       </CatItem>
                     )}
                     <PriceItem>{priceText}</PriceItem>

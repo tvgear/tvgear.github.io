@@ -1338,7 +1338,6 @@ export default function CheckoutView() {
                   nextStep = 2;
                 }
               }
-              console.log("[DEBUG] Reopening modal. city:", city, "district:", district, "ward:", ward, "availableWards:", availableWards.length, "=> nextStep:", nextStep);
               
               setAddressStep(nextStep);
               setAddressModalOpen(true);

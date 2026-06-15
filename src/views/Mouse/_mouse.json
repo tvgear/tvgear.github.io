@@ -38,7 +38,7 @@
         "price": 250
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wired"
     ]
@@ -63,7 +63,7 @@
         "price": 250
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wired"
     ]
@@ -98,7 +98,7 @@
         "price": 300
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wired"
     ]
@@ -127,7 +127,7 @@
         "price": 450
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wired"
     ]
@@ -153,10 +153,10 @@
       },
       {
         "name": "97%",
-        "price": 580
+        "price": 600
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wired"
     ]
@@ -181,7 +181,7 @@
         "price": 650
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wired"
     ]
@@ -206,7 +206,7 @@
         "price": 750
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wired"
     ]
@@ -236,7 +236,7 @@
         "price": 490
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -266,7 +266,7 @@
         "price": 590
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -291,7 +291,7 @@
         "price": 950
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -317,7 +317,7 @@
         "price": 1080
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -342,7 +342,7 @@
         "price": 1590
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -367,7 +367,7 @@
         "price": 1280
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -392,7 +392,7 @@
         "price": 1900
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -451,7 +451,7 @@
         ]
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -489,13 +489,6 @@
         ]
       },
       {
-        "name": "95% + BOX, Bao Test 7 Ngày",
-        "price": 1800,
-        "colors": [
-          "white"
-        ]
-      },
-      {
         "name": "97%",
         "price": 1780,
         "colors": [
@@ -510,7 +503,7 @@
         ]
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -545,13 +538,13 @@
         "price": 1780
       }
     ],
-    "warranty": "Bảo Hành Hãng 24 Tháng",
+    "warranty": "BH Hãng 24 Tháng",
     "connect": [
       "wireless"
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X2 SuperStrike",
     "tags": [
@@ -573,7 +566,7 @@
         ]
       }
     ],
-    "warranty": "Bảo Hành Hãng 24 Tháng",
+    "warranty": "BH Hãng 24 Tháng",
     "connect": [
       "wireless"
     ]
@@ -611,7 +604,7 @@
         "price": 130
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -646,7 +639,7 @@
         "price": 180
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "bluetooth"
     ]
@@ -671,7 +664,7 @@
         "price": 250
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -696,7 +689,7 @@
         "price": 250
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -721,7 +714,7 @@
         "price": 250
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -747,7 +740,7 @@
         "price": 280
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -781,7 +774,7 @@
         "price": 450
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -807,7 +800,7 @@
         "price": 450
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -841,7 +834,7 @@
         "price": 480
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -867,7 +860,7 @@
         "price": 580
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -896,7 +889,7 @@
         ]
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -922,7 +915,7 @@
         "price": 780
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -948,7 +941,7 @@
         "price": 1580
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -977,7 +970,7 @@
         "price": 580
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -1003,7 +996,7 @@
         "price": 2980
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]
@@ -1028,7 +1021,7 @@
         "price": 2780
       }
     ],
-    "warranty": "Bảo Hành Hãng",
+    "warranty": "BH Hãng",
     "connect": [
       "wireless"
     ]
@@ -1057,7 +1050,7 @@
         "price": 2900
       }
     ],
-    "warranty": "Bảo Hành 3 Tháng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]

@@ -22,7 +22,7 @@
         "price": 580
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wired"
     ]
@@ -47,7 +47,7 @@
         "price": 800
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wired"
     ]
@@ -72,7 +72,7 @@
         "price": 850
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wired"
     ]
@@ -105,7 +105,7 @@
         "price": 1150
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wired"
     ]
@@ -145,7 +145,7 @@
         ]
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -155,48 +155,9 @@
     "visible": true,
     "brand": "logig",
     "tags": [
-      "Có Dây"
+      "Không Dây & Bluetooth"
     ],
-    "name": "PRO X TKL Rapid",
-    "colors": [
-      {
-        "color": "black",
-        "labelColor": "Đen",
-        "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp"
-      },
-       {
-        "color": "pink",
-        "labelColor": "Hồng",
-        "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp"
-      }
-    ],
-    "options": [
-       {
-        "name": "New",
-        "price": 2580,
-        "colors": [
-          "black"
-        ]
-      },
-      {
-        "name": "New",
-        "price": 2580,
-        "colors": [
-          "pink"
-        ]
-      }
-    ],
-    "warranty": "Bảo Hành 24 Tháng",
-    "connect": [
-      "wired"    ]
-  },
-  {
-    "visible": true,
-    "brand": "logig",
-    "tags": [
-      "Có Dây"
-    ],
-    "name": "G515 TKL Rapid",
+    "name": "G515",
     "colors": [
       {
         "color": "black",
@@ -206,17 +167,20 @@
     ],
     "options": [
        {
-        "name": "New",
-        "price": 2980,
+        "name": "97% + BOX",
+        "price": 1900,
         "colors": [
           "black"
         ]
       }
     ],
-    "warranty": "Bảo Hành 24 Tháng",
+    "warranty": "BH Hãng 11/27",
     "connect": [
-      "wired"    ]
+      "wireless",
+      "bluetooth"
+    ]
   },
+  
   {
     "": "LOGI OFFICE --------------------------------------------------------------------------------------------------------------------"
   },
@@ -240,7 +204,7 @@
         "price": 280
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "bluetooth"
     ]
@@ -265,7 +229,7 @@
         "price": 300
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless"
     ]
@@ -306,7 +270,7 @@
         ]
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -333,7 +297,7 @@
         "price": 450
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -360,7 +324,7 @@
         "price": 600
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "bluetooth"
     ]
@@ -385,7 +349,7 @@
         "price": 1100
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -411,7 +375,7 @@
         "price": 1380
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -440,7 +404,7 @@
         "price": 280
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless"
     ]
@@ -465,7 +429,7 @@
         "price": 750
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless"
     ]
@@ -490,13 +454,104 @@
         "price": 1350
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wireless",
       "bluetooth"
     ]
   },
   {
-    "": "LIQUIDATION --------------------------------------------------------------------------------------------------------------------"
+    "": "MADLIONS --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "HE Madlions Fire68",
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/fire68-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 750
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "Logitech PRO X TKL Rapid",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp"
+      },
+       {
+        "color": "pink",
+        "labelColor": "Hồng",
+        "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp"
+      }
+    ],
+    "options": [
+       {
+        "name": "New",
+        "price": 2580,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "New",
+        "price": 2580,
+        "colors": [
+          "pink"
+        ]
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired"    ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "Logitech G515 TKL Rapid",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g515-tkl-black.webp"
+      }
+    ],
+    "options": [
+       {
+        "name": "New",
+        "price": 2980,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired"    ]
   }
 ]

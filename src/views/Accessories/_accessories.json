@@ -19,7 +19,7 @@
         "price": 150
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": []
   },
   {
@@ -42,11 +42,11 @@
         "price": 150
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": []
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "receiver",
     "tags": [
       "Chuột Gaming G304"
@@ -65,7 +65,7 @@
         "price": 250
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": []
   },
   {
@@ -74,7 +74,7 @@
     "tags": [
       "Chuột Gaming Dòng G"
     ],
-    "name": "Đầu Thu Logi G",
+    "name": "Đầu Thu Logi Dòng G",
     "colors": [
       {
         "color": "black",
@@ -88,7 +88,7 @@
         "price": 330
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": []
   },
   {
@@ -97,7 +97,7 @@
     "tags": [
       "Chuột Gaming Dòng PRO"
     ],
-    "name": "Đầu Thu Logi PRO",
+    "name": "Đầu Thu Logi Dòng PRO X",
     "colors": [
       {
         "color": "black",
@@ -119,7 +119,7 @@
         "price": 450
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": []
   },
   {
@@ -148,7 +148,7 @@
         "price": 125
       }
     ],
-    "warranty": "Không Bảo Hành",
+    "warranty": "Không BH",
     "connect": []
   },
   {
@@ -171,7 +171,7 @@
         "price": 125
       }
     ],
-    "warranty": "Không Bảo Hành",
+    "warranty": "Không BH",
     "connect": []
   },
   {
@@ -200,7 +200,7 @@
         "price": 380
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wired"
     ]
@@ -228,7 +228,7 @@
         "price": 580
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wired"
     ]
@@ -253,7 +253,7 @@
         "price": 3780
       }
     ],
-    "warranty": "Bảo Hành 1 Tháng",
+    "warranty": "BH 1 Tháng",
     "connect": [
       "wired"
     ]
@@ -296,7 +296,7 @@
         ]
       }
     ],
-    "warranty": "Không Bảo Hành",
+    "warranty": "Không BH",
     "connect": [
       ""
     ]
@@ -324,7 +324,7 @@
         "price": 150
       }
     ],
-    "warranty": "Không Bảo Hành",
+    "warranty": "Không BH",
     "connect": [
       ""
     ]
