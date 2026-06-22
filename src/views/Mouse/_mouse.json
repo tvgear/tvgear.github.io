@@ -120,7 +120,7 @@
     "options": [
       {
         "name": "90%, Xước Cao Su",
-        "price": 350
+        "price": 330
       },
       {
         "name": "97%",
@@ -149,11 +149,11 @@
     "options": [
       {
         "name": "90%, Xước Cao Su + Tặng Griptape",
-        "price": 450
+        "price": 430
       },
       {
         "name": "97%",
-        "price": 600
+        "price": 590
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -204,6 +204,10 @@
       {
         "name": "97% + Kèm Nút Che",
         "price": 750
+      },
+      {
+        "name": "97% + Kèm Nút Bấm",
+        "price": 800
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -364,7 +368,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 1280
+        "price": 1250
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -389,7 +393,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 1900
+        "price": 1890
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -922,7 +926,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Master 3s",
     "tags": [
@@ -1044,10 +1048,6 @@
       {
         "name": "97% + BOX",
         "price": 2680
-      },
-       {
-        "name": "97% + BOX, BH 4/28",
-        "price": 2900
       }
     ],
     "warranty": "BH 3 Tháng",

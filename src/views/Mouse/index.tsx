@@ -12,7 +12,7 @@ type MouseBrand =
 const brands = [
   { key: "logig", label: "Logitech Gaming" },
   { key: "logio", label: "Logi Văn Phòng" },
-  { key: "razer", label: "Razer" },
+  { key: "razer", label: "Razer Gaming" },
 ] as const satisfies ReadonlyArray<BrandT<MouseBrand>>;
 
 const products = (productsJson as any[])

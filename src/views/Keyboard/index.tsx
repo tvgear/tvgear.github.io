@@ -3,12 +3,13 @@ import { BlockKeyboard } from "@/views/Keyboard/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
 import productsJson from "./_keyboard.json";
 
-type KeyboardBrand = "logig" | "logio" | "logiocb" | "liquidation";
+type KeyboardBrand = "logig" | "logio" | "logiocb" | "razer" | "liquidation";
 
 const brands = [
   { key: "logig", label: "Logitech Gaming"},
   { key: "logio", label: "Logi Văn Phòng"},
   { key: "logiocb", label: "Combo Logi"},
+  { key: "razer", label: "Razer Gaming"},
   { key: "liquidation", label: "Thanh Lý"},
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 

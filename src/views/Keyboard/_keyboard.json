@@ -119,14 +119,14 @@
     "name": "PRO X 60",
     "colors": [
       {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/keyboards/pro-x-60-white.webp"
-      },
-      {
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/keyboards/pro-x-60-black.webp"
+      },
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/pro-x-60-white.webp"
       }
     ],
     "options": [
@@ -135,6 +135,13 @@
         "price": 2050,
         "colors": [
           "white"
+        ]
+      },
+       {
+        "name": "97%, Lỗi LED",
+        "price": 1750,
+        "colors": [
+          "black"
         ]
       },
       {
@@ -553,5 +560,33 @@
     "warranty": "Bao Test 7 Ngày",
     "connect": [
       "wired"    ]
+  },
+  {
+    "": "RAZER --------------------------------------------------------------------------------------------------------------------"
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "Huntsman v3 Pro TKL CS2",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/razer-huntsman-v3-pro-tkl-cs2.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX + Kê Tay, BH 5/28",
+        "price": 4650
+      }
+    ],
+    "warranty": "BH Hãng",
+    "connect": [
+      "wired"
+    ]
   }
 ]
