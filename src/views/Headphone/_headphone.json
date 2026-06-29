@@ -40,13 +40,12 @@
     ],
     "options": [
       {
-        "name": "97% Đen/Trắng/Xanh + BOX, Bluetooth",
+        "name": "97%, Dùng Bluetooth, Không Kèm Receiver",
         "price": 650
       }
     ],
     "warranty": "BH 1 Tháng",
     "connect": [
-      "wireless",
       "bluetooth"
     ]
   },
@@ -71,14 +70,14 @@
     ],
     "options": [
       {
-        "name": "97%, Bluetooth",
+        "name": "97%, Dùng Bluetooth, Không Kèm Receiver",
         "price": 1650,
         "colors": [
           "white"
         ]
       },
       {
-        "name": "97% + BOX, Thiếu Đệm Nỉ",
+        "name": "97% + BOX, Thiếu Đệm Nỉ, Kèm Receiver",
         "price": 2480,
         "colors": [
           "black"

@@ -413,26 +413,9 @@
         "color": "black",
         "labelColor": "Đen",
         "image": "/assets/images/mouses/gpro-x-spl-black.webp"
-      },
-      {
-        "color": "white",
-        "labelColor": "Trắng",
-        "image": "/assets/images/mouses/gpro-x-spl-white.webp"
-      },
-       {
-        "color": "red",
-        "labelColor": "Đỏ",
-        "image": "/assets/images/mouses/gpro-x-spl-red.webp"
       }
     ],
     "options": [
-      {
-        "name": "97%",
-        "price": 1450,
-        "colors": [
-          "red"
-        ]
-      },
       {
         "name": "97%",
         "price": 1550,
@@ -445,13 +428,6 @@
         "price": 1680,
         "colors": [
           "black"
-        ]
-      },
-      {
-        "name": "97% + BOX",
-        "price": 1550,
-        "colors": [
-          "white"
         ]
       }
     ],
@@ -493,14 +469,14 @@
         ]
       },
       {
-        "name": "97%",
+        "name": "97%,  Đầu Thu SPL1",
         "price": 1780,
         "colors": [
           "black"
         ]
       },
       {
-        "name": "97%",
+        "name": "97%,  Đầu Thu SPL1",
         "price": 1780,
         "colors": [
           "rgba(204,61,99)"
@@ -595,17 +571,12 @@
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/mouses/m220-white.webp"
-      },
-      {
-        "color": "rgba(240,227,223)",
-        "labelColor": "Hồng",
-        "image": "/assets/images/mouses/m220-pink.webp"
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 130
+        "price": 140
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -770,11 +741,11 @@
         "price": 300
       },
       {
-        "name": "97%, Size M/L",
+        "name": "97%, Size M/L, Kèm Receiver",
         "price": 400
       },
       {
-        "name": "New No Box, Size L",
+        "name": "New No Box, Size L, Kèm Receiver",
         "price": 450
       }
     ],
@@ -785,7 +756,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "M650 M",
     "tags": [
@@ -830,11 +801,11 @@
         "price": 350
       },
       {
-        "name": "97%",
+        "name": "97%, Kèm Receiver",
         "price": 450
       },
       {
-        "name": "97%, Bản Business",
+        "name": "97%, Bản Business, Kèm Receiver",
         "price": 480
       }
     ],
@@ -1001,6 +972,31 @@
       }
     ],
     "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Viper v4 Pro",
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
+    "colors": [
+      {
+        "color": "black", 
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/viper-v4-pro-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX, BH 3/28",
+        "price": 2880
+      }
+    ],
+    "warranty": "BH Hãng",
     "connect": [
       "wireless"
     ]
