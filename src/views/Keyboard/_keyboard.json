@@ -28,7 +28,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "tags": [
       "Có Dây"
@@ -186,6 +186,59 @@
       "wireless",
       "bluetooth"
     ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "tags": [
+      "Có Dây"
+    ],
+    "name": "G515 TKL Rapid",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/g515-tkl-black.webp"
+      },
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/g515-tkl-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New Open Box, Layout FR (Pháp)",
+        "price": 2180,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "New Open Box, Layout JP (Nhật)",
+        "price": 2280,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "New Open Box, Layout Song Ngữ JP (Nhật) + US (Mỹ)",
+        "price": 2580,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "New Open Box",
+        "price": 2580,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"    ]
   },
   
   {
