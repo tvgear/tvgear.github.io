@@ -540,7 +540,7 @@
     "options": [
       {
         "name": "97% + BOX",
-        "price": 750
+        "price": 690
       }
     ],
     "warranty": "Bao Test 7 Ngày",
@@ -549,7 +549,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "tags": [
       "Có Dây"
