@@ -427,12 +427,27 @@
         "color": "white",
         "labelColor": "Trắng",
         "image": "/assets/images/keyboards/mx-keys-mini-white.webp"
+      },
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mx-keys-mini-black.png"
       }
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 1380
+        "name": "95%",
+        "price": 1380,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "99% + BOX",
+        "price": 1780,
+         "colors": [
+          "black"
+        ]
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -498,6 +513,81 @@
     "visible": true,
     "brand": "logiocb",
     "tags": [
+      "Không Dây"
+    ],
+    "name": "MK235",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk235.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 350
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": [
+      "Không Dây"
+    ],
+    "name": "MK295",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/mk295.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 400
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": [
+      "Không Dây"
+    ],
+    "name": "[CB] K270 + M325",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/keyboards/k270.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 480
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logiocb",
+    "tags": [
       "Không Dây & Bluetooth"
     ],
     "name": "MK950",
@@ -512,6 +602,32 @@
       {
         "name": "97%",
         "price": 1350
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logiocb",
+    "tags": [
+      "Không Dây & Bluetooth"
+    ],
+    "name": "[CB] MX Keys Mini + Anywhere 3s",
+    "colors": [
+      {
+        "color": "white",
+        "labelColor": "Trắng",
+        "image": "/assets/images/keyboards/mx-keys-mini-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 2800
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -549,43 +665,32 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "liquidation",
     "tags": [
-      "Có Dây"
+      "Không Dây"
     ],
-    "name": "Logitech PRO X TKL Rapid",
+    "name": "Razer Blackwidow v3 Mini HP",
     "colors": [
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/keyboards/pro-x-tkl-rapid-black.webp"
-      },
-       {
-        "color": "pink",
-        "labelColor": "Hồng",
-        "image": "/assets/images/keyboards/pro-x-tkl-rapid-pink.webp"
+        "image": "/assets/images/keyboards/blackwidow-v3-mini-hyperspeed.png"
       }
     ],
     "options": [
        {
-        "name": "New",
-        "price": 2580,
+        "name": "97%",
+        "price": 1300,
         "colors": [
           "black"
-        ]
-      },
-      {
-        "name": "New",
-        "price": 2580,
-        "colors": [
-          "pink"
         ]
       }
     ],
     "warranty": "Bao Test 7 Ngày",
     "connect": [
-      "wired"    ]
+      "wireless"
+    ]
   },
   {
     "visible": true,
@@ -611,8 +716,10 @@
       }
     ],
     "warranty": "Bao Test 7 Ngày",
-    "connect": [
-      "wired"    ]
+   "connect": [
+      "wireless",
+      "bluetooth"
+    ]
   },
   {
     "": "RAZER --------------------------------------------------------------------------------------------------------------------"

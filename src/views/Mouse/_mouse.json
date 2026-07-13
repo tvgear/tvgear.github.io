@@ -890,7 +890,37 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Anywhere 3s",
+    "tags": [
+      "Bluetooth"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/mx-anywhere-3s-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1250
+      },
+      {
+        "name": "New, Bản Business",
+        "price": 1350
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
     "brand": "logio",
     "name": "MX Master 3s",
     "tags": [
@@ -905,11 +935,37 @@
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 1580
+        "name": "New, Bản Business, BH SPC 5/27",
+        "price": 1780
       }
     ],
-    "warranty": "BH 3 Tháng",
+    "warranty": "BH Hãng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Master 4",
+    "tags": [
+      "Bluetooth"
+    ],
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/mouses/mx-master-4.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New, BH 7/27",
+        "price": 2450
+      }
+    ],
+    "warranty": "BH Hãng",
     "connect": [
       "wireless",
       "bluetooth"
@@ -950,7 +1006,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper V3 Pro Sentinals",
     "tags": [
@@ -1000,7 +1056,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Basilisk v3 Pro",
     "tags": [
@@ -1025,7 +1081,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "DA v4 Pro",
     "tags": [

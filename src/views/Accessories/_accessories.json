@@ -349,7 +349,7 @@
     "options": [
       {
         "name": "98%",
-        "price": 2100
+        "price": 2080
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -363,18 +363,76 @@
     "tags": [
       ""
     ],
-    "name": "Logi Conferrence Live",
+    "name": "Logi Brio 505",
     "colors": [
       {
         "color": "black",
         "labelColor": "Đen",
-        "image": "/assets/images/accessories/cglive.webp"
+        "image": "/assets/images/accessories/brio-505.png"
       }
     ],
     "options": [
       {
-        "name": "98%",
-        "price": 9380
+        "name": "New Open Box",
+        "price": 1800
+      },
+      {
+        "name": "New",
+        "price": 1900
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "tags": [
+      ""
+    ],
+    "name": "Logi Brio 1000 4K",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/brio-1000-4k.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New Open Box",
+        "price": 2380
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "tags": [
+      ""
+    ],
+    "name": "Logi C930e",
+    "colors": [
+      {
+        "color": "black",
+        "labelColor": "Đen",
+        "image": "/assets/images/accessories/c930e.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New Open Box",
+        "price": 1180
+      },
+      {
+        "name": "New",
+        "price": 1280
       }
     ],
     "warranty": "BH 1 Tháng",
