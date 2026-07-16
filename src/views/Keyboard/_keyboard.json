@@ -665,7 +665,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "tags": [
       "Không Dây"
@@ -693,7 +693,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "tags": [
       "Có Dây"
