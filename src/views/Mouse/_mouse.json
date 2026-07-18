@@ -517,7 +517,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "PRO X2 SuperStrike",
     "tags": [
@@ -532,8 +532,8 @@
     ],
     "options": [
       {
-        "name": "New",
-        "price": 4190,
+        "name": "98% + BOX",
+        "price": 3500,
         "colors": [
           "white"
         ]
