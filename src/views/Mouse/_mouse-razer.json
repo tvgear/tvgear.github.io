@@ -1,0 +1,28 @@
+[
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Orochi v2",
+    "colors": [
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/orochi-v2-white.webp"
+      },
+      {
+        "key": "light-pink",
+        "image": "/assets/images/mouses/orochi-v2-pink.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 580
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  }
+]

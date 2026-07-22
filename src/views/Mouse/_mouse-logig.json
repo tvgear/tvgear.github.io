@@ -1,0 +1,499 @@
+[
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G102",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g102-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/g102-white.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "90%, Bóng",
+        "price": 220,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "90%, Ố",
+        "price": 220,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "95%",
+        "price": 250
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G203",
+    "colors": [
+      {
+        "key": "blue",
+        "image": "/assets/images/mouses/g203-lilac.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%",
+        "price": 250
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G102/G203 Mod Slient",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g102-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/g102-white.webp"
+      },
+      {
+        "key": "blue",
+        "image": "/assets/images/mouses/g203-lilac.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%",
+        "price": 300
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G402",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g402.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "90%, Xước Cao Su",
+        "price": 330
+      },
+      {
+        "name": "97%",
+        "price": 450
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G403 Hero",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g403-hero.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "90%, Xước Cao Su + Tặng Griptape",
+        "price": 430
+      },
+      {
+        "name": "97%",
+        "price": 590
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 Hero",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g502-hero.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 650
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 X",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g502-x-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + Kèm Nút Che",
+        "price": 750
+      },
+      {
+        "name": "97% + Kèm Nút Bấm",
+        "price": 800
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G304",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g304-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/g304-white.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%",
+        "price": 490
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G304 Mod Slient",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g304-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/g304-white.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%",
+        "price": 590
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G309",
+    "colors": [
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/g309-white.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 980
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G703",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g703.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1080
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO WL",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/gpro-wireless.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "90%, Bóng + Tặng Kèm Gripate",
+        "price": 1080
+      },
+      {
+        "name": "97%",
+        "price": 1280
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO 2 WL",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/gpro-2-wl-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1680
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G502 WL",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g502-wl.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1280
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logig",
+    "name": "G502 X Plus",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g502-x-plus-wl.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%, Mòn Nhẹ Cao Su",
+        "price": 1780
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X SuperLight",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/gpro-x-spl-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1550,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X SuperLight 2",
+    "colors": [
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/gpro-x-spl2-white.webp"
+      },
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/gpro-x-spl2-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%, Đầu Thu SPL1",
+        "price": 1680,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "97%, Đầu Thu SPL1",
+        "price": 1780,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "95%",
+        "price": 1980,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "97%",
+        "price": 2080,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X Superlight 2 DEX",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp"
+      },
+      {
+        "key": "pink",
+        "image": "/assets/images/mouses/gpro-x-spl2-dex-pink.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%, Đầu Thu SPL1",
+        "price": 1780
+      },
+      {
+        "name": "97%",
+        "price": 2080
+      }
+     
+    ],
+    "warranty": "BH Hãng 24 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X2 SuperStrike",
+    "colors": [
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/pro-x2-superstrike.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX",
+        "price": 3490,
+        "colors": [
+          "white"
+        ]
+      }
+    ],
+    "warranty": "BH Hãng 24 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  }
+]

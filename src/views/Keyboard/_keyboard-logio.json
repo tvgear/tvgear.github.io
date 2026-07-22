@@ -1,0 +1,181 @@
+[
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "K250",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/k250.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 280
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "K270",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/k270.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 300
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "K650",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/k650.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/keyboards/k650-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 580,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "97%",
+        "price": 650,
+        "colors": [
+          "white"
+        ]
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "K380s",
+    "colors": [
+      {
+        "key": "light-pink",
+        "image": "/assets/images/keyboards/k380s-pink.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 450
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "POP Icon",
+    "colors": [
+      {
+        "key": "pink",
+        "image": "/assets/images/keyboards/pop-icon-keys.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 600
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "POP Keys",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/pop-keys-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1100
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Keys Mini",
+    "colors": [
+      {
+        "key": "white",
+        "image": "/assets/images/keyboards/mx-keys-mini-white.webp"
+      },
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/mx-keys-mini-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%",
+        "price": 1380,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "99% + BOX",
+        "price": 1780,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  }
+]

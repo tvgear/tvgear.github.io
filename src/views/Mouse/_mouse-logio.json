@@ -1,0 +1,377 @@
+[
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M220/M221",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m220-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/m220-white.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 140
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M196",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m196-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/mouses/m196-white.webp"
+      },
+      {
+        "key": "light-pink",
+        "image": "/assets/images/mouses/m196-pink.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 180
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M331",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m331-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 250
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M325",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m325-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 250
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M240",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m240-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 250
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M350s",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m350s-black.webp"
+      },
+       {
+        "key": "light-pink",
+        "image": "/assets/images/mouses/m350s-pink.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 280,
+         "colors" : [
+          "black"
+        ]
+      },
+      {
+        "name": "New No Box",
+        "price": 330,
+        "colors" : [
+          "light-pink"
+        ]
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M550 M/L",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m550-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%, Size M/L, Không Receiver",
+        "price": 300
+      },
+      {
+        "name": "97%, Size M/L, Kèm Receiver",
+        "price": 400
+      },
+      {
+        "name": "New No Box, Size L, Kèm Receiver",
+        "price": 450
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logio",
+    "name": "M650 M",
+    "colors": [
+      {
+        "key": "pink",
+        "image": "/assets/images/mouses/m650-pink.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 450
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M650 L",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m650-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%, Không Receiver",
+        "price": 350
+      },
+      {
+        "name": "97%, Kèm Receiver",
+        "price": 450
+      },
+      {
+        "name": "97%, Bản Business, Kèm Receiver",
+        "price": 480
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "M720",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m720-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "New No Box",
+        "price": 580
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "Lift Vertical",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/lift-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 880,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Anywhere 2s",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/mx-anywhere-2s-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 780
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "MX Anywhere 3s",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/mx-anywhere-3s-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1250
+      },
+      {
+        "name": "New, Bản Business",
+        "price": 1350
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logio",
+    "name": "MX Master 3s",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/mx-master-3s-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "New, Bản Business, BH SPC 5/27",
+        "price": 1780
+      }
+    ],
+    "warranty": "BH Hãng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logio",
+    "name": "MX Master 4",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/mx-master-4.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New, BH 7/27",
+        "price": 2450
+      }
+    ],
+    "warranty": "BH Hãng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  }
+]

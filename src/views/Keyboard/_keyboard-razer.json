@@ -1,0 +1,23 @@
+[
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Huntsman v3 Pro TKL CS2",
+    "colors": [
+      {
+        "key": "red",
+        "image": "/assets/images/keyboards/razer-huntsman-v3-pro-tkl-cs2.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX + Kê Tay, BH 5/28",
+        "price": 4500
+      }
+    ],
+    "warranty": "BH Hãng",
+    "connect": [
+      "wired"
+    ]
+  }
+]

@@ -1,7 +1,11 @@
 import * as React from "react";
 import { BlockKeyboard } from "@/views/Keyboard/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
-import productsJson from "./_keyboard.json";
+import logigProducts from "./_keyboard-logig.json";
+import logioProducts from "./_keyboard-logio.json";
+import logiocbProducts from "./_keyboard-logiocb.json";
+import liquidationProducts from "./_keyboard-liquidation.json";
+import razerProducts from "./_keyboard-razer.json";
 
 type KeyboardBrand = "logig" | "logio" | "logiocb" | "razer" | "liquidation";
 
@@ -12,6 +16,14 @@ const brands = [
   { key: "razer", label: "Razer Gaming"},
   { key: "liquidation", label: "Thanh Lý"},
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
+
+const productsJson = [
+  ...logigProducts,
+  ...logioProducts,
+  ...logiocbProducts,
+  ...liquidationProducts,
+  ...razerProducts,
+];
 
 const products = (productsJson as any[])
   .filter((p) => p.brand && p.visible !== false)

@@ -1,0 +1,44 @@
+[
+  {
+    "visible": true,
+    "brand": "speaker",
+    "name": "Z313",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/z313.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 580
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "speaker",
+    "name": "Z407",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/z407.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 1150
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  }
+]

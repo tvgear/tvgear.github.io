@@ -1,0 +1,104 @@
+[
+  {
+    "visible": false,
+    "brand": "logig",
+    "name": "G333",
+    "colors": [
+      {
+        "key": "white",
+        "image": "/assets/images/headphones/g333-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 590
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G435",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/g435-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%, Dùng Bluetooth, Không Kèm Receiver",
+        "price": 650
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO 2 WL Lightspeed",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/pro2-wl-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/headphones/pro2-wl-white.webp"
+      }
+     
+    ],
+    "options": [
+      {
+        "name": "97%, Dùng Bluetooth, Không Kèm Receiver",
+        "price": 1680,
+        "colors": [
+          "black",
+          "white"
+        ]
+      },
+      {
+        "name": "97% + Kèm Receiver",
+        "price": 2550,
+        "colors": [
+          "white"
+        ]
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G522",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/g522-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 1680
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  }
+]

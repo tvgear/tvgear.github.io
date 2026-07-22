@@ -1,0 +1,86 @@
+[
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "H340",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/h340.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 280
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "H370",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/h370.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 350
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "H390",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/h390.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 430
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
+    "name": "H570e",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/h570e.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 500
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  }
+]

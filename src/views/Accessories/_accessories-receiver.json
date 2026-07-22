@@ -1,0 +1,105 @@
+[
+  {
+    "visible": true,
+    "brand": "receiver",
+    "name": "Đầu Thu Logi Bolt",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/receiver-bolt.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "Chuột Văn Phòng Có Kí Hiệu ⚡︎ Màu Xanh",
+        "price": 150
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": []
+  },
+  {
+    "visible": true,
+    "brand": "receiver",
+    "name": "Đầu Thu Logi Unifying",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/receiver-unifying.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "Chuột Văn Phòng Có Kí Hiệu * Màu Cam",
+        "price": 150
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": []
+  },
+  {
+    "visible": false,
+    "brand": "receiver",
+    "name": "Đầu Thu Logi G304",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/receiver-g304.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "Cho Chuột Gaming G304",
+        "price": 250
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": []
+  },
+  {
+    "visible": true,
+    "brand": "receiver",
+    "name": "Đầu Thu Logi Dòng G",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/receiver-g.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "G603/G703/G903/G502/PRO WL",
+        "price": 330
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": []
+  },
+  {
+    "visible": true,
+    "brand": "receiver",
+    "name": "Đầu Thu Logi Dòng PRO X",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/receiver-prox1.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "PRO 2 WL",
+        "price": 450
+      },
+      {
+        "name": "PRO X SPL1",
+        "price": 450
+      },
+      {
+        "name": "PRO X SPL2/SPL2DEX/SPL2c (1K Hz)",
+        "price": 450
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": []
+  }
+]

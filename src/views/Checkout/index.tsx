@@ -803,6 +803,17 @@ const ProgressContainer = styled.div`
 
 type Step = "form" | "payment" | "success";
 
+const CONNECTION_LABELS: Record<string, string> = {
+  wired: "Có Dây",
+  wireless: "Không Dây",
+  bluetooth: "Bluetooth",
+};
+
+const getProductMetadata = (item: CartItem) => [
+  item.connect?.map((connection) => CONNECTION_LABELS[connection] ?? connection).join(" & "),
+  item.warranty,
+].filter(Boolean).join(" • ");
+
 export default function CheckoutView() {
   const router = useRouter();
   const [cartItems, setCartItems] = useState<CartItem[] | null>(null);
@@ -1076,7 +1087,7 @@ export default function CheckoutView() {
         const unitPrice = item.option.price;
         return {
           productName: item.productName,
-          productColor: findColorDef(item.color.color)?.label ?? item.color.color ?? "",
+          productColor: findColorDef(item.color.key)?.label ?? item.color.key,
           productOption: item.option.name,
           productPriceOption: unitPrice * 1000,
           productQuantity: item.quantity,
@@ -1149,13 +1160,15 @@ export default function CheckoutView() {
             <div style={{ background: '#fcfcfc', borderRadius: '12px', padding: '16px', marginBottom: '16px' }}>
               {cartItems.map((item, idx) => {
                 const up = item.option.price;
+                const productMetadata = getProductMetadata(item);
                 return (
                   <CheckoutItem key={idx}>
                     <CIImg src={item.image} />
                     <CIInfo>
                       <CIName>{item.productName}</CIName>
+                      {productMetadata && <CIMeta>{productMetadata}</CIMeta>}
                       <CIMeta>
-                        {findColorDef(item.color.color)?.label || item.color.color} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
+                        {findColorDef(item.color.key)?.label ?? item.color.key} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
                       </CIMeta>
                       <CIPriceWrap>
                         <CIPrice>{(up * item.quantity).toLocaleString("vi-VN")}.000 đ</CIPrice>
@@ -1268,13 +1281,15 @@ export default function CheckoutView() {
           <ProductListWrap>
             {(showAll ? cartItems : cartItems.slice(0, limit)).map((item, idx) => {
               const up = item.option.price;
+              const productMetadata = getProductMetadata(item);
               return (
                 <CheckoutItem key={idx}>
                   <CIImg src={item.image} />
                   <CIInfo>
                     <CIName>{item.productName}</CIName>
+                    {productMetadata && <CIMeta>{productMetadata}</CIMeta>}
                     <CIMeta>
-                      {findColorDef(item.color.color)?.label || item.color.color} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
+                      {findColorDef(item.color.key)?.label ?? item.color.key} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
                     </CIMeta>
                     <CIPriceWrap>
                       <CIPrice>{(up * item.quantity).toLocaleString("vi-VN")}.000 đ</CIPrice>

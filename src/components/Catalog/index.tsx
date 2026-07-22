@@ -5,6 +5,7 @@ import { addToCart, clearCart } from "@/utils/carts";
 import { useRouter } from "next/router";
 import { copyToClipboard } from "@/utils";
 import { BaseProduct, Brand as BrandT } from "@/types/product";
+import { findColorDef } from "@/utils/colors";
 export type { BaseProduct, BrandT as Brand };
 import {
   CatalogWrapper,
@@ -398,7 +399,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
 
   const handleBuyNowFromDetail = (product: BaseProduct, currentColor: any, currentOption: any) => {
     clearCart();
-    addToCart(product.name, currentColor, currentOption, 1);
+    addToCart(product.name, currentColor, currentOption, 1, product);
     window.dispatchEvent(new Event("cart-updated"));
     handleCloseDetail();
     router.push("/checkout");
@@ -442,7 +443,7 @@ export function Catalog<T extends string = string>({ brands, products }: Catalog
       });
       setTimeout(() => document.body.removeChild(clone), 700);
     }
-    addToCart(product.name, currentColor, currentOption, 1);
+    addToCart(product.name, currentColor, currentOption, 1, product);
     window.dispatchEvent(new Event("cart-updated"));
     handleCloseDetail();
   };
@@ -707,7 +708,7 @@ function ProductDetailModal({ product, onClose, isClosing, onAddToCart, onBuyNow
   const filteredOptions = React.useMemo(() => {
     if (!currentColor) return product.options;
     return product.options.filter(opt =>
-      !opt.colors || opt.colors.length === 0 || opt.colors.includes(currentColor.color)
+      !opt.colors || opt.colors.length === 0 || opt.colors.includes(currentColor.key)
     );
   }, [currentColor, product.options]);
 
@@ -724,7 +725,7 @@ function ProductDetailModal({ product, onClose, isClosing, onAddToCart, onBuyNow
 
   const currentOption = product.options[selectedOptIdx] || product.options[0];
   const price = currentOption?.price || 0;
-  const colorLabel = currentColor?.labelColor || currentColor?.color;
+  const colorLabel = findColorDef(currentColor?.key)?.label ?? currentColor?.key;
 
   const handleChatClick = () => {
     const text = `${product.name}, ${colorLabel}, ${currentOption?.name}
@@ -759,7 +760,7 @@ Mình cần tư vấn sản phẩm này.`;
             <DetailLabel>Màu</DetailLabel>
             <DetailValues>
               {product.colors.map((c, i) => (
-                <DetailThumb key={c.image} $active={selectedColorIdx === i} $color={c.color} onClick={() => setSelectedColorIdx(i)} />
+                <DetailThumb key={c.image} $active={selectedColorIdx === i} $color={findColorDef(c.key)?.hex ?? "#000000"} onClick={() => setSelectedColorIdx(i)} />
               ))}
             </DetailValues>
           </DetailSection>
@@ -819,12 +820,8 @@ Mình cần tư vấn sản phẩm này.`;
               </ContactNote>
 
               <ContactActions>
-                <ContactBtn $type="zalo" href="https://zalo.me/0398637036" target="_blank" rel="noopener noreferrer">
-                  <span>Đến Zalo</span>
-                  <ExternalLink size={14} style={{ opacity: 0.6 }} />
-                </ContactBtn>
                 <ContactBtn $type="fb" href="https://fb.me/tvgear" target="_blank" rel="noopener noreferrer">
-                  <span>Đến Messenger</span>
+                  <span>Chat Messenger</span>
                   <ExternalLink size={14} style={{ opacity: 0.6 }} />
                 </ContactBtn>
               </ContactActions>

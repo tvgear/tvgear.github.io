@@ -1,18 +1,23 @@
 import * as React from "react";
 import { BlockAccessories } from "@/views/Accessories/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
-import productsJson from "./_accessories.json";
+import receiverProducts from "./_accessories-receiver.json";
+import speakerProducts from "./_accessories-speaker.json";
+import webcamProducts from "./_accessories-webcam.json";
 
-type AccessoriesBrand = "receiver" | "webcam" | "speaker" | "controller" | "cable" | "adapter";
+type AccessoriesBrand = "receiver" | "webcam" | "speaker";
 
 const brands = [
   { key: "receiver", label: "Đầu Thu" },
   { key: "speaker",   label: "Loa" },
   { key: "webcam", label: "Webcam" },
-  // { key: "controller", label: "Tay Cầm" },
-  // { key: "cable", label: "Cáp Sạc" },
-  // { key: "adapter", label: "Đầu Chuyển" },
 ] as const satisfies ReadonlyArray<BrandT<AccessoriesBrand>>;
+
+const productsJson = [
+  ...receiverProducts,
+  ...speakerProducts,
+  ...webcamProducts,
+];
 
 const products = (productsJson as any[])
   .filter((p) => p.brand && p.visible !== false)

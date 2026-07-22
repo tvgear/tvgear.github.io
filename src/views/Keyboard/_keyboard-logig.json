@@ -1,0 +1,211 @@
+[
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G213",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/g213.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 550
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logig",
+    "name": "G413 SE TKL",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/g413-se-tkl.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 800
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G413 SE FULL SIZE",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/g413-se-fs.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 850
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G512 GX",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/g512-gx.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% Brown, Sai LED",
+        "price": 950
+      },
+      {
+        "name": "98% Red, LED Đẹp",
+        "price": 1050
+      },
+      {
+        "name": "98% Blue, LED Đẹp + BOX",
+        "price": 1150
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X 60",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/pro-x-60-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/keyboards/pro-x-60-white.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX Cứng",
+        "price": 2050,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "97%, Lỗi LED",
+        "price": 1750,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "97% + BOX",
+        "price": 2100,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "logig",
+    "name": "G515",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/g515-tkl-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 1900,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH Hãng 11/27",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "G515 TKL Rapid",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/keyboards/g515-tkl-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/keyboards/g515-tkl-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New Open Box, Layout FR (Pháp)",
+        "price": 2180,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "New Open Box, Layout JP (Nhật)",
+        "price": 2280,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "New Open Box, Layout Song Ngữ JP (Nhật) + US (Mỹ)",
+        "price": 2580,
+        "colors": [
+          "white"
+        ]
+      },
+      {
+        "name": "New Open Box",
+        "price": 2580,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  }
+]

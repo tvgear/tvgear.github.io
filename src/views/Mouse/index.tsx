@@ -1,7 +1,10 @@
 import * as React from "react";
 import { BlockMouse } from "@/views/Mouse/style";
 import { Catalog, BaseProduct, Brand as BrandT } from "@/components/Catalog";
-import productsJson from "./_mouse.json";
+import logigProducts from "./_mouse-logig.json";
+import logioProducts from "./_mouse-logio.json";
+import razerProducts from "./_mouse-razer.json";
+import liquidationProducts from "./_mouse-liquidation.json";
 
 type MouseBrand =
   | "logig"
@@ -13,7 +16,15 @@ const brands = [
   { key: "logig", label: "Logitech Gaming" },
   { key: "logio", label: "Logi Văn Phòng" },
   { key: "razer", label: "Razer Gaming" },
+  // { key: "liquidation", label: "Thanh Lý" },
 ] as const satisfies ReadonlyArray<BrandT<MouseBrand>>;
+
+const productsJson = [
+  ...logigProducts,
+  ...logioProducts,
+  ...razerProducts,
+  ...liquidationProducts,
+];
 
 const products = (productsJson as any[])
   .filter((p) => p.brand && p.visible !== false)

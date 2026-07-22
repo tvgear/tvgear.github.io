@@ -62,18 +62,8 @@ import {
 
 import { Note } from "@/layouts";
 import { copyToClipboard } from "@/utils";
-
-export type ProductColor = {
-  color: string;
-  labelColor?: string;
-  image: string;
-};
-
-export type ProductOption = {
-  name: string;
-  price: number;
-  colors?: string[];
-};
+import { ProductColor, ProductOption } from "@/types/product";
+import { findColorDef } from "@/utils/colors";
 
 export type OrderData = {
   productName: string;
@@ -169,7 +159,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
   // Lọc option theo màu
   const filteredOpts =
     data?.options.filter(
-      (opt) => !opt.colors || opt.colors.includes(currentColor?.color ?? "")
+      (opt) => !opt.colors || !currentColor || opt.colors.includes(currentColor.key)
     ) ?? [];
 
   const visibleOptions =
@@ -203,7 +193,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
       const payload = {
         items: [{
           productName: data.productName,
-          productColor: currentColor?.labelColor ?? currentColor?.color ?? "",
+          productColor: findColorDef(currentColor?.key)?.label ?? currentColor?.key ?? "",
           productOption: currentOption?.name,
           productPriceOption: finalPrice * 1000,
           productQuantity: 1,
@@ -284,7 +274,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
                 <InfoOption>
                   <NameInfo>
                     {data?.productName}
-                    <span>{currentColor?.labelColor ?? currentColor?.color}</span>
+                    <span>{findColorDef(currentColor?.key)?.label ?? currentColor?.key}</span>
                     <span>{currentOption?.name}</span>
                   </NameInfo>
                   <PriceSelectInfo>
@@ -397,12 +387,12 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
                     <ColorItem>
                       {data?.colors.map((c, i) => (
                         <ItemColorSelect
-                          key={c.color}
+                          key={c.key}
                           className={i === colorIndex ? "active" : ""}
                           onClick={() => {
                             setColorIndex(i);
                             const allowed = data.options.filter(
-                              (opt) => !opt.colors || opt.colors.includes(c.color)
+                              (opt) => !opt.colors || opt.colors.includes(c.key)
                             );
 
                             if (!allowed.some((o) => o.name === optionName)) {
@@ -410,7 +400,7 @@ export default function OrderProduct({ open, data, onClose, onSuccess }: OrderPr
                             }
                           }}
                         >
-                          {c.labelColor}
+                          {findColorDef(c.key)?.label ?? c.key}
                         </ItemColorSelect>
                       ))}
                     </ColorItem>

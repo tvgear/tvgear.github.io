@@ -1,13 +1,14 @@
+import type { ProductColorKey } from "@/data/product-colors";
+
 export type ProductColor = {
-  color: string;
-  labelColor?: string;
+  key: ProductColorKey;
   image: string;
 };
 
 export type ProductOption = {
   name: string;
   price: number;
-  colors?: string[];
+  colors?: ProductColorKey[];
 };
 
 export type Brand<B extends string = string> = {
@@ -26,7 +27,6 @@ export type BaseProduct<B extends string = string> = {
   options: ProductOption[];
   images?: string[];
   visible?: boolean;
-  tags: string[];
   connect?: string[];
   warranty?: string;
 };
@@ -37,4 +37,6 @@ export type CartItem = {
   option: ProductOption;
   quantity: number;
   image: string;
+  connect?: string[];
+  warranty?: string;
 };

@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { ShoppingBag, X, Mouse as MouseIcon, Keyboard as KeyboardIcon, Headphones, LayoutGrid, Trash2, Plus, Minus, MapPin, ChevronDown, MessageCircleMore } from "lucide-react";
 import { getCart, getCartTotal, updateQty as updateCartQuantity, removeFromCart } from "@/utils/carts";
 import { CartItem } from "@/types/product";
+import { findColorDef } from "@/utils/colors";
 
 
 /* ─── Styled Components ─── */
@@ -907,7 +908,7 @@ const LoadingDots = styled.div`
 
 const ChatActions = styled.div<{ $show?: boolean }>`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   margin-top: auto;
   padding-top: 12px;
@@ -919,6 +920,7 @@ const ChatActions = styled.div<{ $show?: boolean }>`
 
 const ChatActionBtn = styled.a<{ $type: "zalo" | "messenger" }>`
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -1402,9 +1404,6 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                       </MessageBubble>
                     )}
                     <ChatActions $show={showSecondMessage}>
-                      <ChatActionBtn $type="zalo" href="https://zalo.me/0398637036" target="_blank" rel="noopener noreferrer">
-                        Chat Zalo
-                      </ChatActionBtn>
                       <ChatActionBtn $type="messenger" href="https://fb.me/tvgear" target="_blank" rel="noopener noreferrer">
                         Chat Messenger
                       </ChatActionBtn>
@@ -1447,7 +1446,7 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                     <CartInfo>
                       <div className="name">{item.productName}</div>
                       <div className="opt">
-                        {item.color.labelColor} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
+                        {findColorDef(item.color.key)?.label ?? item.color.key} <span style={{fontSize: '0.6em', opacity: 0.6, position: 'relative', top: '-1.5px', margin: '0 4px'}}>&#8226;</span> {item.option.name}
                       </div>
                       <div className="item-price">
                         {(item.option.price * item.quantity).toLocaleString("vi-VN")}.000đ

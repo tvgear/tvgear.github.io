@@ -1,0 +1,23 @@
+[
+  {
+    "visible": false,
+    "brand": "hyperx",
+    "name": "Cloud 3",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/cloud-3.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX, BH 11/27",
+        "price": 1550
+      }
+    ],
+    "warranty": "BH Hãng",
+    "connect": [
+      "wired"
+    ]
+  }
+]

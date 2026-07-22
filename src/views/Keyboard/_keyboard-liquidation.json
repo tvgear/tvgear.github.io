@@ -1,0 +1,23 @@
+[
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "HE Madlions Fire68",
+    "colors": [
+      {
+        "key": "white",
+        "image": "/assets/images/keyboards/fire68-white.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX",
+        "price": 690
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wired"
+    ]
+  }
+]

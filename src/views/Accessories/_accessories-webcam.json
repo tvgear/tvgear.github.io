@@ -1,0 +1,136 @@
+[
+  {
+    "visible": true,
+    "brand": "webcam",
+    "name": "Logi Conferrence BCC950",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/bcc950.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 2080
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "name": "Logi Brio 505",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/brio-505.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New Open Box",
+        "price": 1800
+      },
+      {
+        "name": "New",
+        "price": 1900
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": false,
+    "brand": "webcam",
+    "name": "Logi Brio 1000 4K",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/brio-1000-4k.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New Open Box",
+        "price": 2380
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "name": "Logi C930e",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/c930e.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New Open Box",
+        "price": 1180
+      },
+      {
+        "name": "New",
+        "price": 1280
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "name": "Conference Cam MeetUp",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/cgmeetup.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 7950
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "name": "Conference Cam Live",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/cglive.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 8950
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "visible": false,
+    "brand": "liquidation",
+    "name": "Logitech G733",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/headphones/g733-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97% + BOX, Mic Xấu",
+        "price": 1000
+      }
+    ],
+    "warranty": "Bao Test 7 Ngày",
+    "connect": [
+      "wireless"
+    ]
+  }
+]
