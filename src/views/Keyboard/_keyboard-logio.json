@@ -47,22 +47,11 @@
     "name": "K650",
     "colors": [
       {
-        "key": "black",
-        "image": "/assets/images/keyboards/k650.webp"
-      },
-      {
         "key": "white",
         "image": "/assets/images/keyboards/k650-white.png"
       }
     ],
     "options": [
-      {
-        "name": "97%",
-        "price": 580,
-        "colors": [
-          "black"
-        ]
-      },
       {
         "name": "97%",
         "price": 650,
@@ -78,7 +67,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "K380s",
     "colors": [
@@ -100,7 +89,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "POP Icon",
     "colors": [

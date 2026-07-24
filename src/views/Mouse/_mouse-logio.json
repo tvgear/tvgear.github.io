@@ -353,7 +353,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "MX Master 4",
     "colors": [
@@ -364,11 +364,11 @@
     ],
     "options": [
       {
-        "name": "New, BH 7/27",
-        "price": 2450
+        "name": "New No Box",
+        "price": 2280
       }
     ],
-    "warranty": "BH Hãng",
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless",
       "bluetooth"

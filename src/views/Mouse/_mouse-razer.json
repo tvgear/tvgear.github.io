@@ -24,5 +24,26 @@
       "wireless",
       "bluetooth"
     ]
+  },
+  {
+    "visible": true,
+    "brand": "razer",
+    "name": "Viper v3 Pro SE",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/viper-v3-pro-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98% + BOX, BH 23/5/2028 An Phat PC",
+        "price": 1880
+      }
+    ],
+    "warranty": "BH Hãng",
+    "connect": [
+      "wireless"
+    ]
   }
 ]
