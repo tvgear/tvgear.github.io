@@ -1,1 +1,23 @@
-[]
+[
+    {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Razer Cobra Pro",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/cobra-pro.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "98%",
+        "price": 1700
+      }
+    ],
+    "warranty": "BH 7 Ngày",
+    "connect": [
+      "wireless"
+    ]
+  }
+]

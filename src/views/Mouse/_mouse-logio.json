@@ -12,7 +12,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 140
+        "price": 150
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -349,7 +349,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Master 4",
     "colors": [

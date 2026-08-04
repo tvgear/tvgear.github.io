@@ -162,7 +162,7 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "G502 X",
+    "name": "G502 X Hero",
     "colors": [
       {
         "key": "black",
@@ -187,7 +187,7 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "G304",
+    "name": "G304 Hero",
     "colors": [
       {
         "key": "black",
@@ -259,7 +259,7 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "G703",
+    "name": "G703 Hero",
     "colors": [
       {
         "key": "black",
@@ -309,6 +309,27 @@
   {
     "visible": true,
     "brand": "logig",
+    "name": "G903 Hero",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g903.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1280
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
     "name": "PRO 2 WL",
     "colors": [
       {
@@ -328,7 +349,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G502 WL",
     "colors": [
@@ -349,7 +370,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "G502 X Plus",
     "colors": [
@@ -477,7 +498,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X2 SuperStrike",
     "colors": [

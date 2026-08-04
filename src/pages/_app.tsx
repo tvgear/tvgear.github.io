@@ -2,10 +2,14 @@ import type { AppProps } from "next/app";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import Head from "next/head";
 import { Fragment } from "react";
+import { useRouter } from "next/router";
 import "@/styles/global.css";
 import Layout from "@/layouts";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+  const isAdminRoute = router.pathname.startsWith("/admin") || router.pathname === "/auth";
+
   return (
     <Fragment>
       <Head>
@@ -29,9 +33,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta name="twitter:image" content="https://tvgear.github.io/assets/images/og-banner.png" />
       </Head>
       <GoogleAnalytics />
-      <Layout>
+      {isAdminRoute ? (
         <Component {...pageProps} />
-      </Layout>
+      ) : (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
     </Fragment>
   );
 };

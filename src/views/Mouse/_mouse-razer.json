@@ -26,7 +26,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "razer",
     "name": "Viper v3 Pro SE",
     "colors": [
@@ -42,27 +42,6 @@
       }
     ],
     "warranty": "BH Hãng",
-    "connect": [
-      "wireless"
-    ]
-  },
-  {
-    "visible": true,
-    "brand": "razer",
-    "name": "Cobra Pro",
-    "colors": [
-      {
-        "key": "black",
-        "image": "/assets/images/mouses/cobra-pro.png"
-      }
-    ],
-    "options": [
-      {
-        "name": "98%",
-        "price": 1700
-      }
-    ],
-    "warranty": "Hàng Thanh Lý - BH 1 Tháng",
     "connect": [
       "wireless"
     ]
