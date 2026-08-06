@@ -12,7 +12,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 550
+        "price": 580
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G413 SE FULL SIZE",
     "colors": [

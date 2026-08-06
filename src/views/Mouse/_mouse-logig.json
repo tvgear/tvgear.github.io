@@ -268,10 +268,6 @@
     ],
     "options": [
       {
-        "name": "95%",
-        "price": 1000
-      },
-      {
         "name": "97%",
         "price": 1080
       }
@@ -306,27 +302,7 @@
       "wireless"
     ]
   },
-  {
-    "visible": true,
-    "brand": "logig",
-    "name": "G903 Hero",
-    "colors": [
-      {
-        "key": "black",
-        "image": "/assets/images/mouses/g903.webp"
-      }
-    ],
-    "options": [
-      {
-        "name": "97%",
-        "price": 1280
-      }
-    ],
-    "warranty": "BH 3 Tháng",
-    "connect": [
-      "wireless"
-    ]
-  },
+  
   {
     "visible": true,
     "brand": "logig",

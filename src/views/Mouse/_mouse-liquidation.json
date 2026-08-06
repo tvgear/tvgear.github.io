@@ -1,4 +1,46 @@
 [
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Logitech G703 Hero",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g703.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "95%",
+        "price": 980
+      }
+    ],
+    "warranty": "BH 7 Ngày",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "liquidation",
+    "name": "Logitech G903 Hero",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/g903.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 1250
+      }
+    ],
+    "warranty": "BH 7 Ngày",
+    "connect": [
+      "wireless"
+    ]
+  },
     {
     "visible": true,
     "brand": "liquidation",
