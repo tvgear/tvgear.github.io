@@ -150,8 +150,8 @@
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 650
+        "name": "95%, Xước Cao Su",
+        "price": 580
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -257,7 +257,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G703 Hero",
     "colors": [
@@ -288,10 +288,6 @@
       }
     ],
     "options": [
-      {
-        "name": "90%, Bóng + Tặng Kèm Gripate",
-        "price": 1080
-      },
       {
         "name": "97%",
         "price": 1280
@@ -468,7 +464,29 @@
       }
      
     ],
-    "warranty": "BH Hãng 24 Tháng",
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logig",
+    "name": "PRO X Superlight 2c",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/gpro-x-spl2c-black.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 2080
+      }
+     
+    ],
+    "warranty": "BH 3 Tháng",
     "connect": [
       "wireless"
     ]

@@ -2,6 +2,27 @@
   {
     "visible": true,
     "brand": "logio",
+    "name": "M185",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m185-gray.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
+        "price": 120
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
     "name": "M220/M221",
     "colors": [
       {
@@ -314,10 +335,6 @@
       {
         "name": "97%",
         "price": 1250
-      },
-      {
-        "name": "New, Bản Business",
-        "price": 1350
       }
     ],
     "warranty": "BH 3 Tháng",
