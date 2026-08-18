@@ -22,14 +22,7 @@
         ]
       },
       {
-        "name": "90%, Ố",
-        "price": 220,
-        "colors": [
-          "white"
-        ]
-      },
-      {
-        "name": "95%",
+        "name": "97%",
         "price": 250
       }
     ],
@@ -50,7 +43,7 @@
     ],
     "options": [
       {
-        "name": "95%",
+        "name": "97%",
         "price": 250
       }
     ],
@@ -79,7 +72,7 @@
     ],
     "options": [
       {
-        "name": "95%",
+        "name": "97%",
         "price": 300
       }
     ],
@@ -150,7 +143,7 @@
     ],
     "options": [
       {
-        "name": "95%, Xước Cao Su",
+        "name": "90%, Xước Cao Su",
         "price": 580
       }
     ],
@@ -200,7 +193,7 @@
     ],
     "options": [
       {
-        "name": "95%",
+        "name": "97%",
         "price": 490
       }
     ],
@@ -225,8 +218,8 @@
     ],
     "options": [
       {
-        "name": "95%",
-        "price": 590
+        "name": "97%",
+        "price": 580
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -353,7 +346,7 @@
     ],
     "options": [
       {
-        "name": "95%, Mòn Nhẹ Cao Su",
+        "name": "95%, Mòn Cao Su",
         "price": 1780
       }
     ],

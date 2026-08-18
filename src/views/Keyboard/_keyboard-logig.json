@@ -101,18 +101,11 @@
         "image": "/assets/images/keyboards/pro-x-60-black.webp"
       },
       {
-        "key": "white",
-        "image": "/assets/images/keyboards/pro-x-60-white.webp"
+        "key": "pink",
+        "image": "/assets/images/keyboards/pro-x-60-pink.webp"
       }
     ],
     "options": [
-      {
-        "name": "97% + BOX Cứng",
-        "price": 2050,
-        "colors": [
-          "white"
-        ]
-      },
       {
         "name": "97%, Lỗi LED",
         "price": 1750,
@@ -121,10 +114,10 @@
         ]
       },
       {
-        "name": "97% + BOX",
-        "price": 2100,
+        "name": "97%",
+        "price": 2050,
         "colors": [
-          "black"
+          "pink"
         ]
       }
     ],
