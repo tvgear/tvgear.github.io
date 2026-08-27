@@ -94,7 +94,7 @@
     "options": [
       {
         "name": "90%, Xước Cao Su",
-        "price": 330
+        "price": 350
       },
       {
         "name": "97%",
@@ -119,11 +119,11 @@
     "options": [
       {
         "name": "90%, Xước Cao Su + Tặng Griptape",
-        "price": 430
+        "price": 450
       },
       {
         "name": "97%",
-        "price": 590
+        "price": 580
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -132,7 +132,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G502 Hero",
     "colors": [
@@ -240,7 +240,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 980
+        "price": 950
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -325,7 +325,7 @@
     ],
     "options": [
       {
-        "name": "97%",
+        "name": "97% + BOX",
         "price": 1280
       }
     ],

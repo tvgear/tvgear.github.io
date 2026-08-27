@@ -89,7 +89,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logio",
     "name": "POP Icon",
     "colors": [
@@ -101,7 +101,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 600
+        "price": 650
       }
     ],
     "warranty": "BH 1 Tháng",

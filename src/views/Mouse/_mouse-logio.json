@@ -86,7 +86,11 @@
     ],
     "options": [
       {
-        "name": "97%",
+        "name": "97%, Viền Nhựa Cứng",
+        "price": 220
+      },
+      {
+        "name": "97%, Viền Cao Su Mềm",
         "price": 250
       }
     ],
@@ -186,15 +190,15 @@
     ],
     "options": [
       {
-        "name": "97%, Size M/L, Không Receiver",
+        "name": "97%, Size M/L, Không Đầu Thu",
         "price": 300
       },
       {
-        "name": "97%, Size M/L, Kèm Receiver",
+        "name": "97%, Size M/L, Kèm Đầu Thu",
         "price": 400
       },
       {
-        "name": "New No Box, Size L, Kèm Receiver",
+        "name": "New No Box, Size L, Kèm Đầu Thu",
         "price": 450
       }
     ],
@@ -238,11 +242,37 @@
     ],
     "options": [
       {
-        "name": "97%, Không Receiver",
+        "name": "97%, Không Đầu Thu",
         "price": 350
       },
       {
-        "name": "97%, Kèm Receiver",
+        "name": "97%, Kèm Đầu Thu",
+        "price": 450
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+   {
+    "visible": true,
+    "brand": "logio",
+    "name": "POP Mouse",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/pop-mouse-black.webp"
+      },
+       {
+        "key": "blue",
+        "image": "/assets/images/mouses/pop-mouse-blue.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "97%",
         "price": 450
       }
     ],

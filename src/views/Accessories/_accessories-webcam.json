@@ -23,21 +23,21 @@
   {
     "visible": true,
     "brand": "webcam",
-    "name": "Logi Brio 505",
+    "name": "Logi MX Brio 505",
     "colors": [
       {
         "key": "black",
-        "image": "/assets/images/accessories/brio-505.png"
+        "image": "/assets/images/accessories/mx-brio-505.png"
       }
     ],
     "options": [
       {
         "name": "New Open Box",
-        "price": 1800
+        "price": 1850
       },
       {
         "name": "New",
-        "price": 1900
+        "price": 1950
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -46,19 +46,23 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "webcam",
-    "name": "Logi Brio 1000 4K",
+    "name": "Logi MX Brio 705 4K",
     "colors": [
       {
         "key": "black",
-        "image": "/assets/images/accessories/brio-1000-4k.png"
+        "image": "/assets/images/accessories/mx-brio-705.png"
       }
     ],
     "options": [
       {
         "name": "New Open Box",
-        "price": 2380
+        "price": 2800
+      },
+      {
+        "name": "New Seal",
+        "price": 2900
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -94,7 +98,7 @@
   {
     "visible": true,
     "brand": "webcam",
-    "name": "Conference Cam MeetUp",
+    "name": "Logi Conference Cam MeetUp",
     "colors": [
       {
         "key": "black",
@@ -115,7 +119,7 @@
   {
     "visible": true,
     "brand": "webcam",
-    "name": "Conference Cam Live",
+    "name": "Logi Conference Cam Live",
     "colors": [
       {
         "key": "black",

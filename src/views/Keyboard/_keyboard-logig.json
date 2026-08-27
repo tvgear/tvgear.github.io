@@ -75,15 +75,11 @@
     "options": [
       {
         "name": "98% Brown, Sai LED",
-        "price": 950
+        "price": 900
       },
       {
-        "name": "98% Red, LED Đẹp",
-        "price": 1050
-      },
-      {
-        "name": "98% Blue, LED Đẹp + BOX",
-        "price": 1150
+        "name": "95% Blue, LED Đẹp",
+        "price": 1000
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -108,14 +104,14 @@
     "options": [
       {
         "name": "97%, Lỗi LED",
-        "price": 1750,
+        "price": 1780,
         "colors": [
           "black"
         ]
       },
       {
         "name": "97%",
-        "price": 2050,
+        "price": 2080,
         "colors": [
           "pink"
         ]

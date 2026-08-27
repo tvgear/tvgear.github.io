@@ -87,19 +87,11 @@
     ],
     "options": [
       {
-        "name": "PRO 2 WL",
+        "name": "PRO X (1K Hz)",
         "price": 450
       },
       {
-        "name": "PRO X SPL1",
-        "price": 450
-      },
-      {
-        "name": "PRO X SPL2/SPL2DEX/SPL2c (1K Hz)",
-        "price": 450
-      },
-      {
-        "name": "PRO X SPL2/SPL2DEX/SPL2c (8K Hz)",
+        "name": "PRO X (8K Hz)",
         "price": 780
       }
     ],
