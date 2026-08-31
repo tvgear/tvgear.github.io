@@ -1,6 +1,6 @@
 [
   {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "Logitech G703 Hero",
     "colors": [
@@ -42,7 +42,7 @@
     ]
   },
     {
-    "visible": true,
+    "visible": false,
     "brand": "liquidation",
     "name": "Razer Cobra Pro",
     "colors": [

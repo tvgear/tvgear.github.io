@@ -13,8 +13,8 @@ const brands = [
   { key: "logig", label: "Logitech Gaming"},
   { key: "logio", label: "Logi Văn Phòng"},
   { key: "logiocb", label: "Combo Logi"},
-  { key: "razer", label: "Razer Gaming"},
-  { key: "liquidation", label: "Thanh Lý"},
+  // { key: "razer", label: "Razer Gaming"},
+  // { key: "liquidation", label: "Thanh Lý"},
 ] as const satisfies ReadonlyArray<BrandT<KeyboardBrand>>;
 
 const productsJson = [

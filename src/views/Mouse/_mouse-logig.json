@@ -132,7 +132,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "G502 Hero",
     "colors": [
@@ -143,8 +143,8 @@
     ],
     "options": [
       {
-        "name": "90%, Xước Cao Su",
-        "price": 580
+        "name": "New Open Box",
+        "price": 750
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -346,8 +346,12 @@
     ],
     "options": [
       {
-        "name": "95%, Mòn Cao Su",
+        "name": "90%, Mòn Cao Su",
         "price": 1780
+      },
+      {
+        "name": "95%",
+        "price": 1980
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -395,24 +399,17 @@
     ],
     "options": [
       {
-        "name": "95%, Đầu Thu SPL1",
+        "name": "95%, Đầu Thu 1K",
         "price": 1680,
         "colors": [
           "white"
         ]
       },
       {
-        "name": "97%, Đầu Thu SPL1",
+        "name": "97%, Đầu Thu 1K",
         "price": 1780,
         "colors": [
           "black"
-        ]
-      },
-      {
-        "name": "95%",
-        "price": 1980,
-        "colors": [
-          "white"
         ]
       },
       {
@@ -448,7 +445,7 @@
     ],
     "options": [
       {
-        "name": "97%, Đầu Thu SPL1",
+        "name": "97%, Đầu Thu 1K",
         "price": 1780
       },
       {
