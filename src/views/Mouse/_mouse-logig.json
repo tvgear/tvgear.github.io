@@ -143,7 +143,7 @@
     ],
     "options": [
       {
-        "name": "New Open Box",
+        "name": "New No Box",
         "price": 750
       }
     ],
@@ -168,8 +168,8 @@
         "price": 750
       },
       {
-        "name": "97% + Kèm Nút Bấm",
-        "price": 800
+        "name": "97% + Kèm Nút Bấm + BOX",
+        "price": 850
       }
     ],
     "warranty": "BH 3 Tháng",
