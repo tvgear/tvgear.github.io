@@ -166,10 +166,6 @@
       {
         "name": "97% + Kèm Nút Che",
         "price": 750
-      },
-      {
-        "name": "97% + Kèm Nút Bấm + BOX",
-        "price": 850
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -462,17 +458,31 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "PRO X Superlight 2c",
+    "name": "PRO X Superlight 2C",
     "colors": [
       {
         "key": "black",
         "image": "/assets/images/mouses/gpro-x-spl2c-black.webp"
+      },
+      {
+        "key": "pink",
+        "image": "/assets/images/mouses/gpro-x-spl2c-pink.png"
       }
     ],
     "options": [
       {
         "name": "97%",
-        "price": 2080
+        "price": 2080,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "New Seal",
+        "price": 2480,
+        "colors": [
+          "pink"
+        ]
       }
      
     ],
