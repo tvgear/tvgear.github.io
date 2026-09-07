@@ -307,6 +307,31 @@
   {
     "visible": true,
     "brand": "logio",
+    "name": "M850 L",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/mouses/m850-l-black.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New No Box",
+        "price": 750,
+        "colors": [
+          "black"
+        ]
+      }
+    ],
+    "warranty": "BH 3 Tháng",
+    "connect": [
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "logio",
     "name": "Lift Vertical",
     "colors": [
       {
@@ -316,7 +341,7 @@
     ],
     "options": [
       {
-        "name": "97% + BOX",
+        "name": "97%",
         "price": 880,
         "colors": [
           "black"

@@ -95,10 +95,6 @@
       {
         "key": "black",
         "image": "/assets/images/keyboards/pro-x-60-black.webp"
-      },
-      {
-        "key": "pink",
-        "image": "/assets/images/keyboards/pro-x-60-pink.webp"
       }
     ],
     "options": [
@@ -107,13 +103,6 @@
         "price": 1780,
         "colors": [
           "black"
-        ]
-      },
-      {
-        "name": "97%",
-        "price": 2080,
-        "colors": [
-          "pink"
         ]
       }
     ],
@@ -165,28 +154,28 @@
     "options": [
       {
         "name": "New Open Box, Layout FR (Pháp)",
-        "price": 2180,
+        "price": 1880,
         "colors": [
           "black"
         ]
       },
       {
         "name": "New Open Box, Layout JP (Nhật)",
-        "price": 2280,
+        "price": 1980,
         "colors": [
           "white"
         ]
       },
       {
         "name": "New Open Box, Layout Song Ngữ JP (Nhật) + US (Mỹ)",
-        "price": 2580,
+        "price": 2180,
         "colors": [
           "white"
         ]
       },
       {
         "name": "New Open Box",
-        "price": 2580,
+        "price": 2180,
         "colors": [
           "black"
         ]
