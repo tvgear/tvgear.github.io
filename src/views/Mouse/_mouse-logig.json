@@ -385,22 +385,11 @@
     "name": "PRO X SuperLight 2",
     "colors": [
       {
-        "key": "white",
-        "image": "/assets/images/mouses/gpro-x-spl2-white.webp"
-      },
-      {
         "key": "black",
         "image": "/assets/images/mouses/gpro-x-spl2-black.webp"
       }
     ],
     "options": [
-      {
-        "name": "95%, Đầu Thu 1K",
-        "price": 1680,
-        "colors": [
-          "white"
-        ]
-      },
       {
         "name": "97%, Đầu Thu 1K",
         "price": 1780,
@@ -431,10 +420,6 @@
         "image": "/assets/images/mouses/gpro-x-spl2-dex-black.webp"
       },
       {
-        "key": "white",
-        "image": "/assets/images/mouses/gpro-x-spl2-dex-white.webp"
-      },
-      {
         "key": "pink",
         "image": "/assets/images/mouses/gpro-x-spl2-dex-pink.webp"
       }
@@ -447,8 +432,14 @@
       {
         "name": "97%",
         "price": 2080
+      },
+      {
+        "name": "97% + BOX, BH 9/2027",
+        "price": 2280,
+         "colors": [
+          "black"
+        ]
       }
-     
     ],
     "warranty": "BH 3 Tháng",
     "connect": [
@@ -463,10 +454,6 @@
       {
         "key": "black",
         "image": "/assets/images/mouses/gpro-x-spl2c-black.webp"
-      },
-      {
-        "key": "pink",
-        "image": "/assets/images/mouses/gpro-x-spl2c-pink.png"
       }
     ],
     "options": [
@@ -476,15 +463,7 @@
         "colors": [
           "black"
         ]
-      },
-      {
-        "name": "New Seal",
-        "price": 2480,
-        "colors": [
-          "pink"
-        ]
       }
-     
     ],
     "warranty": "BH 3 Tháng",
     "connect": [

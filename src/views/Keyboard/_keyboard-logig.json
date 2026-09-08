@@ -95,6 +95,10 @@
       {
         "key": "black",
         "image": "/assets/images/keyboards/pro-x-60-black.webp"
+      },
+      {
+        "key": "white",
+        "image": "/assets/images/keyboards/pro-x-60-white.webp"
       }
     ],
     "options": [
@@ -103,6 +107,13 @@
         "price": 1780,
         "colors": [
           "black"
+        ]
+      },
+      {
+        "name": "97% + BOX",
+        "price": 2100,
+        "colors": [
+          "white"
         ]
       }
     ],
