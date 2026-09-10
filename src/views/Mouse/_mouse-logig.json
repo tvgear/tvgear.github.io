@@ -432,13 +432,6 @@
       {
         "name": "97%",
         "price": 2080
-      },
-      {
-        "name": "97% + BOX, BH 9/2027",
-        "price": 2280,
-         "colors": [
-          "black"
-        ]
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -471,7 +464,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "PRO X2 SuperStrike",
     "colors": [
@@ -482,14 +475,14 @@
     ],
     "options": [
       {
-        "name": "98% + BOX",
-        "price": 3490,
+        "name": "98% + BOX, BH 6/2028",
+        "price": 3650,
         "colors": [
           "white"
         ]
       }
     ],
-    "warranty": "BH Hãng 24 Tháng",
+    "warranty": "BH Hãng",
     "connect": [
       "wireless"
     ]

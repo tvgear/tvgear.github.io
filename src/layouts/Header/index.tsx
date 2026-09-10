@@ -138,13 +138,14 @@ const NavLink = styled(Link)<{ $active?: boolean }>`
   font-size: 1.5rem;
   color: ${(p) => (p.$active ? "#000" : "#777")};
   cursor: pointer;
-  transition: 0.2s;
+  transition: color 0.2s;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  &:hover {
-    color: #000;
+  &:hover,
+  &:focus {
+    color: ${(p) => (p.$active ? "#000" : "#000")};
   }
 `;
 
@@ -306,6 +307,10 @@ const DropdownItem = styled(Link)<{ $active?: boolean }>`
   color: ${(p) => (p.$active ? "#000" : "#777")};
   background: ${(p) => (p.$active ? "#f6f6f6" : "transparent")};
   transition: 0.2s;
+  &:hover,
+  &:focus {
+    color: ${(p) => (p.$active ? "#000" : "#000")};
+  }
   span {
     font-family: ${(p) => (p.$active ? "F_EXTRABOLD" : "F_BOLD")};
     font-size: 0.95rem;
@@ -1073,7 +1078,14 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
     { name: "Phụ Kiện", link: "/accessories", icon: LayoutGrid },
   ], []);
 
-  const currentCategory = categories.find(c => c.link === router.pathname) || categories[0]!;
+  const isCategoryActive = (link: string) => {
+    const rawPath = router.asPath?.split("?")[0]?.split("#")[0] || router.pathname;
+    const current = (rawPath === "/" || rawPath === "" ? "/mouse" : rawPath).replace(/\/$/, "");
+    const target = link.replace(/\/$/, "");
+    return current === target || current.startsWith(target + "/");
+  };
+
+  const currentCategory = categories.find(c => isCategoryActive(c.link)) || categories[0]!;
 
   const scrollToTop = () => {
     contentRef?.current?.scrollTo({
@@ -1148,16 +1160,19 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
           </LeftHeader>
 
           <NavLeft>
-            {categories.map((cat) => (
-              <NavLink 
-                key={cat.link} 
-                href={cat.link}
-                $active={router.pathname === cat.link} 
-                onClick={scrollToTop}
-              >
-                {cat.name}
-              </NavLink>
-            ))}
+            {categories.map((cat) => {
+              const active = isCategoryActive(cat.link);
+              return (
+                <NavLink 
+                  key={cat.link} 
+                  href={cat.link}
+                  $active={active} 
+                  onClick={scrollToTop}
+                >
+                  {cat.name}
+                </NavLink>
+              );
+            })}
           </NavLeft>
 
           <RightHeader>
@@ -1184,14 +1199,15 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
           <MobileDropdownPortal>
             {categories.map((cat) => {
               const Icon = cat.icon;
+              const active = isCategoryActive(cat.link);
               return (
                 <DropdownItem 
                   key={cat.link}
                   href={cat.link}
-                  $active={router.pathname === cat.link} 
+                  $active={active} 
                   onClick={() => { setShowMobileMenu(false); scrollToTop(); }}
                 >
-                  <Icon size={24} strokeWidth={router.pathname === cat.link ? 2.5 : 2} />
+                  <Icon size={24} strokeWidth={active ? 2.5 : 2} />
                   <span>{cat.name}</span>
                 </DropdownItem>
               );
@@ -1270,7 +1286,6 @@ const Header: React.FC<{ contentRef: any }> = ({ contentRef }) => {
                       <div className="name"><MapPin size={18} /> Chi Nhánh TP.HCM</div>
                       <div className="address">
                         📌  Toà B Saigonres Plaza, 188 Nguyễn Xí, P.26, Bình Thạnh, TP.HCM<br/>
-                        📌  9 Hoa Cau, P.7, Q. Phú Nhuận, TP.HCM
                       </div>
                     </BranchItem>
 
