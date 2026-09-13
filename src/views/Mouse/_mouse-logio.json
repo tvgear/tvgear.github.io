@@ -121,7 +121,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "M240",
     "colors": [
@@ -181,7 +181,7 @@
   {
     "visible": true,
     "brand": "logio",
-    "name": "M550 M/L",
+    "name": "M550 L",
     "colors": [
       {
         "key": "black",
@@ -190,15 +190,15 @@
     ],
     "options": [
       {
-        "name": "97%, Size M/L, Không Đầu Thu",
+        "name": "97%, Không Đầu Thu",
         "price": 300
       },
       {
-        "name": "97%, Size M/L, Kèm Đầu Thu",
+        "name": "97%, Kèm Đầu Thu",
         "price": 400
       },
       {
-        "name": "New No Box, Size L, Kèm Đầu Thu",
+        "name": "New No Box, Kèm Đầu Thu",
         "price": 450
       }
     ],
@@ -257,7 +257,7 @@
     ]
   },
    {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "POP Mouse",
     "colors": [
@@ -355,7 +355,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Anywhere 2s",
     "colors": [
