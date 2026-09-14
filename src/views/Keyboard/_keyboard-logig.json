@@ -63,7 +63,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "G512 GX",
     "colors": [
@@ -74,12 +74,8 @@
     ],
     "options": [
       {
-        "name": "98% Brown, LED Sai Màu",
-        "price": 900
-      },
-      {
-        "name": "95% Blue, LED Đẹp",
-        "price": 1000
+        "name": "98%, Linear, LED Đẹp",
+        "price": 1150
       }
     ],
     "warranty": "BH 1 Tháng",
