@@ -23,7 +23,17 @@
       },
       {
         "name": "97%",
-        "price": 250
+        "price": 250,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "90%, Ố",
+        "price": 220,
+        "colors": [
+          "white"
+        ]
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -73,7 +83,18 @@
     "options": [
       {
         "name": "97%",
-        "price": 300
+        "price": 300,
+        "colors": [
+          "black",
+          "blue"
+        ]
+      },
+      {
+        "name": "90%, Ố",
+        "price": 270,
+        "colors": [
+          "white"
+        ]
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -440,7 +461,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X Superlight 2C",
     "colors": [

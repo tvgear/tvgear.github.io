@@ -137,22 +137,11 @@
     "name": "MX Keys Mini",
     "colors": [
       {
-        "key": "white",
-        "image": "/assets/images/keyboards/mx-keys-mini-white.webp"
-      },
-      {
         "key": "black",
         "image": "/assets/images/keyboards/mx-keys-mini-black.png"
       }
     ],
     "options": [
-      {
-        "name": "95%",
-        "price": 1380,
-        "colors": [
-          "white"
-        ]
-      },
       {
         "name": "99% + BOX",
         "price": 1780,
