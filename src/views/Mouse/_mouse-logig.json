@@ -140,7 +140,7 @@
     "options": [
       {
         "name": "90%, Xước Cao Su + Tặng Griptape",
-        "price": 450
+        "price": 430
       },
       {
         "name": "97%",
@@ -211,7 +211,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 490
+        "price": 480
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO WL",
     "colors": [
@@ -342,7 +342,7 @@
     ],
     "options": [
       {
-        "name": "97% + BOX",
+        "name": "98% + BOX",
         "price": 1280
       }
     ],
@@ -412,13 +412,6 @@
     ],
     "options": [
       {
-        "name": "97%, Đầu Thu 1K",
-        "price": 1780,
-        "colors": [
-          "black"
-        ]
-      },
-      {
         "name": "97%",
         "price": 2080,
         "colors": [
@@ -446,10 +439,6 @@
       }
     ],
     "options": [
-      {
-        "name": "97%, Đầu Thu 1K",
-        "price": 1780
-      },
       {
         "name": "97%",
         "price": 2080
@@ -497,7 +486,7 @@
     "options": [
       {
         "name": "98% + BOX, BH 6/2028",
-        "price": 3650,
+        "price": 3600,
         "colors": [
           "white"
         ]
