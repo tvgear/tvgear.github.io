@@ -114,10 +114,6 @@
     ],
     "options": [
       {
-        "name": "90%, Xước Cao Su",
-        "price": 350
-      },
-      {
         "name": "97%",
         "price": 450
       }
@@ -211,7 +207,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 480
+        "price": 490
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -236,7 +232,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 580
+        "price": 590
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -288,7 +284,7 @@
     ]
   },
   {
-    "visible": false,
+    "visible": true,
     "brand": "logig",
     "name": "PRO WL",
     "colors": [
@@ -310,7 +306,7 @@
   },
   
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO 2 WL",
     "colors": [
@@ -382,8 +378,8 @@
     "name": "PRO X SuperLight",
     "colors": [
       {
-        "key": "black",
-        "image": "/assets/images/mouses/gpro-x-spl-black.webp"
+        "key": "white",
+        "image": "/assets/images/mouses/gpro-x-spl-white.webp"
       }
     ],
     "options": [
@@ -391,7 +387,7 @@
         "name": "97%",
         "price": 1550,
         "colors": [
-          "black"
+          "white"
         ]
       }
     ],

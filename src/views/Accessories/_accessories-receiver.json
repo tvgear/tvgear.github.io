@@ -57,7 +57,7 @@
     "connect": []
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "receiver",
     "name": "Đầu Thu Logi Dòng G",
     "colors": [
@@ -87,11 +87,11 @@
     ],
     "options": [
       {
-        "name": "PRO X (1K Hz)",
+        "name": "PRO X SPL 1",
         "price": 450
       },
       {
-        "name": "PRO X (8K Hz)",
+        "name": "PRO X SPL 2",
         "price": 780
       }
     ],
