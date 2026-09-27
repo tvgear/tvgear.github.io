@@ -151,7 +151,7 @@
         "key": "black",
         "image": "/assets/images/mouses/m350s-black.webp"
       },
-       {
+      {
         "key": "light-pink",
         "image": "/assets/images/mouses/m350s-pink.webp"
       }
@@ -159,17 +159,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 280,
-         "colors" : [
-          "black"
-        ]
-      },
-      {
-        "name": "New No Box",
-        "price": 330,
-        "colors" : [
-          "light-pink"
-        ]
+        "price": 280
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -196,10 +186,6 @@
       {
         "name": "97%, Kèm Đầu Thu",
         "price": 400
-      },
-      {
-        "name": "New No Box, Kèm Đầu Thu",
-        "price": 450
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -330,7 +316,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "Lift Vertical",
     "colors": [
@@ -377,7 +363,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logio",
     "name": "MX Anywhere 3s",
     "colors": [

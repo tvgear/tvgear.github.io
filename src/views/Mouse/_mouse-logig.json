@@ -327,7 +327,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G502 WL",
     "colors": [
@@ -359,10 +359,6 @@
     ],
     "options": [
       {
-        "name": "90%, Mòn Cao Su",
-        "price": 1780
-      },
-      {
         "name": "95%",
         "price": 1980
       }
@@ -378,6 +374,10 @@
     "name": "PRO X SuperLight",
     "colors": [
       {
+        "key": "black",
+        "image": "/assets/images/mouses/gpro-x-spl-black.webp"
+      },
+      {
         "key": "white",
         "image": "/assets/images/mouses/gpro-x-spl-white.webp"
       }
@@ -385,10 +385,7 @@
     "options": [
       {
         "name": "97%",
-        "price": 1550,
-        "colors": [
-          "white"
-        ]
+        "price": 1550
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -470,7 +467,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "PRO X2 SuperStrike",
     "colors": [

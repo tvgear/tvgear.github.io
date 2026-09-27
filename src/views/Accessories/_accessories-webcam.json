@@ -2,6 +2,48 @@
   {
     "visible": true,
     "brand": "webcam",
+    "name": "Logi C920e",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/c920e.png"
+      }
+    ],
+    "options": [
+      {
+        "name": "New",
+        "price": 950
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
+    "name": "Logi C925e",
+    "colors": [
+      {
+        "key": "black",
+        "image": "/assets/images/accessories/c925e.webp"
+      }
+    ],
+    "options": [
+      {
+        "name": "New",
+        "price": 1050
+      }
+    ],
+    "warranty": "BH 1 Tháng",
+    "connect": [
+      "wired"
+    ]
+  },
+  {
+    "visible": true,
+    "brand": "webcam",
     "name": "Logi Conferrence BCC950",
     "colors": [
       {
@@ -32,12 +74,8 @@
     ],
     "options": [
       {
-        "name": "New Open Box",
-        "price": 1850
-      },
-      {
         "name": "New",
-        "price": 1950
+        "price": 1900
       }
     ],
     "warranty": "BH 1 Tháng",
@@ -46,7 +84,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "webcam",
     "name": "Logi MX Brio 705 4K",
     "colors": [
@@ -81,10 +119,6 @@
       }
     ],
     "options": [
-      {
-        "name": "New Open Box",
-        "price": 1180
-      },
       {
         "name": "New",
         "price": 1280
