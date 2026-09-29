@@ -158,8 +158,32 @@
     ],
     "options": [
       {
-        "name": "97%",
-        "price": 280
+        "name": "97%, Không Đầu Thu",
+        "price": 280,
+        "colors": [
+          "light-pink"
+        ]
+      },
+      {
+        "name": "97%, Không Đầu Thu",
+        "price": 300,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "97%, Kèm Đầu Thu",
+        "price": 380,
+        "colors": [
+          "light-pink"
+        ]
+      },
+      {
+        "name": "97%, Kèm Đầu Thu",
+        "price": 400,
+        "colors": [
+          "black"
+        ]
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -280,7 +304,7 @@
     ],
     "options": [
       {
-        "name": "New No Box",
+        "name": "New No Box, Sẵn Đầu Thu",
         "price": 580
       }
     ],
@@ -302,8 +326,15 @@
     ],
     "options": [
       {
-        "name": "New No Box",
-        "price": 750,
+        "name": "New No Box, Không Đầu Thu",
+        "price": 780,
+        "colors": [
+          "black"
+        ]
+      },
+      {
+        "name": "New No Box, Kèm Đầu Thu",
+        "price": 880,
         "colors": [
           "black"
         ]

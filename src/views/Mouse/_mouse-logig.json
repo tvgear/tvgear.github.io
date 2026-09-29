@@ -149,7 +149,7 @@
     ]
   },
   {
-    "visible": true,
+    "visible": false,
     "brand": "logig",
     "name": "G502 Hero",
     "colors": [
@@ -435,6 +435,13 @@
       {
         "name": "97%",
         "price": 2080
+      },
+      {
+        "name": "97% + BOX, BH 8/28",
+        "price": 2180,
+        "colors": [
+          "black"
+        ]
       }
     ],
     "warranty": "BH 3 Tháng",
