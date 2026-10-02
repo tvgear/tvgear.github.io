@@ -5,6 +5,7 @@ export const PRODUCT_COLORS = {
   "light-pink": { hex: "#f8ddd8ff", label: "Hồng Nhạt" },
   blue: { hex: "#B0C4DE", label: "Xanh Dương" },
   red: { hex: "#FF0000", label: "Đỏ" },
+  blueViolet : { hex: "#B0C4DE", label: "Tím" },
 } as const;
 
 export type ProductColorKey = keyof typeof PRODUCT_COLORS;

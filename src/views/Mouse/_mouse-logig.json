@@ -47,7 +47,7 @@
     "name": "G203",
     "colors": [
       {
-        "key": "blue",
+        "key": "blueViolet",
         "image": "/assets/images/mouses/g203-lilac.webp"
       }
     ],
@@ -76,7 +76,7 @@
         "image": "/assets/images/mouses/g102-white.webp"
       },
       {
-        "key": "blue",
+        "key": "blueViolet",
         "image": "/assets/images/mouses/g203-lilac.webp"
       }
     ],
