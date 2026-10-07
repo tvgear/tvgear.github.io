@@ -27,7 +27,7 @@
   {
     "visible": true,
     "brand": "logio",
-    "name": "M220/M221",
+    "name": "M221",
     "colors": [
       {
         "key": "black",
@@ -158,29 +158,15 @@
     ],
     "options": [
       {
-        "name": "97%, Không Đầu Thu",
+        "name": "97%",
         "price": 280,
         "colors": [
           "light-pink"
         ]
       },
       {
-        "name": "97%, Không Đầu Thu",
+        "name": "97%",
         "price": 300,
-        "colors": [
-          "black"
-        ]
-      },
-      {
-        "name": "97%, Kèm Đầu Thu",
-        "price": 380,
-        "colors": [
-          "light-pink"
-        ]
-      },
-      {
-        "name": "97%, Kèm Đầu Thu",
-        "price": 400,
         "colors": [
           "black"
         ]
@@ -328,13 +314,6 @@
       {
         "name": "New No Box, Không Đầu Thu",
         "price": 780,
-        "colors": [
-          "black"
-        ]
-      },
-      {
-        "name": "New No Box, Kèm Đầu Thu",
-        "price": 880,
         "colors": [
           "black"
         ]

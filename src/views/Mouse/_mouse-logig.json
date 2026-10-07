@@ -2,7 +2,7 @@
   {
     "visible": true,
     "brand": "logig",
-    "name": "G102",
+    "name": "G102 / G203",
     "colors": [
       {
         "key": "black",
@@ -11,6 +11,10 @@
       {
         "key": "white",
         "image": "/assets/images/mouses/g102-white.webp"
+      },
+      {
+        "key": "blueViolet",
+        "image": "/assets/images/mouses/g203-lilac.webp"
       }
     ],
     "options": [
@@ -34,27 +38,13 @@
         "colors": [
           "white"
         ]
-      }
-    ],
-    "warranty": "BH 3 Tháng",
-    "connect": [
-      "wired"
-    ]
-  },
-  {
-    "visible": true,
-    "brand": "logig",
-    "name": "G203",
-    "colors": [
-      {
-        "key": "blueViolet",
-        "image": "/assets/images/mouses/g203-lilac.webp"
-      }
-    ],
-    "options": [
+      },
       {
         "name": "97%",
-        "price": 250
+        "price": 250,
+        "colors": [
+          "blueViolet"
+        ]
       }
     ],
     "warranty": "BH 3 Tháng",
@@ -86,7 +76,7 @@
         "price": 300,
         "colors": [
           "black",
-          "blue"
+          "blueViolet"
         ]
       },
       {
@@ -134,10 +124,6 @@
       }
     ],
     "options": [
-      {
-        "name": "90%, Xước Cao Su + Tặng Griptape",
-        "price": 430
-      },
       {
         "name": "97%",
         "price": 580
